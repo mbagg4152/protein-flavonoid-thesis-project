@@ -3,13 +3,16 @@ Repo for the research methods class. The goal is to modernize, clean and adapt a
 
 ## Project Journal
 Below is a log for the new code project
-<font size="-3">
-Date|Change|
-:---|:-----|
-<sub> 7/28|<sub> Started looking through the code and thesis then created a GitHub for the project
-<sub> ''''|<sub> Made changes so that the code will run in a python 3 environment
-<sub> ''''|<sub> Created JSON files for the differing lists & dictionaries
-<sub> ''''|<sub> Added a code section that checks if the user has bioservices installed</font>
+
+Log|
+:---|
+**7/28**
+Started looking through the code and thesis then created a GitHub for the project.
+Made changes so that the code will run in a python 3 environment.
+Created JSON files for the differing lists & dictionaries.
+Added a code section that checks if the user has bioservices installed.
+
+
   
 ## Original Code Information
 Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson  
