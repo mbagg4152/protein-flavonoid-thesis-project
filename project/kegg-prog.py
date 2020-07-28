@@ -6,15 +6,15 @@
 try:
     from bioservices.kegg import KEGG
 except ImportError as e:
+    KEGG = None
     print("you need to have bioservices installed to run this program.\n" +
           "install using command `pip3 install bioservices`")
     exit(0)
 
-import os
-import sys
 import datetime
 import json
-from pathlib import Path
+import os
+import sys
 
 kegg = KEGG()
 now = datetime.datetime.now()
@@ -36,14 +36,28 @@ if os.path.exists(newDirName):
     else:
         sys.exit("Try an unused folder name next time")
 
-# make path vars for gene, fasta & chemical data
-geneDirPath = newDirName + '/Gene_Data'
-fastaDirPath = newDirName + '/FASTA_Data'
-chemDirPath = newDirName + '/Chemical_Data'
+# global vars
 geneListFromMaster = []
+masterList = []
+masterCountList = []
+masterListNoDupes = []
+speciesCodeList = []
+speciesCodeDict = {}
+pathwayCodeList = []
+pathwaySpeciesList = []
+geneDirPath = ""
+fastaDirPath = ""
+chemDirPath = ""
+pathwayCodeDict = {}
 
 
 def makeNewDirs():
+    global geneDirPath
+    global fastaDirPath
+    global chemDirPath
+    geneDirPath = newDirName + '/Gene_Data'
+    fastaDirPath = newDirName + '/FASTA_Data'
+    chemDirPath = newDirName + '/Chemical_Data'
     try:
         os.mkdir(newDirName)  # creates the main working folder for the code
     except OSError:
@@ -65,14 +79,14 @@ def makeNewDirs():
         print("could not make dir " + chemDirPath)
 
 
-def getJsonData(fname, key):
-    with open(fname) as jsonFile:
+makeNewDirs()
+
+
+def getJsonData(fileName, key):
+    with open(fileName) as jsonFile:
         data = json.load(jsonFile)
         # print(data[key])
         return data[key]
-
-
-makeNewDirs()
 
 
 # Python code to remove duplicate elements --- needs to be up here because of testing code
@@ -84,27 +98,40 @@ def removeDupes(hasDupes):
     return uniqueList
 
 
-# These are the list of the codes that you need to iterate over.
-# If you are needing just one code, just have one item in the list, but keep it as a list.
-# You must have both species codes and pathway codes for this script to work.
-# species codes for plants of interest,  "mtr" cut due to code errors
-speciesCodeList = getJsonData("species-list.json", 'list')
-speciesCodeDict = getJsonData("species-pairs.json", 'pairs')
-pathwayCodeList = getJsonData("path-codes.json", 'codes')  # list of pathways of interest
-# Dictionary defining each pathway by each chemical they're responsible for
-# "mtr": "Medicago truncatula" cut due to code error
-pathwayCodeDict = getJsonData("path-code-pairs.json", 'pairs')
+def defineListsFromFiles():
+    global speciesCodeList
+    global speciesCodeDict
+    global pathwayCodeList
+    global pathwaySpeciesList
+    global pathwayCodeDict
+    # These are the list of the codes that you need to iterate over. If you are needing just one code, just have one
+    # item in the list, but keep it as a list. You must have both species codes and pathway codes for this script to
+    # work. species codes for plants of interest,  "mtr" cut due to code errors
+    speciesCodeList = getJsonData("species-list.json", 'list')
+    speciesCodeDict = getJsonData("species-pairs.json", 'pairs')
+    pathwayCodeList = getJsonData("path-codes.json", 'codes')  # list of pathways of interest
+    # Dictionary defining each pathway by each chemical they're responsible for "mtr": "Medicago truncatula" cut due
+    # to code error
+    pathwayCodeDict = getJsonData("path-code-pairs.json", 'pairs')
 
-# this is the full list of every pathway and species from the above lists
-pathwaySpeciesList = [i + j
-                      for i in speciesCodeList
-                      for j in pathwayCodeList]
+    # this is the full list of every pathway and species from the above lists
+    for sp in speciesCodeList:
+        for pa in pathwayCodeList:
+            temp = sp + pa
+            pathwaySpeciesList.append(temp)
 
-# use for testing only; comment out when actually running the script
-pathwayID_list = ["ats00940", "ats00941", "brp00940", "brp00941", "aip00940", "aip00941"]
-speciesCodeList = []  # use for testing only; comment out when actually running the script
-for i in pathwayID_list: speciesCodeList.append(filter(str.isalpha, i))
-speciesCodeList = removeDupes(speciesCodeList)  # use for testing only; comment out when actually running the script
+    # pathwaySpeciesList = speciesCodeList + pathwayCodeList
+    print(pathwaySpeciesList)
+
+
+defineListsFromFiles()
+
+
+# # use for testing only; comment out when actually running the script
+# pathwayID_list = ["ats00940", "ats00941", "brp00940", "brp00941", "aip00940", "aip00941"]
+# speciesCodeList = []  # use for testing only; comment out when actually running the script
+# for i in pathwayID_list: speciesCodeList.append(filter(str.isalpha, i))
+# speciesCodeList = removeDupes(speciesCodeList)
 
 
 # defining the function that will actually get all of the data that is required
@@ -151,7 +178,7 @@ def genePathwayData(pathId):
     return geneLineList
 
 
-# function that saves each file with a name that includes pathwayID  using the data from genes_listoflists
+# function that saves each file with a name that includes pathwayID  using the data from genes list of lists
 
 
 # whatList should be a list of lists, outName should include an appropriate extension
@@ -175,36 +202,47 @@ def saveListsToFile(whatList, outName, outDir=os.getcwd()):
 
 
 # iterate over pathwayID_list and use the function defined above
-masterList = []
-for pathwayID in pathwaySpeciesList:
-    notPresent = 0
-    currentList = None
-    try:
-        currentList = genePathwayData(pathwayID)  # need to ignore everything if there is no pathway for that species
-    except AttributeError:
-        # print " No data in "+ pathwayID #good for testing but takes up a lot of time in actuality
-        notPresent = 1
-    if notPresent == 0:
-        masterList.extend(currentList)
 
-    # run the function that saves each file
-    notPresent2 = 0
-    try:
-        # try actually does it if it works
-        saveListsToFile(genePathwayData(pathwayID), "Gene_data_" + pathwayID + ".csv", geneDirPath)
-    except AttributeError:
-        # print " No data in "+ pathwayID #good for testing but takes up a lot of time in actuality
-        notPresent2 = 1
 
-'''remove duplicates'''
-masterListNoDupes = removeDupes(masterList)
+def iterPathwayIds():
+    global pathwaySpeciesList
 
-# removes false values from masterListNoDupes and turns it into a list
-masterListNoDupes = list(filter(None, masterListNoDupes))
-count = 0
-for i in masterListNoDupes:  # removes false values and iterates through the list of lists
-    masterListNoDupes[count] = list(filter(None, masterListNoDupes[count]))
-    count += 1
+    for pathwayID in pathwaySpeciesList:
+        notPresent = 0
+        currentList = None
+        try:
+            currentList = genePathwayData(
+                pathwayID)  # need to ignore everything if there is no pathway for that species
+        except AttributeError:
+            # print " No data in "+ pathwayID #good for testing but takes up a lot of time in actuality
+            notPresent = 1
+        if notPresent == 0:
+            masterList.extend(currentList)
+
+        # run the function that saves each file
+        notPresent2 = 0
+        try:
+            # try actually does it if it works
+            saveListsToFile(genePathwayData(pathwayID), "Gene_data_" + pathwayID + ".csv", geneDirPath)
+        except AttributeError:
+            # print " No data in "+ pathwayID #good for testing but takes up a lot of time in actuality
+            notPresent2 = 1
+
+
+iterPathwayIds()
+
+
+def doRemoveDupes():
+    global masterListNoDupes
+    global masterList
+    # removes false values from masterListNoDupes and turns it into a list
+    masterListNoDupes = removeDupes(masterList)
+    masterListNoDupes = list(filter(None, masterListNoDupes))
+    count = 0
+    for i in masterListNoDupes:  # removes false values and iterates through the list of lists
+        masterListNoDupes[count] = list(filter(None, masterListNoDupes[count]))
+        count += 1
+
 
 '''find unique EC numbers so have a generic function and run it'''
 
@@ -224,40 +262,49 @@ def uniqueElementList(listName, locationNum):
     return ElementList
 
 
-EC_list = uniqueElementList(masterListNoDupes, "last")
+def makeMatrix():
+    global masterListNoDupes
+    global masterCountList
+    EC_list = uniqueElementList(masterListNoDupes, "last")
 
-# creating the matrix and adding up the counts
-masterCountList = [["Species"]]
-masterCountList[0].extend(EC_list)  # adds the Unique EC numbers to the end of the master count list of lists
-for i in speciesCodeList:  # @#
-    masterCountList.append([i])  # first item in each row (but first) is the species code
+    # creating the matrix and adding up the counts
+    masterCountList = [["Species"]]
+    masterCountList[0].extend(EC_list)  # adds the Unique EC numbers to the end of the master count list of lists
+    for i in speciesCodeList:  # @#
+        masterCountList.append([i])  # first item in each row (but first) is the species code
 
-iCount = 0
-for i in masterCountList[0]:  # for each EC number
-    if iCount != 0:  # first column isn't actually an EC#,
-        EC = i
-        jCount = 0
-        for j in masterCountList:  # for each species (using the specie code)
-            if jCount != 0:  # first row isn't actually a species
-                species = speciesCodeDict[j[0]]
-                kCount = 0
-                for k in masterListNoDupes:  # iterate over the culled master list to check for matching sets
-                    if k[0] == species and k[len(k) - 1] == EC:
-                        kCount += 1
-                masterCountList[jCount].append(str(kCount))
-            jCount += 1
-    iCount += 1
+    iCount = 0
+    for i in masterCountList[0]:  # for each EC number
+        if iCount != 0:  # first column isn't actually an EC#,
+            EC = i
+            jCount = 0
+            for j in masterCountList:  # for each species (using the specie code)
+                if jCount != 0:  # first row isn't actually a species
+                    species = speciesCodeDict[j[0]]
+                    kCount = 0
+                    for k in masterListNoDupes:  # iterate over the culled master list to check for matching sets
+                        if k[0] == species and k[len(k) - 1] == EC:
+                            kCount += 1
+                    masterCountList[jCount].append(str(kCount))
+                jCount += 1
+        iCount += 1
 
-# change master count list to be actual species:
-iCount = 0
-for i in masterCountList:
-    if iCount != 0: masterCountList[iCount][0] = speciesCodeDict[
-        i[0]]  # replaces species code with genus specie names
-    iCount += 1
+    # change master count list to be actual species:
+    iCount = 0
+    for i in masterCountList:
+        if iCount != 0: masterCountList[iCount][0] = speciesCodeDict[
+            i[0]]  # replaces species code with genus specie names
+        iCount += 1
+
+
+makeMatrix()
 
 
 # Make Master Files
 def makeMasterFiles():
+    global masterListNoDupes
+    global masterCountList
+    global newDirName
     saveListsToFile(masterListNoDupes, "Master_List.csv", newDirName)
     saveListsToFile(masterCountList, "Master_Count.csv", newDirName)
 
@@ -267,6 +314,7 @@ makeMasterFiles()
 
 # make a master fasta file saved in folder name
 def makeMasterFasta():
+    global geneListFromMaster
     rev_dict = {v: k for k, v in speciesCodeDict.items()}  # reverses dictionary keys and values
     for i in masterListNoDupes:
         # combines species codes and gene numbers in a list to be used for the master fasta function
@@ -276,86 +324,93 @@ def makeMasterFasta():
 makeMasterFasta()
 
 
-def getMasterFasta(gene):
+def getMasterFasta():
+    global geneListFromMaster
     DNA_info_list = []
     for gene in geneListFromMaster:
         # print gene
-        gene_fasta_data = kegg.get(gene).split("\n")  # calls the entry from KEGG and splits it into new lines
-        linecount = 0
-        for line in gene_fasta_data:
-            gene_fasta_data[linecount] = line.strip()  # removes blank spaces at the beginning and end of each line
+        geneFastaData = kegg.get(gene).split("\n")  # calls the entry from KEGG and splits it into new lines
+        lineCount = 0
+        organismName = ""
+        for line in geneFastaData:
+            geneFastaData[lineCount] = line.strip()  # removes blank spaces at the beginning and end of each line
             if line.startswith('ORGANISM'):  # finds where the entry that begins with organism is
-                gene_fasta_data[linecount] = line.replace("ORGANISM",
-                                                          "").strip()  # remoes organism and removes blank spaces ta beginning and end
-                find_blankspace = gene_fasta_data[linecount].find(
-                    " ")  # finds where thedouble blank space is in the organism line
-                organism_name = gene_fasta_data[linecount][
-                                find_blankspace:]  # the genus specie name is left from the orginal entry
-            linecount += 1
-        linecount = 0
-        for line in gene_fasta_data:
-            gene_fasta_data[linecount] = line.strip()
+                # removes organism and removes blank spaces ta beginning and end
+                geneFastaData[lineCount] = line.replace("ORGANISM", "").strip()
+                # finds where the double blank space is in the organism line
+                findBlankSpace = geneFastaData[lineCount].find(" ")
+                # the genus specie name is left from the orginal entry
+                organismName = geneFastaData[lineCount][findBlankSpace:]
+            lineCount += 1
+        lineCount = 0
+        for line in geneFastaData:
+            geneFastaData[lineCount] = line.strip()
             if line.startswith('ORTHOLOGY'):
-                gene_fasta_data[linecount] = line.strip
+                geneFastaData[lineCount] = line.strip
                 find_EC = line.find("EC:")  # finds within the line where the EC number is
-                gene_fasta_data[linecount] = line[find_EC:-1].replace("[", "").replace("EC:",
-                                                                                       "")  # removes the beginning bracket and EC: leaving just the number
-                EC_number = "EC " + gene_fasta_data[linecount]  # adds EC back
-                joined_organism_EC = [">" + str(organism_name).strip() + "%" + EC_number + "%" + gene.split(":")[
-                    1]]  # adds > to beginning to find the beginning of each entry more easily, adds % between EC number and the rest of the entry to help separate the EC number for later and removes semicolon from the gene entry and adds the gene number
-                DNA_info_list.append(joined_organism_EC)  # adds the entry to the blank list
-            linecount += 1
-        linecount = 0
-        for line in gene_fasta_data:
-            gene_fasta_data[linecount] = line.strip()
+
+                # removes the beginning bracket and EC: leaving just the number
+                geneFastaData[lineCount] = line[find_EC:-1].replace("[", "").replace("EC:", "")
+
+                EC_number = "EC " + geneFastaData[lineCount]  # adds EC back
+
+                # adds > to beginning to find the beginning of each entry more easily, adds % between EC number and
+                # the rest of the entry to help separate the EC number for later and removes semicolon from the gene
+                # entry and adds the gene number
+                joinedOrganismEC = [">" + str(organismName).strip() + "%" + EC_number + "%" + gene.split(":")[
+                    1]]
+
+                DNA_info_list.append(joinedOrganismEC)  # adds the entry to the blank list
+            lineCount += 1
+        lineCount = 0
+        for line in geneFastaData:
+            geneFastaData[lineCount] = line.strip()
             if line.startswith('NTSEQ'):
-                gene_fasta_data[linecount] = line.replace("NTSEQ", "").strip()
-                NTSEQlocator = linecount
-            linecount += 1
-        DNA_data_list = gene_fasta_data[NTSEQlocator:]
+                geneFastaData[lineCount] = line.replace("NTSEQ", "").strip()
+                ntseQLocator = lineCount
+            lineCount += 1
+        DNA_data_list = geneFastaData[ntseQLocator:]
         DNA_Seq = DNA_data_list[1:len(DNA_data_list) - 2]  # Takes just the DNA sequence
         separator = ""
-        joined_DNA_seq = [separator.join(
-            DNA_Seq)]  # combines the separate DNA sequence lines into one string and turns that into a single entry list
+        # combines the separate DNA sequence lines into one string and turns that into a single entry list
+        joined_DNA_seq = [separator.join(DNA_Seq)]
         DNA_info_list.append(joined_DNA_seq)  # adds single entry list to the list of lists
     return DNA_info_list
 
 
-saveListsToFile(getMasterFasta(geneListFromMaster), "Master_FASTA.csv", fastaDirPath)
+saveListsToFile(getMasterFasta(), "Master_FASTA.csv", fastaDirPath)
 
-masterfasta = getMasterFasta(geneListFromMaster)  # should actually go above the first time it gets called
+masterFasta = getMasterFasta()  # should actually go above the first time it gets called
 
-'''make a fasta file for each EC number saved in fastafoldername'''
-ECorderlist = []
+'''make a fasta file for each EC number saved in fasta folder name'''
+ecOrderList = []
 fasta_byEC = []
 iCount = 0
-for i in masterfasta:
+for i in masterFasta:
     # print i
     if i[0].startswith(">"):
-        isplit = i[0].split("%")  # finds the EC numbers using the % added previously
-        # print isplit
-        EC = isplit[1]
+        iSplit = i[0].split("%")  # finds the EC numbers using the % added previously
+        # print i split
+        EC = iSplit[1]
         EC_tf = "false"
         jCount = 0
-        for j in ECorderlist:  # if the EC number is already present sets it to true and continues
+        ecCount = 0
+        for j in ecOrderList:  # if the EC number is already present sets it to true and continues
             if EC == j:
-                ECcount = jCount
+                ecCount = jCount
                 EC_tf = "true"
             jCount += 1
         if EC_tf == "false":  # if the EC number is not there, it will be added to the list
-            ECorderlist.append(EC)
-            fasta_byEC.append(masterfasta[iCount:iCount + 2])
+            ecOrderList.append(EC)
+            fasta_byEC.append(masterFasta[iCount:iCount + 2])
         else:
-            fasta_byEC[ECcount].extend(masterfasta[iCount:iCount + 2])
+            fasta_byEC[ecCount].extend(masterFasta[iCount:iCount + 2])
 
     iCount += 1
 
-# print  ECorderlist
-# print fasta_byEC
-
 '''creates the FASTA files by EC numbers'''
 iCount = 0
-for i in ECorderlist:
+for i in ecOrderList:
     name = i.replace(".", "p").replace("EC ", "").replace(" ", "")
     saveListsToFile(fasta_byEC[iCount], name + ".csv", fastaDirPath)
     print(name + ".csv" + " saved in: " + fastaDirPath)

@@ -1,0 +1,4 @@
+KEGG_v1p1.py
+07-28-2020
+/home/student/Desktop/chem-py-project/project/data
+This script creates a series of files related to the genes associated with plant flavonoids from various species of plants. This script first creates the MasterCount and MasterList files; the MasterCount counts the number genes each plant species have that correspond with each EC number; while the MasterList lists every gene with number for each plant specie. These are located in /home/student/Desktop/chem-py-project/project/data/FASTA_Data. The script also creates files that only contains the genes of a single plant species biochemical pathway which are located in /home/student/Desktop/chem-py-project/project/data/Gene_Data. The script also creates a Master FASTA files which contains the DNA sequence of each gene and FASTA files organized by EC number, these are located in /home/student/Desktop/chem-py-project/project/data/FASTA_Data
