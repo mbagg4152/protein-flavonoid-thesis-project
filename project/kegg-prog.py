@@ -40,7 +40,7 @@ if os.path.exists(newDirName):
 geneDirPath = newDirName + '/Gene_Data'
 fastaDirPath = newDirName + '/FASTA_Data'
 chemDirPath = newDirName + '/Chemical_Data'
-genelist_frommaster = []
+geneListFromMaster = []
 
 
 def makeNewDirs():
@@ -270,7 +270,7 @@ def makeMasterFasta():
     rev_dict = {v: k for k, v in speciesCodeDict.items()}  # reverses dictionary keys and values
     for i in masterListNoDupes:
         # combines species codes and gene numbers in a list to be used for the master fasta function
-        genelist_frommaster.append(rev_dict[i[0]] + ":" + i[1])
+        geneListFromMaster.append(rev_dict[i[0]] + ":" + i[1])
 
 
 makeMasterFasta()
@@ -278,7 +278,7 @@ makeMasterFasta()
 
 def getMasterFasta(gene):
     DNA_info_list = []
-    for gene in genelist_frommaster:
+    for gene in geneListFromMaster:
         # print gene
         gene_fasta_data = kegg.get(gene).split("\n")  # calls the entry from KEGG and splits it into new lines
         linecount = 0
@@ -321,9 +321,9 @@ def getMasterFasta(gene):
     return DNA_info_list
 
 
-saveListsToFile(getMasterFasta(genelist_frommaster), "Master_FASTA.csv", fastaDirPath)
+saveListsToFile(getMasterFasta(geneListFromMaster), "Master_FASTA.csv", fastaDirPath)
 
-masterfasta = getMasterFasta(genelist_frommaster)  # should actually go above the first time it gets called
+masterfasta = getMasterFasta(geneListFromMaster)  # should actually go above the first time it gets called
 
 '''make a fasta file for each EC number saved in fastafoldername'''
 ECorderlist = []

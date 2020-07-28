@@ -3,10 +3,11 @@ Repo for the research methods class. The goal is to modernize, clean and adapt a
 
 ## Project Journal
 ### 7/28 
-Started looking through the code and thesis then created a GitHub for the project.  
-Made changes so that the code will run in a python 3 environment.  
-Created JSON files for the differing lists & dictionaries.  
-Added a code section that checks if the user has bioservices installed.
+1. Started looking through the code and thesis then created a GitHub for the project.  
+2. Made changes so that the code will run in a python 3 environment.  
+3. Created JSON files for the differing lists & dictionaries.  
+4. Added a code section that checks if the user has bioservices installed.  
+5. Started working on refactoring by renaming variables and creating functions to hold sections of code 
 
 
   
