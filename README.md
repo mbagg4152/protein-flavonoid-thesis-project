@@ -3,10 +3,9 @@
 Repo for the research methods class. The goal is to modernize, clean and adapt a former student's thesis project.
 ---
 #### Original Header
-Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson |   
----------------------------------------------------------------------------|
-KEGG.py, Made using Python 2.7 | 
-Info: JW started the code to get information from KEGG about the species we were interested in - April 2019
+Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson  
+KEGG.py, Made using Python 2.7  
+JW started the code to get information from KEGG about the species we were interested in - April 2019  
 
 ### Original code changelog
 Version | Change |
