@@ -1,27 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Originally Created on Wed Apr 17 2019
-
-@author: vmoorman and Jordan Wilson
-Made using Python 2.7
-KEGG.py - JW started the code to get information from KEGG about the species we were interested in - April 2019
-v0p1 - VRM getting the iteration and parsing part of the code to work - April 2019
-v0p2 - VRM making the count code work - April 2019
-v0p3 - JW getting the file output to work, revising the species codes and adding a dictionary - April 2019
-v0p4 - JW creating directory change function for Gene_data and adding additional plant species - multiple things still broken - May 2019
-v0p5 - VRM cleaned up some duplicate issues, folder locations, and ensured that species are written out in full  - May 2019
-v0p6 - JW creating function for master FASTA file (error occurs when running every entry) - May 2019
-v0p7 - JW editing lists for master fasta function and updating fasta function - May 2019
-v0p8 - VRM fixing and creating gene list for master fasta file - June 2019
-v0p8p2 - JW made a fasta file for each EC#- June 2019
-v1p0 - VRM cleaned up code
-v1p1p1 - JW added ReadMe
-v1p2 - JW added function to get plants that make Epicatechin - incorrectly
-v1p3 - VRM coded in epicatechin, catechin, eriodictyol, luteolin, naringenin listed in Chemical_Data --- leutolin actually wrong
-v1p3p1 - VRM tried to fix leutolin
-
-
-"""
 
 '''This are required for the script to work - it has all of the required dependencies'''
 #bioservices must be installed on your computer 
@@ -29,15 +6,16 @@ from bioservices.kegg import KEGG
 import os
 import sys
 import datetime
+
 k = KEGG()
 now = datetime.datetime.now()
 '''Make the necessary folders'''
 # gets current working directory and asks for user input for a new foldername
-foldername = os.getcwd()+ "\\" + raw_input("Input a save folder name: ")
+foldername = os.getcwd()+ "\\" + input("Input a save folder name: ")
 
 # determines if the new foldername already exists
 if os.path.exists(foldername): 
-    decision = raw_input(
+    decision = input(
         '''
         Warning, this folder already exists. 
         Hit enter to continue anyway or try another:''')
@@ -49,21 +27,21 @@ if os.path.exists(foldername):
         sys.exit("Try an unused folder name next time") 
 
 
-genefoldername = foldername + "\Gene_Data" # variable used to create the folder for the gene data
-fastafoldername = foldername + "\FASTA_Data" # variable used to create the folder for the fasta data
-chemicalfoldername = foldername +"\Chemical_Data"
+genefoldername = foldername + "\\Gene_Data" # variable used to create the folder for the gene data
+fastafoldername = foldername + "\\FASTA_Data" # variable used to create the folder for the fasta data
+chemicalfoldername = foldername +"\\Chemical_Data"
 
 try: os.mkdir(foldername) # creates the main working folder for the code
-except WindowsError: pass # stops code from making folder if this error occurs
+except: WindowsError: print("could not make dir") # stops code from making folder if this error occurs
 
 try: os.mkdir(genefoldername) # creates folder were gene data files will be inserted
-except WindowsError: pass
+except WindowsError: print("could not make dir")
 
 try: os.mkdir(fastafoldername) # creates folder where fasta files will be inserted
-except WindowsError: pass
+except WindowsError: print("could not make dir")
 
 try: os.mkdir(chemicalfoldername) # creates folder where fasta files will be inserted
-except WindowsError: pass
+except WindowsError: print("could not make dir")
 
 
 '''Python code to remove duplicate elements --- needs to be up here because of testing code '''
@@ -121,7 +99,8 @@ pathwaycode_list = ["00940", "00941", "00942", "00943", "00944"]#list of pathway
 pathwaycode_dictionary = {"00940": "phenylpropanoids", "00941": "flavonoids", "00942": "anthocyanins",  
                           "00943": "isoflavonoids", "00944": "flavones/flavonols", "00945": "stilbenoids"}#Dictionary defining each pathway by each chemical they're responisble for, "mtr": "Medicago truncatula" cut due to code error
 
-pathwayID_list = [i+j for i in speciescode_list for j in pathwaycode_list] #this is the full list of every pathway and species from the above lists
+pathwayID_list = [i+j for i in speciescode_list 
+                        for j in pathwaycode_list] # this is the full list of every pathway and species from the above lists
 '''pathwayID_list = ["ats00940", "ats00941", "brp00940", "brp00941", "aip00940", "aip00941"] #use for testing only; comment out when actually running the script
 speciescode_list=[] #use for testing only; comment out when actually running the script
 for i in pathwayID_list: speciescode_list.append(filter(str.isalpha, i)) #use for testing only; comment out when actually running the script
@@ -161,9 +140,11 @@ def gene_pathway_data(pathwayID):
     return geneline_list
         
 '''function that saves each file with a name that includes pathwayID  using the data from genes_listoflists'''
-def get_lists(whatlist, outname, outfolder=os.getcwd()): #whatlist should be a list of lists, outname should include an appropriate extension
+def saveListsToFile(whatlist, outname, outfolder=os.getcwd()): #whatlist should be a list of lists, outname should include an appropriate extension
     os.chdir(outfolder)#changes directory to current working directory
-    writedoc = file(outname,"w") #gives write privilages for the function to write to the file
+    os.chmod(outname, "+w") # give write permissions
+    writedoc = open(outname, "w")
+
     for line in whatlist:
         for item in line:
             item=str(item).replace("\n","") #removes the new lines in each list of list
@@ -176,6 +157,7 @@ def get_lists(whatlist, outname, outfolder=os.getcwd()): #whatlist should be a l
     writedoc.write("\n")
     writedoc.close() #closes file, required
     print(outname, "saved in: ", outfolder)
+    
 
 '''iterate over pathwayID_list and use the fuction defined above'''
 masterlist=[]
@@ -190,7 +172,7 @@ for pathwayID in pathwayID_list:
     
     #run the function that saves each file    
     notpresent2=0
-    try: get_gene_lists = get_lists(gene_pathway_data(pathwayID), "Gene_data_"+pathwayID+".csv", genefoldername) #try actually does it if it works
+    try: saveListsToFile(gene_pathway_data(pathwayID), "Gene_data_"+pathwayID+".csv", genefoldername) #try actually does it if it works
     except AttributeError:
         #print " No data in "+ pathwayID #good for testing but takes up a lot of time in actuality
         notpresent2=1
@@ -260,13 +242,13 @@ for i in mastercount_list:
     
 
 '''Make Master Files'''
-get_masterlist = get_lists(masterlist_nodup, "Master_List.csv", foldername)
-get_mastercount = get_lists(mastercount_list, "Master_Count.csv", foldername)
+saveListsToFile(masterlist_nodup, "Master_List.csv", foldername)
+saveListsToFile(mastercount_list, "Master_Count.csv", foldername)
 
 
 
 '''make a master fasta file saved in foldername'''
-rev_dict={v:k for k,v in speciescode_dictionary.iteritems()}#reverses dictionary keys and values
+rev_dict={v:k for k,v in speciescode_dictionary.items()}#reverses dictionary keys and values
 genelist_frommaster=[]
 for i in masterlist_nodup:
     #print rev_dict[i[0]]+":"+i[1]
@@ -310,7 +292,7 @@ def get_master_fasta(gene):
         DNA_info_list.append(joined_DNA_seq) #adds single entry list to the list of lists
     return DNA_info_list
               
-get_lists(get_master_fasta(genelist_frommaster), "Master_FASTA.csv", fastafoldername)
+saveListsToFile(get_master_fasta(genelist_frommaster), "Master_FASTA.csv", fastafoldername)
 
 masterfasta=get_master_fasta(genelist_frommaster)#should actually go above the first time it gets called
 
@@ -346,12 +328,12 @@ for i in masterfasta:
 icount=0
 for i in ECorderlist:
     name=i.replace(".","p").replace("EC ","").replace(" " ,"")
-    FASTAbyEC= get_lists(fasta_byEC[icount], name+".csv", fastafoldername)
+    saveListsToFile(fasta_byEC[icount], name+".csv", fastafoldername)
     print(name+".csv" + " saved in: "+fastafoldername)
     icount+=1
 
 '''Creates ReadMe file'''     
-with open(foldername+"\ReadMe.txt", "w") as ReadMe:
+with open(foldername+"\\ReadMe.txt", "w") as ReadMe:
     ReadMe.write("KEGG_v1p1.py\n")
     ReadMe.write(now.strftime("%m-%d-%Y")+"\n")
     ReadMe.write(foldername+"\n")
@@ -404,22 +386,21 @@ for i in mastercount_list: #for each species
 print(masterEC_list)
 masterEC_list=masterEC_list[1:]
 
-phenylalanineTOcinnamicacid=["or","EC:4.3.1.24","EC:4.3.1.25"]
-cinnamicacidTOpcoumaroyllcoa=["and","EC:6.2.1.12","EC:1.14.14.91"]
-pcoumaroyllcoaTOcaffeoylcoa1=["and","EC:1.14.13.-"]
-pcoumaroyllcoaTOcaffeoylcoa2=["and","EC:2.3.1.133","EC:1.14.14.96"]
-pcoumaroyllcoaTOnaringenin=["and","EC:2.3.1.74","EC:5.5.1.6"]
-naringeninTOeriodictyol=["or","EC:1.14.14.81","EC:1.14.14.82"]
-caffeoylcoaTOeriodictyol=["and","EC:2.3.1.74"]
-eriodictyolTOleucocyanidin=["and","EC:1.14.11.9","EC:1.1.12.19"]
-leucocyanidinTOcatechin=["and","EC:1.17.1.3"]
-leucocyanidinTOcyanidin=["and","EC:1.14.20.4"]
-cyanidinTOepicatechin=["and","EC:1.3.1.77"]
-pcoumaroyllcoaTOnaringenin=["and","EC:2.3.1.74","EC:5.5.1.6"]
-eriodictyolTOluteolin=["or","EC:1.14.20.5", "EC:1.14.19.76"]
-naringeninTOapigenin=["or","EC:1.14.20.5","EC:1.14.19.76"]
-apigeninTOluteolin=["or","EC:1.14.14.81","EC:1.14.14.82"]
-
+apigenToLute = ["or","EC:1.14.14.81","EC:1.14.14.82"] # apigenin -> luteolin
+cCoaToEriod = ["and","EC:2.3.1.74"] # caffeoyl coa -> eriodoctyol
+cinnToPCoa = ["and","EC:6.2.1.12","EC:1.14.14.91"] # cinnamic acid -> p coumaroyll coa
+cyanToEpicat = ["and","EC:1.3.1.77"] # cyanidin -> epicatechin 
+eriodToLeuco = ["and","EC:1.14.11.9","EC:1.1.12.19"] # eriodictyol -> leucocyanidin 
+eriodToLute = ["or","EC:1.14.20.5", "EC:1.14.19.76"] # eriodictyol -> luteolin
+leucoToCate = ["and","EC:1.17.1.3"] # luteolin -> catechin
+leucoToCyan = ["and","EC:1.14.20.4"] # luteolin -> cyanidin
+narinToApigen = ["or","EC:1.14.20.5","EC:1.14.19.76"] # naringenin -> apigenin
+narinToEriod = ["or","EC:1.14.14.81","EC:1.14.14.82"] # naringenin -> eriodictyol
+pcoaToCcoa1 = ["and","EC:1.14.13.-"] # p coumaroyll coa -> caffeoyl coa
+pcoaToCcoa2 = ["and","EC:2.3.1.133","EC:1.14.14.96"] # p coumaroyll coa -> caffeoyl coa
+pcoaToNarin = ["and","EC:2.3.1.74","EC:5.5.1.6"] # p coumaroyll coa -> naringenin
+phenylToCinn = ["or","EC:4.3.1.24","EC:4.3.1.25"] # phenylalanine -> cinnamic acid
+pcoaToNarin = ["and","EC:2.3.1.74","EC:5.5.1.6"] # p coumaroyll coa -> naringenin
 
 epicatechinlist=[]
 catechinlist=[]
@@ -430,33 +411,33 @@ luteolinlist=[]
 for i in masterEC_list:
     #print i
     
-    epicatechin= "if (("+ECandor(phenylalanineTOcinnamicacid) + ") and " + ECandor(cinnamicacidTOpcoumaroyllcoa)+ " and (" + ECandor(pcoumaroyllcoaTOcaffeoylcoa1)+" or ("+ECandor(
-        pcoumaroyllcoaTOcaffeoylcoa2)+"))"+" and "+ECandor(caffeoylcoaTOeriodictyol)+" and "+ECandor(eriodictyolTOleucocyanidin)+" and "+ECandor(
-        leucocyanidinTOcyanidin)+" and "+ECandor(cyanidinTOepicatechin)+") in i: epicatechinlist.append([i[0]])"
+    epicatechin= "if (("+ECandor(phenylToCinn) + ") and " + ECandor(cinnToPCoa)+ " and (" + ECandor(pcoaToCcoa1)+" or ("+ECandor(
+        pcoaToCcoa2)+"))"+" and "+ECandor(cCoaToEriod)+" and "+ECandor(eriodToLeuco)+" and "+ECandor(
+        leucoToCyan)+" and "+ECandor(cyanToEpicat)+") in i: epicatechinlist.append([i[0]])"
     exec(epicatechin)   
     
-    catechin= "if (("+ECandor(phenylalanineTOcinnamicacid) + ") and " + ECandor(cinnamicacidTOpcoumaroyllcoa)+ " and (" + ECandor(pcoumaroyllcoaTOcaffeoylcoa1)+" or ("+ECandor(
-        pcoumaroyllcoaTOcaffeoylcoa2)+"))"+" and "+ECandor(caffeoylcoaTOeriodictyol)+" and "+ECandor(eriodictyolTOleucocyanidin)+" and "+ECandor(
-        leucocyanidinTOcatechin)+") in i: catechinlist.append([i[0]])"
+    catechin= "if (("+ECandor(phenylToCinn) + ") and " + ECandor(cinnToPCoa)+ " and (" + ECandor(pcoaToCcoa1)+" or ("+ECandor(
+        pcoaToCcoa2)+"))"+" and "+ECandor(cCoaToEriod)+" and "+ECandor(eriodToLeuco)+" and "+ECandor(
+        leucoToCate)+") in i: catechinlist.append([i[0]])"
     exec(catechin)
 
-    eriodictyol= "if (("+ECandor(phenylalanineTOcinnamicacid) + ") and " + ECandor(cinnamicacidTOpcoumaroyllcoa)+ " and (" + ECandor(pcoumaroyllcoaTOcaffeoylcoa1)+" or ("+ECandor(
-        pcoumaroyllcoaTOcaffeoylcoa2)+"))"+" and "+ECandor(caffeoylcoaTOeriodictyol)+") in i: eriodictyollist.append([i[0]])"
+    eriodictyol= "if (("+ECandor(phenylToCinn) + ") and " + ECandor(cinnToPCoa)+ " and (" + ECandor(pcoaToCcoa1)+" or ("+ECandor(
+        pcoaToCcoa2)+"))"+" and "+ECandor(cCoaToEriod)+") in i: eriodictyollist.append([i[0]])"
     exec (eriodictyol)
     
-    luteolin= "if (("+ECandor(phenylalanineTOcinnamicacid) + ") and " + ECandor(cinnamicacidTOpcoumaroyllcoa)+ " and (" + ECandor(pcoumaroyllcoaTOcaffeoylcoa1)+" or ("+ECandor(
-        pcoumaroyllcoaTOcaffeoylcoa2)+"))"+" and "+ECandor(caffeoylcoaTOeriodictyol)+" and ("+ECandor(eriodictyolTOluteolin)+")) in i: luteolinlist.append([i[0]])"
+    luteolin= "if (("+ECandor(phenylToCinn) + ") and " + ECandor(cinnToPCoa)+ " and (" + ECandor(pcoaToCcoa1)+" or ("+ECandor(
+        pcoaToCcoa2)+"))"+" and "+ECandor(cCoaToEriod)+" and ("+ECandor(eriodToLute)+")) in i: luteolinlist.append([i[0]])"
     exec (luteolin)
-    '''luteolin= "if (("+ECandor(phenylalanineTOcinnamicacid) + ") and " + ECandor(cinnamicacidTOpcoumaroyllcoa)+ " and (" + ECandor(pcoumaroyllcoaTOcaffeoylcoa1)+" or ("+ECandor(
-        pcoumaroyllcoaTOcaffeoylcoa2)+"))"+" and "+ECandor(caffeoylcoaTOeriodictyol)+" and "+ECandor(eriodictyolTOluteolin)+") in i: luteolinlist.append([i[0]])"
+    '''luteolin= "if (("+ECandor(phenylToCinn) + ") and " + ECandor(cinnToPCoa)+ " and (" + ECandor(pcoaToCcoa1)+" or ("+ECandor(
+        pcoaToCcoa2)+"))"+" and "+ECandor(cCoaToEriod)+" and "+ECandor(eriodToLute)+") in i: luteolinlist.append([i[0]])"
     exec luteolin'''#didn't work
 
-    naringenin= "if (("+ECandor(phenylalanineTOcinnamicacid) + ") and " + ECandor(cinnamicacidTOpcoumaroyllcoa) + " and "+ ECandor(pcoumaroyllcoaTOnaringenin) +") in i: naringeninlist.append([i[0]])"
+    naringenin= "if (("+ECandor(phenylToCinn) + ") and " + ECandor(cinnToPCoa) + " and "+ ECandor(pcoaToNarin) +") in i: naringeninlist.append([i[0]])"
     exec (naringenin)
 
-get_lists(epicatechinlist, "epicatechinspecies.txt", outfolder=foldername+"\Chemical_Data")
-get_lists(catechinlist, "catechinspecies.txt", outfolder=foldername+"\Chemical_Data")
-get_lists(eriodictyollist, "eriodictyolspecies.txt", outfolder=foldername+"\Chemical_Data")
-get_lists(luteolinlist, "luteolinspecies.txt", outfolder=foldername+"\Chemical_Data")
-get_lists(naringeninlist, "naringeninspecies.txt", outfolder=foldername+"\Chemical_Data")
+saveListsToFile(epicatechinlist, "epicatechinspecies.txt", outfolder=foldername+"\\Chemical_Data")
+saveListsToFile(catechinlist, "catechinspecies.txt", outfolder=foldername+"\\Chemical_Data")
+saveListsToFile(eriodictyollist, "eriodictyolspecies.txt", outfolder=foldername+"\\Chemical_Data")
+saveListsToFile(luteolinlist, "luteolinspecies.txt", outfolder=foldername+"\\Chemical_Data")
+saveListsToFile(naringeninlist, "naringeninspecies.txt", outfolder=foldername+"\\Chemical_Data")
     
