@@ -1,0 +1,4 @@
+KEGG_v1p1.py
+12-04-2019
+C:\Users\jorda\.spyder\Research\2019December04_1
+This script creates a series of files related to the genes associated with plant flavonoids from various species of plants. This script first creates the MasterCount and MasterList files; the MasterCount counts the number genes each plant species have that correspond with each EC number; while the MasterList lists every gene with number for each plant specie. These are located in C:\Users\jorda\.spyder\Research\2019December04_1\FASTA_Data. The script also creates files that only contains the genes of a single plant species biochemical pathway which are located in C:\Users\jorda\.spyder\Research\2019December04_1\Gene_Data. The script also creates a Master FASTA files which contains the DNA sequence of each gene and FASTA files organized by EC number, these are located in C:\Users\jorda\.spyder\Research\2019December04_1\FASTA_Data
