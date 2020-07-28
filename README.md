@@ -1,6 +1,6 @@
 ## Chem KEGG Py-Project 
 Repo for the research methods class. The goal is to modernize, clean and adapt a former student's thesis project.
-
+---
 #### Original Header
 Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson. Made using Python 2.7
 - KEGG.py - JW started the code to get information from KEGG about the species we were interested in - April 2019
