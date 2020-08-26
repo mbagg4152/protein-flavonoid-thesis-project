@@ -72,7 +72,8 @@ def remove_dupes(dupe_list):
     return unique_list
 
 
-species_list = ecat_test
+# change which list should be used for test input
+species_list = cate_test
 
 # this is the full list of every pathway and species from both lists
 path_and_species_list = [i + j for i in species_list for j in pathway_list]
@@ -379,24 +380,6 @@ def write_readme():
 
 write_readme()
 
-
-def get_ecomm(list_name):
-    i_count = 0
-    code_string = ''
-    # print('before change: ' + list_name)
-    for i in list_name:
-        if i_count > 0:
-            code_string += '"' + i + '"'
-            try:
-                list_name[i_count + 1]
-            except IndexError:
-                break
-            code_string += sp + list_name[0] + sp
-        i_count += 1
-    # print('after change: ' + code_string)
-    return code_string
-
-
 masterEC_list = [['species', 'EC#s']]
 counter = 0
 print('- filling master matrix...')
@@ -431,55 +414,61 @@ cate_list = []
 erio_list = []
 nari_list = []
 lute_list = []
+bute_list = []
+apig_list = []
+kaem_list = []
+quer_list = []
+cyan_list = []
+epig_list = []
+gall_list = []
 # Be careful in making these of parentheses
 print('- looping through master ec list...')
 for i in masterEC_list:
-    # print i
-
-    epicatechin = "if ((" + get_ecomm(phen_cinn) + ") and " + get_ecomm(
-        cinn_pcoa) + " and (" + get_ecomm(
-        pcoa_ccoa1) + " or (" + get_ecomm(
-        pcoa_ccoa2) + "))" + " and " + get_ecomm(
-        ccoa_erio) + " and " + get_ecomm(
-        erio_leuc) + " and " + get_ecomm(
-        leuc_cyan) + " and " + get_ecomm(
-        cyan_epic) + ") in i: ecat_list.append([i[0]])"
-    exec(epicatechin)
-
-    catechin = "if ((" + get_ecomm(phen_cinn) + ") and " + get_ecomm(
-        cinn_pcoa) + " and (" + get_ecomm(
-        pcoa_ccoa1) + " or (" + get_ecomm(
-        pcoa_ccoa2) + "))" + " and " + get_ecomm(
-        ccoa_erio) + " and " + get_ecomm(
-        erio_leuc) + " and " + get_ecomm(
-        leuc_cate) + ") in i: cate_list.append([i[0]])"
-    exec(catechin)
-
-    eriodictyol = "if ((" + get_ecomm(phen_cinn) + ") and " + get_ecomm(
-        cinn_pcoa) + " and (" + get_ecomm(
-        pcoa_ccoa1) + " or (" + get_ecomm(
-        pcoa_ccoa2) + "))" + " and " + get_ecomm(
-        ccoa_erio) + ") in i: erio_list.append([i[0]])"
-    exec(eriodictyol)
-
-    luteolin = "if ((" + get_ecomm(phen_cinn) + ") and " + get_ecomm(
-        cinn_pcoa) + " and (" + get_ecomm(
-        pcoa_ccoa1) + " or (" + get_ecomm(
-        pcoa_ccoa2) + "))" + " and " + get_ecomm(
-        ccoa_erio) + " and (" + get_ecomm(
-        erio_lute) + ")) in i: lute_list.append([i[0]])"
-    exec(luteolin)
-    naringenin = "if ((" + get_ecomm(phen_cinn) + ") and " + get_ecomm(
-        cinn_pcoa) + " and " + get_ecomm(
-        pcoa_nari) + ") in i: nari_list.append([i[0]])"
-    exec(naringenin)
-
+    if ecat in i:
+        ecat_list.append([i[0]])
+    if cate in i:
+        cate_list.append([i[0]])
+    if eriodictyol in i:
+        erio_list.append([i[0]])
+    if lute in i:
+        lute_list.append([i[0]])
+    if naringenin in i:
+        nari_list.append([i[0]])
+    if butein in i:
+        bute_list.append([i[0]])
+    if apigenin in i:
+        apig_list.append([i[0]])
+    if kaem in i:
+        kaem_list.append([i[0]])
+    if quer in i:
+        quer_list.append([i[0]])
+    if cyan in i:
+        cyan_list.append([i[0]])
+    if epig in i:
+        epig_list.append([i[0]])
+    if gall in i:
+        gall_list.append([i[0]])
 save_file(ecat_list, ecat_file, chem_path)
 save_file(cate_list, cate_file, chem_path)
 save_file(erio_list, erio_file, chem_path)
 save_file(lute_list, lute_file, chem_path)
 save_file(nari_list, nari_file, chem_path)
+save_file(bute_list, bute_file, chem_path)
+save_file(apig_list, apig_file, chem_path)
+save_file(kaem_list, kaem_file, chem_path)
+save_file(quer_list, quer_file, chem_path)
+save_file(cyan_list, cyan_file, chem_path)
+save_file(epig_list, epig_file, chem_path)
+save_file(gall_list, gall_file, chem_path)
 print('ecat data:\n\t' + str(ecat_list))
 print('cate data:\n\t' + str(cate_list))
 print('erio data:\n\t' + str(erio_list))
 print('nari data:\n\t' + str(nari_list))
+print('lute data:\n\t' + str(lute_list))
+print('bute data:\n\t' + str(bute_list))
+print('apig data:\n\t' + str(apig_list))
+print('kaem data:\n\t' + str(kaem_list))
+print('quer data:\n\t' + str(quer_list))
+print('cyan data:\n\t' + str(cyan_list))
+print('epig data:\n\t' + str(epig_list))
+print('gall data:\n\t' + str(gall_list))

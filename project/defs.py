@@ -11,6 +11,13 @@ chem_dir = slash + 'Chemical_Data'
 csv_ext = '.csv'
 ecat_file = 'ecat-species.txt'
 erio_file = 'erio-species.txt'
+bute_file = 'bute.txt'
+apig_file = 'apig.txt'
+kaem_file = 'kaem.txt'
+quer_file = 'quer.txt'
+cyan_file = 'cyan.txt'
+epig_file = 'epig.txt'
+gall_file = 'gall.txt'
 fasta_dir = slash + 'FASTA_Data'
 gene_dir = slash + 'Gene_Data'
 gene_prefix = 'Gene_data_'
@@ -30,21 +37,42 @@ erio_test_json = 'info' + slash + 'testErio.json'
 nari_test_json = 'info' + slash + 'testNari.json'
 j_key = 'obj'
 
-# logical operations
-phen_cinn = ['or', 'EC:4.3.1.24', 'EC:4.3.1.25']
-cinn_pcoa = ['and', 'EC:6.2.1.12', 'EC:1.14.14.91']
-pcoa_ccoa1 = ['and', 'EC:1.14.13.-']
-pcoa_ccoa2 = ['and', 'EC:2.3.1.133', 'EC:1.14.14.96']
-pcoa_nari = ['and', 'EC:2.3.1.74', 'EC:5.5.1.6']
-nari_erio = ['or', 'EC:1.14.14.81', 'EC:1.14.14.82']
-ccoa_erio = ['and', 'EC:2.3.1.74']
-erio_leuc = ['and', 'EC:1.14.11.9', 'EC:1.1.12.19']
-leuc_cate = ['and', 'EC:1.17.1.3']
-leuc_cyan = ['and', 'EC:1.14.20.4']
-cyan_epic = ['and', 'EC:1.3.1.77']
-erio_lute = ['or', 'EC:1.14.20.5', 'EC:1.14.19.76']
-nari_apig = ['or', 'EC:1.14.20.5', 'EC:1.14.19.76']
-apig_lute = ['or', 'EC:1.14.14.81', 'EC:1.14.14.82']
+# shortened path variables, used for simplification
+# the letters are not meaningful
+eca = 'EC:4.3.1.24'
+ecb = 'EC:4.3.1.25'
+ecc = 'EC:1.14.14.91'
+ecd = 'EC:6.2.1.12'
+ece = 'EC:23.1.170'
+ecf = 'EC:2.3.1.133'
+ecg = 'EC:1.14.14.96'
+ech = 'EC:1.14.13.-'
+eci = 'EC:2.3.1.74'
+ecj = 'EC:5.5.1.6'
+eck = 'EC:1.14.20.5'
+ecl = 'EC:1.14.19.76'
+ecm = 'EC:1.14.14.81'
+ecn = 'EC:1.14.14.82'
+eco = 'EC:1.14.11.9'
+ecp = 'EC:1.14.20.6'
+ecq = 'EC:1.1.12.19'
+ecr = 'EC:1.14.20.4'
+ecs = 'EC:1.3.1.77'
+ect = 'EC:1.17.1.3'
+
+start = (eca or ecb) and (ecc and ecd)
+butein = start and ece
+naringenin = start and eci and ecj
+eriodictyol = (naringenin and (ecm or ecn)) or (ech or (ecf and ecg) and eci)
+apigenin = naringenin and (eck or ecl)
+lute = apigenin and (ecm or ecn)
+kaem = naringenin and eco and ecp
+quer = eriodictyol and ((eco and ecp) or (kaem and (ecm or ecn)))
+cate = eriodictyol and eco and ecq and ect
+gall = eriodictyol and eco and ecm and ecq and ect
+epig = eriodictyol and eco and ecm and ecq and ecr and ecs
+cyan = eriodictyol and eco and ecq and ecr
+ecat = cyan and ecs
 
 
 def get_json_data(file_name, key):
@@ -70,5 +98,4 @@ pathway_list = get_json_data(path_list_json, j_key)
 # Dictionary/list of key-value pairs defining each pathway by each chemical they're responsible for
 # "mtr": "Medicago truncatula" cut due to code error
 pathway_pairs = get_json_data(path_dict_json, j_key)
-
 now = datetime.datetime.now()
