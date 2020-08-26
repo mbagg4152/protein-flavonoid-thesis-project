@@ -73,17 +73,10 @@ def remove_dupes(dupe_list):
 
 
 # change which list should be used for test input
-species_list = cate_test
+species_list = full_list
 
 # this is the full list of every pathway and species from both lists
 path_and_species_list = [i + j for i in species_list for j in pathway_list]
-
-# use for testing only; comment out when running the script. applies to next 4 lines
-# path_and_species_list = ["ats00940", "ats00941", "brp00940", "brp00941", "aip00940", "aip00941"]
-# species_list=[]
-# for i in path_and_species_list: species_list.append(filter(str.isalpha, i))
-# species_list = remove_dupes(species_list)
-
 
 gene_list_from_master = []
 ec_order_list = []
@@ -96,7 +89,7 @@ master_count_matrix = [[]]
 # function that fetches the required data
 def gene_pathway_data(pathway_id):
     print('- working on appending gene data...')
-    entry_lines = kegg.get(pathway_id).split(nl)  # gets all of the data and splits it by line
+    entry_lines = kegg.get(pathway_id).split(NL)  # gets all of the data and splits it by line
     # print genes
     line_count = 0
     gene_locator = 0
@@ -116,7 +109,7 @@ def gene_pathway_data(pathway_id):
         split_sig = '^*^'
         gene = gene.replace('  ', split_sig).replace(';', split_sig).replace('[', split_sig).replace(']', '')
         gene = gene.split(split_sig)
-        alpha_only = nix
+        alpha_only = NIX
         for char in pathway_id:
             if char.isalpha():
                 alpha_only += char
@@ -140,14 +133,14 @@ def save_file(lists_to_write, output_dir, current):
     for line in lists_to_write:
         for item in line:
             # removes the new lines in each list of list
-            item = str(item).replace(nl, nix)
-            if item == nix:  # if the list in the list of list is empty writes a dash
+            item = str(item).replace(NL, NIX)
+            if item == NIX:  # if the list in the list of list is empty writes a dash
                 writedoc.write('-')
             else:  # write the entry in the list of lists to the file
                 writedoc.write(item)
             writedoc.write(',')  # tab delineated; use "," for csv files
-        writedoc.write(nl)
-    writedoc.write(nl)
+        writedoc.write(NL)
+    writedoc.write(NL)
     writedoc.close()
     # print('- Saved ' + output_dir)
 
@@ -169,7 +162,7 @@ def parse_master():
 
         # run the function that saves each file
         try:  # try actually does it if it works
-            save_file(gene_pathway_data(path_id), gene_prefix + path_id + csv_ext, gene_path)
+            save_file(gene_pathway_data(path_id), GDATA + path_id + CSV, gene_path)
         except AttributeError:
             pass
 
@@ -259,7 +252,7 @@ def get_master_fasta(gene):
     global gene_list_from_master
     for gene in gene_list_from_master:
         # calls the entry from KEGG and splits it into new lines
-        gene_fasta_data = kegg.get(gene).split(nl)
+        gene_fasta_data = kegg.get(gene).split(NL)
         # print('got gene fasta data')
         lines = 0
         ntseq_locator = 0
@@ -350,8 +343,8 @@ def make_fasta():
     print('- creating fasta files by ec number...')
     counter = 0
     for i in ec_order_list:
-        name = i.replace('.', 'p').replace('EC ', nix).replace(sp, nix)
-        save_file(fasta_by_ec[counter], name + csv_ext, fasta_path)
+        name = i.replace('.', 'p').replace('EC ', NIX).replace(SP, NIX)
+        save_file(fasta_by_ec[counter], name + CSV, fasta_path)
         # print('- Found data for ' + name)
         counter += 1
 
@@ -364,7 +357,7 @@ def write_readme():
     print('- creating README...')
     with open(main_dir + readme, 'w') as readme_doc:
         readme_doc.write("KEGG_v1p1.py\n")
-        readme_doc.write(now.strftime("%m-%d-%Y") + "\n")
+        readme_doc.write(NOW.strftime("%m-%d-%Y") + "\n")
         readme_doc.write(main_dir + "\n")
         readme_doc.write(
             'This script creates a series of files related to the genes associated with plant flavonoids ' +
@@ -409,44 +402,47 @@ for i in master_count_matrix:  # for each species
 # print(masterEC_list)
 masterEC_list = masterEC_list[1:]
 
-ecat_list = []
-cate_list = []
-erio_list = []
-nari_list = []
-lute_list = []
-bute_list = []
 apig_list = []
-kaem_list = []
-quer_list = []
+bute_list = []
+cate_list = []
 cyan_list = []
+ecat_list = []
 epig_list = []
+erio_list = []
 gall_list = []
+kaem_list = []
+lute_list = []
+nari_list = []
+quer_list = []
 # Be careful in making these of parentheses
 print('- looping through master ec list...')
 for i in masterEC_list:
-    if ecat in i:
-        ecat_list.append([i[0]])
-    if cate in i:
-        cate_list.append([i[0]])
+    print(i)
+    first = [i[0]]
+    if epicatechin in i:
+        ecat_list.append(first)
+    if catechin in i:
+        cate_list.append(first)
     if eriodictyol in i:
-        erio_list.append([i[0]])
-    if lute in i:
-        lute_list.append([i[0]])
-    if naringenin in i:
-        nari_list.append([i[0]])
-    if butein in i:
-        bute_list.append([i[0]])
+        erio_list.append(first)
     if apigenin in i:
-        apig_list.append([i[0]])
-    if kaem in i:
+        apig_list.append(first)
+    if luteolin in i:
+        lute_list.append(first)
+    if naringenin in i:
+        nari_list.append(first)
+    if butein in i:
+        bute_list.append(first)
+
+    if kaempferol in i:
         kaem_list.append([i[0]])
-    if quer in i:
+    if quercetin in i:
         quer_list.append([i[0]])
-    if cyan in i:
+    if cyanidin in i:
         cyan_list.append([i[0]])
-    if epig in i:
+    if epigallocatechin in i:
         epig_list.append([i[0]])
-    if gall in i:
+    if gallocatechin in i:
         gall_list.append([i[0]])
 save_file(ecat_list, ecat_file, chem_path)
 save_file(cate_list, cate_file, chem_path)
