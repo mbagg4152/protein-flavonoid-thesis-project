@@ -11,7 +11,8 @@ kegg = KEGG()
 cwd = os.getcwd() + slash
 
 # get dir name from user & append to current directory
-main_dir = cwd + input("Input a save folder name: ")
+# main_dir = cwd + input("Input a save folder name: ")
+main_dir = cwd + 'data'
 chem_path = ''
 fasta_path = ''
 gene_path = ''
@@ -22,14 +23,14 @@ def start():
     global fasta_path
     global gene_path
     # check if main dir exists
-    if os.path.exists(main_dir):
-        decision = input("Directory already exists. Press return key to continue, or type new name: ")
-        # if return key hit will continue running th code, will overwrite anything in the preexisting folder
-        if decision == "":
-            pass
-        else:
-            # stops code completely and the code will need to be restarted with a different name
-            sys.exit("Try an unused folder name next time")
+    # if os.path.exists(main_dir):
+    #     decision = input("Directory already exists. Press return key to continue, or type new name: ")
+    #     # if return key hit will continue running th code, will overwrite anything in the preexisting folder
+    #     if decision == "":
+    #         pass
+    #     else:
+    #         # stops code completely and the code will need to be restarted with a different name
+    #         sys.exit("Try an unused folder name next time")
 
     # create sub dirs for gene, FASTA & chemical data
     chem_path = main_dir + chem_dir
