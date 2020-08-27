@@ -418,22 +418,20 @@ quer_list = []
 # Be careful in making these of parentheses
 print('- looping through master ec list...')
 for i in masterEC_list:
-    print(i)
-    first = [i[0]]
     if epicatechin in i:
-        ecat_list.append(first)
+        ecat_list.append([i[0]])
     if catechin in i:
-        cate_list.append(first)
+        cate_list.append([i[0]])
     if eriodictyol in i:
-        erio_list.append(first)
+        erio_list.append([i[0]])
     if apigenin in i:
-        apig_list.append(first)
+        apig_list.append([i[0]])
     if luteolin in i:
-        lute_list.append(first)
+        lute_list.append([i[0]])
     if naringenin in i:
-        nari_list.append(first)
+        nari_list.append([i[0]])
     if butein in i:
-        bute_list.append(first)
+        bute_list.append([i[0]])
 
     if kaempferol in i:
         kaem_list.append([i[0]])
