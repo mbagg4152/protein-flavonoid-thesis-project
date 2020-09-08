@@ -1,9 +1,12 @@
 import sys
+import threading
 
 from bioservices.kegg import KEGG
-
+import datetime
+import time
 from defs import *
 
+init_time = datetime.datetime.now()
 # changed from k -> kegg. 1 letter var names should only be used in iteration
 kegg = KEGG()
 
@@ -68,13 +71,19 @@ start()
 def remove_dupes(dupe_list):
     unique_list = []  # creates an empty list
     for item in dupe_list:
+        sp_name = item[0]
+        sitem = str(item)
+        print(sitem)
+        sp_name.replace('(RAPDB)', NIX)
+        sp_name.replace('(RefSeq)', NIX)
+        item[0] = sp_name
         if item not in unique_list:
             unique_list.append(item)  # adds item to empty list if it's not already in the list
     return unique_list
 
 
 # change which list should be used for test input
-species_list = full_list
+species_list = full_no_dosa
 
 # this is the full list of every pathway and species from both lists
 path_and_species_list = [i + j for i in species_list for j in pathway_list]
@@ -89,8 +98,8 @@ master_count_matrix = [[]]
 
 # function that fetches the required data
 def gene_pathway_data(pathway_id):
-    print('- working on appending gene data...')
-    entry_lines = kegg.get(pathway_id).split(NL)  # gets all of the data and splits it by line
+    print(pathway_id)
+    entry_lines = str(kegg.get(pathway_id)).split(NL)  # gets all of the data and splits it by line
     # print genes
     line_count = 0
     gene_locator = 0
@@ -129,6 +138,7 @@ def gene_pathway_data(pathway_id):
 # list_to_write should be a list of lists, output_dir should include an appropriate extension
 def save_file(lists_to_write, output_dir, current):
     os.chdir(current)
+    form_counter = 0
     # open file to be written
     writedoc = open(output_dir, 'w')
     for line in lists_to_write:
@@ -139,21 +149,28 @@ def save_file(lists_to_write, output_dir, current):
                 writedoc.write('-')
             else:  # write the entry in the list of lists to the file
                 writedoc.write(item)
-            writedoc.write(',')  # tab delineated; use "," for csv files
-        writedoc.write(NL)
+            writedoc.write(', ')  # tab delineated; use "," for csv files
+            if form_counter == 7:
+                form_counter = 0
+                writedoc.write(NL)
+            form_counter += 1
     writedoc.write(NL)
     writedoc.close()
-    # print('- Saved ' + output_dir)
 
 
 def parse_master():
     global master_list
     global master_no_dupes
     print('- parsing list of species & pathways...')
+    threads = []
+
     for path_id in path_and_species_list:
         not_present = 0
         current_list = []
+        t = threading.Thread(target=gene_pathway_data, args=(path_id,))
         try:  # need to ignore everything if there is no pathway for that species
+            t.start()
+            threads.append(t)
             current_list = gene_pathway_data(path_id)
         except AttributeError:
             # print("- No data found in " + path_id)
@@ -163,10 +180,12 @@ def parse_master():
 
         # run the function that saves each file
         try:  # try actually does it if it works
-            save_file(gene_pathway_data(path_id), GDATA + path_id + CSV, gene_path)
+            # save_file(gene_pathway_data(path_id), GDATA + path_id + CSV, gene_path)
+            save_file(current_list, GDATA + path_id + CSV, gene_path)
         except AttributeError:
             pass
-
+    for t in threads:
+        t.join()
     master_no_dupes = remove_dupes(master_list)
     # removes false values and turns it into a list
     master_no_dupes = list(filter(None, master_no_dupes))
@@ -195,7 +214,8 @@ def unique_element_list(list_name, index):
 
 
 def make_matrix_and_counts():
-    global gene_list_from_master, master_count_matrix
+    global gene_list_from_master
+    global master_count_matrix
 
     ec_list = unique_element_list(master_no_dupes, 'last')
 
@@ -237,48 +257,65 @@ def make_matrix_and_counts():
 
     # make a master fasta file
     print('- about to make master FASTA')
-    rev_dict = {v: k for k, v in species_pairs.items()}  # reverses dictionary keys and values
+    swapped_order = {v: k for k, v in species_pairs.items()}  # reverses dictionary keys and values
     gene_list_from_master = []
     for i in master_no_dupes:
         # combines species codes and gene numbers in a list to be used for the master fasta function
-        gene_list_from_master.append(rev_dict[i[0]] + ':' + i[1])
+        gene_list_from_master.append(swapped_order[i[0]] + ':' + i[1])
 
 
 make_matrix_and_counts()
 
+dna_info_list = []
+
+
+def chunk(l, n):
+    # looping till length l
+    for i in range(0, len(l), n):
+        yield l[i:i + n]
+
 
 def get_master_fasta(gene):
     print('- fetching data for master FASTA...')
-    dna_info_list = []
-    global gene_list_from_master
-    for gene in gene_list_from_master:
+    global dna_info_list, gene_list_from_master
+    threads = []
+    chunked = list(chunk(gene_list_from_master, CHUNK_SIZE))
+    for chunks in chunked:
+        try:
+            thread = threading.Thread(target=master_helper, args=(chunks,))
+            thread.start()
+            threads.append(thread)
+
+        except:
+            pass
+
+    for thread in threads:
+        thread.join()
+    return dna_info_list
+
+
+def master_helper(gene_chunk):
+    for gene in gene_chunk:
         # calls the entry from KEGG and splits it into new lines
-        gene_fasta_data = kegg.get(gene).split(NL)
-        # print('got gene fasta data')
+        gene_fasta_data = str(kegg.get(gene)).split(NL)
+        global dna_info_list
         lines = 0
         ntseq_locator = 0
         organism_name = ''
-        # print('looking for ORGANISM in each line of gene fasta data')
         for line in gene_fasta_data:
             # removes blank spaces at the beginning and end of each line
             gene_fasta_data[lines] = line.strip()
             if line.startswith('ORGANISM'):  # finds where the entry that begins with organism is
-                # removes organism and removes blank spaces ta beginning and end
                 gene_fasta_data[lines] = line.replace("ORGANISM", "").strip()
-                find_blanks = gene_fasta_data[lines].find(
-                    " ")  # finds where the double blank space is in the organism line
-                organism_name = gene_fasta_data[lines][
-                                find_blanks:]  # the genus specie name is left from the orginal entry
+                find_blanks = gene_fasta_data[lines].find(" ")
+                organism_name = gene_fasta_data[lines][find_blanks:]
             lines += 1
         lines = 0
-        # print('looking for ORTHOLOGY in each line of gene fasta data')
         for line in gene_fasta_data:
             gene_fasta_data[lines] = line.strip()
             if line.startswith('ORTHOLOGY'):
                 gene_fasta_data[lines] = line.strip
-                # finds within the line where the EC number is
                 find_ec = line.find("EC:")
-                # removes the beginning bracket and EC: leaving just the number
                 gene_fasta_data[lines] = line[find_ec:-1].replace("[", "").replace("EC:", "")
                 ec_number = "EC " + gene_fasta_data[lines]  # adds EC back
                 # adds > to beginning to find the beginning of each entry more easily, adds % between EC number and
@@ -288,7 +325,6 @@ def get_master_fasta(gene):
                 dna_info_list.append(joined_organism_ec)  # adds the entry to the blank list
             lines += 1
         lines = 0
-        # print('looking for NTSEQ in each line of gene fasta data')
         for line in gene_fasta_data:
             gene_fasta_data[lines] = line.strip()
             if line.startswith('NTSEQ'):
@@ -296,17 +332,11 @@ def get_master_fasta(gene):
                 ntseq_locator = lines
             lines += 1
         dna_data_list = gene_fasta_data[ntseq_locator:]
-        # print('- len of dna data list: ' + str(len(dna_data_list)))
         dna_seq = dna_data_list[1:len(dna_data_list) - 2]  # Takes just the DNA sequence
         sep = ''
         # combines the separate DNA sequence lines into one string and turns that into a single entry list
         joined_dna_seq = [sep.join(dna_seq)]
-        # print('- joined dna: ' + str(joined_dna_seq))
-        # print('- gene list from master len: ' + str(len(gene_list_from_master)))
-        # print('- made list of joined dna sequences. joined len: ' + str(len(joined_dna_seq)))
         dna_info_list.append(joined_dna_seq)  # adds single entry list to the list of lists
-        # print('- added joined sequence list to dna info. dna info len: ' + str(len(dna_info_list)))
-    return dna_info_list
 
 
 def make_fasta():
@@ -358,7 +388,7 @@ def write_readme():
     print('- creating README...')
     with open(main_dir + readme, 'w') as readme_doc:
         readme_doc.write("KEGG_v1p1.py\n")
-        readme_doc.write(NOW.strftime("%m-%d-%Y") + "\n")
+        readme_doc.write(init_time.strftime("%m-%d-%Y") + "\n")
         readme_doc.write(main_dir + "\n")
         readme_doc.write(
             'This script creates a series of files related to the genes associated with plant flavonoids ' +
@@ -415,55 +445,75 @@ kaem_list = []
 lute_list = []
 nari_list = []
 quer_list = []
+myri_list = []
+geni_list = []
 # Be careful in making these of parentheses
 print('- looping through master ec list...')
 for i in masterEC_list:
-    if epicatechin in i:
-        ecat_list.append([i[0]])
-    if catechin in i:
-        cate_list.append([i[0]])
-    if eriodictyol in i:
-        erio_list.append([i[0]])
     if apigenin in i:
         apig_list.append([i[0]])
-    if luteolin in i:
-        lute_list.append([i[0]])
-    if naringenin in i:
-        nari_list.append([i[0]])
     if butein in i:
         bute_list.append([i[0]])
-
-    if kaempferol in i:
-        kaem_list.append([i[0]])
-    if quercetin in i:
-        quer_list.append([i[0]])
+    if catechin in i:
+        cate_list.append([i[0]])
     if cyanidin in i:
         cyan_list.append([i[0]])
+    if epicatechin in i:
+        ecat_list.append([i[0]])
     if epigallocatechin in i:
         epig_list.append([i[0]])
+    if eriodictyol in i:
+        erio_list.append([i[0]])
     if gallocatechin in i:
         gall_list.append([i[0]])
-save_file(ecat_list, ecat_file, chem_path)
-save_file(cate_list, cate_file, chem_path)
-save_file(erio_list, erio_file, chem_path)
-save_file(lute_list, lute_file, chem_path)
-save_file(nari_list, nari_file, chem_path)
-save_file(bute_list, bute_file, chem_path)
-save_file(apig_list, apig_file, chem_path)
-save_file(kaem_list, kaem_file, chem_path)
-save_file(quer_list, quer_file, chem_path)
-save_file(cyan_list, cyan_file, chem_path)
-save_file(epig_list, epig_file, chem_path)
-save_file(gall_list, gall_file, chem_path)
-print('ecat data:\n\t' + str(ecat_list))
-print('cate data:\n\t' + str(cate_list))
-print('erio data:\n\t' + str(erio_list))
-print('nari data:\n\t' + str(nari_list))
-print('lute data:\n\t' + str(lute_list))
-print('bute data:\n\t' + str(bute_list))
-print('apig data:\n\t' + str(apig_list))
-print('kaem data:\n\t' + str(kaem_list))
-print('quer data:\n\t' + str(quer_list))
-print('cyan data:\n\t' + str(cyan_list))
-print('epig data:\n\t' + str(epig_list))
-print('gall data:\n\t' + str(gall_list))
+    if genistein in i:
+        geni_list.append([i[0]])
+    if kaempferol in i:
+        kaem_list.append([i[0]])
+    if luteolin in i:
+        lute_list.append([i[0]])
+    if myricetin in i:
+        myri_list.append([i[0]])
+    if naringenin in i:
+        nari_list.append([i[0]])
+    if quercetin in i:
+        quer_list.append([i[0]])
+
+
+def end_print(msg, lists):
+    print(msg)
+    out = ''
+    for li in lists:
+        # print(*li)
+        out = out + str(*li) + ', '
+    print(out)
+
+
+# save_file(ecat_list, ecat_file, chem_path)
+# save_file(cate_list, cate_file, chem_path)
+# save_file(erio_list, erio_file, chem_path)
+# save_file(lute_list, lute_file, chem_path)
+# save_file(nari_list, nari_file, chem_path)
+# save_file(bute_list, bute_file, chem_path)
+# save_file(apig_list, apig_file, chem_path)
+# save_file(kaem_list, kaem_file, chem_path)
+# save_file(quer_list, quer_file, chem_path)
+# save_file(cyan_list, cyan_file, chem_path)
+# save_file(epig_list, epig_file, chem_path)
+# save_file(gall_list, gall_file, chem_path)
+# save_file(myri_list, myri_file, chem_path)
+# save_file(geni_list, geni_file, chem_path)
+
+chem_lists = [apig_list, bute_list, cate_list, cyan_list, ecat_list, epig_list, erio_list, gall_list, geni_list,
+              kaem_list, lute_list, myri_list, nari_list, quer_list]
+labels = ['\nAPIG:', '\nBUTE:', '\nCATE:', '\nCYAN:', '\nECAT:', '\nEPIG:', '\nERIO:', '\nGALL:', '\nGENI:', '\nKAEM:',
+          '\nLUTE:', '\nMYRI:', '\nNARI:', '\nQUER:']
+file_names = [apig_file, bute_file, cate_file, cyan_file, ecat_file, epig_file, erio_file, gall_file, geni_file,
+              kaem_file, lute_file, myri_file, nari_file, quer_file]
+for i in range(0, len(chem_lists) - 1):
+    save_file(chem_lists[i], file_names[i], chem_path)
+    end_print(labels[i], chem_lists[i])
+
+end_time = datetime.datetime.now()
+total_time = end_time - init_time
+print('\ntotal time taken: ' + str(total_time))
