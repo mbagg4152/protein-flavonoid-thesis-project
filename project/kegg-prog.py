@@ -71,19 +71,13 @@ start()
 def remove_dupes(dupe_list):
     unique_list = []  # creates an empty list
     for item in dupe_list:
-        sp_name = item[0]
-        sitem = str(item)
-        print(sitem)
-        sp_name.replace('(RAPDB)', NIX)
-        sp_name.replace('(RefSeq)', NIX)
-        item[0] = sp_name
         if item not in unique_list:
             unique_list.append(item)  # adds item to empty list if it's not already in the list
     return unique_list
 
 
 # change which list should be used for test input
-species_list = full_no_dosa
+species_list = full_list
 
 # this is the full list of every pathway and species from both lists
 path_and_species_list = [i + j for i in species_list for j in pathway_list]
@@ -353,17 +347,17 @@ def make_fasta():
         if i[0].startswith('>'):
             split_ec = i[0].split('%')  # finds the EC numbers using the % added previously
 
-            EC = split_ec[1]
+            this_ec = split_ec[1]
             ec_count = 0
             ec_flag = 'false'
             counter2 = 0
             for j in ec_order_list:  # if the EC number is already present sets it to true and continues
-                if EC == j:
+                if this_ec == j:
                     ec_count = counter2
                     ec_flag = 'true'
                 counter2 += 1
             if ec_flag == 'false':  # if the EC number is not there, it will be added to the list
-                ec_order_list.append(EC)
+                ec_order_list.append(this_ec)
                 fasta_by_ec.append(master_fasta[counter:counter + 2])
             else:
                 fasta_by_ec[ec_count].extend(master_fasta[counter:counter + 2])
@@ -408,7 +402,6 @@ masterEC_list = [['species', 'EC#s']]
 counter = 0
 print('- filling master matrix...')
 for i in master_count_matrix:  # for each species
-    # print "species :", i[0]
     species_epic_list = []
     if counter == 0:
         pass
@@ -418,101 +411,62 @@ for i in master_count_matrix:  # for each species
         for j in i:  # for EC in species
             if counter2 == 0:
                 species_epic_list.append(j)
-                # print(j)
             else:
                 if str(j) == "0":
-                    # print(" " + str(j) + " = no enzyme")
                     pass
                 else:
-                    # print(master_count_matrix[0][counter2] + " = " + str(j))
                     species_epic_list.append(master_count_matrix[0][counter2])
             counter2 += 1
     masterEC_list.append(species_epic_list)
     counter += 1
 
-# print(masterEC_list)
 masterEC_list = masterEC_list[1:]
 
-apig_list = []
-bute_list = []
-cate_list = []
-cyan_list = []
-ecat_list = []
-epig_list = []
-erio_list = []
-gall_list = []
-kaem_list = []
-lute_list = []
-nari_list = []
-quer_list = []
-myri_list = []
-geni_list = []
-# Be careful in making these of parentheses
+out_data = [(APIG, [], apigenin, apig_file), (BUTE, [], butein, bute_file), (CATE, [], catechin, cate_file),
+            (CYAN, [], cyanidin, cyan_file), (ECAT, [], epicatechin, ecat_file),
+            (EPIG, [], epigallocatechin, epig_file), (ERIO, [], eriodictyol, erio_file),
+            (GALL, [], gallocatechin, gall_file), (GENI, [], genistein, geni_file),
+            (KAEM, [], kaempferol, kaem_file), (LUTE, [], luteolin, lute_file), (MYRI, [], myricetin, myri_file),
+            (NARI, [], naringenin, nari_file), (QUER, [], quercetin, quer_file), (EC1, [], EC1, ec1_file),
+            (EC2, [], EC2, ec2_file), (EC3, [], EC3, ec3_file), (EC4, [], EC4, ec4_file)]
+
+data_lists = []
+spec_flavs = []
+for item in out_data:
+    tmp_data = ChemData(item[0], item[1], item[2], item[3])
+    data_lists.append(tmp_data)
+
 print('- looping through master ec list...')
 for i in masterEC_list:
-    if apigenin in i:
-        apig_list.append([i[0]])
-    if butein in i:
-        bute_list.append([i[0]])
-    if catechin in i:
-        cate_list.append([i[0]])
-    if cyanidin in i:
-        cyan_list.append([i[0]])
-    if epicatechin in i:
-        ecat_list.append([i[0]])
-    if epigallocatechin in i:
-        epig_list.append([i[0]])
-    if eriodictyol in i:
-        erio_list.append([i[0]])
-    if gallocatechin in i:
-        gall_list.append([i[0]])
-    if genistein in i:
-        geni_list.append([i[0]])
-    if kaempferol in i:
-        kaem_list.append([i[0]])
-    if luteolin in i:
-        lute_list.append([i[0]])
-    if myricetin in i:
-        myri_list.append([i[0]])
-    if naringenin in i:
-        nari_list.append([i[0]])
-    if quercetin in i:
-        quer_list.append([i[0]])
+    if len(i) > 0:
+        tmp_entry = Species(i[0], 0, [])
+        for c_data in data_lists:
+            if c_data.logic in i:
+                c_data.species.append([i[0]])
+                print('species = ' + str(i[0]) + 'data label = ' + c_data.label)
+                tmp_entry.flavonoids.append(c_data.label)
+                tmp_entry.count += 1
+        spec_flavs.append(tmp_entry)
 
-
-def end_print(msg, lists):
-    print(msg)
+for key in data_lists:
+    save_file(key.species, key.file_name, chem_path)
+    print('\n' + key.label + ':')
     out = ''
-    for li in lists:
-        # print(*li)
+    for li in key.species:
         out = out + str(*li) + ', '
     print(out)
 
+    # spec_output = ''
+    # for spec in spec_flavs:
+    #     print(spec.species_string())
+    #     spec_output += spec.species_string() + '\n'
 
-# save_file(ecat_list, ecat_file, chem_path)
-# save_file(cate_list, cate_file, chem_path)
-# save_file(erio_list, erio_file, chem_path)
-# save_file(lute_list, lute_file, chem_path)
-# save_file(nari_list, nari_file, chem_path)
-# save_file(bute_list, bute_file, chem_path)
-# save_file(apig_list, apig_file, chem_path)
-# save_file(kaem_list, kaem_file, chem_path)
-# save_file(quer_list, quer_file, chem_path)
-# save_file(cyan_list, cyan_file, chem_path)
-# save_file(epig_list, epig_file, chem_path)
-# save_file(gall_list, gall_file, chem_path)
-# save_file(myri_list, myri_file, chem_path)
-# save_file(geni_list, geni_file, chem_path)
-
-chem_lists = [apig_list, bute_list, cate_list, cyan_list, ecat_list, epig_list, erio_list, gall_list, geni_list,
-              kaem_list, lute_list, myri_list, nari_list, quer_list]
-labels = ['\nAPIG:', '\nBUTE:', '\nCATE:', '\nCYAN:', '\nECAT:', '\nEPIG:', '\nERIO:', '\nGALL:', '\nGENI:', '\nKAEM:',
-          '\nLUTE:', '\nMYRI:', '\nNARI:', '\nQUER:']
-file_names = [apig_file, bute_file, cate_file, cyan_file, ecat_file, epig_file, erio_file, gall_file, geni_file,
-              kaem_file, lute_file, myri_file, nari_file, quer_file]
-for i in range(0, len(chem_lists) - 1):
-    save_file(chem_lists[i], file_names[i], chem_path)
-    end_print(labels[i], chem_lists[i])
+# os.chdir(main_dir + chem_dir)
+# new_file = open(slash + 'spec_file.txt', 'x')
+# new_file.close()
+# spec_file = open(slash + 'spec_file.txt', 'w')
+# spec_file.write(spec_output)
+# spec_file.close()
 
 end_time = datetime.datetime.now()
 total_time = end_time - init_time

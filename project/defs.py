@@ -21,6 +21,10 @@ lute_file = 'luteolin.txt'
 myri_file = 'myricetin.txt'
 nari_file = 'naringenin.txt'
 quer_file = 'quercetin.txt'
+ec1_file = 'EC-2-4-1-74.txt'
+ec2_file = 'EC-2-3-1-70.txt'
+ec3_file = 'EC-2-3-1-30.txt'
+ec4_file = 'EC-2-4-1-136.txt'
 readme = slash + 'ReadMe.txt'
 
 # output directories
@@ -39,6 +43,7 @@ json_single = info_dir + 'test_single.json'
 json_short = info_dir + 'test_short.json'
 json_med = info_dir + 'test_med.json'
 json_full2 = info_dir + 'sp_full2.json'
+json_dict_common = info_dir + 'sp_dict_common_name.json'
 
 # fill lists and dictionaries from json files
 test_single = get_json_data(json_single, j_key)
@@ -51,8 +56,10 @@ full_list = get_json_data(f_species_list_json, j_key)
 full_no_dosa = get_json_data(json_full2, j_key)
 
 # Dictionary/list of key-value pairs that defines the appropriate genus species for each code
-species_pairs = get_json_data(f_species_dict_json, j_key)
 
+species_pairs_original = get_json_data(f_species_dict_json, j_key)
+species_pairs_common = get_json_data(json_dict_common, j_key)
+species_pairs = species_pairs_common
 # list of pathways of interest
 pathway_list = get_json_data(path_list_json, j_key)
 
@@ -83,6 +90,10 @@ CS = 'EC:1.3.1.77'
 CT = 'EC:1.17.1.3'
 CU = 'EC:1.14.14.87'
 CV = 'EC:4.2.1.105'
+EC1 = 'EC:2.4.1.74'
+EC2 = 'EC:2.3.1.70'
+EC3 = 'EC:2.3.1.30'
+EC4 = 'EC:2.4.1.136'
 
 # logical combination of pathways for each chemical
 start = (CA or CB) and CC and CD
@@ -103,6 +114,21 @@ apigenin = ((CK or CL) and naringenin) or (isoflavonoid and (CK or CL))
 luteolin = apigenin and (CM or CN)
 genistein = isoflavonoid and CU and CV
 
+BUTE = 'Butein'
+NARI = 'Naringenin'
+ERIO = 'Eriodictyol'
+KAEM = 'Kaempferol'
+QUER = 'Quercetin'
+CATE = 'Catechin'
+GALL = 'Gallocatechin'
+EPIG = 'Epigallocatechin'
+CYAN = 'Cyanidin'
+ECAT = 'Epicatechin'
+MYRI = 'Myricetin'
+APIG = 'Apigenin'
+LUTE = 'Luteolin'
+GENI = 'Genistein'
+
 # misc. string values
 CSV = '.csv'
 GDATA = 'Gene_data_'
@@ -110,3 +136,27 @@ NIX = ""
 NL = '\n'
 CHUNK_SIZE = 8
 SP = ' '
+
+
+class ChemData:
+    def __init__(self, label: str, species: [str], logic: bool, file_name: str):
+        self.logic = logic
+        self.species = species
+        self.label = label
+        self.file_name = file_name
+
+
+class Species:
+    def __init__(self, name: str, count: int, flavonoids: [str]):
+        self.name = name
+        self.flavonoids = flavonoids
+        self.count = count
+
+    def species_string(self):
+        flav_str = ''
+        for i, f in enumerate(self.flavonoids):
+            flav_str += f
+            if i != len(self.flavonoids) - 1:
+                flav_str += ', '
+        line = '' + str(self.count) + ', ' + self.name + ', ' + flav_str
+        return line
