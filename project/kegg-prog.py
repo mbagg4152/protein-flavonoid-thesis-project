@@ -1,30 +1,50 @@
-import sys
 import threading
-
-from bioservices.kegg import KEGG
 import datetime
-import time
-from defs import *
+from bioservices.kegg import KEGG
+
+from lib.json_data import *
+from lib.misc_strings import *
+from lib.project_classes import *
 
 init_time = datetime.datetime.now()
-# changed from k -> kegg. 1 letter var names should only be used in iteration
 kegg = KEGG()
 
-# get active directory
-cwd = os.getcwd() + slash
-
-# get dir name from user & append to current directory
-# main_dir = cwd + input("Input a save folder name: ")
-main_dir = cwd + 'data'
 chem_path = ''
+cwd = ''
 fasta_path = ''
 gene_path = ''
+main_dir = ''
+
+data_lists = []
+dna_info_list = []
+ec_order_list = []
+fasta_by_ec = []
+gene_list_from_master = []
+master_count_matrix = [[]]
+master_list = []
+master_no_dupes = []
+path_and_species_list = []
+spec_flavs = []
+species_list = full_list
+
+
+def main():
+    global path_and_species_list
+    path_and_species_list = [i + j for i in species_list for j in pathway_list]
+    start()
+    parse_master()
+    make_matrix_and_counts()
+    make_fasta()
+    write_readme(main_dir, readme, init_time, fasta_path, gene_path)
+    finish_up()
 
 
 def start():
     global chem_path
     global fasta_path
     global gene_path
+    global main_dir
+    global cwd
     # check if main dir exists
     # if os.path.exists(main_dir):
     #     decision = input("Directory already exists. Press return key to continue, or type new name: ")
@@ -36,6 +56,8 @@ def start():
     #         sys.exit("Try an unused folder name next time")
 
     # create sub dirs for gene, FASTA & chemical data
+    cwd = os.getcwd() + slash
+    main_dir = cwd + 'data'
     chem_path = main_dir + chem_dir
     fasta_path = main_dir + fasta_dir
     gene_path = main_dir + gene_dir
@@ -62,32 +84,6 @@ def start():
     except OSError:
         print("Error making Chemical dir.")
         pass
-
-
-start()
-
-
-# removes duplicate elements
-def remove_dupes(dupe_list):
-    unique_list = []  # creates an empty list
-    for item in dupe_list:
-        if item not in unique_list:
-            unique_list.append(item)  # adds item to empty list if it's not already in the list
-    return unique_list
-
-
-# change which list should be used for test input
-species_list = full_list
-
-# this is the full list of every pathway and species from both lists
-path_and_species_list = [i + j for i in species_list for j in pathway_list]
-
-gene_list_from_master = []
-ec_order_list = []
-fasta_by_ec = []
-master_list = []
-master_no_dupes = []
-master_count_matrix = [[]]
 
 
 # function that fetches the required data
@@ -189,24 +185,6 @@ def parse_master():
         count += 1
 
 
-parse_master()
-
-
-# find unique EC numbers so have a generic function and run it
-# be careful as there are cases of one less item - use "last" to fix that problem here
-def unique_element_list(list_name, index):
-    original_index = index
-    element_list = []
-    for i in list_name:
-        # print
-        if original_index == 'last':
-            # assigns the string "last" to the very last list in the list of lists
-            index = len(i) - 1
-        if i[int(index)] not in element_list:  # finds unique EC number not in the list
-            element_list.append(i[int(index)])  # adds it to the list
-    return element_list
-
-
 def make_matrix_and_counts():
     global gene_list_from_master
     global master_count_matrix
@@ -258,17 +236,6 @@ def make_matrix_and_counts():
         gene_list_from_master.append(swapped_order[i[0]] + ':' + i[1])
 
 
-make_matrix_and_counts()
-
-dna_info_list = []
-
-
-def chunk(l, n):
-    # looping till length l
-    for i in range(0, len(l), n):
-        yield l[i:i + n]
-
-
 def get_master_fasta(gene):
     print('- fetching data for master FASTA...')
     global dna_info_list, gene_list_from_master
@@ -293,38 +260,38 @@ def master_helper(gene_chunk):
         # calls the entry from KEGG and splits it into new lines
         gene_fasta_data = str(kegg.get(gene)).split(NL)
         global dna_info_list
-        lines = 0
+        line_count = 0
         ntseq_locator = 0
         organism_name = ''
         for line in gene_fasta_data:
             # removes blank spaces at the beginning and end of each line
-            gene_fasta_data[lines] = line.strip()
+            gene_fasta_data[line_count] = line.strip()
             if line.startswith('ORGANISM'):  # finds where the entry that begins with organism is
-                gene_fasta_data[lines] = line.replace("ORGANISM", "").strip()
-                find_blanks = gene_fasta_data[lines].find(" ")
-                organism_name = gene_fasta_data[lines][find_blanks:]
-            lines += 1
-        lines = 0
+                gene_fasta_data[line_count] = line.replace("ORGANISM", "").strip()
+                find_blanks = gene_fasta_data[line_count].find(" ")
+                organism_name = gene_fasta_data[line_count][find_blanks:]
+            line_count += 1
+        line_count = 0
         for line in gene_fasta_data:
-            gene_fasta_data[lines] = line.strip()
+            gene_fasta_data[line_count] = line.strip()
             if line.startswith('ORTHOLOGY'):
-                gene_fasta_data[lines] = line.strip
+                gene_fasta_data[line_count] = line.strip
                 find_ec = line.find("EC:")
-                gene_fasta_data[lines] = line[find_ec:-1].replace("[", "").replace("EC:", "")
-                ec_number = "EC " + gene_fasta_data[lines]  # adds EC back
+                gene_fasta_data[line_count] = line[find_ec:-1].replace("[", "").replace("EC:", "")
+                ec_number = "EC " + gene_fasta_data[line_count]  # adds EC back
                 # adds > to beginning to find the beginning of each entry more easily, adds % between EC number and
                 # the rest of the entry to help separate the EC number for later and removes semicolon from the gene
                 # entry and adds the gene number
                 joined_organism_ec = [">" + str(organism_name).strip() + "%" + ec_number + "%" + gene.split(":")[1]]
                 dna_info_list.append(joined_organism_ec)  # adds the entry to the blank list
-            lines += 1
-        lines = 0
+            line_count += 1
+        line_count = 0
         for line in gene_fasta_data:
-            gene_fasta_data[lines] = line.strip()
+            gene_fasta_data[line_count] = line.strip()
             if line.startswith('NTSEQ'):
-                gene_fasta_data[lines] = line.replace("NTSEQ", "").strip()
-                ntseq_locator = lines
-            lines += 1
+                gene_fasta_data[line_count] = line.replace("NTSEQ", "").strip()
+                ntseq_locator = line_count
+            line_count += 1
         dna_data_list = gene_fasta_data[ntseq_locator:]
         dna_seq = dna_data_list[1:len(dna_data_list) - 2]  # Takes just the DNA sequence
         sep = ''
@@ -336,7 +303,7 @@ def master_helper(gene_chunk):
 def make_fasta():
     print('- saving master fasta...')
     master_fasta = get_master_fasta(gene_list_from_master)
-    save_file(get_master_fasta(gene_list_from_master), 'Master_FASTA.csv', fasta_path)
+    save_file(master_fasta, 'Master_FASTA.csv', fasta_path)
 
     # master_fasta = get_master_fasta(gene_list_from_master)  # should actually go above the first time it gets called
     # make a fasta file for each EC number saved in the FASTA dir
@@ -374,100 +341,60 @@ def make_fasta():
         counter += 1
 
 
-make_fasta()
+def finish_up():
+    global data_lists
 
+    master_ec_list = [['species', 'EC#s']]
+    counter = 0
+    print('- filling master matrix...')
+    for i in master_count_matrix:  # for each species
+        species_ec_list = []
+        if counter == 0:
+            pass
 
-def write_readme():
-    # Creates ReadMe file
-    print('- creating README...')
-    with open(main_dir + readme, 'w') as readme_doc:
-        readme_doc.write("KEGG_v1p1.py\n")
-        readme_doc.write(init_time.strftime("%m-%d-%Y") + "\n")
-        readme_doc.write(main_dir + "\n")
-        readme_doc.write(
-            'This script creates a series of files related to the genes associated with plant flavonoids ' +
-            'from various species of plants. This script first creates the MasterCount and MasterList ' +
-            'files; the MasterCount counts the number genes each plant species have that correspond with ' +
-            'each EC number; while the MasterList lists every gene with number for each plant specie. ' +
-            'These are located in ' + os.getcwd() + '. The script also creates files that only contains ' +
-            'the genes of a single plant species biochemical pathway which are located in ' + gene_path +
-            '. The script also creates a Master FASTA files which contains the DNA sequence of each gene' +
-            ' and FASTA files organized by EC number, these are located in ' + fasta_path)
-        readme_doc.close()
-
-
-write_readme()
-
-masterEC_list = [['species', 'EC#s']]
-counter = 0
-print('- filling master matrix...')
-for i in master_count_matrix:  # for each species
-    species_epic_list = []
-    if counter == 0:
-        pass
-
-    else:
-        counter2 = 0
-        for j in i:  # for EC in species
-            if counter2 == 0:
-                species_epic_list.append(j)
-            else:
-                if str(j) == "0":
-                    pass
+        else:
+            counter2 = 0
+            for j in i:  # for EC in species
+                if counter2 == 0:
+                    species_ec_list.append(j)
                 else:
-                    species_epic_list.append(master_count_matrix[0][counter2])
-            counter2 += 1
-    masterEC_list.append(species_epic_list)
-    counter += 1
+                    if str(j) == "0":
+                        pass
+                    else:
+                        species_ec_list.append(master_count_matrix[0][counter2])
+                counter2 += 1
+        master_ec_list.append(species_ec_list)
+        counter += 1
 
-masterEC_list = masterEC_list[1:]
+    master_ec_list = master_ec_list[1:]
 
-out_data = [(APIG, [], apigenin, apig_file), (BUTE, [], butein, bute_file), (CATE, [], catechin, cate_file),
-            (CYAN, [], cyanidin, cyan_file), (ECAT, [], epicatechin, ecat_file),
-            (EPIG, [], epigallocatechin, epig_file), (ERIO, [], eriodictyol, erio_file),
-            (GALL, [], gallocatechin, gall_file), (GENI, [], genistein, geni_file),
-            (KAEM, [], kaempferol, kaem_file), (LUTE, [], luteolin, lute_file), (MYRI, [], myricetin, myri_file),
-            (NARI, [], naringenin, nari_file), (QUER, [], quercetin, quer_file), (EC1, [], EC1, ec1_file),
-            (EC2, [], EC2, ec2_file), (EC3, [], EC3, ec3_file), (EC4, [], EC4, ec4_file)]
+    for item in out_data:
+        tmp_data = ChemData(item[0], item[1], item[2], item[3])
+        data_lists.append(tmp_data)
 
-data_lists = []
-spec_flavs = []
-for item in out_data:
-    tmp_data = ChemData(item[0], item[1], item[2], item[3])
-    data_lists.append(tmp_data)
+    print('- looping through master ec list...')
+    for i in master_ec_list:
+        print(str(i))
+        if len(i) > 0:
+            tmp_entry = Species(i[0], 0, [])
+            for chem_data in data_lists:
+                if chem_data.logic in i:
+                    chem_data.species.append([i[0]])
+                    tmp_entry.flavonoids.append(chem_data.label)
+                    tmp_entry.count += 1
+            spec_flavs.append(tmp_entry)
 
-print('- looping through master ec list...')
-for i in masterEC_list:
-    if len(i) > 0:
-        tmp_entry = Species(i[0], 0, [])
-        for c_data in data_lists:
-            if c_data.logic in i:
-                c_data.species.append([i[0]])
-                print('species = ' + str(i[0]) + 'data label = ' + c_data.label)
-                tmp_entry.flavonoids.append(c_data.label)
-                tmp_entry.count += 1
-        spec_flavs.append(tmp_entry)
+    for key in data_lists:
+        save_file(key.species, key.file_name, chem_path)
+        print('\n' + key.label + ':')
+        out = ''
+        for li in key.species:
+            out = out + str(*li) + ', '
+        print(out)
 
-for key in data_lists:
-    save_file(key.species, key.file_name, chem_path)
-    print('\n' + key.label + ':')
-    out = ''
-    for li in key.species:
-        out = out + str(*li) + ', '
-    print(out)
+    end_time = datetime.datetime.now()
+    total_time = end_time - init_time
+    print('\ntotal time taken: ' + str(total_time))
 
-    # spec_output = ''
-    # for spec in spec_flavs:
-    #     print(spec.species_string())
-    #     spec_output += spec.species_string() + '\n'
 
-# os.chdir(main_dir + chem_dir)
-# new_file = open(slash + 'spec_file.txt', 'x')
-# new_file.close()
-# spec_file = open(slash + 'spec_file.txt', 'w')
-# spec_file.write(spec_output)
-# spec_file.close()
-
-end_time = datetime.datetime.now()
-total_time = end_time - init_time
-print('\ntotal time taken: ' + str(total_time))
+main()
