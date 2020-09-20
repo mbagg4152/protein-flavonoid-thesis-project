@@ -120,6 +120,7 @@ def gene_pathway_data(pathway_id):
             gene[j_count] = g.strip()
             j_count += 1
         gene_lines[line_count] = gene  # replaces the list with the new cleaned list of lists
+        # print(str(gene))
         line_count += 1  # iterates through each list in the entry
     return gene_lines
 

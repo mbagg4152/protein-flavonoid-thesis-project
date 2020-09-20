@@ -28,7 +28,7 @@ logic_ec4 = 'EC:2.4.1.136'
 
 # logical combination of pathways for each chemical
 start = (CA or CB) and CC and CD
-logic_bute = start and CE
+
 logic_nari = start and CI and CJ
 logic_erio = (logic_nari and (CM or CN)) or (CH or (CF and CG) and CI)
 logic_kaem = logic_nari and CO and CP
@@ -43,18 +43,21 @@ isoflavonoid = start and CE and CJ
 logic_apig = ((CK or CL) and logic_nari) or (isoflavonoid and (CK or CL))
 logic_lute = logic_apig and (CM or CN)
 logic_geni = isoflavonoid and CU and CV
+logic_liqu = isoflavonoid
+logic_isol = logic_liqu and CJ
+logic_bute = (start and CE) or logic_isol
 
+APIG = 'Apigenin'
 BUTE = 'Butein'
-NARI = 'Naringenin'
-ERIO = 'Eriodictyol'
-KAEM = 'Kaempferol'
-QUER = 'Quercetin'
 CATE = 'Catechin'
-GALL = 'Gallocatechin'
-EPIG = 'Epigallocatechin'
 CYAN = 'Cyanidin'
 ECAT = 'Epicatechin'
-MYRI = 'Myricetin'
-APIG = 'Apigenin'
-LUTE = 'Luteolin'
+EPIG = 'Epigallocatechin'
+ERIO = 'Eriodictyol'
+GALL = 'Gallocatechin'
 GENI = 'Genistein'
+KAEM = 'Kaempferol'
+LUTE = 'Luteolin'
+MYRI = 'Myricetin'
+NARI = 'Naringenin'
+QUER = 'Quercetin'

@@ -8,12 +8,16 @@ test_med = get_json_data(json_med, j_key)
 
 # main lists for the program
 # species codes for plants of interest,  "mtr" cut due to code errors
-full_list = get_json_data(f_species_list_json, j_key)
+more_plant_list = get_json_data(json_addtl_plant_list, j_key)
+original_full_list = get_json_data(f_species_list_json, j_key)
+full_list = original_full_list
 
 # Dictionary/list of key-value pairs that defines the appropriate genus species for each code
 species_pairs_original = get_json_data(f_species_dict_json, j_key)
 species_pairs_common = get_json_data(json_dict_common, j_key)
+more_plant_dict = get_json_data(json_addtl_plant_dict, j_key)
 species_pairs = species_pairs_original
+
 # list of pathways of interest
 pathway_list = get_json_data(path_list_json, j_key)
 
