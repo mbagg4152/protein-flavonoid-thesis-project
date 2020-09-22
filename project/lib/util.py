@@ -1,5 +1,6 @@
 import json
 import os
+from lib.misc_strings import *
 
 
 def get_json_data(file_name, key):
@@ -56,3 +57,25 @@ def write_readme(main_dir, readme, init_time, fasta_path, gene_path):
             '. The script also creates a Master FASTA files which contains the DNA sequence of each gene' +
             ' and FASTA files organized by EC number, these are located in ' + fasta_path)
         readme_doc.close()
+
+
+def save_file(lists_to_write, output_dir, current):
+    os.chdir(current)
+    form_counter = 0
+    # open file to be written
+    writedoc = open(output_dir, 'w')
+    for line in lists_to_write:
+        for item in line:
+            # removes the new lines in each list of list
+            item = str(item).replace(NL, NIX)
+            if item == NIX:  # if the list in the list of list is empty writes a dash
+                writedoc.write('-')
+            else:  # write the entry in the list of lists to the file
+                writedoc.write(item)
+            writedoc.write(', ')  # tab delineated; use "," for csv files
+            if form_counter == 7:
+                form_counter = 0
+                writedoc.write(NL)
+            form_counter += 1
+    writedoc.write(NL)
+    writedoc.close()

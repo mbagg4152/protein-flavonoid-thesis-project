@@ -26,10 +26,16 @@ class Species:
         return line
 
 
-out_data = [(APIG, [], logic_apig, file_apig), (BUTE, [], logic_bute, file_bute), (CATE, [], logic_cate, file_cate),
-            (CYAN, [], logic_cyan, file_cyan), (ECAT, [], logic_ecat, file_ecat), (EPIG, [], logic_epig, file_epig),
-            (ERIO, [], logic_erio, file_erio), (GALL, [], logic_gall, file_gall), (GENI, [], logic_geni, file_geni),
-            (KAEM, [], logic_kaem, file_kaem), (LUTE, [], logic_lute, file_lute), (MYRI, [], logic_myri, file_myri),
-            (NARI, [], logic_nari, file_nari), (QUER, [], logic_quer, file_quer), (logic_ec1, [], logic_ec1, file_ec1),
-            (logic_ec2, [], logic_ec2, file_ec2), (logic_ec3, [], logic_ec3, file_ec3),
-            (logic_ec4, [], logic_ec4, file_ec4)]
+class ThreadRes:
+    def __init__(self, path_id, gene_data):
+        self.path_id = path_id
+        self.gene_data = gene_data
+
+
+out_data = [(APIG, [], logic_apig, fn_apig), (BUTE, [], logic_bute, fn_bute), (CATE, [], logic_cate, fn_cate),
+            (CYAN, [], logic_cyan, fn_cyan), (ECAT, [], logic_ecat, fn_ecat), (EPIG, [], logic_epig, fn_epig),
+            (ERIO, [], logic_erio, fn_erio), (GALL, [], logic_gall, fn_gall), (GENI, [], logic_geni, fn_geni),
+            (KAEM, [], logic_kaem, fn_kaem), (LUTE, [], logic_lute, fn_lute), (MYRI, [], logic_myri, fn_myri),
+            (NARI, [], logic_nari, fn_nari), (QUER, [], logic_quer, fn_quer), (logic_ec1, [], logic_ec1, fn_ec1),
+            (logic_ec2, [], logic_ec2, fn_ec2), (logic_ec3, [], logic_ec3, fn_ec3),
+            (logic_ec4, [], logic_ec4, fn_ec4)]

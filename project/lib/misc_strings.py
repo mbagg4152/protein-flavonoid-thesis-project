@@ -3,5 +3,5 @@ CSV = '.csv'
 GDATA = 'Gene_data_'
 NIX = ""
 NL = '\n'
-CHUNK_SIZE = 8
+CHUNK_SIZE = 10
 SP = ' '

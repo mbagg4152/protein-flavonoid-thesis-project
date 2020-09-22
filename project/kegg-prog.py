@@ -1,10 +1,10 @@
 import threading
 import datetime
 from bioservices.kegg import KEGG
-
 from lib.json_data import *
 from lib.misc_strings import *
 from lib.project_classes import *
+
 
 init_time = datetime.datetime.now()
 kegg = KEGG()
@@ -23,9 +23,17 @@ gene_list_from_master = []
 master_count_matrix = [[]]
 master_list = []
 master_no_dupes = []
+master_sem = threading.Semaphore()
+mutex = threading.Lock()
+p_data = []
+parse_sem = threading.Semaphore()
+parse_thread_data = []
 path_and_species_list = []
+sem_list = []
 spec_flavs = []
 species_list = full_list
+tmp_parse = []
+write_sem = threading.Semaphore()
 
 
 def main():
@@ -35,7 +43,7 @@ def main():
     parse_master()
     make_matrix_and_counts()
     make_fasta()
-    write_readme(main_dir, readme, init_time, fasta_path, gene_path)
+    write_readme(main_dir, fn_readme, init_time, fasta_path, gene_path)
     finish_up()
 
 
@@ -125,60 +133,58 @@ def gene_pathway_data(pathway_id):
     return gene_lines
 
 
-# function that saves each file with a name that includes pathwayID  using the data from genes_lines
-# list_to_write should be a list of lists, output_dir should include an appropriate extension
-def save_file(lists_to_write, output_dir, current):
-    os.chdir(current)
-    form_counter = 0
-    # open file to be written
-    writedoc = open(output_dir, 'w')
-    for line in lists_to_write:
-        for item in line:
-            # removes the new lines in each list of list
-            item = str(item).replace(NL, NIX)
-            if item == NIX:  # if the list in the list of list is empty writes a dash
-                writedoc.write('-')
-            else:  # write the entry in the list of lists to the file
-                writedoc.write(item)
-            writedoc.write(', ')  # tab delineated; use "," for csv files
-            if form_counter == 7:
-                form_counter = 0
-                writedoc.write(NL)
-            form_counter += 1
-    writedoc.write(NL)
-    writedoc.close()
+def parse_helper(plant_paths, sem_index):
+    global master_list
+    global tmp_parse
+    global p_data
+
+    for path in plant_paths:
+        parse_sem.acquire()
+        try:
+            tmp_parse[sem_index] = gene_pathway_data(path)
+        finally:
+            parse_sem.release()
+        write_sem.acquire()
+        try:
+            p_data[sem_index].extend(tmp_parse[sem_index])
+            try:
+                save_file(tmp_parse[sem_index], GDATA + path + CSV, gene_path)
+            except AttributeError:
+                pass
+        finally:
+            write_sem.release()
+
+    master_sem.acquire()
+    try:
+        master_list.extend(p_data[sem_index])
+    finally:
+        master_sem.release()
 
 
 def parse_master():
     global master_list
     global master_no_dupes
+    global sem_list
     print('- parsing list of species & pathways...')
     threads = []
+    chunked = list(chunk(path_and_species_list, CHUNK_SIZE))
+    for i in range(0, len(chunked)):
+        sem_list.append(threading.Semaphore(1))
+        parse_thread_data.append([])
+        p_data.append([])
+        tmp_parse.append([])
+        # parse_sems.append(threading.Semaphore())
 
-    for path_id in path_and_species_list:
-        not_present = 0
-        current_list = []
-        t = threading.Thread(target=gene_pathway_data, args=(path_id,))
-        try:  # need to ignore everything if there is no pathway for that species
-            t.start()
-            threads.append(t)
-            current_list = gene_pathway_data(path_id)
-        except AttributeError:
-            # print("- No data found in " + path_id)
-            not_present = 1
-        if not_present == 0:
-            master_list.extend(current_list)
+    chunk_index = 0
+    for chunks in chunked:
+        t = threading.Thread(target=parse_helper, args=(chunks, chunk_index))
+        t.start()
+        threads.append(t)
+        chunk_index += 1
 
-        # run the function that saves each file
-        try:  # try actually does it if it works
-            # save_file(gene_pathway_data(path_id), GDATA + path_id + CSV, gene_path)
-            save_file(current_list, GDATA + path_id + CSV, gene_path)
-        except AttributeError:
-            pass
     for t in threads:
         t.join()
     master_no_dupes = remove_dupes(master_list)
-    # removes false values and turns it into a list
     master_no_dupes = list(filter(None, master_no_dupes))
     count = 0
     for i in master_no_dupes:  # removes false values and iterates through the list of lists
@@ -390,7 +396,7 @@ def finish_up():
         print('\n' + key.label + ':')
         out = ''
         for li in key.species:
-            out = out + str(*li) + ', '
+            out = out + str(*li) + ' | '
         print(out)
 
     end_time = datetime.datetime.now()
