@@ -82,12 +82,12 @@ species_list = full_list
 # this is the full list of every pathway and species from both lists
 path_and_species_list = [i + j for i in species_list for j in pathway_list]
 
-gene_list_from_master = []
+master_gene_list = []
 ec_order_list = []
 fasta_by_ec = []
 master_list = []
-master_no_dupes = []
-master_count_matrix = [[]]
+master_uniq = []
+count_matrix = [[]]
 
 
 # function that fetches the required data
@@ -154,7 +154,7 @@ def save_file(lists_to_write, output_dir, current):
 
 def parse_master():
     global master_list
-    global master_no_dupes
+    global master_uniq
     print('- parsing list of species & pathways...')
     threads = []
 
@@ -208,10 +208,10 @@ def unique_element_list(list_name, index):
 
 
 def make_matrix_and_counts():
-    global gene_list_from_master
-    global master_count_matrix
+    global master_gene_list
+    global count_matrix
 
-    ec_list = unique_element_list(master_no_dupes, 'last')
+    ec_list = unique_element_list(master_uniq, 'last')
 
     # creating the matrix and adding up the counts
     master_count_matrix = [['Species']]
@@ -230,7 +230,7 @@ def make_matrix_and_counts():
                 if rows != 0:  # first row isn't actually a species
                     species = species_pairs[inner[0]]
                     counter3 = 0
-                    for unique in master_no_dupes:  # iterate over the culled master list to check for matching sets
+                    for unique in master_uniq:  # iterate over the culled master list to check for matching sets
                         if unique[0] == species and unique[len(unique) - 1] == ec:
                             counter3 += 1
                     master_count_matrix[rows].append(str(counter3))
@@ -246,21 +246,21 @@ def make_matrix_and_counts():
 
     # Make Master Files
     print('- making master files: no dupes & count matrix')
-    save_file(master_no_dupes, 'Master_List.csv', main_dir)
+    save_file(master_uniq, 'Master_List.csv', main_dir)
     save_file(master_count_matrix, 'Master_Count.csv', main_dir)
 
     # make a master fasta file
     print('- about to make master FASTA')
     swapped_order = {v: k for k, v in species_pairs.items()}  # reverses dictionary keys and values
     gene_list_from_master = []
-    for i in master_no_dupes:
+    for i in master_uniq:
         # combines species codes and gene numbers in a list to be used for the master fasta function
         gene_list_from_master.append(swapped_order[i[0]] + ':' + i[1])
 
 
 make_matrix_and_counts()
 
-dna_info_list = []
+dna_list = []
 
 
 def chunk(l, n):
@@ -271,7 +271,7 @@ def chunk(l, n):
 
 def get_master_fasta(gene):
     print('- fetching data for master FASTA...')
-    global dna_info_list, gene_list_from_master
+    global dna_list, master_gene_list
     threads = []
     chunked = list(chunk(gene_list_from_master, CHUNK_SIZE))
     for chunks in chunked:
@@ -292,7 +292,7 @@ def master_helper(gene_chunk):
     for gene in gene_chunk:
         # calls the entry from KEGG and splits it into new lines
         gene_fasta_data = str(kegg.get(gene)).split(NL)
-        global dna_info_list
+        global dna_list
         lines = 0
         ntseq_locator = 0
         organism_name = ''
@@ -335,8 +335,8 @@ def master_helper(gene_chunk):
 
 def make_fasta():
     print('- saving master fasta...')
-    master_fasta = get_master_fasta(gene_list_from_master)
-    save_file(get_master_fasta(gene_list_from_master), 'Master_FASTA.csv', fasta_path)
+    master_fasta = get_master_fasta(master_gene_list)
+    save_file(get_master_fasta(master_gene_list), 'Master_FASTA.csv', fasta_path)
 
     # master_fasta = get_master_fasta(gene_list_from_master)  # should actually go above the first time it gets called
     # make a fasta file for each EC number saved in the FASTA dir
@@ -401,7 +401,7 @@ write_readme()
 masterEC_list = [['species', 'EC#s']]
 counter = 0
 print('- filling master matrix...')
-for i in master_count_matrix:  # for each species
+for i in count_matrix:  # for each species
     species_epic_list = []
     if counter == 0:
         pass
@@ -415,7 +415,7 @@ for i in master_count_matrix:  # for each species
                 if str(j) == "0":
                     pass
                 else:
-                    species_epic_list.append(master_count_matrix[0][counter2])
+                    species_epic_list.append(count_matrix[0][counter2])
             counter2 += 1
     masterEC_list.append(species_epic_list)
     counter += 1
