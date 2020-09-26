@@ -36,6 +36,6 @@ out_data = [(APIG, [], logic_apig, fn_apig), (BUTE, [], logic_bute, fn_bute), (C
             (CYAN, [], logic_cyan, fn_cyan), (ECAT, [], logic_ecat, fn_ecat), (EPIG, [], logic_epig, fn_epig),
             (ERIO, [], logic_erio, fn_erio), (GALL, [], logic_gall, fn_gall), (GENI, [], logic_geni, fn_geni),
             (KAEM, [], logic_kaem, fn_kaem), (LUTE, [], logic_lute, fn_lute), (MYRI, [], logic_myri, fn_myri),
-            (NARI, [], logic_nari, fn_nari), (QUER, [], logic_quer, fn_quer), (logic_ec1, [], logic_ec1, fn_ec1),
-            (logic_ec2, [], logic_ec2, fn_ec2), (logic_ec3, [], logic_ec3, fn_ec3),
-            (logic_ec4, [], logic_ec4, fn_ec4)]
+            (NARI, [], logic_nari, fn_nari), (QUER, [], logic_quer, fn_quer), (ENZ_W, [], ENZ_W, fn_enz_w),
+            (ENZ_X, [], ENZ_X, fn_enz_x), (ENZ_Y, [], ENZ_Y, fn_enz_3),
+            (ENZ_Z, [], ENZ_Z, fn_enz_4)]
