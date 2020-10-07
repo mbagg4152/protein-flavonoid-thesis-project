@@ -1,4 +1,3 @@
-# prefix C for catalyst. each letter used is not important, just labels
 ENZ_A = 'EC:4.3.1.24'
 ENZ_B = 'EC:4.3.1.25'
 ENZ_C = 'EC:1.14.14.91'
@@ -29,23 +28,24 @@ ENZ_Z = 'EC:2.4.1.136'
 # logical combination of pathways for each chemical
 start = (ENZ_A or ENZ_B) and ENZ_C and ENZ_D
 
-logic_nari = start and ENZ_I and ENZ_J
-logic_erio = (logic_nari and (ENZ_M or ENZ_N)) or (ENZ_H or (ENZ_F and ENZ_G) and ENZ_I)
-logic_kaem = logic_nari and ENZ_O and ENZ_P
-logic_quer = logic_erio and ((ENZ_O and ENZ_P) or (logic_kaem and (ENZ_M or ENZ_N)))
-logic_cate = logic_erio and ENZ_O and ENZ_Q and ENZ_T
-logic_gall = logic_erio and ENZ_O and ENZ_M and ENZ_Q and ENZ_T
-logic_epig = logic_erio and ENZ_O and ENZ_M and ENZ_Q and ENZ_R and ENZ_S
-logic_cyan = logic_erio and ENZ_O and ENZ_Q and ENZ_R
-logic_ecat = logic_cyan and ENZ_S
-logic_myri = (logic_quer and ENZ_M) or (logic_erio and ENZ_M and ENZ_P) or (logic_nari and ENZ_O and (ENZ_M or ENZ_N) and ENZ_M and ENZ_P)
-isoflavonoid = start and ENZ_E and ENZ_J
-logic_apig = ((ENZ_K or ENZ_L) and logic_nari) or (isoflavonoid and (ENZ_K or ENZ_L))
-logic_lute = logic_apig and (ENZ_M or ENZ_N)
-logic_geni = isoflavonoid and ENZ_U and ENZ_V
-logic_liqu = isoflavonoid
-logic_isol = logic_liqu and ENZ_J
-logic_bute = (start and ENZ_E) or logic_isol
+req_nari = start and ENZ_I and ENZ_J
+req_erio = (req_nari and (ENZ_M or ENZ_N)) or (ENZ_H or (ENZ_F and ENZ_G) and ENZ_I)
+req_kaem = req_nari and ENZ_O and ENZ_P
+req_quer = req_erio and ((ENZ_O and ENZ_P) or (req_kaem and (ENZ_M or ENZ_N)))
+req_cate = req_erio and ENZ_O and ENZ_Q and ENZ_T
+req_gall = req_erio and ENZ_O and ENZ_M and ENZ_Q and ENZ_T
+req_epig = req_erio and ENZ_O and ENZ_M and ENZ_Q and ENZ_R and ENZ_S
+req_cyan = req_erio and ENZ_O and ENZ_Q and ENZ_R
+req_ecat = req_cyan and ENZ_S
+req_myri = (req_quer and ENZ_M) or (req_erio and ENZ_M and ENZ_P) or \
+           (req_nari and ENZ_O and (ENZ_M or ENZ_N) and ENZ_M and ENZ_P)
+req_isoflav = start and ENZ_E and ENZ_J
+req_apig = ((ENZ_K or ENZ_L) and req_nari) or (req_isoflav and (ENZ_K or ENZ_L))
+req_lute = req_apig and (ENZ_M or ENZ_N)
+req_geni = req_isoflav and ENZ_U and ENZ_V
+req_liqu = req_isoflav
+req_isol = req_liqu and ENZ_J
+req_bute = (start and (ENZ_E or 'KO:K08243')) or req_isol
 
 APIG = 'Apigenin'
 BUTE = 'Butein'

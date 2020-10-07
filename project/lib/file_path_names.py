@@ -19,8 +19,8 @@ fn_nari = 'naringenin.csv'
 fn_quer = 'quercetin.csv'
 fn_enz_w = 'EC-2-4-1-74.csv'
 fn_enz_x = 'EC-2-3-1-70.csv'
-fn_enz_3 = 'EC-2-3-1-30.csv'
-fn_enz_4 = 'EC-2-4-1-136.csv'
+fn_enz_y = 'EC-2-3-1-30.csv'
+fn_enz_z = 'EC-2-4-1-136.csv'
 fn_readme = slash + 'ReadMe.txt'
 
 # output directories

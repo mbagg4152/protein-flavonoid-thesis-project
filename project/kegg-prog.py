@@ -109,6 +109,7 @@ def gene_pathway_data(pathway_id):
         line_count += 1
     gene_lines = entry_lines[gene_locator:compound_locator]  # makes a list that is just the gene entry lines
     line_count = 0
+    cleaned_gene_list = []
     for gene in gene_lines:  # this section makes a list of lists that are appreciatively separated
         # makes ^*^ the signifier for splitting
         split_sig = '^*^'
@@ -124,10 +125,11 @@ def gene_pathway_data(pathway_id):
         for g in gene:  # cleans up list of lists of extra spaces at the beginning and end of each list
             gene[j_count] = g.strip()
             j_count += 1
-        gene_lines[line_count] = gene  # replaces the list with the new cleaned list of lists
+        # gene_lines.insert(line_count,gene)    # replaces the list with the new cleaned list of lists
+        cleaned_gene_list.append(gene)
         # print(str(gene))
         line_count += 1  # iterates through each list in the entry
-    return gene_lines
+    return cleaned_gene_list
 
 
 def parse_helper(plant_paths, sem_index):
@@ -261,7 +263,9 @@ def get_master_fasta(gene):
 def master_helper(gene_chunk):
     for gene in gene_chunk:
         # calls the entry from KEGG and splits it into new lines
+
         gene_fasta_data = str(kegg.get(gene)).split(NL)
+        # print(gene_fasta_data)
         global dna_list
         line_count = 0
         ntseq_locator = 0
@@ -278,7 +282,7 @@ def master_helper(gene_chunk):
         for line in gene_fasta_data:
             gene_fasta_data[line_count] = line.strip()
             if line.startswith('ORTHOLOGY'):
-                gene_fasta_data[line_count] = line.strip
+                gene_fasta_data.insert(line_count, line.strip)
                 find_ec = line.find("EC:")
                 gene_fasta_data[line_count] = line[find_ec:-1].replace("[", "").replace("EC:", "")
                 ec_number = "EC " + gene_fasta_data[line_count]  # adds EC back
@@ -377,7 +381,7 @@ def finish_up():
 
     print('- looping through master ec list...')
     for i in master_ec_list:
-        print(str(i))
+        # print(str(i))
         if len(i) > 0:
             tmp_entry = Species(i[0], 0, [])
             for chem_data in data_lists:
@@ -395,9 +399,9 @@ def finish_up():
             out = out + str(*li) + ' | '
         print(out)
 
-    for pf in plant_flavs:
-        data_out = pf.species_string()
-        print(data_out)
+    # for pf in plant_flavs:
+    #     data_out = pf.species_string()
+    #     print(data_out)
 
     end_time = datetime.datetime.now()
     total_time = end_time - init_time

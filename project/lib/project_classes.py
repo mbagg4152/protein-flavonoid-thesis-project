@@ -32,10 +32,10 @@ class ThreadRes:
         self.gene_data = gene_data
 
 
-out_data = [(APIG, [], logic_apig, fn_apig), (BUTE, [], logic_bute, fn_bute), (CATE, [], logic_cate, fn_cate),
-            (CYAN, [], logic_cyan, fn_cyan), (ECAT, [], logic_ecat, fn_ecat), (EPIG, [], logic_epig, fn_epig),
-            (ERIO, [], logic_erio, fn_erio), (GALL, [], logic_gall, fn_gall), (GENI, [], logic_geni, fn_geni),
-            (KAEM, [], logic_kaem, fn_kaem), (LUTE, [], logic_lute, fn_lute), (MYRI, [], logic_myri, fn_myri),
-            (NARI, [], logic_nari, fn_nari), (QUER, [], logic_quer, fn_quer), (ENZ_W, [], ENZ_W, fn_enz_w),
-            (ENZ_X, [], ENZ_X, fn_enz_x), (ENZ_Y, [], ENZ_Y, fn_enz_3),
-            (ENZ_Z, [], ENZ_Z, fn_enz_4)]
+out_data = [(APIG, [], req_apig, fn_apig), (BUTE, [], req_bute, fn_bute), (CATE, [], req_cate, fn_cate),
+            (CYAN, [], req_cyan, fn_cyan), (ECAT, [], req_ecat, fn_ecat), (EPIG, [], req_epig, fn_epig),
+            (ERIO, [], req_erio, fn_erio), (GALL, [], req_gall, fn_gall), (GENI, [], req_geni, fn_geni),
+            (KAEM, [], req_kaem, fn_kaem), (LUTE, [], req_lute, fn_lute), (MYRI, [], req_myri, fn_myri),
+            (NARI, [], req_nari, fn_nari), (QUER, [], req_quer, fn_quer), (ENZ_W, [], ENZ_W, fn_enz_w),
+            (ENZ_X, [], ENZ_X, fn_enz_x), (ENZ_Y, [], ENZ_Y, fn_enz_y),
+            (ENZ_Z, [], ENZ_Z, fn_enz_z)]
