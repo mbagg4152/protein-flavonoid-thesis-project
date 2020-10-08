@@ -1,6 +1,6 @@
 import json
 import os
-from lib.misc_strings import *
+from lib.miscstrings import *
 
 
 def get_json_data(file_name, key):

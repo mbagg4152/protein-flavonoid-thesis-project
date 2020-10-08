@@ -1,9 +1,10 @@
 import threading
 import datetime
 from bioservices.kegg import KEGG
-from lib.json_data import *
-from lib.misc_strings import *
-from lib.project_classes import *
+from lib.jsondata import *
+from lib.miscstrings import *
+from lib.datatypes import *
+import sys
 
 init_time = datetime.datetime.now()
 kegg = KEGG()
@@ -50,25 +51,22 @@ def start():
     global gene_path
     global main_dir
     global cwd
-    # check if main dir exists
-    # if os.path.exists(main_dir):
-    #     decision = input("Directory already exists. Press return key to continue, or type new name: ")
-    #     # if return key hit will continue running th code, will overwrite anything in the preexisting folder
-    #     if decision == "":
-    #         pass
-    #     else:
-    #         # stops code completely and the code will need to be restarted with a different name
-    #         sys.exit("Try an unused folder name next time")
+    decision = ''
+    if len(sys.argv) > 1:
+        decision = sys.argv[1]
+    else:
+        print("No directory name supplied in args, defaulting to directory 'data'. "
+              "Supply directory name in terminal using 'python3 kegg-prog.py dir_name'")
+        decision = 'data'
 
     # create sub dirs for gene, FASTA & chemical data
     cwd = os.getcwd() + slash
-    main_dir = cwd + 'data'
+    main_dir = cwd + decision
     chem_path = main_dir + chem_dir
     fasta_path = main_dir + fasta_dir
     gene_path = main_dir + gene_dir
 
-    # replaced WindowsError with OSError for more general usage
-    # try to make data directories and handle any errors
+    # replaced WindowsError with OSError for more general usage. try to make data directories and handle any errors
     try:
         os.mkdir(main_dir)
     except OSError:
