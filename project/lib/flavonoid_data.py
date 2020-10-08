@@ -45,7 +45,7 @@ req_lute = req_apig and (ENZ_M or ENZ_N)
 req_geni = req_isoflav and ENZ_U and ENZ_V
 req_liqu = req_isoflav
 req_isol = req_liqu and ENZ_J
-req_bute = (start and (ENZ_E or 'KO:K08243')) or req_isol
+req_bute = (start and (ENZ_E or ENZ_J or 'KO:K08243')) or req_isol
 
 APIG = 'Apigenin'
 BUTE = 'Butein'

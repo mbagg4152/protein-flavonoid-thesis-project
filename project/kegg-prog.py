@@ -94,42 +94,31 @@ def start():
 # function that fetches the required data
 def gene_pathway_data(pathway_id):
     print(pathway_id)
-    entry_lines = str(kegg.get(pathway_id)).split(NL)  # gets all of the data and splits it by line
-    # print genes
+    raw = kegg.get(pathway_id)
+    gd = kegg.parse(raw)
     line_count = 0
-    gene_locator = 0
-    compound_locator = 0
-    for line in entry_lines:  # finds the places that have the genes listed
-        entry_lines[line_count] = line.strip()  # remove unwanted whitespace
-        if line.startswith('GENE'):  # finds where GENE is at in each entry
-            entry_lines[line_count] = line.replace("GENE", "").strip()
-            gene_locator = line_count  # gene locator is now the item in the list that has GENE
-        if line.startswith('COMPOUND'):  # finds where COMPOUND is in the entry
-            compound_locator = line_count  # now the item in the list that begins with compound
-        line_count += 1
-    gene_lines = entry_lines[gene_locator:compound_locator]  # makes a list that is just the gene entry lines
-    line_count = 0
-    cleaned_gene_list = []
-    for gene in gene_lines:  # this section makes a list of lists that are appreciatively separated
-        # makes ^*^ the signifier for splitting
-        split_sig = '^*^'
-        gene = gene.replace('  ', split_sig).replace(';', split_sig).replace('[', split_sig).replace(']', '')
-        gene = gene.split(split_sig)
-        alpha_only = NIX
-        for char in pathway_id:
-            if char.isalpha():
-                alpha_only += char
-
-        gene.insert(0, species_pairs[alpha_only])
-        j_count = 0
-        for g in gene:  # cleans up list of lists of extra spaces at the beginning and end of each list
-            gene[j_count] = g.strip()
-            j_count += 1
-        # gene_lines.insert(line_count,gene)    # replaces the list with the new cleaned list of lists
-        cleaned_gene_list.append(gene)
-        # print(str(gene))
-        line_count += 1  # iterates through each list in the entry
-    return cleaned_gene_list
+    gene_lines = []
+    fetched_genes = gd.get('GENE')
+    if fetched_genes is not None:
+        gene_vals = fetched_genes.values()
+        for gv in gene_vals:
+            gene_lines.append(gv)
+        for gene in gene_lines:  # this section makes a list of lists that are appreciatively separated
+            split_sig = '^*^'
+            gene = gene.replace('  ', split_sig).replace(';', split_sig).replace('[', split_sig).replace(']', '')
+            gene = gene.split(split_sig)
+            alpha_only = NIX
+            for char in pathway_id:
+                if char.isalpha():
+                    alpha_only += char
+            gene.insert(0, species_pairs[alpha_only])
+            g_count = 0
+            for g in gene:  # cleans up list of lists of extra spaces at the beginning and end of each list
+                gene[g_count] = g.strip()
+                g_count += 1
+            gene_lines[line_count] = gene
+            line_count += 1  # iterates through each list in the entry
+    return gene_lines
 
 
 def parse_helper(plant_paths, sem_index):
@@ -171,7 +160,6 @@ def parse_master():
         locks.append(threading.Semaphore(1))
         thread_parsing_data.append([])
         tmp_data_holder.append([])
-        # parse_sems.append(threading.Semaphore())
 
     chunk_index = 0
     for chunks in chunked:
@@ -282,7 +270,8 @@ def master_helper(gene_chunk):
         for line in gene_fasta_data:
             gene_fasta_data[line_count] = line.strip()
             if line.startswith('ORTHOLOGY'):
-                gene_fasta_data.insert(line_count, line.strip)
+                # gene_fasta_data.insert(line_count, line.strip)
+                gene_fasta_data[line_count] = line.strip()
                 find_ec = line.find("EC:")
                 gene_fasta_data[line_count] = line[find_ec:-1].replace("[", "").replace("EC:", "")
                 ec_number = "EC " + gene_fasta_data[line_count]  # adds EC back
@@ -311,10 +300,6 @@ def make_fasta():
     print('- saving master fasta...')
     master_fasta = get_master_fasta(master_gene_list)
     save_file(master_fasta, 'Master_FASTA.csv', fasta_path)
-
-    # master_fasta = get_master_fasta(gene_list_from_master)  # should actually go above the first time it gets called
-    # make a fasta file for each EC number saved in the FASTA dir
-
     counter = 0
     print('- looping through master fasta...')
     for i in master_fasta:
@@ -344,7 +329,6 @@ def make_fasta():
     for i in enz_class_list:
         name = i.replace('.', 'p').replace('EC ', NIX).replace(SP, NIX)
         save_file(fasta_by_enz_class[counter], name + CSV, fasta_path)
-        # print('- Found data for ' + name)
         counter += 1
 
 
@@ -396,7 +380,7 @@ def finish_up():
         print('\n' + key.label + ':')
         out = ''
         for li in key.species:
-            out = out + str(*li) + ' | '
+            out = out + str(*li) + ', '
         print(out)
 
     # for pf in plant_flavs:
