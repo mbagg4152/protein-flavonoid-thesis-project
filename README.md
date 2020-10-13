@@ -6,7 +6,7 @@ Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson
 KEGG.py, Made using Python 2.7  
 JW started the code to get information from KEGG about the species we were interested in - April 2019  
 
-### Project Structure
+## Project Structure
 > chem-py-project - main folder  
 chem-py-project/original/ - contains the code from when Jordan Wilson was developing  
 chem-py-project/project/ - current code  
@@ -17,6 +17,24 @@ chem-py-project/project/data/Gene_Data - contains the data pulled from KEGG for 
 chem-py-project/project/json-data -  holds the lists of plants and pathways used in the KEGG program (in JSON format).  
 chem-py-project/project/lib - contains the library/helper files  
 chem-py-project/project/test-output - contains output from testing different KEGG functions in ktester.py  
+
+## Important Files and Functions
+### chem-py-project/project/kegg-prog.py
+This is the main program of the code project.  
+  
+### chem-py-project/project/lib/compoundinfo.py
+This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
+  
+
+### chem-py-project/project/lib/datatypes.py
+This contains the custom data types that are or have been used in the program.  
+  
+### chem-py-project/project/lib/jsondata.py
+### chem-py-project/project/lib/pathstrings.py
+### chem-py-project/project/lib/util.py
+
+
+
 
 ## Original Changelog 
 Version | Change |
