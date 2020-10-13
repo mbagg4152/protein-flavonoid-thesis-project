@@ -1,5 +1,6 @@
 # Chem KEGG Py-Project
-Repo for the research methods class. The goal is to modernize, clean and adapt a former student's thesis project.
+Former repository for the research methods class. The goal was to modernize, clean and adapt a former student's thesis project.  
+Currently this is repository is holding code used in research.
 
 ## Original Code Information
 Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson  
@@ -17,22 +18,72 @@ chem-py-project/project/data/Gene_Data - contains the data pulled from KEGG for 
 chem-py-project/project/json-data -  holds the lists of plants and pathways used in the KEGG program (in JSON format).  
 chem-py-project/project/lib - contains the library/helper files  
 chem-py-project/project/test-output - contains output from testing different KEGG functions in ktester.py  
-
-## Important Files and Functions
-### chem-py-project/project/kegg-prog.py
-This is the main program of the code project.  
   
-### chem-py-project/project/lib/compoundinfo.py
+---
+# Important Files and Functions
+__Note:__ Not all files or functions are covered below.  
+  
+---  
+## ```chem-py-project/project/kegg-prog.py```
+This is the main program of the code project.  
+
+#### ```gene_pathway_data```
+This function is called and passed a pathway for a specific organism (e.g. adu00941). For each pathway that is passed in, the code uses the kegg plugin in order to get the gene data for the specific pathway, which is done using the following lines:  
+```python
+    raw = kegg.get(pathway_id)
+    gd = kegg.parse(raw)
+    ...
+    fetched_genes = gd.get('GENE')
+```
+Once the gene data is collected,the data is split up into different list items. For reference, a single gene entry for cam00941 is shown below (the other entries in 'GENE' take similar form):  
+```
+'GENE': {'101489106': 'chalcone synthase 1 [KO:K00660] [EC:2.3.1.74]', ...}
+```
+Then the data is added to a list such that this gene data is associated with the appropriate plant.
+
+
+---
+## ```chem-py-project/project/lib/compoundinfo.py```
 This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
   
-
-### chem-py-project/project/lib/datatypes.py
+  
+---
+## ```chem-py-project/project/lib/datatypes.py```
 This contains the custom data types that are or have been used in the program.  
   
-### chem-py-project/project/lib/jsondata.py
-### chem-py-project/project/lib/pathstrings.py
-### chem-py-project/project/lib/util.py
 
+---
+## ``` chem-py-project/project/lib/jsondata.py```
+This file calls the ```get_json_data(filename,key)``` function from util.py, which reads in the list of plant and pathway codes as well as the file containing the scientific name for each plant and the full name of each pathway map.
+
+
+
+
+---
+## ```chem-py-project/project/lib/pathstrings.py```
+This file just contains the strings which hold the dedicated output folder and file names.
+
+
+
+---
+## ```chem-py-project/project/lib/util.py```
+This file contains various utility functions used throughout the program.
+
+
+
+#### ```get_json_data```  
+Reads in a JSON (JavaScript Object Notation) file and converts the data into usable python variables.
+
+
+
+
+#### ```remove_dupes```   
+Removes duplicate elements from a list.
+
+
+
+#### ```write_readme```  
+Writes the program's original README file.
 
 
 
