@@ -13,14 +13,15 @@ fn_erio = 'eriodictyol.csv'
 fn_gall = 'gallocatechin.csv'
 fn_geni = 'genistein.csv'
 fn_kaem = 'kaempferol.csv'
+fn_isol = 'isoliquiritigenin.csv'
 fn_lute = 'luteolin.csv'
 fn_myri = 'myricetin.csv'
 fn_nari = 'naringenin.csv'
 fn_quer = 'quercetin.csv'
-fn_enz_w = 'EC-2-4-1-74.csv'
-fn_enz_x = 'EC-2-3-1-70.csv'
-fn_enz_y = 'EC-2-3-1-30.csv'
-fn_enz_z = 'EC-2-4-1-136.csv'
+fn_ec23 = 'EC-2-4-1-74.csv'
+fn_ec24 = 'EC-2-3-1-70.csv'
+fn_ec25 = 'EC-2-3-1-30.csv'
+fn_ec26 = 'EC-2-4-1-136.csv'
 fn_readme = slash + 'ReadMe.txt'
 
 # output directories
@@ -31,8 +32,6 @@ gene_dir = slash + 'Gene_Data'
 # pathways for the json data  (and the name of the json object used in all files)
 info_dir = 'json-data' + slash
 j_key = 'obj'
-
-
 fn_path_list = info_dir + 'path_codes.json'
 fn_path_pairs = info_dir + 'path_names_codes.json'
 fn_plant_list = info_dir + 'plant_codes.json'

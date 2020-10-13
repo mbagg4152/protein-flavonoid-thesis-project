@@ -165,10 +165,10 @@ def parse_master():
         t.join()
     master_uniq = remove_dupes(master_list)
     master_uniq = list(filter(None, master_uniq))
-    count = 0
-    for i in master_uniq:  # removes false values and iterates through the list of lists
+    # count = 0
+    for count in range(0, len(master_uniq)):  # removes false values and iterates through the list of lists
         master_uniq[count] = list(filter(None, master_uniq[count]))
-        count += 1
+        # count += 1
 
 def make_matrix_and_counts():
     global master_gene_list
@@ -316,7 +316,8 @@ def make_fasta():
     print('- creating fasta files by ec number...')
     counter = 0
     for i in enz_class_list:
-        name = i.replace('.', 'p').replace('EC ', NIX).replace(SP, NIX)
+        # name = i.replace('.', 'p').replace('EC ', NIX).replace(SP, NIX)
+        name = i.replace('.', '-').replace(SP, NIX)
         save_file(fasta_by_enz_class[counter], name + CSV, fasta_path)
         counter += 1
 
@@ -326,14 +327,14 @@ def finish_up():
     master_ec_list = [['species', 'EC#s']]
     counter = 0
     print('- filling master matrix...')
-    for i in count_matrix:  # for each species
+    for entry in count_matrix:  # for each species
         species_ec_list = []
         if counter == 0:
             pass
 
         else:
             counter2 = 0
-            for j in i:  # for EC in species
+            for j in entry:  # for EC in species
                 if counter2 == 0:
                     species_ec_list.append(j)
                 else:
@@ -352,24 +353,26 @@ def finish_up():
         data_lists.append(tmp_data)
 
     print('- looping through master ec list...')
-    for i in master_ec_list:
-        # print(str(i))
-        if len(i) > 0:
-            tmp_entry = Species(i[0], 0, [])
+    for entry in master_ec_list:
+        # print(str(entry))
+        if len(entry) > 0:
+            tmp_entry = Species(entry[0], 0, [])
             for chem_data in data_lists:
-                if chem_data.logic(i):
-                    chem_data.species.append([i[0]])
+                if flav_check(chem_data.label, entry):
+                    chem_data.species.append([entry[0]])
                     tmp_entry.flavonoids.append(chem_data.label)
                     tmp_entry.count += 1
             plant_flavs.append(tmp_entry)
 
     for key in data_lists:
         save_file(key.species, key.file_name, chem_path)
-        print('\n' + key.label + ':')
-        out = ''
-        for li in key.species:
-            out = out + str(*li) + ', '
-        print(out)
+        item_count = len(key.species)
+        print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
+              'Data saved in ' + chem_path + key.file_name + '.')
+        # out = ''
+        # for li in key.species:
+        #     out = out + str(*li) + ', '
+        # print(out)
 
     # for pf in plant_flavs:
     #     data_out = pf.species_string()

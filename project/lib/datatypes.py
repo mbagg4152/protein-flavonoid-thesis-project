@@ -1,5 +1,6 @@
 from lib.pathstrings import *
 from lib.compoundinfo import *
+from lib.miscstrings import *
 
 class ChemData:
     def __init__(self, label: str, species: [str], logic, file_name: str):
@@ -28,10 +29,29 @@ class ThreadRes:
         self.path_id = path_id
         self.gene_data = gene_data
 
-out_data = [(APIG, [], has_apig, fn_apig), (BUTE, [], has_bute, fn_bute), (CATE, [], has_cate, fn_cate),
-            (CYAN, [], has_cyan, fn_cyan), (ECAT, [], has_ecat, fn_ecat), (EPIG, [], has_epig, fn_epig),
-            (ERIO, [], has_erio, fn_erio), (GALL, [], has_gall, fn_gall), (GENI, [], has_geni, fn_geni),
-            (KAEM, [], has_kaem, fn_kaem), (LUTE, [], has_lute, fn_lute), (MYRI, [], has_myri, fn_myri),
-            (NARI, [], has_nari, fn_nari), (QUER, [], has_quer, fn_quer), (ENW, [], has_w, fn_enz_w),
-            (ENX, [], has_x, fn_enz_x), (ENY, [], has_y, fn_enz_y),
-            (ENZ, [], has_z, fn_enz_z)]
+class Flavonoid:
+    def __init__(self):
+        self.name = ''
+        self.req = ''
+        self.plants = []
+
+class Plant:
+    def __init__(self):
+        self.name = ''
+        self.code = ''
+        self.path_codes = []
+        self.ec_numbers = []
+        self.flavonoids = []
+
+out_data = [(AGI, [], agi, fn_apig), (BU, [], bu, fn_bute), (CA, [], ca, fn_cate),
+            (CYN, [], cyn, fn_cyan), (EC, [], ecat, fn_ecat), (EGCG, [], egcg, fn_epig),
+            (ERD, [], erd, fn_erio), (GC, [], gc, fn_gall), (GEN, [], gen, fn_geni),
+            (KMP, [], kmp, fn_kaem), (LU2, [], lu2, fn_lute), (MYC, [], myri, fn_myri),
+            (NAR, [], nar, fn_nari), (QUE, [], quer, fn_quer), (HCC, [], bu, fn_isol)]
+# out_data = [(AGI, [], agi, fn_apig), (BU, [], bu, fn_bute), (CA, [], ca, fn_cate),
+#             (CYN, [], cyn, fn_cyan), (EC, [], ecat, fn_ecat), (EGCG, [], egcg, fn_epig),
+#             (ERD, [], erd, fn_erio), (GC, [], gc, fn_gall), (GEN, [], gen, fn_geni),
+#             (KMP, [], kmp, fn_kaem), (LU2, [], lu2, fn_lute), (MYC, [], myri, fn_myri),
+#             (NAR, [], nar, fn_nari), (QUE, [], quer, fn_quer), (E23, [], ec23, fn_ec23),
+#             (E24, [], ec24, fn_ec24), (E25, [], ec25, fn_ec25),
+#             (E26, [], ec26, fn_ec26), (HCC, [], bu, fn_isol)]

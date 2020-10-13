@@ -18,7 +18,7 @@ def main():
     while ans:
         print(
             '\n1. Organism IDs' +
-            '\n2. Output for cam00940' +
+            '\n2. Output for cam00943' +
             '\n3. Get pathways for lja ' +
             '\n4.' +
             '\n0. Exit'
@@ -29,7 +29,7 @@ def main():
             kdb.list('organisms')
             write_out(fn_org_ids, str(kdb.organismIds))
         elif ans == 2:
-            raw = kdb.get('cam00940')
+            raw = kdb.get('cam00941')
             raw_dict = kdb.parse(raw)
             gene = raw_dict.get('GENE', 'No data').values()
             compound = raw_dict.get('COMPOUND', 'No data').values()

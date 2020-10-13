@@ -17,7 +17,7 @@ full_list = plant_list_orig
 plant_pairs_orig = get_json_data(fn_plant_pairs, j_key)
 plant_pairs_plus = get_json_data(fn_plants_pairs_plus, j_key)
 
-species_pairs = plant_pairs_plus
+species_pairs = plant_pairs_orig
 
 # list of pathways of interest
 pathway_list = get_json_data(fn_path_list, j_key)
