@@ -4,6 +4,7 @@ from bioservices.kegg import KEGG
 from lib.jsondata import *
 from lib.miscstrings import *
 from lib.datatypes import *
+from lib.pathstrings import *
 import sys
 
 init_time = datetime.datetime.now()
@@ -33,6 +34,7 @@ species_list = full_list
 thread_parsing_data = []
 tmp_data_holder = []
 
+
 def main():
     global path_and_species_list
     path_and_species_list = [i + j for i in species_list for j in pathway_list]
@@ -42,6 +44,7 @@ def main():
     make_fasta()
     write_readme(main_dir, fn_readme, init_time, fasta_path, gene_path)
     finish_up()
+
 
 def start():
     global chem_path
@@ -86,6 +89,7 @@ def start():
         print("Error making Chemical dir.")
         pass
 
+
 # function that fetches the required data
 def gene_pathway_data(pathway_id):
     print(pathway_id)
@@ -115,6 +119,7 @@ def gene_pathway_data(pathway_id):
             line_count += 1  # iterates through each list in the entry
     return gene_lines
 
+
 def parse_helper(plant_paths, sem_index):
     global master_list
     global tmp_data_holder
@@ -141,6 +146,7 @@ def parse_helper(plant_paths, sem_index):
         master_list.extend(thread_parsing_data[sem_index])
     finally:
         lock_master.release()
+
 
 def parse_master():
     global master_list
@@ -169,6 +175,7 @@ def parse_master():
     for count in range(0, len(master_uniq)):  # removes false values and iterates through the list of lists
         master_uniq[count] = list(filter(None, master_uniq[count]))
         # count += 1
+
 
 def make_matrix_and_counts():
     global master_gene_list
@@ -220,6 +227,7 @@ def make_matrix_and_counts():
         # combines species codes and gene numbers in a list to be used for the master fasta function
         master_gene_list.append(swapped_order[i[0]] + ':' + i[1])
 
+
 def get_master_fasta(gene):
     print('- fetching data for master FASTA...')
     global dna_list, master_gene_list
@@ -237,6 +245,7 @@ def get_master_fasta(gene):
     for thread in threads:
         thread.join()
     return dna_list
+
 
 def master_helper(gene_chunk):
     for gene in gene_chunk:
@@ -285,6 +294,7 @@ def master_helper(gene_chunk):
         joined_dna_seq = [sep.join(dna_seq)]
         dna_list.append(joined_dna_seq)  # adds single entry list to the list of lists
 
+
 def make_fasta():
     print('- saving master fasta...')
     master_fasta = get_master_fasta(master_gene_list)
@@ -320,6 +330,7 @@ def make_fasta():
         name = i.replace('.', '-').replace(SP, NIX)
         save_file(fasta_by_enz_class[counter], name + CSV, fasta_path)
         counter += 1
+
 
 def finish_up():
     global data_lists
@@ -368,7 +379,7 @@ def finish_up():
         save_file(key.species, key.file_name, chem_path)
         item_count = len(key.species)
         print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
-              'Data saved in ' + chem_path + key.file_name + '.')
+              'Data saved in ' + chem_path + slash + key.file_name + '.')
         # out = ''
         # for li in key.species:
         #     out = out + str(*li) + ', '
@@ -381,5 +392,6 @@ def finish_up():
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
     print('\ntotal time taken: ' + str(total_time))
+
 
 main()
