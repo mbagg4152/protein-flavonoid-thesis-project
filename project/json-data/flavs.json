@@ -1,43 +1,18 @@
 {
-  "obj": {
-    "Apigenin": [[],[]],
-
-    "Butein": [[],[]],
-    "Catechin": [
-      []
-    ],
-    "Cyanidin": [
-      []
-    ],
-    "Epicatechin": [
-      []
-    ],
-    "Epigallocatechin": [
-      []
-    ],
-    "Eriodictyol": [
-      []
-    ],
-    "Gallocatechin": [
-      []
-    ],
-    "Genistein": [
-      []
-    ],
-    "Kaempferol": [
-      []
-    ],
-    "Luteolin": [
-      []
-    ],
-    "Myricetin": [
-      []
-    ],
-    "Naringenin": [
-      []
-    ],
-    "Quercetin": [
-      []
-    ]
-  }
+  "obj": [
+    "Apigenin",
+    "Butein",
+    "Catechin",
+    "Cyanidin",
+    "Epicatechin",
+    "Epigallocatechin",
+    "Eriodictyol",
+    "Gallocatechin",
+    "Kaempferol",
+    "Luteolin",
+    "Myricetin",
+    "Naringenin",
+    "Quercetin",
+    "Isoliquiritigenin"
+  ]
 }
