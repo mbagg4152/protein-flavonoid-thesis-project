@@ -47,34 +47,13 @@ Then the data is added to a list such that this gene data is associated with the
 ---
 ## ```chem-py-project/project/lib/compoundinfo.py```
 This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
-The EC numbers are labeled as such:
+Some of the EC number variables are shown below:
 ```python
 E1 = 'EC:4.3.1.24'
 E2 = 'EC:4.3.1.25'
-E3 = 'EC:1.14.14.91'
-E4 = 'EC:6.2.1.12'
-E5 = 'EC:2.3.1.170'
-E6 = 'EC:2.3.1.133'
-E7 = 'EC:1.14.14.96'
-E8 = 'EC:1.14.13.-'
-E9 = 'EC:2.3.1.74'
-E10 = 'EC:5.5.1.6'
-E11 = 'EC:1.14.20.5'
-E12 = 'EC:1.14.19.76'
-E13 = 'EC:1.14.14.81'
-E14 = 'EC:1.14.14.82'
-E15 = 'EC:1.14.11.9'
-E16 = 'EC:1.14.20.6'
-E17 = 'EC:1.1.1.219'
+...
 E17_2 = 'EC:1.1.1.219 1.1.1.234' # unique number for bifunctional dihydroflavonol 4-reductase/flavanone 4-reductase
-E18 = 'EC:1.14.20.4'
-E19 = 'EC:1.3.1.77'
-E20 = 'EC:1.17.1.3'
-E21 = 'EC:1.14.14.87'
-E22 = 'EC:4.2.1.105'
-E23 = 'EC:2.4.1.74'
-E24 = 'EC:2.3.1.70'
-E25 = 'EC:2.3.1.30'
+...
 E26 = 'EC:2.4.1.136'
 ```
 ### ```or_in```
