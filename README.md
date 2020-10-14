@@ -140,7 +140,7 @@ Removes duplicate elements from a list.
 Writes the program's original README file.
 
 
---
+---
 ## Original Changelog 
 Version | Change |
 :-------|:-------|
