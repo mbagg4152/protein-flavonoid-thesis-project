@@ -1,18 +1,17 @@
 # import wget
 from jsondata import *
 from pathstrings import slash as slash
+import re
 import os
 
 partial_url = "'http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism&word="
 cwd = os.getcwd()
-new_dir = 'wget-out'
-wget_out = new_dir + 'wget-out.txt'
+new_dir = '..' + slash + 'misc_output' + slash + 'knapsack_dir'
+ks_data_name = new_dir + slash + 'knapsack_data.txt'
+wget_out = new_dir + slash + 'wget-out.txt'
 plant_flavs = {}
-to_remove = [
-    '<tr>', '</tr>', '<a href=information.php?word=', '</a>', "target=\"_blank\">", "target=\"_blank\"", '</td>',
-    "<td class=\"d1\">", '<font color=#FF00BF>', '</font>', "\n", "\\n"
-
-]
+to_remove = ['<tr>', '</tr>', '<a href=information.php?word=', '</a>', "target=\"_blank\">", "target=\"_blank\"",
+             '</td>', "<td class=\"d1\">", '<font color=#FF00BF>', '</font>', "\n", "\\n", ">"]
 
 def main():
     try: os.mkdir(new_dir)
@@ -20,27 +19,44 @@ def main():
     for key in plant_pairs:
         tmp_val = plant_pairs[key]
         tmp_url = partial_url + tmp_val + "'"
-        tmp_file_name = new_dir + slash + key + ".txt"
+        tmp_file_name = new_dir + slash + key + ".csv"
         wget_download(tmp_file_name, tmp_url)
         parse_file(tmp_file_name, tmp_val)
+    try:
+        tmp_file = open(ks_data_name, 'x')
+        tmp_file.close()
+    except FileExistsError or PermissionError: print('')
+
+    ks_file = open(ks_data_name, 'w')
+    ks_str = ''
     for key in plant_flavs:
-        print(key + ': ')
+        ks_str += key + ': '
         if len(plant_flavs[key]) > 0:
-            # print(key + ': ' + str(plant_flavs[key]))
+            # ks_str += "\n"
+            cas_id_form = "([0-9]*-[0-9]*-[0-9]*)"
             for item in plant_flavs[key]:
-                print(str(item))
+                check = re.findall(cas_id_form, item[2])
+                if len(check) < 1: ks_str += ' ,' + item[0] + ',' + item[2] + '\n'
+                else: ks_str += ' ,' + item[0] + ',' + item[3] + '\n'
+
+        ks_str += '\n'
+    ks_file.write(ks_str)
+    ks_file.close()
+
+
 def wget_download(name, url):
     try:
         tmp_file = open(name, 'x')
         tmp_file.close()
     except FileExistsError: pass
-    os.system("echo >" + wget_out)
-    tmp_cmd = "wget -O " + name + ' ' + url + '>> ' + wget_out
+    # os.system("echo >" + wget_out)
+    tmp_cmd = "wget -O " + name + ' ' + url
     os.system(tmp_cmd)
+
 
 def parse_file(file_name, plant_name):
     file = open(file_name, 'r')
-    lines = file.readlines()
+    lines = file.read().split('<tr')
     plant_flavs[plant_name] = []
     for line in lines:
         tmp_line = line
