@@ -18,7 +18,7 @@ JW started the code to get information from KEGG about the species we were inter
 ```chem-py-project/project/data/FASTA_Data``` contains FASTA EC number data  
 ```chem-py-project/project/data/Gene_Data``` contains the data pulled from KEGG for each plant pathway  
 ```chem-py-project/project/json-data```  holds the lists of plants and pathways used in the KEGG program (in JSON format).  
-```chem-py-project/project/lib``` contains the library/helper files  
+```chem-py-project/project/lib``` contains the library/helper and other assorted test code files.
 ```chem-py-project/project/misc_output``` contains output from testing programs not used by kegg-prog.py  
   
 ---
