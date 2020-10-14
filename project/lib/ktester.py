@@ -3,7 +3,7 @@ import os.path
 
 sep = os.sep
 cwd = os.getcwd()
-tst_dir = cwd + sep + 'test-output' + sep
+tst_dir = cwd + sep + 'misc_output' + sep
 kdb = KEGG()
 fn_org_ids = 'allOrganismIDs.txt'
 fn_org_pathway = 'orgPathGetOutput.txt'
@@ -14,7 +14,7 @@ fn_compound = 'compoundDataOnly.txt'
 
 def main():
     ans = True
-    print('This is for testing kegg output format. output files wil be in test-output' + sep)
+    print('This is for testing kegg output format. output files wil be in misc_output' + sep)
     while ans:
         print(
             '\n1. Organism IDs' +

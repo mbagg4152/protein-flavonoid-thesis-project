@@ -24,8 +24,11 @@ def main():
         wget_download(tmp_file_name, tmp_url)
         parse_file(tmp_file_name, tmp_val)
     for key in plant_flavs:
-        print(key + ': ' + str(plant_flavs[key]))
-
+        print(key + ': ')
+        if len(plant_flavs[key]) > 0:
+            # print(key + ': ' + str(plant_flavs[key]))
+            for item in plant_flavs[key]:
+                print(str(item))
 def wget_download(name, url):
     try:
         tmp_file = open(name, 'x')
