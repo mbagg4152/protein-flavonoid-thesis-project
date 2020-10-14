@@ -93,6 +93,15 @@ def cia(e): return or_in(e, E1, E2)  # cinnamic acid
 The logical functions are used in the function ```finish_up``` in kegg-prog.py. For each plant's total EC list, the program will loop through each of the flavonoids' logical requirements, which are held held in the list of ```ChemData``` objects called ```data_lists```, where each item ```chem_data``` has a property ```chem_data.label``` that is passed to a function in ```compoundinfo.py``` called ```flav_check```, which then determines the logical function to be called. If the result of ```flav_check``` returns as true, then the current plant's name will be appended to the list of plants, which is held in ```chem_data.species```.   
 
 ---
+## ```chem-py-project/project/lib/knapsackinfo.py```
+This program uses the 'wget' command in order to pull the information for each of the species from KNApSAcK. For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of interest. This program was written with the purpose of making data collection for both the compounds and their relatives easier.  
+More searching will be done in order to determine how easy or difficult it would be to update this code to work with other databases.
+
+__Note:__ It will not work correctly if the wget system command is not installed (currently unsure if wget is available for Windows). 
+
+
+
+---
 ## ```chem-py-project/project/lib/datatypes.py```
 This contains the custom data types that are or have been used in the program.  
   
