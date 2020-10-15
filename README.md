@@ -67,8 +67,7 @@ Takes in a list and elements and returns true if at least ONE element is present
 ### ```and_in```
 Takes in a list and elements and returns true only if all of the passed elements are in the list.
 
-### The Logical Functions
-
+### ```The Logical Functions```
 Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite 
 compounds which are found on the map. The prerequisite functions are used to get the total result for the specific 
 compound. If the prerequisite returns ```False```, the compound logic function will also return ```False```.  
