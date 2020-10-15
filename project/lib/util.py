@@ -1,7 +1,7 @@
 import json
 import os
 from lib.miscvals import *
-from lib.pathstrings import slash
+from lib.pathstrings import SEP
 
 def get_json_data(file_name, key):
     data = ''
@@ -9,7 +9,7 @@ def get_json_data(file_name, key):
         with open(file_name) as jsonFile:
             data = json.load(jsonFile)
     except FileNotFoundError:
-        file_name = '..' + slash + file_name
+        file_name = '..' + SEP + file_name
         with open(file_name) as jsonFile:
             data = json.load(jsonFile)
     return data[key]
@@ -31,7 +31,7 @@ def unique_element_list(list_name, index):
         if i[int(index)] not in element_list: element_list.append(i[int(index)])
     return element_list
 
-def chunk(items, number):
+def list_partition(items, number):
     # looping till length l
     for i in range(0, len(items), number): yield items[i:i + number]
 

@@ -1,11 +1,11 @@
 from jsondata import *
-from pathstrings import slash as slash
+from pathstrings import SEP as slash
 from miscvals import *
 import os
 import re
 
-new_dir = '..' + slash + 'misc_output' + slash + 'knapsack_dir'
-ks_data_name = new_dir + slash + 'knapsack_data.csv'
+new_dir = '..' + SEP + 'misc_output' + SEP + 'knapsack_dir'
+ks_data_name = new_dir + SEP + 'knapsack_data.csv'
 plant_flavs = {}
 
 # sections of text to be removed from the fetched HTML file
@@ -17,10 +17,10 @@ def main():
     except FileExistsError: pass
 
     # parsing file of plant codes and names
-    for key in plant_pairs:
-        tmp_val = plant_pairs[key]  # plant name
+    for key in plant_dict_reg:
+        tmp_val = plant_dict_reg[key]  # plant name
         tmp_url = KS_URL + tmp_val + "'"  # fill out URL for the plant
-        tmp_file_name = new_dir + slash + key + ".txt"  # temporary filename for the downloaded page
+        tmp_file_name = new_dir + SEP + key + ".txt"  # temporary filename for the downloaded page
         wget_download(tmp_file_name, tmp_url)  # download the page for the plant
         parse_file(tmp_file_name, tmp_val)  # parse the downloaded file
 
