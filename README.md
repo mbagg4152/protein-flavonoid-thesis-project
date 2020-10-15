@@ -71,8 +71,7 @@ Takes in a list and elements and returns true only if all of the passed elements
 Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite 
 compounds which are found on the map. The prerequisite functions are used to get the total result for the specific 
 compound. If the prerequisite returns ```False```, the compound logic function will also return ```False```.  
-The functions return ```True``` or ```False``` based on whether or not the required EC numbers are in the list 
-(parameter ```e```) which was passed to the function ```flav_check```.   
+  
 Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines 
 at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
 For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR ```EC:4.3.1.25``` is written as such:
@@ -80,12 +79,16 @@ For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR
 ```python
 def tca(e): return or_in(e, E1, E2)  # cinnamic acid
 ```
-The logical functions are used in the function ```finish_up``` in ```kegg-prog.py```. For each plant's total EC list, 
+The logical functions are used in the function ```finish_up``` in ```kegg-prog.py```. 
+For each plant's total EC list, 
 the program will loop through each of the flavonoids' logical requirements, which are held held in the list of 
 ```ChemData``` objects called ```data_lists```, where each item ```chem_data``` has a property ```chem_data.label``` 
 that is passed to a function in ```compoundinfo.py``` called ```flav_check```, which then determines the logical 
-function to be called. If the result of ```flav_check``` returns as true, then the current plant's name will be appended
- to the list of plants, which is held in ```chem_data.species```.   
+function to be called. 
+If the result of ```flav_check``` returns as true, then the current plant's name will be appended
+ to the list of plants, which is held in ```chem_data.species```. 
+The functions return ```True``` or ```False``` based on whether or not the required EC numbers are in the list 
+(parameter ```e```) which was passed to ```flav_check```.    
 
 ---
 ## ```lib/knapsackinfo.py```
