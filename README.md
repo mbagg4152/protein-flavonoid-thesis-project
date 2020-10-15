@@ -72,7 +72,7 @@ Different logical functions have been written not only for the flavonoids of int
 compounds which are found on the map. The prerequisite functions are used to get the total result for the specific 
 compound. If the prerequisite returns ```False```, the compound logic function will also return ```False```.  
 The functions return ```True``` or ```False``` based on whether or not the required EC numbers are in the list 
-(parameter ```e```) which was passed to the function ```flav_check```. 
+(parameter ```e```) which was passed to the function ```flav_check```.   
 Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines 
 at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
 For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR ```EC:4.3.1.25``` is written as such:
