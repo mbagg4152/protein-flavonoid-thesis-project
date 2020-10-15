@@ -68,17 +68,13 @@ Takes in a list and elements and returns true if at least ONE element is present
 Takes in a list and elements and returns true only if all of the passed elements are in the list.
 
 ### The Logical Functions
-<<<<<<< HEAD
+
 Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite 
 compounds which are found on the map. The prerequisite functions are used to get the total result for the specific 
 compound. If the prerequisite returns ```False```, the compound logic function will also return ```False```.  
-Each function is named using each compound's PDBj ID (or abbreviation, if none is available) in order to keep code 
-lines at a decent length, but each function does have its compound's full name commented at the end of its respective 
-line. For example, the function for Cinnamic acid, which requires 
-```EC:4.3.1.24``` OR ```EC:4.3.1.25```:
-
-Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite compounds which are found on the map. The prerequisite functions are used to get the total result for the specific compound. If the prerequisite returns False, the compound logic function will also return false.  
-Each function is abbreviated in order to keep code lines at a decent length, but each function does have its compound's full name commented at the end of its respective line. For example, the function for Cinnamic acid, which requires EC:4.3.1.24 OR EC:4.3.1.25:
+Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines 
+at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
+For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR ```EC:4.3.1.25```:
 
 ```python
 def tca(e): return or_in(e, E1, E2)  # cinnamic acid
