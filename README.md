@@ -80,7 +80,7 @@ For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR
 ```python
 def tca(e): return or_in(e, E1, E2)  # cinnamic acid
 ```
-The logical functions are used in the function ```finish_up``` in kegg-prog.py. For each plant's total EC list, 
+The logical functions are used in the function ```finish_up``` in ```kegg-prog.py```. For each plant's total EC list, 
 the program will loop through each of the flavonoids' logical requirements, which are held held in the list of 
 ```ChemData``` objects called ```data_lists```, where each item ```chem_data``` has a property ```chem_data.label``` 
 that is passed to a function in ```compoundinfo.py``` called ```flav_check```, which then determines the logical 
@@ -150,7 +150,7 @@ Removes duplicate elements from a list.
 
 
 #### ```write_readme```  
-Writes the program's original README file.
+Writes the program's original ```README``` file.
 
 
 ---
