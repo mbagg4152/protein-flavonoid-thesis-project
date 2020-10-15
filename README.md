@@ -74,7 +74,7 @@ compounds which are found on the map. The prerequisite functions are used to get
 compound. If the prerequisite returns ```False```, the compound logic function will also return ```False```.  
 Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines 
 at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
-For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR ```EC:4.3.1.25```:
+For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR ```EC:4.3.1.25``` is written as such:
 
 ```python
 def tca(e): return or_in(e, E1, E2)  # cinnamic acid
