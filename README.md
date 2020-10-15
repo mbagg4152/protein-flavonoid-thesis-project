@@ -1,13 +1,13 @@
 # Chem KEGG Py-Project
-Former repository for the research methods class. The goal was to modernize, clean and adapt a former student's thesis 
-project.  
-Currently this is repository is holding code used in research.
+Former repository for CHEM-491 (Research Methods) class and is now being used in continuing the project.  
+The goal was to modernize, clean and adapt a former student's thesis project.  
+
 
 ---
 ## Original Code Information
-Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson  
-KEGG.py, Made using Python 2.7  
-JW started the code to get information from KEGG about the species we were interested in - April 2019  
+> *KEGG.py, Made using Python 2.7  
+Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson    
+JW started the code to get information from KEGG about the species we were interested in - April 2019*  
 
 ---
 ## Project Structure
@@ -42,7 +42,7 @@ following lines:
 ```
 Once the gene data is collected,the data is split up into different list items. For reference, a single gene entry for 
 cam00941 is shown below (the other entries in 'GENE' take similar form):  
-```
+```python
 'GENE': {'101489106': 'chalcone synthase 1 [KO:K00660] [EC:2.3.1.74]', ...}
 ```
 Then the data is added to a list such that this gene data is associated with the appropriate plant.
@@ -71,6 +71,8 @@ Takes in a list and elements and returns true only if all of the passed elements
 Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite 
 compounds which are found on the map. The prerequisite functions are used to get the total result for the specific 
 compound. If the prerequisite returns ```False```, the compound logic function will also return ```False```.  
+The functions return ```True``` or ```False``` based on whether or not the required EC numbers are in the list 
+(parameter ```e```) which was passed to the function ```flav_check```. 
 Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines 
 at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
 For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR ```EC:4.3.1.25``` is written as such:
@@ -97,8 +99,8 @@ This program was written with the purpose of making data collection for both the
 More searching will be done in order to determine how easy or difficult it would be to update this code to work with 
 other databases.
 
-__Note:__ It will not work correctly if the ```wget``` system command is not installed (currently unsure if it is 
-available for Windows). 
+__Note:__ It will not work correctly if the ```wget``` system command is not installed (this has not yet been tested
+on Windows, may potentially only be compatible with Linux systems). 
 
 
 
