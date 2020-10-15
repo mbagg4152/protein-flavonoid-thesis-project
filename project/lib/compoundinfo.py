@@ -1,4 +1,4 @@
-from lib.miscstrings import *
+from lib.miscvals import *
 
 E1 = 'EC:4.3.1.24'
 E2 = 'EC:4.3.1.25'

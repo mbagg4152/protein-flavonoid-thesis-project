@@ -1,6 +1,6 @@
 from lib.pathstrings import *
 from lib.compoundinfo import *
-from lib.miscstrings import *
+from lib.miscvals import *
 
 class ChemData:
     def __init__(self, label: str, species: [str], logic, file_name: str):

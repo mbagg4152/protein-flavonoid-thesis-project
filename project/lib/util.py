@@ -1,7 +1,7 @@
 import json
 import os
-from miscstrings import *
-from pathstrings import slash
+from lib.miscvals import *
+from lib.pathstrings import slash
 
 def get_json_data(file_name, key):
     data = ''
@@ -17,8 +17,8 @@ def get_json_data(file_name, key):
 def remove_dupes(dupe_list):
     unique_list = []  # creates an empty list
     for item in dupe_list:
-        if item not in unique_list:
-            unique_list.append(item)  # adds item to empty list if it's not already in the list
+        # adds item to empty list if it's not already in the list
+        if item not in unique_list: unique_list.append(item)
     return unique_list
 
 # find unique EC numbers so have a generic function and run it
@@ -26,19 +26,14 @@ def remove_dupes(dupe_list):
 def unique_element_list(list_name, index):
     original_index = index
     element_list = []
-    for i in list_name:
-        # print
-        if original_index == 'last':
-            # assigns the string "last" to the very last list in the list of lists
-            index = len(i) - 1
-        if i[int(index)] not in element_list:  # finds unique EC number not in the list
-            element_list.append(i[int(index)])  # adds it to the list
+    for i in list_name:  # assigns the string "last" to the very last list in the list of lists
+        if original_index == 'last': index = len(i) - 1  # finds unique EC num not in the list & adds it to the list
+        if i[int(index)] not in element_list: element_list.append(i[int(index)])
     return element_list
 
-def chunk(l, n):
+def chunk(items, number):
     # looping till length l
-    for i in range(0, len(l), n):
-        yield l[i:i + n]
+    for i in range(0, len(items), number): yield items[i:i + number]
 
 def write_readme(main_dir, readme, init_time, fasta_path, gene_path):
     # Creates ReadMe file
@@ -65,12 +60,9 @@ def save_file(lists_to_write, output_dir, current):
     writedoc = open(output_dir, 'w')
     for line in lists_to_write:
         for item in line:
-            # removes the new lines in each list of list
-            item = str(item).replace(NL, NIX)
-            if item == NIX:  # if the list in the list of list is empty writes a dash
-                writedoc.write('-')
-            else:  # write the entry in the list of lists to the file
-                writedoc.write(item)
+            item = str(item).replace(NL, NIX)  # removes the new lines in each list of list
+            if item == NIX:   writedoc.write('-')  # if the list in the list of list is empty writes a dash
+            else: writedoc.write(item)  # write the entry in the list of lists to the file
             writedoc.write(', ')  # tab delineated; use "," for csv files
             if form_counter == 7:
                 form_counter = 0

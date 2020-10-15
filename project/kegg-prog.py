@@ -2,7 +2,7 @@ import threading
 import datetime
 from bioservices.kegg import KEGG
 from lib.jsondata import *
-from lib.miscstrings import *
+from lib.miscvals import *
 from lib.datatypes import *
 from lib.pathstrings import *
 import sys
@@ -39,7 +39,7 @@ def main():
     global path_and_species_list
     path_and_species_list = [i + j for i in species_list for j in pathway_list]
     start()
-    parse_master()
+    master_pathway_parser()
     make_matrix_and_counts()
     make_fasta()
     write_readme(main_dir, fn_readme, init_time, fasta_path, gene_path)
@@ -47,14 +47,9 @@ def main():
 
 
 def start():
-    global chem_path
-    global fasta_path
-    global gene_path
-    global main_dir
-    global cwd
+    global chem_path, fasta_path, gene_path, main_dir, cwd
     decision = ''
-    if len(sys.argv) > 1:
-        decision = sys.argv[1]
+    if len(sys.argv) > 1: decision = sys.argv[1]
     else:
         print("No directory name supplied in args, defaulting to directory 'data'. "
               "Supply directory name in terminal using 'python3 kegg-prog.py dir_name'")
@@ -68,26 +63,58 @@ def start():
     gene_path = main_dir + gene_dir
 
     # replaced WindowsError with OSError for more general usage. try to make data directories and handle any errors
-    try:
-        os.mkdir(main_dir)
-    except OSError:
-        print("Error making main dir.")
-        pass
-    try:
-        os.mkdir(gene_path)
-    except OSError:
-        print("Error making Gene dir.")
-        pass
-    try:
-        os.mkdir(fasta_path)
-    except OSError:
-        print("Error making FASTA dir.")
-        pass
-    try:
-        os.mkdir(chem_path)
-    except OSError:
-        print("Error making Chemical dir.")
-        pass
+    try: os.mkdir(main_dir)
+    except OSError: pass
+    try: os.mkdir(gene_path)
+    except OSError or FileExistsError: pass
+    try: os.mkdir(fasta_path)
+    except OSError or FileExistsError: pass
+    try: os.mkdir(chem_path)
+    except OSError or FileExistsError: pass
+
+
+def master_pathway_parser():
+    global master_list, master_uniq, locks
+    print('- parsing list of species & pathways...')
+    threads = []
+    chunked = list(chunk(path_and_species_list, CHUNK_SIZE))  # chunk up list to be run on multiple threads
+    for i in range(0, len(chunked)):  # create semaphores and fill list of lists
+        locks.append(threading.Semaphore(1))
+        thread_parsing_data.append([])
+        tmp_data_holder.append([])
+
+    chunk_index = 0
+    for chunks in chunked:  # run parse helper using the chunks on different threads
+        t = threading.Thread(target=parse_helper, args=(chunks, chunk_index))
+        t.start()
+        threads.append(t)
+        chunk_index += 1
+
+    for t in threads: t.join()  # wait for threads to finish their tasks
+
+    master_uniq = remove_dupes(master_list)
+    master_uniq = list(filter(None, master_uniq))
+
+    # removes false values and iterates through the list of lists
+    for count in range(0, len(master_uniq)):  master_uniq[count] = list(filter(None, master_uniq[count]))
+
+
+def parse_helper(plant_paths, sem_index):
+    global master_list, tmp_data_holder, thread_parsing_data
+    for path in plant_paths:
+        lock_parsing.acquire()
+        try: tmp_data_holder[sem_index] = gene_pathway_data(path)
+        finally: lock_parsing.release()
+        lock_write.acquire()
+        try:
+            thread_parsing_data[sem_index].extend(tmp_data_holder[sem_index])
+            try: save_file(tmp_data_holder[sem_index], GDATA + path + CSV, gene_path)
+            except AttributeError: pass
+        finally: lock_write.release()
+
+    lock_master.acquire()
+    try: master_list.extend(thread_parsing_data[sem_index])
+    finally: lock_master.release()
 
 
 # function that fetches the required data
@@ -100,16 +127,14 @@ def gene_pathway_data(pathway_id):
     fetched_genes = gd.get('GENE')
     if fetched_genes is not None:
         gene_vals = fetched_genes.values()
-        for gv in gene_vals:
-            gene_lines.append(gv)
+        for gv in gene_vals: gene_lines.append(gv)
         for gene in gene_lines:  # this section makes a list of lists that are appreciatively separated
             split_sig = '^*^'
             gene = gene.replace('  ', split_sig).replace(';', split_sig).replace('[', split_sig).replace(']', '')
             gene = gene.split(split_sig)
             alpha_only = NIX
             for char in pathway_id:
-                if char.isalpha():
-                    alpha_only += char
+                if char.isalpha(): alpha_only += char
             gene.insert(0, species_pairs[alpha_only])
             g_count = 0
             for g in gene:  # cleans up list of lists of extra spaces at the beginning and end of each list
@@ -120,76 +145,14 @@ def gene_pathway_data(pathway_id):
     return gene_lines
 
 
-def parse_helper(plant_paths, sem_index):
-    global master_list
-    global tmp_data_holder
-    global thread_parsing_data
-
-    for path in plant_paths:
-        lock_parsing.acquire()
-        try:
-            tmp_data_holder[sem_index] = gene_pathway_data(path)
-        finally:
-            lock_parsing.release()
-        lock_write.acquire()
-        try:
-            thread_parsing_data[sem_index].extend(tmp_data_holder[sem_index])
-            try:
-                save_file(tmp_data_holder[sem_index], GDATA + path + CSV, gene_path)
-            except AttributeError:
-                pass
-        finally:
-            lock_write.release()
-
-    lock_master.acquire()
-    try:
-        master_list.extend(thread_parsing_data[sem_index])
-    finally:
-        lock_master.release()
-
-
-def parse_master():
-    global master_list
-    global master_uniq
-    global locks
-    print('- parsing list of species & pathways...')
-    threads = []
-    chunked = list(chunk(path_and_species_list, CHUNK_SIZE))
-    for i in range(0, len(chunked)):
-        locks.append(threading.Semaphore(1))
-        thread_parsing_data.append([])
-        tmp_data_holder.append([])
-
-    chunk_index = 0
-    for chunks in chunked:
-        t = threading.Thread(target=parse_helper, args=(chunks, chunk_index))
-        t.start()
-        threads.append(t)
-        chunk_index += 1
-
-    for t in threads:
-        t.join()
-    master_uniq = remove_dupes(master_list)
-    master_uniq = list(filter(None, master_uniq))
-    # count = 0
-    for count in range(0, len(master_uniq)):  # removes false values and iterates through the list of lists
-        master_uniq[count] = list(filter(None, master_uniq[count]))
-        # count += 1
-
-
 def make_matrix_and_counts():
-    global master_gene_list
-    global count_matrix
+    global master_gene_list, count_matrix
 
     ec_list = unique_element_list(master_uniq, 'last')
+    count_matrix = [['Species']]  # creating the matrix and adding up the counts
+    count_matrix[0].extend(ec_list)  # adds the Unique EC numbers to the end of the matrix
 
-    # creating the matrix and adding up the counts
-    count_matrix = [['Species']]
-    # adds the Unique EC numbers to the end of the matrix
-    count_matrix[0].extend(ec_list)
-    for i in species_list:  # @#
-        # first item in each row (but first) is the matrix
-        count_matrix.append([i])
+    for i in species_list:  count_matrix.append([i])  # first item in each row (but first) is the matrix
 
     cols = 0
     for outer in count_matrix[0]:
@@ -201,8 +164,7 @@ def make_matrix_and_counts():
                     species = species_pairs[inner[0]]
                     counter3 = 0
                     for unique in master_uniq:  # iterate over the culled master list to check for matching sets
-                        if unique[0] == species and unique[len(unique) - 1] == ec:
-                            counter3 += 1
+                        if unique[0] == species and unique[len(unique) - 1] == ec: counter3 += 1
                     count_matrix[rows].append(str(counter3))
                 rows += 1
         cols += 1
@@ -210,8 +172,7 @@ def make_matrix_and_counts():
     # change master count to be actual species:
     count = 0
     for i in count_matrix:
-        if count != 0:
-            count_matrix[count][0] = species_pairs[i[0]]  # replaces species code with genus specie names
+        if count != 0: count_matrix[count][0] = species_pairs[i[0]]  # replaces species code with genus specie names
         count += 1
 
     # Make Master Files
@@ -223,9 +184,9 @@ def make_matrix_and_counts():
     print('- about to make master FASTA')
     swapped_order = {v: k for k, v in species_pairs.items()}  # reverses dictionary keys and values
     master_gene_list = []
-    for i in master_uniq:
-        # combines species codes and gene numbers in a list to be used for the master fasta function
-        master_gene_list.append(swapped_order[i[0]] + ':' + i[1])
+
+    # combines species codes and gene numbers in a list to be used for the master fasta function
+    for uniq in master_uniq: master_gene_list.append(swapped_order[uniq[0]] + ':' + uniq[1])
 
 
 def get_master_fasta(gene):
@@ -235,31 +196,25 @@ def get_master_fasta(gene):
     chunked = list(chunk(master_gene_list, CHUNK_SIZE))
     for chunks in chunked:
         try:
-            thread = threading.Thread(target=master_helper, args=(chunks,))
+            thread = threading.Thread(target=fasta_helper, args=(chunks,))
             thread.start()
             threads.append(thread)
+        except threading.ThreadError: pass
 
-        except:
-            pass
-
-    for thread in threads:
-        thread.join()
+    for thread in threads: thread.join()
     return dna_list
 
 
-def master_helper(gene_chunk):
+def fasta_helper(gene_chunk):
     for gene in gene_chunk:
         # calls the entry from KEGG and splits it into new lines
-
         gene_fasta_data = str(kegg.get(gene)).split(NL)
-        # print(gene_fasta_data)
         global dna_list
         line_count = 0
         ntseq_locator = 0
         organism_name = ''
         for line in gene_fasta_data:
-            # removes blank spaces at the beginning and end of each line
-            gene_fasta_data[line_count] = line.strip()
+            gene_fasta_data[line_count] = line.strip()  # remove excess whitespace
             if line.startswith('ORGANISM'):  # finds where the entry that begins with organism is
                 gene_fasta_data[line_count] = line.replace("ORGANISM", "").strip()
                 find_blanks = gene_fasta_data[line_count].find(" ")
@@ -269,15 +224,16 @@ def master_helper(gene_chunk):
         for line in gene_fasta_data:
             gene_fasta_data[line_count] = line.strip()
             if line.startswith('ORTHOLOGY'):
-                # gene_fasta_data.insert(line_count, line.strip)
                 gene_fasta_data[line_count] = line.strip()
                 find_ec = line.find("EC:")
+                print(line[find_ec:-1])
                 gene_fasta_data[line_count] = line[find_ec:-1].replace("[", "").replace("EC:", "")
                 ec_number = "EC " + gene_fasta_data[line_count]  # adds EC back
                 # adds > to beginning to find the beginning of each entry more easily, adds % between EC number and
                 # the rest of the entry to help separate the EC number for later and removes semicolon from the gene
                 # entry and adds the gene number
                 joined_organism_ec = [">" + str(organism_name).strip() + "%" + ec_number + "%" + gene.split(":")[1]]
+                print(str(joined_organism_ec))
                 dna_list.append(joined_organism_ec)  # adds the entry to the blank list
             line_count += 1
         line_count = 0
@@ -292,6 +248,7 @@ def master_helper(gene_chunk):
         sep = ''
         # combines the separate DNA sequence lines into one string and turns that into a single entry list
         joined_dna_seq = [sep.join(dna_seq)]
+        print(str(joined_dna_seq))
         dna_list.append(joined_dna_seq)  # adds single entry list to the list of lists
 
 
@@ -325,38 +282,30 @@ def make_fasta():
     # creates the FASTA files by EC numbers
     print('- creating fasta files by ec number...')
     counter = 0
-    for i in enz_class_list:
-        # name = i.replace('.', 'p').replace('EC ', NIX).replace(SP, NIX)
-        name = i.replace('.', '-').replace(SP, NIX)
+    for enzyme in enz_class_list:
+        name = enzyme.replace('.', '-').replace(SP, NIX)
         save_file(fasta_by_enz_class[counter], name + CSV, fasta_path)
         counter += 1
 
 
 def finish_up():
     global data_lists
-
     master_ec_list = [['species', 'EC#s']]
     counter = 0
     print('- filling master matrix...')
     for entry in count_matrix:  # for each species
         species_ec_list = []
-        if counter == 0:
-            pass
-
+        if counter == 0: pass
         else:
             counter2 = 0
             for j in entry:  # for EC in species
-                if counter2 == 0:
-                    species_ec_list.append(j)
+                if counter2 == 0: species_ec_list.append(j)
                 else:
-                    if str(j) == "0":
-                        pass
-                    else:
-                        species_ec_list.append(count_matrix[0][counter2])
+                    if str(j) == "0": pass
+                    else: species_ec_list.append(count_matrix[0][counter2])
                 counter2 += 1
         master_ec_list.append(species_ec_list)
         counter += 1
-
     master_ec_list = master_ec_list[1:]
 
     for item in out_data:
@@ -365,7 +314,6 @@ def finish_up():
 
     print('- looping through master ec list...')
     for entry in master_ec_list:
-        # print(str(entry))
         if len(entry) > 0:
             tmp_entry = Species(entry[0], 0, [])
             for chem_data in data_lists:
@@ -380,18 +328,9 @@ def finish_up():
         item_count = len(key.species)
         print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
               'Data saved in ' + chem_path + slash + key.file_name + '.')
-        # out = ''
-        # for li in key.species:
-        #     out = out + str(*li) + ', '
-        # print(out)
-
-    # for pf in plant_flavs:
-    #     data_out = pf.species_string()
-    #     print(data_out)
 
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
     print('\ntotal time taken: ' + str(total_time))
-
 
 main()

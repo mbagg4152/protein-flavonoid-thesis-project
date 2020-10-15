@@ -1,10 +1,12 @@
 # misc. string values
+CHUNK_SIZE = 30
 CSV = '.csv'
 GDATA = 'Gene_data_'
+KS_URL = "'http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism&word="  # knapsack partial URL
 NIX = ""
 NL = '\n'
-CHUNK_SIZE = 30
 SP = ' '
+
 AGI = 'Apigenin'
 BU = 'Butein'
 CA = 'Catechin'

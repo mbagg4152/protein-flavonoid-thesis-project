@@ -2,7 +2,7 @@ import threading
 import datetime
 from bioservices.kegg import KEGG
 from lib.jsondata import *
-from lib.miscstrings import *
+from lib.miscvals import *
 from lib.datatypes import *
 import sys
 import re
