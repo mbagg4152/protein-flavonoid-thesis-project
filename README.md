@@ -1,4 +1,4 @@
-# pfpy - Proteins & Flavonoids code in Python
+# pfpy - Protein & Flavonoid project code in Python
 Former repository for CHEM-491 (Research Methods) class and is now being used in continuing the project.  
 The goal was to modernize, clean and adapt a former student's thesis project.  
 
