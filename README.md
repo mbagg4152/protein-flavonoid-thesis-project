@@ -13,13 +13,13 @@ JW started the code to get information from KEGG about the species we were inter
 ## Project Structure
 > ```chem-py-project``` main folder  
 ```chem-py-project/original/``` contains the code from when Jordan Wilson was developing  
-```chem-py-project/flavonoid/``` current flavonoid prediction code  
-```chem-py-project/flavonoid/data/``` output data folder  
-```chem-py-project/flavonoid/data/Chemical_Data``` contains the files for the list of plants predicted per flavonoid  
-```chem-py-project/flavonoid/data/FASTA_Data``` contains FASTA EC number data  
-```chem-py-project/flavonoid/data/Gene_Data``` contains the data pulled from KEGG for each plant pathway  
-```chem-py-project/flavonoid/json-data```  holds the lists of plants & pathways used in the KEGG program (in JSON format).  
-```chem-py-project/flavonoid/lib``` contains the library/helper code and other assorted test code files.  
+```chem-py-project/current/``` current code  
+```chem-py-project/current/flavonoid/data/``` output data folder  
+```chem-py-project/current/flavonoid/data/Chemical_Data``` contains the files for the list of plants predicted per flavonoid  
+```chem-py-project/current/flavonoid/data/FASTA_Data``` contains FASTA EC number data  
+```chem-py-project/current/flavonoid/data/Gene_Data``` contains the data pulled from KEGG for each plant pathway  
+```chem-py-project/current/flavonoid/json-data```  holds the lists of plants & pathways used in the KEGG program (in JSON format).  
+```chem-py-project/current/lib``` contains the library/helper code and other assorted test code files.  
 ```chem-py-project/flavonoid/misc_output``` contains output from testing programs not used by kegg-prog.py  
   
 ---
