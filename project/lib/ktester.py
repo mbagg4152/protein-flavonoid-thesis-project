@@ -20,7 +20,7 @@ def main():
             '\n1. Organism IDs' +
             '\n2. Output for cam00943' +
             '\n3. Get pathways for lja ' +
-            '\n4.' +
+            '\n4. Look at ats:LOC109771219' +
             '\n0. Exit'
         )
         ans = int(input('\nSelection: '))
@@ -40,7 +40,11 @@ def main():
         elif ans == 3:
             kdb.organism = 'lja'
             write_out(fn_single_org_paths, str(kdb.pathwayIds))
-
+        elif ans == 4:
+            raw = kdb.get('ats:LOC109771219')
+            raw_dict = kdb.parse(raw)
+            gene = raw_dict.get('NTSEQ', 'No data')
+            print(str(type(gene)))
 
 def write_out(name, contents):
     wf = open(tst_dir + name, 'w')

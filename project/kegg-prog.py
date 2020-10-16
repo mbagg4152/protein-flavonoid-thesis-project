@@ -6,6 +6,7 @@ from lib.datatypes import *
 from lib.pathstrings import *
 from lib.compoundinfo import *
 import sys
+import re
 
 init_time = datetime.datetime.now()
 kegg = KEGG()
@@ -201,51 +202,30 @@ def get_master_fasta(gene):
         except threading.ThreadError: pass
 
     for thread in threads: thread.join()
+    print(str(dna_list))
     return dna_list
 
 
 def fasta_helper(gene_list):
+    global dna_list
     for gene in gene_list:
-        gene_fasta_data = str(kegg.get(gene)).split(NL)  # calls the entry from KEGG and splits it into new lines
-        global dna_list
-        line_count = 0
-        ntseq_locator = 0
-        organism_name = ''
-        for line in gene_fasta_data:
-            gene_fasta_data[line_count] = line.strip()  # remove excess whitespace
-            if line.startswith('ORGANISM'):  # finds where the entry that begins with organism is
-                gene_fasta_data[line_count] = line.replace("ORGANISM", "").strip()
-                find_blanks = gene_fasta_data[line_count].find(" ")
-                organism_name = gene_fasta_data[line_count][find_blanks:]
-            line_count += 1
-        line_count = 0
-        for line in gene_fasta_data:
-            gene_fasta_data[line_count] = line.strip()
-            if line.startswith('ORTHOLOGY'):
-                gene_fasta_data[line_count] = line.strip()
-                find_ec = line.find("EC:")
-
-                gene_fasta_data[line_count] = line[find_ec:-1].replace("[", "").replace("EC:", "")
-                ec_number = "EC " + gene_fasta_data[line_count]  # adds EC back
-                # adds > to beginning to find the beginning of each entry more easily, adds % between EC number and
-                # the rest of the entry to help separate the EC number for later and removes semicolon from the gene
-                # entry and adds the gene number
-                joined_organism_ec = [">" + str(organism_name).strip() + "%" + ec_number + "%" + gene.split(":")[1]]
-
-                dna_list.append(joined_organism_ec)  # adds the entry to the blank list
-            line_count += 1
-        line_count = 0
-        for line in gene_fasta_data:
-            gene_fasta_data[line_count] = line.strip()
-            if line.startswith('NTSEQ'):
-                gene_fasta_data[line_count] = line.replace("NTSEQ", "").strip()
-                ntseq_locator = line_count
-            line_count += 1
-        dna_data_list = gene_fasta_data[ntseq_locator:]
-        dna_seq = dna_data_list[1:len(dna_data_list) - 2]  # Takes just the DNA sequence
-        sep = ''
-        # combines the separate DNA sequence lines into one string and turns that into a single entry list
-        joined_dna_seq = [sep.join(dna_seq)]
+        raw = kegg.get(gene)
+        split_gene = gene.split(':')
+        org = split_gene[0].strip()
+        organism_name = plant_dict.get(org, NIX)
+        raw_info = kegg.parse(raw)
+        ortho_line = raw_info.get(ORTH, NIX)
+        if ortho_line is None or isinstance(ortho_line, str): continue
+        ortho_val = ''
+        try: ortho_val = ''.join(ortho_line.values())
+        except AttributeError: continue
+        ecl = re.findall(RE_SQ_BRACKETS, ortho_val)
+        if len(ecl) == 0 or len(ecl[0]) < 1: continue
+        ecn = ecl[0]
+        joined_organism_ec = [">" + organism_name.strip() + "%" + ecn + "%" + split_gene[1].strip()]
+        dna_list.append(joined_organism_ec)
+        ntseq = raw_info.get('NTSEQ', NIX)
+        joined_dna_seq = [ntseq.replace(SP, NIX)]
         dna_list.append(joined_dna_seq)  # adds single entry list to the list of lists
 
 

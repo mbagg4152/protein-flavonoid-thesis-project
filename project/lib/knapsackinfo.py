@@ -8,9 +8,7 @@ new_dir = '..' + SEP + 'misc_output' + SEP + 'knapsack_dir'
 ks_data_name = new_dir + SEP + 'knapsack_data.csv'
 plant_flavs = {}
 
-# sections of text to be removed from the fetched HTML file
-to_remove = ['<tr>', '</tr>', '</font>', "\n", "\\n", ">", '</a>', '</td>', "target=\"_blank\">", "target=\"_blank\"",
-             "<td class=\"d1\">", '<font color=#FF00BF>', '<a href=information.php?word=']
+
 
 def main():
     try: os.mkdir(new_dir)
