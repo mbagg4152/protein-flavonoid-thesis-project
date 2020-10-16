@@ -1,4 +1,4 @@
-# Chem KEGG Py-Project
+# pfpy - Proteins & Flavonoids code in Python
 Former repository for CHEM-491 (Research Methods) class and is now being used in continuing the project.  
 The goal was to modernize, clean and adapt a former student's thesis project.  
 
@@ -11,19 +11,21 @@ JW started the code to get information from KEGG about the species we were inter
 
 ---
 ## Project Structure
-> ```chem-py-project``` main folder  
-```chem-py-project/original/``` contains the code from when Jordan Wilson was developing  
-```chem-py-project/current/``` current code  
-```chem-py-project/current/flavonoid/data/``` output data folder  
-```chem-py-project/current/flavonoid/data/Chemical_Data``` contains the files for the list of plants predicted per flavonoid  
-```chem-py-project/current/flavonoid/data/FASTA_Data``` contains FASTA EC number data  
-```chem-py-project/current/flavonoid/data/Gene_Data``` contains the data pulled from KEGG for each plant pathway  
-```chem-py-project/current/flavonoid/json-data```  holds the lists of plants & pathways used in the KEGG program (in JSON format).  
-```chem-py-project/current/lib``` contains the library/helper code and other assorted test code files.  
-```chem-py-project/flavonoid/misc_output``` contains output from testing programs not used by kegg-prog.py  
+> ```pfpy``` main folder  
+```pfpy/projects/original/``` contains the code from when Jordan Wilson was developing  
+```pfpy/projects/current/``` current code
+```pfpy/projects/current/flavonoid``` code (and related files) for flavonoid prediction  
+```pfpy/projects/current/protein``` code for the protein-flavonoid interaction project
+```pfpy/projects/current/flavonoid/data/``` output data folder  
+```pfpy/projects/current/flavonoid/data/Chemical_Data``` contains the files for the list of plants predicted per flavonoid  
+```pfpy/projects/current/flavonoid/data/FASTA_Data``` contains FASTA EC number data  
+```pfpy/projects/current/flavonoid/data/Gene_Data``` contains the data pulled from KEGG for each plant pathway  
+```pfpy/projects/current/json_data```  holds the lists of plants & pathways used in the KEGG program (in JSON format).  
+```pfpy/projects/current/lib``` contains the library/helper code and other assorted test code files.  
+```pfpy/projects/current/misc_output``` contains output from testing programs not used by kegg-prog.py  
   
 ---
-# Important Files and Functions
+# Important Files and Functions in ```pfpy/projects/current/```
 __Note:__ Not all files or functions are covered below.  
 
 
