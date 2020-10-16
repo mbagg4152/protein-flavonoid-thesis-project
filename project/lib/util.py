@@ -70,3 +70,14 @@ def save_file(lists_to_write, output_dir, current):
             form_counter += 1
     writedoc.write(NL)
     writedoc.close()
+
+def basic_write(path, mode, content):
+    file = open(path, mode)
+    file.write(content)
+    file.close()
+
+def is_http_error(msg):
+    if msg.strip() in http_errs:
+        print('Tried getting data from KEGG, got HTTP err ' + msg)
+        return True
+    else: return False

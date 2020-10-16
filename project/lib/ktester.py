@@ -41,10 +41,10 @@ def main():
             kdb.organism = 'lja'
             write_out(fn_single_org_paths, str(kdb.pathwayIds))
         elif ans == 4:
-            raw = kdb.get('ats:LOC109771219')
+            raw = kdb.get('dosa:Os08g0277200')
             raw_dict = kdb.parse(raw)
             gene = raw_dict.get('NTSEQ', 'No data')
-            print(str(type(gene)))
+            print(str(raw))
 
 def write_out(name, contents):
     wf = open(tst_dir + name, 'w')

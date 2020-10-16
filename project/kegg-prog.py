@@ -18,12 +18,14 @@ gene_path = ''
 main_dir = ''
 
 count_matrix = [[]]
-dna_list = []
+dna_dict = {}
 enz_class_list = []
 fasta_by_enz_class = []
+fasta_by_class = {}
 lock_master = threading.Semaphore()
 lock_parsing = threading.Semaphore()
 lock_write = threading.Semaphore()
+lock_dna = threading.Semaphore()
 locks = []
 master_gene_list = []
 master_list = []
@@ -187,82 +189,116 @@ def make_matrix_and_counts():
 
     # combines species codes and gene numbers in a list to be used for the master fasta function
     for uniq in master_uniq: master_gene_list.append(swapped_order[uniq[0]] + ':' + uniq[1])
-
-
-def get_master_fasta(gene):
-    print('- fetching data for master FASTA...')
-    global dna_list, master_gene_list
-    threads = []
-    partitions = list(list_partition(master_gene_list, CHUNK_SIZE))
-    for part in partitions:
-        try:
-            thread = threading.Thread(target=fasta_helper, args=(part,))
-            thread.start()
-            threads.append(thread)
-        except threading.ThreadError: pass
-
-    for thread in threads: thread.join()
-    print(str(dna_list))
-    return dna_list
-
-
-def fasta_helper(gene_list):
-    global dna_list
-    for gene in gene_list:
-        raw = kegg.get(gene)
-        split_gene = gene.split(':')
-        org = split_gene[0].strip()
-        organism_name = plant_dict.get(org, NIX)
-        raw_info = kegg.parse(raw)
-        ortho_line = raw_info.get(ORTH, NIX)
-        if ortho_line is None or isinstance(ortho_line, str): continue
-        ortho_val = ''
-        try: ortho_val = ''.join(ortho_line.values())
-        except AttributeError: continue
-        ecl = re.findall(RE_SQ_BRACKETS, ortho_val)
-        if len(ecl) == 0 or len(ecl[0]) < 1: continue
-        ecn = ecl[0]
-        joined_organism_ec = [">" + organism_name.strip() + "%" + ecn + "%" + split_gene[1].strip()]
-        dna_list.append(joined_organism_ec)
-        ntseq = raw_info.get('NTSEQ', NIX)
-        joined_dna_seq = [ntseq.replace(SP, NIX)]
-        dna_list.append(joined_dna_seq)  # adds single entry list to the list of lists
-
+    # print(str(master_gene_list))
 
 def make_fasta():
     print('- saving master fasta...')
     master_fasta = get_master_fasta(master_gene_list)
-    save_file(master_fasta, 'Master_FASTA.csv', fasta_path)
-    counter = 0
+    # print(str(master_fasta))
+    # basic_write(fasta_path + SEP + 'Master_FASTA.csv', 'w', NIX)
+    master_out = ''
     print('- looping through master fasta...')
-    for i in master_fasta:
-        if i[0].startswith('>'):
-            split_ec = i[0].split('%')  # finds the EC numbers using the % added previously
+    for key in master_fasta:
+        tmp_dict = dna_dict[key]  # get dictionary for the current key (gene name)
+        this_ec = tmp_dict[E_KEY]  # get ec number using the key EC
+        # make the line to be added to the dictionary & then printed
+        tmp_line = '>' + str(key) + ' ' + str(tmp_dict[P_KEY]) + ' ' + str(this_ec) + '\n' + str(tmp_dict[N_KEY][0])
+        master_out += tmp_line + '\n'
+        this_ec = this_ec.replace('[', NIX).replace(']', NIX)
 
-            this_ec = split_ec[1]
-            ec_count = 0
-            ec_flag = 'false'
-            counter2 = 0
-            for j in enz_class_list:  # if the EC number is already present sets it to true and continues
-                if this_ec == j:
-                    ec_count = counter2
-                    ec_flag = 'true'
-                counter2 += 1
-            if ec_flag == 'false':  # if the EC number is not there, it will be added to the list
-                enz_class_list.append(this_ec)
-                fasta_by_enz_class.append(master_fasta[counter:counter + 2])
-            else:
-                fasta_by_enz_class[ec_count].extend(master_fasta[counter:counter + 2])
+        ec_flag = False
 
-        counter += 1
+        # for j in range(0, len(enz_class_list)):  # if the EC number is already present sets it to true and continues
+        #     if this_ec == enz_class_list[j]: ec_flag = True
+        tmp_data = ''
+        try:
+            fasta_by_class.get(this_ec)
+            fasta_by_class[this_ec].append(tmp_line)
+        except KeyError:
+            fasta_by_class[this_ec] = [tmp_line]
+    # if this_ec not in enz_class_list:  # if the EC number is not there, it will be added to the list
+    #     enz_class_list.append(this_ec)
+    #     # make sure dictionary entry is added so it can be appended to
+    #     if fasta_by_class[this_ec] is None or len(fasta_by_class[this_ec]) < 1:
+    #         fasta_by_class[this_ec] = [tmp_line]
+    #     else: fasta_by_class[this_ec].append(tmp_line)
+    # else: fasta_by_class[this_ec].append(tmp_line)
+    # # if not ec_flag:
 
-    # creates the FASTA files by EC numbers
+    basic_write(fasta_path + SEP + 'Master_FASTA.csv', 'a', master_out)
+
     print('- creating fasta files by ec number...')
-    counter = 0
-    for enzyme in enz_class_list:
-        name = enzyme.replace('.', '-').replace(SP, NIX)
-        save_file(fasta_by_enz_class[counter], name + CSV, fasta_path)
-        counter += 1
+    for key in fasta_by_class:  # make FASTA files by EC number
+        name = key.replace('.', '_').replace(SP, NIX).replace(':', NIX)
+        out = ''
+        for item in fasta_by_class[key]: out += item + '\n'
+        basic_write(fasta_path + SEP + name + CSV, 'w', out)
+
+
+def get_master_fasta(gene):
+    print('- fetching data for master FASTA...')
+    global master_gene_list, dna_dict
+    threads = []
+    partitions = list(list_partition(master_gene_list, CHUNK_SIZE))
+    for part in partitions:
+        # print(str(part))
+        try:
+            thread = threading.Thread(target=fasta_helper, args=(part,))
+            thread.start()
+            threads.append(thread)
+        except threading.ThreadError:
+            print('experienced a thread err')
+            continue
+
+    for thread in threads: thread.join()
+    return dna_dict
+
+
+def fasta_helper(gene_list):
+    global dna_dict
+    print(str(gene_list) + '\n')
+    for gene in gene_list:  # gene takes form kegg_code:gene_name
+        gene = gene.replace('(RAP-DB) ', NIX)
+
+        raw = kegg.get(gene)  # get kegg gene info
+        if is_http_error(raw):
+            for i in range(0, RETRY):
+                raw = kegg.get(gene)
+                if not (is_http_error(raw)): break
+                else:
+                    if i == RETRY - 1:
+                        print('kept getting errors, quitting...')
+                        exit(1)
+        raw_info = kegg.parse(raw)  # turn kegg gene data into dictionary
+
+        ortho_line = raw_info.get(O_KEY)  # get data from dictionary using the key ORTHOLOGY
+        split_gene = gene.split(':')
+        org_code = split_gene[0].strip()  # kegg code is first half
+        gene_name = split_gene[1].strip()  # gene name is second half
+        organism_name = plant_dict.get(org_code, NIX)  # get plant's scientific name from the plant dictionary
+
+        # no orthology data, skip to next list item
+        if ortho_line is None or isinstance(ortho_line, str):
+            print('ortho line determined to be None or string. value: ' + str(ortho_line))
+            print('raw info: ' + str(raw_info))
+            continue
+        ortho_val = ''  # will hold orthology values
+        # extra safeguard - if data is not a dictionary then it is incorrect --> skip to next gene
+        try: ortho_val = ''.join(ortho_line.values())
+        except AttributeError: continue
+
+        parsed_ec = re.findall(RE_SQ_BRACKETS, ortho_val)  # use regular expression to find EC number, which is in []
+        print(str(parsed_ec))
+        if len(parsed_ec) == 0 or len(parsed_ec[0]) < 1: continue  # no EC number, skip to next gene
+        ec_num = parsed_ec[0]  # regular expression findall returns a list, expecting only one element
+        ntseq = raw_info.get('NTSEQ', NIX)  # get values from kegg dictionary using NTSEQ as the key
+        joined_dna_seq = [ntseq.replace(SP, NIX)]  # remove spaces from sequence
+
+        lock_dna.acquire()
+        tmp_entry = {E_KEY: ec_num, N_KEY: joined_dna_seq, P_KEY: organism_name}
+        print('tmp entry - key = ' + gene_name + ' values --> ' + ec_num + ' ' + ' ' + organism_name)
+        dna_dict[gene_name] = tmp_entry
+        lock_dna.release()
 
 
 def finish_up():
