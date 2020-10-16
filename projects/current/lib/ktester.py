@@ -2,15 +2,17 @@ from bioservices.kegg import KEGG
 import os.path
 
 sep = os.sep
-cwd = os.getcwd()
-tst_dir = cwd + sep + 'misc_output' + sep
+cwd = os.getcwd().replace('lib', '').replace('//', '/').replace('\\\\', '\\')
+tst_dir = cwd + 'misc_output' + sep
 kdb = KEGG()
-fn_org_ids = 'allOrganismIDs.txt'
-fn_org_pathway = 'orgPathGetOutput.txt'
-fn_single_org_paths = 'pathsForSingleOrg.txt'
-fn_gene = 'geneDataOnly.txt'
-fn_compound = 'compoundDataOnly.txt'
+fn_org_ids = tst_dir + 'allOrganismIDs.txt'
+fn_org_pathway = tst_dir + 'orgPathGetOutput.txt'
+fn_single_org_paths = tst_dir + 'pathsForSingleOrg.txt'
+fn_gene = tst_dir + 'geneDataOnly.txt'
+fn_compound = tst_dir + 'compoundDataOnly.txt'
 
+try: os.mkdir(tst_dir)
+except FileExistsError: pass
 
 def main():
     ans = True
@@ -47,7 +49,11 @@ def main():
             print(str(raw))
 
 def write_out(name, contents):
-    wf = open(tst_dir + name, 'w')
+    try:
+        wf = open(name, 'x')
+        wf.close()
+    except FileExistsError: print('')
+    wf = open(name, 'w')
     wf.write(contents)
     wf.close()
     print('Wrote to: ' + name)
