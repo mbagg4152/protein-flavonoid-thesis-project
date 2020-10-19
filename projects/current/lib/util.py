@@ -72,6 +72,10 @@ def save_file(lists_to_write, output_dir, current):
     writedoc.close()
 
 def basic_write(path, mode, content):
+    try:
+        file = open(path, 'x')
+        file.close()
+    except FileExistsError: pass
     file = open(path, mode)
     file.write(content)
     file.close()

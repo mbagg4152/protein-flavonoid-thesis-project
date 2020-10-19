@@ -31,13 +31,21 @@ GENE_DIR = SEP + 'Gene_Data'
 
 # pathways for the json data  (and the name of the json object used in all files)
 JSON_DIR = '..' + SEP + 'json_data' + SEP
+FLAV_JSON = JSON_DIR + 'flavonoid' + SEP
+PROT_JSON = JSON_DIR + 'protein' + SEP
 JKEY = 'obj'
-FN_FLAVS = JSON_DIR + 'flavs.json'
-FN_PATH_DICT = JSON_DIR + 'path_names_codes.json'
-FN_PATH_LIST = JSON_DIR + 'path_codes.json'
-FN_PLANT_DICT = JSON_DIR + 'plant_names_codes.json'
-FN_PLANT_DICT_COMMON = JSON_DIR + 'plant_names_codes_more.json'
-FN_PLANT_LIST = JSON_DIR + 'plant_codes.json'
-FN_TEST_MED = JSON_DIR + 'test_med.json'
-FN_TEST_SHORT = JSON_DIR + 'test_short.json'
-FN_TEST_SINGLE = JSON_DIR + 'test_single.json'
+FN_FLAVS = FLAV_JSON + 'flavs.json'
+FN_PATH_DICT = FLAV_JSON + 'path_names_codes.json'
+FN_PATH_LIST = FLAV_JSON + 'path_codes.json'
+FN_PLANT_DICT = FLAV_JSON + 'plant_names_codes.json'
+FN_PLANT_DICT_COMMON = FLAV_JSON + 'plant_names_codes_more.json'
+FN_PLANT_LIST = FLAV_JSON + 'plant_codes.json'
+FN_TEST_MED = FLAV_JSON + 'test_med.json'
+FN_TEST_SHORT = FLAV_JSON + 'test_short.json'
+FN_TEST_SINGLE = FLAV_JSON + 'test_single.json'
+
+FN_LIGAND = PROT_JSON + 'ligand.json'
+FN_LIGAND_CODES = PROT_JSON + 'ligand_codes.json'
+FN_PDB_IDS = PROT_JSON + 'pdb_ids.json'
+FN_PROTEIN = PROT_JSON + 'protein.json'
+FN_PDB_IDS_SHORT = PROT_JSON + 'pdb_ids_short.json'

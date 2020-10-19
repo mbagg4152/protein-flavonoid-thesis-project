@@ -22,3 +22,10 @@ path_list = get_json_data(FN_PATH_LIST, JKEY)
 
 # Dictionary/list of key-value pairs defining each pathway by each chemical they're responsible for
 path_dict = get_json_data(FN_PATH_DICT, JKEY)
+
+# protein code stuff
+ligand_info = get_json_data(FN_LIGAND, JKEY)
+ligand_codes = get_json_data(FN_LIGAND_CODES, JKEY)
+pdb_id_list = get_json_data(FN_PDB_IDS, JKEY)
+pdb_id_list_short = get_json_data(FN_PDB_IDS_SHORT, JKEY)
+protein_info = get_json_data(FN_PROTEIN, JKEY)
