@@ -29,7 +29,7 @@ class Record:
 def new_record(line, name):
     if len(line) < 60: return None
     else:
-        # ranges taken from the PDB documentation, column values are found in record_format_atom_hetatm.txt
+        # ranges taken from the PDB documentation, column values are found in record_formats.txt
         # beginning of range listed in file is one less due to list indices starting at 0. the end value is the same
         # since taking a subsection of a string works as such: substring = string[start:end-1]
         tmp_record = Record(pdb_id=name, label=line[0:6], serial=line[6:11], atom_name=line[12:16], alt_loc=line[16:17],

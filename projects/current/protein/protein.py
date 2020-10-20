@@ -22,11 +22,11 @@ Path(pdb_dir).mkdir(parents=True, exist_ok=True)
 
 
 def main():
-    for pdb_id in pdb_id_list:
+    for pdb_id in pdb_id_list_short:
         print('looking at: ' + str(pdb_id))
         tst_url = partial_url + pdb_id + '.pdb'
         pdb_stuff(tst_url, pdb_dir + pdb_id + '.pdb', pdb_id)
-    with open(formatted_out, 'w+') as out_file:
+    with open(formatted_out_small, 'w+') as out_file:
         out_file.write(total_pdb_output)
         out_file.close()
 
