@@ -1,68 +1,37 @@
-REC = (0, 5)
-S_NUM = (6, 10)
-A_NAME = (12, 15)
-ALT = (16, 16)
-RES_NAME = (17, 19)
-CHAIN_ID = (21, 21)
-RES_SEQ = (22, 25)
-I_CODE = (26, 26)
-ANG_X = (30, 37)
-ANG_Y = (38, 45)
-ANG_Z = (46, 53)
-OCC = (54, 59)
-TEMP = (60, 65)
-ELEM = (76, 78)
-CHARGE = (78, 79)
-
-
 class Record:
-    def __init__(self, label, serial, atom, alt, lig, chain, lig_seq, ic, x, y, z, occ, tf, elem, charge):
+    def __init__(self, label, serial, atom_name, alt_loc, ligand_code, chain_id, ligand_seq, ins_code, pos_x, pos_y,
+                 pos_z, occupy, temp, elem, charge):
         self.label = label
         self.serial = serial
-        self.atom = atom
-        self.alt_loc = alt
-        self.lig_code = lig
-        self.chain_id = chain
-        self.lig_seq = lig_seq
-        self.icode = ic
-        self.x = x
-        self.y = y
-        self.z = z
-        self.occupy = occ
-        self.temp = tf
+        self.atom_name = atom_name
+        self.alt_loc = alt_loc
+        self.ligand_code = ligand_code
+        self.chain_id = chain_id
+        self.ligand_seq = ligand_seq
+        self.ins_code = ins_code
+        self.pos_x = pos_x
+        self.pos_y = pos_y
+        self.pos_z = pos_z
+        self.occupy = occupy
+        self.temp = temp
         self.elem = elem
         self.charge = charge
 
-    def full_str(self):
-        out = 'Record: ' + self.label + ' AtomSN: ' + self.serial + ' AtomName: ' + self.atom + \
-              ' AltLoc: ' + self.alt_loc + ' ResName: ' + self.lig_code + ' ChainID: ' + \
-              self.chain_id + ' ResSeq: ' + self.lig_seq + ' InsCode: ' + self.icode + ' X: ' + \
-              self.x + ' Y: ' + self.y + ' Z: ' + self.z + ' Occupancy: ' + self.occupy + ' temp factor' + self.temp + \
-              ' Elem: ' + self.elem + ' Charge: ' + self.charge + '\n'
+    def important_str(self):
+        out = '> ' + self.label + ' | AtomName: ' + self.atom_name + ' | Serial: ' + self.serial + ' | Elem: ' + \
+              self.elem + ' | Ligand: ' + self.ligand_code + ' | LigandSeq: ' + self.ligand_seq + ' | X,Y,Z: (' + \
+              self.pos_x + ', ' + self.pos_y + ', ' + self.pos_z + ') | ChainID: ' + self.chain_id + '\n'
         return out
 
-    def relevant_str(self):
-        out = self.label + ' Elem: ' + self.elem + ' AtomSerial: ' + self.serial + ' AtomName: ' + self.atom \
-              + ' Ligand: ' + self.lig_code + ' ChainID: ' + self.chain_id + ' LigandSeq: ' + self.lig_seq + \
-              ' IC: ' + self.icode + ' X: ' + self.x + ' Y: ' + self.y + ' Z: ' + self.z + '\n'
-        return out
+
 def new_record(line):
     if len(line) < 60: return None
     else:
-        rec = line[REC[0]:REC[1] + 1]
-        serial = line[S_NUM[0]:S_NUM[1] + 1]
-        atom = line[A_NAME[0]:A_NAME[1] + 1]
-        alt = line[ALT[0]:ALT[1] + 1]
-        res_name = line[RES_NAME[0]:RES_NAME[1] + 1]
-        chain = line[CHAIN_ID[0]:CHAIN_ID[1] + 1]
-        res_seq = line[RES_SEQ[0]:RES_SEQ[1] + 1]
-        icode = line[I_CODE[0]:I_CODE[1] + 1]
-        x = line[ANG_X[0]:ANG_X[1] + 1]
-        y = line[ANG_Y[0]:ANG_Y[1] + 1]
-        z = line[ANG_Z[0]:ANG_Z[1] + 1]
-        occ = line[OCC[0]:OCC[1] + 1]
-        tf = line[TEMP[0]:TEMP[1] + 1]
-        elem = line[ELEM[0]:ELEM[1] + 1]
-        charge = line[CHARGE[0]:CHARGE[1] + 1]
-        tmp_record = Record(rec, serial, atom, alt, res_name, chain, res_seq, icode, x, y, z, occ, tf, elem, charge)
+        # ranges taken from the PDB documentation, column values are found in record_format_atom_hetatm.txt
+        # beginning of range listed in file is one less due to list indices starting at 0. the end value is the same
+        # since taking a subsection of a string works as such: substring = string[start:end-1]
+        tmp_record = Record(label=line[0:6], serial=line[6:11], atom_name=line[12:16], alt_loc=line[16:17],
+                            ligand_code=line[17:20], chain_id=line[21:22], ligand_seq=line[22:26], ins_code=line[26:27],
+                            pos_x=line[30:38], pos_y=line[38:45], pos_z=line[46:54], occupy=line[54:60],
+                            temp=line[60:66], elem=line[76:78], charge=line[78:80])
         return tmp_record

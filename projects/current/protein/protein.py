@@ -6,7 +6,6 @@ from Record import *
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
 from lib.jsondata import *
 
-
 partial_url = "https://files.rcsb.org/view/"
 
 
@@ -23,9 +22,10 @@ def pdb_stuff(url, name):
     for line in f_lines:
         if 'ATOM' in line or 'HETATM' in line:
             tmp_record = new_record(line)
-            if tmp_record.lig_code.strip() in ligand_codes:
-                out_str += tmp_record.relevant_str()
+            if tmp_record.ligand_code.strip() in ligand_codes:
+                out_str += tmp_record.important_str()
     print(out_str)
+
 
 #
 #
