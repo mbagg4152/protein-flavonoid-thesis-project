@@ -2,6 +2,7 @@ import os
 import sys
 import urllib.request
 from pathlib import Path
+from StringsAndConsts import *
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
 from Types import *
@@ -12,11 +13,7 @@ pdb_objects_list = []
 pdb_objects = {}
 pdb_entries = []
 total_pdb_output = ''
-cwd = os.getcwd()
-out_dir = cwd + SEP + 'output' + SEP
-formatted_out = out_dir + 'format_out_all.txt'
-formatted_out_small = out_dir + 'format_out_partial.txt'
-pdb_dir = out_dir + 'pdb_files' + SEP
+
 
 Path(out_dir).mkdir(parents=True, exist_ok=True)
 Path(pdb_dir).mkdir(parents=True, exist_ok=True)

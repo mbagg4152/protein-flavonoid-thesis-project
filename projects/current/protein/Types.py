@@ -1,9 +1,11 @@
 import re
+from StringsAndConsts import *
 
 
 class Record:
-    def __init__(self, pdb_id, label, serial, atom_name, alt_loc, ligand_code, chain_id, ligand_seq, ins_code, pos_x,
-                 pos_y, pos_z, occupy, temp, elem, charge):
+    def __init__(self, pdb_id=None, label=None, serial=None, atom_name=None, alt_loc=None, ligand_code=None,
+                 chain_id=None, ligand_seq=None, ins_code=None, pos_x=None, pos_y=None, pos_z=None, occupy=None,
+                 temp=None, elem=None, charge=None):
         self.pdb_id = pdb_id if pdb_id is not None else ''
         self.label = label if label is not None else ''
         self.serial = serial if serial is not None else ''
@@ -30,12 +32,19 @@ class Record:
 
 
 class Entry:
-    def __init__(self, pdb_id=None, header=None, title=None, ec_nums=None, records=None):
+    def __init__(self, pdb_id=None, header=None, title=None, ec_nums=None, records=None, org_name=None, org_sci=None,
+                 org_taxid=None, ex_sys=None, ex_sys_taxid=None, organ=None):
         self.pdb_id = pdb_id if pdb_id is not None else ''
         self.header = header if header is not None else ''
         self.title = title if title is not None else ''
         self.ec_nums = ec_nums if ec_nums is not None else []
         self.records = records if records is not None else []
+        self.org_name = org_name if org_name is not None else ''
+        self.org_sci = org_sci if org_sci is not None else ''
+        self.org_taxid = org_taxid if org_taxid is not None else ''
+        self.ex_sys = ex_sys if ex_sys is not None else ''
+        self.ex_sys_taxid = ex_sys_taxid if ex_sys_taxid is not None else ''
+        self.organ = organ if organ is not None else ''
 
 
 def new_record(line, name):
@@ -53,15 +62,25 @@ def new_record(line, name):
 
 def new_entry(lines):
     tmp_entry = Entry()
-    excess_space = ' {2,}'
-    for line in lines:
-        if 'COMPND' in line and 'EC:' in line:
-            ec_pattern = '([0-9]\.{1}[^ ,;]*)'
-            tmp_entry.ec_nums = re.findall(ec_pattern, line)
-            pass
-        if 'TITLE' in line: tmp_entry.title += re.sub(excess_space, ' ', line[10:80])
-        if 'HEADER' in line:
-            tmp_entry.header += re.sub(excess_space, ' ', line[10:50])
-            tmp_entry.pdb_id += re.sub(excess_space, ' ', line[62:66])
 
+    for line in lines:
+        if K_CMP in line and K_EC in line:
+            tmp_entry.ec_nums = re.findall(RE_EC, line)
+            pass
+        if K_TTL in line: tmp_entry.title += re.sub(RE_XTRA_SP, ' ', line[10:80])
+        if K_HEAD in line:
+            tmp_entry.header += re.sub(RE_XTRA_SP, ' ', line[10:50])
+            tmp_entry.pdb_id += re.sub(RE_XTRA_SP, ' ', line[62:66])
+
+        if K_SRC in line:
+
+            try: chunk = re.findall(RE_REC_VAL, line)[0]
+            except IndexError: chunk = ''
+
+            if K_ORG_CMN in line: tmp_entry.org_name = chunk
+            if K_ORG_SCI in line: tmp_entry.org_sci = chunk
+            if K_ORG_TAX in line: tmp_entry.org_taxid = chunk
+            if K_ORG in line: tmp_entry.organ = chunk
+            if K_EX_SYS in line: tmp_entry.ex_sys = chunk
+            if K_EX_TAX in line: tmp_entry.ex_sys_taxid = chunk
     return tmp_entry
