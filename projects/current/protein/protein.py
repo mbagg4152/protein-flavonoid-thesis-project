@@ -4,7 +4,7 @@ import urllib.request
 from pathlib import Path
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
-from Record import *
+from Types import *
 from lib.jsondata import *
 
 partial_url = "https://files.rcsb.org/view/"
@@ -37,6 +37,9 @@ def pdb_stuff(url, path, pdb_id):
     file = open(path, 'r')
     f_lines = file.readlines()
     out_str = ''
+    tmp_entry = new_entry(lines=f_lines)
+    print('tmp entry | PDB id: ' + tmp_entry.pdb_id + ' | header: ' + tmp_entry.header + ' | title: ' +
+          tmp_entry.title + ' | ec nums: ' + str(tmp_entry.ec_nums))
     for line in f_lines:
         if 'ATOM' in line or 'HETATM' in line:
             tmp_record = new_record(line, pdb_id)
