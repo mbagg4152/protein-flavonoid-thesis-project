@@ -9,7 +9,6 @@ ks_data_name = new_dir + SEP + 'knapsack_data.csv'
 plant_flavs = {}
 
 
-
 def main():
     try: os.mkdir(new_dir)
     except FileExistsError: pass

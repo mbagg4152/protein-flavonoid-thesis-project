@@ -1,5 +1,8 @@
 import os
 
+CHUNK_SIZE = 6
+PART_URL = "https://files.rcsb.org/view/"
+
 # PDB file keys
 K_CMP = 'COMPND'
 K_EC = 'EC:'
@@ -12,6 +15,8 @@ K_ORG_SCI = 'ORGANISM_SCIENTIFIC'
 K_ORG_TAX = 'ORGANISM_TAXID'
 K_SRC = 'SOURCE'
 K_TTL = 'TITLE'
+K_ATM = 'ATOM'
+K_HAT = 'HETATM'
 
 # regular expressions
 RE_EC = '([0-9]\.{1}[^ ,;]*)'  # look for EC number format
