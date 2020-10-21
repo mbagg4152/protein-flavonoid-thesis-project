@@ -7,6 +7,7 @@ from threading import Lock, Thread
 import numpy
 import datetime
 import multiprocessing
+from Bio.PDB import PDBParser, MMCIFIO, PDBIO, MMCIFParser
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
 from Types import *
@@ -88,16 +89,21 @@ def pdb_stuff(url, path, pdb_id):
         except urllib.error.HTTPError or urllib.error.URLError as e:
             print("<<<HTTP or URL error, couldn't get file for " + pdb_id + '. Got error: ' + e.reason +
                   '. Will look for .cif file.')
-            # cif_stuff(url, path, pdb_id)
-            return
+            cif = path.replace('.pdb', '.cif')
+            url = url.replace('.pdb', '.cif')
+            cif_stuff(url, cif, path)
+            # return
 
-    file = open(path, 'r')
+    try: file = open(path, 'r')
+    except FileNotFoundError:
+        print('PDB file not found')
+        return
     f_lines = file.readlines()
     tmp_entry = new_entry(lines=f_lines)
 
     for line in f_lines:
         if K_ATM in line or K_HAT in line:
-            tmp_record = new_record(line, pdb_id)
+            tmp_record = new_record(line, pdb_id, 'PDB')
             if tmp_record.ligand_code.strip() in ligand_codes:
                 with lock_total: total_pdb_output += tmp_record.important_str()
                 with lock_obj:
@@ -111,8 +117,16 @@ def pdb_stuff(url, path, pdb_id):
 
     with lock_entry: pdb_entries.append(tmp_entry)
 
-def cif_stuff(url, path, pdb_id):
-    print('')
-
+def cif_stuff(url, cif_path, pdb_path):
+    try: urllib.request.urlretrieve(url, cif_path)
+    except urllib.error.HTTPError or urllib.error.URLError as e:
+        print("<<<HTTP or URL error, couldn't get " + url + '. Got error: ' + e.reason)
+        return
+    p = MMCIFParser()
+    struc = p.get_structure('', cif_path)
+    io = PDBIO()
+    io.set_structure(struc)
+    io.save(pdb_path)
+    print('@@@SUCCESSFULLY CONVERTED CIF TO PDB')
 if __name__ == '__main__':
     main()

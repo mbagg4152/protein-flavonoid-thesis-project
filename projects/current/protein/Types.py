@@ -5,7 +5,7 @@ from StringsAndConsts import *
 class Record:
     def __init__(self, pdb_id=None, label=None, serial=None, atom_name=None, alt_loc=None, ligand_code=None,
                  chain_id=None, ligand_seq=None, ins_code=None, pos_x=None, pos_y=None, pos_z=None, occupy=None,
-                 temp=None, elem=None, charge=None):
+                 temp=None, elem=None, charge=None, file_type=None):
         self.pdb_id = pdb_id if pdb_id is not None else ' '
         self.label = label if label is not None else ' '
         self.serial = serial if serial is not None else ' '
@@ -22,6 +22,7 @@ class Record:
         self.temp = temp if temp is not None else ' '
         self.elem = elem if elem is not None else ' '
         self.charge = charge if charge is not None else ' '
+        self.file_type = file_type if file_type is not None else ' '
 
     def important_str(self):
         out = '> ' + self.pdb_id + ', ' + self.label + ' | AtomName: ' + self.atom_name + ' | Serial: ' + self.serial \
@@ -48,16 +49,20 @@ class Entry:
         self.file_type = file_type if file_type is not None else ' '
 
 
-def new_record(line, name):
+def new_record(line, name, file_type):
     if len(line) < 60: tmp_record = Record()
     else:
         # ranges taken from the PDB documentation, column values are found in record_formats.txt
         # beginning of range listed in file is one less due to list indices starting at 0. the end value is the same
         # since taking a subsection of a string works as such: substring = string[start:end-1]
-        tmp_record = Record(pdb_id=name, label=line[0:6], serial=line[6:11], atom_name=line[12:16], alt_loc=line[16:17],
-                            ligand_code=line[17:20], chain_id=line[21:22], ligand_seq=line[22:26], ins_code=line[26:27],
-                            pos_x=line[30:38], pos_y=line[38:45], pos_z=line[46:54], occupy=line[54:60],
-                            temp=line[60:66], elem=line[76:78], charge=line[78:80])
+        if file_type == 'PDB':
+            tmp_record = Record(pdb_id=name, label=line[0:6], serial=line[6:11], atom_name=line[12:16],
+                                alt_loc=line[16:17], ligand_code=line[17:20], chain_id=line[21:22],
+                                ligand_seq=line[22:26], ins_code=line[26:27], pos_x=line[30:38], pos_y=line[38:45],
+                                pos_z=line[46:54], occupy=line[54:60], temp=line[60:66], elem=line[76:78],
+                                charge=line[78:80], file_type=file_type)
+        else:
+            tmp_record = Record()
     return tmp_record
 
 
