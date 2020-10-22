@@ -41,11 +41,9 @@ JW started the code to get information from KEGG about the species we were inter
 # Important Files and Functions in ```pfpy/projects/current/```
 __Note:__ Not all files or functions are covered below.  
 
-
-## ```flavonoid/kegg-prog.py```
+## File ```flavonoid/kegg-prog.py```
 This is the main program of the code project.  
-
-#### ```gene_pathway_data```
+#### Function ```gene_pathway_data```
 This function is called and passed a pathway for a specific organism (e.g. adu00941). For each pathway that is passed 
 in, the code uses the kegg plugin in order to get the gene data for the specific pathway, which is done using the 
 following lines:  
@@ -62,9 +60,8 @@ cam00941 is shown below (the other entries in 'GENE' take similar form):
 ```
 Then the data is added to a list such that this gene data is associated with the appropriate plant.
 
-
 ---
-## ```lib/compoundinfo.py```
+## File ```lib/compoundinfo.py```
 This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
 Some of the EC number variables are shown below:
 ```python
@@ -76,12 +73,10 @@ E17_2 = 'EC:1.1.1.219 1.1.1.234' # unique number for bifunctional dihydroflavono
 E26 = 'EC:2.4.1.136'
 ```
 
-### ```or_in```
+### Function ```or_in```
 Takes in a list and elements and returns true if at least ONE element is present in the list.
-
-### ```and_in```
+### Function ```and_in```
 Takes in a list and elements and returns true only if all of the passed elements are in the list.
-
 ### ```The Logical Functions```
 Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite 
 compounds which are found on the map. The prerequisite functions are used to get the total result for the specific 
@@ -106,7 +101,7 @@ The functions return ```True``` or ```False``` based on whether or not the requi
 (parameter ```e```) which was passed to ```flav_check```.    
 
 ---
-## ```lib/knapsackinfo.py```
+## File ```lib/knapsackinfo.py```
 This program uses the ```wget``` command in order to pull the information for each of the species from KNApSAcK. 
 For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of 
 interest.  
@@ -120,56 +115,66 @@ other databases.
 __Note:__ It will not work correctly if the ```wget``` system command is not installed (this has not yet been tested
 on Windows, may potentially only be compatible with Linux systems). 
 
-
-
 ---
-## ```lib/datatypes.py```
+## File ```lib/datatypes.py```
 This contains the custom data types that are or have been used in the program.  
-
-### ```ChemData```
+### Class ```ChemData```
 This object type holds a flavonoid label, a file name and a list of species.  
 A list of ```ChemData``` objects is used in ```kegg-prog.py``` in order to keep track of which plants 
 were predicted for each flavonoid.
-
-### ```Species```
+### Class ```Species```
 This object has a species name, a list of predicted flavonoids and the number of associated flavonoids.  
 The list of ```Species``` is populated in the same block of code as the list of ```ChemData``` objects.  
 This object is better suited for focusing on specific plants based on prediction counts and predicted flavonoids.
 
 ---
-## ```lib/jsondata.py```
+## File ```lib/jsondata.py```
 This file calls the ```get_json_data(filename,key)``` function from util.py, which reads in the list of plant and 
 pathway codes as well as the file containing the scientific name for each plant and the full name of each pathway map.
 
-
-
-
 ---
-## ```lib/pathstrings.py```
+## File ```lib/pathstrings.py```
 This file just contains the strings which hold the dedicated output folder and file names.
 
+---
+## File ```lib/util.py```
+This file contains various utility functions used throughout the program.
+#### Function ```get_json_data```  
+Reads in a JSON (JavaScript Object Notation) file and converts the data into usable python variables.
+#### Function ```remove_dupes```   
+Removes duplicate elements from a list.
+#### Function ```write_readme```  
+Writes the program's original ```README``` file.
+
+---
+## File ```protein/protein.py```
 
 
 ---
-## ```lib/util.py```
-This file contains various utility functions used throughout the program.
+## File ```protein/Types.py```
+This file contains two different classes and functions that are used to create new objects, which are used in ```protein.py```.  
+####```Class Record```
+This object holds the information from PDB files for a single ```ATOM/HETATM``` line or record.  
+For example, the following lines would be appropriately converted into ```Record``` objects using the function ```new_record```:
+```
+ATOM   1258  CA  THR B  59      22.806  24.345  36.922  1.00 23.83           C 
+HETATM 1815  O   HOH A 133      17.558  28.943  -4.426  1.00 23.32           O  
+```
+#### Function ```new_record```
+In ```protein.py```, if a line begins with ```ATOM/HETATM``` then this function is called to create a new ```Record``` object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
+Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with values from the passed in line.
+
+#### Class ```Entry```
 
 
 
-#### ```get_json_data```  
-Reads in a JSON (JavaScript Object Notation) file and converts the data into usable python variables.
 
 
+#### Function ```new_entry```
 
-
-#### ```remove_dupes```   
-Removes duplicate elements from a list.
-
-
-
-#### ```write_readme```  
-Writes the program's original ```README``` file.
-
+---
+## File ```protein/StringsAndConsts.py```
+This file simply contains several strings & constant values for ```protein.py```.
 
 ---
 ## Original Changelog 
