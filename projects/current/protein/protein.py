@@ -1,5 +1,6 @@
 from Bio.PDB import PDBIO, MMCIFParser
-from StringsAndConsts import *
+from plib.StringsAndConsts import *
+from plib.Types import *
 from pathlib import Path
 from threading import Lock, Thread
 import datetime
@@ -9,7 +10,7 @@ import sys
 import urllib.request, urllib.error
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
-from Types import *
+
 from lib.jsondata import *
 
 
