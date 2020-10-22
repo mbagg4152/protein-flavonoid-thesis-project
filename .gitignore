@@ -7,5 +7,9 @@
 .idea/codeStyles
 .idea/vcs.xml
 __pycache__
-projects/current/protein/output/
-projects/current/flavonoid/data/
+**/protein/output
+**/FASTA_Data
+**/Gene_Data
+**/data/Master_Count.csv
+**/data/Master_List.csv
+**/data/ReadMe.txt
