@@ -7,6 +7,8 @@ import multiprocessing
 import numpy
 import sys
 import urllib.request, urllib.error
+import os
+import time
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
 
@@ -28,7 +30,7 @@ thread_lim = multiprocessing.cpu_count()
 
 
 def main():
-    chunked_pdb = numpy.array_split(numpy.array(pdb_id_list_short), thread_lim)
+    chunked_pdb = numpy.array_split(numpy.array(pdb_id_list), thread_lim)
     threads = []
     print(str(len(chunked_pdb)))
     for chunks in chunked_pdb:
@@ -87,7 +89,7 @@ def pdb_stuff(url, path, pdb_id):
                 # print_4v4d_pyg_chain_a(pdb_id, tmp_record.ligand_code, tmp_record.chain_id, line)
     simple_entry_print(pdb_id, tmp_entry.group, tmp_entry.ec_nums, len(tmp_entry.records))
     with lock_entry: pdb_entries.append(tmp_entry)
-    run_sasa(pdb_id)
+    run_sasa(pdb_id, path)
 
 def cif_stuff(url, cif_path, pdb_path):
     try: urllib.request.urlretrieve(url, cif_path)
@@ -108,9 +110,14 @@ def print_4v4d_pyg_chain_a(pdb_id, ligand, chain, line):
 def simple_entry_print(pdb_id, group, ec_nums, num_records):
     print(pdb_id + ' | Class: ' + group + ' | EC: ' + str(ec_nums) + ' | No. Records: ' + str(num_records))
 
-def run_sasa(pdb_id):
-    Path(sasa_dir + pdb_id).mkdir(parents=True, exist_ok=True)
-
-
+def run_sasa(pdb_id, path):
+    try:
+        os.mkdir(sasa_dir + pdb_id)
+        time.sleep(7)
+        cmd = 'cd; ' + \
+              'cd ' + sasa_dir + pdb_id + ';' + \
+              sasa + ' -m 4 -i ' + path + '> out.txt'
+        os.system(cmd)
+    except FileExistsError: pass
 if __name__ == '__main__':
     main()
