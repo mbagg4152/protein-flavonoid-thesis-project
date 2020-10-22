@@ -1,6 +1,5 @@
 # pfpy - Protein & Flavonoid project code in Python
-Former repository for CHEM-491 (Research Methods) class and is now being used in continuing the project.  
-The goal was to modernize, clean and adapt a former student's thesis project.  
+Former repository for CHEM-491 (Research Methods) class and is now being used in continuing the work for said project in the context of a thesis project and a research assistant position. The initial goal was to modernize, clean and add additional flavonoids to the code.    
 The original code and the version that was worked on during class mainly focused on utilizing KEGG data in order to predict whether or not a specific plant could be capable of synthesizing selected flavonoids.  
 The new code being developed (located in ```projects/current/protein```) is being developed for the purpose of studying and analyzing the interactions between proteins and flavonoids or flavonoid-like compounds.
 
@@ -172,6 +171,12 @@ Writes the program's original ```README``` file.
 <!--###########################################################################################################################################################-->
 ---
 ## File ```protein/protein.py```
+This program reads in a ```JSON``` file of PDB IDs and then appends the IDs to the end of a specific URL in order to download each desired PDB or mmCIF file. 
+When a PDB ID + the desired file extension (```.pdb```, ```.xml```, ```.cif```) is appended to the simple parial URL ```https://files.rcsb.org/view/```, the program can then call ```urllib.request.urlretrieve(url, file_path)```, where ```file_path``` is the name of the file that  ```urllib``` will save the web page content to.   
+For example, if the current iteration is looking at ID 4V4D (large structure), the code would get the mmCIF file using the URL ```https://files.rcsb.org/view/4V4D.cif```.  
+If a given file can be found in ```protein/output/pdb_files```, then the program will skip the download process and go straight to parsing the file's information.
+  If ```urllib``` recieves an error code from trying to get a .pdb file, that is most likely due to PDB not providing .pdb files for large structures. If an error is occured, then the program attempts to fetch the appropriate .cif file and then attempt to convert the file to .pdb format.
+
 
 <!--###########################################################################################################################################################-->
 ---
@@ -189,8 +194,10 @@ In ```protein.py```, if a line begins with ```ATOM/HETATM``` then this function 
 Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with values from the passed in line.
 
 #### Class ```Entry```
+These objects contain data from the PDB files themselves, not just simple lines. Each ```Entry``` contains specific information such as PDB ID, classification, a list of ```Records```, associated organisms, EC numbers, etc.  
 
 #### Function ```new_entry```
+This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new ```Entry``` is returned.
 
 <!--###########################################################################################################################################################-->
 ---
