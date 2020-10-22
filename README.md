@@ -1,27 +1,38 @@
 # pfpy - Protein & Flavonoid project code in Python
 Former repository for CHEM-491 (Research Methods) class and is now being used in continuing the project.  
 The goal was to modernize, clean and adapt a former student's thesis project.  
+The original code and the version that was worked on during class mainly focused on utilizing KEGG data in order to predict whether or not a specific plant could be capable of synthesizing selected flavonoids.  
+The new code being developed (located in ```projects/current/protein```) is being developed for the purpose of studying and analyzing the interactions between proteins and flavonoids or flavonoid-like compounds.
 
 
+<!--###########################################################################################################################################################-->
+<!--###########################################################################################################################################################-->
 ---
 ## Original Code Information
-> *KEGG.py, Made using Python 2.7  
-Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson    
-JW started the code to get information from KEGG about the species we were interested in - April 2019*  
+  > *KEGG.py, Made using Python 2.7  
+  Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson    
+  JW started the code to get information from KEGG about the species we were interested in - April 2019*  
+
+<!--###########################################################################################################################################################-->
+<!--###########################################################################################################################################################-->
 ---
 ## Requirements
-1. Make sure to have Python 3 installed on your computer.   
-&emsp;For example, in Linux, you can check the version using:  
-&emsp; ```user@computer:~$ python -V```  
-&emsp; ```Python 3.8.3```  
-&emsp; Windows now has Python 3 on the Microsoft store, so checking the current version could be done by finding the list of installed  
-&emsp; programs by navigating to ```Control Panel --> Programs --> Uninstall a Program```
+  1. Make sure to have Python 3 installed on your computer.   
+    &emsp;For example, in Linux, you can check the version using:  
+    &emsp; ```user@computer:~$ python -V```  
+    &emsp; ```Python 3.8.3```  
+    &emsp; Windows now has Python 3 on the Microsoft store, so checking the current version could be done by finding the list of installed  
+    &emsp; programs by navigating to ```Control Panel --> Programs --> Uninstall a Program```
 
-1. Install python package __bioservices__: ```[pip|pip3] install bioservices```  
-&emsp; _Using pip should work, but a system may recognize ```pip3``` instead._   
-&emsp; You can find the bioservices documentation [_here._](https://bioservices.readthedocs.io/en/master/)
-1. Install python package __BioPython__: ```[pip|pip3] install biopython```  
-&emsp; You can find the BioPython documentation [_here._](https://biopython.org/wiki/Documentation)
+  1. Install python package __bioservices__: ```[pip|pip3] install bioservices```  
+    &emsp; _Using pip should work, but a system may recognize ```pip3``` instead._   
+    &emsp; You can find the bioservices documentation [_here._](https://bioservices.readthedocs.io/en/master/)
+
+  1. Install python package __BioPython__: ```[pip|pip3] install biopython```  
+    &emsp; You can find the BioPython documentation [_here._](https://biopython.org/wiki/Documentation)
+
+<!--###########################################################################################################################################################-->
+<!--###########################################################################################################################################################-->
 ---
 ## Project Structure
 > ```pfpy``` main folder  
@@ -35,31 +46,35 @@ JW started the code to get information from KEGG about the species we were inter
 ```pfpy/projects/current/flavonoid/data/Gene_Data``` contains the data pulled from KEGG for each plant pathway  
 ```pfpy/projects/current/json_data```  holds the lists of plants & pathways used in the KEGG program (in JSON format).  
 ```pfpy/projects/current/lib``` contains the library/helper code and other assorted test code files.  
-```pfpy/projects/current/misc_output``` contains output from testing programs not used by kegg-prog.py  
-  
+```pfpy/projects/current/misc_output``` contains output from testing programs not used by kegg-prog.py    
+
+<!--###########################################################################################################################################################-->
+<!--###########################################################################################################################################################-->
 ---
 # Important Files and Functions in ```pfpy/projects/current/```
 __Note:__ Not all files or functions are covered below.  
 
 ## File ```flavonoid/kegg-prog.py```
 This is the main program of the code project.  
+  
 #### Function ```gene_pathway_data```
 This function is called and passed a pathway for a specific organism (e.g. adu00941). For each pathway that is passed 
 in, the code uses the kegg plugin in order to get the gene data for the specific pathway, which is done using the 
 following lines:  
-```python
-    raw = kegg.get(pathway_id)
-    gd = kegg.parse(raw)
-    ...
-    fetched_genes = gd.get('GENE')
-```
+  ```python
+      raw = kegg.get(pathway_id)
+      gd = kegg.parse(raw)
+      ...
+      fetched_genes = gd.get('GENE')
+  ```
 Once the gene data is collected,the data is split up into different list items. For reference, a single gene entry for 
 cam00941 is shown below (the other entries in 'GENE' take similar form):  
-```python
-'GENE': {'101489106': 'chalcone synthase 1 [KO:K00660] [EC:2.3.1.74]', ...}
-```
+  ```python
+  'GENE': {'101489106': 'chalcone synthase 1 [KO:K00660] [EC:2.3.1.74]', ...}
+  ```
 Then the data is added to a list such that this gene data is associated with the appropriate plant.
 
+<!--###########################################################################################################################################################-->
 ---
 ## File ```lib/compoundinfo.py```
 This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
@@ -75,17 +90,17 @@ E26 = 'EC:2.4.1.136'
 
 ### Function ```or_in```
 Takes in a list and elements and returns true if at least ONE element is present in the list.
+
 ### Function ```and_in```
 Takes in a list and elements and returns true only if all of the passed elements are in the list.
-### ```The Logical Functions```
+  
+### The Logical Functions  
 Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite 
 compounds which are found on the map. The prerequisite functions are used to get the total result for the specific 
 compound. If the prerequisite returns ```False```, the compound logic function will also return ```False```.  
-  
 Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines 
 at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
-For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR ```EC:4.3.1.25``` is written as such:
-
+For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR ```EC:4.3.1.25``` is written as such:  
 ```python
 def tca(e): return or_in(e, E1, E2)  # cinnamic acid
 ```
@@ -100,6 +115,7 @@ If the result of ```flav_check``` returns as true, then the current plant's name
 The functions return ```True``` or ```False``` based on whether or not the required EC numbers are in the list 
 (parameter ```e```) which was passed to ```flav_check```.    
 
+<!--###########################################################################################################################################################-->
 ---
 ## File ```lib/knapsackinfo.py```
 This program uses the ```wget``` command in order to pull the information for each of the species from KNApSAcK. 
@@ -115,6 +131,7 @@ other databases.
 __Note:__ It will not work correctly if the ```wget``` system command is not installed (this has not yet been tested
 on Windows, may potentially only be compatible with Linux systems). 
 
+<!--###########################################################################################################################################################-->
 ---
 ## File ```lib/datatypes.py```
 This contains the custom data types that are or have been used in the program.  
@@ -127,29 +144,36 @@ This object has a species name, a list of predicted flavonoids and the number of
 The list of ```Species``` is populated in the same block of code as the list of ```ChemData``` objects.  
 This object is better suited for focusing on specific plants based on prediction counts and predicted flavonoids.
 
+<!--###########################################################################################################################################################-->
 ---
 ## File ```lib/jsondata.py```
 This file calls the ```get_json_data(filename,key)``` function from util.py, which reads in the list of plant and 
 pathway codes as well as the file containing the scientific name for each plant and the full name of each pathway map.
 
+<!--###########################################################################################################################################################-->
 ---
 ## File ```lib/pathstrings.py```
 This file just contains the strings which hold the dedicated output folder and file names.
 
+<!--###########################################################################################################################################################-->
 ---
 ## File ```lib/util.py```
 This file contains various utility functions used throughout the program.
+
 #### Function ```get_json_data```  
 Reads in a JSON (JavaScript Object Notation) file and converts the data into usable python variables.
+
 #### Function ```remove_dupes```   
 Removes duplicate elements from a list.
+
 #### Function ```write_readme```  
 Writes the program's original ```README``` file.
 
+<!--###########################################################################################################################################################-->
 ---
 ## File ```protein/protein.py```
 
-
+<!--###########################################################################################################################################################-->
 ---
 ## File ```protein/Types.py```
 This file contains two different classes and functions that are used to create new objects, which are used in ```protein.py```.  
@@ -166,16 +190,16 @@ Since PDB files have dedicated column ranges for each value, it is then easy to 
 
 #### Class ```Entry```
 
-
-
-
-
 #### Function ```new_entry```
 
+<!--###########################################################################################################################################################-->
 ---
 ## File ```protein/StringsAndConsts.py```
 This file simply contains several strings & constant values for ```protein.py```.
 
+
+<!--###########################################################################################################################################################-->
+<!--###########################################################################################################################################################-->
 ---
 ## Original Changelog 
 Version | Change |
