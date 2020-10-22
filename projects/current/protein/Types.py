@@ -49,7 +49,7 @@ class Entry:
         self.file_type = file_type if file_type is not None else ' '
 
 
-def new_record(line, name, file_type):
+def new_record(line, name, file_type=None):
     if len(line) < 60: tmp_record = Record()
     else:
         # ranges taken from the PDB documentation, column values are found in record_formats.txt
