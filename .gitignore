@@ -8,8 +8,8 @@
 .idea/vcs.xml
 __pycache__
 projects/current/protein/output/
-projects/current/flavonoid/FASTA_Data/*
-projects/current/flavonoid/Gene_Data/*
+projects/current/flavonoid/FASTA_Data/
+projects/current/flavonoid/Gene_Data/
 projects/current/flavonoid/data/Master_Count.csv
 projects/current/flavonoid/data/Master_List.csv
 projects/current/flavonoid/data/ReadMe.txt
