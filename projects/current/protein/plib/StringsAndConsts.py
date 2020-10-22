@@ -26,7 +26,7 @@ RE_REC_VAL = '(:.*;)'  # record values are between : and ; for specific records
 # directory/path values
 SEP = os.sep
 cwd = os.getcwd()
-out_dir = cwd + SEP + 'output' + SEP
+out_dir = cwd + SEP + 'pdb-output' + SEP
 formatted_out = out_dir + 'format_out_all.txt'
 formatted_out_small = out_dir + 'format_out_partial.txt'
 pdb_dir = out_dir + 'pdb_files' + SEP
