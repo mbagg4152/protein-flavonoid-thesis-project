@@ -30,3 +30,5 @@ out_dir = cwd + SEP + 'pdb-output' + SEP
 formatted_out = out_dir + 'format_out_all.txt'
 formatted_out_small = out_dir + 'format_out_partial.txt'
 pdb_dir = out_dir + 'pdb_files' + SEP
+sasa = 'dr_sasa_n-0.4b' + SEP + 'build' + SEP + 'dr_sasa'
+sasa_dir = cwd + SEP + 'sasa-output' + SEP

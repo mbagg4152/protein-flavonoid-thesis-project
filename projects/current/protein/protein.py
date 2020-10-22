@@ -1,5 +1,4 @@
 from Bio.PDB import PDBIO, MMCIFParser
-from plib.StringsAndConsts import *
 from plib.Types import *
 from pathlib import Path
 from threading import Lock, Thread
@@ -23,6 +22,7 @@ init_time = datetime.datetime.now()
 
 Path(out_dir).mkdir(parents=True, exist_ok=True)
 Path(pdb_dir).mkdir(parents=True, exist_ok=True)
+Path(sasa_dir).mkdir(parents=True, exist_ok=True)
 
 thread_lim = multiprocessing.cpu_count()
 
@@ -87,6 +87,7 @@ def pdb_stuff(url, path, pdb_id):
                 # print_4v4d_pyg_chain_a(pdb_id, tmp_record.ligand_code, tmp_record.chain_id, line)
     simple_entry_print(pdb_id, tmp_entry.group, tmp_entry.ec_nums, len(tmp_entry.records))
     with lock_entry: pdb_entries.append(tmp_entry)
+    run_sasa(pdb_id)
 
 def cif_stuff(url, cif_path, pdb_path):
     try: urllib.request.urlretrieve(url, cif_path)
@@ -100,13 +101,16 @@ def cif_stuff(url, cif_path, pdb_path):
     io.save(pdb_path)
     print('@@@SUCCESSFULLY CONVERTED CIF TO PDB')
 
-
 def print_4v4d_pyg_chain_a(pdb_id, ligand, chain, line):
     if pdb_id == '4V4D' and ligand == 'PYG' and chain == 'A':
         print('[4V4D-PYG-Chain A] ' + line)
 
 def simple_entry_print(pdb_id, group, ec_nums, num_records):
     print(pdb_id + ' | Class: ' + group + ' | EC: ' + str(ec_nums) + ' | No. Records: ' + str(num_records))
+
+def run_sasa(pdb_id):
+    Path(sasa_dir + pdb_id).mkdir(parents=True, exist_ok=True)
+
 
 if __name__ == '__main__':
     main()
