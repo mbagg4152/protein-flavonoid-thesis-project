@@ -8,7 +8,20 @@ The goal was to modernize, clean and adapt a former student's thesis project.
 > *KEGG.py, Made using Python 2.7  
 Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson    
 JW started the code to get information from KEGG about the species we were interested in - April 2019*  
+---
+## Requirements
+1. Make sure to have Python 3 installed on your computer.   
+&emsp;For example, in Linux, you can check the version using:  
+&emsp; ```user@computer:~$ python -V```  
+&emsp; ```Python 3.8.3```  
+&emsp; Windows now has Python 3 on the Microsoft store, so checking the current version could be done by finding the list of installed  
+&emsp; programs by navigating to ```Control Panel --> Programs --> Uninstall a Program```
 
+1. Install python package __bioservices__: ```[pip|pip3] install bioservices```  
+&emsp; _Using pip should work, but a system may recognize ```pip3``` instead._   
+&emsp; You can find the bioservices documentation [_here._](https://bioservices.readthedocs.io/en/master/)
+1. Install python package __BioPython__: ```[pip|pip3] install biopython```  
+&emsp; You can find the BioPython documentation [_here._](https://biopython.org/wiki/Documentation)
 ---
 ## Project Structure
 > ```pfpy``` main folder  
