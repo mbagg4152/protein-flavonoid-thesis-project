@@ -13,7 +13,6 @@ from lib.datatypes import *
 from lib.pathstrings import *
 from lib.compoundinfo import *
 
-
 init_time = datetime.datetime.now()
 kegg = KEGG()
 
@@ -28,10 +27,14 @@ dna_dict = {}
 enz_class_list = []
 fasta_by_enz_class = []
 fasta_by_class = {}
-lock_master = threading.Semaphore()
-lock_parsing = threading.Semaphore()
-lock_write = threading.Semaphore()
-lock_dna = threading.Semaphore()
+sem_master = threading.Semaphore()
+sem_parsing = threading.Semaphore()
+sem_write = threading.Semaphore()
+sem_dna = threading.Semaphore()
+lock_master = threading.Lock()
+lock_parsing = threading.Lock()
+lock_write = threading.Lock()
+lock_dna = threading.Lock()
 locks = []
 master_gene_list = []
 master_list = []
@@ -87,7 +90,7 @@ def master_pathway_parser():
     threads = []
     chunked = list(list_partition(path_plant_list, CHUNK_SIZE))  # chunk up list to be run on multiple threads
     for i in range(0, len(chunked)):  # create semaphores and fill list of lists
-        locks.append(threading.Semaphore(1))
+
         thread_parsing_data.append([])
         tmp_data_holder.append([])
 
@@ -110,19 +113,14 @@ def master_pathway_parser():
 def parse_helper(plant_paths, sem_index):
     global master_list, tmp_data_holder, thread_parsing_data
     for path in plant_paths:
-        lock_parsing.acquire()
-        try: tmp_data_holder[sem_index] = gene_pathway_data(path)
-        finally: lock_parsing.release()
-        lock_write.acquire()
-        try:
+        with lock_parsing: tmp_data_holder[sem_index] = gene_pathway_data(path)
+
+        with lock_write:
             thread_parsing_data[sem_index].extend(tmp_data_holder[sem_index])
             try: save_file(tmp_data_holder[sem_index], GDATA + path + CSV, gene_path)
-            except AttributeError: pass
-        finally: lock_write.release()
+            except AttributeError: return
 
-    lock_master.acquire()
-    try: master_list.extend(thread_parsing_data[sem_index])
-    finally: lock_master.release()
+    with lock_master: master_list.extend(thread_parsing_data[sem_index])
 
 
 # function that fetches the required data
@@ -197,6 +195,7 @@ def make_matrix_and_counts():
     for uniq in master_uniq: master_gene_list.append(swapped_order[uniq[0]] + ':' + uniq[1])
     # print(str(master_gene_list))
 
+
 def make_fasta():
     print('- saving master fasta...')
     master_fasta = get_master_fasta(master_gene_list)
@@ -238,7 +237,14 @@ def make_fasta():
         name = key.replace('.', '_').replace(SP, NIX).replace(':', NIX)
         out = ''
         for item in fasta_by_class[key]: out += item + '\n'
-        basic_write(fasta_path + SEP + name + CSV, 'w', out)
+        # basic_write(fasta_path + SEP + name + CSV, 'w', out)
+        try:
+            file = open(fasta_path + SEP + name + CSV, 'x')
+            file.close()
+        except FileExistsError: pass
+        file = open(fasta_path + SEP + name + CSV, 'a')
+        file.write(out)
+        file.close()
 
 
 def get_master_fasta(gene):
@@ -269,12 +275,12 @@ def fasta_helper(gene_list):
         if is_http_error(raw):
             for i in range(0, RETRY):
                 raw = kegg.get(gene)
-                if is_http_error(raw):
+                if is_http_error(raw) or raw is None or raw == '' or raw is int:
                     if i == RETRY - 1: print('Made attempts to access data but failed, skipping entry for ' + gene)
                     else:
                         print('Got an HTTP error code from KEGG ... taking a small nap')
                         time.sleep(1)
-                else: break
+                else: continue
         raw_info = kegg.parse(raw)  # turn kegg gene data into dictionary
         ortho_line = raw_info.get(O_KEY)  # get data from dictionary using the key ORTHOLOGY
         split_gene = gene.split(':')
@@ -283,23 +289,29 @@ def fasta_helper(gene_list):
         organism_name = plant_dict.get(org_code, NIX)  # get plant's scientific name from the plant dictionary
 
         # no orthology data, skip to next list item
-        if ortho_line is None or isinstance(ortho_line, str): continue
+        if ortho_line is None or isinstance(ortho_line, str):
+            print('>>>passing, is none or string')
+            continue
 
         ortho_val = ''  # will hold orthology values
         # extra safeguard - if data is not a dictionary then it is incorrect --> skip to next gene
         try: ortho_val = ''.join(ortho_line.values())
-        except AttributeError: continue
+        except AttributeError:
+            print('>>>passing, attribute err')
+            continue
 
         parsed_ec = re.findall(RE_SQ_BRACKETS, ortho_val)  # use regular expression to find EC number, which is in []
-        if len(parsed_ec) == 0 or len(parsed_ec[0]) < 1: continue  # no EC number, skip to next gene
+        if len(parsed_ec) == 0 or len(parsed_ec[0]) < 1:
+            print('>>>passing, no ec')
+            continue  # no EC number, skip to next gene
         ec_num = parsed_ec[0]  # regular expression findall returns a list, expecting only one element
         ntseq = raw_info.get('NTSEQ', NIX)  # get values from kegg dictionary using NTSEQ as the key
         joined_dna_seq = [ntseq.replace(SP, NIX)]  # remove spaces from sequence
 
-        lock_dna.acquire()
+        sem_dna.acquire()
         tmp_entry = {E_KEY: ec_num, N_KEY: joined_dna_seq, P_KEY: organism_name}
         dna_dict[gene_name] = tmp_entry
-        lock_dna.release()
+        sem_dna.release()
 
 
 def finish_up():
@@ -341,5 +353,6 @@ def finish_up():
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
     print('\ntotal time taken: ' + str(total_time))
+
 
 main()

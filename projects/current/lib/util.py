@@ -2,7 +2,7 @@ import json
 import os
 from lib.miscvals import *
 from lib.pathstrings import SEP
-
+import numpy
 def get_json_data(file_name, key):
     data = ''
     try:

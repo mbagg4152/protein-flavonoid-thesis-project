@@ -1,11 +1,13 @@
 from lib.pathstrings import *
 from lib.miscvals import *
 
+
 class ChemData:
     def __init__(self, label: str, species: [str], file_name: str):
         self.species = species
         self.label = label
         self.file_name = file_name
+
 
 class Species:
     def __init__(self, name: str, count: int, flavonoids: [str]):
@@ -21,6 +23,11 @@ class Species:
                 flav_str += ', '
         line = '' + str(self.count) + ', ' + self.name + ', ' + flav_str
         return line
+
+
+class NumEC:
+    def __init__(self):
+        pass
 
 
 cd_api = ChemData(label=AGI, species=[], file_name=FN_AGI)
