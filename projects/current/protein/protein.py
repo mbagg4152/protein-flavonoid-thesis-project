@@ -14,7 +14,6 @@ sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for impor
 
 from lib.jsondata import *
 
-
 pdb_objects_list = []
 pdb_objects = {}
 pdb_entries = []
@@ -44,17 +43,19 @@ def main():
         out_file.write(total_pdb_output)
         out_file.close()
 
-    for pdb_id in pdb_id_list:
-        run_sasa(pdb_id, pdb_dir + pdb_id + '.pdb')
+    # for pdb_id in pdb_id_list:
+    #     run_sasa(pdb_id, pdb_dir + pdb_id + '.pdb')
 
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
     print('\ntotal time taken: ' + str(total_time))
 
+
 def run_pdb_chunks(chunks):
     for pdb_id in chunks:
         tst_url = PART_URL + pdb_id + '.pdb'
         pdb_stuff(tst_url, pdb_dir + pdb_id + '.pdb', pdb_id)
+
 
 def pdb_stuff(url, path, pdb_id):
     global total_pdb_output, pdb_entries, pdb_objects
@@ -94,6 +95,7 @@ def pdb_stuff(url, path, pdb_id):
     with lock_entry: pdb_entries.append(tmp_entry)
     # run_sasa(pdb_id, path)
 
+
 def cif_stuff(url, cif_path, pdb_path):
     try: urllib.request.urlretrieve(url, cif_path)
     except urllib.error.HTTPError or urllib.error.URLError as e:
@@ -106,12 +108,15 @@ def cif_stuff(url, cif_path, pdb_path):
     io.save(pdb_path)
     print('@@@SUCCESSFULLY CONVERTED CIF TO PDB')
 
+
 def print_4v4d_pyg_chain_a(pdb_id, ligand, chain, line):
     if pdb_id == '4V4D' and ligand == 'PYG' and chain == 'A':
         print('[4V4D-PYG-Chain A] ' + line)
 
+
 def simple_entry_print(pdb_id, group, ec_nums, num_records):
     print(pdb_id + ' | Class: ' + group + ' | EC: ' + str(ec_nums) + ' | No. Records: ' + str(num_records))
+
 
 def run_sasa(pdb_id, path):
     try:
@@ -122,5 +127,7 @@ def run_sasa(pdb_id, path):
               sasa + ' -m 4 -i ' + path + '> out.txt'
         os.system(cmd)
     except FileExistsError: pass
+
+
 if __name__ == '__main__':
     main()
