@@ -44,6 +44,9 @@ def main():
         out_file.write(total_pdb_output)
         out_file.close()
 
+    for pdb_id in pdb_id_list:
+        run_sasa(pdb_id, pdb_dir + pdb_id + '.pdb')
+
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
     print('\ntotal time taken: ' + str(total_time))
@@ -89,7 +92,7 @@ def pdb_stuff(url, path, pdb_id):
                 # print_4v4d_pyg_chain_a(pdb_id, tmp_record.ligand_code, tmp_record.chain_id, line)
     simple_entry_print(pdb_id, tmp_entry.group, tmp_entry.ec_nums, len(tmp_entry.records))
     with lock_entry: pdb_entries.append(tmp_entry)
-    run_sasa(pdb_id, path)
+    # run_sasa(pdb_id, path)
 
 def cif_stuff(url, cif_path, pdb_path):
     try: urllib.request.urlretrieve(url, cif_path)
@@ -113,7 +116,7 @@ def simple_entry_print(pdb_id, group, ec_nums, num_records):
 def run_sasa(pdb_id, path):
     try:
         os.mkdir(sasa_dir + pdb_id)
-        time.sleep(7)
+        time.sleep(1)
         cmd = 'cd; ' + \
               'cd ' + sasa_dir + pdb_id + ';' + \
               sasa + ' -m 4 -i ' + path + '> out.txt'
