@@ -2,6 +2,9 @@ import os
 
 CHUNK_SIZE = 6
 PART_URL = "https://files.rcsb.org/view/"
+EXP_SASA_OUT = ['.asa.pdb', '.atmasa', '.datmasa', '.dsasa.pdb', '.LIGAND_vs_PROTEIN.by_atom.tsv',
+                '.LIGAND_vs_PROTEIN.by_res.tsv', '.matrix.AB.by_atom.tsv', '.matrix.AB.by_res.tsv', '.overlaps',
+                '.PROTEIN_vs_LIGAND.by_atom.tsv', '.PROTEIN_vs_LIGAND.by_res.tsv']
 
 # PDB file keys
 K_CMP = 'COMPND'
