@@ -64,9 +64,9 @@ def save_file(lists_to_write, output_dir, current):
             if item == NIX:   writedoc.write('-')  # if the list in the list of list is empty writes a dash
             else: writedoc.write(item)  # write the entry in the list of lists to the file
             writedoc.write(', ')  # tab delineated; use "," for csv files
-            if form_counter == 7:
-                form_counter = 0
-                writedoc.write(NL)
+            # if form_counter == 7:
+            #     form_counter = 0
+            #     writedoc.write(NL)
             form_counter += 1
     writedoc.write(NL)
     writedoc.close()

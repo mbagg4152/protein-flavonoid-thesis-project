@@ -26,6 +26,27 @@ class Species:
 
 
 class NumEC:
+    def __init__(self, ec_num=None, ec_entries=None):
+        self.name = ec_num if ec_num is not None else ' '
+        self.ec_entries = ec_entries if ec_entries is not None else []
+
+
+class EntryEC:
+    def __init__(self, gene=None, dna=None, plant=None):
+        self.gene = gene if gene is not None else ' '
+        self.dna = dna if dna is not None else ' '
+        self.plant = plant if dna is not None else ' '
+
+
+class Gene:
+    def __init__(self, plant=None, compound=None, ec_num=None, k_ortho=None):
+        self.plant = plant if plant is not None else ' '
+        self.compound = compound if compound is not None else ' '
+        self.ec_num = ec_num if ec_num is not None else ' '
+        self.k_ortho = k_ortho if k_ortho is not None else ' '
+
+
+class Plant:
     def __init__(self):
         pass
 

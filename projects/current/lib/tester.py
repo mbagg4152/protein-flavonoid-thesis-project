@@ -49,7 +49,7 @@ def main():
             raw = kdb.get('dosa:Os08g0277200')
             raw_dict = kdb.parse(raw)
             gene = raw_dict.get('NTSEQ', 'No data')
-            print(str(raw))
+            print(str(gene))
         elif ans == 5:
             res = pdata.get_file('6DHL', 'pdb')
             write_out('6dhl.pdb', res)

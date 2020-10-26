@@ -4,6 +4,8 @@ import re
 import sys
 import threading
 import time
+import warnings
+import logging.config
 
 sys.path.append(os.getcwd().replace(os.sep + 'flavonoid', ''))
 
@@ -128,6 +130,7 @@ def gene_pathway_data(pathway_id):
     print(pathway_id)
     raw = kegg.get(pathway_id)
     gd = kegg.parse(raw)
+    # print('data from gene_pathway_data:' + str(raw))
     line_count = 0
     gene_lines = []
     fetched_genes = gd.get('GENE')
@@ -213,22 +216,11 @@ def make_fasta():
 
         ec_flag = False
 
-        # for j in range(0, len(enz_class_list)):  # if the EC number is already present sets it to true and continues
-        #     if this_ec == enz_class_list[j]: ec_flag = True
         tmp_data = ''
         try:
             fasta_by_class.get(this_ec)
             fasta_by_class[this_ec].append(tmp_line)
-        except KeyError:
-            fasta_by_class[this_ec] = [tmp_line]
-    # if this_ec not in enz_class_list:  # if the EC number is not there, it will be added to the list
-    #     enz_class_list.append(this_ec)
-    #     # make sure dictionary entry is added so it can be appended to
-    #     if fasta_by_class[this_ec] is None or len(fasta_by_class[this_ec]) < 1:
-    #         fasta_by_class[this_ec] = [tmp_line]
-    #     else: fasta_by_class[this_ec].append(tmp_line)
-    # else: fasta_by_class[this_ec].append(tmp_line)
-    # # if not ec_flag:
+        except KeyError: fasta_by_class[this_ec] = [tmp_line]
 
     basic_write(fasta_path + SEP + 'Master_FASTA.csv', 'a', master_out)
 
@@ -263,6 +255,8 @@ def get_master_fasta(gene):
             continue
 
     for thread in threads: thread.join()
+
+    # os.system('echo ' + str(dna_dict) + ' > dna-dict.txt')
     return dna_dict
 
 
@@ -308,10 +302,10 @@ def fasta_helper(gene_list):
         ntseq = raw_info.get('NTSEQ', NIX)  # get values from kegg dictionary using NTSEQ as the key
         joined_dna_seq = [ntseq.replace(SP, NIX)]  # remove spaces from sequence
 
-        sem_dna.acquire()
-        tmp_entry = {E_KEY: ec_num, N_KEY: joined_dna_seq, P_KEY: organism_name}
-        dna_dict[gene_name] = tmp_entry
-        sem_dna.release()
+        with lock_dna:
+            tmp_entry = {E_KEY: ec_num, N_KEY: joined_dna_seq, P_KEY: organism_name}
+            dna_dict[gene_name] = tmp_entry
+            os.system('echo ' + str(dna_dict) + ' >> dna-dict.txt')
 
 
 def finish_up():
