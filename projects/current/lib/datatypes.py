@@ -39,18 +39,25 @@ class EntryEC:
 
 
 class Gene:
-    def __init__(self, gene_id=None, plant=None, compound=None, ec_num=None, k_ortho=None):
+    def __init__(self, gene_id=None, plant=None, compound=None, ec_num=None, k_ortho=None, path=None):
         self.gene_id = gene_id if gene_id is not None else ' '
         self.plant = plant if plant is not None else ' '
         self.compound = compound if compound is not None else ' '
         self.ec_num = ec_num if ec_num is not None else ' '
         self.k_ortho = k_ortho if k_ortho is not None else ' '
+        self.path = path if path is not None else ' '
 
     def simple(self):
         return self.plant + ' ' + self.gene_id + ' ' + self.compound + ' ' + self.ec_num + ' ' + self.k_ortho
 
     def no_plant(self):
         return self.gene_id + ' ' + self.compound + ' ' + self.ec_num + ' ' + self.k_ortho
+
+
+class PathGene:
+    def __init__(self, path=None, genes=None):
+        self.path = path if path is not None else ' '
+        self.genes = genes if genes is not None else []
 
 
 class Plant:
