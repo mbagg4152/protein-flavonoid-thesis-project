@@ -27,7 +27,7 @@ class Species:
 
 class NumEC:
     def __init__(self, ec_num=None, ec_entries=None):
-        self.name = ec_num if ec_num is not None else ' '
+        self.ec_name = ec_num if ec_num is not None else ' '
         self.ec_entries = ec_entries if ec_entries is not None else []
 
 
@@ -36,6 +36,9 @@ class EntryEC:
         self.gene = gene if gene is not None else ' '
         self.dna = dna if dna is not None else ' '
         self.plant = plant if dna is not None else ' '
+
+    def simple(self):
+        return '>' + self.gene + ' ' + self.plant + '\n' + self.dna
 
 
 class Gene:

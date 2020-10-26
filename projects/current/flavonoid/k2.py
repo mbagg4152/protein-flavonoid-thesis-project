@@ -30,8 +30,10 @@ all_genes = []
 all_plants = []
 all_ec_nums = []
 genes_by_path = []
+fasta_ec = []
 lock_append_gene = threading.Lock()
 lock_plant_rw = threading.Lock()
+lock_ec = threading.Lock()
 
 
 def main():
@@ -83,6 +85,17 @@ def main_pathway_parser():
         basic_write(tmp_file, 'w', out)
     basic_write(master_gene, 'w', total_out)
 
+    master_fasta = main_dir + SEP + 'MasterFASTA.csv'
+    fasta_out = ''
+    for fec in fasta_ec:
+        tmp_name = path_fasta + SEP + fec.ec_name.replace('.', '-') + CSV
+        out = ''
+        for entry in fec.ec_entries:
+            out += entry.simple() + '\n'
+            fasta_out += entry.simple() + '\n'
+        basic_write(tmp_name, 'w', out)
+    basic_write(master_fasta, 'w', fasta_out)
+
 
 def chunk_run(chunks):
     for chunk in chunks:
@@ -118,8 +131,37 @@ def get_gene_data(path):
                             tmp_plant = plant
                             tmp_plant.genes.append(tmp_gene)
                             all_plants[index] = plant
-
+                build_fasta(plant_code, key, ecn)
             except IndexError: pass
+
+
+def build_fasta(plant_code, gene_name, ec_num):
+    # time.sleep(.5)
+    global fasta_ec
+    # combined = plant_code + ':' + gene_name.replace('(RAP-DB) ', '')
+    # raw = kegg.get(combined)
+    # if raw is None: return
+    # parsed = kegg.parse(raw)
+    # if parsed is None: return
+    # ntseq_data = parsed.get(N_KEY)
+    # if ntseq_data is None: return
+    # ntseq_data = ntseq_data.replace(' ', '')
+    ntseq_data = 'filler string'
+    tmp_entry = EntryEC(gene=gene_name, plant=plant_dict.get(plant_code), dna=ntseq_data)
+    with lock_ec:
+        count = 0
+        for i in range(0, len(fasta_ec)):
+            if fasta_ec[i].ec_name == ec_num:
+                tmp = fasta_ec[i]
+                tmp.ec_entries.append(tmp_entry)
+                count += 1
+        if count == 0:
+            tmp_ec = NumEC(ec_num=ec_num, ec_entries=[tmp_entry])
+            fasta_ec.append(tmp_ec)
+    # if any(x.ec_name == ec_num for x in fasta_ec):
+    #     pass
+    # else:
+    #     pass
 
 
 if __name__ == '__main__':
