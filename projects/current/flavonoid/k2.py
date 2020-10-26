@@ -9,7 +9,7 @@ import logging.config
 import multiprocessing
 
 sys.path.append(os.getcwd().replace(os.sep + 'flavonoid', ''))
-
+import bioservices
 from bioservices.kegg import KEGG
 from lib.jsondata import *
 from lib.datatypes import *
@@ -18,7 +18,8 @@ from lib.compoundinfo import *
 
 init_time = datetime.datetime.now()
 kegg = KEGG()
-thread_lim = multiprocessing.cpu_count()
+# thread_lim = multiprocessing.cpu_count()
+thread_lim = 4
 path_fasta = ' '
 path_gene = ' '
 path_chem = ' '
@@ -36,6 +37,10 @@ lock_plant_rw = threading.Lock()
 def main():
     init_setup()
     main_pathway_parser()
+
+    end_time = datetime.datetime.now()
+    total_time = end_time - init_time
+    print('\ntotal time taken: ' + str(total_time))
 
 
 def init_setup():
@@ -67,7 +72,6 @@ def main_pathway_parser():
         t.start()
         threads.append(t)
     for t in threads: t.join()
-
     total_out = ''
     master_gene = main_dir + SEP + 'MasterList.csv'
     for gp in genes_by_path:
@@ -86,29 +90,28 @@ def chunk_run(chunks):
 
 
 def get_gene_data(path):
+    time.sleep(.5)
     global all_genes, all_plants, genes_by_path
     print(path)
     raw = kegg.get(path)
-    gene_entry = kegg.parse(raw)
-    entry_dict = gene_entry.get('GENE')
+    try: gene_entry = kegg.parse(raw)
+    except bioservices.BioServicesError:
+        print('err parsing entry ', path)
+        return
+    entry_dict = gene_entry.get(G_KEY)
     if entry_dict is not None:
-        plant_code = ''.join(re.split('[^a-zA-Z]+', path))
+        plant_code = ''.join(re.split(RE_ALPH, path))
         plant_name = plant_dict.get(plant_code)
-        # print(plant_code)
         with lock_append_gene: genes_by_path.append(PathGene(path=path))
         for key in entry_dict:
-            ecn = re.findall(RE_EC, entry_dict[key])
-            ko = re.findall(RE_KO, entry_dict[key])
-            name = re.sub(RE_EC, '', entry_dict[key])
-            name = re.sub(RE_KO, '', name)
-
             try:
-                tmp_gene = Gene(gene_id=key, plant=plant_name, ec_num=ecn[0], k_ortho=ko[0], compound=name, path=path)
+                ecn = mult_replace(quick_fetch(RE_EC, entry_dict[key]), [('[', ''), (']', '')])
+                ko = mult_replace(quick_fetch(RE_KO, entry_dict[key]), [('[', ''), (']', '')])
+                name = re.sub(RE_KO, '', (re.sub(RE_EC, '', entry_dict[key])))
+                tmp_gene = Gene(gene_id=key, plant=plant_name, ec_num=ecn, k_ortho=ko, compound=name, path=path)
                 with lock_append_gene:
                     for gp in genes_by_path:
                         if gp.path == path: gp.genes.append(tmp_gene)
-                # all_genes.append(tmp_gene)
-                # print(tmp_gene.simple())
                 with lock_plant_rw:
                     for index, plant in enumerate(all_plants):
                         if plant.name == tmp_gene.plant:

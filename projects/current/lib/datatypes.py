@@ -48,10 +48,10 @@ class Gene:
         self.path = path if path is not None else ' '
 
     def simple(self):
-        return self.plant + ' ' + self.gene_id + ' ' + self.compound + ' ' + self.ec_num + ' ' + self.k_ortho
+        return self.plant + ', ' + self.gene_id + ', ' + self.compound + ', ' + self.ec_num + ', ' + self.k_ortho
 
     def no_plant(self):
-        return self.gene_id + ' ' + self.compound + ' ' + self.ec_num + ' ' + self.k_ortho
+        return self.gene_id + ', ' + self.compound + ', ' + self.ec_num + ', ' + self.k_ortho
 
 
 class PathGene:
@@ -71,7 +71,7 @@ class Plant:
     def simple(self):
         gstr = ''
         for gene in self.genes: gstr += gene.no_plant() + ' || '
-        return self.name + ' ' + self.code + ' ' + gstr + ' ' + str(self.ec_nums) + ' ' + str(self.flavonoids)
+        return self.name + ', ' + self.code + ', ' + gstr + ', ' + str(self.ec_nums) + ', ' + str(self.flavonoids)
 
 
 cd_api = ChemData(label=AGI, species=[], file_name=FN_AGI)

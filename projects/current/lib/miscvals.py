@@ -12,8 +12,10 @@ O_KEY = 'ORTHOLOGY'
 E_KEY = 'EC'
 N_KEY = 'NTSEQ'
 P_KEY = 'PLANT'
+G_KEY = 'GENE'
 RE_KO = r'(\[KO:K[^\]]*\])'
 RE_EC = r'(\[EC:.*\])'
+RE_ALPH = r'[^a-zA-Z]+'
 
 to_remove = ['<tr>',
              '</tr>',

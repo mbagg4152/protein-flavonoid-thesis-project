@@ -1,5 +1,6 @@
 import json
 import os
+import re
 from lib.miscvals import *
 from lib.pathstrings import SEP
 import numpy
@@ -37,9 +38,23 @@ def unique_element_list(list_name, index):
     return element_list
 
 
-def list_partition(items, number):
-    # looping till length l
-    for i in range(0, len(items), number): yield items[i:i + number]
+# def list_partition(items, number):
+#     # looping till length l
+#     # for i in range(0, len(items), number): yield items[i:i + number]
+#     for i in range(0, number):
+#         yield items[i::number]
+#     print(len(items))
+#     return items
+def list_partition(seq, num):
+    avg = len(seq) / float(num)
+    out = []
+    last = 0.0
+
+    while last < len(seq):
+        out.append(seq[int(last):int(last + avg)])
+        last += avg
+
+    return out
 
 
 def write_readme(main_dir, readme, init_time, fasta_path, gene_path):
@@ -105,3 +120,15 @@ def init_dirs(main_dir, gene, fasta, chem):
     except OSError or FileExistsError: pass
     try: os.mkdir(chem)
     except OSError or FileExistsError: pass
+
+
+def quick_fetch(exp, line):
+    out = ''
+    try: out = re.findall(exp, line)[0]
+    except IndexError: out = ''
+    return out
+
+
+def mult_replace(line, pairs):
+    for pair in pairs: line = line.replace(pair[0], pair[1])
+    return line
