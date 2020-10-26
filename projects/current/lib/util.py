@@ -3,6 +3,8 @@ import os
 from lib.miscvals import *
 from lib.pathstrings import SEP
 import numpy
+
+
 def get_json_data(file_name, key):
     data = ''
     try:
@@ -13,6 +15,8 @@ def get_json_data(file_name, key):
         with open(file_name) as jsonFile:
             data = json.load(jsonFile)
     return data[key]
+
+
 # removes duplicate elements
 def remove_dupes(dupe_list):
     unique_list = []  # creates an empty list
@@ -20,6 +24,7 @@ def remove_dupes(dupe_list):
         # adds item to empty list if it's not already in the list
         if item not in unique_list: unique_list.append(item)
     return unique_list
+
 
 # find unique EC numbers so have a generic function and run it
 # be careful as there are cases of one less item - use "last" to fix that problem here
@@ -31,9 +36,11 @@ def unique_element_list(list_name, index):
         if i[int(index)] not in element_list: element_list.append(i[int(index)])
     return element_list
 
+
 def list_partition(items, number):
     # looping till length l
     for i in range(0, len(items), number): yield items[i:i + number]
+
 
 def write_readme(main_dir, readme, init_time, fasta_path, gene_path):
     # Creates ReadMe file
@@ -53,6 +60,7 @@ def write_readme(main_dir, readme, init_time, fasta_path, gene_path):
             ' and FASTA files organized by EC number, these are located in ' + fasta_path)
         readme_doc.close()
 
+
 def save_file(lists_to_write, output_dir, current):
     os.chdir(current)
     form_counter = 0
@@ -71,6 +79,7 @@ def save_file(lists_to_write, output_dir, current):
     writedoc.write(NL)
     writedoc.close()
 
+
 def basic_write(path, mode, content):
     try:
         file = open(path, 'x')
@@ -80,6 +89,19 @@ def basic_write(path, mode, content):
     file.write(content)
     file.close()
 
+
 def is_http_error(msg):
     if str(msg).strip() in http_errs: return False
     else: return True
+
+
+def init_dirs(main_dir, gene, fasta, chem):
+    # replaced WindowsError with OSError for more general usage. try to make data directories and handle any errors
+    try: os.mkdir(main_dir)
+    except OSError: pass
+    try: os.mkdir(gene)
+    except OSError or FileExistsError: pass
+    try: os.mkdir(fasta)
+    except OSError or FileExistsError: pass
+    try: os.mkdir(chem)
+    except OSError or FileExistsError: pass

@@ -39,16 +39,32 @@ class EntryEC:
 
 
 class Gene:
-    def __init__(self, plant=None, compound=None, ec_num=None, k_ortho=None):
+    def __init__(self, gene_id=None, plant=None, compound=None, ec_num=None, k_ortho=None):
+        self.gene_id = gene_id if gene_id is not None else ' '
         self.plant = plant if plant is not None else ' '
         self.compound = compound if compound is not None else ' '
         self.ec_num = ec_num if ec_num is not None else ' '
         self.k_ortho = k_ortho if k_ortho is not None else ' '
 
+    def simple(self):
+        return self.plant + ' ' + self.gene_id + ' ' + self.compound + ' ' + self.ec_num + ' ' + self.k_ortho
+
+    def no_plant(self):
+        return self.gene_id + ' ' + self.compound + ' ' + self.ec_num + ' ' + self.k_ortho
+
 
 class Plant:
-    def __init__(self):
-        pass
+    def __init__(self, name=None, code=None, genes=None, ec_nums=None, flavonoids=None):
+        self.name = name if name is not None else ' '
+        self.code = code if code is not None else ' '
+        self.genes = genes if genes is not None else []
+        self.ec_nums = ec_nums if ec_nums is not None else []
+        self.flavonoids = flavonoids if flavonoids is not None else []
+
+    def simple(self):
+        gstr = ''
+        for gene in self.genes: gstr += gene.no_plant() + ' || '
+        return self.name + ' ' + self.code + ' ' + gstr + ' ' + str(self.ec_nums) + ' ' + str(self.flavonoids)
 
 
 cd_api = ChemData(label=AGI, species=[], file_name=FN_AGI)

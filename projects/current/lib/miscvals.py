@@ -7,11 +7,13 @@ KS_URL = "'http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism
 NIX = ""
 NL = '\n'
 SP = ' '
-RE_SQ_BRACKETS = "(\[.*\])"
+RE_SQ_BRACKETS = r"(\[.*\])"
 O_KEY = 'ORTHOLOGY'
 E_KEY = 'EC'
 N_KEY = 'NTSEQ'
 P_KEY = 'PLANT'
+RE_KO = r'(\[KO:K[^\]]*\])'
+RE_EC = r'(\[EC:.*\])'
 
 to_remove = ['<tr>',
              '</tr>',
