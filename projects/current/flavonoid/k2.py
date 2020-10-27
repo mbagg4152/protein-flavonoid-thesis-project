@@ -40,6 +40,8 @@ def main():
     init_setup()
     main_pathway_parser()
 
+    prediction()
+
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
     print('\ntotal time taken: ' + str(total_time))
@@ -96,6 +98,11 @@ def main_pathway_parser():
         basic_write(tmp_name, 'w', out)
     basic_write(master_fasta, 'w', fasta_out)
 
+    for plant in all_plants:
+        out = plant.name + ': '
+        for num in plant.ec_nums: out += num + ' '
+        # print(out)
+
 
 def chunk_run(chunks):
     for chunk in chunks:
@@ -130,6 +137,7 @@ def get_gene_data(path):
                         if plant.name == tmp_gene.plant:
                             tmp_plant = plant
                             tmp_plant.genes.append(tmp_gene)
+                            tmp_plant.ec_nums.append(ecn)
                             all_plants[index] = plant
                 build_fasta(plant_code, key, ecn)
             except IndexError: pass
@@ -162,6 +170,20 @@ def build_fasta(plant_code, gene_name, ec_num):
     #     pass
     # else:
     #     pass
+
+
+def prediction():
+    global all_plants
+    for plant in all_plants:
+        for chem_data in data_lists:
+            if flav_check(chem_data.label, plant.ec_nums):
+                chem_data.species.append(plant.name)
+
+    for key in data_lists:
+        save_file(key.species, key.file_name, path_chem)
+        item_count = len(key.species)
+        print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
+              'Data saved in ' + path_chem + SEP + key.file_name + '.')
 
 
 if __name__ == '__main__':
