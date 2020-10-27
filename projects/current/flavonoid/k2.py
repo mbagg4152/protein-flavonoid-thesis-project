@@ -87,11 +87,15 @@ def main_pathway_parser():
         basic_write(tmp_file, 'w', out)
     basic_write(master_gene, 'w', total_out)
 
-    for gp in genes_by_path:
-        # build_fasta(plant_code=)
+    chunk_genes = list_partition(all_genes, thread_lim)
+    g_threads = []
+    for chunk in chunk_genes:
+        t = threading.Thread(target=build_fasta, args=(chunk,))
+        t.start()
+        g_threads.append(t)
 
-        for gene in gp.genes:
-            build_fasta(gene.plant_code, gene.gene_id, gene.ec_num)
+    for t in g_threads: t.join()
+
     master_fasta = main_dir + SEP + 'MasterFASTA.csv'
     fasta_out = ''
     for fec in fasta_ec:
@@ -107,7 +111,6 @@ def main_pathway_parser():
         out = plant.name + ': '
         for num in plant.ec_nums: out += num + ' '
         # print(out)
-
 
 
 def chunk_run(chunks):
@@ -144,41 +147,42 @@ def get_gene_data(path):
                         if plant.name == tmp_gene.plant:
                             tmp_plant = plant
                             tmp_plant.genes.append(tmp_gene)
+                            all_genes.append(tmp_gene)
                             tmp_plant.ec_nums.append(ecn)
                             all_plants[index] = plant
                 # build_fasta(plant_code, key, ecn)
             except IndexError: pass
 
 
-def build_fasta(plant_code, gene_name, ec_num):
-    # time.sleep(.5)
-    global fasta_ec
-    # combined = plant_code + ':' + gene_name.replace('(RAP-DB) ', '')
-    combined = plant_code.strip() + ':' + gene_name.strip()
-    print(combined)
-    raw = kegg.get(combined)
-    if raw is None: return
-    parsed = kegg.parse(raw)
-    if parsed is None: return
-    ntseq_data = parsed.get(N_KEY)
-    if ntseq_data is None: return
-    ntseq_data = ntseq_data.replace(' ', '')
-    # ntseq_data = 'filler string'
-    tmp_entry = EntryEC(gene=gene_name, plant=plant_dict.get(plant_code), dna=ntseq_data)
-    with lock_ec:
-        count = 0
-        for i in range(0, len(fasta_ec)):
-            if fasta_ec[i].ec_name == ec_num:
-                tmp = fasta_ec[i]
-                tmp.ec_entries.append(tmp_entry)
-                count += 1
-        if count == 0:
-            tmp_ec = NumEC(ec_num=ec_num, ec_entries=[tmp_entry])
-            fasta_ec.append(tmp_ec)
-    # if any(x.ec_name == ec_num for x in fasta_ec):
-    #     pass
-    # else:
-    #     pass
+def build_fasta(genes):
+    for gene in genes:
+        # time.sleep(.5)
+        global fasta_ec
+        # combined = plant_code + ':' + gene_name.replace('(RAP-DB) ', '')
+        combined = gene.plant_code.strip() + ':' + gene.gene_id.strip()
+        print(combined)
+        raw = kegg.get(combined)
+        if raw is None: continue
+        parsed = kegg.parse(raw)
+        ntseq_data = parsed.get(N_KEY)
+        if ntseq_data is None: continue
+        ntseq_data = ntseq_data.replace(' ', '')
+        # ntseq_data = 'filler string'
+        tmp_entry = EntryEC(gene=gene.gene_id, plant=plant_dict.get(gene.plant_code), dna=ntseq_data)
+        with lock_ec:
+            count = 0
+            for i in range(0, len(fasta_ec)):
+                if fasta_ec[i].ec_name == gene.ec_num:
+                    tmp = fasta_ec[i]
+                    tmp.ec_entries.append(tmp_entry)
+                    count += 1
+            if count == 0:
+                tmp_ec = NumEC(ec_num=gene.ec_num, ec_entries=[tmp_entry])
+                fasta_ec.append(tmp_ec)
+        # if any(x.ec_name == ec_num for x in fasta_ec):
+        #     pass
+        # else:
+        #     pass
 
 
 def prediction():
