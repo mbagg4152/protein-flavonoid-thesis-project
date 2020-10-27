@@ -42,9 +42,10 @@ class EntryEC:
 
 
 class Gene:
-    def __init__(self, gene_id=None, plant=None, compound=None, ec_num=None, k_ortho=None, path=None):
+    def __init__(self, gene_id=None, plant=None, compound=None, ec_num=None, k_ortho=None, path=None, plant_code=None):
         self.gene_id = gene_id if gene_id is not None else ' '
         self.plant = plant if plant is not None else ' '
+        self.plant_code = plant_code if plant_code is not None else ' '
         self.compound = compound if compound is not None else ' '
         self.ec_num = ec_num if ec_num is not None else ' '
         self.k_ortho = k_ortho if k_ortho is not None else ' '

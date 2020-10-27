@@ -87,6 +87,11 @@ def main_pathway_parser():
         basic_write(tmp_file, 'w', out)
     basic_write(master_gene, 'w', total_out)
 
+    for gp in genes_by_path:
+        # build_fasta(plant_code=)
+
+        for gene in gp.genes:
+            build_fasta(gene.plant_code, gene.gene_id, gene.ec_num)
     master_fasta = main_dir + SEP + 'MasterFASTA.csv'
     fasta_out = ''
     for fec in fasta_ec:
@@ -102,6 +107,7 @@ def main_pathway_parser():
         out = plant.name + ': '
         for num in plant.ec_nums: out += num + ' '
         # print(out)
+
 
 
 def chunk_run(chunks):
@@ -128,7 +134,8 @@ def get_gene_data(path):
                 ecn = mult_replace(quick_fetch(RE_EC, entry_dict[key]), [('[', ''), (']', '')])
                 ko = mult_replace(quick_fetch(RE_KO, entry_dict[key]), [('[', ''), (']', '')])
                 name = re.sub(RE_KO, '', (re.sub(RE_EC, '', entry_dict[key])))
-                tmp_gene = Gene(gene_id=key, plant=plant_name, ec_num=ecn, k_ortho=ko, compound=name, path=path)
+                tmp_gene = Gene(gene_id=key, plant=plant_name, ec_num=ecn, k_ortho=ko, compound=name, path=path,
+                                plant_code=plant_code)
                 with lock_append_gene:
                     for gp in genes_by_path:
                         if gp.path == path: gp.genes.append(tmp_gene)
@@ -139,7 +146,7 @@ def get_gene_data(path):
                             tmp_plant.genes.append(tmp_gene)
                             tmp_plant.ec_nums.append(ecn)
                             all_plants[index] = plant
-                build_fasta(plant_code, key, ecn)
+                # build_fasta(plant_code, key, ecn)
             except IndexError: pass
 
 
@@ -147,14 +154,16 @@ def build_fasta(plant_code, gene_name, ec_num):
     # time.sleep(.5)
     global fasta_ec
     # combined = plant_code + ':' + gene_name.replace('(RAP-DB) ', '')
-    # raw = kegg.get(combined)
-    # if raw is None: return
-    # parsed = kegg.parse(raw)
-    # if parsed is None: return
-    # ntseq_data = parsed.get(N_KEY)
-    # if ntseq_data is None: return
-    # ntseq_data = ntseq_data.replace(' ', '')
-    ntseq_data = 'filler string'
+    combined = plant_code.strip() + ':' + gene_name.strip()
+    print(combined)
+    raw = kegg.get(combined)
+    if raw is None: return
+    parsed = kegg.parse(raw)
+    if parsed is None: return
+    ntseq_data = parsed.get(N_KEY)
+    if ntseq_data is None: return
+    ntseq_data = ntseq_data.replace(' ', '')
+    # ntseq_data = 'filler string'
     tmp_entry = EntryEC(gene=gene_name, plant=plant_dict.get(plant_code), dna=ntseq_data)
     with lock_ec:
         count = 0
@@ -180,7 +189,7 @@ def prediction():
                 chem_data.species.append(plant.name)
 
     for key in data_lists:
-        save_file(key.species, key.file_name, path_chem)
+        save_file([key.species], key.file_name, path_chem)
         item_count = len(key.species)
         print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
               'Data saved in ' + path_chem + SEP + key.file_name + '.')
