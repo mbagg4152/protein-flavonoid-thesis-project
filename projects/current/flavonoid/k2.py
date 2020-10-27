@@ -7,6 +7,7 @@ import time
 import warnings
 import logging.config
 import multiprocessing
+import urllib.request, urllib.error, urllib.parse
 
 sys.path.append(os.getcwd().replace(os.sep + 'flavonoid', ''))
 import bioservices
@@ -18,8 +19,8 @@ from lib.compoundinfo import *
 
 init_time = datetime.datetime.now()
 kegg = KEGG()
-# thread_lim = multiprocessing.cpu_count()
-thread_lim = 4
+thread_lim = multiprocessing.cpu_count()
+# thread_lim = 6
 path_fasta = ' '
 path_gene = ' '
 path_chem = ' '
@@ -31,6 +32,7 @@ all_plants = []
 all_ec_nums = []
 genes_by_path = []
 fasta_ec = []
+all_gene_str = []
 lock_append_gene = threading.Lock()
 lock_plant_rw = threading.Lock()
 lock_ec = threading.Lock()
@@ -64,7 +66,7 @@ def init_setup():
     plant_paths = [i + j for i in plant_list for j in path_list]
     for key in plant_dict:
         tmp_plant = Plant(code=key, name=plant_dict[key])
-        all_plants.append(tmp_plant)
+        if tmp_plant not in all_plants: all_plants.append(tmp_plant)
 
 
 def main_pathway_parser():
@@ -87,8 +89,13 @@ def main_pathway_parser():
         basic_write(tmp_file, 'w', out)
     basic_write(master_gene, 'w', total_out)
 
+    for gene in all_genes:
+        tmp = gene.plant_code + ':' + gene.gene_id
+        if tmp not in all_gene_str: all_gene_str.append(tmp)
+    #
     chunk_genes = list_partition(all_genes, thread_lim)
     g_threads = []
+    print('getting data for ' + str(len(all_genes)) + ' genes')
     for chunk in chunk_genes:
         t = threading.Thread(target=build_fasta, args=(chunk,))
         t.start()
@@ -119,8 +126,8 @@ def chunk_run(chunks):
 
 
 def get_gene_data(path):
-    time.sleep(.5)
-    global all_genes, all_plants, genes_by_path
+    # time.sleep(.5)
+    global all_plants, genes_by_path
     print(path)
     raw = kegg.get(path)
     try: gene_entry = kegg.parse(raw)
@@ -147,42 +154,53 @@ def get_gene_data(path):
                         if plant.name == tmp_gene.plant:
                             tmp_plant = plant
                             tmp_plant.genes.append(tmp_gene)
-                            all_genes.append(tmp_gene)
+                            if not check(tmp_gene.gene_id, tmp_gene.plant_code): all_genes.append(tmp_gene)
                             tmp_plant.ec_nums.append(ecn)
                             all_plants[index] = plant
-                # build_fasta(plant_code, key, ecn)
             except IndexError: pass
 
 
+def check(gene, code):
+    for g in all_genes:
+        if gene == g.gene_id and code == g.plant_code: return True
+    return False
+
+
 def build_fasta(genes):
+    global fasta_ec
     for gene in genes:
-        # time.sleep(.5)
-        global fasta_ec
-        # combined = plant_code + ':' + gene_name.replace('(RAP-DB) ', '')
-        combined = gene.plant_code.strip() + ':' + gene.gene_id.strip()
-        print(combined)
-        raw = kegg.get(combined)
-        if raw is None: continue
-        parsed = kegg.parse(raw)
-        ntseq_data = parsed.get(N_KEY)
-        if ntseq_data is None: continue
-        ntseq_data = ntseq_data.replace(' ', '')
-        # ntseq_data = 'filler string'
-        tmp_entry = EntryEC(gene=gene.gene_id, plant=plant_dict.get(gene.plant_code), dna=ntseq_data)
+        combined = gene.plant_code.strip() + ':' + gene.gene_id.replace('(RAP-DB) ', '').strip()
+        f_name = path_fasta + SEP + gene.plant_code.strip() + '_' + gene.gene_id.strip() + '.txt'
+        db_url = DBGET_URL + combined
+        try: urllib.request.urlretrieve(db_url, f_name)
+        except urllib.error.HTTPError or urllib.error.URLError as e:
+            print('got err ' + e)
+            continue
+        url_data = ''
+        try:
+            file = open(f_name, 'r')
+            url_data = file.read()
+            file.close()
+        except FileNotFoundError:
+            print('no file for ' + combined)
+            continue
+        seq = ''.join(re.findall(RE_NT_HEAD, url_data)).replace('&gt;', '>')
+        dna = ''.join(re.findall(RE_NT_SEQ, url_data))
+        ntseq = seq + '\n' + dna
+        tmp_entry = EntryEC(gene=gene.gene_id, plant=plant_dict.get(gene.plant_code), dna=ntseq)
         with lock_ec:
             count = 0
             for i in range(0, len(fasta_ec)):
                 if fasta_ec[i].ec_name == gene.ec_num:
                     tmp = fasta_ec[i]
-                    tmp.ec_entries.append(tmp_entry)
+                    if tmp_entry not in tmp.ec_entries: tmp.ec_entries.append(tmp_entry)
                     count += 1
             if count == 0:
                 tmp_ec = NumEC(ec_num=gene.ec_num, ec_entries=[tmp_entry])
-                fasta_ec.append(tmp_ec)
-        # if any(x.ec_name == ec_num for x in fasta_ec):
-        #     pass
-        # else:
-        #     pass
+                if tmp_ec not in fasta_ec: fasta_ec.append(tmp_ec)
+
+        try: os.remove(f_name)
+        except FileNotFoundError: pass
 
 
 def prediction():

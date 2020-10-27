@@ -2,8 +2,9 @@ from bioservices.kegg import KEGG
 from bioservices import PDB
 import os.path
 import urllib.request, urllib.error, urllib.parse
+import re
 
-
+RE_SEQ = r'(&gt;.*</pre></div>)'
 sep = os.sep
 cwd = os.getcwd().replace('lib', '').replace('//', '/').replace('\\\\', '\\')
 tst_dir = cwd + 'misc_output' + sep
@@ -12,6 +13,7 @@ pdata = PDB()
 
 try: os.mkdir(tst_dir)
 except FileExistsError: pass
+
 
 def main():
     ans = True
@@ -26,8 +28,9 @@ def main():
             '\n6. Get 6DHL in XML' +
             '\n7. Get 6DHL in CIF' +
             '\n8. Get current PDB IDs' +
+            '\n9. Get seq from https://www.kegg.jp/dbget-bin/www_bget?-f+-n+n+crb:17877590'
             '\n0. Exit'
-        )
+            )
         ans = int(input('\nSelection: '))
         print('')
         if ans == 1:
@@ -62,6 +65,30 @@ def main():
         elif ans == 8:
             res = pdata.get_current_ids()
             write_out('current-ids.txt', str(res))
+        elif ans == 9:
+            try: urllib.request.urlretrieve('https://www.kegg.jp/dbget-bin/www_bget?-f+-n+n+crb:17877590',
+                                            tst_dir + 'seq.txt')
+            except urllib.error.HTTPError or urllib.error.URLError as e:
+                print('err getting seq')
+                return
+
+            try:
+                file = open(tst_dir + 'seq.txt', 'r')
+                info = file.read().replace('\\n', '').replace('\n', ' ')
+                seq = re.findall(RE_SEQ, info)
+
+                try:
+                    out = seq[0].replace('&gt;', '>').replace('</pre></div>', '')
+                    dna = re.findall(r'([atcg]{8,})', out)
+                    dnaf = ''.join(dna)
+                    print(out)
+                    print(dnaf)
+                except IndexError: print('mustve not found what was needed')
+
+
+            except FileNotFoundError: print('couldnt find file')
+
+
 def write_out(name, contents):
     try:
         wf = open(tst_dir + name, 'x')

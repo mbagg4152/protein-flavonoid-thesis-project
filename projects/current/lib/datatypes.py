@@ -38,7 +38,7 @@ class EntryEC:
         self.plant = plant if dna is not None else ' '
 
     def simple(self):
-        return '>' + self.gene + ' ' + self.plant + '\n' + self.dna
+        return self.dna
 
 
 class Gene:

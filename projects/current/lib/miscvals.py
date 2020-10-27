@@ -16,6 +16,9 @@ G_KEY = 'GENE'
 RE_KO = r'(\[KO:K[^\]]*\])'
 RE_EC = r'(\[EC:.*\])'
 RE_ALPH = r'[^a-zA-Z]+'
+RE_NT_HEAD = r'(&gt;.*)'
+RE_NT_SEQ = r'([acgt]{10,})'
+DBGET_URL = 'https://www.kegg.jp/dbget-bin/www_bget?-f+-n+n+'
 
 to_remove = ['<tr>',
              '</tr>',
