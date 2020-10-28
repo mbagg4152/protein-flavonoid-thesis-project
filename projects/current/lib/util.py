@@ -38,13 +38,6 @@ def unique_element_list(list_name, index):
     return element_list
 
 
-# def list_partition(items, number):
-#     # looping till length l
-#     # for i in range(0, len(items), number): yield items[i:i + number]
-#     for i in range(0, number):
-#         yield items[i::number]
-#     print(len(items))
-#     return items
 def list_partition(seq, num):
     avg = len(seq) / float(num)
     out = []

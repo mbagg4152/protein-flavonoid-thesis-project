@@ -3,42 +3,60 @@ from lib.miscvals import *
 
 
 class ChemData:
-    def __init__(self, label: str, species: [str], file_name: str):
-        self.species = species
+    def __init__(self, label: str, plants: [str], file_name: str):
+        self.plants = plants
         self.label = label
         self.file_name = file_name
 
+    def __eq__(self, other):
+        return self.plants == other.plants and \
+               self.label == other.label and \
+               self.file_name == other.file_name
 
-class Species:
-    def __init__(self, name: str, count: int, flavonoids: [str]):
-        self.name = name
-        self.flavonoids = flavonoids
-        self.count = count
-
-    def species_string(self):
-        flav_str = ''
-        for i, f in enumerate(self.flavonoids):
-            flav_str += f
-            if i != len(self.flavonoids) - 1:
-                flav_str += ', '
-        line = '' + str(self.count) + ', ' + self.name + ', ' + flav_str
-        return line
+    def is_in(self, items):
+        for item in items:
+            if self == item: return True
+        return False
 
 
-class NumEC:
+class EcFastaCollection:
     def __init__(self, ec_num=None, ec_entries=None):
         self.ec_name = ec_num if ec_num is not None else ' '
         self.ec_entries = ec_entries if ec_entries is not None else []
 
+    def __eq__(self, other):
+        return self.ec_name == other.ec_name and \
+               self.ec_entries == other.ec_entries
 
-class EntryEC:
+    def is_in(self, items):
+        for item in items:
+            if self == item: return True
+        return False
+
+
+class EcCounts:
+    def __init__(self, number=None, count=None):
+        self.number = number if number is not None else ' '
+        self.count = count if number is not None else 0
+
+
+class FastaEcEntry:
     def __init__(self, gene=None, dna=None, plant=None):
-        self.gene = gene if gene is not None else ' '
-        self.dna = dna if dna is not None else ' '
+        self.gene_id = gene if gene is not None else ' '
+        self.dna_seq = dna if dna is not None else ' '
         self.plant = plant if dna is not None else ' '
 
-    def simple(self):
-        return self.dna
+    def __eq__(self, other):
+        return self.gene_id == other.gene_id and \
+               self.dna_seq == other.dna_seq and \
+               self.plant == other.plant
+
+    def is_in(self, items):
+        for item in items:
+            if self == item: return True
+        return False
+
+    def simple(self): return self.dna_seq
 
 
 class Gene:
@@ -50,6 +68,16 @@ class Gene:
         self.ec_num = ec_num if ec_num is not None else ' '
         self.k_ortho = k_ortho if k_ortho is not None else ' '
         self.path = path if path is not None else ' '
+
+    def __eq__(self, other):
+        return self.gene_id == other.gene_id and \
+               self.plant_code == other.plant_code and \
+               self.ec_num == other.ec_num
+
+    def is_in(self, items):
+        for item in items:
+            if self == item: return True
+        return False
 
     def simple(self):
         return self.plant + ', ' + self.gene_id + ', ' + self.compound + ', ' + self.ec_num + ', ' + self.k_ortho
@@ -63,35 +91,68 @@ class PathGene:
         self.path = path if path is not None else ' '
         self.genes = genes if genes is not None else []
 
+    def __eq__(self, other):
+        return self.path == other.path and \
+               self.genes == other.genes
+
+    def is_in(self, items):
+        for item in items:
+            if self == item: return True
+        return False
+
 
 class Plant:
-    def __init__(self, name=None, code=None, genes=None, ec_nums=None, flavonoids=None):
+    def __init__(self, name=None, code=None, genes=None, ec_nums=None, flavonoids=None, ec_counts=None):
         self.name = name if name is not None else ' '
         self.code = code if code is not None else ' '
         self.genes = genes if genes is not None else []
         self.ec_nums = ec_nums if ec_nums is not None else []
         self.flavonoids = flavonoids if flavonoids is not None else []
+        self.ec_counts = ec_counts if ec_counts is not None else []
+
+    def __eq__(self, other):
+        return self.name == other.name and \
+               self.code == other.code and \
+               self.genes == other.genes and \
+               self.ec_nums == other.ec_nums and \
+               self.flavonoids == other.flavonoids
+
+    def is_in(self, items):
+        for item in items:
+            if self == item: return True
+        return False
 
     def simple(self):
         gstr = ''
         for gene in self.genes: gstr += gene.no_plant() + ' || '
         return self.name + ', ' + self.code + ', ' + gstr + ', ' + str(self.ec_nums) + ', ' + str(self.flavonoids)
 
+    def has_ec_count(self, ec_number):
+        for ec in self.ec_counts:
+            if ec.number == ec_number: return True
+        return False
 
-cd_api = ChemData(label=AGI, species=[], file_name=FN_AGI)
-cd_bun = ChemData(label=BUN, species=[], file_name=FN_BUN)
-cd_ec = ChemData(label=EC, species=[], file_name=FN_EC)
-cd_egt = ChemData(label=EGT, species=[], file_name=FN_EGT)
-cd_erd = ChemData(label=ERD, species=[], file_name=FN_ERD)
-cd_gc = ChemData(label=GC, species=[], file_name=FN_GC)
-cd_gen = ChemData(label=GEN, species=[], file_name=FN_GEN)
-cd_hwb = ChemData(label=HWB, species=[], file_name=FN_HWB)
-cd_kmp = ChemData(label=KMP, species=[], file_name=FN_KMP)
-cd_kxn = ChemData(label=KXN, species=[], file_name=FN_KXN)
-cd_lu2 = ChemData(label=LU2, species=[], file_name=FN_LU2)
-cd_myc = ChemData(label=MYC, species=[], file_name=FN_MYC)
-cd_nar = ChemData(label=NAR, species=[], file_name=FN_NAR)
-cd_que = ChemData(label=QUE, species=[], file_name=FN_QUER)
-cd_hcc = ChemData(label=HCC, species=[], file_name=FN_HCC)
-data_lists = [cd_api, cd_bun, cd_kxn, cd_hwb, cd_ec, cd_egt, cd_erd, cd_gc, cd_gen, cd_kmp, cd_lu2, cd_myc, cd_nar,
-              cd_que, cd_hcc]
+    def incr_ec_count(self, ec_number):
+        for ec in self.ec_counts:
+            if ec.number == ec_number:
+                ec.count += 1
+
+
+cd_api = ChemData(label=AGI, plants=[], file_name=FN_AGI)  # apigenin
+cd_bun = ChemData(label=BUN, plants=[], file_name=FN_BUN)  # butein
+cd_ec = ChemData(label=EC, plants=[], file_name=FN_EC)  # epicatechin
+cd_egt = ChemData(label=EGT, plants=[], file_name=FN_EGT)  # epigallocatechin
+cd_erd = ChemData(label=ERD, plants=[], file_name=FN_ERD)  # eriodictyol
+cd_gc = ChemData(label=GC, plants=[], file_name=FN_GC)  # gallocatechin
+cd_gen = ChemData(label=GEN, plants=[], file_name=FN_GEN)  # genistein
+cd_hwb = ChemData(label=HWB, plants=[], file_name=FN_HWB)  # cyanidin
+cd_kmp = ChemData(label=KMP, plants=[], file_name=FN_KMP)  # kaempferol
+cd_kxn = ChemData(label=KXN, plants=[], file_name=FN_KXN)  # catechin
+cd_lu2 = ChemData(label=LU2, plants=[], file_name=FN_LU2)  # luteolin
+cd_myc = ChemData(label=MYC, plants=[], file_name=FN_MYC)  # myricetin
+cd_nar = ChemData(label=NAR, plants=[], file_name=FN_NAR)  # naringenin
+cd_que = ChemData(label=QUE, plants=[], file_name=FN_QUER)  # quercetin
+cd_hcc = ChemData(label=HCC, plants=[], file_name=FN_HCC)  # isoliquiritigenin
+data_lists = [cd_api, cd_bun, cd_kxn, cd_hwb, cd_ec, cd_egt,
+              cd_erd, cd_gc, cd_gen, cd_kmp, cd_lu2, cd_myc,
+              cd_nar, cd_que, cd_hcc]

@@ -308,6 +308,13 @@ def fasta_helper(gene_list):
             os.system('echo ' + str(dna_dict) + ' >> dna-dict.txt')
 
 
+
+
+
+
+
+
+
 def finish_up():
     master_ec_list = [['species', 'EC#s']]
     counter = 0
@@ -330,17 +337,17 @@ def finish_up():
     print('- looping through master ec list...')
     for entry in master_ec_list:
         if len(entry) > 0:
-            tmp_entry = Species(entry[0], 0, [])
+            # tmp_entry = Species(entry[0], 0, [])
             for chem_data in data_lists:
                 if flav_check(chem_data.label, entry):
-                    chem_data.species.append([entry[0]])
-                    tmp_entry.flavonoids.append(chem_data.label)
-                    tmp_entry.count += 1
-            plant_flavs.append(tmp_entry)
+                    chem_data.plants.append([entry[0]])
+                    # tmp_entry.flavonoids.append(chem_data.label)
+                    # tmp_entry.count += 1
+            # plant_flavs.append(tmp_entry)
 
     for key in data_lists:
-        save_file(key.species, key.file_name, chem_path)
-        item_count = len(key.species)
+        save_file(key.plants, key.file_name, chem_path)
+        item_count = len(key.plants)
         print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
               'Data saved in ' + chem_path + SEP + key.file_name + '.')
 
