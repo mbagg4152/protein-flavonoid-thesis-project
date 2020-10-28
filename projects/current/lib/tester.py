@@ -6,8 +6,8 @@ import re
 
 RE_SEQ = r'(&gt;.*</pre></div>)'
 sep = os.sep
-cwd = os.getcwd().replace('lib', '').replace('//', '/').replace('\\\\', '\\')
-tst_dir = cwd + 'misc_output' + sep
+path_cwd = os.getcwd().replace('lib', '').replace('//', '/').replace('\\\\', '\\')
+tst_dir = path_cwd + 'misc_output' + sep
 kdb = KEGG()
 pdata = PDB()
 

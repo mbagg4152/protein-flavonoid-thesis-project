@@ -19,10 +19,10 @@ init_time = datetime.datetime.now()
 kegg = KEGG()
 
 chem_path = ''
-cwd = ''
+path_cwd = ''
 fasta_path = ''
 gene_path = ''
-main_dir = ''
+path_main = ''
 
 count_matrix = [[]]
 dna_dict = {}
@@ -55,12 +55,12 @@ def main():
     master_pathway_parser()
     make_matrix_and_counts()
     make_fasta()
-    write_readme(main_dir, FN_README, init_time, fasta_path, gene_path)
+    write_readme(path_main, FN_README, init_time, fasta_path, gene_path)
     finish_up()
 
 
 def start():
-    global chem_path, fasta_path, gene_path, main_dir, cwd
+    global chem_path, fasta_path, gene_path, path_main, path_cwd
     decision = ''
     if len(sys.argv) > 1: decision = sys.argv[1]
     else:
@@ -186,8 +186,8 @@ def make_matrix_and_counts():
 
     # Make Master Files
     print('- making master files: no dupes & count matrix')
-    save_file(master_uniq, 'Master_List.csv', main_dir)
-    save_file(count_matrix, 'Master_Count.csv', main_dir)
+    save_file(master_uniq, 'Master_List.csv', path_main)
+    save_file(count_matrix, 'Master_Count.csv', path_main)
 
     # make a master fasta file
     print('- about to make master FASTA')
