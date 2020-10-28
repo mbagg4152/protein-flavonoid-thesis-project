@@ -19,7 +19,7 @@ from lib.compoundinfo import *
 
 init_time = datetime.datetime.now()
 kegg = KEGG()
-thread_lim = multiprocessing.cpu_count()
+thread_lim = 5
 # thread_lim = 6
 path_fasta = ' '
 path_gene = ' '
@@ -36,6 +36,7 @@ all_gene_str = []
 lock_append_gene = threading.Lock()
 lock_plant_rw = threading.Lock()
 lock_ec = threading.Lock()
+lock_get = threading.Lock()
 
 
 def main():
@@ -92,12 +93,12 @@ def main_pathway_parser():
     for gene in all_genes:
         tmp = gene.plant_code + ':' + gene.gene_id
         if tmp not in all_gene_str: all_gene_str.append(tmp)
-    #
+
     chunk_genes = list_partition(all_genes, thread_lim)
     g_threads = []
     print('getting data for ' + str(len(all_genes)) + ' genes')
     for chunk in chunk_genes:
-        t = threading.Thread(target=build_fasta, args=(chunk,))
+        t = threading.Thread(target=build_fasta_v2, args=(chunk,))
         t.start()
         g_threads.append(t)
 
@@ -129,12 +130,13 @@ def get_gene_data(path):
     # time.sleep(.5)
     global all_plants, genes_by_path
     print(path)
-    raw = kegg.get(path)
-    try: gene_entry = kegg.parse(raw)
-    except bioservices.BioServicesError:
-        print('err parsing entry ', path)
-        return
-    entry_dict = gene_entry.get(G_KEY)
+    with lock_get:
+        raw = kegg.get(path)
+        try: gene_entry = kegg.parse(raw)
+        except bioservices.BioServicesError:
+            print('err parsing entry ', path)
+            return
+        entry_dict = gene_entry.get(G_KEY)
     if entry_dict is not None:
         plant_code = ''.join(re.split(RE_ALPH, path))
         plant_name = plant_dict.get(plant_code)
@@ -184,6 +186,49 @@ def build_fasta(genes):
         except FileNotFoundError:
             print('no file for ' + combined)
             continue
+        seq = ''.join(re.findall(RE_NT_HEAD, url_data)).replace('&gt;', '>')
+        dna = ''.join(re.findall(RE_NT_SEQ, url_data))
+        ntseq = seq + '\n' + dna
+        tmp_entry = EntryEC(gene=gene.gene_id, plant=plant_dict.get(gene.plant_code), dna=ntseq)
+        with lock_ec:
+            count = 0
+            for i in range(0, len(fasta_ec)):
+                if fasta_ec[i].ec_name == gene.ec_num:
+                    tmp = fasta_ec[i]
+                    if tmp_entry not in tmp.ec_entries: tmp.ec_entries.append(tmp_entry)
+                    count += 1
+            if count == 0:
+                tmp_ec = NumEC(ec_num=gene.ec_num, ec_entries=[tmp_entry])
+                if tmp_ec not in fasta_ec: fasta_ec.append(tmp_ec)
+
+        try: os.remove(f_name)
+        except FileNotFoundError: pass
+
+
+def build_fasta_v2(genes):
+    global fasta_ec
+    for gene in genes:
+        combined = gene.plant_code.strip() + ':' + gene.gene_id.replace('(RAP-DB) ', '').strip()
+        f_name = path_fasta + SEP + gene.plant_code.strip() + '_' + gene.gene_id.strip() + '.txt'
+        db_url = DBGET_URL + combined
+        try:
+            with urllib.request.urlopen(db_url) as u:
+                url_data = u.read().decode('utf-8')
+        except urllib.error.HTTPError or urllib.error.URLError as e:
+            print('got err ' + e)
+            continue
+        # try: urllib.request.urlretrieve(db_url, f_name)
+        # except urllib.error.HTTPError or urllib.error.URLError as e:
+        #     print('got err ' + e)
+        #     continue
+        # url_data = ''
+        # try:
+        #     file = open(f_name, 'r')
+        #     url_data = file.read()
+        #     file.close()
+        # except FileNotFoundError:
+        #     print('no file for ' + combined)
+        #     continue
         seq = ''.join(re.findall(RE_NT_HEAD, url_data)).replace('&gt;', '>')
         dna = ''.join(re.findall(RE_NT_SEQ, url_data))
         ntseq = seq + '\n' + dna

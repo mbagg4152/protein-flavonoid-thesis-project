@@ -30,7 +30,7 @@ def main():
             '\n8. Get current PDB IDs' +
             '\n9. Get seq from https://www.kegg.jp/dbget-bin/www_bget?-f+-n+n+crb:17877590'
             '\n0. Exit'
-            )
+        )
         ans = int(input('\nSelection: '))
         print('')
         if ans == 1:
@@ -81,12 +81,15 @@ def main():
                     out = seq[0].replace('&gt;', '>').replace('</pre></div>', '')
                     dna = re.findall(r'([atcg]{8,})', out)
                     dnaf = ''.join(dna)
-                    print(out)
-                    print(dnaf)
+                    # print(out)
+                    # print(dnaf)
                 except IndexError: print('mustve not found what was needed')
 
 
             except FileNotFoundError: print('couldnt find file')
+            with urllib.request.urlopen('https://www.kegg.jp/dbget-bin/www_bget?-f+-n+n+crb:17877590') as f:
+                html = f.read().decode('utf-8')
+            print(html)
 
 
 def write_out(name, contents):
