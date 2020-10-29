@@ -156,16 +156,15 @@ def run_fill_matrix():
     counter and display it at the end next to the appropriate EC number.
     """
     global list_all_plants
-
     for plant in list_all_plants: fill_count_matrix(plant)  # update the matrix using each plant
 
     out = ''
     for plant in list_all_plant_matrix:
-        out += plant.name + ': '
+        out += plant.name + ': '  # create beginning of line for current plant
         for count in plant.ec_counts:
-            out += '[' + count.number + ' count: ' + str(count.count) + '] '
+            out += '[' + count.number + ' count: ' + str(count.count) + '] '  # add the EC numbers and counts
         out += '\n'
-    basic_write(path_main + SEP + 'MasterCount.csv', 'w', out)
+    basic_write(path_main + SEP + 'MasterCount.csv', 'w', out)  # write string to the output file
 
 def path_parse(paths):
     for path in paths:
@@ -173,32 +172,43 @@ def path_parse(paths):
         print(path)
         with lock_kegg_get:
             raw = kegg.get(path)
-            gene_entry = kegg.parse(raw)
+            gene_entry = kegg.parse(raw)  # parse kegg entry into dictionary for easier access
             entry_dict = gene_entry.get(G_KEY)  # get the data for the dictionary key GENE
         if entry_dict is not None:
             plant_code = ''.join(re.split(RE_ALPH, path))  # get only the letters from the path
             plant_name = plant_dict.get(plant_code)  # get the plant name by accessing the plant dictionary
-            with lock_add_gene: list_genes_by_path.append(PathGene(path=path))
+            with lock_add_gene: list_genes_by_path.append(PathGene(path=path))  # add new path to the list
             for key in entry_dict:
                 try:
-                    ecn = mult_replace(quick_fetch(RE_EC, entry_dict[key]), [('[', ''), (']', '')])
-                    if ecn not in ec_nums_of_interest: pass
-                    ko = mult_replace(quick_fetch(RE_KO, entry_dict[key]), [('[', ''), (']', '')])
+                    # find EC number in the entry using regular expressions then remove square brackets
+                    ec_num = mult_replace(quick_fetch(RE_EC, entry_dict[key]), [('[', ''), (']', '')])
+
+                    # pass if this EC number is not relevant to the predictions
+                    if ec_num not in ec_nums_of_interest: continue
+
+                    # get the orthology ID using regular expressions then remove square brackets
+                    orthology = mult_replace(quick_fetch(RE_KO, entry_dict[key]), [('[', ''), (']', '')])
+
+                    # remove the EC & KO using regular expressions in order to get the compound name
                     name = re.sub(RE_KO, '', (re.sub(RE_EC, '', entry_dict[key])))
-                    tmp_gene = Gene(gene_id=key, plant=plant_name, ec_num=ecn, k_ortho=ko, compound=name, path=path,
-                                    plant_code=plant_code)
+
+                    # create new gene object using the information from kegg
+                    tmp_gene = Gene(gene_id=key, plant=plant_name, ec_num=ec_num, k_ortho=orthology,
+                                    compound=name, path=path, plant_code=plant_code)
                     with lock_add_gene:
-                        for gp in list_genes_by_path:
-                            if gp.path == path: gp.genes.append(tmp_gene)
+                        for gene_path in list_genes_by_path:
+                            if gene_path.path == path: gene_path.genes.append(tmp_gene)  # add to list of genes for path
                     with lock_access_plant:
                         for index, plant in enumerate(list_all_plants):
                             if plant.name == tmp_gene.plant:
                                 tmp_plant = plant
+                                # add to list of plants genes if not already present
                                 if not tmp_gene.is_in(tmp_plant.genes): tmp_plant.genes.append(tmp_gene)
+                                # add to list of all genes if not already present
                                 if not tmp_gene.is_in(list_all_genes): list_all_genes.append(tmp_gene)
-                                tmp_plant.ec_nums.append(ecn)
-                                list_all_plants[index] = plant
-                except IndexError: pass
+                                tmp_plant.ec_nums.append(ec_num)  # add to the plants list of ec numbers (dupes okay)
+                                list_all_plants[index] = plant  # update the list of plants with modified plant object
+                except IndexError: pass  # couldn't find items using regular expression findall
 
 def build_fasta(genes):
     global list_fasta_ec
