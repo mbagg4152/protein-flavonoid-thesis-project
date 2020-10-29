@@ -53,10 +53,14 @@ The new code being developed (located in ```projects/current/protein```) is bein
 # Important Files and Functions in ```pfpy/projects/current/```
 __Note:__ Not all files or functions are covered below.  
 
-## File ```flavonoid/kegg-prog.py```
-This is the main program of the code project.  
+## File ```flavonoid/keggv1.py```
+The original main file of the program for the flavonoid prediction portion of the project.  
+ 
+## File ```flavonoid/keggv2.py```
+The current main file of the program for the flavonoid prediction portion of the project.  
   
-#### Function ```gene_pathway_data```
+
+#### Function ```path_parse```
 This function is called and passed a pathway for a specific organism (e.g. adu00941). For each pathway that is passed 
 in, the code uses the kegg plugin in order to get the gene data for the specific pathway, which is done using the 
 following lines:  

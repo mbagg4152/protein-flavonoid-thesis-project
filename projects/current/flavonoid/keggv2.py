@@ -100,52 +100,64 @@ def run_path_parse():
     that contains all of the gene information.
     """
     global list_plant_paths, list_all_plants, thread_lim, path_gene
-    plant_chunks = list_partition(list_plant_paths, thread_lim)
-    threads = []
-    for chunk in plant_chunks:
-        t = threading.Thread(target=path_parse, args=(chunk,))
-        t.start()
-        threads.append(t)
-    for t in threads: t.join()
+    sub_lists = list_partition(list_plant_paths, thread_lim)  # split the list into parts
+    threads = []  # will hold the created threads
+
+    for sub_list in sub_lists:
+        thread = threading.Thread(target=path_parse, args=(sub_list,))  # create thread & pass the sublist to path_parse
+        thread.start()  # start running the thread
+        threads.append(thread)  # add new thread to list of threads
+    for thread in threads: thread.join()  # wait for all of the threads to finish running
+
     total_out = ''
     master_gene = path_main + SEP + 'MasterList.csv'
-    for gp in list_genes_by_path:
-        tmp_file = path_gene + SEP + gp.path + CSV
-        out = ''
-        for gene in gp.genes:
-            out += gene.simple() + '\n'
-            total_out += gene.simple() + '\n'
-        basic_write(tmp_file, 'w', out)
-    basic_write(master_gene, 'w', total_out)
+    for gene_path in list_genes_by_path:
+        tmp_file = path_gene + SEP + gene_path.path + CSV
+        out = ''  # will hold output from this gene
+        for gene in gene_path.genes:
+            out += gene.simple() + '\n'  # use the simple function to get a formatted string for this pathway
+            total_out += gene.simple() + '\n'  # get formatted string for the master file
+        basic_write(tmp_file, 'w', out)  # write the file for the pathway
+    basic_write(master_gene, 'w', total_out)  # write the master file
 
 
 def run_build_fasta():
-    chunk_genes = list_partition(list_all_genes, thread_lim)
-    g_threads = []
-    print('getting data for ' + str(len(list_all_genes)) + ' genes')
-    for chunk in chunk_genes:
-        t = threading.Thread(target=build_fasta, args=(chunk,))
-        t.start()
-        g_threads.append(t)
+    """
+    This function uses multithreading and the information gathered from running run_path_parse in order to get the
+    FASTA/DNA sequence for each of the gene entries that were found. As before, the program parses the list after
+    all threads are done and then created a FASTA file for each EC number and created the Master FASTA file.
+    """
 
-    for t in g_threads: t.join()
+    sub_lists = list_partition(list_all_genes, thread_lim)
+    threads = []
+    print('getting data for ' + str(len(list_all_genes)) + ' genes')
+    for sub_list in sub_lists:
+        t = threading.Thread(target=build_fasta, args=(sub_list,))  # create the thread
+        t.start()  # start thread execution
+        threads.append(t)  # append it to the list of threads
+
+    for t in threads: t.join()  # wait for all of the threads to be done before moving on
 
     master_fasta = path_main + SEP + 'MasterFASTA.csv'
     fasta_out = ''
-    for fec in list_fasta_ec:
-        tmp_name = path_fasta + SEP + fec.ec_name.replace('.', '-') + CSV
+    for fasta_ec in list_fasta_ec:
+        tmp_name = path_fasta + SEP + fasta_ec.ec_name.replace('.', '-').replace(':', '') + CSV
         out = ''
-        for entry in fec.ec_entries:
-            out += entry.simple() + '\n'
-            fasta_out += entry.simple() + '\n'
-        basic_write(tmp_name, 'w', out)
-    basic_write(master_fasta, 'w', fasta_out)
+        for entry in fasta_ec.ec_entries:
+            out += entry.simple() + '\n'  # add to string to be printed into specific EC file
+            fasta_out += entry.simple() + '\n'  # add to string to be printed into master FASTA
+        basic_write(tmp_name, 'w', out)  # write the file for current EC number
+    basic_write(master_fasta, 'w', fasta_out)  # write the master FASTA file
 
 def run_fill_matrix():
+    """
+    This function creates and outputs a 'matrix' relating to each species and EC number by running the fill_matrix
+    function on multiple threads. For each gene entry containing a specific EC number, the program will increase the
+    counter and display it at the end next to the appropriate EC number.
+    """
     global list_all_plants
 
-    for plant in list_all_plants:
-        fill_count_matrix(plant)
+    for plant in list_all_plants: fill_count_matrix(plant)  # update the matrix using each plant
 
     out = ''
     for plant in list_all_plant_matrix:
@@ -156,20 +168,16 @@ def run_fill_matrix():
     basic_write(path_main + SEP + 'MasterCount.csv', 'w', out)
 
 def path_parse(paths):
-    # time.sleep(.5)
     for path in paths:
         global list_all_plants, list_genes_by_path
         print(path)
         with lock_kegg_get:
             raw = kegg.get(path)
-            try: gene_entry = kegg.parse(raw)
-            except bioservices.BioServicesError:
-                print('err parsing entry ', path)
-                return
-            entry_dict = gene_entry.get(G_KEY)
+            gene_entry = kegg.parse(raw)
+            entry_dict = gene_entry.get(G_KEY)  # get the data for the dictionary key GENE
         if entry_dict is not None:
-            plant_code = ''.join(re.split(RE_ALPH, path))
-            plant_name = plant_dict.get(plant_code)
+            plant_code = ''.join(re.split(RE_ALPH, path))  # get only the letters from the path
+            plant_name = plant_dict.get(plant_code)  # get the plant name by accessing the plant dictionary
             with lock_add_gene: list_genes_by_path.append(PathGene(path=path))
             for key in entry_dict:
                 try:
