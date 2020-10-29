@@ -167,11 +167,16 @@ def run_fill_matrix():
     basic_write(path_main + SEP + 'MasterCount.csv', 'w', out)  # write string to the output file
 
 def path_parse(paths):
+    """
+    Given a pathway for a specific plant, the program then passes it to KEGG where it retrieves the appropriate entry.
+    The EC number, KO number and each GENE entry are parsed from the data sent back by KEGG and then are appropriately
+    saved by updating the plant objects.
+    """
     for path in paths:
         global list_all_plants, list_genes_by_path
         print(path)
         with lock_kegg_get:
-            raw = kegg.get(path)
+            raw = kegg.get(path)  # get KEGG entry for pathway
             gene_entry = kegg.parse(raw)  # parse kegg entry into dictionary for easier access
             entry_dict = gene_entry.get(G_KEY)  # get the data for the dictionary key GENE
         if entry_dict is not None:
@@ -211,17 +216,27 @@ def path_parse(paths):
                 except IndexError: pass  # couldn't find items using regular expression findall
 
 def build_fasta(genes):
+    """
+    This function uses the plant code and gene id in order to find the matching FASTA sequence using the appropriate
+    dbget url. The pages are saved into memory as HTML and are parsed in order to extract the important information from
+    the web page. After parsing, the FASTA sequences are added to EcFastaCollection objects in order to maintain
+    proper association when writing all of the sequences out to files.
+    """
     global list_fasta_ec
     for gene in genes:
-        combined = gene.plant_code.strip() + ':' + gene.gene_id.replace('(RAP-DB) ', '').strip()  # code:geneid
-        db_url = DBGET_URL + combined
+        # using the plant code and gene id create a string formatted as code:gene
+        combined = gene.plant_code.strip() + ':' + gene.gene_id.replace('(RAP-DB) ', '').strip()
+        db_url = URL_DBGET + combined  # append code-gene string to the end of the dbget incomplete URL
         try:
-            with urllib.request.urlopen(db_url) as u: url_data = u.read().decode('utf-8')
-        except urllib.error.HTTPError or urllib.error.URLError as e:
-            print('got err ' + e)
+            # read the html from the dbget url
+            with urllib.request.urlopen(db_url) as db_site: url_data = db_site.read().decode('utf-8')
+        except urllib.error.HTTPError or urllib.error.URLError as e:  # error getting html data
+            print('Something went wrong with error ' + e)
             continue
-        fasta_header = ''.join(re.findall(RE_NT_HEAD, url_data)).replace('&gt;', '>')  # change name
-        fasta_body = ''.join(re.findall(RE_NT_SEQ, url_data))
+
+        # get the header of the FASTA entry using regular expressions, &gt; is the HTML representation of >
+        fasta_header = ''.join(re.findall(RE_NT_HEAD, url_data)).replace('&gt;', '>')
+        fasta_body = ''.join(re.findall(RE_NT_SEQ, url_data))  # get the DNA sequence body using regular expressions
         full_fasta_entry = fasta_header + '\n' + fasta_body
         tmp_entry = FastaEcEntry(gene=gene.gene_id, plant=plant_dict.get(gene.plant_code), dna=full_fasta_entry)
         with lock_access_ec:

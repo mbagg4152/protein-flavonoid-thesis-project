@@ -16,7 +16,7 @@ def main():
     # parsing file of plant codes and names
     for key in plant_dict_reg:
         tmp_val = plant_dict_reg[key]  # plant name
-        tmp_url = KS_URL + tmp_val + "'"  # fill out URL for the plant
+        tmp_url = URL_KNAP + tmp_val + "'"  # fill out URL for the plant
         tmp_file_name = new_dir + SEP + key + ".txt"  # temporary filename for the downloaded page
         wget_download(tmp_file_name, tmp_url)  # download the page for the plant
         parse_file(tmp_file_name, tmp_val)  # parse the downloaded file
@@ -63,7 +63,7 @@ def parse_file(file_name, plant_name):
         tmp_line = line
         for flav in flav_list:
             if line.find(flav) != -1:
-                for text in to_remove: tmp_line = tmp_line.replace(text, '&$#@!')  # replace text with unique delimiter
+                for text in TO_REMOVE: tmp_line = tmp_line.replace(text, '&$#@!')  # replace text with unique delimiter
                 tmp_list = tmp_line.split('&$#@!')  # split at delimiter
                 tmp_list = list(filter(None, tmp_list))  # remove any empty elements in the list
                 tmp_list[:] = [item for item in tmp_list if item != '']  # remove any empty elements in the list

@@ -99,7 +99,7 @@ def basic_write(path, mode, content):
 
 
 def is_http_error(msg):
-    if str(msg).strip() in http_errs: return False
+    if str(msg).strip() in HTTP_ERRS: return False
     else: return True
 
 
