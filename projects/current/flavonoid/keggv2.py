@@ -237,26 +237,32 @@ def build_fasta(genes):
         # get the header of the FASTA entry using regular expressions, &gt; is the HTML representation of >
         fasta_header = ''.join(re.findall(RE_NT_HEAD, url_data)).replace('&gt;', '>')
         fasta_body = ''.join(re.findall(RE_NT_SEQ, url_data))  # get the DNA sequence body using regular expressions
-        full_fasta_entry = fasta_header + '\n' + fasta_body
+        full_fasta_entry = fasta_header + '\n' + fasta_body  # create FASTA entry string
+        # create new entry object
         tmp_entry = FastaEcEntry(gene=gene.gene_id, plant=plant_dict.get(gene.plant_code), dna=full_fasta_entry)
         with lock_access_ec:
             count = 0
             for i in range(0, len(list_fasta_ec)):
                 if list_fasta_ec[i].ec_name == gene.ec_num:
                     tmp = list_fasta_ec[i]
-                    if not tmp_entry.is_in(tmp.ec_entries): tmp.ec_entries.append(tmp_entry)
+                    if not tmp_entry.is_in(tmp.ec_entries): tmp.ec_entries.append(tmp_entry)  # add entry to list
                     count += 1
-            if count == 0:
+            if count == 0:  # no existing item to append to,create new object and append to list
                 tmp_ec = EcFastaCollection(ec_num=gene.ec_num, ec_entries=[tmp_entry])
                 if not tmp_ec.is_in(list_fasta_ec): list_fasta_ec.append(tmp_ec)
 
 def prediction():
+    """
+    This is the function that goes through each plant, looks at the list of EC numbers then applies a function in order
+    to determine whether or not the plant has the required EC numbers needed to synthesize each compound.
+    """
     global list_all_plants
     for plant in list_all_plants:
         for chem_data in data_lists:
-            if flav_check(chem_data.label, plant.ec_nums):
-                chem_data.plants.append(plant.name)
+            if flav_check(chem_data.label, plant.ec_nums):  # passes check, has all of the flavonoids
+                chem_data.plants.append(plant.name)  # add plant to flavonoids list
 
+    # create the prediction output files for each flavonoid
     for key in data_lists:
         save_file([key.plants], key.file_name, path_chem)
         item_count = len(key.plants)
@@ -264,17 +270,18 @@ def prediction():
               'Data saved in ' + path_chem + SEP + key.file_name + '.')
 
 def fill_count_matrix(plant):
+    """
+    This function builds the ec counts for each list.
+    """
     global list_all_plants
     tmp_plant = plant
-    # with lock_access_plant: replace_at = list_all_plants.index(plant)
     for num in tmp_plant.ec_nums:
-        replace_num = tmp_plant.ec_nums.index(num)
-        if tmp_plant.has_ec_count(num):
-            tmp_plant.incr_ec_count(num)
+        if tmp_plant.has_ec_count(num): tmp_plant.incr_ec_count(num)  # increment count if number is already present
         else:
+            # create new count object for current EC number
             tmp_count = EcCounts(number=num, count=1)
             plant.ec_counts.append(tmp_count)
-    with lock_access_plant: list_all_plant_matrix.append(tmp_plant)
+    with lock_access_plant: list_all_plant_matrix.append(tmp_plant)  # update count matrix
 
 if __name__ == '__main__':
     main()
