@@ -65,7 +65,7 @@ class Gene:
         self.plant = plant if plant is not None else ' '
         self.plant_code = plant_code if plant_code is not None else ' '
         self.compound = compound if compound is not None else ' '
-        self.ec_num = ec_num if ec_num is not None else ' '
+        self.ec_num = ec_num if ec_num is not None else []
         self.k_ortho = k_ortho if k_ortho is not None else ' '
         self.path = path if path is not None else ' '
 
@@ -80,7 +80,7 @@ class Gene:
         return False
 
     def simple(self):
-        return self.plant + ', ' + self.gene_id + ', ' + self.compound + ', ' + self.ec_num + ', ' + self.k_ortho
+        return self.plant + ', ' + self.gene_id + ', ' + self.compound + ', ' + str(self.ec_num) + ', ' + self.k_ortho
 
     def no_plant(self):
         return self.gene_id + ', ' + self.compound + ', ' + self.ec_num + ', ' + self.k_ortho

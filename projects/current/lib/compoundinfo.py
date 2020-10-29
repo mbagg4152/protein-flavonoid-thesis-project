@@ -31,7 +31,7 @@ V1G = 'EC:2.4.1.136'  # vanillate 1-glucosyltransferase
 ec_nums_of_interest = [E01, E02, E03, E04, E05, E06, E07, E08, E09, E10,
                        E11, E12, E13, E14, E15, E16, E17, E17_2, E18, E19,
                        E20, E21, E22, GGT, DEC, SOA, V1G]
-
+ec_interest_string = ' '.join(ec_nums_of_interest)
 
 def flav_check(label, ec_list):
     # determine which function to call based on the label passed in using the label function pairs

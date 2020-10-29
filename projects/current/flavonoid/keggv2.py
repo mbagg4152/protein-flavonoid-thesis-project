@@ -138,6 +138,8 @@ def run_build_fasta():
 
     master_fasta = path_main + SEP + 'MasterFASTA.csv'
     fasta_out = ''
+
+    print('doing fasta')
     for fasta_ec in list_fasta_ec:
         tmp_name = path_fasta + SEP + fasta_ec.ec_name.replace('.', '-').replace(':', '') + CSV
         out = ''
@@ -160,7 +162,7 @@ def run_fill_matrix():
     for plant in list_all_plant_matrix:
         out += plant.name + ': '  # create beginning of line for current plant
         for count in plant.ec_counts:
-            out += '[' + count.number + ' count: ' + str(count.count) + '] '  # add the EC numbers and counts
+            out += '[' + str(count.number) + ' count: ' + str(count.count) + '] '  # add the EC numbers and counts
         out += '\n'
     basic_write(path_main + SEP + 'MasterCount.csv', 'w', out)  # write string to the output file
 
@@ -184,10 +186,15 @@ def path_parse(paths):
             for key in entry_dict:
                 try:
                     # find EC number in the entry using regular expressions then remove square brackets
-                    ec_num = mult_replace(quick_fetch(RE_EC, entry_dict[key]), [('[', ''), (']', '')])
+                    ec_num = re.findall(RE_EC, entry_dict[key])
 
+                    in_count = 0
+                    for i in range(0, len(ec_num)):
+                        item = ec_num[i].replace('[', '').replace(']', '').replace(':', '').replace(' ', '')
+                        ec_num[i] = 'EC:' + item
+                        if item in ec_interest_string: in_count += 1
                     # pass if this EC number is not relevant to the predictions
-                    if ec_num not in ec_nums_of_interest: continue
+                    if in_count < 1: continue
 
                     # get the orthology ID using regular expressions then remove square brackets
                     orthology = mult_replace(quick_fetch(RE_KO, entry_dict[key]), [('[', ''), (']', '')])
@@ -209,7 +216,7 @@ def path_parse(paths):
                                 if not tmp_gene.is_in(tmp_plant.genes): tmp_plant.genes.append(tmp_gene)
                                 # add to list of all genes if not already present
                                 if not tmp_gene.is_in(list_all_genes): list_all_genes.append(tmp_gene)
-                                tmp_plant.ec_nums.append(ec_num)  # add to the plants list of ec numbers (dupes okay)
+                                tmp_plant.ec_nums.extend(ec_num)  # add to the plants list of ec numbers (dupes okay)
                                 list_all_plants[index] = plant  # update the list of plants with modified plant object
                 except IndexError: pass  # couldn't find items using regular expression findall
 
@@ -239,15 +246,9 @@ def build_fasta(genes):
         # create new entry object
         tmp_entry = FastaEcEntry(gene=gene.gene_id, plant=plant_dict.get(gene.plant_code), dna=full_fasta_entry)
         with lock_access_ec:
-            count = 0
-            for i in range(0, len(list_fasta_ec)):
-                if list_fasta_ec[i].ec_name == gene.ec_num:
-                    tmp = list_fasta_ec[i]
-                    if not tmp_entry.is_in(tmp.ec_entries): tmp.ec_entries.append(tmp_entry)  # add entry to list
-                    count += 1
-            if count == 0:  # no existing item to append to,create new object and append to list
-                tmp_ec = EcFastaCollection(ec_num=gene.ec_num, ec_entries=[tmp_entry])
-                if not tmp_ec.is_in(list_fasta_ec): list_fasta_ec.append(tmp_ec)
+            for g in gene.ec_num:
+                tmp_ec = EcFastaCollection(ec_num=g, ec_entries=[tmp_entry])
+                list_fasta_ec.append(tmp_ec)
 
 def prediction():
     """

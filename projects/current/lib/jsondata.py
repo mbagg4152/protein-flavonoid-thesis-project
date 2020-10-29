@@ -10,7 +10,7 @@ test_med = get_json_data(FN_TEST_MED, JKEY)
 
 # species codes for plants of interest
 full_list = get_json_data(FN_PLANT_LIST, JKEY)
-plant_list = full_list
+plant_list = test_single
 
 # Dictionary/list of key-value pairs that defines the appropriate genus species for each code
 plant_dict_reg = get_json_data(FN_PLANT_DICT, JKEY)

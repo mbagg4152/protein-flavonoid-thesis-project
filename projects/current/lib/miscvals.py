@@ -10,8 +10,9 @@ URL_KNAP = "'http://www.knapsackfamily.com/knapsack_core/result.php?sname=organi
 O_KEY, E_KEY, N_KEY, P_KEY, G_KEY = 'ORTHOLOGY', 'EC', 'NTSEQ', 'PLANT', 'GENE'
 
 # regular expressions
-RE_KO, RE_EC, RE_ALPH, RE_NT_HEAD, RE_NT_SEQ, RE_SQ_BRACKETS = r'(\[KO:K[^\]]*\])', r'(\[EC:.*\])', r'[^a-zA-Z]+', \
-                                                               r'(&gt;.*)', r'([acgt]{10,})', r"(\[.*\])"
+RE_KO, RE_EC, RE_ALPH, RE_NT_HEAD, RE_NT_SEQ, RE_SQ_BRACKETS = r'(\[KO:K[^\]]*\])', \
+                                                               r'([ |:][0-9]*\.[0-9|-]*\.[0-9|-]*\.[0-9|-]*)', \
+                                                               r'[^a-zA-Z]+', r'(&gt;.*)', r'([acgt]{10,})', r"(\[.*\])"
 # sections of HTML to remove from knapsack
 TO_REMOVE = ['<tr>', '</tr>', '</font>', "\n", "\\n", ">", '</a>', '</td>',
              "target=\"_blank\">", "target=\"_blank\"", "<td class=\"d1\">",

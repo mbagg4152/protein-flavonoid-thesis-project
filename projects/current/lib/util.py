@@ -92,10 +92,13 @@ def basic_write(path, mode, content):
     try:
         file = open(path, 'x')
         file.close()
-    except FileExistsError: pass
-    file = open(path, mode)
-    file.write(content)
-    file.close()
+        file = open(path, mode)
+        file.write(content)
+        file.close()
+    except FileExistsError:
+        file = open(path, 'a')
+        file.write(content)
+        file.close()
 
 
 def is_http_error(msg):
