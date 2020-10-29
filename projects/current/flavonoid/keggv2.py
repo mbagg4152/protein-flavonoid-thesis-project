@@ -62,7 +62,6 @@ def main():
     total_time = end_time - init_time
     print('\nRun time: ' + str(total_time))
 
-
 def init_setup():
     """
     This is the initial setup function for the program. If the user supplies a directory name in the command line args,
@@ -119,7 +118,6 @@ def run_path_parse():
             total_out += gene.simple() + '\n'  # get formatted string for the master file
         basic_write(tmp_file, 'w', out)  # write the file for the pathway
     basic_write(master_gene, 'w', total_out)  # write the master file
-
 
 def run_build_fasta():
     """
