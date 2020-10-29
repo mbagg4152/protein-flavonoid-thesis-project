@@ -14,12 +14,22 @@ from lib.datatypes import *
 from lib.jsondata import *
 from lib.pathstrings import *
 
+"""
+Global Variables used throughout the program
+- init_time records the time the program starts
+- kegg is the variable used to access the KEGG functions
+- the lists are used when processing and accessing data and are also used in making the files
+- The locks are to be used in the sections of code that use multithreading. Global variables are much easier
+  to use when using multithreading but they also need protection. Specific variables must only be accessed
+  one at a time or else unforeseen issues may show up.
+- The path variables will hold the paths for the output directories based on the command line args (or lack 
+  thereof) and where the program is being run.
+"""
 init_time = datetime.datetime.now()
 kegg = KEGG()
 list_all_genes = []
 list_all_plants = []
 list_fasta_ec = []
-list_gene_strings = []
 list_genes_by_path = []
 list_plant_paths = []
 list_all_plant_matrix = []
@@ -38,6 +48,10 @@ thread_lim = 5  # max number of threads to be used in accessing data
 
 
 def main():
+    """
+    This is the main function of the file which calls specific functions in order when running and displays the total run
+    time at the end of the code execution.
+    """
     init_setup()
     run_path_parse()
     run_build_fasta()
@@ -46,31 +60,46 @@ def main():
 
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
-    print('\ntotal time taken: ' + str(total_time))
+    print('\nRun time: ' + str(total_time))
 
 
 def init_setup():
+    """
+    This is the initial setup function for the program. If the user supplies a directory name in the command line args,
+    then that name will be used when outputting the data. If no name is supplied, then the data is outputted to the
+    directory named data. This function also creates the list of pathway and plant codes based on the KEGG codes that
+    can be found in the JSON files. After making the list, it creates a list of plant objects that will be used
+    throughout the program.
+    """
     global path_cwd, path_main, path_chem, path_fasta, path_gene, list_plant_paths, list_all_plants
     decision = ''
-    if len(sys.argv) > 1: decision = sys.argv[1]
+    if len(sys.argv) > 1:  # if length of args is greater than one that means user supplied arg other than program name
+        decision = sys.argv[1]  # read in the desired output directory as a commandline argument
     else:
-        print("No directory name supplied in args, defaulting to directory 'data'. "
-              "Supply directory name in terminal using 'python3 keggv1.py dir_name'")
+        print("No directory name supplied, defaulting to 'data'. Supply name using 'python3 keggv2.py dir_name'")
         decision = 'data'
-    path_cwd = os.getcwd() + SEP
-    path_main = path_cwd + decision
-    path_chem = path_main + CHEM_DIR
-    path_fasta = path_main + FASTA_DIR
-    path_gene = path_main + GENE_DIR
-    init_dirs(path_main, path_gene, path_fasta, path_chem)
-    list_plant_paths = [i + j for i in plant_list for j in path_list]
-    for key in plant_dict:
-        tmp_plant = Plant(code=key, name=plant_dict[key])
-        if not tmp_plant.is_in(list_all_plants): list_all_plants.append(tmp_plant)
+    path_cwd = os.getcwd() + SEP  # get directory where program is being run
+    path_main = path_cwd + decision  # make the main/data dir path
+    path_chem = path_main + CHEM_DIR  # make the chem data path for prediction output
+    path_fasta = path_main + FASTA_DIR  # make the fasta data path for the fetched fasta data
+    path_gene = path_main + GENE_DIR  # make the gene data path for the fetched gene data
 
+    init_dirs(path_main, path_gene, path_fasta, path_chem)  # (util.py) initialize directories if they don't exist
+
+    list_plant_paths = [i + j for i in plant_list for j in path_list]  # make plant and path combination list
+
+    for key in plant_dict:  # build list of plant objects
+        tmp_plant = Plant(code=key, name=plant_dict[key])  # object made for current plant
+        if not tmp_plant.is_in(list_all_plants): list_all_plants.append(tmp_plant)  # add if not already present in list
 
 def run_path_parse():
-    global list_plant_paths, list_all_plants
+    """
+    This function breaks the list of plant pathways into different lists in order for different data to be processed
+    at the same time using multithreading. Once all of the threads have finished, then the list of genes by path will
+    be looped through in order to create both the gene data output files for each pathway and for the master file
+    that contains all of the gene information.
+    """
+    global list_plant_paths, list_all_plants, thread_lim, path_gene
     plant_chunks = list_partition(list_plant_paths, thread_lim)
     threads = []
     for chunk in plant_chunks:
@@ -88,10 +117,6 @@ def run_path_parse():
             total_out += gene.simple() + '\n'
         basic_write(tmp_file, 'w', out)
     basic_write(master_gene, 'w', total_out)
-
-    for gene in list_all_genes:
-        tmp = gene.plant_code + ':' + gene.gene_id
-        if tmp not in list_gene_strings: list_gene_strings.append(tmp)
 
 
 def run_build_fasta():
@@ -116,7 +141,6 @@ def run_build_fasta():
         basic_write(tmp_name, 'w', out)
     basic_write(master_fasta, 'w', fasta_out)
 
-
 def run_fill_matrix():
     global list_all_plants
 
@@ -130,7 +154,6 @@ def run_fill_matrix():
             out += '[' + count.number + ' count: ' + str(count.count) + '] '
         out += '\n'
     basic_write(path_main + SEP + 'MasterCount.csv', 'w', out)
-
 
 def path_parse(paths):
     # time.sleep(.5)
@@ -169,7 +192,6 @@ def path_parse(paths):
                                 list_all_plants[index] = plant
                 except IndexError: pass
 
-
 def build_fasta(genes):
     global list_fasta_ec
     for gene in genes:
@@ -195,7 +217,6 @@ def build_fasta(genes):
                 tmp_ec = EcFastaCollection(ec_num=gene.ec_num, ec_entries=[tmp_entry])
                 if not tmp_ec.is_in(list_fasta_ec): list_fasta_ec.append(tmp_ec)
 
-
 def prediction():
     global list_all_plants
     for plant in list_all_plants:
@@ -209,7 +230,6 @@ def prediction():
         print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
               'Data saved in ' + path_chem + SEP + key.file_name + '.')
 
-
 def fill_count_matrix(plant):
     global list_all_plants
     tmp_plant = plant
@@ -222,7 +242,6 @@ def fill_count_matrix(plant):
             tmp_count = EcCounts(number=num, count=1)
             plant.ec_counts.append(tmp_count)
     with lock_access_plant: list_all_plant_matrix.append(tmp_plant)
-
 
 if __name__ == '__main__':
     main()
