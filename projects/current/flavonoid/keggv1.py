@@ -222,7 +222,7 @@ def make_fasta():
             fasta_by_class[this_ec].append(tmp_line)
         except KeyError: fasta_by_class[this_ec] = [tmp_line]
 
-    basic_write(fasta_path + SEP + 'Master_FASTA.csv', 'a', master_out)
+    write_append(fasta_path + SEP + 'Master_FASTA.csv', master_out)
 
     print('- creating fasta files by ec number...')
     for key in fasta_by_class:  # make FASTA files by EC number

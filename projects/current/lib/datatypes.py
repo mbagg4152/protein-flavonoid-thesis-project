@@ -122,7 +122,7 @@ class Gene:
     self.plant: the scientific name of the plant that has this gene
     self.plant_code: the KEGG code for the plant
     self.compound: the compound name listed in the entry
-    self.ec_num: the list of EC numbers found in the entry
+    self.ec_nums: the list of EC numbers found in the entry
     self.ortho: the KEGG orthology code for the compound
     self.path: the pathway where the gene was found
     --------------------------------------------------------------------------------------------------------------------
@@ -134,19 +134,19 @@ class Gene:
     no_plant: same as simple, but without including the plant name
     """
 
-    def __init__(self, gene_id=None, plant=None, compound=None, ec_num=None, ortho=None, path=None, plant_code=None):
+    def __init__(self, gene_id=None, plant=None, compound=None, ec_nums=None, ortho=None, path=None, plant_code=None):
         self.gene_id = gene_id if gene_id is not None else ' '
         self.plant = plant if plant is not None else ' '
         self.plant_code = plant_code if plant_code is not None else ' '
         self.compound = compound if compound is not None else ' '
-        self.ec_num = ec_num if ec_num is not None else []
+        self.ec_nums = ec_nums if ec_nums is not None else []
         self.ortho = ortho if ortho is not None else ' '
         self.path = path if path is not None else ' '
 
     def __eq__(self, other):
         return self.gene_id == other.gene_id and \
                self.plant_code == other.plant_code and \
-               self.ec_num == other.ec_num
+               self.ec_nums == other.ec_nums
 
     def is_in(self, items):
         for item in items:
@@ -154,10 +154,10 @@ class Gene:
         return False
 
     def simple(self):
-        return self.plant + ', ' + self.gene_id + ', ' + self.compound + ', ' + str(self.ec_num) + ', ' + self.ortho
+        return self.plant + ', ' + self.gene_id + ', ' + self.compound + ', ' + str(self.ec_nums) + ', ' + self.ortho
 
     def no_plant(self):
-        return self.gene_id + ', ' + self.compound + ', ' + self.ec_num + ', ' + self.ortho
+        return self.gene_id + ', ' + self.compound + ', ' + self.ec_nums + ', ' + self.ortho
 
 
 class PathGene:

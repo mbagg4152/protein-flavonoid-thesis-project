@@ -55,8 +55,8 @@ def main():
     init_setup()
     run_path_parse()
     prediction()
-    run_build_fasta()
     run_fill_matrix()
+    run_build_fasta()
 
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
@@ -108,63 +108,16 @@ def run_path_parse():
         threads.append(thread)  # add new thread to list of threads
     for thread in threads: thread.join()  # wait for all of the threads to finish running
 
-    total_out = ''
+    master_output = ''
     master_gene = path_main + SEP + 'MasterList.csv'
-    for gene_path in list_genes_by_path:
-        tmp_file = path_gene + SEP + gene_path.path + CSV
-        out = ''  # will hold output from this gene
-        for gene in gene_path.genes:
-            out += gene.simple() + '\n'  # use the simple function to get a formatted string for this pathway
-            total_out += gene.simple() + '\n'  # get formatted string for the master file
-        basic_write(tmp_file, 'w', out)  # write the file for the pathway
-    basic_write(master_gene, 'w', total_out)  # write the master file
-
-def run_build_fasta():
-    """
-    This function uses multithreading and the information gathered from running run_path_parse in order to get the
-    FASTA/DNA sequence for each of the gene entries that were found. As before, the program parses the list after
-    all threads are done and then created a FASTA file for each EC number and created the Master FASTA file.
-    """
-
-    sub_lists = list_partition(list_all_genes, thread_lim)
-    threads = []
-    print('getting data for ' + str(len(list_all_genes)) + ' genes')
-    for sub_list in sub_lists:
-        t = threading.Thread(target=build_fasta, args=(sub_list,))  # create the thread
-        t.start()  # start thread execution
-        threads.append(t)  # append it to the list of threads
-
-    for t in threads: t.join()  # wait for all of the threads to be done before moving on
-
-    master_fasta = path_main + SEP + 'MasterFASTA.csv'
-    fasta_out = ''
-
-    print('doing fasta')
-    for fasta_ec in list_fasta_ec:
-        tmp_name = path_fasta + SEP + fasta_ec.ec_name.replace('.', '-').replace(':', '') + CSV
-        out = ''
-        for entry in fasta_ec.ec_entries:
-            out += entry.simple() + '\n'  # add to string to be printed into specific EC file
-            fasta_out += entry.simple() + '\n'  # add to string to be printed into master FASTA
-        basic_write(tmp_name, 'w', out)  # write the file for current EC number
-    basic_write(master_fasta, 'w', fasta_out)  # write the master FASTA file
-
-def run_fill_matrix():
-    """
-    This function creates and outputs a 'matrix' relating to each species and EC number by running the fill_matrix
-    function on multiple threads. For each gene entry containing a specific EC number, the program will increase the
-    counter and display it at the end next to the appropriate EC number.
-    """
-    global list_all_plants
-    for plant in list_all_plants: fill_count_matrix(plant)  # update the matrix using each plant
-
-    out = ''
-    for plant in list_all_plant_matrix:
-        out += plant.name + ': '  # create beginning of line for current plant
-        for count in plant.ec_counts:
-            out += '[' + str(count.number) + ' count: ' + str(count.count) + '] '  # add the EC numbers and counts
-        out += '\n'
-    basic_write(path_main + SEP + 'MasterCount.csv', 'w', out)  # write string to the output file
+    for item in list_genes_by_path:
+        tmp_file_path = path_gene + SEP + item.path + CSV
+        tmp_output = ''  # will hold output from this gene
+        for gene in item.genes:
+            tmp_output += gene.simple() + '\n'  # use the simple function to get a formatted string for this pathway
+            master_output += gene.simple() + '\n'  # get formatted string for the master file
+        write_append(tmp_file_path, tmp_output)  # write the file for the pathway
+    write_append(master_gene, master_output)  # write the master file
 
 def path_parse(paths):
     """
@@ -203,7 +156,7 @@ def path_parse(paths):
                     name = re.sub(RE_KO, '', (re.sub(RE_EC, '', entry_dict[key])))
 
                     # create new gene object using the information from kegg
-                    tmp_gene = Gene(gene_id=key, plant=plant_name, ec_num=ec_num, ortho=orthology,
+                    tmp_gene = Gene(gene_id=key, plant=plant_name, ec_nums=ec_num, ortho=orthology,
                                     compound=name, path=path, plant_code=plant_code)
                     with lock_add_gene:
                         for gene_path in list_genes_by_path:
@@ -219,6 +172,85 @@ def path_parse(paths):
                                 tmp_plant.ec_nums.extend(ec_num)  # add to the plants list of ec numbers (dupes okay)
                                 list_all_plants[index] = plant  # update the list of plants with modified plant object
                 except IndexError: pass  # couldn't find items using regular expression findall
+
+def prediction():
+    """
+    This is the function that goes through each plant, looks at the list of EC numbers then applies a function in order
+    to determine whether or not the plant has the required EC numbers needed to synthesize each compound.
+    """
+    global list_all_plants
+    for plant in list_all_plants:
+        for chem_data in data_lists:
+            if flav_check(chem_data.label, plant.ec_nums):  # passes check, has all of the flavonoids
+                chem_data.plants.append(plant.name)  # add plant to flavonoids list
+
+    # create the prediction output files for each flavonoid
+    for key in data_lists:
+        save_file([key.plants], key.file_name, path_chem)
+        item_count = len(key.plants)
+        print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
+              'Data saved in ' + path_chem + SEP + key.file_name + '.')
+
+def run_fill_matrix():
+    """
+    This function creates and outputs a 'matrix' relating to each species and EC number by running the fill_matrix
+    function on multiple threads. For each gene entry containing a specific EC number, the program will increase the
+    counter and display it at the end next to the appropriate EC number.
+    """
+    global list_all_plants
+    for plant in list_all_plants: fill_count_matrix(plant)  # update the matrix using each plant
+
+    out = ''
+    for plant in list_all_plant_matrix:
+        out += plant.name + ': '  # create beginning of line for current plant
+        for count in plant.ec_counts:
+            out += '[' + str(count.number) + ' count: ' + str(count.count) + '] '  # add the EC numbers and counts
+        out += '\n'
+    write_append(path_main + SEP + 'MasterCount.csv', out)  # write string to the output file
+
+def fill_count_matrix(plant):
+    """
+    This function builds the ec counts for each list.
+    """
+    global list_all_plants
+    tmp_plant = plant
+    for num in tmp_plant.ec_nums:
+        if tmp_plant.has_ec_count(num): tmp_plant.incr_ec_count(num)  # increment count if number is already present
+        else:
+            # create new count object for current EC number
+            tmp_count = EcCounts(number=num, count=1)
+            plant.ec_counts.append(tmp_count)
+    with lock_access_plant: list_all_plant_matrix.append(tmp_plant)  # update count matrix
+
+def run_build_fasta():
+    """
+    This function uses multithreading and the information gathered from running run_path_parse in order to get the
+    FASTA/DNA sequence for each of the gene entries that were found. As before, the program parses the list after
+    all threads are done and then created a FASTA file for each EC number and created the Master FASTA file.
+    """
+
+    sub_lists = list_partition(list_all_genes, thread_lim)
+    threads = []
+    print('getting data for ' + str(len(list_all_genes)) + ' genes')
+    for sub_list in sub_lists:
+        thread = threading.Thread(target=build_fasta, args=(sub_list,))  # create the thread
+        thread.start()  # start thread execution
+        threads.append(thread)  # append it to the list of threads
+
+    for thread in threads: thread.join()  # wait for all of the threads to be done before moving on
+
+    print('Starting to gather data for FASTA files...')
+    master_fasta = path_main + SEP + 'MasterFASTA.csv'
+    master_output = ''
+    for item in list_fasta_ec:
+        tmp_file_path = path_fasta + SEP + item.ec_name.replace('.', '-').replace(':', '') + CSV
+        tmp_output = ''
+        for entry in item.ec_entries:
+            tmp_output += entry.simple() + '\n'  # add to string to be printed into specific EC file
+            master_output += entry.simple() + '\n'  # add to string to be printed into master FASTA
+        write_append(tmp_file_path, tmp_output)  # write the file for current EC number
+    write_append(master_fasta, master_output)  # write the master FASTA file
+    print('Done making the FASTA files.')
 
 def build_fasta(genes):
     """
@@ -246,41 +278,10 @@ def build_fasta(genes):
         # create new entry object
         tmp_entry = FastaEcEntry(gene=gene.gene_id, plant=plant_dict.get(gene.plant_code), dna=full_fasta_entry)
         with lock_access_ec:
-            for g in gene.ec_num:
+            for g in gene.ec_nums:
                 tmp_ec = EcFastaCollection(ec_num=g, ec_entries=[tmp_entry])
                 list_fasta_ec.append(tmp_ec)
 
-def prediction():
-    """
-    This is the function that goes through each plant, looks at the list of EC numbers then applies a function in order
-    to determine whether or not the plant has the required EC numbers needed to synthesize each compound.
-    """
-    global list_all_plants
-    for plant in list_all_plants:
-        for chem_data in data_lists:
-            if flav_check(chem_data.label, plant.ec_nums):  # passes check, has all of the flavonoids
-                chem_data.plants.append(plant.name)  # add plant to flavonoids list
-
-    # create the prediction output files for each flavonoid
-    for key in data_lists:
-        save_file([key.plants], key.file_name, path_chem)
-        item_count = len(key.plants)
-        print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
-              'Data saved in ' + path_chem + SEP + key.file_name + '.')
-
-def fill_count_matrix(plant):
-    """
-    This function builds the ec counts for each list.
-    """
-    global list_all_plants
-    tmp_plant = plant
-    for num in tmp_plant.ec_nums:
-        if tmp_plant.has_ec_count(num): tmp_plant.incr_ec_count(num)  # increment count if number is already present
-        else:
-            # create new count object for current EC number
-            tmp_count = EcCounts(number=num, count=1)
-            plant.ec_counts.append(tmp_count)
-    with lock_access_plant: list_all_plant_matrix.append(tmp_plant)  # update count matrix
 
 if __name__ == '__main__':
     main()
