@@ -54,9 +54,9 @@ def main():
     """
     init_setup()
     run_path_parse()
+    prediction()
     run_build_fasta()
     run_fill_matrix()
-    prediction()
 
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
@@ -203,7 +203,7 @@ def path_parse(paths):
                     name = re.sub(RE_KO, '', (re.sub(RE_EC, '', entry_dict[key])))
 
                     # create new gene object using the information from kegg
-                    tmp_gene = Gene(gene_id=key, plant=plant_name, ec_num=ec_num, k_ortho=orthology,
+                    tmp_gene = Gene(gene_id=key, plant=plant_name, ec_num=ec_num, ortho=orthology,
                                     compound=name, path=path, plant_code=plant_code)
                     with lock_add_gene:
                         for gene_path in list_genes_by_path:
