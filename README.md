@@ -17,20 +17,19 @@ and analyzing the interactions between proteins and flavonoids or flavonoid-like
 <!--#################################################################################################################-->
 ---
 ## Requirements
-  1. Make sure to have Python 3 installed on your computer.   
-    &emsp;For example, in Linux, you can check the version using:  
-    &emsp; ```user@computer:~$ python -V```  
-    &emsp; ```Python 3.8.3```  
-    &emsp; Windows now has Python 3 on the Microsoft store, so checking the current version could be done by finding 
-    the list of installed  
-    &emsp; programs by navigating to ```Control Panel --> Programs --> Uninstall a Program```
+  - Make sure to have Python 3 installed on your computer.   
+    * For example, in Linux, you can check the version using:  
+    ```user@computer:~$ python -V```  
+    ```Python 3.8.3```  
+    * Windows now has Python 3 on the Microsoft store, so checking the current version could be done by finding 
+    the list of installed  programs by navigating to ```Control Panel --> Programs --> Uninstall a Program```
 
-  1. Install python package __bioservices__: ```[pip|pip3] install bioservices```  
-    &emsp; _Using pip should work, but a system may recognize ```pip3``` instead._   
-    &emsp; You can find the bioservices documentation [_here._](https://bioservices.readthedocs.io/en/master/)
+  - Install python package __bioservices__: ```[pip|pip3] install bioservices```  
+    * _Using pip should work, but a system may recognize ```pip3``` instead._   
+    * You can find the bioservices documentation [_here._](https://bioservices.readthedocs.io/en/master/)
 
-  1. Install python package __BioPython__: ```[pip|pip3] install biopython```  
-    &emsp; You can find the BioPython documentation [_here._](https://biopython.org/wiki/Documentation)
+  - Install python package __BioPython__: ```[pip|pip3] install biopython```  
+    * You can find the BioPython documentation [_here._](https://biopython.org/wiki/Documentation)
 
 ---
 ## Notes for Continuing Development
