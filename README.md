@@ -252,10 +252,14 @@ This file just contains the strings which hold the dedicated output folder and f
 This file contains various utility functions used throughout the program.
 
 #### Function ```get_json_data```  
-Reads in a JSON (JavaScript Object Notation) file and converts the data into usable python variables.
+This function uses the python JSON library in order to parse JSON files into usable python objects. Can return
+lists or dictionaries, depending on the JSON file's structure.  
 
 #### Function ```remove_dupes```   
-Removes duplicate elements from a list.
+Removes duplicate elements from a list.  
+
+#### Function ```list_partition```
+This function takes in a list and then splits it into as many parts as specified by parameter ```num```.  
 
 #### Function ```write_readme```  
 Writes the program's original ```README``` file.
@@ -309,8 +313,9 @@ available properties, a new ```Entry``` is returned.
 ---
 ## File ```protein/StringsAndConsts.py```
 This file simply contains several strings & constant values for ```protein.py```.
-<!--#################################################################################################################-->
 
+
+<!--#################################################################################################################-->
 ---
 ## Notes for Continuing Development
 ### IDEs and Text Editors
