@@ -31,54 +31,25 @@ and analyzing the interactions between proteins and flavonoids or flavonoid-like
   - Install python package __BioPython__: ```[pip|pip3] install biopython```  
     * You can find the BioPython documentation [_here._](https://biopython.org/wiki/Documentation)
 
----
-## Notes for Continuing Development
-### IDEs and Text Editors
-If you are continuing the work on this file, I would HIGHLY recommend using a Python IDE (integrated development 
-environment). 
-I used PyCharm CE (community edition, free) for this but other IDEs or advanced editors have modules that allow for 
-working on python code such as Visual Studio Code, Atom, XCode (MacOS only), Emacs, etc.  
-In using these editors, it becomes much harder to make simple mistakes such as incorrectly indenting sections of code, 
-accidentally using incorrect parameters and incorrectly spelling variable or function names. PyCharm, along with some of 
-the other editors features tab completion, which is when suggested function names, variable names, etc show up while 
-typing, similar to the autosuggestion features on your smartphone's keyboard. You can navigate the suggestion list using 
-the up & down arrow keys and then hit tab when you've found the right suggestion.  
 
-### Modularity
-A common practice in software development is to make sure that a code is modular, i.e., broken into simple blocks.  
-You should always make sure to have a ```main``` function which can be used to call other functions.  
-Functions are best written to achieve one main goal. If you have a large function that performs multiple actions, then 
-it would be more beneficial to separate the function into different functions.  
-If the code is getting long and there are a lot of constants, variables and functions that you use often but take up a 
-lot of space in the file, it may be best to consider creating another file and then importing it in order to still have 
-access to these constants, variables and functions. This makes the code much easier to read and work on since there will 
-be much less text to look at in your file.  
-
-### Googling
-There are so many resources online, so please don't forget it! If you're trying to do something but do not know how to 
-implement it correctly, most times there is someone online who has already asked that question and then got an answer. 
-I'm not saying that code should be copied directly, but rather there is a lot to learn from others online who have been 
-kind enough to provide answers.  
-Also it doesn't hurt to Google since you may find out that there are libraries that exist that could save time by  
-allowing you to use them instead of writing your own version yourself.
 
 
 <!--#################################################################################################################-->
 ---
 ## Project Structure
-> ```pfpy``` main folder  
-```pfpy/projects/original/``` contains the code from when Jordan Wilson was developing  
-```pfpy/projects/current/``` current code
-```pfpy/projects/current/flavonoid``` code (and related files) for flavonoid prediction  
-```pfpy/projects/current/protein``` code for the protein-flavonoid interaction project
-```pfpy/projects/current/flavonoid/data/``` output data folder  
-```pfpy/projects/current/flavonoid/data/Chemical_Data``` contains the files for the list of plants predicted per 
->flavonoid  
-```pfpy/projects/current/flavonoid/data/FASTA_Data``` contains FASTA EC number data  
-```pfpy/projects/current/flavonoid/data/Gene_Data``` contains the data pulled from KEGG for each plant pathway  
-```pfpy/projects/current/json_data```  holds the lists of plants & pathways used in the KEGG program (in JSON format).  
-```pfpy/projects/current/lib``` contains the library/helper code and other assorted test code files.  
-```pfpy/projects/current/misc_output``` contains output from testing programs not used by kegg-prog.py    
+- ```pfpy``` main folder  
+- ```pfpy/projects/original/``` contains the code from when Jordan Wilson was developing  
+- ```pfpy/projects/current/``` current code
+- ```pfpy/projects/current/flavonoid``` code (and related files) for flavonoid prediction  
+- ```pfpy/projects/current/protein``` code for the protein-flavonoid interaction project
+- ```pfpy/projects/current/flavonoid/data/``` output data folder  
+- ```pfpy/projects/current/flavonoid/data/Chemical_Data``` contains the files for the list of plants predicted per 
+                                                            flavonoid  
+- ```pfpy/projects/current/flavonoid/data/FASTA_Data``` contains FASTA EC number data  
+- ```pfpy/projects/current/flavonoid/data/Gene_Data``` contains the data pulled from KEGG for each plant pathway  
+- ```pfpy/projects/current/json_data```  holds the lists of plants & pathways used in the KEGG program (in JSON format).  
+- ```pfpy/projects/current/lib``` contains the library/helper code and other assorted test code files.  
+- ```pfpy/projects/current/misc_output``` contains output from testing programs not used by kegg-prog.py    
 
 <!--#################################################################################################################-->
 ---
@@ -338,7 +309,41 @@ available properties, a new ```Entry``` is returned.
 ---
 ## File ```protein/StringsAndConsts.py```
 This file simply contains several strings & constant values for ```protein.py```.
+<!--#################################################################################################################-->
 
+---
+## Notes for Continuing Development
+### IDEs and Text Editors
+- If you are continuing the work on this file, I would HIGHLY recommend using a Python IDE (integrated development 
+environment). 
+    * I used PyCharm CE (community edition, free) for this but other IDEs or advanced editors have modules that allow 
+    for working on python code such as Visual Studio Code, Atom, XCode (MacOS only), Emacs, etc.  
+- In using these editors, it becomes much harder to make simple mistakes such as incorrectly indenting sections of code, 
+accidentally using incorrect parameters and incorrectly spelling variable or function names.  
+    * PyCharm, along with some of the other editors features tab completion.
+        + Tab completion is when suggested function names, variable names, etc show up while typing, similar to the 
+        autosuggestion features on your smartphone's keyboard. 
+        + You can navigate the suggestion list using the up & down arrow keys and then hit tab when you've found the 
+        right suggestion.  
+
+### Modularity
+- A common practice in software development is to make sure that a code is modular, i.e., broken into simple blocks.  
+    * You should always make sure to have a ```main``` function which can be used to call other functions.  
+    * Functions are best written to achieve one main goal. If you have a large function that performs multiple actions, then 
+    it would be more beneficial to separate the function into different functions.  
+    * If the code is getting long and there are a lot of constants, variables and functions that you use often but take 
+    up a lot of space in the file, it may be best to consider creating another file and then importing it in order to 
+    still have access to these constants, variables and functions. 
+        + This makes the code much easier to read and work on since there will 
+        be much less text to look at in your file.  
+
+### Googling
+- There are so many resources online, so please don't forget it! If you're trying to do something but do not know how to 
+implement it correctly, most times there is someone online who has already asked that question and then got an answer. 
+    * I'm not saying that code should be copied directly, but rather there is a lot to learn from others online who 
+    have been kind enough to provide answers.  
+    * Also it doesn't hurt to Google since you may find out that there are libraries that exist that could save time by  
+    allowing you to use them instead of writing your own version yourself.
 <!--#################################################################################################################-->
 ---
 ## Original Changelog 
