@@ -236,9 +236,34 @@ __FUNCTIONS__
 ```is_in```: determines if an identical or nearly identical object is already in the list  
 ```simple```: returns a formatted string that contains information from the object  
 ```no_plant```: same as simple, but without including the plant name  
-### Class ``` ```
-### Class ``` ```
-### Class ``` ```
+### Class ```EcFastaCollection```
+This object is used to hold the associated FASTA entries for any given EC number.  
+__ATTRIBUTES__  
+```self.ec_name```: the EC number & name used when writing the file  
+```self.ec_entries```: the list of associated FASTA entries (FastaEcEntry objects)  
+__FUNCTIONS__  
+```__init__```: constructor for the object  
+```__eq__```: defines equality of the object  
+```is_in```: determines if an identical or nearly identical object is already in the list  
+### Class ```EcCounts```
+This object is a property of the Plant object and is used to hold each EC number and the number of times it occurs
+in gene entries of a given plant.  
+__ATTRIBUTES__  
+```self.number```: the EC number  
+```self.count```: number of times that the EC number shows up in gene entries.  
+__FUNCTIONS__  
+```__init__```: constructor for the object  
+### Class ```FastaEcEntry```
+This object is a property of EcFastaCollection and contains the information for a specific FASTA entry.  
+__ATTRIBUTES__  
+```self.gene_id```: the gene ID associated with the sequence  
+```self.plant```: the plant that the gene is from  
+```self.dna_seq```: the dna sequence/FASTA entry for the specific gene  
+__FUNCTIONS__  
+```__init__```: constructor for the object  
+```__eq__```: defines equality of the object  
+```is_in```: determines if an identical or nearly identical object is already in the list  
+```simple```: returns a formatted string  
 
 <!--#################################################################################################################-->
 ---
