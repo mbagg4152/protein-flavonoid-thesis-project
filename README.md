@@ -1,26 +1,28 @@
 # pfpy - Protein & Flavonoid project code in Python
-Former repository for CHEM-491 (Research Methods) class and is now being used in continuing the work for said project in the context of a thesis project and a research assistant position. The initial goal was to modernize, clean and add additional flavonoids to the code.    
-The original code and the version that was worked on during class mainly focused on utilizing KEGG data in order to predict whether or not a specific plant could be capable of synthesizing selected flavonoids.  
-The new code being developed (located in ```projects/current/protein```) is being developed for the purpose of studying and analyzing the interactions between proteins and flavonoids or flavonoid-like compounds.
+Former repository for CHEM-491 (Research Methods) class and is now being used in continuing the work for said project 
+in the context of a thesis project and a research assistant position. The initial goal was to modernize, clean and add 
+additional flavonoids to the code.    
+The original code and the version that was worked on during class mainly focused on utilizing KEGG data in order to 
+predict whether or not a specific plant could be capable of synthesizing selected flavonoids.  
+The new code being developed (located in ```projects/current/protein```) is being developed for the purpose of studying 
+and analyzing the interactions between proteins and flavonoids or flavonoid-like compounds.
 
-
-<!--###########################################################################################################################################################-->
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## Original Code Information
   > *KEGG.py, Made using Python 2.7  
   Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson    
   JW started the code to get information from KEGG about the species we were interested in - April 2019*  
 
-<!--###########################################################################################################################################################-->
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## Requirements
   1. Make sure to have Python 3 installed on your computer.   
     &emsp;For example, in Linux, you can check the version using:  
     &emsp; ```user@computer:~$ python -V```  
     &emsp; ```Python 3.8.3```  
-    &emsp; Windows now has Python 3 on the Microsoft store, so checking the current version could be done by finding the list of installed  
+    &emsp; Windows now has Python 3 on the Microsoft store, so checking the current version could be done by finding 
+    the list of installed  
     &emsp; programs by navigating to ```Control Panel --> Programs --> Uninstall a Program```
 
   1. Install python package __bioservices__: ```[pip|pip3] install bioservices```  
@@ -33,7 +35,8 @@ The new code being developed (located in ```projects/current/protein```) is bein
 ---
 ## Notes for Continuing Development
 ### IDEs and Text Editors
-If you are continuing the work on this file, I would HIGHLY recommend using a Python IDE (integrated development environment). 
+If you are continuing the work on this file, I would HIGHLY recommend using a Python IDE (integrated development 
+environment). 
 I used PyCharm CE (community edition, free) for this but other IDEs or advanced editors have modules that allow for 
 working on python code such as Visual Studio Code, Atom, XCode (MacOS only), Emacs, etc.  
 In using these editors, it becomes much harder to make simple mistakes such as incorrectly indenting sections of code, 
@@ -61,8 +64,7 @@ Also it doesn't hurt to Google since you may find out that there are libraries t
 allowing you to use them instead of writing your own version yourself.
 
 
-<!--###########################################################################################################################################################-->
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## Project Structure
 > ```pfpy``` main folder  
@@ -71,15 +73,15 @@ allowing you to use them instead of writing your own version yourself.
 ```pfpy/projects/current/flavonoid``` code (and related files) for flavonoid prediction  
 ```pfpy/projects/current/protein``` code for the protein-flavonoid interaction project
 ```pfpy/projects/current/flavonoid/data/``` output data folder  
-```pfpy/projects/current/flavonoid/data/Chemical_Data``` contains the files for the list of plants predicted per flavonoid  
+```pfpy/projects/current/flavonoid/data/Chemical_Data``` contains the files for the list of plants predicted per 
+>flavonoid  
 ```pfpy/projects/current/flavonoid/data/FASTA_Data``` contains FASTA EC number data  
 ```pfpy/projects/current/flavonoid/data/Gene_Data``` contains the data pulled from KEGG for each plant pathway  
 ```pfpy/projects/current/json_data```  holds the lists of plants & pathways used in the KEGG program (in JSON format).  
 ```pfpy/projects/current/lib``` contains the library/helper code and other assorted test code files.  
 ```pfpy/projects/current/misc_output``` contains output from testing programs not used by kegg-prog.py    
 
-<!--###########################################################################################################################################################-->
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 # Important Files and Functions in ```pfpy/projects/current/```
 __Note:__ Not all files or functions are covered below.  
@@ -120,7 +122,7 @@ library files first, then build the condensed version.
 It should also be noted that currently, the condensed program does take longer to finish than the modular one. 
 
 
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## File ```lib/compoundinfo.py```
 This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
@@ -161,7 +163,7 @@ If the result of ```flav_check``` returns as true, then the current plant's name
 The functions return ```True``` or ```False``` based on whether or not the required EC numbers are in the list 
 (parameter ```e```) which was passed to ```flav_check```.    
 
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## File ```lib/knapsackinfo.py```
 This program uses the ```wget``` command in order to pull the information for each of the species from KNApSAcK. 
@@ -177,31 +179,55 @@ other databases.
 __Note:__ It will not work correctly if the ```wget``` system command is not installed (this has not yet been tested
 on Windows, may potentially only be compatible with Linux systems). 
 
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## File ```lib/datatypes.py```
 This contains the custom data types that are or have been used in the program.  
 ### Class ```ChemData```
-This object type holds a flavonoid label, a file name and a list of species.  
-A list of ```ChemData``` objects is used in ```kegg-prog.py``` in order to keep track of which plants 
-were predicted for each flavonoid.
-### Class ```Species```
-This object has a species name, a list of predicted flavonoids and the number of associated flavonoids.  
-The list of ```Species``` is populated in the same block of code as the list of ```ChemData``` objects.  
-This object is better suited for focusing on specific plants based on prediction counts and predicted flavonoids.
+This class holds the data for each flavonoid. The objects are initialized with their file name and label and only
+later in the program, their empty list of plants will be filled.  
+__ATTRIBUTES__    
+```self.label```: string that contains the flavonoids name  
+```self.plants```: list of plants predicted to produce the flavonoid  
+```self.file_name```: string that holds the flavonoids output file name  
+__FUNCTIONS__  
+```__init__```: constructor for the object  
+```__eq__```: defines equality of the object  
+```is_in```: determines if an identical or nearly identical object is already in the list  
+### Class ```Plant```
+This object holds information about each plant used in the program. The plant objects are initialized with their
+scientific name and their code and then have different information added later.  
+__ATTRIBUTES__    
+```self.name```: scientific name of the plant  
+```self.code```: KEGG code for the plant  
+```self.genes```: the gene entries for the plant  
+```self.ec_nums```: the EC numbers parsed from the plants gene entries  
+```self.flavonoids```: the list of flavonoids that the plant could potentially produce  
+```self.ec_counts```: list of objects that hold the number of times each EC number appears  
+__FUNCTIONS__  
+```__init__```: constructor for the object  
+```__eq__```: defines equality of the object  
+```is_in```: determines if an identical or nearly identical object is already in the list  
+```has_ec_count```: used to determine whether or not a specific EC number is already in the list of EC counts  
+```incr_ec_count```: used to increase the count for the EC count objects.  
+### Class ``` ```
+### Class ``` ```
+### Class ``` ```
+### Class ``` ```
+### Class ``` ```
 
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## File ```lib/jsondata.py```
 This file calls the ```get_json_data(filename,key)``` function from util.py, which reads in the list of plant and 
 pathway codes as well as the file containing the scientific name for each plant and the full name of each pathway map.
 
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## File ```lib/pathstrings.py```
 This file just contains the strings which hold the dedicated output folder and file names.
 
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## File ```lib/util.py```
 This file contains various utility functions used throughout the program.
@@ -215,45 +241,57 @@ Removes duplicate elements from a list.
 #### Function ```write_readme```  
 Writes the program's original ```README``` file.
 
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## File ```protein/protein.py```
-This program reads in a ```JSON``` file of PDB IDs and then appends the IDs to the end of a specific URL in order to download each desired PDB or mmCIF file. 
-When a PDB ID + the desired file extension (```.pdb```, ```.xml```, ```.cif```) is appended to the simple parial URL ```https://files.rcsb.org/view/```, the program can then call ```urllib.request.urlretrieve(url, file_path)```, where ```file_path``` is the name of the file that  ```urllib``` will save the web page content to.   
-For example, if the current iteration is looking at ID 4V4D (large structure), the code would get the mmCIF file using the URL ```https://files.rcsb.org/view/4V4D.cif```.  
-If a given file can be found in ```protein/output/pdb_files```, then the program will skip the download process and go straight to parsing the file's information.
-  If ```urllib``` recieves an error code from trying to get a .pdb file, that is most likely due to PDB not providing .pdb files for large structures. If an error is occured, then the program attempts to fetch the appropriate .cif file and then attempt to convert the file to .pdb format.
+This program reads in a ```JSON``` file of PDB IDs and then appends the IDs to the end of a specific URL in order to 
+download each desired PDB or mmCIF file. 
+When a PDB ID + the desired file extension (```.pdb```, ```.xml```, ```.cif```) is appended to the simple partial 
+URL ```https://files.rcsb.org/view/```, the program can then call ```urllib.request.urlretrieve(url, file_path)```, 
+where ```file_path``` is the name of the file that  ```urllib``` will save the web page content to.   
+For example, if the current iteration is looking at ID 4V4D (large structure), the code would get the mmCIF file using 
+the URL ```https://files.rcsb.org/view/4V4D.cif```.  
+If a given file can be found in ```protein/output/pdb_files```, then the program will skip the download process and go 
+straight to parsing the file's information.   
+If ```urllib``` receives an error code from trying to get a .pdb file, that is most likely due to PDB not providing 
+.pdb files for large structures. If an error is occurred, then the program attempts to fetch the appropriate .cif file 
+and then attempt to convert the file to .pdb format.
 
 
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## File ```protein/Types.py```
-This file contains two different classes and functions that are used to create new objects, which are used in ```protein.py```.  
+This file contains two different classes and functions that are used to create new objects, which are used in 
+```protein.py```.  
 ####```Class Record```
 This object holds the information from PDB files for a single ```ATOM/HETATM``` line or record.  
-For example, the following lines would be appropriately converted into ```Record``` objects using the function ```new_record```:
+For example, the following lines would be appropriately converted into ```Record``` objects using the function 
+```new_record```:
 ```
 ATOM   1258  CA  THR B  59      22.806  24.345  36.922  1.00 23.83           C 
 HETATM 1815  O   HOH A 133      17.558  28.943  -4.426  1.00 23.32           O  
 ```
 #### Function ```new_record```
-In ```protein.py```, if a line begins with ```ATOM/HETATM``` then this function is called to create a new ```Record``` object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
-Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with values from the passed in line.
+In ```protein.py```, if a line begins with ```ATOM/HETATM``` then this function is called to create a new ```Record``` 
+object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
+Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with 
+values from the passed in line.
 
 #### Class ```Entry```
-These objects contain data from the PDB files themselves, not just simple lines. Each ```Entry``` contains specific information such as PDB ID, classification, a list of ```Records```, associated organisms, EC numbers, etc.  
+These objects contain data from the PDB files themselves, not just simple lines. Each ```Entry``` contains specific 
+information such as PDB ID, classification, a list of ```Records```, associated organisms, EC numbers, etc.  
 
 #### Function ```new_entry```
-This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new ```Entry``` is returned.
+This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, 
+SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the 
+available properties, a new ```Entry``` is returned.
 
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## File ```protein/StringsAndConsts.py```
 This file simply contains several strings & constant values for ```protein.py```.
 
-
-<!--###########################################################################################################################################################-->
-<!--###########################################################################################################################################################-->
+<!--#################################################################################################################-->
 ---
 ## Original Changelog 
 Version | Change |
