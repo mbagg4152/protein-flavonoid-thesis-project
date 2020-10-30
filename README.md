@@ -56,14 +56,14 @@ and analyzing the interactions between proteins and flavonoids or flavonoid-like
 # Important Files and Functions in ```pfpy/projects/current/```
 __Note:__ Not all files or functions are covered below.  
 
-## File ```flavonoid/keggv1.py```
+## ```flavonoid/keggv1.py```
 The original main file of the program for the flavonoid prediction portion of the project.  
  
-## File ```flavonoid/keggv2.py```
+## ```flavonoid/keggv2.py```
 The current main file of the program for the flavonoid prediction portion of the project.  
   
 
-#### Function ```path_parse```
+#### ```path_parse```
 This function is called and passed a pathway for a specific organism (e.g. adu00941). For each pathway that is passed 
 in, the code uses the kegg plugin in order to get the gene data for the specific pathway, which is done using the 
 following lines:  
@@ -81,7 +81,7 @@ cam00941 is shown below (the other entries in 'GENE' take similar form):
 Then the data is added to a list such that this gene data is associated with the appropriate plant.
 
 
-## File ```flavonoid/keggv2_with_libs.py```
+## ```flavonoid/keggv2_with_libs.py```
 This file is a 'condensed' version of  ```keggv2.py```. Instead of relying on the external imports from the ```lib``` 
 directory, all of the important variables, functions, etc. are located in within the main file. __Note:__ the  
 ```json_data``` directory is still needed for the program to work correctly.    
@@ -94,7 +94,7 @@ It should also be noted that currently, the condensed program does take longer t
 
 <!--#################################################################################################################-->
 ---
-## File ```lib/compoundinfo.py```
+## ```lib/compoundinfo.py```
 This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
 Some of the EC number variables are shown below:
 ```python
@@ -106,10 +106,10 @@ E17_2 = 'EC:1.1.1.219 1.1.1.234' # unique number for bifunctional dihydroflavono
 E26 = 'EC:2.4.1.136'
 ```
 
-### Function ```or_in```
+### ```or_in```
 Takes in a list and elements and returns true if at least ONE element is present in the list.
 
-### Function ```and_in```
+### ```and_in```
 Takes in a list and elements and returns true only if all of the passed elements are in the list.
   
 ### The Logical Functions  
@@ -135,7 +135,7 @@ The functions return ```True``` or ```False``` based on whether or not the requi
 
 <!--#################################################################################################################-->
 ---
-## File ```lib/knapsackinfo.py```
+## ```lib/knapsackinfo.py```
 This program uses the ```wget``` command in order to pull the information for each of the species from KNApSAcK. 
 For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of 
 interest.  
@@ -151,9 +151,9 @@ on Windows, may potentially only be compatible with Linux systems).
 
 <!--#################################################################################################################-->
 ---
-## File ```lib/datatypes.py```
+## ```lib/datatypes.py```
 This contains the custom data types that are or have been used in the program.  
-### Class ```ChemData```
+### ```ChemData```
 This class holds the data for each flavonoid. The objects are initialized with their file name and label and only
 later in the program, their empty list of plants will be filled.  
 __ATTRIBUTES__    
@@ -164,7 +164,7 @@ __FUNCTIONS__
 ```__init__```: constructor for the object  
 ```__eq__```: defines equality of the object  
 ```is_in```: determines if an identical or nearly identical object is already in the list  
-### Class ```Plant```
+### ```Plant```
 This object holds information about each plant used in the program. The plant objects are initialized with their
 scientific name and their code and then have different information added later.  
 __ATTRIBUTES__    
@@ -180,7 +180,7 @@ __FUNCTIONS__
 ```is_in```: determines if an identical or nearly identical object is already in the list  
 ```has_ec_count```: used to determine whether or not a specific EC number is already in the list of EC counts  
 ```incr_ec_count```: used to increase the count for the EC count objects.  
-### Class ```PathGene```
+### ```PathGene```
 This object is used to hold Gene objects in a way such that they are sorted by the pathway from which they were
 found.   
 __ATTRIBUTES__  
@@ -190,7 +190,7 @@ __FUNCTIONS__
 ```__init__```: constructor for the object   
 ```__eq__```: defines equality of the object   
 ```is_in```: determines if an identical or nearly identical object is already in the list   
-### Class ```Gene```
+### ```Gene```
 This object holds data gathered from KEGG for each plant's pathway (like aip00491).  
 ATTRIBUTES  
 ```self.gene_id```: the ID of the gene from a plant  
@@ -206,7 +206,7 @@ __FUNCTIONS__
 ```is_in```: determines if an identical or nearly identical object is already in the list  
 ```simple```: returns a formatted string that contains information from the object  
 ```no_plant```: same as simple, but without including the plant name  
-### Class ```EcFastaCollection```
+### ```EcFastaCollection```
 This object is used to hold the associated FASTA entries for any given EC number.  
 __ATTRIBUTES__  
 ```self.ec_name```: the EC number & name used when writing the file  
@@ -215,7 +215,7 @@ __FUNCTIONS__
 ```__init__```: constructor for the object  
 ```__eq__```: defines equality of the object  
 ```is_in```: determines if an identical or nearly identical object is already in the list  
-### Class ```EcCounts```
+### ```EcCounts```
 This object is a property of the Plant object and is used to hold each EC number and the number of times it occurs
 in gene entries of a given plant.  
 __ATTRIBUTES__  
@@ -223,7 +223,7 @@ __ATTRIBUTES__
 ```self.count```: number of times that the EC number shows up in gene entries.  
 __FUNCTIONS__  
 ```__init__```: constructor for the object  
-### Class ```FastaEcEntry```
+### ```FastaEcEntry```
 This object is a property of EcFastaCollection and contains the information for a specific FASTA entry.  
 __ATTRIBUTES__  
 ```self.gene_id```: the gene ID associated with the sequence  
@@ -237,36 +237,36 @@ __FUNCTIONS__
 
 <!--#################################################################################################################-->
 ---
-## File ```lib/jsondata.py```
+## ```lib/jsondata.py```
 This file calls the ```get_json_data(filename,key)``` function from util.py, which reads in the list of plant and 
 pathway codes as well as the file containing the scientific name for each plant and the full name of each pathway map.
 
 <!--#################################################################################################################-->
 ---
-## File ```lib/pathstrings.py```
+## ```lib/pathstrings.py```
 This file just contains the strings which hold the dedicated output folder and file names.
 
 <!--#################################################################################################################-->
 ---
-## File ```lib/util.py```
+## ```lib/util.py```
 This file contains various utility functions used throughout the program.
 
-#### Function ```get_json_data```  
+#### ```get_json_data```  
 This function uses the python JSON library in order to parse JSON files into usable python objects. Can return
 lists or dictionaries, depending on the JSON file's structure.  
 
-#### Function ```remove_dupes```   
+#### ```remove_dupes```   
 Removes duplicate elements from a list.  
 
-#### Function ```list_partition```
+#### ```list_partition```
 This function takes in a list and then splits it into as many parts as specified by parameter ```num```.  
 
-#### Function ```write_readme```  
+#### ```write_readme```  
 Writes the program's original ```README``` file.
 
 <!--#################################################################################################################-->
 ---
-## File ```protein/protein.py```
+## ```protein/protein.py```
 This program reads in a ```JSON``` file of PDB IDs and then appends the IDs to the end of a specific URL in order to 
 download each desired PDB or mmCIF file. 
 When a PDB ID + the desired file extension (```.pdb```, ```.xml```, ```.cif```) is appended to the simple partial 
@@ -283,10 +283,10 @@ and then attempt to convert the file to .pdb format.
 
 <!--#################################################################################################################-->
 ---
-## File ```protein/Types.py```
+## ```protein/Types.py```
 This file contains two different classes and functions that are used to create new objects, which are used in 
 ```protein.py```.  
-####```Class Record```
+#### ```Record```
 This object holds the information from PDB files for a single ```ATOM/HETATM``` line or record.  
 For example, the following lines would be appropriately converted into ```Record``` objects using the function 
 ```new_record```:
@@ -294,24 +294,24 @@ For example, the following lines would be appropriately converted into ```Record
 ATOM   1258  CA  THR B  59      22.806  24.345  36.922  1.00 23.83           C 
 HETATM 1815  O   HOH A 133      17.558  28.943  -4.426  1.00 23.32           O  
 ```
-#### Function ```new_record```
+#### ```new_record```
 In ```protein.py```, if a line begins with ```ATOM/HETATM``` then this function is called to create a new ```Record``` 
 object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
 Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with 
 values from the passed in line.
 
-#### Class ```Entry```
+#### ```Entry```
 These objects contain data from the PDB files themselves, not just simple lines. Each ```Entry``` contains specific 
 information such as PDB ID, classification, a list of ```Records```, associated organisms, EC numbers, etc.  
 
-#### Function ```new_entry```
+#### ```new_entry```
 This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, 
 SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the 
 available properties, a new ```Entry``` is returned.
 
 <!--#################################################################################################################-->
 ---
-## File ```protein/StringsAndConsts.py```
+## ```protein/StringsAndConsts.py```
 This file simply contains several strings & constant values for ```protein.py```.
 
 
