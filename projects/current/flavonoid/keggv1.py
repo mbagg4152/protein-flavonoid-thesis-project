@@ -50,7 +50,7 @@ tmp_data_holder = []
 
 def main():
     global path_plant_list
-    path_plant_list = [i + j for i in species_list for j in path_list]
+    path_plant_list = [i + j for i in species_list for j in path_map_list]
     start()
     master_pathway_parser()
     make_matrix_and_counts()

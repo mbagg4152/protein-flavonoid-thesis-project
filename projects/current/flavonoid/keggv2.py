@@ -85,7 +85,7 @@ def init_setup():
 
     init_dirs(path_main, path_gene, path_fasta, path_chem)  # (util.py) initialize directories if they don't exist
 
-    list_plant_paths = [i + j for i in plant_list for j in path_list]  # make plant and path combination list
+    list_plant_paths = [i + j for i in plant_list for j in path_map_list]  # make plant and path combination list
 
     for key in plant_dict:  # build list of plant objects
         tmp_plant = Plant(code=key, name=plant_dict[key])  # object made for current plant
