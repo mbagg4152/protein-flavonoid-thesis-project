@@ -61,9 +61,6 @@ SOA, V1G = 'EC:2.3.1.30', 'EC:2.4.1.136'
 ########################################################################################################################
 init_time = datetime.datetime.now()
 kegg = KEGG()
-ec_nums_of_interest = [E01, E02, E03, E04, E05, E06, E07, E08, E09, E10, E11, E12, E13, E14, E15,
-                       E16, E17, E17_2, E18, E19, E20, E21, E22, GGT, DEC, SOA, V1G]
-ec_interest_string = ' '.join(ec_nums_of_interest)
 
 list_all_genes = []  # will hold a list of all gene objects
 list_all_plants = []  # will hold a list of all plant objects
@@ -215,13 +212,9 @@ def path_parse(paths):
                     # find EC number in the entry using regular expressions then remove square brackets
                     ec_num = re.findall(RE_EC, entry_dict[key])
 
-                    in_count = 0
                     for i in range(0, len(ec_num)):
                         item = ec_num[i].replace('[', '').replace(']', '').replace(':', '').replace(' ', '')
                         ec_num[i] = 'EC:' + item
-                        if item in ec_interest_string: in_count += 1
-                    # pass if this EC number is not relevant to the predictions
-                    if in_count < 1: continue
 
                     # get the orthology ID using regular expressions then remove square brackets
                     orthology = mult_replace(quick_fetch(RE_KO, entry_dict[key]), [('[', ''), (']', '')])

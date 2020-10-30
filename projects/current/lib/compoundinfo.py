@@ -7,11 +7,6 @@ E16, E17, E17_2, E18, E19 = 'EC:1.14.20.6', 'EC:1.1.1.219', 'EC:1.1.1.219 1.1.1.
 E20, E21, E22, GGT, DEC = 'EC:1.17.1.3', 'EC:1.14.14.87', 'EC:4.2.1.105', 'EC:2.4.1.74', 'EC:2.3.1.70'
 SOA, V1G = 'EC:2.3.1.30', 'EC:2.4.1.136'
 
-ec_nums_of_interest = [E01, E02, E03, E04, E05, E06, E07, E08, E09, E10, E11, E12, E13, E14, E15,
-                       E16, E17, E17_2, E18, E19, E20, E21, E22, GGT, DEC, SOA, V1G]
-
-ec_interest_string = ' '.join(ec_nums_of_interest)
-
 def flav_check(label, ec_list):
     # determine which function to call based on the label passed in using the label function pairs
     options = {

@@ -145,9 +145,6 @@ def path_parse(paths):
                     for i in range(0, len(ec_num)):
                         item = ec_num[i].replace('[', '').replace(']', '').replace(':', '').replace(' ', '')
                         ec_num[i] = 'EC:' + item
-                        if item in ec_interest_string: in_count += 1
-                    # pass if this EC number is not relevant to the predictions
-                    if in_count < 1: continue
 
                     # get the orthology ID using regular expressions then remove square brackets
                     orthology = mult_replace(quick_fetch(RE_KO, entry_dict[key]), [('[', ''), (']', '')])
