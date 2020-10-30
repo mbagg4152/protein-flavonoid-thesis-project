@@ -108,6 +108,18 @@ cam00941 is shown below (the other entries in 'GENE' take similar form):
   ```
 Then the data is added to a list such that this gene data is associated with the appropriate plant.
 
+
+## File ```flavonoid/keggv2_with_libs.py```
+This file is a 'condensed' version of  ```keggv2.py```. Instead of relying on the external imports from the ```lib``` 
+directory, all of the important variables, functions, etc. are located in within the main file. __Note:__ the  
+```json_data``` directory is still needed for the program to work correctly.    
+This file was made more for convenience since imports can sometimes behave strangely, plus this decreases the number of 
+code files needed to accomplish the same tasks.  
+When continuing development, if you wish to keep a condensed version, it is highly suggested to work on the main and 
+library files first, then build the condensed version.   
+It should also be noted that currently, the condensed program does take longer to finish than the modular one. 
+
+
 <!--###########################################################################################################################################################-->
 ---
 ## File ```lib/compoundinfo.py```
