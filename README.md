@@ -7,14 +7,14 @@ predict whether or not a specific plant could be capable of synthesizing selecte
 The new code being developed (located in ```projects/current/protein```) is being developed for the purpose of studying 
 and analyzing the interactions between proteins and flavonoids or flavonoid-like compounds.
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## Original Code Information
   > *KEGG.py, Made using Python 2.7  
   Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson    
 JW started the code to get information from KEGG about the species we were interested in - April 2019*  
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## Requirements
   - Make sure to have Python 3 installed on your computer.   
@@ -33,8 +33,7 @@ JW started the code to get information from KEGG about the species we were inter
 
 
 
-
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## Project Structure
 - ```pfpy``` main folder  
@@ -51,7 +50,7 @@ JW started the code to get information from KEGG about the species we were inter
 - ```pfpy/projects/current/lib``` contains the library/helper code and other assorted test code files.  
 - ```pfpy/projects/current/misc_output``` contains output from testing programs not used by kegg-prog.py    
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 # How the programs work & the processes behind design
 ## Flavonoid Code
@@ -87,8 +86,8 @@ JW started the code to get information from KEGG about the species we were inter
     by EC number. Once the parsing is done (which does take a long time to finish) then for each <code>EcFastaCollection</code> object, 
     a file is written to and the output is saved to a massive string, which is written to the MasterFASTA file.</p></li>
 </ol>
-<!--#################################################################################################################-->
 
+<!--  -->
 ---
 # Important Files and Functions in ```pfpy/projects/current/```
 __Note:__ Not all files or functions are covered below.  
@@ -129,7 +128,7 @@ library files first, then build the condensed version.
 It should also be noted that currently, the condensed program does take longer to finish than the modular one. 
 
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## ```lib/compoundinfo.py```
 This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
@@ -170,7 +169,7 @@ If the result of ```flav_check``` returns as true, then the current plant's name
 The functions return ```True``` or ```False``` based on whether or not the required EC numbers are in the list 
 (parameter ```e```) which was passed to ```flav_check```.    
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## ```lib/knapsackinfo.py```
 This program uses the ```wget``` command in order to pull the information for each of the species from KNApSAcK. 
@@ -186,7 +185,7 @@ other databases.
 __Note:__ It will not work correctly if the ```wget``` system command is not installed (this has not yet been tested
 on Windows, may potentially only be compatible with Linux systems). 
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## ```lib/datatypes.py```
 This contains the custom data types that are or have been used in the program.  
@@ -409,5 +408,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbLTIwOTc5MDgwMzYsMTI3NTQwMTYxOF19
 -->
