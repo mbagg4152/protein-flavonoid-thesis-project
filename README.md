@@ -12,7 +12,7 @@ and analyzing the interactions between proteins and flavonoids or flavonoid-like
 ## Original Code Information
   > *KEGG.py, Made using Python 2.7  
   Originally Created on Wed Apr 17 2019. @author: vmoorman and Jordan Wilson    
-  JW started the code to get information from KEGG about the species we were interested in - April 2019*  
+JW started the code to get information from KEGG about the species we were interested in - April 2019*  
 
 <!--#################################################################################################################-->
 ---
@@ -408,3 +408,6 @@ Version | Change |
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI3NTQwMTYxOF19
+-->
