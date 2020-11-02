@@ -52,6 +52,10 @@ JW started the code to get information from KEGG about the species we were inter
 ---
 # Important Information About the Programs
 ## Flavonoid Code
+### Purpose
+Flavonoids are interesting and important chemical compounds produced by plants during various biological activities.  Unfortunately, there is some 
+
+
 ### How it works
 
  1. A list of plant pathways is built using the plant codes and the path map codes. For example, gmx00941 would refer to the flavonoid biosynthesis pathway for Glycine max (soybean).
@@ -403,5 +407,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NjcwMDc5NywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbLTIwNTE4OTg2MDksMTI3NTQwMTYxOF19
 -->
