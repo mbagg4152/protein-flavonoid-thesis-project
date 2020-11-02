@@ -168,14 +168,15 @@ __Note:__ It will not work correctly if the ```wget``` system command is not ins
 This contains the custom data types that are or have been used in the program.  
 ### ```ChemData```
 This class holds the data for each flavonoid. The objects are initialized with their file name and label and only later in the program, their empty list of plants will be filled.  
-__ATTRIBUTES__    
-```self.label```: string that contains the flavonoids name  
-```self.plants```: list of plants predicted to produce the flavonoid  
-```self.file_name```: string that holds the flavonoids output file name  
-__FUNCTIONS__  
-```__init__```: constructor for the object  
-```__eq__```: defines equality of the object  
-```is_in```: determines if an identical or nearly identical object is already in the list  
+__Attributes__    
+* ```self.label```: string that contains the flavonoids name  
+* ```self.plants```: list of plants predicted to produce the flavonoid  
+* ```self.file_name```: string that holds the flavonoids output file name  
+
+__Functions__  
+* ```__init__```: constructor for the object  
+* ```__eq__```: defines equality of the object  
+* ```is_in```: determines if an identical or nearly identical object is already in the list  
 
 ### ```Plant```
 This object holds information about each plant used in the program. The plant objects are initialized with their scientific name and their code and then have different information added later.  
@@ -368,5 +369,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbODg2MDg1NzQ1LDk4NDQ4NTEyMywxMjc1ND
+AxNjE4XX0=
 -->
