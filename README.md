@@ -32,7 +32,6 @@ JW started the code to get information from KEGG about the species we were inter
     * You can find the BioPython documentation [_here._](https://biopython.org/wiki/Documentation)
 
 
-
 <!--  -->
 ---
 ## Project Structure
@@ -42,8 +41,7 @@ JW started the code to get information from KEGG about the species we were inter
 - ```pfpy/projects/current/flavonoid``` code (and related files) for flavonoid prediction  
 - ```pfpy/projects/current/protein``` code for the protein-flavonoid interaction project
 - ```pfpy/projects/current/flavonoid/data/``` output data folder  
-- ```pfpy/projects/current/flavonoid/data/Chemical_Data``` contains the files for the list of plants predicted per 
-                                                            flavonoid  
+- ```pfpy/projects/current/flavonoid/data/Chemical_Data``` contains the files for the list of plants predicted per flavonoid  
 - ```pfpy/projects/current/flavonoid/data/FASTA_Data``` contains FASTA EC number data  
 - ```pfpy/projects/current/flavonoid/data/Gene_Data``` contains the data pulled from KEGG for each plant pathway  
 - ```pfpy/projects/current/json_data```  holds the lists of plants & pathways used in the KEGG program (in JSON format).  
@@ -55,10 +53,13 @@ JW started the code to get information from KEGG about the species we were inter
 # How the programs work & the processes behind design
 ## Flavonoid Code
 ### How it works
+
+ 1. A list of plant pathways is built using the plant codes and the path map codes. For example, gmx00941 would refer to the flavonoid biosynthesis pathway for Glycine max (soybean).
+ 2. After the list is built, the program then makes a call to <code>KEGG.get()</code>, which retrieved the specific entry the pathway.
+
 <ol>
-  <li><p>A list of plant pathways is built using the plant codes and the path map codes. For example, gmx00941 would refer to the flavonoid biosynthesis 
-    pathway for Glycine max (soybean).</p></li>
-  <li><p>After the list is built, the program then makes a call to <code>KEGG.get()</code>, which retrieved the specific entry the pathway.</p></li>
+  <li><p></p></li>
+  <li><p></p></li>
   <ol>
     <li><p>Each entry contains important information, for the plant's genes for the specfic pathway.</p></li>
     <li><p>For each gene, a line is saved with the format: <code>Species Name, Gene ID, Compound Name, EC number(s), Orthology Code</code></p></li>
@@ -384,7 +385,8 @@ implement it correctly, most times there is someone online who has already asked
     have been kind enough to provide answers.  
     * Also it doesn't hurt to Google since you may find out that there are libraries that exist that could save time by  
     allowing you to use them instead of writing your own version yourself.
-<!--#################################################################################################################-->
+
+<!--  -->
 ---
 ## Original Changelog 
 Version | Change |
@@ -408,5 +410,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMTgyNTkyMywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbLTE4NzcwNTcwNjEsMTI3NTQwMTYxOF19
 -->
