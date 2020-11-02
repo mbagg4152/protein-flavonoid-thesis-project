@@ -67,7 +67,8 @@ JW started the code to get information from KEGG about the species we were inter
 <!--  -->
 ## KNApSAcK   code
 ### How it works
-1. KNApSAcK has a simple partial URL-fetch system for the purpose of being used in programs, ```http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism&word=```. 
+KNApSAcK has a simple partial URL-fetch system for the purpose of being used in programs, ```http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism&word=```. 
+1. The program starts by getting the list of animal codes (which is already done in ```jsondata.py```, then for each code append it to the end
 
 <!--  -->
 ---
@@ -391,5 +392,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDExNTAwOTEsMTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbMTc2NjM5MDA2MSwxMjc1NDAxNjE4XX0=
 -->
