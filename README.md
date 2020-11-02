@@ -271,18 +271,18 @@ __FUNCTIONS__
 ```is_in```: determines if an identical or nearly identical object is already in the list  
 ```simple```: returns a formatted string  
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## ```lib/jsondata.py```
 This file calls the ```get_json_data(filename,key)``` function from util.py, which reads in the list of plant and 
 pathway codes as well as the file containing the scientific name for each plant and the full name of each pathway map.
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## ```lib/pathstrings.py```
 This file just contains the strings which hold the dedicated output folder and file names.
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## ```lib/util.py```
 This file contains various utility functions used throughout the program.
@@ -300,7 +300,7 @@ This function takes in a list and then splits it into as many parts as specified
 #### ```write_readme```  
 Writes the program's original ```README``` file.
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## ```protein/protein.py```
 This program reads in a ```JSON``` file of PDB IDs and then appends the IDs to the end of a specific URL in order to 
@@ -317,7 +317,7 @@ If ```urllib``` receives an error code from trying to get a .pdb file, that is m
 and then attempt to convert the file to .pdb format.
 
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## ```protein/Types.py```
 This file contains two different classes and functions that are used to create new objects, which are used in 
@@ -345,12 +345,12 @@ This function takes the PDB file as a list of lists and based on the value at th
 SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the 
 available properties, a new ```Entry``` is returned.
 
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## ```protein/StringsAndConsts.py```
 This file simply contains several strings & constant values for ```protein.py```.
     
-<!--#################################################################################################################-->
+<!--  -->
 ---
 ## Notes for Continuing Development
 ### IDEs and Text Editors
@@ -408,5 +408,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTc5MDgwMzYsMTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbLTMxMTgyNTkyMywxMjc1NDAxNjE4XX0=
 -->
