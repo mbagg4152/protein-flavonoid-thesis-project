@@ -56,16 +56,14 @@ JW started the code to get information from KEGG about the species we were inter
 
  1. A list of plant pathways is built using the plant codes and the path map codes. For example, gmx00941 would refer to the flavonoid biosynthesis pathway for Glycine max (soybean).
  2. After the list is built, the program then makes a call to ```KEGG.get()```, which retrieved the specific entry the pathway.
-	 3. Each entry contains important information, for the plant's genes for the specfic pathway.
+	 3. Each entry contains important information, for the plant's genes for the specific pathway.
 	 4. For each gene, a line is saved with the format: ```Species Name, Gene ID, Compound Name, EC number(s), Orthology Code```
- 3. After getting the gene entries for each plant pathway (which is saved in ```data/Gene_Data```, each EC number is added to a list for
-    each ```Plant``` object. These objects also contain information such as the plant name, KEGG code and list of genes.
+ 3. After getting the gene entries for each plant pathway (which is saved in ```data/Gene_Data```, each EC number is added to a list for each ```Plant``` object. These objects also contain information such as the plant name, KEGG code and list of genes.
+ 4. Now that each plant has an associated list of EC numbers, the flavonoid prediction process can be done. This is done by checking the list of EC numbers for each plant and determining whether or not it has the correct EC numbers needed to produce a flavonoid. If a plant does meet the requirements, then the plants name is added to the list of plant for that specific ```ChemData``` (flavonoid) object.
+    
 
 
-  <li><p>Now that each plant has an associated list of EC numbers, the flavonoid prediction process can be done. This is done by checking
-    the list of EC numbers for each plant and determining whether or not it has the correct EC numbers needed to produce a flavonoid. 
-    If a plant does meet the requirements, then the plants name is added to the list of plant for that specific <code>ChemData</code> 
-    (flavonoid) object.</p></li>
+  <li><p></p></li>
     <ol>
     <li><p>Once the prediction process is done, each result is printed to a file named after the respective flavonoid and then the program
       displays the number of plants for each flavonoid as well as the path to the output file.</p></li>
@@ -406,5 +404,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MjI3OTEzNywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMjAzMTg1MjM4MywxMjc1NDAxNjE4XX0=
 -->
