@@ -71,7 +71,7 @@ KNApSAcK has a simple partial URL-fetch system for the purpose of being used in 
 1. The program starts by getting the list of animal names (which is already done in ```jsondata.py```, then for each name append it to the end of the partial URL, e.g. if the plant is Glycine max, then the URL would end up as ```http://www.knapsackfamily.com/knapsack_core/result.php?sname=all&word=Glycine max```.
 2. After building the URL, the program then downloads the corresponding HTML file using the ```wget``` system command.
 3. The HTML is then parsed and any line containing one of the flavonoids of interest or a relative is saved by the program to later be output.
-	* For instance, Kaempferol is of interes
+	* For instance, Kaempferol is of interest. Both lines containing just Kaempferol, or lines that have Kaempferol as a substring (ex. Kaempferol 3-galactoside-7-rhamnoside) will be saved.
 
 <!--  -->
 ---
@@ -395,5 +395,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMzE0NjAyMCwxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbLTExMTEyNzIzMzQsMTI3NTQwMTYxOF19
 -->
