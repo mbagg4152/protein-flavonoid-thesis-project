@@ -27,7 +27,6 @@ JW started the code to get information from KEGG about the species we were inter
   - Install python package __bioservices__: ```[pip|pip3] install bioservices```  
     * _Using pip should work, but a system may recognize ```pip3``` instead._   
     * You can find the bioservices documentation [_here._](https://bioservices.readthedocs.io/en/master/)
-
   - Install python package __BioPython__: ```[pip|pip3] install biopython```  
     * You can find the BioPython documentation [_here._](https://biopython.org/wiki/Documentation)
 
@@ -56,10 +55,7 @@ JW started the code to get information from KEGG about the species we were inter
 Flavonoids are interesting and important chemical compounds produced by plants during various biological activities.  Unfortunately, there is some bias towards specific flavonoids and species when it comes to experiments and published research. This is where the prediction code becomes important.  
 KEGG has a list of roughly 100 species and their genomes available in their system. In addition, there is also a lot of information about their biological activities. Through the collection of research and experimental information, a comprehensive list of known EC numbers has been compiled for each of these plants.   
 Using the reference pathway maps (phenylpropanoid, flavonoid and isoflavonoid biosynthesis), a list of 'requirements' needed to produce each flavonoid of interest can be produced. By using this set of requirements and the EC numbers for each of the plants, the program is then able to predict whether or not any given plant could produce each of the flavonoids, based solely on the EC numbers.   
-This program sh
-
-
-
+This program should prove to be helpful in providing greater information regarding flavonoid biosynthesis and can hopefully prove to be a useful tool or reference in future research.    
 
 ### How it works
  1. A list of plant pathways is built using the plant codes and the path map codes. For example, gmx00941 would refer to the flavonoid biosynthesis pathway for Glycine max (soybean).
@@ -411,5 +407,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkzODEzMTcwLDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbLTQwNzQyMjkxMywxMjc1NDAxNjE4XX0=
 -->
