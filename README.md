@@ -52,13 +52,16 @@ JW started the code to get information from KEGG about the species we were inter
 ---
 # Important Information About the Programs
 ## Flavonoid Code
-### Purpose
+### About
 Flavonoids are interesting and important chemical compounds produced by plants during various biological activities.  Unfortunately, there is some bias towards specific flavonoids and species when it comes to experiments and published research. This is where the prediction code becomes important.  
-KEGG has a list of roughly 100 species and their genomes available in their system. In addition, there is also a lot of information about their biological activities. Through the collection of research and experimental information, a comprehensive list of known EC numbers has been compiled for each of these plants. Using the reference pathway maps (phenylpropanoid, flavonoid and isoflavonoid biosynthesis), a list of 'requirements' needed to produce each flavonoid of interest can be produced. By using this set of requirements and the EC numbers for each of the plants, the program is then able to predict whether or not any given plant could produce each of the gf
+KEGG has a list of roughly 100 species and their genomes available in their system. In addition, there is also a lot of information about their biological activities. Through the collection of research and experimental information, a comprehensive list of known EC numbers has been compiled for each of these plants.   
+Using the reference pathway maps (phenylpropanoid, flavonoid and isoflavonoid biosynthesis), a list of 'requirements' needed to produce each flavonoid of interest can be produced. By using this set of requirements and the EC numbers for each of the plants, the program is then able to predict whether or not any given plant could produce each of the flavonoids, based solely on the EC numbers.   
+This program sh
+
+
 
 
 ### How it works
-
  1. A list of plant pathways is built using the plant codes and the path map codes. For example, gmx00941 would refer to the flavonoid biosynthesis pathway for Glycine max (soybean).
  2. After the list is built, the program then makes a call to ```KEGG.get()```, which retrieved the specific entry the pathway.  
 	* Each entry contains important information, for the plant's genes for the specific pathway.
@@ -73,7 +76,7 @@ KEGG has a list of roughly 100 species and their genomes available in their syst
 
 
 ## KNApSAcK   code
-### Purpose
+### About
 The KNApSAcK code was written for the purpose of aiding the literature search process. The database contains a multitude of useful entries relating to the list of KEGG species and going through the lists manually for each plant would be extremely time consuming. In order to speed up the process, this program was written.  
 When an organism is searched in KNApSAcK, a list of known metabolites/compounds are displayed to the user in a regular HTML web page. Since the format is consistent and easy to parse, it seemed of best interest to save each compound entry for each plant if they were known to produce a flavonoid of interest or one of their relatives.   
 Finding and keeping track of the known metabolites for each of the plants in the KEGG list is important to have for reference and could prove to be beneficial in future research.
@@ -408,5 +411,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3Mzg0MzEzMCwxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbNTkzODEzMTcwLDEyNzU0MDE2MThdfQ==
 -->
