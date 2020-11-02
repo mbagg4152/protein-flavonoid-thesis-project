@@ -97,16 +97,14 @@ The current main file of the program for the flavonoid prediction portion of the
 
   
 #### ```path_parse```
-This function is called and passed a pathway for a specific organism . For each pathway that is passed in, the code uses the KEGG plugin in order to get the gene data for the specific pathway, which is done using the 
-following lines:  
+This function is called and passed a pathway for a specific organism . For each pathway that is passed in, the code uses the KEGG plugin in order to get the gene data for the specific pathway, which is done using the following lines:  
   ```python
       raw = kegg.get(pathway_id)
       gd = kegg.parse(raw)
       ...
       fetched_genes = gd.get('GENE')
   ```
-Once the gene data is collected,the data is split up into different list items. For reference, a single gene entry for 
-cam00941 is shown below (the other entries in 'GENE' take similar form):  
+Once the gene data is collected,the data is split up into different list items. For reference, a single gene entry for cam00941 is shown below (the other entries in 'GENE' take similar form):  
   ```python
   'GENE': {'101489106': 'chalcone synthase 1 [KO:K00660] [EC:2.3.1.74]', ...}
   ```
@@ -114,15 +112,10 @@ Then the data is added to a list such that this gene data is associated with the
 
 
 ## ```flavonoid/keggv2_with_libs.py```
-This file is a 'condensed' version of  ```keggv2.py```. Instead of relying on the external imports from the ```lib``` 
-directory, all of the important variables, functions, etc. are located in within the main file. __Note:__ the  
-```json_data``` directory is still needed for the program to work correctly.    
-This file was made more for convenience since imports can sometimes behave strangely, plus this decreases the number of 
-code files needed to accomplish the same tasks.  
-When continuing development, if you wish to keep a condensed version, it is highly suggested to work on the main and 
-library files first, then build the condensed version.   
-It should also be noted that currently, the condensed program does take longer to finish than the modular one. 
-
+This file is a 'condensed' version of  ```keggv2.py```. Instead of relying on the external imports from the ```lib``` directory, all of the important variables, functions, etc. are located in within the main file.   
+__Note:__ the  ```json_data``` directory is still needed for the program to work correctly.    
+This file was made more for convenience since imports can sometimes behave strangely, plus this decreases the number of code files needed to accomplish the same tasks.   
+When continuing development, if you wish to keep a condensed version, it is highly suggested to work on the main and library files first, then build the condensed version.   
 
 <!--  -->
 ---
@@ -405,5 +398,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODA1NzA4MywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMTI3Mjg3NzY5OSwxMjc1NDAxNjE4XX0=
 -->
