@@ -93,7 +93,6 @@ The current main file of the program for the flavonoid prediction portion of the
     <code>FastaEcEntry</code> object which is then added to a list for its appropriate <code>EcFastaCollection</code> object, which is determined
     by EC number. Once the parsing is done (which does take a long time to finish) then for each <code>EcFastaCollection</code> object, 
     a file is written to and the output is saved to a massive string, which is written to the MasterFASTA file.</p></li>
-  <li><p></p></li>
 </ol>
   
   
