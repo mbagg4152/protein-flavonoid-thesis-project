@@ -54,7 +54,7 @@ JW started the code to get information from KEGG about the species we were inter
 ## Flavonoid Code
 ### Purpose
 Flavonoids are interesting and important chemical compounds produced by plants during various biological activities.  Unfortunately, there is some bias towards specific flavonoids and species when it comes to experiments and published research. This is where the prediction code becomes important.  
-KEGG has a list of roughly 100 species and their genomes available in their system. In addition, there is also a lot of information about their biological activities. Through the collection of research and experimental information, a comprehensive list of known EC numbers has been compiled for each of these plants. Using the reference pathway maps (phenylpropanoid, flavonoid and isoflavonoid biosynthesis
+KEGG has a list of roughly 100 species and their genomes available in their system. In addition, there is also a lot of information about their biological activities. Through the collection of research and experimental information, a comprehensive list of known EC numbers has been compiled for each of these plants. Using the reference pathway maps (phenylpropanoid, flavonoid and isoflavonoid biosynthesis), a list of 'requirements' needed to produce each flavonoid of interest can be produced. By using this set of requirements and the EC numbers for each of the plants, the program is then able to predict whether or not any given plant could produce each of the gf
 
 
 ### How it works
@@ -408,5 +408,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkxNTE1ODU4LDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbMjA3Mzg0MzEzMCwxMjc1NDAxNjE4XX0=
 -->
