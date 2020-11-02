@@ -287,38 +287,26 @@ Writes the program's original ```README``` file.
 <!--  -->
 ---
 ## ```protein/protein.py```
-This program reads in a ```JSON``` file of PDB IDs and then appends the IDs to the end of a specific URL in order to 
-download each desired PDB or mmCIF file. 
-When a PDB ID + the desired file extension (```.pdb```, ```.xml```, ```.cif```) is appended to the simple partial 
-URL ```https://files.rcsb.org/view/```, the program can then call ```urllib.request.urlretrieve(url, file_path)```, 
-where ```file_path``` is the name of the file that  ```urllib``` will save the web page content to.   
-For example, if the current iteration is looking at ID 4V4D (large structure), the code would get the mmCIF file using 
-the URL ```https://files.rcsb.org/view/4V4D.cif```.  
-If a given file can be found in ```protein/output/pdb_files```, then the program will skip the download process and go 
-straight to parsing the file's information.   
-If ```urllib``` receives an error code from trying to get a .pdb file, that is most likely due to PDB not providing 
-.pdb files for large structures. If an error is occurred, then the program attempts to fetch the appropriate .cif file 
-and then attempt to convert the file to .pdb format.
-
+This program reads in a ```JSON``` file of PDB IDs and then appends the IDs to the end of a specific URL in order to download each desired PDB or mmCIF file. 
+When a PDB ID + the desired file extension (```.pdb```, ```.xml```, ```.cif```) is appended to the simple partial URL ```https://files.rcsb.org/view/```, the program can then call ```urllib.request.urlretrieve(url, file_path)```,  where ```file_path``` is the name of the file that  ```urllib``` will save the web page content to.   
+For example, if the current iteration is looking at ID 4V4D (large structure), the code would get the mmCIF file using the URL ```https://files.rcsb.org/view/4V4D.cif```.  
+If a given file can be found in ```protein/output/pdb_files```, then the program will skip the download process and go straight to parsing the file's information.   
+If ```urllib``` receives an error code from trying to get a .pdb file, that is most likely due to PDB not providing .pdb files for large structures. If an error is occurred, then the program attempts to fetch the appropriate .cif file and then attempt to convert the file to .pdb format.
 
 <!--  -->
 ---
 ## ```protein/Types.py```
-This file contains two different classes and functions that are used to create new objects, which are used in 
-```protein.py```.  
+This file contains two different classes and functions that are used to create new objects, which are used in ```protein.py```.  
 #### ```Record```
-This object holds the information from PDB files for a single ```ATOM/HETATM``` line or record.  
-For example, the following lines would be appropriately converted into ```Record``` objects using the function 
+This object holds the information from PDB files for a single ```ATOM/HETATM``` line or record.  For example, the following lines would be appropriately converted into ```Record``` objects using the function 
 ```new_record```:
 ```
 ATOM   1258  CA  THR B  59      22.806  24.345  36.922  1.00 23.83           C 
 HETATM 1815  O   HOH A 133      17.558  28.943  -4.426  1.00 23.32           O  
 ```
 #### ```new_record```
-In ```protein.py```, if a line begins with ```ATOM/HETATM``` then this function is called to create a new ```Record``` 
-object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
-Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with 
-values from the passed in line.
+In ```protein.py```, if a line begins with ```ATOM/HETATM``` then this function is called to create a new ```Record``` object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
+Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with values from the passed in line.
 
 #### ```Entry```
 These objects contain data from the PDB files themselves, not just simple lines. Each ```Entry``` contains specific 
@@ -393,5 +381,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDU3MjIwNywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbLTQwNjUyNTgyMSwxMjc1NDAxNjE4XX0=
 -->
