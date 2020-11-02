@@ -66,7 +66,8 @@ JW started the code to get information from KEGG about the species we were inter
  6. The final step is to build the master FASTA files and the FASTA files organized by EC number. For each gene that is encountered, its list of EC numbers, Gene ID and KEGG code are looked at. Using the partial DBGET URL, ```KEGG_code:Gene_ID``` is appended to the end to create the full REST URL. The program saves the HTML, parses it, then adds the FASTA entry to its own ```FastaEcEntry``` object which is then added to a list for its appropriate ```EcFastaCollection``` object, which is determined by EC number. Once the parsing is done (which does take a long time to finish) then for each ```EcFastaCollection``` object, a file is written to and the output is saved to a massive string, which is written to the MasterFASTA file. 
 <!--  -->
 ## KNApSAcK   code
-### 
+### How it works
+1. KNApSAcK has a simple partial URL-fetch system for the purpose of being used in programs, ```http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism&word=```. 
 
 <!--  -->
 ---
@@ -390,5 +391,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzA3NTc1MjMsMTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbLTEyMDExNTAwOTEsMTI3NTQwMTYxOF19
 -->
