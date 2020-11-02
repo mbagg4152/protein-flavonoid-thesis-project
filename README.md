@@ -138,32 +138,22 @@ Takes in a list and elements and returns true if at least ONE element is present
 Takes in a list and elements and returns true only if all of the passed elements are in the list.
   
 ### The Logical Functions  
-Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite 
-compounds which are found on the map. The prerequisite functions are used to get the total result for the specific 
-compound. If the prerequisite returns ```False```, the compound logic function will also return ```False```.  
-Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines 
-at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
+Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite compounds which are found on the map. The prerequisite functions are used to get the total result for the specific compound. If the prerequisite returns ```False```, the compound logic function will also return ```False```.  
+Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
 For example, the function for Cinnamic acid, which requires ```EC:4.3.1.24``` OR ```EC:4.3.1.25``` is written as such:  
 ```python
 def tca(e): return or_in(e, E1, E2)  # cinnamic acid
 ```
 The logical functions are used in the function ```finish_up``` in ```kegg-prog.py```. 
-For each plant's total EC list, 
-the program will loop through each of the flavonoids' logical requirements, which are held held in the list of 
-```ChemData``` objects called ```data_lists```, where each item ```chem_data``` has a property ```chem_data.label``` 
-that is passed to a function in ```compoundinfo.py``` called ```flav_check```, which then determines the logical 
-function to be called. 
-If the result of ```flav_check``` returns as true, then the current plant's name will be appended
- to the list of plants, which is held in ```chem_data.species```. 
-The functions return ```True``` or ```False``` based on whether or not the required EC numbers are in the list 
-(parameter ```e```) which was passed to ```flav_check```.    
+For each plant's total EC list, the program will loop through each of the flavonoids' logical requirements, which are held held in the list of ```ChemData``` objects called ```data_lists```, where each item ```chem_data``` has a property ```chem_data.label``` that is passed to a function in ```compoundinfo.py``` called ```flav_check```, which then determines the logical function to be called. 
+If the result of ```flav_check``` returns as true, then the current plant's name will be appended to the list of plants, which is held in ```chem_data.species```. 
+The functions return ```True``` or ```False``` based on whether or not the required EC numbers are in the list (parameter ```e```) which was passed to ```flav_check```.    
 
 <!--  -->
 ---
 ## ```lib/knapsackinfo.py```
 This program uses the ```wget``` command in order to pull the information for each of the species from KNApSAcK. 
-For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of 
-interest.  
+For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of interest.  
 After the HTML page for each plant is retrieved, the file is then parsed.
 Any lines containing the names of the flavonoids of interest will be saved, stripped of HTML syntax and broken down into 
 a list of lists for the plant.
@@ -398,5 +388,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3Mjg3NzY5OSwxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbNzYxMjI4MDYzLDEyNzU0MDE2MThdfQ==
 -->
