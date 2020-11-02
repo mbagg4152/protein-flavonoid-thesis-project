@@ -86,7 +86,7 @@ KNApSAcK has a simple partial URL-fetch system for the purpose of being used in 
 
 <!--  -->
 ---
-# Important Files and Functions in ```pfpy/projects/current/```
+# Important Files and Functions
 __Note:__ Not all files or functions are covered below.  
 
 ## ```flavonoid/keggv1.py```
@@ -97,8 +97,7 @@ The current main file of the program for the flavonoid prediction portion of the
 
   
 #### ```path_parse```
-This function is called and passed a pathway for a specific organism . For each pathway that is passed 
-in, the code uses the kegg plugin in order to get the gene data for the specific pathway, which is done using the 
+This function is called and passed a pathway for a specific organism . For each pathway that is passed in, the code uses the KEGG plugin in order to get the gene data for the specific pathway, which is done using the 
 following lines:  
   ```python
       raw = kegg.get(pathway_id)
@@ -406,5 +405,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMjQwMzE1NSwxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMTg3ODA1NzA4MywxMjc1NDAxNjE4XX0=
 -->
