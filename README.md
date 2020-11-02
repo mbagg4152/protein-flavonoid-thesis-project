@@ -54,7 +54,7 @@ JW started the code to get information from KEGG about the species we were inter
 ## Flavonoid Code
 ### Purpose
 Flavonoids are interesting and important chemical compounds produced by plants during various biological activities.  Unfortunately, there is some bias towards specific flavonoids and species when it comes to experiments and published research. This is where the prediction code becomes important.  
-KEGG has a list of roughly 100 species and their genomes available in their systen
+KEGG has a list of roughly 100 species and their genomes available in their system. In addition, there is also a lot of information about their biological activities. Through the collection of research and experimental informatio
 
 
 ### How it works
@@ -408,5 +408,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MjM5Mjg4NywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbOTcxMzc0MjIzLDEyNzU0MDE2MThdfQ==
 -->
