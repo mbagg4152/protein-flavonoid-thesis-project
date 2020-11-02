@@ -176,6 +176,7 @@ __FUNCTIONS__
 ```__init__```: constructor for the object  
 ```__eq__```: defines equality of the object  
 ```is_in```: determines if an identical or nearly identical object is already in the list  
+
 ### ```Plant```
 This object holds information about each plant used in the program. The plant objects are initialized with their scientific name and their code and then have different information added later.  
 __Attributes__    
@@ -192,35 +193,40 @@ __Functions__
 * ```is_in```: determines if an identical or nearly identical object is already in the list  
 * ```has_ec_count```: used to determine whether or not a specific EC number is already in the list of EC counts  
 * ```incr_ec_count```: used to increase the count for the EC count objects.  
+
 ### ```PathGene```
 This object is used to hold Gene objects in a way such that they are sorted by the pathway from which they were
 found.   
-__ATTRIBUTES__  
-```self.path```: the pathway that resulted in the gene entry   
-```self.genes```: the list of gene entries from this pathway   
-__FUNCTIONS__   
-```__init__```: constructor for the object   
-```__eq__```: defines equality of the object   
-```is_in```: determines if an identical or nearly identical object is already in the list   
+__Attributes__  
+* ```self.path```: the pathway that resulted in the gene entry   
+* ```self.genes```: the list of gene entries from this pathway   
+
+__Functions__   
+* ```__init__```: constructor for the object   
+* ```__eq__```: defines equality of the object   
+* ```is_in```: determines if an identical or nearly identical object is already in the list   
+
 ### ```Gene```
 This object holds data gathered from KEGG for each plant's pathway (like aip00491).  
-ATTRIBUTES  
-```self.gene_id```: the ID of the gene from a plant  
-```self.plant```: the scientific name of the plant that has this gene  
-```self.plant_code```: the KEGG code for the plant  
-```self.compound```: the compound name listed in the entry  
-```self.ec_nums```: the list of EC numbers found in the entry  
-```self.ortho```: the KEGG orthology code for the compound  
-```self.path```: the pathway where the gene was found  
-__FUNCTIONS__  
-```__init__```: constructor for the object  
-```__eq__```: defines equality of the object  
-```is_in```: determines if an identical or nearly identical object is already in the list  
-```simple```: returns a formatted string that contains information from the object  
-```no_plant```: same as simple, but without including the plant name  
+__Attributes__ 
+* ```self.gene_id```: the ID of the gene from a plant  
+* ```self.plant```: the scientific name of the plant that has this gene  
+* ```self.plant_code```: the KEGG code for the plant  
+* ```self.compound```: the compound name listed in the entry  
+* ```self.ec_nums```: the list of EC numbers found in the entry  
+* ```self.ortho```: the KEGG orthology code for the compound  
+* ```self.path```: the pathway where the gene was found  
+* 
+__Functions__  
+* ```__init__```: constructor for the object  
+* ```__eq__```: defines equality of the object  
+* ```is_in```: determines if an identical or nearly identical object is already in the list  
+* ```simple```: returns a formatted string that contains information from the object  
+* ```no_plant```: same as simple, but without including the plant name  
+
 ### ```EcFastaCollection```
 This object is used to hold the associated FASTA entries for any given EC number.  
-__ATTRIBUTES__  
+__Attributes__  
 ```self.ec_name```: the EC number & name used when writing the file  
 ```self.ec_entries```: the list of associated FASTA entries (FastaEcEntry objects)  
 __FUNCTIONS__  
@@ -385,5 +391,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MDExMDE5NywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbLTg3MjU1MzA5LDEyNzU0MDE2MThdfQ==
 -->
