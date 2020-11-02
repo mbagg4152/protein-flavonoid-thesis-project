@@ -166,7 +166,7 @@ __Note:__ It will not work correctly if the ```wget``` system command is not ins
 ---
 ## ```lib/datatypes.py```
 This contains the custom data types that are or have been used in the program.  
-### ```ChemData```
+### `ChemData` 
 This class holds the data for each flavonoid. The objects are initialized with their file name and label and only later in the program, their empty list of plants will be filled.  
 __Attributes__    
 * ```self.label```: string that contains the flavonoids name  
@@ -369,6 +369,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg2MDg1NzQ1LDk4NDQ4NTEyMywxMjc1ND
-AxNjE4XX0=
+eyJoaXN0b3J5IjpbLTEwMDU1ODY4NzcsOTg0NDg1MTIzLDEyNz
+U0MDE2MThdfQ==
 -->
