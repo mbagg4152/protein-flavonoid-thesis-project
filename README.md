@@ -23,7 +23,6 @@ JW started the code to get information from KEGG about the species we were inter
     ```Python 3.8.3```  
     * Windows now has Python 3 on the Microsoft store, so checking the current version could be done by finding 
     the list of installed  programs by navigating to ```Control Panel --> Programs --> Uninstall a Program```
-
   - Install python package __bioservices__: ```[pip|pip3] install bioservices```  
     * _Using pip should work, but a system may recognize ```pip3``` instead._   
     * You can find the bioservices documentation [_here._](https://bioservices.readthedocs.io/en/master/)
@@ -407,5 +406,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNzQyMjkxMywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbLTUxMjQwMzE1NSwxMjc1NDAxNjE4XX0=
 -->
