@@ -53,8 +53,9 @@ and analyzing the interactions between proteins and flavonoids or flavonoid-like
 
 <!--#################################################################################################################-->
 ---
-## How the programs work & the processes behind design
-### Flavonoid Code
+# How the programs work & the processes behind design
+## Flavonoid Code
+### How it works
 <ol>
   <li><p>A list of plant pathways is built using the plant codes and the path map codes. For example, gmx00941 would refer to the flavonoid biosynthesis 
     pathway for Glycine max (soybean).</p></li>
@@ -87,6 +88,7 @@ and analyzing the interactions between proteins and flavonoids or flavonoid-like
     a file is written to and the output is saved to a massive string, which is written to the MasterFASTA file.</p></li>
 </ol>
 <!--#################################################################################################################-->
+
 ---
 # Important Files and Functions in ```pfpy/projects/current/```
 __Note:__ Not all files or functions are covered below.  
