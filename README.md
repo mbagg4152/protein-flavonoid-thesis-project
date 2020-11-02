@@ -227,37 +227,40 @@ __Functions__
 ### ```EcFastaCollection```
 This object is used to hold the associated FASTA entries for any given EC number.  
 __Attributes__  
-```self.ec_name```: the EC number & name used when writing the file  
-```self.ec_entries```: the list of associated FASTA entries (FastaEcEntry objects)  
-__FUNCTIONS__  
-```__init__```: constructor for the object  
-```__eq__```: defines equality of the object  
-```is_in```: determines if an identical or nearly identical object is already in the list  
+* ```self.ec_name```: the EC number & name used when writing the file  
+* ```self.ec_entries```: the list of associated FASTA entries (FastaEcEntry objects)  
+
+__Functions__  
+* ```__init__```: constructor for the object  
+* ```__eq__```: defines equality of the object  
+* ```is_in```: determines if an identical or nearly identical object is already in the list  
+
 ### ```EcCounts```
-This object is a property of the Plant object and is used to hold each EC number and the number of times it occurs
-in gene entries of a given plant.  
-__ATTRIBUTES__  
-```self.number```: the EC number  
-```self.count```: number of times that the EC number shows up in gene entries.  
-__FUNCTIONS__  
-```__init__```: constructor for the object  
+This object is a property of the Plant object and is used to hold each EC number and the number of times it occurs in gene entries of a given plant.  
+__Attributes__  
+* ```self.number```: the EC number  
+* ```self.count```: number of times that the EC number shows up in gene entries.  
+
+__Functions__  
+* ```__init__```: constructor for the object  
+
 ### ```FastaEcEntry```
 This object is a property of EcFastaCollection and contains the information for a specific FASTA entry.  
-__ATTRIBUTES__  
-```self.gene_id```: the gene ID associated with the sequence  
-```self.plant```: the plant that the gene is from  
-```self.dna_seq```: the dna sequence/FASTA entry for the specific gene  
-__FUNCTIONS__  
-```__init__```: constructor for the object  
-```__eq__```: defines equality of the object  
-```is_in```: determines if an identical or nearly identical object is already in the list  
-```simple```: returns a formatted string  
+__Attributes__  
+* ```self.gene_id```: the gene ID associated with the sequence  
+* ```self.plant```: the plant that the gene is from  
+* ```self.dna_seq```: the DNA sequence/FASTA entry for the specific gene  
+
+__Functions__  
+* ```__init__```: constructor for the object  
+* ```__eq__```: defines equality of the object  
+* ```is_in```: determines if an identical or nearly identical object is already in the list  
+* ```simple```: returns a formatted string  
 
 <!--  -->
 ---
 ## ```lib/jsondata.py```
-This file calls the ```get_json_data(filename,key)``` function from util.py, which reads in the list of plant and 
-pathway codes as well as the file containing the scientific name for each plant and the full name of each pathway map.
+This file calls the ```get_json_data(filename,key)``` function from util.py, which reads in the list of plant and pathway codes as well as the file containing the scientific name for each plant and the full name of each pathway map.
 
 <!--  -->
 ---
@@ -270,8 +273,7 @@ This file just contains the strings which hold the dedicated output folder and f
 This file contains various utility functions used throughout the program.
 
 #### ```get_json_data```  
-This function uses the python JSON library in order to parse JSON files into usable python objects. Can return
-lists or dictionaries, depending on the JSON file's structure.  
+This function uses the python JSON library in order to parse JSON files into usable python objects. Can return lists or dictionaries, depending on the JSON file's structure.  
 
 #### ```remove_dupes```   
 Removes duplicate elements from a list.  
@@ -391,5 +393,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MjU1MzA5LDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbMTQ2MDU3MjIwNywxMjc1NDAxNjE4XX0=
 -->
