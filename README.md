@@ -70,7 +70,8 @@ JW started the code to get information from KEGG about the species we were inter
 ## KNApSAcK   code
 ### Purpose
 The KNApSAcK code was written for the purpose of aiding the literature search process. The database contains a multitude of useful entries relating to the list of KEGG species and going through the lists manually for each plant would be extremely time consuming. In order to speed up the process, this program was written.  
-When an organism is searched in KNApSAcK, a list of known metabolites/compounds are displayed to the user in a regular HTML web page. Since the format is consistent and easy to parse, it seemed of best interest to save each compound entry for each plant if they were known to produce a flavonoid o
+When an organism is searched in KNApSAcK, a list of known metabolites/compounds are displayed to the user in a regular HTML web page. Since the format is consistent and easy to parse, it seemed of best interest to save each compound entry for each plant if they were known to produce a flavonoid of interest or one of their relatives.   
+Finding and keeping track of the known metabolites for each of the plants in the KEGG list is important to have for reference and could prove to be beneficial in future research.
 
 ### How it works
 KNApSAcK has a simple partial URL-fetch system for the purpose of being used in programs, ```http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism&word=```. 
@@ -402,5 +403,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAxNzA2OTY4LDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbMTQ2NjcwMDc5NywxMjc1NDAxNjE4XX0=
 -->
