@@ -64,7 +64,9 @@ JW started the code to get information from KEGG about the species we were inter
  5. Once the prediction process is done, the code then moves on to create a master count matrix/list. This list (and output file) contain the number of times each EC number appears in the gene entries for each plant. When checking for each plant and each EC number, the list of <code>EcCounts</code> for each plant will increment the <code>self.count</code> property each time an EC number is encountered. Once the list is filled, the program outputs the counts with the format ```Species Name: [EC:#.#.#.# count #] ...```
 	* If you look at the code, you may notice that there is no effort made to prevent adding duplicate EC numbers to the list for each plant,  this is why. This is the easiest way to keep track of the counts.
  6. The final step is to build the master FASTA files and the FASTA files organized by EC number. For each gene that is encountered, its list of EC numbers, Gene ID and KEGG code are looked at. Using the partial DBGET URL, ```KEGG_code:Gene_ID``` is appended to the end to create the full REST URL. The program saves the HTML, parses it, then adds the FASTA entry to its own ```FastaEcEntry``` object which is then added to a list for its appropriate ```EcFastaCollection``` object, which is determined by EC number. Once the parsing is done (which does take a long time to finish) then for each ```EcFastaCollection``` object, a file is written to and the output is saved to a massive string, which is written to the MasterFASTA file. 
-    
+<!--  -->
+## KNApSAcK   code
+### 
 
 <!--  -->
 ---
@@ -388,5 +390,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODc3NTU4OCwxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbLTE1NzA3NTc1MjMsMTI3NTQwMTYxOF19
 -->
