@@ -65,7 +65,12 @@ JW started the code to get information from KEGG about the species we were inter
 	* If you look at the code, you may notice that there is no effort made to prevent adding duplicate EC numbers to the list for each plant,  this is why. This is the easiest way to keep track of the counts.
  6. The final step is to build the master FASTA files and the FASTA files organized by EC number. For each gene that is encountered, its list of EC numbers, Gene ID and KEGG code are looked at. Using the partial DBGET URL, ```KEGG_code:Gene_ID``` is appended to the end to create the full REST URL. The program saves the HTML, parses it, then adds the FASTA entry to its own ```FastaEcEntry``` object which is then added to a list for its appropriate ```EcFastaCollection``` object, which is determined by EC number. Once the parsing is done (which does take a long time to finish) then for each ```EcFastaCollection``` object, a file is written to and the output is saved to a massive string, which is written to the MasterFASTA file. 
 <!--  -->
+
+
 ## KNApSAcK   code
+### Purpose
+The KNApSAcK code was written for the purpose of aiding the literature search process. The database contains a multitude of useful entries relating to the list of KEGG species and going through the lis
+
 ### How it works
 KNApSAcK has a simple partial URL-fetch system for the purpose of being used in programs, ```http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism&word=```. 
 1. The program starts by getting the list of animal names (which is already done in ```jsondata.py```, then for each name append it to the end of the partial URL, e.g. if the plant is Glycine max, then the URL would end up as ```http://www.knapsackfamily.com/knapsack_core/result.php?sname=all&word=Glycine max```.
@@ -396,5 +401,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNzkxOTYyMCwxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMTU1Mzk1NDQ5OSwxMjc1NDAxNjE4XX0=
 -->
