@@ -50,7 +50,7 @@ JW started the code to get information from KEGG about the species we were inter
 
 <!--  -->
 ---
-# How the programs work & the processes behind design
+# Important Information About the Programs
 ## Flavonoid Code
 ### How it works
 
@@ -72,7 +72,7 @@ KNApSAcK has a simple partial URL-fetch system for the purpose of being used in 
 2. After building the URL, the program then downloads the corresponding HTML file using the ```wget``` system command.
 3. The HTML is then parsed and any line containing one of the flavonoids of interest or a relative is saved by the program to later be output.
 	* For instance, Kaempferol is a flavonoid of interest. Both lines containing just Kaempferol, or lines that have Kaempferol as a sub-string (ex. Kaempferol 3-galactoside-7-rhamnoside) will be saved.
-4. Once all of the files have been parsed and the desired lines have been saved, the program will create an output file containing all of the lines of interest, where each line takes the form 
+4. Once all of the files have been parsed and the desired lines have been saved, the program will create an output file containing all of the lines of interest, where each line takes the form ```Species Name, KNApSAcK Compound ID, Compound Name```
 
 <!--  -->
 ---
@@ -396,5 +396,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNjE3OTY5OSwxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMjAxNzkxOTYyMCwxMjc1NDAxNjE4XX0=
 -->
