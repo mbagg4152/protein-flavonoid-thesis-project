@@ -98,16 +98,16 @@ The current main file of the program for the flavonoid prediction portion of the
   
 #### `path_parse`
 This function is called and passed a pathway for a specific organism . For each pathway that is passed in, the code uses the KEGG plugin in order to get the gene data for the specific pathway, which is done using the following lines:  
-  `python
+  ```python
       raw = kegg.get(pathway_id)
       gd = kegg.parse(raw)
       ...
       fetched_genes = gd.get('GENE')
-  `
+  ```
 Once the gene data is collected,the data is split up into different list items. For reference, a single gene entry for cam00941 is shown below (the other entries in 'GENE' take similar form):  
-  `python
+  ```python
   'GENE': {'101489106': 'chalcone synthase 1 [KO:K00660] [EC:2.3.1.74]', ...}
-  `
+```
 Then the data is added to a list such that this gene data is associated with the appropriate plant.
 
 
@@ -122,14 +122,14 @@ When continuing development, if you wish to keep a condensed version, it is high
 ## `lib/compoundinfo.py`
 This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
 Some of the EC number variables are shown below:
-`python
+```python
 E1 = 'EC:4.3.1.24'
 E2 = 'EC:4.3.1.25'
 ...
 E17_2 = 'EC:1.1.1.219 1.1.1.234' # unique number for bifunctional dihydroflavonol 4-reductase/flavanone 4-reductase
 ...
 E26 = 'EC:2.4.1.136'
-`
+```
 
 ### `or_in`
 Takes in a list and elements and returns true if at least ONE element is present in the list.
@@ -141,9 +141,9 @@ Takes in a list and elements and returns true only if all of the passed elements
 Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite compounds which are found on the map. The prerequisite functions are used to get the total result for the specific compound. If the prerequisite returns `False`, the compound logic function will also return `False`.  
 Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
 For example, the function for Cinnamic acid, which requires `EC:4.3.1.24` OR `EC:4.3.1.25` is written as such:  
-`python
+```python
 def tca(e): return or_in(e, E1, E2)  # cinnamic acid
-`
+```
 The logical functions are used in the function `finish_up` in `kegg-prog.py`. 
 For each plant's total EC list, the program will loop through each of the flavonoids' logical requirements, which are held held in the list of `ChemData` objects called `data_lists`, where each item `chem_data` has a property `chem_data.label` that is passed to a function in `compoundinfo.py` called `flav_check`, which then determines the logical function to be called. 
 If the result of `flav_check` returns as true, then the current plant's name will be appended to the list of plants, which is held in `chem_data.species`. 
@@ -229,7 +229,7 @@ __Functions__
 This object is used to hold the associated FASTA entries for any given EC number.  
 __Attributes__  
 * `self.ec_name`: the EC number & name used when writing the file  
-* `self.ec_entries`: the list of associated FASTA entries (FastaEcEntry objects)  
+* `self.ec_entries`: the list of associated FASTA entries (`FastaEcEntry` objects)  
 
 __Functions__  
 * `__init__`: constructor for the object  
@@ -369,6 +369,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNz
-U0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbLTE4NzExMDMsLTE4Nzc1NTMwMjEsOTg0ND
+g1MTIzLDEyNzU0MDE2MThdfQ==
 -->
