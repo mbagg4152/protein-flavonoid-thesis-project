@@ -169,14 +169,14 @@ This contains the custom data types that are or have been used in the program.
 ### `ChemData` 
 This class holds the data for each flavonoid. The objects are initialized with their file name and label and only later in the program, their empty list of plants will be filled.  
 __Attributes__    
-* ```self.label```: string that contains the flavonoids name  
-* ```self.plants```: list of plants predicted to produce the flavonoid  
-* ```self.file_name```: string that holds the flavonoids output file name  
+* `self.label`: string that contains the flavonoids name  
+* `self.plants`: list of plants predicted to produce the flavonoid  
+* `self.file_name`: string that holds the flavonoids output file name  
 
 __Functions__  
-* ```__init__```: constructor for the object  
-* ```__eq__```: defines equality of the object  
-* ```is_in```: determines if an identical or nearly identical object is already in the list  
+* `__init__`: constructor for the object  
+* `__eq__`: defines equality of the object  
+* `is_in`: determines if an identical or nearly identical object is already in the list  
 
 ### `Plant`
 This object holds information about each plant used in the program. The plant objects are initialized with their scientific name and their code and then have different information added later.  
@@ -189,29 +189,29 @@ __Attributes__
 * `self.ec_counts`: list of objects that hold the number of times each EC number appears.    
 
 __Functions__  
-* ```__init__```: constructor for the object  
-* ```__eq__```: defines equality of the object  
-* ```is_in```: determines if an identical or nearly identical object is already in the list  
-* ```has_ec_count```: used to determine whether or not a specific EC number is already in the list of EC counts  
-* ```incr_ec_count```: used to increase the count for the EC count objects.  
+* `__init__`: constructor for the object  
+* `__eq__`: defines equality of the object  
+* `is_in`: determines if an identical or nearly identical object is already in the list  
+* `has_ec_count`: used to determine whether or not a specific EC number is already in the list of EC counts  
+* `incr_ec_count`: used to increase the count for the EC count objects.  
 
-### ```PathGene```
+### `PathGene`
 This object is used to hold Gene objects in a way such that they are sorted by the pathway from which they were
 found.   
 __Attributes__  
-* ```self.path```: the pathway that resulted in the gene entry   
-* ```self.genes```: the list of gene entries from this pathway   
+* `self.path`: the pathway that resulted in the gene entry   
+* `self.genes`: the list of gene entries from this pathway   
 
 __Functions__   
-* ```__init__```: constructor for the object   
-* ```__eq__```: defines equality of the object   
-* ```is_in```: determines if an identical or nearly identical object is already in the list   
+* `__init__`: constructor for the object   
+* `__eq__`: defines equality of the object   
+* `is_in`: determines if an identical or nearly identical object is already in the list   
 
-### ```Gene```
+### `Gene`
 This object holds data gathered from KEGG for each plant's pathway (like aip00491).  
 __Attributes__ 
-* ```self.gene_id```: the ID of the gene from a plant  
-* ```self.plant```: the scientific name of the plant that has this gene  
+* `self.gene_id`: the ID of the gene from a plant  
+* `self.plant`: the scientific name of the plant that has this gene  
 * ```self.plant_code```: the KEGG code for the plant  
 * ```self.compound```: the compound name listed in the entry  
 * ```self.ec_nums```: the list of EC numbers found in the entry  
@@ -369,6 +369,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNjUyOTAyMSw5ODQ0ODUxMjMsMTI3NT
-QwMTYxOF19
+eyJoaXN0b3J5IjpbLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNz
+U0MDE2MThdfQ==
 -->
