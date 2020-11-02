@@ -155,22 +155,19 @@ The functions return ```True``` or ```False``` based on whether or not the requi
 This program uses the ```wget``` command in order to pull the information for each of the species from KNApSAcK. 
 For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of interest.  
 After the HTML page for each plant is retrieved, the file is then parsed.
-Any lines containing the names of the flavonoids of interest will be saved, stripped of HTML syntax and broken down into 
-a list of lists for the plant.
+Any lines containing the names of the flavonoids of interest will be saved, stripped of HTML syntax and broken down into a list of lists for the plant.
 This program was written with the purpose of making data collection for both the compounds and their relatives easier.  
 More searching will be done in order to determine how easy or difficult it would be to update this code to work with 
 other databases.
 
-__Note:__ It will not work correctly if the ```wget``` system command is not installed (this has not yet been tested
-on Windows, may potentially only be compatible with Linux systems). 
+__Note:__ It will not work correctly if the ```wget``` system command is not installed (this has not yet been tested on Windows, may potentially only be compatible with Linux systems). 
 
 <!--  -->
 ---
 ## ```lib/datatypes.py```
 This contains the custom data types that are or have been used in the program.  
 ### ```ChemData```
-This class holds the data for each flavonoid. The objects are initialized with their file name and label and only
-later in the program, their empty list of plants will be filled.  
+This class holds the data for each flavonoid. The objects are initialized with their file name and label and only later in the program, their empty list of plants will be filled.  
 __ATTRIBUTES__    
 ```self.label```: string that contains the flavonoids name  
 ```self.plants```: list of plants predicted to produce the flavonoid  
@@ -180,21 +177,21 @@ __FUNCTIONS__
 ```__eq__```: defines equality of the object  
 ```is_in```: determines if an identical or nearly identical object is already in the list  
 ### ```Plant```
-This object holds information about each plant used in the program. The plant objects are initialized with their
-scientific name and their code and then have different information added later.  
-__ATTRIBUTES__    
-```self.name```: scientific name of the plant  
-```self.code```: KEGG code for the plant  
-```self.genes```: the gene entries for the plant  
-```self.ec_nums```: the EC numbers parsed from the plants gene entries  
-```self.flavonoids```: the list of flavonoids that the plant could potentially produce  
-```self.ec_counts```: list of objects that hold the number of times each EC number appears  
-__FUNCTIONS__  
-```__init__```: constructor for the object  
-```__eq__```: defines equality of the object  
-```is_in```: determines if an identical or nearly identical object is already in the list  
-```has_ec_count```: used to determine whether or not a specific EC number is already in the list of EC counts  
-```incr_ec_count```: used to increase the count for the EC count objects.  
+This object holds information about each plant used in the program. The plant objects are initialized with their scientific name and their code and then have different information added later.  
+__Attributes__    
+* ```self.name```: scientific name of the plant  
+* ```self.code```: KEGG code for the plant  
+* ```self.genes```: the gene entries for the plant  
+* ```self.ec_nums```: the EC numbers parsed from the plants gene entries  
+* ```self.flavonoids```: the list of flavonoids that the plant could potentially produce  
+* ```self.ec_counts```: list of objects that hold the number of times each EC number appears.    
+
+__Functions__  
+* ```__init__```: constructor for the object  
+* ```__eq__```: defines equality of the object  
+* ```is_in```: determines if an identical or nearly identical object is already in the list  
+* ```has_ec_count```: used to determine whether or not a specific EC number is already in the list of EC counts  
+* ```incr_ec_count```: used to increase the count for the EC count objects.  
 ### ```PathGene```
 This object is used to hold Gene objects in a way such that they are sorted by the pathway from which they were
 found.   
@@ -388,5 +385,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYxMjI4MDYzLDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbMjA3MDExMDE5NywxMjc1NDAxNjE4XX0=
 -->
