@@ -164,7 +164,7 @@ __Note:__ It will not work correctly if the ```wget``` system command is not ins
 
 <!--  -->
 ---
-## ```lib/datatypes.py```
+## `lib/datatypes.py`
 This contains the custom data types that are or have been used in the program.  
 ### `ChemData` 
 This class holds the data for each flavonoid. The objects are initialized with their file name and label and only later in the program, their empty list of plants will be filled.  
@@ -178,15 +178,15 @@ __Functions__
 * ```__eq__```: defines equality of the object  
 * ```is_in```: determines if an identical or nearly identical object is already in the list  
 
-### ```Plant```
+### `Plant`
 This object holds information about each plant used in the program. The plant objects are initialized with their scientific name and their code and then have different information added later.  
 __Attributes__    
-* ```self.name```: scientific name of the plant  
-* ```self.code```: KEGG code for the plant  
-* ```self.genes```: the gene entries for the plant  
-* ```self.ec_nums```: the EC numbers parsed from the plants gene entries  
-* ```self.flavonoids```: the list of flavonoids that the plant could potentially produce  
-* ```self.ec_counts```: list of objects that hold the number of times each EC number appears.    
+* `self.name`: scientific name of the plant  
+* `self.code`: KEGG code for the plant  
+* `self.genes`: the gene entries for the plant  
+* `self.ec_nums`: the EC numbers parsed from the plants gene entries  
+* `self.flavonoids`: the list of flavonoids that the plant could potentially produce  
+* `self.ec_counts`: list of objects that hold the number of times each EC number appears.    
 
 __Functions__  
 * ```__init__```: constructor for the object  
@@ -369,6 +369,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDU1ODY4NzcsOTg0NDg1MTIzLDEyNz
-U0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbLTQxNjUyOTAyMSw5ODQ0ODUxMjMsMTI3NT
+QwMTYxOF19
 -->
