@@ -69,7 +69,8 @@ JW started the code to get information from KEGG about the species we were inter
 
 ## KNApSAcK   code
 ### Purpose
-The KNApSAcK code was written for the purpose of aiding the literature search process. The database contains a multitude of useful entries relating to the list of KEGG species and going through the lis
+The KNApSAcK code was written for the purpose of aiding the literature search process. The database contains a multitude of useful entries relating to the list of KEGG species and going through the lists manually for each plant would be extremely time consuming. In order to speed up the process, this program was written.  
+When an organism is searched in KNApSAcK, a list of known metabolites/compou
 
 ### How it works
 KNApSAcK has a simple partial URL-fetch system for the purpose of being used in programs, ```http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism&word=```. 
@@ -401,5 +402,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1Mzk1NDQ5OSwxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMTI3MDYyMTM0OCwxMjc1NDAxNjE4XX0=
 -->
