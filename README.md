@@ -60,9 +60,9 @@ JW started the code to get information from KEGG about the species we were inter
 	* For each gene, a line is saved with the format: ```Species Name, Gene ID, Compound Name, EC number(s), Orthology Code```
  3. After getting the gene entries for each plant pathway (which is saved in ```data/Gene_Data```, each EC number is added to a list for each ```Plant``` object. These objects also contain information such as the plant name, KEGG code and list of genes.
  4. Now that each plant has an associated list of EC numbers, the flavonoid prediction process can be done. This is done by checking the list of EC numbers for each plant and determining whether or not it has the correct EC numbers needed to produce a flavonoid. If a plant does meet the requirements, then the plants name is added to the list of plant for that specific ```ChemData``` (flavonoid) object.
-	   5. Once the prediction process is done, each result is printed to a file named after the respective flavonoid and then the program displays the number of plants for each flavonoid as well as the path to the output file.
+	* Once the prediction process is done, each result is printed to a file named after the respective flavonoid and then the program displays the number of plants for each flavonoid as well as the path to the output file.
  5. Once the prediction process is done, the code then moves on to create a master count matrix/list. This list (and output file) contain the number of times each EC number appears in the gene entries for each plant. When checking for each plant and each EC number, the list of <code>EcCounts</code> for each plant will increment the <code>self.count</code> property each time an EC number is encountered. Once the list is filled, the program outputs the counts with the format ```Species Name: [EC:#.#.#.# count #] ...```
-	   6. If you look at the code, you may notice that there is no effort made to prevent adding duplicate EC numbers to the list for each plant,  this is why. This is the easiest way to keep track of the counts.
+	* If you look at the code, you may notice that there is no effort made to prevent adding duplicate EC numbers to the list for each plant,  this is why. This is the easiest way to keep track of the counts.
  6. The final step is to build the master FASTA files and the FASTA files organized by EC number. For each gene that is encountered, its list of EC numbers, Gene ID and KEGG code are looked at. Using the partial DBGET URL, ```KEGG_code:Gene_ID``` is appended to the end to create the full REST URL. The program saves the HTML, parses it, then adds the FASTA entry to its own ```FastaEcEntry``` object which is then added to a list for its appropriate ```EcFastaCollection``` object, which is determined by EC number. Once the parsing is done (which does take a long time to finish) then for each ```EcFastaCollection``` object, a file is written to and the output is saved to a massive string, which is written to the MasterFASTA file. 
     
 
@@ -388,5 +388,5 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MzQxOTMzNSwxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMTk0ODc3NTU4OCwxMjc1NDAxNjE4XX0=
 -->
