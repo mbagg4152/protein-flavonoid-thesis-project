@@ -22,4 +22,4 @@ FN_MED, FN_SHORT, FN_SINGLE = FLAV_JSON + 'test_med.json', FLAV_JSON + 'test_sho
 
 FN_LIGAND, FN_LIGAND_CODES = PROT_JSON + 'ligand.json', PROT_JSON + 'ligand_codes.json'
 FN_PDB_IDS, FN_PDB_IDS_SHORT = PROT_JSON + 'pdb_ids.json', PROT_JSON + 'pdb_ids_short.json'
-FN_PROTEIN = PROT_JSON + 'protein.json'
+FN_PROTEIN, FN_PDB_SINGLE = PROT_JSON + 'protein.json', PROT_JSON + 'pdb_id_single.json'

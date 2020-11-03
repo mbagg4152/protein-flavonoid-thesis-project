@@ -247,7 +247,8 @@ class FastaEcEntry:
     def simple(self): return self.dna_seq
 
 
-data_lists = [ChemData(AGI, [], FN_AGI), ChemData(BUN, [], FN_BUN), ChemData(EC, [], FN_EC), ChemData(HWB, [], FN_HWB),
+data_lists = [ChemData(AGI, [], FN_AGI), ChemData(BUN, [], FN_BUN), ChemData(KXN, [], FN_KXN),
+              ChemData(HWB, [], FN_HWB),
               ChemData(EC, [], FN_EC), ChemData(EGT, [], FN_EGT), ChemData(ERD, [], FN_ERD), ChemData(GC, [], FN_GC),
               ChemData(GEN, [], FN_GEN), ChemData(KMP, [], FN_KMP), ChemData(LU2, [], FN_LU2),
               ChemData(MYC, [], FN_MYC), ChemData(NAR, [], FN_NAR), ChemData(QUE, [], FN_QUER),
