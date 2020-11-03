@@ -22,9 +22,9 @@ K_ATM = 'ATOM'
 K_HAT = 'HETATM'
 
 # regular expressions
-RE_EC = '([0-9]\.{1}[^ ,;]*)'  # look for EC number format
-RE_XTRA_SP = ' {2,}'  # look for 2+ spaces
-RE_REC_VAL = '(:.*;)'  # record values are between : and ; for specific records
+RE_EC = r'([0-9]\.{1}[^ ,;]*)'  # look for EC number format
+RE_XTRA_SP = r' {2,}'  # look for 2+ spaces
+RE_REC_VAL = r'(:.*;)'  # record values are between : and ; for specific records
 
 # directory/path values
 SEP = os.sep
@@ -33,5 +33,5 @@ out_dir = path_cwd + SEP + 'pdb-output' + SEP
 formatted_out = out_dir + 'format_out_all.txt'
 formatted_out_small = out_dir + 'format_out_partial.txt'
 pdb_dir = out_dir + 'pdb_files' + SEP
-sasa = '..' + SEP + '..' + SEP + 'dr_sasa_n-0.4b' + SEP + 'build' + SEP + 'dr_sasa'
+sasa = '..' + SEP + '..' + SEP + 'dr_sasa' + SEP + 'dr_sasa_n' + SEP + 'build' + SEP + 'dr_sasa'
 sasa_dir = path_cwd + SEP + 'sasa-output' + SEP

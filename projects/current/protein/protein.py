@@ -25,26 +25,28 @@ Path(out_dir).mkdir(parents=True, exist_ok=True)
 Path(pdb_dir).mkdir(parents=True, exist_ok=True)
 Path(sasa_dir).mkdir(parents=True, exist_ok=True)
 
-thread_lim = multiprocessing.cpu_count()
+# thread_lim = multiprocessing.cpu_count()
+thread_lim = 1
 
 
 def main():
-    chunked_pdb = numpy.array_split(numpy.array(pdb_id_list), thread_lim)
+    chunked_pdb = numpy.array_split(numpy.array(pdb_id_list_short), thread_lim)
     threads = []
-    print(str(len(chunked_pdb)))
-    for chunks in chunked_pdb:
-        tmp_thread = Thread(target=run_pdb_chunks, args=(chunks.tolist(),))
-        tmp_thread.start()
-        threads.append(tmp_thread)
-
-    for thread in threads: thread.join()
+    # print(str(len(chunked_pdb)))
+    # for chunks in chunked_pdb:
+    #     tmp_thread = Thread(target=run_pdb_chunks, args=(chunks.tolist(),))
+    #     tmp_thread.start()
+    #     threads.append(tmp_thread)
+    #
+    # for thread in threads: thread.join()
+    run_pdb_chunks(pdb_id_list_short)
 
     with open(formatted_out, 'w+') as out_file:
         out_file.write(total_pdb_output)
         out_file.close()
 
-    # for pdb_id in pdb_id_list:
-    #     run_sasa(pdb_id, pdb_dir + pdb_id + '.pdb')
+    for pdb_id in pdb_id_list:
+        run_sasa(pdb_id, pdb_dir + pdb_id + '.pdb')
 
     end_time = datetime.datetime.now()
     total_time = end_time - init_time

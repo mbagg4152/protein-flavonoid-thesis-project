@@ -1,6 +1,7 @@
 from lib.pathstrings import *
 from lib.miscvals import *
 
+
 class ChemData:
     """
     This class holds the data for each flavonoid. The objects are initialized with their file name and label and only
@@ -31,6 +32,7 @@ class ChemData:
         for item in items:
             if self == item: return True
         return False
+
 
 class Plant:
     """
@@ -88,6 +90,7 @@ class Plant:
             if ec.number == ec_number:
                 ec.count += 1
 
+
 class PathGene:
     """
     This object is used to hold Gene objects in a way such that they are sorted by the pathway from which they were
@@ -115,6 +118,7 @@ class PathGene:
         for item in items:
             if self == item: return True
         return False
+
 
 class Gene:
     """
@@ -162,6 +166,7 @@ class Gene:
     def no_plant(self):
         return self.gene_id + ', ' + self.compound + ', ' + self.ec_nums + ', ' + self.ortho
 
+
 class EcFastaCollection:
     """
     This object is used to hold the associated FASTA entries for any given EC number.
@@ -189,6 +194,7 @@ class EcFastaCollection:
             if self == item: return True
         return False
 
+
 class EcCounts:
     """
     This object is a property of the Plant object and is used to hold each EC number and the number of times it occurs
@@ -205,6 +211,7 @@ class EcCounts:
     def __init__(self, number=None, count=None):
         self.number = number if number is not None else ' '
         self.count = count if number is not None else 0
+
 
 class FastaEcEntry:
     """
