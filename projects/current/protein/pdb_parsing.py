@@ -90,12 +90,9 @@ def pdb_stuff(url, path, pdb_id):
                 with lock_obj:
                     if pdb_id in pdb_objects.keys(): pdb_objects[pdb_id].append(tmp_record)
                     else: pdb_objects[pdb_id] = [tmp_record]
-
                 tmp_entry.records.append(tmp_record)
-                # print_4v4d_pyg_chain_a(pdb_id, tmp_record.ligand_code, tmp_record.chain_id, line)
     simple_entry_print(pdb_id, tmp_entry.group, tmp_entry.ec_nums, len(tmp_entry.records))
     with lock_entry: pdb_entries.append(tmp_entry)
-    # run_sasa(pdb_id, path)
 
 
 def cif_stuff(url, cif_path, pdb_path):
