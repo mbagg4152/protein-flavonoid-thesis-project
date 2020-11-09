@@ -40,10 +40,10 @@ def hc4(e): return tca(e) and (E03 in e)  # p-coumaric acid
 def nca(e): return tca(e) and (E04 in e)  # cinnamoyl-coa
 def wca(e): return (nca(e) and (E03 in e)) or (hc4(e) and (E04 in e))  # p-coumaroyl-coa
 def nch(e): return wca(e) and (E09 in e)  # naringenin chalcone
-def nar(e): return nch and (E10 in e)  # naringenin
+def nar(e): return nch(e) and (E10 in e)  # naringenin
 def agi(e): return nar(e) and or_in(e, E11, E12)  # apigenin
 def lu2(e): return agi(e) and (or_in(e, E13, E14))  # luteolin
-def fca(e): return and_in(e, E06, E07) or (E08 in e)  # caffeoyl-coa
+def fca(e): return wca(e) and (and_in(e, E06, E07) or (E08 in e))  # caffeoyl-coa
 def erd(e): return (nar(e) and or_in(e, E13, E14)) or (fca(e) and (E09 in e))  # eriodictyol
 def dhk(e): return nar(e) and (E15 in e)  # dihydrokaempferol
 def kmp(e): return dhk(e) and (E16 in e)  # kaempferol

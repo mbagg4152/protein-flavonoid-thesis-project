@@ -177,10 +177,15 @@ def prediction():
     """
     global list_all_plants
     for plant in list_all_plants:
+        unique_nums = []
+        for num in plant.ec_nums:
+            if num not in unique_nums: unique_nums.append(num)
         for chem_data in data_lists:
-            if flav_check(chem_data.label, plant.ec_nums):  # passes check, has all of the flavonoids
+            if flav_check(chem_data.label, unique_nums):  # passes check, has all of the flavonoids
+                # print('passed check: ' + plant.name + ' ' + chem_data.label + ' ' + str(unique_nums))
                 chem_data.plants.append(plant.name)  # add plant to flavonoids list
-
+            # else: print('NO PASS: ' + plant.name + ' ' + chem_data.label + ' ' + str(unique_nums))
+        if unique_nums: print(plant.name + ' ' + str(unique_nums))
     # create the prediction output files for each flavonoid
     for key in data_lists:
         save_file([key.plants], key.file_name, path_chem)
