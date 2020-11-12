@@ -1,10 +1,10 @@
 from jsondata import *
-from pathstrings import SEP as slash
+from pathstrings import SEP
 from miscvals import *
 import os
 import re
 
-new_dir = '..' + SEP + 'misc_output' + SEP + 'knapsack_dir'
+new_dir = '..' + SEP + 'misc_files' + SEP + 'knapsack_dir'
 ks_data_name = new_dir + SEP + 'knapsack_data.csv'
 plant_flavs = {}
 

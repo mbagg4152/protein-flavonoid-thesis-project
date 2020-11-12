@@ -7,7 +7,7 @@ import re
 RE_SEQ = r'(&gt;.*</pre></div>)'
 sep = os.sep
 path_cwd = os.getcwd().replace('lib', '').replace('//', '/').replace('\\\\', '\\')
-tst_dir = path_cwd + 'misc_output' + sep
+tst_dir = path_cwd + 'misc_files' + sep
 kdb = KEGG()
 pdata = PDB()
 
@@ -17,7 +17,7 @@ except FileExistsError: pass
 
 def main():
     ans = True
-    print('This is for testing kegg output format. output files wil be in misc_output' + sep)
+    print('This is for testing kegg output format. output files wil be in misc_files' + sep)
     while ans:
         print(
             '\n1. Organism IDs' +

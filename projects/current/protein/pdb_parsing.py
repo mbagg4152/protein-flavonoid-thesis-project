@@ -8,11 +8,11 @@ import numpy
 import sys
 import urllib.request, urllib.error
 import os
-import time
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
 
 from lib.jsondata import *
+from lib.util import *
 
 pdb_objects_list = []
 pdb_objects = {}
@@ -26,27 +26,22 @@ Path(pdb_dir).mkdir(parents=True, exist_ok=True)
 Path(sasa_dir).mkdir(parents=True, exist_ok=True)
 
 thread_lim = multiprocessing.cpu_count()
-# thread_lim = 1
 
 
 def main():
-    chunked_pdb = numpy.array_split(numpy.array(pdb_id_list_short), thread_lim)
+    chunked_pdb = list_partition(pdb_id_list_short, thread_lim)
     threads = []
     print(str(len(chunked_pdb)))
     for chunks in chunked_pdb:
-        tmp_thread = Thread(target=run_pdb_chunks, args=(chunks.tolist(),))
+        tmp_thread = Thread(target=run_pdb_chunks, args=(chunks,))
         tmp_thread.start()
         threads.append(tmp_thread)
 
     for thread in threads: thread.join()
-    # run_pdb_chunks(pdb_id_list_short)
 
     with open(formatted_out, 'w+') as out_file:
         out_file.write(total_pdb_output)
         out_file.close()
-
-    # for pdb_id in pdb_id_list:
-    #     run_sasa(pdb_id, pdb_dir + pdb_id + '.pdb')
 
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
@@ -115,17 +110,6 @@ def print_4v4d_pyg_chain_a(pdb_id, ligand, chain, line):
 
 def simple_entry_print(pdb_id, group, ec_nums, num_records):
     print(pdb_id + ' | Class: ' + group + ' | EC: ' + str(ec_nums) + ' | No. Records: ' + str(num_records))
-
-
-def run_sasa(pdb_id, path):
-    try:
-        os.mkdir(sasa_dir + pdb_id)
-        time.sleep(1)
-        cmd = 'cd; ' + \
-              'cd ' + sasa_dir + pdb_id + ';' + \
-              sasa + ' -m 4 -i ' + path + '> out.txt'
-        os.system(cmd)
-    except FileExistsError: pass
 
 
 if __name__ == '__main__':

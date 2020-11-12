@@ -175,24 +175,28 @@ def prediction():
     This is the function that goes through each plant, looks at the list of EC numbers then applies a function in order
     to determine whether or not the plant has the required EC numbers needed to synthesize each compound.
     """
+    plant_ec_output = ''
+
     global list_all_plants
     for plant in list_all_plants:
         unique_nums = []
+        plant_ec_output += '\n' + plant.name + ', '
         for num in plant.ec_nums:
             if num not in unique_nums: unique_nums.append(num)
         for chem_data in data_lists:
             if flav_check(chem_data.label, unique_nums):  # passes check, has all of the flavonoids
-                # print('passed check: ' + plant.name + ' ' + chem_data.label + ' ' + str(unique_nums))
                 chem_data.plants.append(plant.name)  # add plant to flavonoids list
-            # else: print('NO PASS: ' + plant.name + ' ' + chem_data.label + ' ' + str(unique_nums))
-        if unique_nums: print(plant.name + ' ' + str(unique_nums))
+        if unique_nums:
+            for num in unique_nums: plant_ec_output += num + ', '
+
     # create the prediction output files for each flavonoid
     for key in data_lists:
         save_file([key.plants], key.file_name, path_chem)
+
         item_count = len(key.plants)
         print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
               'Data saved in ' + path_chem + SEP + key.file_name + '.')
-
+    write_append(path_main + SEP + 'plant-ec-nums.csv', plant_ec_output)
 def run_fill_matrix():
     """
     This function creates and outputs a 'matrix' relating to each species and EC number by running the fill_matrix

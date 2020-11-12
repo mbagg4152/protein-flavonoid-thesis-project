@@ -1,5 +1,9 @@
-from lib.util import *
-from lib.pathstrings import *
+try:
+    from util import *
+    from pathstrings import *
+except ModuleNotFoundError:
+    from lib.util import *
+    from lib.pathstrings import *
 
 flav_list = get_json_data(FN_FLAVS, JKEY)
 

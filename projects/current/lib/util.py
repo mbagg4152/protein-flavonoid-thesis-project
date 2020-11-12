@@ -1,15 +1,23 @@
 import json
 import os
 import re
-from lib.miscvals import *
-from lib.pathstrings import SEP
+
+try: from pathstrings import *
+except ModuleNotFoundError: from lib.pathstrings import *
+try:
+    from miscvals import *
+    from pathstrings import SEP
+except ModuleNotFoundError:
+    from lib.miscvals import *
+    from lib.pathstrings import SEP
 
 
-def get_json_data(file_name, key):
+def get_json_data(file_name, key=None):
     """
     This function uses the python JSON library in order to parse JSON files into usable python objects. Can return
     lists or dictionaries, depending on the JSON file's structure.
     """
+    if key is None: key = JKEY
     data = ''
     try:
         with open(file_name) as jsonFile: data = json.load(jsonFile)
