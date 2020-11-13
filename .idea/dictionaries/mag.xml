@@ -17,6 +17,8 @@
       <w>annuus</w>
       <w>anthocyanins</w>
       <w>apig</w>
+      <w>apigenine</w>
+      <w>apigenol</w>
       <w>arac</w>
       <w>arachis</w>
       <w>arboreum</w>
@@ -25,7 +27,11 @@
       <w>auxenochlorella</w>
       <w>avium</w>
       <w>bact</w>
+      <w>benzopyran</w>
+      <w>benzopyrone</w>
+      <w>benzopyrylium</w>
       <w>bicolor</w>
+      <w>bonistein</w>
       <w>brachyantha</w>
       <w>brachypodium</w>
       <w>brasiliensis</w>
@@ -41,6 +47,7 @@
       <w>cardunculus</w>
       <w>carica</w>
       <w>carota</w>
+      <w>casuarin</w>
       <w>catechinspecies</w>
       <w>catechol</w>
       <w>catenatum</w>
@@ -52,6 +59,9 @@
       <w>chenopodium</w>
       <w>chinensis</w>
       <w>chlamydomonas</w>
+      <w>chlorure</w>
+      <w>chromen</w>
+      <w>cianidanol</w>
       <w>cicer</w>
       <w>cicoa</w>
       <w>cinnamoyl</w>
@@ -62,6 +72,9 @@
       <w>cucumis</w>
       <w>cucurbita</w>
       <w>curcas</w>
+      <w>cyanidanol</w>
+      <w>cyanidine</w>
+      <w>cyanidol</w>
       <w>cynara</w>
       <w>dactylifera</w>
       <w>dalbergia</w>
@@ -71,9 +84,12 @@
       <w>delphinidin</w>
       <w>dendrobium</w>
       <w>dihy</w>
+      <w>dihydro</w>
       <w>dihydrokaempferol</w>
       <w>dihydromyricetin</w>
       <w>dihydroquercetin</w>
+      <w>dihydroxy</w>
+      <w>dihydroxyphenyl</w>
       <w>dika</w>
       <w>dimy</w>
       <w>diqu</w>
@@ -87,17 +103,21 @@
       <w>ekey</w>
       <w>elaeis</w>
       <w>epicatechinspecies</w>
+      <w>epicatechol</w>
       <w>epig</w>
       <w>epigallocatechin</w>
+      <w>epigallocatechol</w>
       <w>equestris</w>
       <w>erio</w>
       <w>eriocitrin</w>
+      <w>eriodictioside</w>
       <w>eriodictyolspecies</w>
       <w>esculenta</w>
       <w>euphratica</w>
       <w>europaea</w>
       <w>eutrema</w>
       <w>flav</w>
+      <w>flavanhexol</w>
       <w>flavones</w>
       <w>flavonoid</w>
       <w>flavonols</w>
@@ -106,8 +126,12 @@
       <w>galactosyltransferase</w>
       <w>galdieria</w>
       <w>gallocatechin</w>
+      <w>gallocatechol</w>
+      <w>genestein</w>
       <w>geni</w>
       <w>genistein</w>
+      <w>genisteol</w>
+      <w>genisterin</w>
       <w>glucosyltransferase</w>
       <w>glyc</w>
       <w>glycosaminoglycan</w>
@@ -118,7 +142,9 @@
       <w>helianthus</w>
       <w>hetatm</w>
       <w>hevea</w>
+      <w>hexahydroxyflavone</w>
       <w>hirsutum</w>
+      <w>hydroxyphenyl</w>
       <w>icode</w>
       <w>incr</w>
       <w>indicum</w>
@@ -139,7 +165,9 @@
       <w>jujuba</w>
       <w>kaem</w>
       <w>kaempferol</w>
+      <w>kaempherol</w>
       <w>keggv</w>
+      <w>kempferol</w>
       <w>knap</w>
       <w>lactuca</w>
       <w>ldlm</w>
@@ -168,6 +196,7 @@
       <w>ncomp</w>
       <w>nelumbo</w>
       <w>nicotiana</w>
+      <w>nimbecetin</w>
       <w>nosp</w>
       <w>npass</w>
       <w>nplant</w>
@@ -190,21 +219,29 @@
       <w>pcqa</w>
       <w>pcsa</w>
       <w>pcsh</w>
+      <w>pelargidenolon</w>
       <w>pennellii</w>
+      <w>pentahydroxy</w>
+      <w>pentahydroxyflavone</w>
+      <w>pentahydroxyflavylium</w>
+      <w>pentahydroxyflavyliumchlorid</w>
       <w>pepo</w>
       <w>persica</w>
       <w>pfpy</w>
       <w>phalaenopsis</w>
       <w>phaseolus</w>
       <w>phen</w>
+      <w>phenylbenzopyrylium</w>
       <w>phenylpropanoids</w>
       <w>physcomitrella</w>
       <w>physcomitrium</w>
       <w>planc</w>
+      <w>populnetin</w>
       <w>populus</w>
       <w>ppend</w>
       <w>prot</w>
       <w>protothecoides</w>
+      <w>prunetol</w>
       <w>prunus</w>
       <w>pusilla</w>
       <w>pyrogallol</w>
@@ -222,8 +259,12 @@
       <w>resorcinol</w>
       <w>resveratrol</w>
       <w>revdat</w>
+      <w>rhamnolutein</w>
+      <w>rhamnolutin</w>
       <w>rhus</w>
       <w>ricinus</w>
+      <w>robigenin</w>
+      <w>rutinoside</w>
       <w>salsugineum</w>
       <w>satase</w>
       <w>sativa</w>
@@ -240,22 +281,33 @@
       <w>soja</w>
       <w>solanum</w>
       <w>somniferum</w>
+      <w>sophoricol</w>
       <w>stilbenoids</w>
       <w>struc</w>
       <w>suber</w>
       <w>subsp</w>
       <w>sulphuraria</w>
+      <w>swartziol</w>
       <w>sylvestris</w>
       <w>tabacum</w>
       <w>tarenaya</w>
       <w>tauschii</w>
       <w>taxid</w>
+      <w>tetrahydroxychalcone</w>
+      <w>tetrahydroxyflavone</w>
       <w>thaliana</w>
       <w>theobroma</w>
       <w>tomentosiformis</w>
       <w>toxicodendron</w>
       <w>trichocarpa</w>
       <w>trichopoda</w>
+      <w>trifolitin</w>
+      <w>trihydroxy</w>
+      <w>trihydroxyflavanone</w>
+      <w>trihydroxyflavone</w>
+      <w>trihydroxyflavonol</w>
+      <w>trihydroxyisoflavone</w>
+      <w>triol</w>
       <w>tuberosum</w>
       <w>unguiculata</w>
       <w>uniq</w>

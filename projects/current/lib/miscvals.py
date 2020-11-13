@@ -16,7 +16,8 @@ RE_KO, RE_EC, RE_ALPH, RE_NT_HEAD, RE_NT_SEQ, RE_SQ_BRACKETS = r'(\[KO:K[^\]]*\]
 # sections of HTML to remove from knapsack
 TO_REMOVE = ['<tr>', '</tr>', '</font>', "\n", "\\n", ">", '</a>', '</td>',
              "target=\"_blank\">", "target=\"_blank\"", "<td class=\"d1\">",
-             '<font color=#FF00BF>', '<a href=information.php?word=']
+             '<font color=#FF00BF>', '<a href=information.php?word=', '</a',
+             "<td class=\"d1\"", "\"</td\"", "</td"]
 
 # list of HTTP errors
 HTTP_ERRS = ['400', '401', '402', '403', '404', '405', '406', '407', '408', '409', '410', '411',
