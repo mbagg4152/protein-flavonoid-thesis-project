@@ -34,22 +34,23 @@ class Record:
 
 class Entry:
     def __init__(self, pdb_id=None, group=None, title=None, ec_nums=None, records=None, org_name=None, org_sci=None,
-                 org_taxid=None, ex_sys=None, ex_sys_taxid=None, organ=None, file_type=None):
-        self.pdb_id = pdb_id if pdb_id is not None else ' '
-        self.group = group if group is not None else ' '
-        self.title = title if title is not None else ' '
+                 org_taxid=None, ex_sys=None, ex_sys_taxid=None, organ=None, file_type=None, ec_str=None):
+        self.pdb_id = pdb_id if pdb_id is not None else ''
+        self.group = group if group is not None else ''
+        self.title = title if title is not None else ''
         self.ec_nums = ec_nums if ec_nums is not None else []
         self.records = records if records is not None else []
-        self.org_name = org_name if org_name is not None else ' '
-        self.org_sci = org_sci if org_sci is not None else ' '
-        self.org_taxid = org_taxid if org_taxid is not None else ' '
-        self.ex_sys = ex_sys if ex_sys is not None else ' '
-        self.ex_sys_taxid = ex_sys_taxid if ex_sys_taxid is not None else ' '
-        self.organ = organ if organ is not None else ' '
-        self.file_type = file_type if file_type is not None else ' '
-
+        self.org_name = org_name if org_name is not None else 'No common name'
+        self.org_sci = org_sci if org_sci is not None else 'No scientific name'
+        self.org_taxid = org_taxid if org_taxid is not None else 'No taxonomy ID'
+        self.ex_sys = ex_sys if ex_sys is not None else 'No expression system'
+        self.ex_sys_taxid = ex_sys_taxid if ex_sys_taxid is not None else 'No expression system taxonomy ID'
+        self.organ = organ if organ is not None else 'No organ'
+        self.file_type = file_type if file_type is not None else ''
+        self.ec_str = ec_str if ec_str is not None else 'No EC numbers'
 
 def new_record(line, name, file_type=None):
+    if file_type is None: file_type = 'PDB'
     if len(line) < 60: tmp_record = Record()
     else:
         # ranges taken from the PDB documentation, column values are found in record_formats.txt
@@ -68,24 +69,24 @@ def new_record(line, name, file_type=None):
 
 def new_entry(lines):
     tmp_entry = Entry()
-
     for line in lines:
         if K_CMP in line and K_EC in line:
-            tmp_entry.ec_nums = re.findall(RE_EC, line)
-            pass
+            ec_nums = re.findall(RE_EC, line)
+            for num in ec_nums: tmp_entry.ec_nums.append('EC:' + num)
+            tmp_entry.ec_str = str(tmp_entry.ec_nums).replace('[', '').replace(']', '').replace('\'', '')
         if K_TTL in line: tmp_entry.title += re.sub(RE_XTRA_SP, ' ', line[10:80])
-        if K_HEAD in line:
-            tmp_entry.group += re.sub(RE_XTRA_SP, ' ', line[10:50])
-            tmp_entry.pdb_id += re.sub(RE_XTRA_SP, ' ', line[62:66])
+        if K_HEAD in line and K_REV not in line:
+            tmp_entry.group += ''.join(re.findall(RE_WORDS, line[10:50])).strip()
+            tmp_entry.pdb_id += ''.join(re.findall(RE_WORDS, line[62:66])).strip()
 
         if K_SRC in line:
             try: chunk = re.findall(RE_REC_VAL, line)[0]
-            except IndexError: chunk = ''
+            except IndexError: continue
 
-            if K_ORG_CMN in line: tmp_entry.org_name = chunk
-            if K_ORG_SCI in line: tmp_entry.org_sci = chunk
-            if K_ORG_TAX in line: tmp_entry.org_taxid = chunk
-            if K_ORG in line: tmp_entry.organ = chunk
-            if K_EX_SYS in line: tmp_entry.ex_sys = chunk
-            if K_EX_TAX in line: tmp_entry.ex_sys_taxid = chunk
+            if K_ORG_CMN in line: tmp_entry.org_name = chunk.strip()
+            if K_ORG_SCI in line: tmp_entry.org_sci = chunk.strip()
+            if K_ORG_TAX in line: tmp_entry.org_taxid = 'Tax ID: ' + chunk.strip()
+            if K_ORG in line: tmp_entry.organ = chunk.strip()
+            if K_EX_SYS in line: tmp_entry.ex_sys = chunk.strip()
+            if K_EX_TAX in line: tmp_entry.ex_sys_taxid = chunk.strip()
     return tmp_entry
