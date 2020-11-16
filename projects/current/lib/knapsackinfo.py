@@ -7,7 +7,11 @@ import re
 new_dir = '..' + SEP + 'misc_files' + SEP + 'knapsack_dir'
 ks_data_name = new_dir + SEP + 'knapsack_data.csv'
 plant_flavs = {}
-
+cas_id_form = r"([0-9]*-[0-9]*-[0-9]*)"  # regular expression for CAS ID
+re_line_with_cas = r'<tr><td class="d1"><a href=information\.php\?word=C[0-9]* target="_blank">(C[0-9]*)<\/a><\/td>' \
+                   r'<td class="d1">([0-9]*-[0-9]*-[0-9]*)<\/td><td class="d1">([^<]*)<\/td><td class="d1">'
+re_line_no_cas = r'<tr><td class="d1"><a href=information\.php\?word=C[0-9]* target="_blank">(C[0-9]*)<\/a><\/td><td ' \
+                 r'class="d1"><\/td><td class="d1">([^<]*)<\/td><td class="d1">'
 
 def main():
     try: os.mkdir(new_dir)
@@ -30,7 +34,7 @@ def main():
     ks_str = ''
     for key in plant_flavs:
         if len(plant_flavs[key]) > 0:  # at least one entry was found for the plant
-            cas_id_form = "([0-9]*-[0-9]*-[0-9]*)"  # regular expression for CAS ID
+
             for item in plant_flavs[key]:
                 # some entries don't have a CAS ID. if nothing is found using regular expression testing, then the
                 # flavonoid name will follow right after the knapsack ID
@@ -61,15 +65,50 @@ def parse_file(file_name, plant_name):
     plant_flavs[plant_name] = []
     for line in lines:
         tmp_line = line
-        for flav in flav_list:
-            if line.find(flav) != -1:
+        flav_match = 0
+        syn_match = 0
+        for key in flav_list:
+            if line.find(key) != -1:
+                flav_match += 0
                 for text in TO_REMOVE: tmp_line = tmp_line.replace(text, '&$#@!')  # replace text with unique delimiter
                 tmp_list = tmp_line.split('&$#@!')  # split at delimiter
                 tmp_list = list(filter(None, tmp_list))  # remove any empty elements in the list
                 tmp_list[:] = [item for item in tmp_list if item != '']  # remove any empty elements in the list
                 plant_flavs[plant_name].append(tmp_list)  # add the compound for the specific plant
+
+        if flav_match == 0:
+            line_mod = line.upper().replace(' ', '')
+            for key in flav_synonyms:
+                for flav in flav_synonyms[key]:
+                    flav_mod = flav.upper().replace(' ', '')
+                    if line_mod.find(flav_mod) != -1:
+                        syn_match += 0
+                        for text in TO_REMOVE: tmp_line = tmp_line.replace(text, '&$#@!')
+                        tmp_list = tmp_line.split('&$#@!')
+                        tmp_list = list(filter(None, tmp_list))
+                        tmp_list[:] = [item for item in tmp_list if item != '']
+                        check = re.findall(cas_id_form, tmp_list[2])  # see if the line has a CAS ID
+
+                        # add to the output string such that the data is written in CSV format
+                        if len(check) < 1: plant_flavs[plant_name].append('[Alt Name for ' + key + ']' + tmp_list[2])
+                        else: plant_flavs[plant_name].append('[Alt Name for ' + key + ']' + tmp_list[3])
+            if syn_match == 0:
+                for key in flav_relatives:
+                    for flav in flav_relatives[key]:
+                        flav_mod = flav.upper().replace(' ', '')
+                        if line_mod.find(flav_mod) != -1:
+                            for text in TO_REMOVE: tmp_line = tmp_line.replace(text, '&$#@!')
+                            tmp_list = tmp_line.split('&$#@!')
+                            tmp_list = list(filter(None, tmp_list))
+                            tmp_list[:] = [item for item in tmp_list if item != '']
+                            check = re.findall(cas_id_form, tmp_list[2])  # see if the line has a CAS ID
+
+                            # add to the output string such that the data is written in CSV format
+                            if len(check) < 1: plant_flavs[plant_name].append('[Relative of ' + key + ']' +
+                                                                              tmp_list[2])
+                            else: plant_flavs[plant_name].append('[Alt Name for ' + key + ']' + tmp_list[3])
     file.close()
-    os.remove(file_name)
+    # os.remove(file_name)
 
 if __name__ == '__main__':
     main()

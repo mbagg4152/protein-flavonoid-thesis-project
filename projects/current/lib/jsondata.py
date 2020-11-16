@@ -6,6 +6,8 @@ except ModuleNotFoundError:
     from lib.pathstrings import *
 
 flav_list = get_json_data(FN_FLAVS, JKEY)
+flav_synonyms = get_json_data(FN_FLAV_SYN)
+flav_relatives = get_json_data(FN_FLAV_REL)
 
 # fill lists and dictionaries from json files
 test_single = get_json_data(FN_SINGLE, JKEY)

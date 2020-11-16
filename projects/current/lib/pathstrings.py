@@ -22,6 +22,8 @@ JDIR_NPASS = JDIR_FLAV + 'npass' + SEP
 JDIR_TST = JDIR_FLAV + 'test' + SEP
 
 FN_FLAVS = JDIR_FLAV + 'flavs.json'
+FN_FLAV_SYN = JDIR_FLAV + 'flav_synonyms.json'
+FN_FLAV_REL = JDIR_FLAV + 'flav_relatives.json'
 FN_PATH_DICT = JDIR_FLAV + 'path_names_codes.json'
 FN_PATH_LIST = JDIR_FLAV + 'path_codes.json'
 FN_PLANT_DICT = JDIR_FLAV + 'plant_names_codes.json'

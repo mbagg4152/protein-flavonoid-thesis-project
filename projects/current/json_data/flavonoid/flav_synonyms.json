@@ -4,8 +4,8 @@
       "4',5,7-Trihydroxyflavone",
       "5,7,4'-Trihydroxyflavone",
       "5,7-Dihydroxy-2-(4-hydroxyphenyl)-4H-chromen-4-one",
-      "Apigenol",
-      "Apigenine"
+      "Apigenine",
+      "Apigenol"
     ],
     "Butein": [
       "2',3,4,4'-Tetrahydroxychalcone",
@@ -22,59 +22,65 @@
       "D-Catechin"
     ],
     "Cyanidin": [
-      "3,3',4',5,7-Pentahydroxyflavylium chloride",
-      "Chlorure de 3,3',4',5,7-pentahydroxyflavylium",
-      "3,3',4',5,7-Pentahydroxyflavyliumchlorid",
       "2-(3,4-Dihydroxyphenyl)-3,5,7-trihydroxy-1-benzopyrylium chloride",
       "3,3',4',5,7-Pentahydroxy-2-phenylbenzopyrylium chloride",
+      "3,3',4',5,7-Pentahydroxyflavylium chloride",
+      "3,3',4',5,7-Pentahydroxyflavyliumchlorid",
+      "Chlorure de 3,3',4',5,7-pentahydroxyflavylium",
       "Cyanidin chloride",
       "Cyanidine",
-      "Cyanidol",
       "Cyanidol chloride",
+      "Cyanidol",
       "IdB 1027"
     ],
     "Epicatechin": [
       "(-)-Epicatechin",
-      "L-Epicatechin",
-      "(-)-Epicatechol"
+      "(-)-Epicatechol",
+      "L-Epicatechin"
     ],
     "Epigallocatechin": [
-      "(-)-Epigallocatechin",
-      "Epigallocatechol",
-      "epi-Gallocatechin",
-      "L-Epigallocatechin",
-      "(-)-Epigallocatechol",
-      "l-Epigallocatechol",
       "(-)-3,3',4',5,5',7-Flavanhexol",
-      "3,3',4',5,5',7-Flavanhexol"
+      "(-)-Epigallocatechin",
+      "(-)-Epigallocatechol",
+      "3,3',4',5,5',7-Flavanhexol",
+      "Epigallocatechol",
+      "L-Epigallocatechin",
+      "epi-Gallocatechin",
+      "l-Epigallocatechol"
     ],
     "Eriocitrin": [
       "Eriodictioside",
-      "Eriodictyol-7-O-rutinoside",
-      "Eriodictyol 7-O-rutinoside"
+      "Eriodictyol 7-O-rutinoside",
+      "Eriodictyol-7-O-rutinoside"
     ],
     "Eriodictyol": [
-      "(S)-Eriodictyol",
+      "(+)-Eriodictyol",
       "(S)-2-(3,4-Dihydroxyphenyl)-2,3-dihydro-5,7-dihydroxy-4-benzopyrone",
-      "(+)-Eriodictyol"
+      "(S)-Eriodictyol",
+      "Eryodictiol"
     ],
     "Gallocatechin": [
       "(+)-Gallocatechin",
-      "Gallocatechol",
-      "d-Gallocatechin",
+      "(+-)-Gallocatechol",
       "Casuarin",
-      "(+-)-Gallocatechol"
+      "Gallocatechol",
+      "d-Gallocatechin"
     ],
     "Genistein": [
       "5,7,4'-Trihydroxyisoflavone",
-      "Prunetol",
+      "Bonistein",
+      "Genestein",
       "Genisteol",
       "Genisterin",
-      "Sophoricol",
-      "Bonistein",
-      "Genestein"
+      "Sophoricol"
     ],
-    "Isoliquiritigenin": [],
+    "Isoliquiritigenin": [
+      "2',4,4'-Trihydroxychalcone",
+      "4,2',4'-Trihydroxychalcone",
+      "42'4'-trihydroxychalcone",
+      "6'-deoxychalcone",
+      "iso-Liquiritigenin"
+    ],
     "Kaempferol": [
       "3,4',5,7-Tetrahydroxyflavone",
       "3,5,7-Trihydroxy-2-(4-hydroxyphenyl)-4H-1-benzopyran-4-one",
@@ -94,15 +100,22 @@
     ],
     "Luteolin": [
       "3',4',5,7-Tetrahydroxyflavone",
-      "5,7,3',4'-Tetrahydroxyflavone"
+      "5,7,3',4'-Tetrahydroxyflavone",
+      "Digitoflavone",
+      "Luteolol"
     ],
     "Myricetin": [
-      "3,5,7,3',4',5'-Hexahydroxyflavone"
+      "3,3',4',5,5',7-Hexahydroxyflavone",
+      "3,5,7,3',4',5'-Hexahydroxyflavone",
+      "3,5,7-Trihydroxy-2-(3,4,5-trihydroxyphenyl)-4H-chromen-4-one",
+      "Cannabiscetin",
+      "Myricetol",
+      "Myricitin"
     ],
     "Naringenin": [
       "(-)-(2S)-Naringenin",
-      "4',5,7-Trihydroxyflavanone",
-      "(2S)-Naringenin"
+      "(2S)-Naringenin",
+      "4',5,7-Trihydroxyflavanone"
     ],
     "Quercetin": [
       "3,3',4,5,7-Pentahydroxyflavone",

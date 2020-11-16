@@ -1,0 +1,67 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Cucumis melo</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Cucumis melo</font><br><br>
+   	      Number of matched data :20 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00000001 target="_blank">C00000001</a></td><td class="d1">545-97-1</td><td class="d1">Gibberellin A1</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000003 target="_blank">C00000003</a></td><td class="d1">77-06-5</td><td class="d1">Gibberellin A3</td><td class="d1">C19H22O6</td><td class="d1">346.14163844</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000004 target="_blank">C00000004</a></td><td class="d1">468-44-0</td><td class="d1">Gibberellin A4</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000005 target="_blank">C00000005</a></td><td class="d1">561-56-8</td><td class="d1">Gibberellin A5</td><td class="d1">C19H22O5</td><td class="d1">330.14672381</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000008 target="_blank">C00000008</a></td><td class="d1">7044-72-6</td><td class="d1">Gibberellin A8</td><td class="d1">C19H24O7</td><td class="d1">364.15220312</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000020 target="_blank">C00000020</a></td><td class="d1">19143-87-4</td><td class="d1">Gibberellin A20</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000034 target="_blank">C00000034</a></td><td class="d1">32630-92-5</td><td class="d1">Gibberellin A34</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000358 target="_blank">C00000358</a></td><td class="d1">111-27-3</td><td class="d1">1-Hexanol</td><td class="d1">C6H14O</td><td class="d1">102.10446507</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003682 target="_blank">C00003682</a></td><td class="d1">6040-19-3</td><td class="d1">Cucurbitacin A</td><td class="d1">C32H46O9</td><td class="d1">574.31418307</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003683 target="_blank">C00003683</a></td><td class="d1">6199-67-3</td><td class="d1">Cucurbitacin B</td><td class="d1">C32H46O8</td><td class="d1">558.31926845</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003688 target="_blank">C00003688</a></td><td class="d1">751-96-2</td><td class="d1">Cucurbitacin H</td><td class="d1">C30H46O8</td><td class="d1">534.31926845</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006210 target="_blank">C00006210</a></td><td class="d1">55196-48-0</td><td class="d1">Isoorientin 2''-O-glucopyranoside</td><td class="d1">C27H30O16</td><td class="d1">610.15338491</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006223 target="_blank">C00006223</a></td><td class="d1">60767-80-8</td><td class="d1">Meloside A</td><td class="d1">C27H30O15</td><td class="d1">594.15847029</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00029742 target="_blank">C00029742</a></td><td class="d1">65247-27-0</td><td class="d1">Arvenin I</td><td class="d1">C38H56O13</td><td class="d1">720.37209188</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00029743 target="_blank">C00029743</a></td><td class="d1">65597-45-7</td><td class="d1">Arvenin III</td><td class="d1">C36H54O12</td><td class="d1">678.36152719</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00035843 target="_blank">C00035843</a></td><td class="d1">3877-89-2</td><td class="d1">Isocucurbitacin R</td><td class="d1">C30H46O7</td><td class="d1">518.32435382</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00047647 target="_blank">C00047647</a></td><td class="d1">1135141-82-0</td><td class="d1">19-Norlanosta-5,24-dien-11-one</td><td class="d1">C29H46O</td><td class="d1">410.35486609</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00047823 target="_blank">C00047823</a></td><td class="d1">751-95-1</td><td class="d1">Cucurbitacin G</td><td class="d1">C30H46O8</td><td class="d1">534.31926845</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00047824 target="_blank">C00047824</a></td><td class="d1">55903-92-9</td><td class="d1">Cucurbitacin R</td><td class="d1">C30H46O7</td><td class="d1">518.32435382</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00047845 target="_blank">C00047845</a></td><td class="d1">68354-21-2</td><td class="d1">Dihydroisocucurbitacin B</td><td class="d1">C32H48O8</td><td class="d1">560.33491851</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

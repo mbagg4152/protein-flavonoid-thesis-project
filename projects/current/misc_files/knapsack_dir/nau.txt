@@ -1,0 +1,56 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Nicotiana attenuata</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Nicotiana attenuata</font><br><br>
+   	      Number of matched data :9 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00001403 target="_blank">C00001403</a></td><td class="d1">462-94-2</td><td class="d1">Cadaverine</td><td class="d1">C5H14N2</td><td class="d1">102.11569846</td><td class="d1"><font color=#FF00BF>Nicotiana attenuata</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002015 target="_blank">C00002015</a></td><td class="d1">494-52-0</td><td class="d1">(-)-Anabasine</td><td class="d1">C10H14N2</td><td class="d1">162.11569846</td><td class="d1"><font color=#FF00BF>Nicotiana attenuata</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002017 target="_blank">C00002017</a></td><td class="d1">581-49-7</td><td class="d1">Anatabine</td><td class="d1">C10H12N2</td><td class="d1">160.1000484</td><td class="d1"><font color=#FF00BF>Nicotiana attenuata</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002057 target="_blank">C00002057</a></td><td class="d1">54-11-5</td><td class="d1">Nicotine</td><td class="d1">C10H14N2</td><td class="d1">162.11569846</td><td class="d1"><font color=#FF00BF>Nicotiana attenuata</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002061 target="_blank">C00002061</a></td><td class="d1">7076-23-5</td><td class="d1">(+)-Nornicotine</td><td class="d1">C9H12N2</td><td class="d1">148.1000484</td><td class="d1"><font color=#FF00BF>Nicotiana attenuata</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00042792 target="_blank">C00042792</a></td><td class="d1">494-97-3</td><td class="d1">Nornicotine</td><td class="d1">C9H12N2</td><td class="d1">148.1000484</td><td class="d1"><font color=#FF00BF>Nicotiana attenuata</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00051739 target="_blank">C00051739</a></td><td class="d1"></td><td class="d1">3,6-dihydronicotinic acid</td><td class="d1">C6H7NO2</td><td class="d1">125.04767848</td><td class="d1"><font color=#FF00BF>Nicotiana attenuata</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00051882 target="_blank">C00051882</a></td><td class="d1"></td><td class="d1">5-Aminopentanal</td><td class="d1">C5H11NO</td><td class="d1">101.08406398</td><td class="d1"><font color=#FF00BF>Nicotiana attenuata</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00051883 target="_blank">C00051883</a></td><td class="d1"></td><td class="d1">delta1-Piperideine</td><td class="d1">C5H9N</td><td class="d1">83.07349929</td><td class="d1"><font color=#FF00BF>Nicotiana attenuata</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

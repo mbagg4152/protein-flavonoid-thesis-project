@@ -1,0 +1,54 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Manihot esculenta</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Manihot esculenta</font><br><br>
+   	      Number of matched data :7 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00001446 target="_blank">C00001446</a></td><td class="d1">554-35-8</td><td class="d1">Linamarin</td><td class="d1">C10H17NO6</td><td class="d1">247.10558728</td><td class="d1"><font color=#FF00BF>Manihot esculenta</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003674 target="_blank">C00003674</a></td><td class="d1">83-48-7</td><td class="d1">Stigmasterol</td><td class="d1">C29H48O</td><td class="d1">412.37051615</td><td class="d1"><font color=#FF00BF>Manihot esculenta</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003758 target="_blank">C00003758</a></td><td class="d1">127-22-0</td><td class="d1">Taraxerol</td><td class="d1">C30H50O</td><td class="d1">426.38616622</td><td class="d1"><font color=#FF00BF>Manihot esculenta</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007569 target="_blank">C00007569</a></td><td class="d1">74-90-8</td><td class="d1">Hydrocyanic acid</td><td class="d1">CHN</td><td class="d1">27.01089904</td><td class="d1"><font color=#FF00BF>Manihot esculenta</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00019220 target="_blank">C00019220</a></td><td class="d1">1617-70-5</td><td class="d1">Lupenone</td><td class="d1">C30H48O</td><td class="d1">424.37051615</td><td class="d1"><font color=#FF00BF>Manihot esculenta</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00030828 target="_blank">C00030828</a></td><td class="d1">124-19-6</td><td class="d1">Nonanal</td><td class="d1">C9H18O</td><td class="d1">142.1357652</td><td class="d1"><font color=#FF00BF>Manihot esculenta</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00032287 target="_blank">C00032287</a></td><td class="d1">514-07-8</td><td class="d1">Taraxerone</td><td class="d1">C30H48O</td><td class="d1">424.37051615</td><td class="d1"><font color=#FF00BF>Manihot esculenta</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

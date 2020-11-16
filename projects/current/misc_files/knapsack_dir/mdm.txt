@@ -1,0 +1,87 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Malus domestica</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Malus domestica</font><br><br>
+   	      Number of matched data :40 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00000001 target="_blank">C00000001</a></td><td class="d1">545-97-1</td><td class="d1">Gibberellin A1</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000003 target="_blank">C00000003</a></td><td class="d1">77-06-5</td><td class="d1">Gibberellin A3</td><td class="d1">C19H22O6</td><td class="d1">346.14163844</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000007 target="_blank">C00000007</a></td><td class="d1">510-75-8</td><td class="d1">Gibberellin A7</td><td class="d1">C19H22O5</td><td class="d1">330.14672381</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000008 target="_blank">C00000008</a></td><td class="d1">7044-72-6</td><td class="d1">Gibberellin A8</td><td class="d1">C19H24O7</td><td class="d1">364.15220312</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000009 target="_blank">C00000009</a></td><td class="d1">427-77-0</td><td class="d1">Gibberellin A9</td><td class="d1">C19H24O4</td><td class="d1">316.16745925</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000012 target="_blank">C00000012</a></td><td class="d1">1164-45-0</td><td class="d1">Gibberellin A12</td><td class="d1">C20H28O4</td><td class="d1">332.19875938</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000015 target="_blank">C00000015</a></td><td class="d1">13744-18-8</td><td class="d1">Gibberellin A15</td><td class="d1">C20H26O4</td><td class="d1">330.18310932</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000017 target="_blank">C00000017</a></td><td class="d1">18411-79-5</td><td class="d1">Gibberellin A17</td><td class="d1">C20H26O7</td><td class="d1">378.16785319</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000019 target="_blank">C00000019</a></td><td class="d1">6980-44-5</td><td class="d1">Gibberellin A19</td><td class="d1">C20H26O6</td><td class="d1">362.17293856</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000020 target="_blank">C00000020</a></td><td class="d1">19143-87-4</td><td class="d1">Gibberellin A20</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000024 target="_blank">C00000024</a></td><td class="d1">19427-32-8</td><td class="d1">Gibberellin A24</td><td class="d1">C20H26O5</td><td class="d1">346.17802394</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000025 target="_blank">C00000025</a></td><td class="d1">28535-69-5</td><td class="d1">Gibberellin A25</td><td class="d1">C20H26O6</td><td class="d1">362.17293856</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000034 target="_blank">C00000034</a></td><td class="d1">32630-92-5</td><td class="d1">Gibberellin A34</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000035 target="_blank">C00000035</a></td><td class="d1">35214-68-7</td><td class="d1">Gibberellin A35</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000044 target="_blank">C00000044</a></td><td class="d1">36434-15-8</td><td class="d1">Gibberellin A44</td><td class="d1">C20H26O5</td><td class="d1">346.17802394</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000045 target="_blank">C00000045</a></td><td class="d1">55812-47-0</td><td class="d1">Gibberellin A45</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000051 target="_blank">C00000051</a></td><td class="d1">56978-14-4</td><td class="d1">Gibberellin A51</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000053 target="_blank">C00000053</a></td><td class="d1">51576-08-0</td><td class="d1">Gibberellin A53</td><td class="d1">C20H28O5</td><td class="d1">348.193674</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000054 target="_blank">C00000054</a></td><td class="d1">72533-75-6</td><td class="d1">Gibberellin A54</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000061 target="_blank">C00000061</a></td><td class="d1">81826-98-4</td><td class="d1">Gibberellin A61</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000062 target="_blank">C00000062</a></td><td class="d1">81826-99-5</td><td class="d1">Gibberellin A62</td><td class="d1">C19H22O5</td><td class="d1">330.14672381</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000063 target="_blank">C00000063</a></td><td class="d1">63351-80-4</td><td class="d1">Gibberellin A63</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000068 target="_blank">C00000068</a></td><td class="d1">71177-41-8</td><td class="d1">Gibberellin A68</td><td class="d1">C19H22O6</td><td class="d1">346.14163844</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000070 target="_blank">C00000070</a></td><td class="d1">52846-39-6</td><td class="d1">Gibberellin A70</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000073 target="_blank">C00000073</a></td><td class="d1">121688-19-5</td><td class="d1">Gibberellin A73</td><td class="d1">C19H22O4</td><td class="d1">314.15180919</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000080 target="_blank">C00000080</a></td><td class="d1">128053-62-3</td><td class="d1">Gibberellin A80</td><td class="d1">C19H22O6</td><td class="d1">346.14163844</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000084 target="_blank">C00000084</a></td><td class="d1">113393-62-7</td><td class="d1">Gibberellin A84</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000088 target="_blank">C00000088</a></td><td class="d1">146959-87-7</td><td class="d1">Gibberellin A88</td><td class="d1">C19H22O5</td><td class="d1">330.14672381</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000749 target="_blank">C00000749</a></td><td class="d1">174391-71-0</td><td class="d1">Gibberellin A106</td><td class="d1">C19H22O5</td><td class="d1">330.14672381</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000990 target="_blank">C00000990</a></td><td class="d1">60-81-1</td><td class="d1">Phloridzin</td><td class="d1">C21H24O10</td><td class="d1">436.13694699</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00001183 target="_blank">C00001183</a></td><td class="d1">110-17-8</td><td class="d1">Fumaric acid</td><td class="d1">C4H4O4</td><td class="d1">116.01095862</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002631 target="_blank">C00002631</a></td><td class="d1">21453-69-0</td><td class="d1">(+)-Lirioresinol B</td><td class="d1">C22H26O8</td><td class="d1">418.16276781</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002730 target="_blank">C00002730</a></td><td class="d1">93451-44-6</td><td class="d1">4-p-Coumaroylquinic acid</td><td class="d1">C16H18O8</td><td class="d1">338.10016755</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007869 target="_blank">C00007869</a></td><td class="d1"></td><td class="d1">Gibberellin A104</td><td class="d1">C19H22O5</td><td class="d1">330.14672381</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007870 target="_blank">C00007870</a></td><td class="d1"></td><td class="d1">Gibberellin A107</td><td class="d1">C19H22O5</td><td class="d1">330.14672381</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007871 target="_blank">C00007871</a></td><td class="d1"></td><td class="d1">Gibberellin A108</td><td class="d1">C19H22O5</td><td class="d1">330.14672381</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00013594 target="_blank">C00013594</a></td><td class="d1">174286-11-4</td><td class="d1">Gibberellin A105</td><td class="d1">C19H22O5</td><td class="d1">330.14672381</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00023124 target="_blank">C00023124</a></td><td class="d1">128820-39-3</td><td class="d1">Sinensiaxanthin</td><td class="d1">C27H38O3</td><td class="d1">410.28209508</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00034649 target="_blank">C00034649</a></td><td class="d1">57-83-0</td><td class="d1">Progesterone</td><td class="d1">C21H30O2</td><td class="d1">314.2245802</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00046784 target="_blank">C00046784</a></td><td class="d1">78-79-5</td><td class="d1">Isoprene</td><td class="d1">C5H8</td><td class="d1">68.06260026</td><td class="d1"><font color=#FF00BF>Malus domestica</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

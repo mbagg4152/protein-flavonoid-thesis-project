@@ -1,0 +1,55 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Phoenix dactylifera</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Phoenix dactylifera</font><br><br>
+   	      Number of matched data :8 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00002674 target="_blank">C00002674</a></td><td class="d1">530-57-4</td><td class="d1">Syringic acid</td><td class="d1">C9H10O5</td><td class="d1">198.05282343</td><td class="d1"><font color=#FF00BF>Phoenix dactylifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002720 target="_blank">C00002720</a></td><td class="d1">73263-62-4</td><td class="d1">5-O-Caffeoylshikimic acid</td><td class="d1">C16H16O8</td><td class="d1">336.08451749</td><td class="d1"><font color=#FF00BF>Phoenix dactylifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002903 target="_blank">C00002903</a></td><td class="d1">501-36-0</td><td class="d1">Resveratrol</td><td class="d1">C14H12O3</td><td class="d1">228.07864425</td><td class="d1"><font color=#FF00BF>Phoenix dactylifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003648 target="_blank">C00003648</a></td><td class="d1">57-88-5</td><td class="d1">Cholesterol</td><td class="d1">C27H46O</td><td class="d1">386.35486609</td><td class="d1"><font color=#FF00BF>Phoenix dactylifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003663 target="_blank">C00003663</a></td><td class="d1">53-16-7</td><td class="d1">Oestrone</td><td class="d1">C18H22O2</td><td class="d1">270.16197995</td><td class="d1"><font color=#FF00BF>Phoenix dactylifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003750 target="_blank">C00003750</a></td><td class="d1">1617-68-1</td><td class="d1">Lupeol acetate</td><td class="d1">C32H52O2</td><td class="d1">468.3967309</td><td class="d1"><font color=#FF00BF>Phoenix dactylifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00015561 target="_blank">C00015561</a></td><td class="d1">89946-11-2</td><td class="d1">3,3',5,5'-Tetrahydroxy-4-methoxystilbene</td><td class="d1">C15H14O5</td><td class="d1">274.08412356</td><td class="d1"><font color=#FF00BF>Phoenix dactylifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00046784 target="_blank">C00046784</a></td><td class="d1">78-79-5</td><td class="d1">Isoprene</td><td class="d1">C5H8</td><td class="d1">68.06260026</td><td class="d1"><font color=#FF00BF>Phoenix dactylifera</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

@@ -34,14 +34,19 @@ Asparagus officinalis,C00001071 ,"Myricetin"
 Asparagus officinalis,C00003817 ,"Apigenin"
 Asparagus officinalis,C00004565 ,"Kaempferol"
 Asparagus officinalis,C00004631 ,"Quercetin"
+Asparagus officinalis,[,"l"
 Asparagus officinalis,C00007233 ,"Naringenin chalcone"
 
 Auxenochlorella protothecoides
 Bathycoccus prasinos
-Beta vulgaris
+Beta vulgaris,[,"l"
+
 Brachypodium distachyon
 Brassica napus,C00005229 ,"Kaempferol 3-O-sophoroside 7-O-beta-D-glucopyranoside:Kaempferol 3-sophoroside-7-glucoside"
 Brassica napus,C00005464 ,"Quercetin 3-sophoroside-7-glucoside"
+Brassica napus,[,"l"
+Brassica napus,[,"l"
+Brassica napus,[,"l"
 Brassica napus,C00005916 ,"Kaempferol 3-(2'''-sinapylsophoroside)-7-glucoside"
 Brassica napus,C00005922 ,"Kaempferol 3-(2''-sinapylglucoside)-7-sophoroside"
 Brassica napus,C00007233 ,"Naringenin chalcone"
@@ -52,6 +57,7 @@ Brassica oleracea,C00002526 ,"Genistein"
 Brassica oleracea,C00003817 ,"Apigenin"
 Brassica oleracea,C00004565 ,"Kaempferol"
 Brassica oleracea,C00004631 ,"Quercetin"
+Brassica oleracea,[,"l"
 Brassica oleracea,C00005229 ,"Kaempferol 3-O-sophoroside 7-O-beta-D-glucopyranoside:Kaempferol 3-sophoroside-7-glucoside"
 Brassica oleracea,C00005409 ,"Quercetin 3-O-sophoroside"
 Brassica oleracea,C00005409 ,"Quercetin 3-O-sophoroside"
@@ -79,6 +85,7 @@ Brassica oleracea,C00013805 ,"Kaempferol 3-(2'''-(E)-caffeoylglucosyl)-(1-"
 Brassica oleracea,C00036981 ,"Cyanidin 3-O-sophoroside-5-O-glucoside"
 
 Brassica rapa,C00005229 ,"Kaempferol 3-O-sophoroside 7-O-beta-D-glucopyranoside:Kaempferol 3-sophoroside-7-glucoside"
+Brassica rapa,[,"l"
 
 Cajanus cajan,C00002526 ,"Genistein"
 
@@ -91,6 +98,7 @@ Capsicum annuum,C00004565 ,"Kaempferol"
 Capsicum annuum,C00004631 ,"Quercetin"
 Capsicum annuum,C00005374 ,"Quercetin3-O-alpha-rhamnopyranoside"
 Capsicum annuum,C00005431 ,"Quercetin 3-rhamnoside-7-glucoside"
+Capsicum annuum,[,"l"
 Capsicum annuum,C00006614 ,"Cyanidin"
 Capsicum annuum,C00007233 ,"Naringenin chalcone"
 Capsicum annuum,C00011174 ,"Luteolin 7-O-(2-apiofuranosyl-4-glucopyranosyl-6-malonyl)glucopyranoside"
@@ -98,6 +106,7 @@ Capsicum annuum,C00011174 ,"Luteolin 7-O-(2-apiofuranosyl-4-glucopyranosyl-6-mal
 Carica papaya,C00000982 ,"Naringenin"
 Carica papaya,C00004565 ,"Kaempferol"
 Carica papaya,C00004631 ,"Quercetin"
+Carica papaya,[,"l"
 
 Chenopodium quinoa,C00005155 ,"Kaempferol 3-apiosyl-(1-"
 Chenopodium quinoa,C00005204 ,"Kaempferol 3-(2Gal-apiosylrobinobioside)"
@@ -106,17 +115,31 @@ Chlamydomonas reinhardtii
 Chlorella variabilis
 Chondrus crispus
 Cicer arietinum,C00002526 ,"Genistein"
+Cicer arietinum,[,"l"
 Cicer arietinum,C00005161 ,"Kaempferol 3-apiosyl-(1-"
 Cicer arietinum,C00006925 ,"Isoliquiritigenin"
 
 Citrus clementina
+Citrus sinensis,[,"l"
+Citrus sinensis,[,"l"
 Citrus sinensis,C00002374 ,"Cyanidin 3-O-glucoside"
 Citrus sinensis,C00006792 ,"Cyanidin 3-(4''-acetylglucoside)"
 Citrus sinensis,C00006796 ,"Cyanidin 3-(6''-malonylglucoside)"
 
 Coccomyxa subellipsoidea
 Cucumis melo
+Cucumis sativus,[,"l"
+Cucumis sativus,[,"l"
+Cucumis sativus,[,"l"
 Cucumis sativus,C00004172 ,"Apigenin 7-(6''-p-coumarylglucoside)"
+Cucumis sativus,[,"l"
+Cucumis sativus,[,"l"
+Cucumis sativus,[,"l"
+Cucumis sativus,[,"l"
+Cucumis sativus,[,"l"
+Cucumis sativus,[,"l"
+Cucumis sativus,[,"l"
+Cucumis sativus,[,"l"
 
 Cucurbita maxima
 Cucurbita moschata
@@ -129,8 +152,10 @@ Daucus carota,C00001067 ,"Luteolin 7-O-(6''-malonylglucoside)"
 Daucus carota,C00002374 ,"Cyanidin 3-O-glucoside"
 Daucus carota,C00003817 ,"Apigenin"
 Daucus carota,C00004156 ,"Apigenin 7-O-rutinoside"
+Daucus carota,[,"l"
 Daucus carota,C00004268 ,"Luteolin 7-O-beta-D-glucuronide"
 Daucus carota,C00004282 ,"Luteolin 7-O-rutinoside"
+Daucus carota,[,"l"
 Daucus carota,C00004330 ,"Luteolin 4'-sulfate"
 Daucus carota,C00006614 ,"Cyanidin"
 Daucus carota,C00006655 ,"Cyanidin 3-lathyroside"
@@ -150,6 +175,7 @@ Eutrema salsugineum
 Fragaria vesca
 Galdieria sulphuraria
 Glycine max,C00000982 ,"Naringenin"
+Glycine max,[,"l"
 Glycine max,C00002374 ,"Cyanidin 3-O-glucoside"
 Glycine max,C00002526 ,"Genistein"
 Glycine max,C00004565 ,"Kaempferol"
@@ -158,19 +184,23 @@ Glycine max,C00005166 ,"Kaempferol 3-O-gentiobioside"
 Glycine max,C00005167 ,"Kaempferol 3-neohesperidoside"
 Glycine max,C00005215 ,"Kaempferol 3-glucosyl-(1-"
 Glycine max,C00005217 ,"Kaempferol 3-(2G-glucosylrutinoside)"
+Glycine max,[,"l"
 Glycine max,C00005218 ,"Kaempferol 3-(2G-rhamnosylgentiobioside)"
 Glycine max,C00005409 ,"Quercetin 3-O-sophoroside"
 Glycine max,C00005411 ,"Quercetin 3-gentiobioside"
 Glycine max,C00005412 ,"Quercetin 3-O-neohesperidoside"
 Glycine max,C00005453 ,"Quercetin 3-(2G-glucosylgentiobioside)"
 Glycine max,C00005454 ,"Quercetin 3-(2G-glucosylrutinoside)"
+Glycine max,[,"l"
 Glycine max,C00005455 ,"Quercetin 3-(2G-rhamnosylgentiobioside)"
+Glycine max,[,"l"
 Glycine max,C00006925 ,"Isoliquiritigenin"
 Glycine max,C00007233 ,"Naringenin chalcone"
 Glycine max,C00010110 ,"Genistein 7-O-beta-D-glucoside 6''-O-malonate"
 
 Gossypium arboreum,C00005386 ,"Quercetin 3'-glucoside"
 
+Gossypium hirsutum,[,"l"
 Gossypium hirsutum,C00004651 ,"Quercetin 3,5,7,4'-tetramethyl ether"
 Gossypium hirsutum,C00004652 ,"Quercetin 3,5,3',4'-tetramethyl ether"
 Gossypium hirsutum,C00005386 ,"Quercetin 3'-glucoside"
@@ -189,8 +219,10 @@ Lactuca sativa,C00006796 ,"Cyanidin 3-(6''-malonylglucoside)"
 Lactuca sativa,C00013883 ,"Quercetin 3-(6''-malonylglucoside)-7-glucoside"
 
 Lotus japonicus,C00000958 ,"epi-Gallocatechin 3-O-gallate"
+Lotus japonicus,[,"l"
 Lotus japonicus,C00005372 ,"Quercetin 3-galactoside"
 Lotus japonicus,C00005374 ,"Quercetin3-O-alpha-rhamnopyranoside"
+Lotus japonicus,[,"l"
 Lotus japonicus,C00009210 ,"Catechin-(4alpha-"
 Lotus japonicus,C00009237 ,"Gallocatechin-(4alpha-"
 Lotus japonicus,C00009238 ,"Epigallocatechin-(4beta-"
@@ -205,6 +237,7 @@ Momordica charantia,C00000956 ,"Epicatechin"
 Momordica charantia,C00000982 ,"Naringenin"
 Momordica charantia,C00004565 ,"Kaempferol"
 Momordica charantia,C00004631 ,"Quercetin"
+Momordica charantia,[,"l"
 Momordica charantia,C00007233 ,"Naringenin chalcone"
 
 Monoraphidium neglectum
@@ -214,12 +247,18 @@ Musa acuminata,C00000982 ,"Naringenin"
 Musa acuminata,C00004565 ,"Kaempferol"
 Musa acuminata,C00004631 ,"Quercetin"
 Musa acuminata,C00005372 ,"Quercetin 3-galactoside"
+Musa acuminata,[,"l"
+Musa acuminata,[,"l"
+Musa acuminata,[,"l"
+Musa acuminata,[,"l"
 
 Nelumbo nucifera,C00005372 ,"Quercetin 3-galactoside"
 
 Nicotiana attenuata
 Nicotiana sylvestris
 Nicotiana tabacum,C00005472 ,"Quercetin 3-rutinoside-7-glucoside"
+Nicotiana tabacum,[,"l"
+Nicotiana tabacum,[,"l"
 
 Nicotiana tomentosiformis
 Olea europaea v. sylvestris
@@ -236,6 +275,7 @@ Phalaenopsis equestris,C00011096 ,"Cyanidin 3-O-[6-O-(malonyl)-beta-D-glucopyran
 Phaseolus vulgaris,C00002526 ,"Genistein"
 Phaseolus vulgaris,C00005141 ,"Kaempferol 3-glucuronide"
 Phaseolus vulgaris,C00005150 ,"Kaempferol 7-O-rhamnoside"
+Phaseolus vulgaris,[,"l"
 
 Phoenix dactylifera
 Physcomitrium patens subsp. Patens
@@ -251,15 +291,22 @@ Prunus avium,C00005149 ,"Kaempferol-7-O-glucoside"
 Prunus avium,C00005152 ,"Kaempferol 4'-glucoside"
 Prunus avium,C00005194 ,"Kaempferol 3,4'-di-O-beta-D-glucopyranoside"
 Prunus avium,C00005217 ,"Kaempferol 3-(2G-glucosylrutinoside)"
+Prunus avium,[,"l"
 Prunus avium,C00005247 ,"Kaempferol 3-rutinoside-4'-glucoside"
+Prunus avium,[,"l"
 Prunus avium,C00005477 ,"Quercetin 3-rutinoside-4'-glucoside"
+Prunus avium,[,"l"
 Prunus avium,C00005488 ,"Quercetin 3-rutinoside-7,3'-diglucoside"
+Prunus avium,[,"l"
 Prunus avium,C00006614 ,"Cyanidin"
 Prunus avium,C00048239 ,"(+)-Naringenin"
 
 Prunus mume,C00000982 ,"Naringenin"
 Prunus mume,C00005412 ,"Quercetin 3-O-neohesperidoside"
+Prunus mume,[,"l"
+Prunus mume,[,"l"
 Prunus mume,C00013879 ,"Quercetin 3-rhamnosyl-(1-"
+Prunus mume,[,"l"
 
 Prunus persica,C00000947 ,"Catechin"
 Prunus persica,C00000982 ,"Naringenin"
@@ -278,10 +325,12 @@ Ricinus communis,C00014318 ,"Naringenin 7-(2-p-Coumaroylglucoside)"
 
 Selaginella moellendorffii
 Sesamum indicum
-Setaria italica
+Setaria italica,[,"l"
+
 Solanum lycopersicum,C00000998 ,"Naringenin 7-O-beta-D-glucoside"
 Solanum lycopersicum,C00004565 ,"Kaempferol"
 Solanum lycopersicum,C00005374 ,"Quercetin3-O-alpha-rhamnopyranoside"
+Solanum lycopersicum,[,"l"
 Solanum lycopersicum,C00007233 ,"Naringenin chalcone"
 
 Solanum pennellii,C00004638 ,"Quercetin 3,7-dimethyl ether"
@@ -290,19 +339,29 @@ Solanum pennellii,C00004649 ,"Quercetin 7,3',4'-trimethyl ether"
 Solanum tuberosum,C00000956 ,"Epicatechin"
 Solanum tuberosum,C00005230 ,"Kaempferol 3-sophoroside-7-rhamnoside"
 Solanum tuberosum,C00005258 ,"Kaempferol 3-sophorotrioside-7-rhamnoside"
+Solanum tuberosum,[,"l"
 Solanum tuberosum,C00005454 ,"Quercetin 3-(2G-glucosylrutinoside)"
+Solanum tuberosum,[,"l"
 Solanum tuberosum,C00006614 ,"Cyanidin"
+Solanum tuberosum,[,"l"
+Solanum tuberosum,[,"l"
+Solanum tuberosum,[,"l"
+Solanum tuberosum,[,"l"
 
 Sorghum bicolor,C00006610 ,"Apigeninidin"
 Sorghum bicolor,C00006753 ,"Apigeninidin 5-(5''-caffeylarabinoside)"
 
-Spinacia oleracea
+Spinacia oleracea,[,"l"
+
 Tarenaya hassleriana
 Theobroma cacao,C00000674 ,"Luteolin"
 Theobroma cacao,C00000947 ,"Catechin"
 Theobroma cacao,C00000956 ,"Epicatechin"
 Theobroma cacao,C00000982 ,"Naringenin"
 Theobroma cacao,C00000998 ,"Naringenin 7-O-beta-D-glucoside"
+Theobroma cacao,[,"l"
+Theobroma cacao,[,"l"
+Theobroma cacao,[,"l"
 Theobroma cacao,C00003817 ,"Apigenin"
 Theobroma cacao,C00005372 ,"Quercetin 3-galactoside"
 Theobroma cacao,C00006650 ,"Cyanidin 3-arabinoside"
@@ -316,19 +375,26 @@ Vigna angularis,C00008817 ,"Gallocatechin"
 Vigna angularis,C00008852 ,"Catechin 7-O-beta-D-glucopyranoside"
 Vigna angularis,C00009067 ,"Catechin-(4alpha-"
 
+Vigna radiata,[,"l"
+Vigna radiata,[,"l"
+Vigna radiata,[,"l"
 Vigna radiata,C00002526 ,"Genistein"
 Vigna radiata,C00005141 ,"Kaempferol 3-glucuronide"
 Vigna radiata,C00005409 ,"Quercetin 3-O-sophoroside"
 Vigna radiata,C00008817 ,"Gallocatechin"
+Vigna radiata,[,"l"
+Vigna radiata,[,"l"
 
 Vitis vinifera,C00000947 ,"Catechin"
 Vitis vinifera,C00000956 ,"Epicatechin"
 Vitis vinifera,C00000958 ,"epi-Gallocatechin 3-O-gallate"
+Vitis vinifera,[,"l"
 Vitis vinifera,C00002374 ,"Cyanidin 3-O-glucoside"
 Vitis vinifera,C00006614 ,"Cyanidin"
 Vitis vinifera,C00006793 ,"Cyanidin 3-(6''-acetylglucoside)"
 Vitis vinifera,C00008817 ,"Gallocatechin"
 Vitis vinifera,C00008866 ,"(-)-Epicatechin 3-O-gallate"
+Vitis vinifera,[,"l"
 Vitis vinifera,C00008882 ,"Gallocatechin 3-O-gallate"
 Vitis vinifera,C00009086 ,"Epicatechin-(4beta-"
 Vitis vinifera,C00009087 ,"Epicatechin-(4beta-"
@@ -342,6 +408,8 @@ Vitis vinifera,C00009228 ,"Epicatechin-(4beta-"
 Volvox carteri f. nagariensis
 Zea mays,C00000674 ,"Luteolin"
 Zea mays,C00000982 ,"Naringenin"
+Zea mays,[,"l"
+Zea mays,[,"l"
 Zea mays,C00002374 ,"Cyanidin 3-O-glucoside"
 Zea mays,C00002526 ,"Genistein"
 Zea mays,C00003817 ,"Apigenin"
@@ -350,12 +418,16 @@ Zea mays,C00004631 ,"Quercetin"
 Zea mays,C00005412 ,"Quercetin 3-O-neohesperidoside"
 Zea mays,C00005427 ,"Quercetin 3,7-O-beta-diglucopyranoside"
 Zea mays,C00005435 ,"Quercetin 3,3'-diglucoside"
+Zea mays,[,"l"
+Zea mays,[,"l"
+Zea mays,[,"l"
 Zea mays,C00005602 ,"Quercetin 3,7-dimethyl ether 5-glucoside"
 Zea mays,C00006614 ,"Cyanidin"
 Zea mays,C00006796 ,"Cyanidin 3-(6''-malonylglucoside)"
 Zea mays,C00006799 ,"Cyanidin 3-(3'',6''-dimalonylglucoside)"
 
 Ziziphus jujuba,C00000947 ,"Catechin"
+Ziziphus jujuba,[,"l"
 Ziziphus jujuba,C00008808 ,"ent-Catechin"
 
 Glycine soja
@@ -373,6 +445,7 @@ Medicago truncatula,C00006925 ,"Isoliquiritigenin"
 Medicago truncatula,C00007233 ,"Naringenin chalcone"
 Medicago truncatula,C00008817 ,"Gallocatechin"
 Medicago truncatula,C00008818 ,"(-)-Epigallocatechin"
+Medicago truncatula,[,"l"
 Medicago truncatula,C00010110 ,"Genistein 7-O-beta-D-glucoside 6''-O-malonate"
 
 Rosa chinensis

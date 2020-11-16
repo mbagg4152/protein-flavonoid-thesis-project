@@ -1,0 +1,51 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Gossypium arboreum</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Gossypium arboreum</font><br><br>
+   	      Number of matched data :4 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00000112 target="_blank">C00000112</a></td><td class="d1">487-89-8</td><td class="d1">Indole-3-carboxyaldehyde</td><td class="d1">C9H7NO</td><td class="d1">145.05276385</td><td class="d1"><font color=#FF00BF>Gossypium arboreum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00001046 target="_blank">C00001046</a></td><td class="d1">94516-28-6</td><td class="d1">Gossypetin 8-rhamnoside</td><td class="d1">C21H20O12</td><td class="d1">464.09547611</td><td class="d1"><font color=#FF00BF>Gossypium arboreum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00005386 target="_blank">C00005386</a></td><td class="d1">19254-30-9</td><td class="d1">Quercetin 3'-glucoside</td><td class="d1">C21H20O12</td><td class="d1">464.09547611</td><td class="d1"><font color=#FF00BF>Gossypium arboreum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007636 target="_blank">C00007636</a></td><td class="d1"></td><td class="d1">delta-Cadinene</td><td class="d1">C15H24</td><td class="d1">204.18780077</td><td class="d1"><font color=#FF00BF>Gossypium arboreum</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>
