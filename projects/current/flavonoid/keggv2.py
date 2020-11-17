@@ -49,14 +49,14 @@ thread_lim = 5  # max number of threads to be used in accessing data
 
 def main():
     """
-    This is the main function of the file which calls specific functions in order when running and displays the total run
-    time at the end of the code execution.
+    This is the main function of the file which calls specific functions in order when running and displays the total
+    run time at the end of the code execution.
     """
     init_setup()
-    run_path_parse()
-    prediction()
-    run_fill_matrix()
-    run_build_fasta()
+    get_parse_pathway_genes()
+    flavonoid_predictions()
+    make_plant_ec_counts()
+    build_nt_fasta_by_ec()
 
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
@@ -91,7 +91,7 @@ def init_setup():
         tmp_plant = Plant(code=key, name=plant_dict[key])  # object made for current plant
         if not tmp_plant.is_in(list_all_plants): list_all_plants.append(tmp_plant)  # add if not already present in list
 
-def run_path_parse():
+def get_parse_pathway_genes():
     """
     This function breaks the list of plant pathways into different lists in order for different data to be processed
     at the same time using multithreading. Once all of the threads have finished, then the list of genes by path will
@@ -170,7 +170,7 @@ def path_parse(paths):
                                 list_all_plants[index] = plant  # update the list of plants with modified plant object
                 except IndexError: pass  # couldn't find items using regular expression findall
 
-def prediction():
+def flavonoid_predictions():
     """
     This is the function that goes through each plant, looks at the list of EC numbers then applies a function in order
     to determine whether or not the plant has the required EC numbers needed to synthesize each compound.
@@ -197,7 +197,7 @@ def prediction():
         print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
               'Data saved in ' + path_chem + SEP + key.file_name + '.')
     write_append(path_main + SEP + 'plant-ec-nums.csv', plant_ec_output)
-def run_fill_matrix():
+def make_plant_ec_counts():
     """
     This function creates and outputs a 'matrix' relating to each species and EC number by running the fill_matrix
     function on multiple threads. For each gene entry containing a specific EC number, the program will increase the
@@ -228,7 +228,7 @@ def fill_count_matrix(plant):
             plant.ec_counts.append(tmp_count)
     with lock_access_plant: list_all_plant_matrix.append(tmp_plant)  # update count matrix
 
-def run_build_fasta():
+def build_nt_fasta_by_ec():
     """
     This function uses multithreading and the information gathered from running run_path_parse in order to get the
     FASTA/DNA sequence for each of the gene entries that were found. As before, the program parses the list after

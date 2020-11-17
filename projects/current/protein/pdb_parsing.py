@@ -120,7 +120,6 @@ def simple_entry_print(pdb_id, group, ec_nums, num_records, org_name, tax_id, ex
     print(simple_entry_str(pdb_id, group, ec_nums, num_records, org_name, tax_id, ex_sys))
 
 def simple_entry_str(pdb_id, group, ec_nums, num_records, org_name, tax_id, ex_sys):
-    # return pdb_id + ' || ' + group + ' ||  ' + ec_nums + ' || ' + str(num_records) + ' records || ' + org_name
     return pdb_id + ' || ' + group + ' || ' + org_name + ' || ' + tax_id + ' || ' + ex_sys + ' || ' + ec_nums + \
            ' || ' + str(num_records) + ' records'
 
