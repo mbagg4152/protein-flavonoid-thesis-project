@@ -28,3 +28,9 @@ AGI, BUN, CAQ, EC, EGT, ERD, GC, GEN, HCC, HWB, KMP, KXN, LU2, MYC, NAR, PYG, QU
     'Apigenin', 'Butein', 'Catechol', 'Epicatechin', 'Epigallocatechin', 'Eriodictyol', \
     'Gallocatechin', 'Genistein', 'Isoliquiritigenin', 'Cyanidin', 'Kaempferol', 'Catechin', \
     'Luteolin', 'Myricetin', 'Naringenin', 'Pyrogallol', 'Quercetin', 'Resorcinol', 'Resveratrol'
+
+cas_id_form = r"([0-9]*-[0-9]*-[0-9]*)"  # regular expression for CAS ID
+re_line_with_cas = r'<tr><td class="d1"><a href=information\.php\?word=C[0-9]* target="_blank">(C[0-9]*)<\/a><\/td>' \
+                   r'<td class="d1">([0-9]*-[0-9]*-[0-9]*)<\/td><td class="d1">([^<]*)<\/td><td class="d1">'
+re_line_no_cas = r'<tr><td class="d1"><a href=information\.php\?word=C[0-9]* target="_blank">(C[0-9]*)<\/a><\/td><td ' \
+                 r'class="d1"><\/td><td class="d1">([^<]*)<\/td><td class="d1">'
