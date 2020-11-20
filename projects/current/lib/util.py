@@ -166,3 +166,9 @@ def mult_replace(line, pairs):
     """
     for pair in pairs: line = line.replace(pair[0], pair[1])
     return line
+
+def skin(line):
+    """
+    Simple function that removes ALL whitespace from a string
+    """
+    return ''.join(line.split()).strip()
