@@ -39,6 +39,7 @@ FN_PDB_IDS = JDIR_PROT + 'pdb_ids.json'
 FN_PDB_IDS_SHORT = JDIR_PROT + 'pdb_ids_short.json'
 FN_PROTEIN = JDIR_PROT + 'protein.json'
 FN_PDB_SINGLE = JDIR_PROT + 'pdb_id_single.json'
+FN_PLANES = JDIR_PROT + 'planes.json'
 
 FN_NPLANT_DICT = JDIR_NPASS + 'nplant_dict.json'
 FN_NPLANT_CODES = JDIR_NPASS + 'nplant_codes.json'
