@@ -1,6 +1,7 @@
 import re
 from plib.strings_consts import *
 import sys
+from math import sqrt
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
 from lib.jsondata import *
@@ -34,12 +35,14 @@ class Record:
 
 
 class Atom:
-    def __init__(self, name=None, elem=None, x=None, y=None, z=None):
+    def __init__(self, name=None, elem=None, x=None, y=None, z=None, dist_from_origin=None):
         self.name = name if name is not None else ' '
         self.elem = elem if elem is not None else ' '
         self.x = x if x is not None else 0.0
         self.y = y if y is not None else 0.0
         self.z = z if z is not None else 0.0
+        self.dist_from_origin = dist_from_origin if dist_from_origin is not None else 0.0
+        self.from_origin()
 
     def show(self):
         print(self.string())
@@ -48,16 +51,43 @@ class Atom:
         return 'Name: {} Elem: {} X: {} Y: {} Z:{}'.format(self.name, self.elem, self.x, self.y, self.z)
 
     def simple(self):
-        return '[{} ({}, {}, {})]'.format(self.name, self.x, self.y, self.z)
+        return '({}, {}, {})'.format(self.x, self.y, self.z)
+
+    def from_origin(self):
+        self.dist_from_origin = sqrt((self.x ** 2) + (self.y ** 2) + (self.z ** 2))
 
 class Plane:
-    def __init__(self, atoms: [Atom]):
+    def __init__(self, atoms: [Atom], eqn=None):
         self.atoms = atoms
+        self.eqn = eqn if eqn is not None else Eqn(0.0, 0.0, 0.0, 0.0)
 
     def string(self):
         atoms = ''
         for atom in self.atoms: atoms += atom.simple() + ' '
-        return 'Plane: {}'.format(atoms)
+        return '{}'.format(atoms)
+
+    def set_eqn(self):
+        x = self.atoms[0]
+        y = self.atoms[1]
+        z = self.atoms[2]
+        xy = cross(x, y)
+        zy = cross(x, z)
+        a = (xy[1] * zy[2]) - (zy[1] * xy[2])
+        b = (xy[2] * zy[0]) - (zy[2] * xy[0])
+        c = (xy[0] * zy[1]) - (zy[0] * xy[1])
+        d = -((a * x.x) + (b * x.y) + (c * x.z))
+
+        self.eqn.a = a
+        self.eqn.b = b
+        self.eqn.c = c
+        self.eqn.d = d
+
+class Eqn:
+    def __init__(self, a, b, c, d):
+        self.a = a
+        self.b = b
+        self.c = c
+        self.d = d
 
 
 class Struct:
@@ -91,9 +121,11 @@ class Struct:
         for name in atom_names:
             tmp_rec = self.get_record(name)
             tmp_atm = new_atom(tmp_rec)
+            tmp_atm.from_origin()
             self.atoms.append(tmp_atm)
             atoms.append(tmp_atm)
         plane = Plane(atoms)
+        plane.set_eqn()
         self.planes.append(plane)
 
 def new_atom(rec: Record):
@@ -155,8 +187,10 @@ def get_coord(coord):
     if coord is None or coord == '': return 0.0
     else:
         tmp_coord = ''
-        # print('coord val: ' + coord)
         for c in coord:
             if c == '.' or c == '-' or c.isdigit(): tmp_coord += c
         if tmp_coord == '': return 0.0
         else: return float(tmp_coord)
+
+def cross(a: Atom, b: Atom):
+    return b.x - a.x, b.y - a.y, b.z - a.z

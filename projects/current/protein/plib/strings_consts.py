@@ -29,6 +29,7 @@ RE_WORDS = r'\s*(\S[\S| ]*\S)\s*'
 SEP = os.sep
 path_cwd = os.getcwd()
 out_dir = path_cwd + SEP + 'pdb-output' + SEP
+image_dir = path_cwd + SEP + 'images' + SEP
 formatted_out = out_dir + 'format_out_all.txt'
 formatted_out_small = out_dir + 'format_out_partial.txt'
 formatted_basic = out_dir + 'basic_info_formatted.txt'
