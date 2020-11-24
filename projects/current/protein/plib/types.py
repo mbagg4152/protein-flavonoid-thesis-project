@@ -2,6 +2,7 @@ import re
 from plib.strings_consts import *
 import sys
 from math import sqrt
+from itertools import combinations
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
 from lib.jsondata import *
@@ -67,20 +68,42 @@ class Plane:
         return '{}'.format(atoms)
 
     def set_eqn(self):
-        x = self.atoms[0]
-        y = self.atoms[1]
-        z = self.atoms[2]
-        xy = cross(x, y)
-        zy = cross(x, z)
-        a = (xy[1] * zy[2]) - (zy[1] * xy[2])
-        b = (xy[2] * zy[0]) - (zy[2] * xy[0])
-        c = (xy[0] * zy[1]) - (zy[0] * xy[1])
-        d = -((a * x.x) + (b * x.y) + (c * x.z))
+        if (len(self.atoms)) > 3: self.special_eqn()
+        else: self.eqn = make_eqn(self.atoms[0], self.atoms[1], self.atoms[2])
 
-        self.eqn.a = a
-        self.eqn.b = b
-        self.eqn.c = c
-        self.eqn.d = d
+
+    def special_eqn(self):
+        names, eqns = [], []
+        for atom in self.atoms: names.append(atom.name)
+
+        modded = [",".join(map(str, comb)) for comb in combinations(names, 3)]
+        modded_list = []
+        for mod in modded:
+            tmp = mod.split(',')
+            modded_list.append(tmp)
+        for mod in modded_list:
+            tmp1, tmp2, tmp3 = self.get_atom(mod[0]), self.get_atom(mod[1]), self.get_atom(mod[2])
+
+            tmp_eqn = make_eqn(tmp1, tmp2, tmp3)
+
+            eqns.append(tmp_eqn)
+        avg_a, avg_b, avg_c, avg_d = 0.0, 0.0, 0.0, 0.0
+        count = 0
+        for eqn in eqns:
+            count += 1
+            avg_a, avg_b, avg_c, avg_d = avg_a + eqn.a, avg_b + eqn.b, avg_c + eqn.c, avg_d + eqn.d
+            if count > 1:
+                avg_a, avg_b, avg_c, avg_d = avg_a / 2, avg_b / 2, avg_c / 2, avg_d / 2
+
+        avg_eqn = Eqn(avg_a, avg_b, avg_c, avg_d)
+        self.eqn = avg_eqn
+
+
+    def get_atom(self, name):
+        for atom in self.atoms:
+            if name == atom.name: return atom
+        print('!!!Could not find atom with name {}, returning blank atom'.format(name))
+        return Atom()
 
 class Eqn:
     def __init__(self, a, b, c, d):
@@ -88,6 +111,19 @@ class Eqn:
         self.b = b
         self.c = c
         self.d = d
+    def string(self):
+        return '{:6.3f}x + {:6.3f}y + {:6.3f}z + {:6.3f} = 0'.format(self.a, self.b, self.c, self.d)
+
+    def show(self):
+        print('{:6.3f}x + {:6.3f}y + {:6.3f}z + {:6.3f} = 0'.format(self.a, self.b, self.c, self.d))
+
+    def func_form(self):
+        z = -self.c
+        return 'z = {:6.3f}x + {:6.3f}y + {:6.3f}'.format(self.a / z, self.b / z, self.d / z)
+
+    def func_form_tup(self):
+        z = -self.c
+        return self.a / z, self.b / z, self.d / z
 
 
 class Struct:
@@ -194,3 +230,17 @@ def get_coord(coord):
 
 def cross(a: Atom, b: Atom):
     return b.x - a.x, b.y - a.y, b.z - a.z
+
+def make_eqn(atom1, atom2, atom3):
+    x = atom1
+    y = atom2
+    z = atom3
+    xy = cross(x, y)
+    zy = cross(x, z)
+    a = (xy[1] * zy[2]) - (zy[1] * xy[2])
+    b = (xy[2] * zy[0]) - (zy[2] * xy[0])
+    c = (xy[0] * zy[1]) - (zy[0] * xy[1])
+    d = -((a * x.x) + (b * x.y) + (c * x.z))
+
+    eqn = Eqn(a, b, c, d)
+    return eqn

@@ -12,6 +12,7 @@ import os
 import sys
 import urllib.error
 import urllib.request
+import numpy as np
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
 from lib.jsondata import *
@@ -171,8 +172,8 @@ def make_plane(struct):
 
     print('Struct {} has the following planes: '.format(struct.pdb_id))
     plane_count = 0
-    p_index0 = 0
-    p_index1 = 1
+    p_index0, p_index1 = 0, 1
+
     for plane in struct.planes:
         print('Plane {}. {}'.format(plane_count, plane.string()))
         plane_count += 1
@@ -188,12 +189,16 @@ def make_plane(struct):
         print('Incorrect index value given')
         return
 
+    quick_plot(plane0, image_dir + struct.pdb_id + '_P0_SURF.png', p_type='surf')
+    quick_plot(plane1, image_dir + struct.pdb_id + '_P1_SURF.png', p_type='surf')
     quick_plot(plane0, image_dir + struct.pdb_id + '_P0.png')
     quick_plot(plane1, image_dir + struct.pdb_id + '_P1.png')
     eqn0 = plane0.eqn
     eqn1 = plane1.eqn
-    # print('formula for plane: {:6.3f}X + {:6.3f}Y + {:6.3f}Z + {:6.3f} = 0'.format(eqn0.a, eqn0.b, eqn0.c, eqn0.d))
-    # print('formula for plane: {:6.3f}X + {:6.3f}Y + {:6.3f}Z + {:6.3f} = 0'.format(eqn1.a, eqn1.b, eqn1.c, eqn1.d))
+
+    print('Plane {}. {} || {}'.format(p_index0, eqn0.string(), eqn0.func_form()))
+    print('Plane {}. {} || {}'.format(p_index1, eqn1.string(), eqn1.func_form()))
+
     angle = plane_angles(eqn0, eqn1)
     print('the angle between the planes is {:6.3f} degrees'.format(angle))
 
@@ -205,7 +210,7 @@ def plane_angles(e0: Eqn, e1: Eqn):
 def same_atom(atom1, atom2):
     return (atom1.x == atom2.x) and (atom1.y == atom2.y) and (atom1.z == atom2.z)
 
-def quick_plot(plane, path):
+def quick_plot(plane, path, p_type=None):
     x, y, z = [], [], []
     sorted_atoms = plane.atoms
     sorted_atoms.sort(key=lambda a: a.dist_from_origin)
@@ -213,7 +218,6 @@ def quick_plot(plane, path):
     first = sorted_atoms[0]
     sorted_atoms.append(first)
     sort_atoms = sorted_atoms
-    print(str(len(sort_atoms)))
 
     for i in range(0, len(sort_atoms)):
         if i == len(sort_atoms) - 1:
@@ -238,14 +242,23 @@ def quick_plot(plane, path):
                 closest = tmp_copy_current
     print('')
     for atom in sorted_atoms:
-        print(str(atom.dist_from_origin))
         x.append(atom.x)
         y.append(atom.y)
         z.append(atom.z)
 
     fig = plt.figure()
-    ax = Axes3D(fig)
-    ax.plot(x, y, z)
+
+    if p_type is None:
+        ax = Axes3D(fig)
+        ax.plot(x, y, z)
+    else:
+        xx = np.linspace(-20, 20, 60)
+        yy = np.linspace(-20, 20, 60)
+        X, Y = np.meshgrid(xx, yy)
+        vals = plane.eqn.func_form_tup()
+        Z = vals[0] * X + vals[1] * Y + vals[2]
+        ax = fig.gca(projection='3d')
+        ax.plot_surface(X, Y, Z)
 
     fig.savefig(path)
 
