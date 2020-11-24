@@ -35,7 +35,8 @@ formatted_out_small = out_dir + 'format_out_partial.txt'
 formatted_basic = out_dir + 'basic_info_formatted.txt'
 pdb_dir = out_dir + 'pdb_files' + SEP
 
-DS = ' '
-DF = 0.0
-DI = 0
-DL = []
+# default values
+DS = ' '  # default string
+DF = 0.0  # default float
+DI = 0  # default int
+DL = []  # default list

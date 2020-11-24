@@ -1,31 +1,24 @@
-import multiprocessing
-import os
-import sys
+from Bio.PDB import PDBIO, MMCIFParser
 from datetime import datetime
 from math import acos, degrees
 from pathlib import Path
+from plib.types import *
 from threading import Lock, Thread
 from urllib import request
 from urllib.error import HTTPError, URLError
-
 import matplotlib.pyplot as plt
+import multiprocessing
 
-plt.rc('xtick', labelsize=8)
-plt.rc('ytick', labelsize=8)
-
-import numpy as np
-from Bio.PDB import PDBIO, MMCIFParser
-from mpl_toolkits.mplot3d import Axes3D
-
-from plib.types import *
+plt.rc('xtick', labelsize=4)  # set font size for ticks on x axis for pyplot
+plt.rc('ytick', labelsize=4)  # set font size for ticks on y axis for pyplot
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
 from lib.jsondata import *
 from lib.util import *
 
 pdb_objects_list = []
-pdb_objects = {}
 pdb_entries = []
+pdb_objects = {}
 pdb_basic_info = ''
 total_pdb_output = ''
 
@@ -42,16 +35,13 @@ def main():
               '\n2. Run calculations on single file'
               '\n0. Exit'
               '\n\n---------------------------------------------------------------------------------\n')
-        ans = int(input('\nSelection: '))
-        # ans = 2
-        if ans == 1:
-            run_parse()
+        ans = int(input('\nChoice: '))
+        if ans == 1: run_parse()
         elif ans == 2:
             # to_use = input('\nEnter PDB ID: ').strip().upper()
             to_use = '0TST'
-            calc(to_use)
+            file_calculations(to_use)
             pass
-
 
 def run_parse():
     init_time = datetime.now()  # record start time of downloading and parsing
@@ -59,7 +49,7 @@ def run_parse():
     threads = []
 
     for chunks in split_pdb_list:
-        tmp_thread = Thread(target=run_pdb_chunks, args=(chunks,))
+        tmp_thread = Thread(target=run_on_thread, args=(chunks,))
         tmp_thread.start()
         threads.append(tmp_thread)
 
@@ -76,12 +66,12 @@ def run_parse():
     total_time = end_time - init_time
     print('\ntotal time taken to download & parse files: {}'.format(total_time))
 
-def run_pdb_chunks(chunks):
-    for pdb_id in chunks:
+def run_on_thread(items):
+    for pdb_id in items:
         tst_url = PART_URL + pdb_id + '.pdb'
         get_parse_pdbs(tst_url, pdb_dir + pdb_id + '.pdb', pdb_id)
 
-def calc(pdb_id):
+def file_calculations(pdb_id):
     pdb_url = PART_URL + pdb_id + '.pdb'
     global total_pdb_output, pdb_entries, pdb_objects, pdb_basic_info
     get_parse_pdbs(pdb_url, pdb_dir + pdb_id + '.pdb', pdb_id, skip_download=True)
@@ -94,27 +84,26 @@ def calc(pdb_id):
               '\n0. Back to main menu'
               '\n\n---------------------------------------------------------------------------------\n')
 
-        ans = int(input('Selection: '))
-        # ans = 3
+        ans = int(input('Choice: '))
         struct = get_struct(pdb_id)
-        if ans == 1:
+
+        if ans == 1:  # Find distance between two atoms
             name1, name2 = input('First atom: ').strip().upper(), input('Second atom: ').strip().upper()
             rec1, rec2 = Record(), Record()
             found = 0
-
             for rec in struct.records:
                 if rec.atom == name1: rec1, found = rec, found + 1
                 elif rec.atom == name2: rec2, found = rec, found + 1
-
             if found != 2: print('err finding atoms. had ' + str(found) + ' matches')
             else: show_atom_distance(rec1, rec2)
-        elif ans == 2:
-            find_hydrogen(struct)
-            pass
-        elif ans == 3:
+
+        elif ans == 2: find_hydrogen(struct)  # Find name of any H within 1.2 angstroms of any O
+
+        elif ans == 3:  # Find angle between two planes
             if pdb_id not in struct_planes: print('No plane definitions found for structure!')
-            else: make_plane(struct)
-        elif ans == 9:
+            else: plane_operations(struct)
+
+        elif ans == 9:  # Change structure ID
             pdb_id = input('\nEnter PDB ID: ').strip().upper()
             pdb_url = PART_URL + pdb_id + '.pdb'
             get_parse_pdbs(pdb_url, pdb_dir + pdb_id + '.pdb', pdb_id, skip_download=True)
@@ -123,14 +112,14 @@ def calc(pdb_id):
         print('\n---------------------------------------------------------------------------------\n')
 
 def get_struct(pdb_id):
-    global pdb_entries
+    """Find structure from global list of processed PDB files using PDB ID."""
     for entry in pdb_entries:
         if pdb_id == entry.pdb_id: return entry
     print('!!!WARNING!!!Could not find entry for PDB ID {}, returning empty entry'.format(pdb_id))
     return Struct()
 
-
 def find_hydrogen(entry: Struct):
+    """Find every H atom that is within 1.2 angstroms of any O atom."""
     oxygens, hydrogens, selected_hydrogens = [], [], []
     for rec in entry.records:
         if rec.elem == 'O': oxygens.append(rec)
@@ -148,13 +137,12 @@ def find_hydrogen(entry: Struct):
     for item in selected_hydrogens: close_str += item.atom + ' '
     print('O atoms: {}, H atoms: {}, H atoms within 1.2 angstroms of an O: {}'.format(o_str, h_str, close_str))
 
-def make_plane(struct):
+def plane_operations(struct):
     if len(struct.planes) > 2:
         print('There are not enough planes to complete this action')
         return
 
     print('Struct {} has the following planes: '.format(struct.pdb_id))
-
     plane_count, p_index0, p_index1 = 0, 0, 1
     for plane in struct.planes:
         print('Plane {}. {}'.format(plane_count, plane.string()))
@@ -185,56 +173,29 @@ def same_atom(atom1, atom2):
     return (atom1.x == atom2.x) and (atom1.y == atom2.y) and (atom1.z == atom2.z)
 
 def quick_plot(plane, path):
+    """Output figures which show the planes and the atoms in a graph at different viewing angles."""
     atoms = plane.atoms
     atoms.sort(key=lambda a: a.from_center)
-    atoms.append(atoms[0])
-
-    for i in range(0, len(atoms)):
-        if i == len(atoms) - 1: break
-        nearest_idx = i + 1
-        section = atoms[nearest_idx:]
-        min_dist = 9999999.99
-        nearest = atoms[nearest_idx]
-
-        for j in range(0, len(section)):
-            if j == len(section) - 1 or same_atom(atoms[i], section[j]): continue
-            curr_dist = atom_distance(section[j], atoms[i])
-            if curr_dist < min_dist:
-                # make copies of current nearest atom, current item in section and current nearest atom's index
-                cpy_nearest, cpy_curr, cpy_index = nearest, section[j], atoms.index(section[j])
-                # update the values by swapping values at appropriate indices
-                atoms[cpy_index], atoms[nearest_idx] = cpy_nearest, cpy_curr
-                # update minimum distance & nearest atom
-                min_dist, nearest = curr_dist, cpy_curr
 
     # make list of x, y & z coordinates using each of the atoms
     x, y, z = list((atm.x for atm in atoms)), list((atm.y for atm in atoms)), list((atm.z for atm in atoms))
-    fig = plt.figure(figsize=(10, 10))
+    fig = plt.figure(figsize=(10, 10))  # create base matplotlib figure
 
+    # get evenly spaced numbers over a specified interval for x & y
     x_line, y_line = np.linspace(min(x), max(x), int(max(z)) + 1), np.linspace(min(y), max(y), int(max(z)) + 1)
-    xs, ys = np.meshgrid(x_line, y_line)
-    vals = plane.eqn.func_form_tup()
-    zs = vals[0] * xs + vals[1] * ys + vals[2]
-    # ax = Axes3D(fig)
+    xs, ys = np.meshgrid(x_line, y_line)  # get coordinate matrices from coordinate vectors for x & y values
+    vals = plane.eqn.func_form_tup()  # convert to function format
+    zs = vals[0] * xs + vals[1] * ys + vals[2]  # use values from function format to get z
 
-
-    angles = [0, 45, 135, 0, 45, 135, 0, 45, 135]
-    plots = [331, 332, 333, 334, 335, 336, 337, 338, 339]
-    views = [20, 20, 20, 60, 60, 60, 5, 5, 5]
+    # rotations & subplot grid placements
+    angles, plots = [0, 45, 135, 0, 45, 135, 0, 45, 135], [331, 332, 333, 334, 335, 336, 337, 338, 339]
+    views = [20, 20, 20, 60, 60, 60, 5, 5, 5]  # graph camera angle
     for i in range(0, len(plots)):
-        ax = fig.add_subplot(plots[i], projection='3d')
-        ax.scatter(x, y, z, c='r')
-        ax.set_alpha(0.4)
-        ax.plot_wireframe(xs, ys, zs, alpha=0.2)
-        ax.view_init(views[i], angles[i])
-        # plt.draw()
-        # plt.pause(.001)
-        # fig.savefig(path + '_' + str(angle) + '.png')
-    # ax.view_init(30, 90)
-    # plt.draw()
-    # plt.pause(1000)
-    # fig.set_size_inches(8.5, 11)
-    fig.savefig(path + '.png', dpi=100)
+        ax = fig.add_subplot(plots[i], projection='3d')  # add subplot to figure
+        ax.scatter(x, y, z, c='r')  # graph the atoms
+        ax.plot_surface(xs, ys, zs, alpha=0.2)  # make it so that the points aren't covered by the plane
+        ax.view_init(views[i], angles[i])  # make subplot at specific view & angle
+    fig.savefig(path + '.png', dpi=200)
 
 def get_parse_pdbs(url, path, pdb_id, skip_download=False):
     global total_pdb_output, pdb_entries, pdb_objects, pdb_basic_info
