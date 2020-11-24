@@ -1,66 +1,61 @@
-import re
-from plib.strings_consts import *
-import sys
-from math import sqrt
 from itertools import combinations
+from math import sqrt
+from plib.strings_consts import *
+from scipy.optimize import leastsq
+import numpy as np
+import sys
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
-from lib.jsondata import *
 from lib.util import *
 
 class Record:
-    def __init__(self, pdb_id=None, label=None, sn=None, atom=None, alt_loc=None, lig_code=None, chain_id=None,
-                 lig_seq=None, ins_code=None, x=None, y=None, z=None, occupy=None, temp=None, elem=None, charge=None):
-        self.pdb_id = pdb_id if pdb_id is not None else ' '
-        self.label = label if label is not None else ' '
-        self.sn = sn if sn is not None else ' '
-        self.atom = atom if atom is not None else ' '
-        self.alt_loc = alt_loc if alt_loc is not None else ' '
-        self.lig_code = lig_code if lig_code is not None else ' '
-        self.chain_id = chain_id if chain_id is not None else ' '
-        self.lig_seq = lig_seq if lig_seq is not None else ' '
-        self.ins_code = ins_code if ins_code is not None else ' '
-        self.x = x if x is not None else 0.0
-        self.y = y if y is not None else 0.0
-        self.z = z if z is not None else 0.0
-        self.occupy = occupy if occupy is not None else ' '
-        self.temp = temp if temp is not None else ' '
-        self.elem = elem if elem is not None else ' '
-        self.charge = charge if charge is not None else ' '
+    def __init__(self, pdb_id=DS, label=DS, sn=DS, atom=DS, alt_loc=DS, lig_code=DS, chain=DS, lig_seq=DS, icode=DS,
+                 x=DF, y=DF, z=DF, occp=DS, temp=DS, elem=DS, charge=DS):
+        self.alt_loc = alt_loc
+        self.atom = atom
+        self.chain = chain
+        self.charge = charge
+        self.elem = elem
+        self.icode = icode
+        self.label = label
+        self.lig_code = lig_code
+        self.lig_seq = lig_seq
+        self.occp = occp
+        self.pdb_id = pdb_id
+        self.sn = sn
+        self.temp = temp
+        self.x = x
+        self.y = y
+        self.z = z
 
     def info_str(self):
-        out = '> {}, {} | Atom: {} | Serial #: {} | Elem: {} | Lig: {} | LigSeq: {} | X, Y, Z: ({}, {}, {}) | ' \
+        out = '> {}, {} | Atom: {} | S#: {} | Elem: {} | Lig: {} | LigSeq: {} | X, Y, Z: ({}, {}, {}) | ' \
               'Chain: {}\n'.format(self.pdb_id, self.label, self.atom, self.sn, self.elem, self.lig_code,
-                                   self.lig_seq, self.x, self.y, self.z, self.chain_id)
+                                   self.lig_seq, self.x, self.y, self.z, self.chain)
         return out
 
-
 class Atom:
-    def __init__(self, name=None, elem=None, x=None, y=None, z=None, dist_from_origin=None):
-        self.name = name if name is not None else ' '
-        self.elem = elem if elem is not None else ' '
-        self.x = x if x is not None else 0.0
-        self.y = y if y is not None else 0.0
-        self.z = z if z is not None else 0.0
-        self.dist_from_origin = dist_from_origin if dist_from_origin is not None else 0.0
+    def __init__(self, name=DS, elem=DS, x=DF, y=DF, z=DF, from_center=DF):
+        self.name = name
+        self.elem = elem
+        self.x = x
+        self.y = y
+        self.z = z
+        self.from_center = from_center
         self.from_origin()
 
-    def show(self):
-        print(self.string())
+    def show(self): print(self.string())
 
-    def string(self):
-        return 'Name: {} Elem: {} X: {} Y: {} Z:{}'.format(self.name, self.elem, self.x, self.y, self.z)
+    def string(self): return 'Name: {} Elem: {} X: {} Y: {} Z:{}'.format(self.name, self.elem, self.x, self.y, self.z)
 
-    def simple(self):
-        return '({}, {}, {})'.format(self.x, self.y, self.z)
+    def simple(self): return '({}, {}, {})'.format(self.x, self.y, self.z)
 
-    def from_origin(self):
-        self.dist_from_origin = sqrt((self.x ** 2) + (self.y ** 2) + (self.z ** 2))
+    def from_origin(self): self.from_center = sqrt((self.x ** 2) + (self.y ** 2) + (self.z ** 2))
 
 class Plane:
     def __init__(self, atoms: [Atom], eqn=None):
         self.atoms = atoms
-        self.eqn = eqn if eqn is not None else Eqn(0.0, 0.0, 0.0, 0.0)
+        self.eqn = eqn if eqn is not None else Eqn(DF, DF, DF, DF)
 
     def string(self):
         atoms = ''
@@ -68,36 +63,30 @@ class Plane:
         return '{}'.format(atoms)
 
     def set_eqn(self):
-        if (len(self.atoms)) > 3: self.special_eqn()
-        else: self.eqn = make_eqn(self.atoms[0], self.atoms[1], self.atoms[2])
+        if (len(self.atoms)) > 3: self.find_best_fit()
+        else: self.eqn = find_plane_eqn(self.atoms[0], self.atoms[1], self.atoms[2])
 
-
-    def special_eqn(self):
-        names, eqns = [], []
-        for atom in self.atoms: names.append(atom.name)
-
+    def find_best_fit(self):
+        x = list((atom.x for atom in self.atoms))
+        y = list((atom.y for atom in self.atoms))
+        z = list((atom.z for atom in self.atoms))
+        names = list((o.name for o in self.atoms))
         modded = [",".join(map(str, comb)) for comb in combinations(names, 3)]
-        modded_list = []
-        for mod in modded:
-            tmp = mod.split(',')
-            modded_list.append(tmp)
-        for mod in modded_list:
-            tmp1, tmp2, tmp3 = self.get_atom(mod[0]), self.get_atom(mod[1]), self.get_atom(mod[2])
-
-            tmp_eqn = make_eqn(tmp1, tmp2, tmp3)
-
-            eqns.append(tmp_eqn)
-        avg_a, avg_b, avg_c, avg_d = 0.0, 0.0, 0.0, 0.0
+        eqns, modded_list = [], []
+        for m in modded: modded_list.append(m.split(','))
+        for m in modded_list: eqns.append(find_plane_eqn(self.get_atom(m[0]), self.get_atom(m[1]), self.get_atom(m[2])))
+        a, b, c, d = DF, DF, DF, DF
         count = 0
+
         for eqn in eqns:
             count += 1
-            avg_a, avg_b, avg_c, avg_d = avg_a + eqn.a, avg_b + eqn.b, avg_c + eqn.c, avg_d + eqn.d
-            if count > 1:
-                avg_a, avg_b, avg_c, avg_d = avg_a / 2, avg_b / 2, avg_c / 2, avg_d / 2
+            a, b, c, d = a + eqn.a, b + eqn.b, c + eqn.c, d + eqn.d
+            if count > 1: a, b, c, d = a / 2, b / 2, c / 2, d / 2
 
-        avg_eqn = Eqn(avg_a, avg_b, avg_c, avg_d)
+        xyz, avgs = np.array([x, y, z]), np.array([a, b, c, d])
+        least_sq_res = leastsq(find_residuals, avgs, args=(None, xyz))[0]
+        avg_eqn = Eqn(float(least_sq_res[0]), float(least_sq_res[1]), float(least_sq_res[2]), float(least_sq_res[3]))
         self.eqn = avg_eqn
-
 
     def get_atom(self, name):
         for atom in self.atoms:
@@ -124,7 +113,6 @@ class Eqn:
     def func_form_tup(self):
         z = -self.c
         return self.a / z, self.b / z, self.d / z
-
 
 class Struct:
     def __init__(self, pdb_id=None, group=None, title=None, ec_nums=None, records=None, org_name=None, org_sci=None,
@@ -156,7 +144,7 @@ class Struct:
         atoms = []
         for name in atom_names:
             tmp_rec = self.get_record(name)
-            tmp_atm = new_atom(tmp_rec)
+            tmp_atm = atom_from_record(tmp_rec)
             tmp_atm.from_origin()
             self.atoms.append(tmp_atm)
             atoms.append(tmp_atm)
@@ -164,16 +152,10 @@ class Struct:
         plane.set_eqn()
         self.planes.append(plane)
 
-def new_atom(rec: Record):
-    atom = Atom()
-    atom.name = rec.atom
-    atom.elem = rec.elem
-    atom.x = rec.x
-    atom.y = rec.y
-    atom.z = rec.z
-    return atom
+def atom_from_record(rec: Record): return Atom(rec.atom, rec.elem, rec.x, rec.y, rec.z)
 
 def new_record(line, name):
+    """Make new record object from PDB file. Will only create coordinate properties for ATOM/HETATM records."""
     if len(line) < 60: tmp_rec = Record()
     else:
         # ranges taken from the PDB documentation, column values are found in record_formats.txt
@@ -184,13 +166,10 @@ def new_record(line, name):
             x = get_coord(skin(line[30:38]).replace(':', ''))
             y = get_coord(skin(line[38:46]).replace(':', ''))
             z = get_coord(skin(line[46:54]).replace(':', ''))
-        else:
-            x = None
-            y = None
-            z = None
+        else: x, y, z = None, None, None
         tmp_rec = Record(pdb_id=name, label=label, sn=skin(line[6:11]), atom=skin(line[12:16]),
-                         alt_loc=line[16:17], lig_code=skin(line[17:20]), chain_id=skin(line[21:22]),
-                         lig_seq=skin(line[22:26]), ins_code=line[26:27], x=x, y=y, z=z, occupy=skin(line[54:60]),
+                         alt_loc=line[16:17], lig_code=skin(line[17:20]), chain=skin(line[21:22]),
+                         lig_seq=skin(line[22:26]), icode=line[26:27], x=x, y=y, z=z, occp=skin(line[54:60]),
                          temp=skin(line[60:66]), elem=skin(line[76:78]), charge=skin(line[78:80]))
     return tmp_rec
 
@@ -220,6 +199,7 @@ def new_struct(lines, pdb_id):
     return struct
 
 def get_coord(coord):
+    """Parses string for float coordinate. Blanks, Nones & errors result in return value of 0.0."""
     if coord is None or coord == '': return 0.0
     else:
         tmp_coord = ''
@@ -228,19 +208,33 @@ def get_coord(coord):
         if tmp_coord == '': return 0.0
         else: return float(tmp_coord)
 
-def cross(a: Atom, b: Atom):
+def get_vector(a: Atom, b: Atom):
+    """ Returns (Bx-Ax, By-Ay, Bz-Az) """
     return b.x - a.x, b.y - a.y, b.z - a.z
 
-def make_eqn(atom1, atom2, atom3):
-    x = atom1
-    y = atom2
-    z = atom3
-    xy = cross(x, y)
-    zy = cross(x, z)
-    a = (xy[1] * zy[2]) - (zy[1] * xy[2])
-    b = (xy[2] * zy[0]) - (zy[2] * xy[0])
-    c = (xy[0] * zy[1]) - (zy[0] * xy[1])
-    d = -((a * x.x) + (b * x.y) + (c * x.z))
-
-    eqn = Eqn(a, b, c, d)
+def find_plane_eqn(i, j, k):
+    """Finds components of plane formula ax + by + cz + d = 0 & creates equation object with calculated values."""
+    u, v = get_vector(i, j), get_vector(i, k)
+    a = (u[1] * v[2]) - (v[1] * u[2])  # a = (By-Ay)(Cz-Az) - (Cy-Ay)(Bz-Az)
+    b = (u[2] * v[0]) - (v[2] * u[0])  # b = (Bz-Az)(Cx-Ax) - (Cz-Az)(Bx-Ax)
+    c = (u[0] * v[1]) - (v[0] * u[1])  # c = (Bx-Ax)(Cy-Ay) - (Cx-Ax)(By-Ay)
+    d = -((a * i.x) + (b * i.y) + (c * i.z))  # d = -(aAx + bAy + cAz)
+    eqn = Eqn(a, b, c, d)  # make equation object
     return eqn
+
+def f_min(val, p):
+    plane = p[0:3]
+    dist = (plane * val.T).sum(axis=1) + p[3]
+    return dist / np.linalg.norm(plane)
+
+def find_residuals(params, signal, val): return f_min(val, params)
+
+def show_atom_distance(atm1, atm2):
+    """Print distance between two atoms with float formatting."""
+    dist = atom_distance(atm1, atm2)
+    print('distance between {} ({:6.3f}, {:6.3f}, {:6.3f}) & {} ({:6.3f}, {:6.3f}, {:6.3f}) is '
+          '~{:6.4f} angstroms'.format(atm1.atom, atm1.x, atm1.y, atm1.z, atm2.atom, atm2.x, atm2.y, atm2.z, dist))
+
+def atom_distance(atm1, atm2):
+    """Find distance between two atoms"""
+    return sqrt(((atm2.x - atm1.x) ** 2) + ((atm2.y - atm1.y) ** 2) + ((atm2.z - atm1.z) ** 2))
