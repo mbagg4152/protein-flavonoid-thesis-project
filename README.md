@@ -314,25 +314,25 @@ If `urllib` receives an error code from trying to get a .pdb file, that is most 
 ---
 ## `protein/types.py`
 This file contains two different classes and functions that are used to create new objects, which are used in `pdb_parsing.py`.  
-#### `Record`
+### `Record`
 This object holds the information from PDB files for a single `ATOM/HETATM` line or record.  For example, the following lines would be appropriately converted into `Record` objects using the function 
 `new_record`:
 `
 ATOM   1258  CA  THR B  59      22.806  24.345  36.922  1.00 23.83           C 
 HETATM 1815  O   HOH A 133      17.558  28.943  -4.426  1.00 23.32           O  
 `
-#### `Struct`
+### `Struct`
 These objects contain data from the PDB structure files themselves, not just simple lines. Each `Struct` contains specific  information such as PDB ID, classification, a list of `Records`, associated organisms, EC numbers, etc.  
 
-#### `Atom`
+### `Atom`
 
-#### `Plane`
+### `Plane`
 
-#### `Equation`
+### `Equation`
 
-##### `Equation.set_eqn`
+#### `Equation.set_eqn`
 
-##### `Equation.find_best_fit`
+#### `Equation.find_best_fit`
 
 #### `new_record`
 In `protein.py`, if a line begins with `ATOM/HETATM` then this function is called to create a new `Record` object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
@@ -400,7 +400,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY2MjQxMjg2LC04MzIxMTMyMDcsLTE4Nz
+eyJoaXN0b3J5IjpbNDIxODk1NjY1LC04MzIxMTMyMDcsLTE4Nz
 ExMDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThd
 fQ==
 -->
