@@ -329,7 +329,8 @@ This object contains information from ATOM/HETATM records and are made using a s
 These objects have a name, element code, ligand code, xyz coordinates and a distance from origin.
 
 ### `Plane`
-This object serves as a container for atoms as specified in
+This object serves as a container for atoms as specified in `planes.json`.  
+Each plane has a list of `Atoms`, a plane `Equation`,   
 
 ### `Equation`
 
@@ -403,7 +404,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTY4NDM2NiwtODMyMTEzMjA3LC0xOD
+eyJoaXN0b3J5IjpbMTg5NDkwOTIxMSwtODMyMTEzMjA3LC0xOD
 cxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4
 XX0=
 -->
