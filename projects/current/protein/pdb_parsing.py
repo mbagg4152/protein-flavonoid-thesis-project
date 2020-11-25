@@ -22,6 +22,8 @@ pdb_objects = {}
 pdb_basic_info = ''
 total_pdb_output = ''
 
+MAKE_GRAPHS = True
+
 # make sure that the output directories exist before continuing
 Path(out_dir).mkdir(parents=True, exist_ok=True)
 Path(pdb_dir).mkdir(parents=True, exist_ok=True)
@@ -39,7 +41,7 @@ def main():
         if ans == 1: run_parse()
         elif ans == 2:
             # to_use = input('\nEnter PDB ID: ').strip().upper()
-            to_use = '0TST'
+            to_use = '2NNL'
             file_calculations(to_use)
             pass
 
@@ -139,7 +141,7 @@ def find_hydrogen(entry: Struct):
     print('O atoms: {}, H atoms: {}, H atoms within 1.2 angstroms of an O: {}'.format(o_str, h_str, close_str))
 
 def plane_operations(struct):
-    if len(struct.planes) > 2:
+    if len(struct.planes) < 2:
         print('There are not enough planes to complete this action')
         return
 
@@ -157,8 +159,9 @@ def plane_operations(struct):
         return
 
     Path(image_dir + SEP + struct.pdb_id).mkdir(parents=True, exist_ok=True)
-    quick_plot(plane0, image_dir + SEP + struct.pdb_id + SEP + 'plane' + str(p_index0))
-    quick_plot(plane1, image_dir + SEP + struct.pdb_id + SEP + 'plane' + str(p_index1))
+    if MAKE_GRAPHS:
+        quick_plot(plane0, image_dir + SEP + struct.pdb_id + SEP + 'plane' + str(p_index0) + '_' + plane0.chain)
+        quick_plot(plane1, image_dir + SEP + struct.pdb_id + SEP + 'plane' + str(p_index1) + '_' + plane1.chain)
     eqn0, eqn1 = plane0.eqn, plane1.eqn
     print('Plane {}. {} || {}'.format(p_index0, eqn0.string(), eqn0.func_form()))
     print('Plane {}. {} || {}'.format(p_index1, eqn1.string(), eqn1.func_form()))
@@ -233,7 +236,11 @@ def get_parse_pdbs(url, path, pdb_id, skip_download=False):
 
     for key in struct_planes:
         if key == pdb_id:
-            for atoms in struct_planes[key]: tmp_entry.new_plane(atoms)
+            for lig in struct_planes[key]:
+                for chain in struct_planes[key][lig]:
+                    for atoms in struct_planes[key][lig][chain]:
+                        print(str(atoms))
+                        tmp_entry.new_plane(atoms, lig, chain)
 
     with lock_entry: pdb_entries.append(tmp_entry)
     with lock_basic:

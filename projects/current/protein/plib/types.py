@@ -35,13 +35,14 @@ class Record:
         return out
 
 class Atom:
-    def __init__(self, name=DS, elem=DS, x=DF, y=DF, z=DF, from_center=DF):
+    def __init__(self, name=DS, elem=DS, x=DF, y=DF, z=DF, from_center=DF, ligand=DS):
         self.name = name
         self.elem = elem
         self.x = x
         self.y = y
         self.z = z
         self.from_center = from_center
+        self.ligand = ligand
         self.from_origin()
 
     def show(self): print(self.string())
@@ -53,14 +54,16 @@ class Atom:
     def from_origin(self): self.from_center = sqrt((self.x ** 2) + (self.y ** 2) + (self.z ** 2))
 
 class Plane:
-    def __init__(self, atoms: [Atom], eqn=None):
+    def __init__(self, atoms: [Atom], eqn=None, ligand=DS, chain=DS):
         self.atoms = atoms
         self.eqn = eqn if eqn is not None else Eqn(DF, DF, DF, DF)
+        self.ligand = ligand
+        self.chain = chain
 
     def string(self):
         atoms = ''
         for atom in self.atoms: atoms += atom.simple() + ' '
-        return '{}'.format(atoms)
+        return '{}-{} {}'.format(self.ligand, self.chain, atoms)
 
     def set_eqn(self):
         if (len(self.atoms)) > 3: self.find_best_fit()
@@ -134,25 +137,31 @@ class Struct:
         self.atoms = atoms if atoms is not None else []
         self.planes = planes if planes is not None else []
 
-    def get_record(self, atom_name):
+    def get_record(self, atom_name, lig_code, chain):
         for record in self.records:
-            if record.atom == atom_name: return record
-        print('!!!WARNING!!!No record found containing atom name {}! Returning empty record'.format(atom_name))
+            if record.atom == atom_name and record.lig_code == lig_code and record.chain == chain:
+                print('get_record {} {} {} '.format(record.atom, record.lig_code, record.chain))
+                return record
+        print('!!!Nothing for atom {} in chain {} of ligand {}'.format(atom_name, chain, lig_code))
         return Record()
 
-    def new_plane(self, atom_names):
+    def new_plane(self, atom_names, lig_code, chain):
         atoms = []
         for name in atom_names:
-            tmp_rec = self.get_record(name)
+            tmp_rec = self.get_record(name, lig_code, chain)
+            if tmp_rec is None: return
+            print('{} {} {} {} {}'.format(tmp_rec.lig_code, lig_code, tmp_rec.x, tmp_rec.y, tmp_rec.z))
             tmp_atm = atom_from_record(tmp_rec)
             tmp_atm.from_origin()
             self.atoms.append(tmp_atm)
             atoms.append(tmp_atm)
         plane = Plane(atoms)
         plane.set_eqn()
+        plane.ligand = lig_code
+        plane.chain = chain
         self.planes.append(plane)
 
-def atom_from_record(rec: Record): return Atom(rec.atom, rec.elem, rec.x, rec.y, rec.z)
+def atom_from_record(rec: Record): return Atom(rec.atom, rec.elem, rec.x, rec.y, rec.z, ligand=rec.lig_code)
 
 def new_record(line, name):
     """Make new record object from PDB file. Will only create coordinate properties for ATOM/HETATM records."""
