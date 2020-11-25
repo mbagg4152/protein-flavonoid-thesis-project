@@ -355,6 +355,10 @@ This function makes an `Atom` object by accessing the properties of a `Record` o
   
 #### `find_plane_eqn`
 This finds the  values `a, b, c` & `d` from the equation of a plane of the form `ax + by + cz + d = 0`.
+For points i, j & k the program first computes:
+- vector IJ
+- vector IK
+- 
 
 <!--  -->
 ---
@@ -410,7 +414,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MDUzMTk0OCwxODk0OTA5MjExLC04Mz
+eyJoaXN0b3J5IjpbMjAzODg4NjQyNywxODk0OTA5MjExLC04Mz
 IxMTMyMDcsLTE4NzExMDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIz
 LDEyNzU0MDE2MThdfQ==
 -->
