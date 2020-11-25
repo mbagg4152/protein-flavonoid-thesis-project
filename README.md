@@ -343,8 +343,6 @@ Once the averages are found, then the residuals for the average values are found
 ### `Equation`
 This object holds the values `a, b, c` & `d` from the equation of a plane of the form `ax + by + cz + d = 0`.
 
-
-
 #### `new_record`
 In `protein.py`, if a line begins with `ATOM/HETATM` then this function is called to create a new `Record` object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
 Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with values from the passed in line.
@@ -353,10 +351,10 @@ Since PDB files have dedicated column ranges for each value, it is then easy to 
 This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new `Struct` is returned.
 
 #### `atom_from_record`
-This function makes an `Atom` object by accessing the properties of a `Record` object
-
+This function makes an `Atom` object by accessing the properties of a `Record` object since `Atoms` require a subset of information from `Records`. 
+  
 #### `find_plane_eqn`
-
+This finds the  values `a, b, c` & `d` from the equation of a plane of the form `ax + by + cz + d = 0`.
 
 <!--  -->
 ---
@@ -412,7 +410,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0NzAxODI2LDE4OTQ5MDkyMTEsLTgzMj
-ExMzIwNywtMTg3MTEwMywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMs
-MTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbMTg5MDUzMTk0OCwxODk0OTA5MjExLC04Mz
+IxMTMyMDcsLTE4NzExMDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIz
+LDEyNzU0MDE2MThdfQ==
 -->
