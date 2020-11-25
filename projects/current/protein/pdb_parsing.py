@@ -44,12 +44,13 @@ def main():
             pass
 
 def run_parse():
+    """For each of the PDB IDs, the PDB file will be downloaded if missing, then each PDB file is parsed accordingly."""
     init_time = datetime.now()  # record start time of downloading and parsing
     split_pdb_list = list_partition(pdb_id_list, thread_lim)
     threads = []
 
-    for chunks in split_pdb_list:
-        tmp_thread = Thread(target=run_on_thread, args=(chunks,))
+    for sub_list in split_pdb_list:
+        tmp_thread = Thread(target=run_on_thread, args=(sub_list,))
         tmp_thread.start()
         threads.append(tmp_thread)
 
