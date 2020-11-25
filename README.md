@@ -321,23 +321,32 @@ This object holds the information from PDB files for a single `ATOM/HETATM` line
 ATOM   1258  CA  THR B  59      22.806  24.345  36.922  1.00 23.83           C 
 HETATM 1815  O   HOH A 133      17.558  28.943  -4.426  1.00 23.32           O  
 `
+#### `Struct`
+These objects contain data from the PDB structure files themselves, not just simple lines. Each `Struct` contains specific  information such as PDB ID, classification, a list of `Records`, associated organisms, EC numbers, etc.  
+
+#### `Atom`
+
 #### `new_record`
 In `protein.py`, if a line begins with `ATOM/HETATM` then this function is called to create a new `Record` object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
 Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with values from the passed in line.
 
-#### `Struct`
-These objects contain data from the PDB structure files themselves, not just simple lines. Each `Struct` contains specific  information such as PDB ID, classification, a list of `Records`, associated organisms, EC numbers, etc.  
+
+
 
 #### `new_struct`
 This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new `Struct` is returned.
 
-#### `Atom`
+
 
 #### `atom_from_record`
 
 #### `Plane`
 
 #### `Equation`
+
+#### `Equation.set_eqn`
+
+#### `Equation.find_best_fit`
 
 #### `find_plane_eqn`
 
@@ -396,7 +405,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MTU4OTM4NywtODMyMTEzMjA3LC0xOD
+eyJoaXN0b3J5IjpbMTc3NjY2NTM5MiwtODMyMTEzMjA3LC0xOD
 cxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4
 XX0=
 -->
