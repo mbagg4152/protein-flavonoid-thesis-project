@@ -334,7 +334,7 @@ Each plane has a list of `Atoms`, a plane `Equation`,   a ligand code and a chai
 
 #### `Plane.set_eqn`
 Determines the plane equation. If there are only 3 atoms defined in a plane then the program makes a call to `find_plane_eqn` in order to get the simple plane equation given by 3 points.  
-If there are more than 3 pom
+If there are more than 3 points, then a call to `Plane.find_best_fit` is made in order to find the equation for the plane of best fit.
 
 #### `Plane.find_best_fit`
 
@@ -409,7 +409,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk3ODAxODgxLDE4OTQ5MDkyMTEsLTgzMj
-ExMzIwNywtMTg3MTEwMywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMs
-MTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbLTE2ODgyMDExNzYsMTg5NDkwOTIxMSwtOD
+MyMTEzMjA3LC0xODcxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEy
+MywxMjc1NDAxNjE4XX0=
 -->
