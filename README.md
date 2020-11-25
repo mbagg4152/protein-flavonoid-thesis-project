@@ -28,6 +28,7 @@ JW started the code to get information from KEGG about the species we were inter
     * You can find the bioservices documentation [_here._](https://bioservices.readthedocs.io/en/master/)
   - Install python package __BioPython__: `[pip|pip3] install biopython`  
     * You can find the BioPython documentation [_here._](https://biopython.org/wiki/Documentation)
+  - Install python package __matplotlib__
 
 
 <!--  -->
@@ -369,6 +370,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzExMDMsLTE4Nzc1NTMwMjEsOTg0ND
-g1MTIzLDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbMTAxOTczOTg5MSwtMTg3MTEwMywtMTg3Nz
+U1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
 -->
