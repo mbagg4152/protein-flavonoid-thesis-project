@@ -29,7 +29,7 @@ pdb_objects = {}
 pdb_basic_info = ''
 total_pdb_output = ''
 
-MAKE_GRAPHS = True
+MAKE_GRAPHS = False
 
 # make sure that the output directories exist before continuing
 Path(out_dir).mkdir(parents=True, exist_ok=True)
@@ -175,7 +175,7 @@ def plane_operations(struct):
     angle = plane_angles(eqn0, eqn1)
     print('the angle between the planes is {:6.3f} degrees'.format(angle))
 
-def plane_angles(e0: Eqn, e1: Eqn):
+def plane_angles(e0: Equation, e1: Equation):
     top = abs((e0.a * e1.a) + (e0.b * e1.b) + (e0.c * e1.c))
     bottom = (sqrt((e0.a ** 2) + (e0.b ** 2) + (e0.c ** 2))) * (sqrt((e1.a ** 2) + (e1.b ** 2) + (e1.c ** 2)))
     return degrees(acos(top / bottom))

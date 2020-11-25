@@ -15,34 +15,8 @@ except ImportError:
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
 from lib.util import *
 
-class Record:
-    def __init__(self, pdb_id=DS, label=DS, sn=DS, atom=DS, alt_loc=DS, lig_code=DS, chain=DS, lig_seq=DS, icode=DS,
-                 x=DF, y=DF, z=DF, occp=DS, temp=DS, elem=DS, charge=DS):
-        self.alt_loc = alt_loc
-        self.atom = atom
-        self.chain = chain
-        self.charge = charge
-        self.elem = elem
-        self.icode = icode
-        self.label = label
-        self.lig_code = lig_code
-        self.lig_seq = lig_seq
-        self.occp = occp
-        self.pdb_id = pdb_id
-        self.sn = sn
-        self.temp = temp
-        self.x = x
-        self.y = y
-        self.z = z
-
-    def info_str(self):
-        out = '> {}, {} | Atom: {} | S#: {} | Elem: {} | Lig: {} | LigSeq: {} | X, Y, Z: ({}, {}, {}) | ' \
-              'Chain: {}\n'.format(self.pdb_id, self.label, self.atom, self.sn, self.elem, self.lig_code,
-                                   self.lig_seq, self.x, self.y, self.z, self.chain)
-        return out
-
 class Atom:
-    def __init__(self, name=DS, elem=DS, x=DF, y=DF, z=DF, from_center=DF, ligand=DS):
+    def __init__(self, name=DS, elem=DS, x=DF, y=DF, z=DF, from_center=DF, ligand=DS, chain=DS):
         self.name = name
         self.elem = elem
         self.x = x
@@ -50,6 +24,7 @@ class Atom:
         self.z = z
         self.from_center = from_center
         self.ligand = ligand
+        self.chain = chain
         self.from_origin()
 
     def show(self): print(self.string())
@@ -60,51 +35,7 @@ class Atom:
 
     def from_origin(self): self.from_center = sqrt((self.x ** 2) + (self.y ** 2) + (self.z ** 2))
 
-class Plane:
-    def __init__(self, atoms: [Atom], eqn=None, ligand=DS, chain=DS):
-        self.atoms = atoms
-        self.eqn = eqn if eqn is not None else Eqn(DF, DF, DF, DF)
-        self.ligand = ligand
-        self.chain = chain
-
-    def string(self):
-        atoms = ''
-        for atom in self.atoms: atoms += atom.simple() + ' '
-        return '{}-{} {}'.format(self.ligand, self.chain, atoms)
-
-    def set_eqn(self):
-        if (len(self.atoms)) > 3: self.find_best_fit()
-        else: self.eqn = find_plane_eqn(self.atoms[0], self.atoms[1], self.atoms[2])
-
-    def find_best_fit(self):
-        x = list((atom.x for atom in self.atoms))
-        y = list((atom.y for atom in self.atoms))
-        z = list((atom.z for atom in self.atoms))
-        names = list((o.name for o in self.atoms))
-        modded = [",".join(map(str, comb)) for comb in combinations(names, 3)]
-        eqns, modded_list = [], []
-        for m in modded: modded_list.append(m.split(','))
-        for m in modded_list: eqns.append(find_plane_eqn(self.get_atom(m[0]), self.get_atom(m[1]), self.get_atom(m[2])))
-        a, b, c, d = DF, DF, DF, DF
-        count = 0
-
-        for eqn in eqns:
-            count += 1
-            a, b, c, d = a + eqn.a, b + eqn.b, c + eqn.c, d + eqn.d
-            if count > 1: a, b, c, d = a / 2, b / 2, c / 2, d / 2
-
-        xyz, avgs = np.array([x, y, z]), np.array([a, b, c, d])
-        least_sq_res = leastsq(find_residuals, avgs, args=(None, xyz))[0]
-        avg_eqn = Eqn(float(least_sq_res[0]), float(least_sq_res[1]), float(least_sq_res[2]), float(least_sq_res[3]))
-        self.eqn = avg_eqn
-
-    def get_atom(self, name):
-        for atom in self.atoms:
-            if name == atom.name: return atom
-        print('!!!Could not find atom with name {}, returning blank atom'.format(name))
-        return Atom()
-
-class Eqn:
+class Equation:
     def __init__(self, a, b, c, d):
         self.a = a
         self.b = b
@@ -165,7 +96,80 @@ class Struct:
         plane.chain = chain
         self.planes.append(plane)
 
-def atom_from_record(rec: Record): return Atom(rec.atom, rec.elem, rec.x, rec.y, rec.z, ligand=rec.lig_code)
+class Record:
+    def __init__(self, pdb_id=DS, label=DS, sn=DS, atom=DS, alt_loc=DS, lig_code=DS, chain=DS, lig_seq=DS, icode=DS,
+                 x=DF, y=DF, z=DF, occp=DS, temp=DS, elem=DS, charge=DS):
+        self.alt_loc = alt_loc
+        self.atom = atom
+        self.chain = chain
+        self.charge = charge
+        self.elem = elem
+        self.icode = icode
+        self.label = label
+        self.lig_code = lig_code
+        self.lig_seq = lig_seq
+        self.occp = occp
+        self.pdb_id = pdb_id
+        self.sn = sn
+        self.temp = temp
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def info_str(self):
+        out = '> {}, {} | Atom: {} | S#: {} | Elem: {} | Lig: {} | LigSeq: {} | X, Y, Z: ({}, {}, {}) | ' \
+              'Chain: {}\n'.format(self.pdb_id, self.label, self.atom, self.sn, self.elem, self.lig_code,
+                                   self.lig_seq, self.x, self.y, self.z, self.chain)
+        return out
+
+class Plane:
+    def __init__(self, atoms: [Atom], eqn=None, ligand=DS, chain=DS):
+        self.atoms = atoms
+        self.eqn = eqn if eqn is not None else Equation(DF, DF, DF, DF)
+        self.ligand = ligand
+        self.chain = chain
+
+    def string(self):
+        atoms = ''
+        for atom in self.atoms: atoms += atom.simple() + ' '
+        return '{}-{} {}'.format(self.ligand, self.chain, atoms)
+
+    def set_eqn(self):
+        if (len(self.atoms)) > 3: self.find_best_fit()
+        else: self.eqn = find_plane_eqn(self.atoms[0], self.atoms[1], self.atoms[2])
+
+    def find_best_fit(self):
+        x = list((atom.x for atom in self.atoms))
+        y = list((atom.y for atom in self.atoms))
+        z = list((atom.z for atom in self.atoms))
+        names = list((o.name for o in self.atoms))
+        modded = [",".join(map(str, comb)) for comb in combinations(names, 3)]
+        eqns, modded_list = [], []
+        for m in modded: modded_list.append(m.split(','))
+        for m in modded_list: eqns.append(find_plane_eqn(self.get_atom(m[0]), self.get_atom(m[1]), self.get_atom(m[2])))
+        a, b, c, d = DF, DF, DF, DF
+        count = 0
+
+        for eqn in eqns:
+            count += 1
+            a, b, c, d = a + eqn.a, b + eqn.b, c + eqn.c, d + eqn.d
+            if count > 1: a, b, c, d = a / 2, b / 2, c / 2, d / 2
+
+        xyz, avgs = np.array([x, y, z]), np.array([a, b, c, d])
+        least_sq_res = leastsq(find_residuals, avgs, args=(None, xyz))[0]
+        avg_eqn = Equation(float(least_sq_res[0]), float(least_sq_res[1]), float(least_sq_res[2]),
+                           float(least_sq_res[3]))
+        self.eqn = avg_eqn
+
+    def get_atom(self, name):
+        for atom in self.atoms:
+            if name == atom.name: return atom
+        print('!!!Could not find atom with name {}, returning blank atom'.format(name))
+        return Atom()
+
+
+def atom_from_record(rec: Record):
+    return Atom(rec.atom, rec.elem, rec.x, rec.y, rec.z, ligand=rec.lig_code, chain=rec.chain)
 
 def new_record(line, name):
     """Make new record object from PDB file. Will only create coordinate properties for ATOM/HETATM records."""
@@ -232,7 +236,7 @@ def find_plane_eqn(i, j, k):
     b = (u[2] * v[0]) - (v[2] * u[0])  # b = (Bz-Az)(Cx-Ax) - (Cz-Az)(Bx-Ax)
     c = (u[0] * v[1]) - (v[0] * u[1])  # c = (Bx-Ax)(Cy-Ay) - (Cx-Ax)(By-Ay)
     d = -((a * i.x) + (b * i.y) + (c * i.z))  # d = -(aAx + bAy + cAz)
-    eqn = Eqn(a, b, c, d)  # make equation object
+    eqn = Equation(a, b, c, d)  # make equation object
     return eqn
 
 def f_min(val, p):
