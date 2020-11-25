@@ -337,6 +337,7 @@ Determines the plane equation. If there are only 3 atoms defined in a plane then
 If there are more than 3 points, then a call to `Plane.find_best_fit` is made in order to find the equation for the plane of best fit.
 
 #### `Plane.find_best_fit`
+Using the list of atoms for the plane, the program then makes all unique groups of 3 atoms then 
 
 ### `Equation`
 
@@ -409,7 +410,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODgyMDExNzYsMTg5NDkwOTIxMSwtOD
-MyMTEzMjA3LC0xODcxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEy
-MywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMTQzMDc3MjI4NiwxODk0OTA5MjExLC04Mz
+IxMTMyMDcsLTE4NzExMDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIz
+LDEyNzU0MDE2MThdfQ==
 -->
