@@ -300,7 +300,7 @@ The program can also run calculations on specific PDB structures and is currentl
 - Finding the distance between two atoms
 - Finding the name of any H atom that is within 1.2 angstroms of any O atom
 - Finding the angle between two planes
-	* The planes used in the calculations are currently established in `planes.json`.
+	* The planes used in the calculations are currently established in `planes.json`. The file structure is set up such that the list of atoms 
 
 When a PDB ID + the desired file extension (`.pdb`, `.xml`, `.cif`) is appended to the simple partial URL `https://files.rcsb.org/view/`, the program can then call `urllib.request.urlretrieve(url, file_path)`,  where `file_path` is the name of the file that  `urllib` will save the web page content to.   
   
@@ -384,6 +384,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NDQ0NDAwMSwtMTg3MTEwMywtMTg3Nz
-U1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbLTEyOTE3OTg3NDQsLTE4NzExMDMsLTE4Nz
+c1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ==
 -->
