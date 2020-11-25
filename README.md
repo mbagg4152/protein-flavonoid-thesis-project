@@ -341,7 +341,7 @@ Using the list of atoms for the plane, the program then makes all unique groups 
 Once the averages are found, then the residuals for the average values are found using `scipy.optimize.leastsq` which results in a better approximation for the plane equation.
 
 ### `Equation`
-
+This object holds values from the equation of a plane of the form 
 
 
 
@@ -411,7 +411,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDAxODM2MTMsMTg5NDkwOTIxMSwtOD
-MyMTEzMjA3LC0xODcxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEy
-MywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMTUyMTI4Nzg4OSwxODk0OTA5MjExLC04Mz
+IxMTMyMDcsLTE4NzExMDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIz
+LDEyNzU0MDE2MThdfQ==
 -->
