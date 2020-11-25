@@ -326,27 +326,22 @@ These objects contain data from the PDB structure files themselves, not just sim
 
 #### `Atom`
 
-#### `new_record`
-In `protein.py`, if a line begins with `ATOM/HETATM` then this function is called to create a new `Record` object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
-Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with values from the passed in line.
-
-
-
-
-#### `new_struct`
-This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new `Struct` is returned.
-
-
-
-#### `atom_from_record`
-
 #### `Plane`
 
 #### `Equation`
 
-#### `Equation.set_eqn`
+##### `Equation.set_eqn`
 
-#### `Equation.find_best_fit`
+##### `Equation.find_best_fit`
+
+#### `new_record`
+In `protein.py`, if a line begins with `ATOM/HETATM` then this function is called to create a new `Record` object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
+Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with values from the passed in line.
+
+#### `new_struct`
+This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new `Struct` is returned.
+
+#### `atom_from_record`
 
 #### `find_plane_eqn`
 
@@ -405,7 +400,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NjY2NTM5MiwtODMyMTEzMjA3LC0xOD
-cxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4
-XX0=
+eyJoaXN0b3J5IjpbNzY2MjQxMjg2LC04MzIxMTMyMDcsLTE4Nz
+ExMDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThd
+fQ==
 -->
