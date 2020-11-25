@@ -359,10 +359,10 @@ For points A, B, C the program first computes:
 - vector AB = (B<sub>x</sub> - A<sub>x</sub>, B<sub>y</sub> - A<sub>y</sub>, B<sub>z</sub> - A<sub>z</sub>)
 - vector AC = (C<sub>x</sub> - A<sub>x</sub>, C<sub>y</sub> - A<sub>y</sub>, C<sub>z</sub> - A<sub>z</sub>)
 Then using the vectors, finds a, b, c & d by computing AB x AC
-- a = (B<sub>y</sub>-A<sub>y</sub>)(Cz-Az) - (C<sub>y</sub>-A<sub>y</sub>)(Bz-Az)
-- b = (Bz - Az)(C<sub>x</sub> - A<sub>x</sub> ) - (Cz - Az)(B<sub>x</sub> -A<sub>x</sub> )
+- a = (B<sub>y</sub> - A<sub>y</sub>)(C<sub>z</sub> - A<sub>z</sub>) - (C<sub>y</sub> - A<sub>y</sub>)(B<sub>z</sub> - A<sub>z</sub>)
+- b = (B<sub>z</sub> - A<sub>z</sub>)(C<sub>x</sub> - A<sub>x</sub> ) - (C<sub>z</sub> - A<sub>z</sub>)(B<sub>x</sub> - A<sub>x</sub> )
 - c = (B<sub>x</sub> - A<sub>x</sub> )(C<sub>y</sub> - A<sub>y</sub>) - (C<sub>x</sub> - A<sub>x</sub>)(B<sub>y</sub> - A<sub>y</sub>)
-- d = -(aA<sub>x</sub>  + bAy + cAz)
+- d = -(a*A<sub>x</sub>  + bA<sub>y</sub> + cA<sub>z</sub>)
 
 <!--  -->
 ---
@@ -418,7 +418,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0OTc4NTM5LDE4OTQ5MDkyMTEsLTgzMj
+eyJoaXN0b3J5IjpbNjEwODc0NjA3LDE4OTQ5MDkyMTEsLTgzMj
 ExMzIwNywtMTg3MTEwMywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMs
 MTI3NTQwMTYxOF19
 -->
