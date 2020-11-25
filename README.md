@@ -301,7 +301,7 @@ The program can also run calculations on specific PDB structures and is currentl
 - Finding the name of any H atom that is within 1.2 angstroms of any O atom
 - Finding the angle between two planes
 	* The planes used in the calculations are currently established in `planes.json` and are established based on chemical rings. 
-	* The file structure is set up such that the list of atoms that belong to each 'plane' are grouped under the PDB ID > 
+	* The file structure is set up such that the list of atoms that belong to each 'plane' are grouped under the PDB ID > Ligand ID > 
 
 When a PDB ID + the desired file extension (`.pdb`, `.xml`, `.cif`) is appended to the simple partial URL `https://files.rcsb.org/view/`, the program can then call `urllib.request.urlretrieve(url, file_path)`,  where `file_path` is the name of the file that  `urllib` will save the web page content to.   
   
@@ -385,6 +385,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIzNjMyMDM0LC0xODcxMTAzLC0xODc3NT
-UzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbLTEwNDcyMjAxNzAsLTE4NzExMDMsLTE4Nz
+c1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ==
 -->
