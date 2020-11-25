@@ -359,10 +359,10 @@ For points A, B, C the program first computes:
 - vector AB = (B<sub>x</sub> - A<sub>x</sub>, B<sub>y</sub> - A<sub>y</sub>, B<sub>z</sub> - A<sub>z</sub>)
 - vector AC = (C<sub>x</sub> - A<sub>x</sub>, C<sub>y</sub> - A<sub>y</sub>, C<sub>z</sub> - A<sub>z</sub>)
 Then using the vectors, finds a, b, c & d by computing AB x AC
-- a =
-- b =
-- c =
-- d = 
+- a = (By-Ay)(Cz-Az) - (Cy-Ay)(Bz-Az)
+- b = (Bz-Az)(C<sub>x</sub> -Ax) - (Cz-Az)(Bx-Ax)
+- c = (Bx-Ax)(Cy-Ay) - (Cx-Ax)(By-Ay)
+- d = -(aAx + bAy + cAz)
 
 <!--  -->
 ---
@@ -418,7 +418,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MzE1MDEyMSwxODk0OTA5MjExLC04Mz
-IxMTMyMDcsLTE4NzExMDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIz
-LDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbLTE1ODgzMTQzOTUsMTg5NDkwOTIxMSwtOD
+MyMTEzMjA3LC0xODcxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEy
+MywxMjc1NDAxNjE4XX0=
 -->
