@@ -33,9 +33,9 @@ JW started the code to get information from KEGG about the species we were inter
   - Install python package __matplotlib__: `[pip|pip3] install -U matplotlib` 
 	* Required by `pdb_parsing.py`
   - Install python package __scipy__: `[pip|pip3] install scipy` 
-	* Required by `pdb_parsing.py`
+	* Required by `plib/types.py` which is used by `pdb_parsing.py`
   - Install python package __numpy__: `[pip|pip3] install numpy` 
-	* Required by `plib/types.py` `pdb_parsing.py`
+	* Required by `plib/types.py` which is used by `pdb_parsing.py`
 
 <!--  -->
 ---
@@ -376,6 +376,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MjQyMTQ0NiwtMTg3MTEwMywtMTg3Nz
+eyJoaXN0b3J5IjpbMTIyMDIzOTU2OCwtMTg3MTEwMywtMTg3Nz
 U1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
 -->
