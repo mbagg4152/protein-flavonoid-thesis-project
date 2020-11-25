@@ -319,7 +319,7 @@ This object holds the information from PDB files for a single `ATOM/HETATM` line
 ```
 ATOM   1258  CA  THR B  59      22.806  24.345  36.922  1.00 23.83           C   
 HETATM 1815  O   HOH A 133      17.558  28.943  -4.426  1.00 23.32           O    
-` ``
+```
 ### `Struct`
 These objects contain data from the PDB structure files themselves, not just simple lines. Each `Struct` contains specific  information such as PDB ID, classification, a list of `Records`, associated organisms, EC numbers, etc.  
 
@@ -418,7 +418,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MDIyNDYwMywtMTE1NDkwODI2NywxOD
+eyJoaXN0b3J5IjpbMTU2MzQ4NzMxOSwtMTE1NDkwODI2NywxOD
 k0OTA5MjExLC04MzIxMTMyMDcsLTE4NzExMDMsLTE4Nzc1NTMw
 MjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ==
 -->
