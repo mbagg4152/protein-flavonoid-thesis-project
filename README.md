@@ -333,7 +333,8 @@ This object serves as a container for atoms as specified in `planes.json`.
 Each plane has a list of `Atoms`, a plane `Equation`,   a ligand code and a chain ID.
 
 #### `Plane.set_eqn`
-Determines the e
+Determines the plane equation. If there are only 3 atoms defined in a plane then the program makes a call to `find_plane_eqn` in order to get the simple plane equation given by 3 points.  
+If there are more than 3 pom
 
 #### `Plane.find_best_fit`
 
@@ -408,7 +409,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTg1ODgxNiwxODk0OTA5MjExLC04Mz
-IxMTMyMDcsLTE4NzExMDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIz
-LDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbMzk3ODAxODgxLDE4OTQ5MDkyMTEsLTgzMj
+ExMzIwNywtMTg3MTEwMywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMs
+MTI3NTQwMTYxOF19
 -->
