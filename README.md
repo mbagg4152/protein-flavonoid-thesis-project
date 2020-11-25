@@ -25,10 +25,13 @@ JW started the code to get information from KEGG about the species we were inter
     the list of installed  programs by navigating to `Control Panel --> Programs --> Uninstall a Program`
   - Install python package __bioservices__: `[pip|pip3] install bioservices`  
     * _Using pip should work, but a system may recognize `pip3` instead._   
+    * Required by `keggv2.py`
     * You can find the bioservices documentation [_here._](https://bioservices.readthedocs.io/en/master/)
   - Install python package __BioPython__: `[pip|pip3] install biopython`  
+    * Required by `pdb_parsing.py`
     * You can find the BioPython documentation [_here._](https://biopython.org/wiki/Documentation)
-  - Install python package __matplotlib__
+  - Install python package __matplotlib__: `[pip|pip3] install -U matplotlib` 
+	* Required by `pdb_parsing.py`
 
 
 <!--  -->
@@ -370,6 +373,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxOTczOTg5MSwtMTg3MTEwMywtMTg3Nz
-U1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbLTIxMTg2ODg4ODQsLTE4NzExMDMsLTE4Nz
+c1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ==
 -->
