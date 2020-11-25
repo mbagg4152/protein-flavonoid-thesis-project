@@ -313,7 +313,7 @@ If `urllib` receives an error code from trying to get a .pdb file, that is most 
 <!--  -->
 ---
 ## `protein/types.py`
-This file contains two different classes and functions that are used to create new objects, which are used in `p.py`.  
+This file contains two different classes and functions that are used to create new objects, which are used in `pdb_parsing.py`.  
 #### `Record`
 This object holds the information from PDB files for a single `ATOM/HETATM` line or record.  For example, the following lines would be appropriately converted into `Record` objects using the function 
 `new_record`:
@@ -330,6 +330,12 @@ These objects contain data from the PDB structure files themselves, not just sim
 
 #### `new_struct`
 This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new `Struct` is returned.
+
+#### `Plane`
+
+#### `Equation`
+
+#### `Record`
 
 <!--  -->
 ---
@@ -385,7 +391,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4ODE1MzU0NiwtODMyMTEzMjA3LC0xOD
+eyJoaXN0b3J5IjpbMTA1MTg1NTU2MCwtODMyMTEzMjA3LC0xOD
 cxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4
 XX0=
 -->
