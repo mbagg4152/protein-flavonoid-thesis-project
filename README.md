@@ -296,7 +296,8 @@ Writes the program's original `README` file.
 ---
 ## `protein/pdb_parsing.py`
 This program reads in a `JSON` file of PDB IDs and then appends the IDs to the end of a specific URL in order to download each desired PDB or mmCIF file. This is just one of the program options.
-The program can also run calculations on  
+The program can also run calculations on specific PDB structures and is currently set up in a menu-like fashion.   The options include:
+- finding the distance between two atoms
 
 When a PDB ID + the desired file extension (`.pdb`, `.xml`, `.cif`) is appended to the simple partial URL `https://files.rcsb.org/view/`, the program can then call `urllib.request.urlretrieve(url, file_path)`,  where `file_path` is the name of the file that  `urllib` will save the web page content to.   
   
@@ -380,6 +381,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0ODMxOTU2MSwtMTg3MTEwMywtMTg3Nz
-U1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbNjYwMDYwMDUzLC0xODcxMTAzLC0xODc3NT
+UzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
 -->
