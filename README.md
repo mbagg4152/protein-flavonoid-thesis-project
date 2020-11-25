@@ -319,14 +319,14 @@ In `protein.py`, if a line begins with `ATOM/HETATM` then this function is calle
 Since PDB files have dedicated column ranges for each value, it is then easy to assign the new object's properties with values from the passed in line.
 
 #### `Struct`
-These objects contain data from the PDB files themselves, not just simple lines. Each `Struct` contains specific  information such as PDB ID, classification, a list of `Records`, associated organisms, EC numbers, etc.  
+These objects contain data from the PDB structure files themselves, not just simple lines. Each `Struct` contains specific  information such as PDB ID, classification, a list of `Records`, associated organisms, EC numbers, etc.  
 
-#### `new_entry`
-This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new `Entry` is returned.
+#### `new_struct`
+This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new `Struct` is returned.
 
 <!--  -->
 ---
-## `protein/StringsAndConsts.py`
+## `protein/strings_consts.py`
 This file simply contains several strings & constant values for `protein.py`.
     
 <!--  -->
@@ -378,6 +378,6 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTc2NzMwNTQsLTE4NzExMDMsLTE4Nz
-c1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbNDIxNTUxOTc1LC0xODcxMTAzLC0xODc3NT
+UzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
 -->
