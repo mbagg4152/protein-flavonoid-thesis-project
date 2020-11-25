@@ -338,7 +338,7 @@ If there are more than 3 points, then a call to `Plane.find_best_fit` is made in
 
 #### `Plane.find_best_fit`
 Using the list of atoms for the plane, the program then makes all unique groups of 3 atoms then creates separate `Equation` objects. Then these equations are iterated over and based on continuously takes the averages of the different values in the equation.  
-Once the averages are found, then 
+Once the averages are found, then the residuals for the average values are found using `scipy.optimize.leastsq` which results in a better approximation for the plane equation.
 
 ### `Equation`
 
@@ -411,7 +411,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk4ODM1OTU5LDE4OTQ5MDkyMTEsLTgzMj
-ExMzIwNywtMTg3MTEwMywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMs
-MTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbLTEyNDAxODM2MTMsMTg5NDkwOTIxMSwtOD
+MyMTEzMjA3LC0xODcxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEy
+MywxMjc1NDAxNjE4XX0=
 -->
