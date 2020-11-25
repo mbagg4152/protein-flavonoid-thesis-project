@@ -331,11 +331,16 @@ These objects contain data from the PDB structure files themselves, not just sim
 #### `new_struct`
 This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new `Struct` is returned.
 
+#### `Atom`
+
+#### `atom_from_record`
+
 #### `Plane`
 
 #### `Equation`
 
-#### `Record`
+#### `find_plane_eqn`
+
 
 <!--  -->
 ---
@@ -391,7 +396,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MTg1NTU2MCwtODMyMTEzMjA3LC0xOD
+eyJoaXN0b3J5IjpbMTk2MTU4OTM4NywtODMyMTEzMjA3LC0xOD
 cxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4
 XX0=
 -->
