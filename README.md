@@ -325,9 +325,11 @@ HETATM 1815  O   HOH A 133      17.558  28.943  -4.426  1.00 23.32           O
 These objects contain data from the PDB structure files themselves, not just simple lines. Each `Struct` contains specific  information such as PDB ID, classification, a list of `Records`, associated organisms, EC numbers, etc.  
 
 ### `Atom`
-This object contains information from ATOM/HETATM records and are made using a subset of the information from the `Record` objects. These are used in order to better manage and maintain the information for each atom that is used in de
+This object contains information from ATOM/HETATM records and are made using a subset of the information from the `Record` objects. These are used in order to better manage and maintain the information for each atom that is used in defining a plane.   
+These objects have a name, element code, ligand code, xyz coordinates and a distance from origin.
 
 ### `Plane`
+This object serves as a container for atoms as specified in
 
 ### `Equation`
 
@@ -401,7 +403,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDEzMTkzNjgsLTgzMjExMzIwNywtMT
-g3MTEwMywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYx
-OF19
+eyJoaXN0b3J5IjpbMTE5OTY4NDM2NiwtODMyMTEzMjA3LC0xOD
+cxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4
+XX0=
 -->
