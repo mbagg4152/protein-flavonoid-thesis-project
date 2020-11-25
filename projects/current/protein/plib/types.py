@@ -1,9 +1,16 @@
 from itertools import combinations
 from math import sqrt
 from plib.strings_consts import *
-from scipy.optimize import leastsq
-import numpy as np
 import sys
+
+try:
+    from scipy.optimize import leastsq
+    import numpy as np
+except ImportError:
+    print('Program needs scipy and numpy to work. One or both are missing. In the terminal, try:\n'
+          '`pip3 install scipy` or `pip install scipy`\n'
+          '`pip3 install numpy` or `pip install numpy`')
+    exit(1)
 
 sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
 from lib.util import *
@@ -139,9 +146,7 @@ class Struct:
 
     def get_record(self, atom_name, lig_code, chain):
         for record in self.records:
-            if record.atom == atom_name and record.lig_code == lig_code and record.chain == chain:
-                print('get_record {} {} {} '.format(record.atom, record.lig_code, record.chain))
-                return record
+            if record.atom == atom_name and record.lig_code == lig_code and record.chain == chain: return record
         print('!!!Nothing for atom {} in chain {} of ligand {}'.format(atom_name, chain, lig_code))
         return Record()
 
@@ -150,7 +155,6 @@ class Struct:
         for name in atom_names:
             tmp_rec = self.get_record(name, lig_code, chain)
             if tmp_rec is None: return
-            print('{} {} {} {} {}'.format(tmp_rec.lig_code, lig_code, tmp_rec.x, tmp_rec.y, tmp_rec.z))
             tmp_atm = atom_from_record(tmp_rec)
             tmp_atm.from_origin()
             self.atoms.append(tmp_atm)

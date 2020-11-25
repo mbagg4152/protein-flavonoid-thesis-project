@@ -1,4 +1,3 @@
-from Bio.PDB import PDBIO, MMCIFParser
 from datetime import datetime
 from math import acos, degrees
 from pathlib import Path
@@ -6,8 +5,16 @@ from plib.types import *
 from threading import Lock, Thread
 from urllib import request
 from urllib.error import HTTPError, URLError
-import matplotlib.pyplot as plt
 import multiprocessing
+
+try:
+    import matplotlib.pyplot as plt
+    from Bio.PDB import PDBIO, MMCIFParser
+except ImportError:
+    print('Program needs matplotlib and biopython to work. One or both are missing. In the terminal, try:\n'
+          '`pip3 install -U matplotlib` or `pip install -U matplotlib`\n'
+          '`pip3 install biopython` or `pip install biopython`')
+    exit(1)
 
 plt.rc('xtick', labelsize=4)  # set font size for ticks on x axis for pyplot
 plt.rc('ytick', labelsize=4)  # set font size for ticks on y axis for pyplot
@@ -160,8 +167,8 @@ def plane_operations(struct):
 
     Path(image_dir + SEP + struct.pdb_id).mkdir(parents=True, exist_ok=True)
     if MAKE_GRAPHS:
-        quick_plot(plane0, image_dir + SEP + struct.pdb_id + SEP + 'plane' + str(p_index0) + '_' + plane0.chain)
-        quick_plot(plane1, image_dir + SEP + struct.pdb_id + SEP + 'plane' + str(p_index1) + '_' + plane1.chain)
+        quick_plot(plane0, image_dir + SEP + struct.pdb_id + SEP + 'plane' + str(p_index0) + '_chain_' + plane0.chain)
+        quick_plot(plane1, image_dir + SEP + struct.pdb_id + SEP + 'plane' + str(p_index1) + '_chain_' + plane1.chain)
     eqn0, eqn1 = plane0.eqn, plane1.eqn
     print('Plane {}. {} || {}'.format(p_index0, eqn0.string(), eqn0.func_form()))
     print('Plane {}. {} || {}'.format(p_index1, eqn1.string(), eqn1.func_form()))
@@ -178,6 +185,7 @@ def same_atom(atom1, atom2):
 
 def quick_plot(plane, path):
     """Output figures which show the planes and the atoms in a graph at different viewing angles."""
+    print('Making graphs....')
     atoms = plane.atoms
     atoms.sort(key=lambda a: a.from_center)
 
@@ -238,9 +246,7 @@ def get_parse_pdbs(url, path, pdb_id, skip_download=False):
         if key == pdb_id:
             for lig in struct_planes[key]:
                 for chain in struct_planes[key][lig]:
-                    for atoms in struct_planes[key][lig][chain]:
-                        print(str(atoms))
-                        tmp_entry.new_plane(atoms, lig, chain)
+                    for atoms in struct_planes[key][lig][chain]: tmp_entry.new_plane(atoms, lig, chain)
 
     with lock_entry: pdb_entries.append(tmp_entry)
     with lock_basic:

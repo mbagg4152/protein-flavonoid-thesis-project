@@ -1,14 +1,19 @@
-import bioservices
+try:
+    import bioservices
+    from bioservices.kegg import KEGG
+except ImportError:
+    print('Program needs bioservices in order to work. In the terminal, try:\n'
+          '`pip3 install bioservices` or `pip install bioservices`')
+    exit(1)
+
 import datetime
 import os
 import sys
 import threading
-import urllib.error
-import urllib.parse
-import urllib.request
+from urllib import request
+from urllib.error import HTTPError, URLError
 
 sys.path.append(os.getcwd().replace(os.sep + 'flavonoid', ''))
-from bioservices.kegg import KEGG
 from lib.compoundinfo import *
 from lib.datatypes import *
 from lib.jsondata import *
@@ -197,6 +202,7 @@ def flavonoid_predictions():
         print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
               'Data saved in ' + path_chem + SEP + key.file_name + '.')
     write_append(path_main + SEP + 'plant-ec-nums.csv', plant_ec_output)
+
 def make_plant_ec_counts():
     """
     This function creates and outputs a 'matrix' relating to each species and EC number by running the fill_matrix
@@ -234,7 +240,6 @@ def build_nt_fasta_by_ec():
     FASTA/DNA sequence for each of the gene entries that were found. As before, the program parses the list after
     all threads are done and then created a FASTA file for each EC number and created the Master FASTA file.
     """
-
     sub_lists = list_partition(list_all_genes, thread_lim)
     threads = []
     print('getting data for ' + str(len(list_all_genes)) + ' genes')
@@ -272,8 +277,8 @@ def build_fasta(genes):
         db_url = URL_DBGET + combined  # append code-gene string to the end of the dbget incomplete URL
         try:
             # read the html from the dbget url
-            with urllib.request.urlopen(db_url) as db_site: url_data = db_site.read().decode('utf-8')
-        except urllib.error.HTTPError or urllib.error.URLError as e:  # error getting html data
+            with request.urlopen(db_url) as db_site: url_data = db_site.read().decode('utf-8')
+        except HTTPError or URLError as e:  # error getting html data
             print('Something went wrong with error ' + e)
             continue
 
