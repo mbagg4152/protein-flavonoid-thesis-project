@@ -353,6 +353,7 @@ Since PDB files have dedicated column ranges for each value, it is then easy to 
 This function takes the PDB file as a list of lists and based on the value at the beginning of the line (HEADER, SOURCE, etc.) will parse the information and assign the parsed values to the object's properties. After filling the available properties, a new `Struct` is returned.
 
 #### `atom_from_record`
+This function makes an `Atom` object by accessing the properties of a `Record` object
 
 #### `find_plane_eqn`
 
@@ -411,7 +412,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NTcyMjAxLDE4OTQ5MDkyMTEsLTgzMj
+eyJoaXN0b3J5IjpbOTQ0NzAxODI2LDE4OTQ5MDkyMTEsLTgzMj
 ExMzIwNywtMTg3MTEwMywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMs
 MTI3NTQwMTYxOF19
 -->
