@@ -326,17 +326,21 @@ These objects contain data from the PDB structure files themselves, not just sim
 
 ### `Atom`
 This object contains information from ATOM/HETATM records and are made using a subset of the information from the `Record` objects. These are used in order to better manage and maintain the information for each atom that is used in defining a plane.   
-These objects have a name, element code, ligand code, xyz coordinates and a distance from origin.
+These objects have a name, element code, ligand code, chain ID, xyz coordinates and a distance from origin.
 
 ### `Plane`
 This object serves as a container for atoms as specified in `planes.json`.  
-Each plane has a list of `Atoms`, a plane `Equation`,   
+Each plane has a list of `Atoms`, a plane `Equation`,   a ligand code and a chain ID.
+
+#### `Plane.set_eqn`
+Determines the e
+
+#### `Plane.find_best_fit`
 
 ### `Equation`
 
-#### `Equation.set_eqn`
 
-#### `Equation.find_best_fit`
+
 
 #### `new_record`
 In `protein.py`, if a line begins with `ATOM/HETATM` then this function is called to create a new `Record` object. The function requires that the line of the file along with the PDB ID be passed as parameters.  
@@ -404,7 +408,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDkwOTIxMSwtODMyMTEzMjA3LC0xOD
-cxMTAzLC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4
-XX0=
+eyJoaXN0b3J5IjpbLTgwMTg1ODgxNiwxODk0OTA5MjExLC04Mz
+IxMTMyMDcsLTE4NzExMDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIz
+LDEyNzU0MDE2MThdfQ==
 -->
