@@ -229,13 +229,13 @@ def get_vector(a: Atom, b: Atom):
     """ Returns (Bx-Ax, By-Ay, Bz-Az) """
     return b.x - a.x, b.y - a.y, b.z - a.z
 
-def find_plane_eqn(i, j, k):
+def find_plane_eqn(pa, pb, pc):
     """Finds components of plane formula ax + by + cz + d = 0 & creates equation object with calculated values."""
-    u, v = get_vector(i, j), get_vector(i, k)
-    a = (u[1] * v[2]) - (v[1] * u[2])  # a = (By-Ay)(Cz-Az) - (Cy-Ay)(Bz-Az)
-    b = (u[2] * v[0]) - (v[2] * u[0])  # b = (Bz-Az)(Cx-Ax) - (Cz-Az)(Bx-Ax)
-    c = (u[0] * v[1]) - (v[0] * u[1])  # c = (Bx-Ax)(Cy-Ay) - (Cx-Ax)(By-Ay)
-    d = -((a * i.x) + (b * i.y) + (c * i.z))  # d = -(aAx + bAy + cAz)
+    ab, ac = get_vector(pa, pb), get_vector(pa, pc)
+    a = (ab[1] * ac[2]) - (ac[1] * ab[2])  # a = (By-Ay)(Cz-Az) - (Cy-Ay)(Bz-Az)
+    b = (ab[2] * ac[0]) - (ac[2] * ab[0])  # b = (Bz-Az)(Cx-Ax) - (Cz-Az)(Bx-Ax)
+    c = (ab[0] * ac[1]) - (ac[0] * ab[1])  # c = (Bx-Ax)(Cy-Ay) - (Cx-Ax)(By-Ay)
+    d = -((a * pa.x) + (b * pa.y) + (c * pa.z))  # d = -(aAx + bAy + cAz)
     eqn = Equation(a, b, c, d)  # make equation object
     return eqn
 
