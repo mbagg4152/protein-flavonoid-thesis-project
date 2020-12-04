@@ -46,3 +46,5 @@ FN_NPLANT_CODES = JDIR_NPASS + 'nplant_codes.json'
 
 FN_NCOMP_DICT = JDIR_NPASS + 'ncomp_dict.json'
 FN_NCOMP_CODES = JDIR_NPASS + 'ncomp_codes.json'
+
+FN_SMILES = JDIR_PROT + 'smiles.json'
