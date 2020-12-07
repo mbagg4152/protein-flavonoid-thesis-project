@@ -1,10 +1,9 @@
-from pathstrings import *
-from miscvals import *
-from util import *
-import re
+from http.client import InvalidURL
 from pathlib import Path
 from urllib import request
 from urllib.error import HTTPError, URLError
+from util import *
+import re
 
 smiles_list = {}
 re_chebi = r">CHEBI:([0-9]*)"
@@ -12,16 +11,19 @@ re_chembl = r">CHEMBL([0-9]*)"
 re_inchi = r"<tr id=\"chemicalInChI\"><th>InChI<\/th><td style=\"word-wrap: break-word\">(InChI=.*)</td></tr>" \
            r"<tr id=\"chemicalInChIKey\">"
 re_inchi_key = r"<th>InChIKey<\/th><td>(.*)</td></tr></table></div><div class=\"col-md-4"
-re_knap_data = r"<tr class=\" row.*\"><td class=\"d1\"><a href=\"http://www\.knapsackfamily\.com/knapsack_core/" \
-               r"information\.php\?word=(C[0-9]*)\" target=\"_blank\">C[0-9]*</a></td><td class=\"d1\">([\d|-]*)" \
-               r"</td><td class=\"d1\">(.*)</td><td class=\"d1\">[a-zA-Z|\d]+</td><td class=\"d1\">[0-9|\.]*</td>" \
-               r"<td class=\"d1\">"
+re_knap_data = r'<tr>[.|\s]*<td c.*d1\">[.|\s]*<a.*>(C[0-9]*)</a>[.|\s]*</td>[.|\s]*<td.*d1\">([' \
+               r'0-9|-]*)</td>\s*<td.*d1\">(.+)</td>[.|\s]*<td .*d1\">([0-9|a-zA-Z]+)</td>[.|\s]*<td.*d1\">([' \
+               r'\d|\.]+)</td>[.|\s]*<td.*d1\">(.*)</td>[.|\s]*</tr>'
 re_pubchem_id = r"https:\/\/pubchem\.ncbi\.nlm\.nih\.gov\/compound\/([0-9]*)"
 re_smiles = r"<tr id=\"chemicalIsomeric\"><th>Isomeric SMILES<\/th><td style=\"word-wrap: break-word\">(.*)</td>" \
             r"</tr><tr id=\"chemicalInChI\"><th>"
 
+re_knap_no_smiles = r'<tr>[.|\s]*<td\sc.*d1\">[.|\s]*<a.*blank\">(C[0-9]*)</a>[.|\s]*</td>[.|\s]*<td.*d1\">([' \
+                    r'0-9|-]*)</td>\s*<td\s.*d1\">(.*)</td>[.|\s]*<td\s.*d1\">([0-9|A-Z]+)</td>[.|\s]*<td\s.*d1\">([' \
+                    r'\d|\.]+)</td></tr>'
+re_knap_results = r'Number of matched data :([0-9]*).*<br>'
+
 pdb_url = "http://www.rcsb.org/ligand/"
-knap_url = "http://www.knapsackfamily.com/knapsack_core/result.php?sname=SMILES&word="
 
 new_dir = '..' + SEP + 'misc_files' + SEP + 'smiles'
 pages = new_dir + SEP + 'html_sites' + SEP
@@ -30,22 +32,73 @@ chem_info = new_dir + SEP + "chem_info.csv"
 Path(new_dir).mkdir(parents=True, exist_ok=True)
 Path(pages).mkdir(parents=True, exist_ok=True)
 Path(knap_data).mkdir(parents=True, exist_ok=True)
+
+
 def main():
     global smiles_list
     smiles_list = get_json_data(FN_SMILES)
-    # get_extra_info()
     get_organism_data()
+
 
 def get_organism_data():
     for key in smiles_list:
-        print(smiles_list.get(key).get('SMILES'))
-        item = smiles_list.get(key).get('SMILES').strip().replace(' ', '%20')
-        tmp_url = knap_url + str(item)
-        name = knap_data + key + ".txt"
-        if not os.path.exists(name):
-            try: request.urlretrieve(tmp_url, name)
-            except HTTPError or URLError or http.client.InvalidURL or UnicodeEncodeError:
-                print('err getting page')
+        json_keys = ['SMILES', 'Name', 'Long', 'ISMILES', 'INCHI', 'INCHI_KEY']
+        snames = ['SMILES', 'metabolite', 'metabolite', 'SMILES', 'INCHI_CD', 'INCHIKEY']
+        words = []
+        for sname in json_keys: words.append(smiles_list.get(key).get(sname).strip().replace(' ', '%20'))
+
+        for i in range(0, len(json_keys)):
+            tmp_url = get_knap_url(snames[i], str(words[i].encode('utf-8').decode('utf-8')))
+
+            name = knap_data + key + ".html"
+            if not os.path.exists(name):
+                try: request.urlretrieve(tmp_url, name)
+                except HTTPError or URLError or InvalidURL or UnicodeEncodeError: print('err getting page')
+
+            if not get_from_knapsack(tmp_url, name, key, json_keys[i]):
+                os.remove(name)
+            else:
+                break
+
+
+def get_from_knapsack(tmp_url, name, key, prop):
+    if not os.path.exists(name):
+        try: request.urlretrieve(tmp_url, name)
+        except HTTPError or URLError or InvalidURL or UnicodeEncodeError: print('err getting page')
+    try:
+        file = open(name, 'r')
+        data = file.read()
+        data = re.sub(r'<font color=#\S{6}>', '', data)
+        data = re.sub(r'</font>', '', data)
+        try:
+            num_res = re.findall(re_knap_results, data)[0]
+            if int(num_res) < 1:
+                print('no results for {} from value {}, deleting file.'.format(key, prop))
+                return False
+            else:
+                out = ''
+                short = False
+                values = re.findall(re_knap_data, data)
+                if len(values) == 0:
+                    values = re.findall(re_knap_no_smiles, data)
+                    short = True
+
+                for item in values:
+                    names = ' || '.join(item[2].split('<br>'))
+                    if short: out += '{} {} {} {} {}\n'.format(item[0], item[1], names, item[3], item[4])
+                    else: out += '{} {} {} {} {} {}\n'.format(item[0], item[1], names, item[3], item[4], item[5])
+                print('for {}, {}'.format(key, out))
+        except IndexError: return False
+        file.close()
+    except FileNotFoundError:
+        print('no file for {} from value {}'.format(key, prop))
+        return False
+
+    return True
+
+
+def get_knap_url(sname, word):
+    return "http://www.knapsackfamily.com/knapsack_core/result.php?sname={}&word={}".format(sname, word)
 
 
 def get_extra_info():
@@ -65,6 +118,7 @@ def get_extra_info():
             print('no file')
             continue
         data = file.read()
+
         inchi, inchi_key, smiles, pubchem, chebi, chembl = 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE'
         try:
             inchi, inchi_key = re.findall(re_inchi, data)[0], re.findall(re_inchi_key, data)[0]
@@ -77,6 +131,7 @@ def get_extra_info():
     info_file = open(chem_info, 'w')
     info_file.write(out_str)
     info_file.close()
+
 
 if __name__ == '__main__':
     main()

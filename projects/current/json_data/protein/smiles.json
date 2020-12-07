@@ -1,5 +1,27 @@
 {
   "obj": {
+    "GEN": {
+      "Name": "genistein",
+      "Long": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+      "SMILES": "c1(cc(c2c(c1)occ(c2=O)c1ccc(cc1)O)O)O",
+      "ISMILES": "Oc1ccc(cc1)C2=COc3cc(O)cc(O)c3C2=O",
+      "INCHI": "InChI=1S/C15H10O5/c16-9-3-1-8(2-4-9)11-7-20-13-6-10(17)5-12(18)14(13)15(11)19/h1-7,16-18H",
+      "INCHI_KEY": "TZBJGXHYKVUXJN-UHFFFAOYSA-N",
+      "PUBCHEM": "5280961",
+      "CHEBI": "28088",
+      "CHEMBL": "44"
+    },
+    "975": {
+      "Name": "hydroxytyrosol",
+      "Long": "4-(2-hydroxyethyl)benzene-1,2-diol",
+      "SMILES": "OCCc1ccc(O)c(O)c1",
+      "ISMILES": "OCCc1ccc(O)c(O)c1",
+      "INCHI": "InChI=1S/C8H10O3/c9-4-3-6-1-2-7(10)8(11)5-6/h1-2,5,9-11H,3-4H2",
+      "INCHI_KEY": "JUUBCHWRXWPFFH-UHFFFAOYSA-N",
+      "PUBCHEM": "82755",
+      "CHEBI": "68889",
+      "CHEMBL": "1950045"
+    },
     "142": {
       "Name": "carbidopa",
       "Long": "(2s)-3-(3,4-dihydroxyphenyl)-2-hydrazinyl-2-methyl-propanoic acid",
@@ -21,17 +43,6 @@
       "PUBCHEM": "688829",
       "CHEBI": "NONE",
       "CHEMBL": "NONE"
-    },
-    "975": {
-      "Name": "hydroxytyrosol",
-      "Long": "4-(2-hydroxyethyl)benzene-1,2-diol",
-      "SMILES": "OCCc1ccc(O)c(O)c1",
-      "ISMILES": "OCCc1ccc(O)c(O)c1",
-      "INCHI": "InChI=1S/C8H10O3/c9-4-3-6-1-2-7(10)8(11)5-6/h1-2,5,9-11H,3-4H2",
-      "INCHI_KEY": "JUUBCHWRXWPFFH-UHFFFAOYSA-N",
-      "PUBCHEM": "82755",
-      "CHEBI": "68889",
-      "CHEMBL": "1950045"
     },
     "03V": {
       "Name": "naphthalen-2-ol",
@@ -1308,17 +1319,6 @@
       "PUBCHEM": "137332066",
       "CHEBI": "NONE",
       "CHEMBL": "NONE"
-    },
-    "GEN": {
-      "Name": "genistein",
-      "Long": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
-      "SMILES": "c1(cc(c2c(c1)occ(c2=O)c1ccc(cc1)O)O)O",
-      "ISMILES": "Oc1ccc(cc1)C2=COc3cc(O)cc(O)c3C2=O",
-      "INCHI": "InChI=1S/C15H10O5/c16-9-3-1-8(2-4-9)11-7-20-13-6-10(17)5-12(18)14(13)15(11)19/h1-7,16-18H",
-      "INCHI_KEY": "TZBJGXHYKVUXJN-UHFFFAOYSA-N",
-      "PUBCHEM": "5280961",
-      "CHEBI": "28088",
-      "CHEMBL": "44"
     },
     "H6N": {
       "Name": "protocatechuic aldehyde",
