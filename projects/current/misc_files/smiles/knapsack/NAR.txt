@@ -1,0 +1,57 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)O</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">SMILES , </font>
+	     input word = <font class="iw">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)O</font><br><br>
+   	      Number of matched data :10 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">SMILES</th>
+            <tr><td class="d1"><a href=information.php?word=C00000982 target="_blank">C00000982</a></td><td class="d1">480-41-1</td><td class="d1">Naringenin<br>(-)-Naringenin</td><td class="d1">C15H12O5</td><td class="d1">272.06847349</td><td class="d1">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000983 target="_blank">C00000983</a></td><td class="d1">10236-47-2</td><td class="d1">Naringin</td><td class="d1">C27H32O14</td><td class="d1">580.17920573</td><td class="d1">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@@H](O1)CO)O)O)O[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)C)O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000984 target="_blank">C00000984</a></td><td class="d1">14259-46-2</td><td class="d1">Narirutin</td><td class="d1">C27H32O14</td><td class="d1">580.17920573</td><td class="d1">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO[C@@H]1O[C@@H]([C@@H]([C@H]([C@@H]1O)O)O)C)O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000998 target="_blank">C00000998</a></td><td class="d1">529-55-5</td><td class="d1">Naringenin 7-O-beta-D-glucoside<br>Prunin<br>5,7,4'-Trihydroxyflavanone 7-O-beta-D-glucopyranoside</td><td class="d1">C21H22O10</td><td class="d1">434.12129692</td><td class="d1">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)O[C@H]1[C@@H]([C@H]([C@H]([C@H](O1)CO)O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000999 target="_blank">C00000999</a></td><td class="d1">2957-21-3</td><td class="d1">Sakuranetin<br>5,4'-Dihydroxy-7-methoxyflavanone<br>Naringenin 7-O-methyl ether</td><td class="d1">C16H14O5</td><td class="d1">286.08412356</td><td class="d1">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)OC</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008211 target="_blank">C00008211</a></td><td class="d1">96686-70-3</td><td class="d1">Prunin 6''-p-coumarate</td><td class="d1">C30H28O12</td><td class="d1">580.15807636</td><td class="d1">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)O[C@H]1[C@H]([C@H]([C@@H]([C@H](O1)COC(=O)/C=C/c1ccc(cc1)O)O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008212 target="_blank">C00008212</a></td><td class="d1">84813-73-0</td><td class="d1">Prunin 3''-p-coumarate</td><td class="d1">C30H28O12</td><td class="d1">580.15807636</td><td class="d1">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@@H](O1)CO)O)OC(=O)/C=C/c1ccc(cc1)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008213 target="_blank">C00008213</a></td><td class="d1">84823-66-5</td><td class="d1">Prunin 3'',6''-di-p-coumarate</td><td class="d1">C39H34O14</td><td class="d1">726.1948558</td><td class="d1">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)COC(=O)/C=C/c1ccc(cc1)O)O)OC(=O)/C=C/c1ccc(cc1)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008216 target="_blank">C00008216</a></td><td class="d1">81244-23-7</td><td class="d1">5,7,4'-Trihydroxyflavanone 7-O-galactosylglucoside</td><td class="d1">C27H32O15</td><td class="d1">596.17412036</td><td class="d1">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O[C@H]1[C@H]([C@@H]([C@H]([C@@H](O1)CO)O)O)O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00014143 target="_blank">C00014143</a></td><td class="d1">263369-39-7</td><td class="d1">5,7,4'-Trihydroxyflavanone 7-sulfate</td><td class="d1">C15H12O8S</td><td class="d1">352.02528809</td><td class="d1">c1(cc(c2c(c1)O[C@@H](CC2=O)c1ccc(cc1)O)O)OS(=O)(=O)O</td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

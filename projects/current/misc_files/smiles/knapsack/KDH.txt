@@ -1,0 +1,48 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - c1(cc(c2c(c1)O[C@@H]([C@@H](C2)OC(=O)c1cc(c(c(c1)O)O)O)c1cc(c(c(c1)O)O)O)O)O</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">SMILES , </font>
+	     input word = <font class="iw">c1(cc(c2c(c1)O[C@@H]([C@@H](C2)OC(=O)c1cc(c(c(c1)O)O)O)c1cc(c(c(c1)O)O)O)O)O</font><br><br>
+   	      Number of matched data :1 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">SMILES</th>
+            <tr><td class="d1"><a href=information.php?word=C00000958 target="_blank">C00000958</a></td><td class="d1">989-51-5</td><td class="d1">epi-Gallocatechin 3-O-gallate<br>(-)-Epigallocatechin gallate<br>(2R-cis)-3,4-Dihydro-5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-2H-1-benzopyran-3-yl ester 3,4,5-trihydroxybenzoic acid</td><td class="d1">C22H18O11</td><td class="d1">458.08491142</td><td class="d1">c1(cc(c2c(c1)O[C@@H]([C@@H](C2)OC(=O)c1cc(c(c(c1)O)O)O)c1cc(c(c(c1)O)O)O)O)O</td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

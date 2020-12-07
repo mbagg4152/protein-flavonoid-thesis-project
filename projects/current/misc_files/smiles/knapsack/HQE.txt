@@ -1,0 +1,78 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - c1cc(ccc1O)O</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">SMILES , </font>
+	     input word = <font class="iw">c1cc(ccc1O)O</font><br><br>
+   	      Number of matched data :31 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">SMILES</th>
+            <tr><td class="d1"><a href=information.php?word=C00002656 target="_blank">C00002656</a></td><td class="d1">123-31-9</td><td class="d1">1,4-Benzenediol<br>Hydroquinone</td><td class="d1">C6H6O2</td><td class="d1">110.03677944</td><td class="d1">c1cc(ccc1O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003901 target="_blank">C00003901</a></td><td class="d1">90965-30-3</td><td class="d1">Rehderianin I</td><td class="d1">C17H14O7</td><td class="d1">330.0739528</td><td class="d1">c1(cc(c2c(c1OC)oc(cc2=O)c1cc(ccc1O)O)O)OC</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003922 target="_blank">C00003922</a></td><td class="d1">92519-92-1</td><td class="d1">5,2',5'-Trihydroxy-6,7,8-trimethoxyflavone</td><td class="d1">C18H16O8</td><td class="d1">360.08451749</td><td class="d1">c1(c(c(c2c(c1OC)oc(cc2=O)c1cc(ccc1O)O)O)OC)OC</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003983 target="_blank">C00003983</a></td><td class="d1">115219-85-7</td><td class="d1">2',5'-Dihydroxyflavone 5'-acetate</td><td class="d1">C17H12O5</td><td class="d1">296.06847349</td><td class="d1">c1ccc2c(c1)oc(cc2=O)c1cc(ccc1O)OC(=O)C</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00004627 target="_blank">C00004627</a></td><td class="d1"></td><td class="d1">3,5,7,2',5'-Pentahydroxyflavone</td><td class="d1">C15H10O7</td><td class="d1">302.04265268</td><td class="d1">c1(cc(c2c(c1)oc(c(c2=O)O)c1cc(ccc1O)O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00004628 target="_blank">C00004628</a></td><td class="d1">74161-18-5</td><td class="d1">3,5,2'-Trihydroxy-7,5'-dimethoxyflavone<br>3,5-Dihydroxy-2-(2-hydroxy-5-methoxyphenyl)-7-methoxy-4H-1-benzopyran-4-one</td><td class="d1">C17H14O7</td><td class="d1">330.0739528</td><td class="d1">c1(cc(c2c(c1)oc(c(c2=O)O)c1cc(ccc1O)OC)O)OC</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00004719 target="_blank">C00004719</a></td><td class="d1">117259-12-8</td><td class="d1">5,2',5'-Trihydroxy-3,7,8-trimethoxyflavone</td><td class="d1">C18H16O8</td><td class="d1">360.08451749</td><td class="d1">c1(cc(c2c(c1OC)oc(c(c2=O)OC)c1cc(ccc1O)O)O)OC</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008337 target="_blank">C00008337</a></td><td class="d1">81524-09-6</td><td class="d1">5,7,2',5'-Tetrahydroxy-6-methoxyflavanone</td><td class="d1">C16H14O7</td><td class="d1">318.0739528</td><td class="d1">c1(c(c(c2c(c1)O[C@H](CC2=O)c1cc(ccc1O)O)O)OC)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008354 target="_blank">C00008354</a></td><td class="d1">74175-75-0</td><td class="d1">(2S)-5,7,2',5'-Tetrahydroxyflavanone<br>5,7,2',5'-Tetrahydroxyflavanone</td><td class="d1">C15H12O6</td><td class="d1">288.06338812</td><td class="d1">c1(cc(c2c(c1)O[C@H](CC2=O)c1cc(ccc1O)O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008410 target="_blank">C00008410</a></td><td class="d1"></td><td class="d1">5,7,2',5'-Tetrahydroxyflavanone 7-O-rutinoside</td><td class="d1">C27H32O15</td><td class="d1">596.17412036</td><td class="d1">c1c(c2c(cc1O[C@H]1[C@@H]([C@H]([C@](CO1)(CO[C@H]1[C@H]([C@@H]([C@H]([C@H](O1)C)O)O)O)O)O)O)O[C@@H](CC2=O)c1cc(ccc1O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008411 target="_blank">C00008411</a></td><td class="d1">111199-93-0</td><td class="d1">5,2',5'-Trihydroxy-7,8-dimethoxyflavanone</td><td class="d1">C17H16O7</td><td class="d1">332.08960287</td><td class="d1">c1c(c2c(c(c1OC)OC)O[C@@H](CC2=O)c1cc(ccc1O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008534 target="_blank">C00008534</a></td><td class="d1">149725-19-9</td><td class="d1">Exiguaflavanone F</td><td class="d1">C26H30O6</td><td class="d1">438.20423869</td><td class="d1">c1c(c2c(c(c1OC)C[C@@H](C(=C)C)CC=C(C)C)O[C@H](CC2=O)c1cc(ccc1O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008571 target="_blank">C00008571</a></td><td class="d1">160389-08-2</td><td class="d1">3,5,7,2',5'-Pentahydroxyflavanone</td><td class="d1">C15H12O7</td><td class="d1">304.05830274</td><td class="d1">c1c(c2c(cc1O)O[C@@H]([C@H](C2=O)O)c1cc(ccc1O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008572 target="_blank">C00008572</a></td><td class="d1"></td><td class="d1">3,5,7,2'-Tetrahydroxy-5'-methoxyflavanone</td><td class="d1">C16H14O7</td><td class="d1">318.0739528</td><td class="d1">c1c(c2c(cc1O)O[C@@H]([C@@H](C2=O)O)c1cc(ccc1O)OC)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008573 target="_blank">C00008573</a></td><td class="d1">74175-80-7</td><td class="d1">3,5,2'-Trihydroxy-7,5'-dimethoxyflavanone</td><td class="d1">C17H16O7</td><td class="d1">332.08960287</td><td class="d1">c1c(c2c(cc1OC)O[C@@H]([C@@H](C2=O)O)c1cc(ccc1O)OC)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00008692 target="_blank">C00008692</a></td><td class="d1">157072-27-0</td><td class="d1">3,5,7,2',5'-Pentahydroxyflavanone 3-rhamnoside</td><td class="d1">C21H22O11</td><td class="d1">450.11621155</td><td class="d1">c1c(c2c(cc1O)O[C@@H]([C@@H](C2=O)O[C@@H]1O[C@H]([C@@H]([C@H]([C@@H]1O)O)O)C)c1cc(ccc1O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00014263 target="_blank">C00014263</a></td><td class="d1">477934-73-9</td><td class="d1">Macrophyllol A (flavone)<br>5-Hydroxy-7,8-dimethoxy-6-(2-hydroxy-5-methoxybenzyl)flavanone</td><td class="d1">C25H24O7</td><td class="d1">436.15220312</td><td class="d1">c12c(O[C@@H](CC1=O)c1ccccc1)c(c(c(c2O)Cc1cc(ccc1O)OC)OC)OC</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00015193 target="_blank">C00015193</a></td><td class="d1">135203-47-3</td><td class="d1">14-Hydroxyperrottetin E 11'-methyl ether</td><td class="d1">C29H28O5</td><td class="d1">456.193674</td><td class="d1">c1cc(ccc1Oc1cc(ccc1O)CCc1cc(ccc1)OC)CCc1cc(ccc1O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00030750 target="_blank">C00030750</a></td><td class="d1">82051-52-3</td><td class="d1">Methoxymatteucin</td><td class="d1">C18H18O9</td><td class="d1">378.09508217</td><td class="d1">c1(c(c(c2c(c1C)O[C@@H](CC2=O)c1cc(ccc1O)OC)O)C)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00040143 target="_blank">C00040143</a></td><td class="d1">87562-14-9</td><td class="d1">Randaiol</td><td class="d1">C15H14O3</td><td class="d1">242.09429431</td><td class="d1">c1cc(cc(c1O)c1cc(ccc1O)O)CC=C</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00040465 target="_blank">C00040465</a></td><td class="d1">1005338-77-1</td><td class="d1">Terrestrol B</td><td class="d1">C14H13ClO5</td><td class="d1">296.04515124</td><td class="d1">c1(cc(cc(c1O)COCc1cc(ccc1O)O)O)Cl</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00040466 target="_blank">C00040466</a></td><td class="d1">1005338-78-2</td><td class="d1">Terrestrol C</td><td class="d1">C14H14O5</td><td class="d1">262.08412356</td><td class="d1">c1cc(cc(c1O)COCc1cc(ccc1O)O)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00040467 target="_blank">C00040467</a></td><td class="d1">1005338-79-3</td><td class="d1">Terrestrol D</td><td class="d1">C14H13ClO5</td><td class="d1">296.04515124</td><td class="d1">c1(c(c(cc(c1)OCc1cc(ccc1O)O)Cl)O)CO</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00040468 target="_blank">C00040468</a></td><td class="d1">1005338-80-6</td><td class="d1">Terrestrol E</td><td class="d1">C14H14O5</td><td class="d1">262.08412356</td><td class="d1">c1(c(ccc(c1)OCc1cc(ccc1O)O)O)CO</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00040469 target="_blank">C00040469</a></td><td class="d1">1005338-81-7</td><td class="d1">Terrestrol F</td><td class="d1">C14H13ClO5</td><td class="d1">296.04515124</td><td class="d1">c1(c(c(cc(c1Cc1cc(ccc1O)O)O)Cl)O)CO</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00040470 target="_blank">C00040470</a></td><td class="d1">1005338-82-8</td><td class="d1">Terrestrol G</td><td class="d1">C14H13ClO5</td><td class="d1">296.04515124</td><td class="d1">c1(c(c(cc(c1Cc1cc(ccc1O)O)O)CO)O)Cl</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00040471 target="_blank">C00040471</a></td><td class="d1">1005338-83-9</td><td class="d1">Terrestrol H</td><td class="d1">C15H16O5</td><td class="d1">276.09977362</td><td class="d1">c1(cc(c(cc1Cc1cc(ccc1O)O)O)COC)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00044689 target="_blank">C00044689</a></td><td class="d1">651300-06-0</td><td class="d1">Dalberatin B</td><td class="d1">C18H20O5</td><td class="d1">316.13107375</td><td class="d1">c1(c(c(c(cc1)C/C=C/c1cc(ccc1O)OC)OC)OC)O</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00044691 target="_blank">C00044691</a></td><td class="d1">651293-99-1</td><td class="d1">Dalberatin D</td><td class="d1">C18H20O5</td><td class="d1">316.13107375</td><td class="d1">c1(c(c(c(cc1)C/C=C/c1cc(ccc1O)OC)OC)O)OC</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00045794 target="_blank">C00045794</a></td><td class="d1">459174-33-5</td><td class="d1">Conitriol<br>(+)-Conitriol</td><td class="d1">C16H22O3</td><td class="d1">262.15689457</td><td class="d1">C1(=C[C@H]([C@H](CC1)C(C)(O)C)c1cc(ccc1O)O)C</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00047898 target="_blank">C00047898</a></td><td class="d1">1146042-79-6</td><td class="d1">Ganosinensin A<br>(+)-Ganosinensin A</td><td class="d1">C51H72O9</td><td class="d1">828.5176339</td><td class="d1">C1=C2C(=CC[C@@H]3[C@@]2(CCC(=O)C3(C)C)C)[C@]2([C@](C1)([C@H](CC2)[C@H](C)CC[C@@H]([C@@](COC(=O)/C(=C\C(=O)c1cc(ccc1O)O)/CC/C=C(/CC/C=C(/CO)\C)\C)(O)C)O)C)C</td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>
