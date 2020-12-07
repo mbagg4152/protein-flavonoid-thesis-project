@@ -1,5 +1,16 @@
 {
   "obj": {
+    "28E": {
+      "Name": "epicatechin",
+      "Long": "(2r,3r)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2h-chromene-3,5,7-triol",
+      "SMILES": "c1cc(c(cc1[C@@H]2[C@@H](Cc3c(cc(cc3O2)O)O)O)O)O",
+      "ISMILES": "O[C@@H]1Cc2c(O)cc(O)cc2O[C@@H]1c3ccc(O)c(O)c3",
+      "INCHI": "InChI=1S/C15H14O6/c16-8-4-11(18)9-6-13(20)15(21-14(9)5-8)7-1-2-10(17)12(19)3-7/h1-5,13,15-20H,6H2/t13-,15-/m1/s1",
+      "INCHI_KEY": "PFTAWBLQPZVEMU-UKRRQHHQSA-N",
+      "PUBCHEM": "72276",
+      "CHEBI": "90",
+      "CHEMBL": "583912"
+    },
     "GEN": {
       "Name": "genistein",
       "Long": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
@@ -296,17 +307,6 @@
       "PUBCHEM": "261391",
       "CHEBI": "NONE",
       "CHEMBL": "NONE"
-    },
-    "28E": {
-      "Name": "(−)-epicatechin",
-      "Long": "(2r,3r)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2h-chromene-3,5,7-triol",
-      "SMILES": "c1cc(c(cc1[C@@H]2[C@@H](Cc3c(cc(cc3O2)O)O)O)O)O",
-      "ISMILES": "O[C@@H]1Cc2c(O)cc(O)cc2O[C@@H]1c3ccc(O)c(O)c3",
-      "INCHI": "InChI=1S/C15H14O6/c16-8-4-11(18)9-6-13(20)15(21-14(9)5-8)7-1-2-10(17)12(19)3-7/h1-5,13,15-20H,6H2/t13-,15-/m1/s1",
-      "INCHI_KEY": "PFTAWBLQPZVEMU-UKRRQHHQSA-N",
-      "PUBCHEM": "72276",
-      "CHEBI": "90",
-      "CHEMBL": "583912"
     },
     "2HI": {
       "Name": "2,7,4'-trihydroxyisoflavanone",

@@ -11,16 +11,13 @@ re_chembl = r">CHEMBL([0-9]*)"
 re_inchi = r"<tr id=\"chemicalInChI\"><th>InChI<\/th><td style=\"word-wrap: break-word\">(InChI=.*)</td></tr>" \
            r"<tr id=\"chemicalInChIKey\">"
 re_inchi_key = r"<th>InChIKey<\/th><td>(.*)</td></tr></table></div><div class=\"col-md-4"
-re_knap_data = r'<tr>[.|\s]*<td c.*d1\">[.|\s]*<a.*>(C[0-9]*)</a>[.|\s]*</td>[.|\s]*<td.*d1\">([' \
-               r'0-9|-]*)</td>\s*<td.*d1\">(.+)</td>[.|\s]*<td .*d1\">([0-9|a-zA-Z]+)</td>[.|\s]*<td.*d1\">([' \
-               r'\d|\.]+)</td>[.|\s]*<td.*d1\">(.*)</td>[.|\s]*</tr>'
+re_knap_data = r'<tr>[.|\s]*<td\sc.*d1\">[.|\s]*<a.*blank\">(C[0-9]*)</a>[.|\s]*</td>[.|\s]*<td.*d1\">([' \
+               r'0-9|-]*)</td>\s*<td\s.*d1\">(.*)</td>[.|\s]*<td\s.*d1\">([0-9|A-Z]+)</td>[.|\s]*<td\s.*d1\">([' \
+               r'\d|\.]+).*(<[|/]td.*<[|/]tr>)'
 re_pubchem_id = r"https:\/\/pubchem\.ncbi\.nlm\.nih\.gov\/compound\/([0-9]*)"
 re_smiles = r"<tr id=\"chemicalIsomeric\"><th>Isomeric SMILES<\/th><td style=\"word-wrap: break-word\">(.*)</td>" \
             r"</tr><tr id=\"chemicalInChI\"><th>"
 
-re_knap_no_smiles = r'<tr>[.|\s]*<td\sc.*d1\">[.|\s]*<a.*blank\">(C[0-9]*)</a>[.|\s]*</td>[.|\s]*<td.*d1\">([' \
-                    r'0-9|-]*)</td>\s*<td\s.*d1\">(.*)</td>[.|\s]*<td\s.*d1\">([0-9|A-Z]+)</td>[.|\s]*<td\s.*d1\">([' \
-                    r'\d|\.]+)</td></tr>'
 re_knap_results = r'Number of matched data :([0-9]*).*<br>'
 
 pdb_url = "http://www.rcsb.org/ligand/"
@@ -48,15 +45,21 @@ def get_organism_data():
         for sname in json_keys: words.append(smiles_list.get(key).get(sname).strip().replace(' ', '%20'))
 
         for i in range(0, len(json_keys)):
-            tmp_url = get_knap_url(snames[i], str(words[i].encode('utf-8').decode('utf-8')))
-
+            encoded_words = u''.join(words[i]).encode('utf-8').strip()
+            tmp_url = get_knap_url(snames[i], encoded_words)
             name = knap_data + key + ".html"
             if not os.path.exists(name):
                 try: request.urlretrieve(tmp_url, name)
-                except HTTPError or URLError or InvalidURL or UnicodeEncodeError: print('err getting page')
+                except HTTPError or URLError or InvalidURL or UnicodeEncodeError:
+                    print('err getting page')
+                    continue
 
             if not get_from_knapsack(tmp_url, name, key, json_keys[i]):
-                os.remove(name)
+                if i != len(json_keys) - 1: os.remove(name)
+                else:
+                    file = open(name, 'w')
+                    file.write('NO RESULTS')
+                    file.close()
             else:
                 break
 
@@ -73,21 +76,20 @@ def get_from_knapsack(tmp_url, name, key, prop):
         try:
             num_res = re.findall(re_knap_results, data)[0]
             if int(num_res) < 1:
-                print('no results for {} from value {}, deleting file.'.format(key, prop))
+                if prop == 'INCHI_KEY': print(
+                    'no results for {} from value {}, saving data-less file.'.format(key, prop))
+                else: print('no results for {} from value {}, deleting file.'.format(key, prop))
                 return False
             else:
                 out = ''
                 short = False
                 values = re.findall(re_knap_data, data)
-                if len(values) == 0:
-                    values = re.findall(re_knap_no_smiles, data)
-                    short = True
 
                 for item in values:
                     names = ' || '.join(item[2].split('<br>'))
-                    if short: out += '{} {} {} {} {}\n'.format(item[0], item[1], names, item[3], item[4])
-                    else: out += '{} {} {} {} {} {}\n'.format(item[0], item[1], names, item[3], item[4], item[5])
-                print('for {}, {}'.format(key, out))
+                    last = item[5].replace('</td>', '').replace('</tr>', '')
+                    out += '{} {} {} {} {} {}\n'.format(item[0], item[1], names, item[3], item[4], str(last))
+                print('for {}\n{}'.format(key, out))
         except IndexError: return False
         file.close()
     except FileNotFoundError:
