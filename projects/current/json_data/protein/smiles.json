@@ -1,38 +1,5 @@
 {
   "obj": {
-    "28E": {
-      "Name": "epicatechin",
-      "Long": "(2r,3r)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2h-chromene-3,5,7-triol",
-      "SMILES": "c1cc(c(cc1[C@@H]2[C@@H](Cc3c(cc(cc3O2)O)O)O)O)O",
-      "ISMILES": "O[C@@H]1Cc2c(O)cc(O)cc2O[C@@H]1c3ccc(O)c(O)c3",
-      "INCHI": "InChI=1S/C15H14O6/c16-8-4-11(18)9-6-13(20)15(21-14(9)5-8)7-1-2-10(17)12(19)3-7/h1-5,13,15-20H,6H2/t13-,15-/m1/s1",
-      "INCHI_KEY": "PFTAWBLQPZVEMU-UKRRQHHQSA-N",
-      "PUBCHEM": "72276",
-      "CHEBI": "90",
-      "CHEMBL": "583912"
-    },
-    "GEN": {
-      "Name": "genistein",
-      "Long": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
-      "SMILES": "c1(cc(c2c(c1)occ(c2=O)c1ccc(cc1)O)O)O",
-      "ISMILES": "Oc1ccc(cc1)C2=COc3cc(O)cc(O)c3C2=O",
-      "INCHI": "InChI=1S/C15H10O5/c16-9-3-1-8(2-4-9)11-7-20-13-6-10(17)5-12(18)14(13)15(11)19/h1-7,16-18H",
-      "INCHI_KEY": "TZBJGXHYKVUXJN-UHFFFAOYSA-N",
-      "PUBCHEM": "5280961",
-      "CHEBI": "28088",
-      "CHEMBL": "44"
-    },
-    "975": {
-      "Name": "hydroxytyrosol",
-      "Long": "4-(2-hydroxyethyl)benzene-1,2-diol",
-      "SMILES": "OCCc1ccc(O)c(O)c1",
-      "ISMILES": "OCCc1ccc(O)c(O)c1",
-      "INCHI": "InChI=1S/C8H10O3/c9-4-3-6-1-2-7(10)8(11)5-6/h1-2,5,9-11H,3-4H2",
-      "INCHI_KEY": "JUUBCHWRXWPFFH-UHFFFAOYSA-N",
-      "PUBCHEM": "82755",
-      "CHEBI": "68889",
-      "CHEMBL": "1950045"
-    },
     "142": {
       "Name": "carbidopa",
       "Long": "(2s)-3-(3,4-dihydroxyphenyl)-2-hydrazinyl-2-methyl-propanoic acid",
@@ -42,7 +9,8 @@
       "INCHI_KEY": "TZFNLOMSOLWIDK-JTQLQIEISA-N",
       "PUBCHEM": "28082766",
       "CHEBI": "39585",
-      "CHEMBL": "1201236"
+      "CHEMBL": "1201236",
+      "Formula": "C10H14N2O4"
     },
     "431": {
       "Name": "4'-methylflavone",
@@ -53,7 +21,20 @@
       "INCHI_KEY": "OPHKKQQCOYMLPW-UHFFFAOYSA-N",
       "PUBCHEM": "688829",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "16861",
+      "Formula": "C16H12O2"
+    },
+    "975": {
+      "Name": "hydroxytyrosol",
+      "Long": "4-(2-hydroxyethyl)benzene-1,2-diol",
+      "SMILES": "OCCc1ccc(O)c(O)c1",
+      "ISMILES": "OCCc1ccc(O)c(O)c1",
+      "INCHI": "InChI=1S/C8H10O3/c9-4-3-6-1-2-7(10)8(11)5-6/h1-2,5,9-11H,3-4H2",
+      "INCHI_KEY": "JUUBCHWRXWPFFH-UHFFFAOYSA-N",
+      "PUBCHEM": "82755",
+      "CHEBI": "68889",
+      "CHEMBL": "1950045",
+      "Formula": "C8H10O3"
     },
     "03V": {
       "Name": "naphthalen-2-ol",
@@ -64,7 +45,8 @@
       "INCHI_KEY": "JWAZRIHNYRIHIV-UHFFFAOYSA-N",
       "PUBCHEM": "8663",
       "CHEBI": "10432",
-      "CHEMBL": "14126"
+      "CHEMBL": "14126",
+      "Formula": "C10H8O"
     },
     "07L": {
       "Name": "umbelliferone",
@@ -75,7 +57,8 @@
       "INCHI_KEY": "ORHBXUUXSCNDEV-UHFFFAOYSA-N",
       "PUBCHEM": "5281426",
       "CHEBI": "27510",
-      "CHEMBL": "51628"
+      "CHEMBL": "51628",
+      "Formula": "C9H6O3"
     },
     "0EA": {
       "Name": "(betaR)-beta,3-dihydroxy-N-methyl-L-tyrosine",
@@ -86,7 +69,8 @@
       "INCHI_KEY": "RPXZFIAFSLMEJW-DTWKUNHWSA-N",
       "PUBCHEM": "124930",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C10H13NO5"
     },
     "0FO": {
       "Name": "6-bromo-4-hydroxycoumarin",
@@ -97,7 +81,8 @@
       "INCHI_KEY": "KNMCTCABMSGXGR-UHFFFAOYSA-N",
       "PUBCHEM": "54691404",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2032372",
+      "Formula": "C9H5BrO3"
     },
     "0XE": {
       "Name": "baicalin",
@@ -108,7 +93,8 @@
       "INCHI_KEY": "IKIIZLYTISPENI-ZFORQUDYSA-N",
       "PUBCHEM": "64982",
       "CHEBI": "2981",
-      "CHEMBL": "485818"
+      "CHEMBL": "485818",
+      "Formula": "C21H18O11"
     },
     "0XR": {
       "Name": "(e)-ethyl caffeate",
@@ -119,7 +105,8 @@
       "INCHI_KEY": "WDKYDMULARNCIS-GQCTYLIASA-N",
       "PUBCHEM": "5317238",
       "CHEBI": "132714",
-      "CHEMBL": "17347"
+      "CHEMBL": "17347",
+      "Formula": "C11H12O4"
     },
     "15W": {
       "Name": "7-hydroxy -4'-methoxyflavone",
@@ -130,7 +117,8 @@
       "INCHI_KEY": "SQVXWIUVAILQRH-UHFFFAOYSA-N",
       "PUBCHEM": "5320693",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "16751",
+      "Formula": "C16H12O4"
     },
     "15Z": {
       "Name": "7,3',4'-trihydroxyflavone",
@@ -141,7 +129,8 @@
       "INCHI_KEY": "PVFGJHYLIHMCQD-UHFFFAOYSA-N",
       "PUBCHEM": "5322065",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "301624",
+      "Formula": "C15H10O5"
     },
     "16S": {
       "Name": "3',4'-dihydroxyflavone",
@@ -152,7 +141,8 @@
       "INCHI_KEY": "SRNPMQHYWVKBAV-UHFFFAOYSA-N",
       "PUBCHEM": "145726",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "222556",
+      "Formula": "C15H10O4"
     },
     "1UR": {
       "Name": "flavone-4'-carboxylic",
@@ -163,7 +153,8 @@
       "INCHI_KEY": "GDILHIUGUNCNDU-UHFFFAOYSA-N",
       "PUBCHEM": "5272796",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "165822",
+      "Formula": "C16H10O4"
     },
     "1UT": {
       "Name": "4'-dimethylamino flavone",
@@ -174,7 +165,8 @@
       "INCHI_KEY": "PCKPYMMHFFXBPF-UHFFFAOYSA-N",
       "PUBCHEM": "1241435",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2431868",
+      "Formula": "C17H15NO2"
     },
     "1UW": {
       "Name": "ethyl 4-(4-oxo-4h-chromen-2-yl)benzoate",
@@ -185,7 +177,8 @@
       "INCHI_KEY": "DNBRLXGCVKXLTH-UHFFFAOYSA-N",
       "PUBCHEM": "2825269",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2431799",
+      "Formula": "C18H14O4"
     },
     "1UZ": {
       "Name": "4'-cyano flavone",
@@ -196,7 +189,8 @@
       "INCHI_KEY": "VDQXIGZGRYCKAE-UHFFFAOYSA-N",
       "PUBCHEM": "45116983",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2431802",
+      "Formula": "C16H9NO2"
     },
     "1V0": {
       "Name": "4'-nitro flavone",
@@ -207,7 +201,8 @@
       "INCHI_KEY": "CKSVYVHLZNMXLX-UHFFFAOYSA-N",
       "PUBCHEM": "622510",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "64780",
+      "Formula": "C15H9NO4"
     },
     "1V1": {
       "Name": "4'-chloro flavone",
@@ -218,7 +213,8 @@
       "INCHI_KEY": "BUEVXCMRYKDSMY-UHFFFAOYSA-N",
       "PUBCHEM": "151515",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "16783",
+      "Formula": "C15H9ClO2"
     },
     "1V3": {
       "Name": "6-chloro flavone",
@@ -229,7 +225,8 @@
       "INCHI_KEY": "IFNDLWHUYFSXBK-UHFFFAOYSA-N",
       "PUBCHEM": "248021",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "293478",
+      "Formula": "C15H9ClO2"
     },
     "1V4": {
       "Name": "6-fluoro flavone",
@@ -240,7 +237,8 @@
       "INCHI_KEY": "OUYOSBQKQPUNJK-UHFFFAOYSA-N",
       "PUBCHEM": "261395",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "61745",
+      "Formula": "C15H9FO2"
     },
     "1V8": {
       "Name": "2-(1,3-benzodioxol-5-yl)-4h-chromen-4-one",
@@ -251,7 +249,8 @@
       "INCHI_KEY": "XJKWXDPKDNEEKV-UHFFFAOYSA-N",
       "PUBCHEM": "265714",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "483633",
+      "Formula": "C16H10O4"
     },
     "1VF": {
       "Name": "2-[4-(4-methylpiperazine-1-carbonyl)phenyl]chromen-4-one",
@@ -262,7 +261,8 @@
       "INCHI_KEY": "GCCLEHACQGEQIL-UHFFFAOYSA-N",
       "PUBCHEM": "46742375",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2431801",
+      "Formula": "C21H20N2O3"
     },
     "1VG": {
       "Name": "4'-tetrazole flavone",
@@ -273,7 +273,8 @@
       "INCHI_KEY": "CDSSKRNFCDQPBZ-UHFFFAOYSA-N",
       "PUBCHEM": "46742374",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2431804",
+      "Formula": "C16H10N4O2"
     },
     "1W3": {
       "Name": "7-hydroxy-3-[(e)-2-(4-hydroxy-3,5-dimethylphenyl)ethenyl]-4-methyl-2h-chromen-2-one",
@@ -284,7 +285,8 @@
       "INCHI_KEY": "YBZSRAYJXVITOB-GQCTYLIASA-N",
       "PUBCHEM": "72544101",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C20H18O4"
     },
     "20B": {
       "Name": "3'-hydroxyflavone",
@@ -295,7 +297,8 @@
       "INCHI_KEY": "ISZWRZGKEWQACU-UHFFFAOYSA-N",
       "PUBCHEM": "229015",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "147552",
+      "Formula": "C15H10O3"
     },
     "20D": {
       "Name": "4'-fluoro flavone",
@@ -306,7 +309,20 @@
       "INCHI_KEY": "ZHXIMGYEMBZGOI-UHFFFAOYSA-N",
       "PUBCHEM": "261391",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "53738",
+      "Formula": "C15H9FO2"
+    },
+    "28E": {
+      "Name": "(−)-epicatechin",
+      "Long": "(2r,3r)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2h-chromene-3,5,7-triol",
+      "SMILES": "c1cc(c(cc1[C@@H]2[C@@H](Cc3c(cc(cc3O2)O)O)O)O)O",
+      "ISMILES": "O[C@@H]1Cc2c(O)cc(O)cc2O[C@@H]1c3ccc(O)c(O)c3",
+      "INCHI": "InChI=1S/C15H14O6/c16-8-4-11(18)9-6-13(20)15(21-14(9)5-8)7-1-2-10(17)12(19)3-7/h1-5,13,15-20H,6H2/t13-,15-/m1/s1",
+      "INCHI_KEY": "PFTAWBLQPZVEMU-UKRRQHHQSA-N",
+      "PUBCHEM": "72276",
+      "CHEBI": "90",
+      "CHEMBL": "583912",
+      "Formula": "C15H14O6"
     },
     "2HI": {
       "Name": "2,7,4'-trihydroxyisoflavanone",
@@ -317,7 +333,8 @@
       "INCHI_KEY": "YACUBWOKTPOMNW-ZFWWWQNUSA-N",
       "PUBCHEM": "10062691",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C15H12O5"
     },
     "2SR": {
       "Name": "q27453241",
@@ -328,7 +345,8 @@
       "INCHI_KEY": "RVKGQUJUMMUCKA-NRFANRHFSA-N",
       "PUBCHEM": "86580367",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C23H26O5"
     },
     "30Z": {
       "Name": "(±)-nordihydroguaiaretic acid",
@@ -339,7 +357,8 @@
       "INCHI_KEY": "HCZKYJDFEPMADG-RYUDHWBXSA-N",
       "PUBCHEM": "688035",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C18H22O4"
     },
     "32Y": {
       "Name": "inh2bp",
@@ -350,7 +369,8 @@
       "INCHI_KEY": "WWRAFPGUBABZSD-UHFFFAOYSA-N",
       "PUBCHEM": "72356",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C9H6INO2"
     },
     "3AS": {
       "Name": "(3as,4r,9br)-2,2-difluoro-4-(4-hydroxyphenyl)-6-(methoxymethyl)-1,2,3,3a,4,9b-hexahydrocyclopenta[c]chromen-8-ol",
@@ -361,7 +381,8 @@
       "INCHI_KEY": "GPFRMIHXGMVMGF-BZSNNMDCSA-N",
       "PUBCHEM": "16758226",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "236720",
+      "Formula": "C20H20F2O4"
     },
     "3AV": {
       "Name": "2699",
@@ -372,7 +393,8 @@
       "INCHI_KEY": "FXFYOPQLGGEACP-UHFFFAOYSA-N",
       "PUBCHEM": "7092",
       "CHEBI": "563586",
-      "CHEMBL": "443436"
+      "CHEMBL": "443436",
+      "Formula": "C10H8O2"
     },
     "3G5": {
       "Name": "4'-carboxy-6,8-bromo-flavonol",
@@ -383,7 +405,8 @@
       "INCHI_KEY": "GDOSILZXICLCEI-UHFFFAOYSA-N",
       "PUBCHEM": "52113928",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C16H8Br2O5"
     },
     "3L9": {
       "Name": "montbretin a",
@@ -394,7 +417,8 @@
       "INCHI_KEY": "FHVDXUPJFGRQLV-OWPXYNISSA-N",
       "PUBCHEM": "25230470",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C53H64O33"
     },
     "3QV": {
       "Name": "153271",
@@ -405,7 +429,8 @@
       "INCHI_KEY": "IJQYTHQDUDCJEQ-UHFFFAOYSA-N",
       "PUBCHEM": "5393173",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "150302",
+      "Formula": "C10H5NO3"
     },
     "3WL": {
       "Name": "baicalein",
@@ -416,7 +441,8 @@
       "INCHI_KEY": "FXNFHKRTJBSTCS-UHFFFAOYSA-N",
       "PUBCHEM": "5281605",
       "CHEBI": "2979",
-      "CHEMBL": "8260"
+      "CHEMBL": "8260",
+      "Formula": "C15H10O5"
     },
     "3YM": {
       "Name": "3-methoxy-l-tyrosine",
@@ -427,7 +453,8 @@
       "INCHI_KEY": "PFDUUKDQEHURQC-ZETCQYMHSA-N",
       "PUBCHEM": "9307",
       "CHEBI": "82913",
-      "CHEMBL": "1314652"
+      "CHEMBL": "1314652",
+      "Formula": "C10H13NO4"
     },
     "47X": {
       "Name": "7,3',4'-trihydroxyisoflavone",
@@ -438,7 +465,8 @@
       "INCHI_KEY": "DDKGKOOLFLYZDL-UHFFFAOYSA-N",
       "PUBCHEM": "5284648",
       "CHEBI": "50399",
-      "CHEMBL": "13486"
+      "CHEMBL": "13486",
+      "Formula": "C15H10O5"
     },
     "4EU": {
       "Name": "2,4,4'-trihydroxybenzophenone",
@@ -449,7 +477,8 @@
       "INCHI_KEY": "OKJFKPFBSPZTAH-UHFFFAOYSA-N",
       "PUBCHEM": "73852",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "1905072",
+      "Formula": "C13H10O4"
     },
     "4HC": {
       "Name": "in00458",
@@ -460,7 +489,8 @@
       "INCHI_KEY": "VXIXUWQIVKSKSA-UHFFFAOYSA-N",
       "PUBCHEM": "54682930",
       "CHEBI": "40070",
-      "CHEMBL": "301141"
+      "CHEMBL": "301141",
+      "Formula": "C9H6O3"
     },
     "4JQ": {
       "Name": "6-aminocoumarin",
@@ -471,7 +501,8 @@
       "INCHI_KEY": "ZOJAINJCZSVZGW-UHFFFAOYSA-N",
       "PUBCHEM": "46153",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "1829962",
+      "Formula": "C9H7NO2"
     },
     "4MU": {
       "Name": "hymecromone",
@@ -482,7 +513,8 @@
       "INCHI_KEY": "HSHNITRMYYLLCV-UHFFFAOYSA-N",
       "PUBCHEM": "5280567",
       "CHEBI": "17224",
-      "CHEMBL": "12208"
+      "CHEMBL": "12208",
+      "Formula": "C10H8O3"
     },
     "57D": {
       "Name": "chrysin",
@@ -493,7 +525,8 @@
       "INCHI_KEY": "RTIXKCRFFJGDFG-UHFFFAOYSA-N",
       "PUBCHEM": "5281607",
       "CHEBI": "75095",
-      "CHEMBL": "117"
+      "CHEMBL": "117",
+      "Formula": "C15H10O4"
     },
     "5J7": {
       "Name": "mba-grx",
@@ -504,7 +537,8 @@
       "INCHI_KEY": "YHIHWLPOKDIYGF-ZLGVOOGTSA-N",
       "PUBCHEM": "14034277",
       "CHEBI": "145204",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C36H36O20"
     },
     "6B5": {
       "Name": "luteolin 7-methyl ether",
@@ -515,7 +549,8 @@
       "INCHI_KEY": "RRRSSAVLTCVNIQ-UHFFFAOYSA-N",
       "PUBCHEM": "5318214",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "183745",
+      "Formula": "C16H12O6"
     },
     "6BK": {
       "Name": "5,3',4'-trihydroxyflavone",
@@ -526,7 +561,8 @@
       "INCHI_KEY": "KXPQYWKYYDYOCQ-UHFFFAOYSA-N",
       "PUBCHEM": "88281",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "243677",
+      "Formula": "C15H10O5"
     },
     "6J6": {
       "Name": "(2~{r})-2-[3,4-bis(oxidanyl)phenyl]-6-oxidanyl-2,3-dihydrochromen-4-one",
@@ -537,7 +573,8 @@
       "INCHI_KEY": "SHYJMIHVPPCBNP-OAHLLOKOSA-N",
       "PUBCHEM": "126961331",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C15H12O5"
     },
     "6JM": {
       "Name": "3,6,3',4'-tetrahydroxyflavone",
@@ -548,7 +585,8 @@
       "INCHI_KEY": "BXPBSBBFPNTFFT-UHFFFAOYSA-N",
       "PUBCHEM": "667581",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "1224325",
+      "Formula": "C15H10O6"
     },
     "6JO": {
       "Name": "3,6,3'-trihydroxyflavone",
@@ -559,7 +597,8 @@
       "INCHI_KEY": "LRMWPUURCIXKOC-UHFFFAOYSA-N",
       "PUBCHEM": "688803",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C15H10O5"
     },
     "6JP": {
       "Name": "hesperetin",
@@ -570,7 +609,8 @@
       "INCHI_KEY": "AIONOLUJZLIMTK-AWEZNQCLSA-N",
       "PUBCHEM": "72281",
       "CHEBI": "28230",
-      "CHEMBL": "399121"
+      "CHEMBL": "399121",
+      "Formula": "C16H14O6"
     },
     "6NL": {
       "Name": "(2e)-3-(3-hydroxy-4-methoxyphenyl)-1-(7-methoxy-2h-1,3-benzodioxol-5-yl)-2-methylprop-2-en-1-one",
@@ -581,7 +621,8 @@
       "INCHI_KEY": "IYAYDNORGNGYOF-IZZDOVSWSA-N",
       "PUBCHEM": "119081695",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C19H18O6"
     },
     "6QT": {
       "Name": "(2~{r})-2-(3-hydroxyphenyl)-6-oxidanyl-2,3-dihydrochromen-4-one",
@@ -592,7 +633,8 @@
       "INCHI_KEY": "FTDCCBIDVVGONG-OAHLLOKOSA-N",
       "PUBCHEM": "124222415",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C15H12O4"
     },
     "7CA": {
       "Name": "icarisid ii",
@@ -603,7 +645,8 @@
       "INCHI_KEY": "PFVZUXQCELCLBL-LVKFHIPRSA-N",
       "PUBCHEM": "6852214",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C27H32O10"
     },
     "7DP": {
       "Name": "n-acetyldopamine",
@@ -614,7 +657,8 @@
       "INCHI_KEY": "OFSAJYZMIPNPHE-UHFFFAOYSA-N",
       "PUBCHEM": "100526",
       "CHEBI": "125678",
-      "CHEMBL": "137743"
+      "CHEMBL": "137743",
+      "Formula": "C10H13NO3"
     },
     "7FC": {
       "Name": "4'-carboxy-6,8-chloro-flavonol",
@@ -625,7 +669,8 @@
       "INCHI_KEY": "CFWCAEJMOUILDR-UHFFFAOYSA-N",
       "PUBCHEM": "38997316",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C16H8Cl2O5"
     },
     "7LU": {
       "Name": "2-[3,4-bis(oxidanyl)phenyl]-7-chloranyl-5-oxidanyl-chromen-4-one",
@@ -636,7 +681,8 @@
       "INCHI_KEY": "OYAMKEPRYMXRQW-UHFFFAOYSA-N",
       "PUBCHEM": "126843272",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C15H9ClO5"
     },
     "7V6": {
       "Name": "5-[(3r)-3-(4-boranylphenyl)-3-oxidanyl-propyl]-2-oxidanyl-benzoic acid",
@@ -647,7 +693,8 @@
       "INCHI_KEY": "AIYINTRBIVHQTG-CQSZACIVSA-N",
       "PUBCHEM": "137348666",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C16H17BO4"
     },
     "8CM": {
       "Name": "8-hydroxycoumarin",
@@ -658,7 +705,8 @@
       "INCHI_KEY": "DPTUTXWBBUARQB-UHFFFAOYSA-N",
       "PUBCHEM": "122783",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "389988",
+      "Formula": "C9H6O3"
     },
     "8U8": {
       "Name": "(2~{r},3~{s},4~{s},5~{r},6~{s})-6-(4-methyl-2-oxidanylidene-chromen-7-yl)oxy-3,4,5-tris(oxidanyl)oxane-2-carboxylic acid",
@@ -669,7 +717,8 @@
       "INCHI_KEY": "ARQXEQLMMNGFDU-ZHMBSYLPSA-N",
       "PUBCHEM": "128746",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C16H16O9"
     },
     "93H": {
       "Name": "4-[2-[2-(4-methoxyphenyl)ethylamino]ethyl]benzene-1,2-diol",
@@ -680,7 +729,8 @@
       "INCHI_KEY": "YUWZXUMQIZRXEN-UHFFFAOYSA-N",
       "PUBCHEM": "131632996",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C17H21NO3"
     },
     "9CC": {
       "Name": "asperentin",
@@ -691,7 +741,8 @@
       "INCHI_KEY": "WOMKDMUZNBFXKG-JIMOISOXSA-N",
       "PUBCHEM": "45488860",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "578530",
+      "Formula": "C16H20O5"
     },
     "9CF": {
       "Name": "3-epi-isocladosporin",
@@ -702,7 +753,8 @@
       "INCHI_KEY": "WOMKDMUZNBFXKG-WQAKAFBOSA-N",
       "PUBCHEM": "92276885",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "4215398",
+      "Formula": "C16H20O5"
     },
     "9CU": {
       "Name": "isocladosorpin",
@@ -713,7 +765,8 @@
       "INCHI_KEY": "WOMKDMUZNBFXKG-OASPWFOLSA-N",
       "PUBCHEM": "62705396",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "4211492",
+      "Formula": "C16H20O5"
     },
     "9CX": {
       "Name": "(3s)-6,8-dihydroxy-3-{[(2r,6s)-6-methyloxan-2-yl]methyl}-3,4-dihydro-1h-2-benzopyran-1-one",
@@ -724,7 +777,8 @@
       "INCHI_KEY": "WOMKDMUZNBFXKG-BIMULSAOSA-N",
       "PUBCHEM": "66575611",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "4206602",
+      "Formula": "C16H20O5"
     },
     "A0O": {
       "Name": "osthol",
@@ -735,7 +789,8 @@
       "INCHI_KEY": "MBRLOUHOWLUMFF-UHFFFAOYSA-N",
       "PUBCHEM": "10228",
       "CHEBI": "69832",
-      "CHEMBL": "52229"
+      "CHEMBL": "52229",
+      "Formula": "C15H16O3"
     },
     "A63": {
       "Name": "4'-methoxy flavone",
@@ -746,7 +801,8 @@
       "INCHI_KEY": "OMICQBVLCVRFGN-UHFFFAOYSA-N",
       "PUBCHEM": "77793",
       "CHEBI": "114194",
-      "CHEMBL": "16312"
+      "CHEMBL": "16312",
+      "Formula": "C16H12O3"
     },
     "A64": {
       "Name": "4'-isopropylflavone",
@@ -757,7 +813,8 @@
       "INCHI_KEY": "PYTOHIUBXSJKQH-UHFFFAOYSA-N",
       "PUBCHEM": "2802462",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2431867",
+      "Formula": "C18H16O2"
     },
     "A73": {
       "Name": "4' -bromo flavone",
@@ -768,7 +825,8 @@
       "INCHI_KEY": "URZUAHXELZUWFE-UHFFFAOYSA-N",
       "PUBCHEM": "1686",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "294099",
+      "Formula": "C15H9BrO2"
     },
     "AFE": {
       "Name": "afzelin",
@@ -779,18 +837,20 @@
       "INCHI_KEY": "SOSLMHZOJATCCP-AEIZVZFYSA-N",
       "PUBCHEM": "5316673",
       "CHEBI": "80790",
-      "CHEMBL": "240528"
+      "CHEMBL": "240528",
+      "Formula": "C21H20O10"
     },
     "AGI": {
       "Name": "apigenin",
       "Long": "5,7-dihydroxy-2-(4-hydroxyphenyl)-4h-chromen-4-one",
-      "SMILES": "c1(cc(c2c(c1)oc(cc2=O)c1ccc(cc1)O)O)O",
+      "SMILES": "c1cc(ccc1C2=CC(=O)c3c(cc(cc3O2)O)O)O",
       "ISMILES": "Oc1ccc(cc1)C2=CC(=O)c3c(O)cc(O)cc3O2",
       "INCHI": "InChI=1S/C15H10O5/c16-9-3-1-8(2-4-9)13-7-12(19)15-11(18)5-10(17)6-14(15)20-13/h1-7,16-18H",
       "INCHI_KEY": "KZNIFHPLKGYRTM-UHFFFAOYSA-N",
       "PUBCHEM": "5280443",
       "CHEBI": "18388",
-      "CHEMBL": "28"
+      "CHEMBL": "28",
+      "Formula": "C15H10O5"
     },
     "ALE": {
       "Name": "l-epinephrine",
@@ -801,7 +861,8 @@
       "INCHI_KEY": "UCTWMZQNUQWSLP-VIFPVBQESA-N",
       "PUBCHEM": "139148732",
       "CHEBI": "28918",
-      "CHEMBL": "679"
+      "CHEMBL": "679",
+      "Formula": "C9H13NO3"
     },
     "B7S": {
       "Name": "5,7-dihydroxychromone",
@@ -812,7 +873,8 @@
       "INCHI_KEY": "NYCXYKOXLNBYID-UHFFFAOYSA-N",
       "PUBCHEM": "5281343",
       "CHEBI": "2007",
-      "CHEMBL": "3604316"
+      "CHEMBL": "3604316",
+      "Formula": "C9H6O4"
     },
     "BCU": {
       "Name": "(r)-chroman-3-methanol",
@@ -823,7 +885,8 @@
       "INCHI_KEY": "UPDSWAQIQZFOLF-MRVPVSSYSA-N",
       "PUBCHEM": "7162114",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C10H12O2"
     },
     "BHF": {
       "Name": "alpha-naphthoflavone or 7,8-benzoflavone",
@@ -834,7 +897,8 @@
       "INCHI_KEY": "VFMMPHCGEFXGIP-UHFFFAOYSA-N",
       "PUBCHEM": "11790",
       "CHEBI": "76995",
-      "CHEMBL": "283196"
+      "CHEMBL": "283196",
+      "Formula": "C19H12O2"
     },
     "BUN": {
       "Name": "butein",
@@ -845,7 +909,8 @@
       "INCHI_KEY": "AYMYWHCQALZEGT-ORCRQEGFSA-N",
       "PUBCHEM": "5281222",
       "CHEBI": "3237",
-      "CHEMBL": "128000"
+      "CHEMBL": "128000",
+      "Formula": "C15H12O5"
     },
     "BUU": {
       "Name": "(2~{s})-2-azanyl-3-[3-[(2-nitrophenyl)methoxy]-4-oxidanyl-phenyl]propanoic acid",
@@ -856,7 +921,8 @@
       "INCHI_KEY": "NKOMHGJPHGNQSO-LBPRGKRZSA-N",
       "PUBCHEM": "129900087",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C16H16N2O6"
     },
     "BVB": {
       "Name": "bromo-resveratrol",
@@ -867,7 +933,8 @@
       "INCHI_KEY": "NCJVLKFAQIWASE-OWOJBTEDSA-N",
       "PUBCHEM": "18475115",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2208038",
+      "Formula": "C14H11BrO2"
     },
     "CAQ": {
       "Name": "catechol",
@@ -878,7 +945,8 @@
       "INCHI_KEY": "YCIMNLLNPGFGHC-UHFFFAOYSA-N",
       "PUBCHEM": "289",
       "CHEBI": "18135",
-      "CHEMBL": "280998"
+      "CHEMBL": "280998",
+      "Formula": "C6H6O2"
     },
     "CC2": {
       "Name": "4-hydroxy-6,7-dimethyl-3-(naphthalen-1-ylmethyl)-2h-chromen-2-one",
@@ -889,7 +957,8 @@
       "INCHI_KEY": "CLIXIKBUGAHFJT-UHFFFAOYSA-N",
       "PUBCHEM": "54736423",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "569169",
+      "Formula": "C22H18O3"
     },
     "CC6": {
       "Name": "datiscetin",
@@ -900,7 +969,8 @@
       "INCHI_KEY": "WCNLFPKXBGWWDS-UHFFFAOYSA-N",
       "PUBCHEM": "5281610",
       "CHEBI": "75107",
-      "CHEMBL": "503168"
+      "CHEMBL": "503168",
+      "Formula": "C15H10O6"
     },
     "CHV": {
       "Name": "3-(4-chloro-2-hydroxyphenoxy)-7-hydroxy-2h-chromen-2-one",
@@ -911,7 +981,8 @@
       "INCHI_KEY": "UBCXCRQXPSAIBV-UHFFFAOYSA-N",
       "PUBCHEM": "71768352",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2426552",
+      "Formula": "C15H9ClO5"
     },
     "CM4": {
       "Name": "(2r,3r,4s)-3-(4-hydroxyphenyl)-4-methyl-2-[4-(2-pyrrolidin-1-ylethoxy)phenyl]chroman-6-ol",
@@ -922,7 +993,8 @@
       "INCHI_KEY": "XPVKGTWRXBSJKO-LHXLBICKSA-N",
       "PUBCHEM": "4369568",
       "CHEBI": "41593",
-      "CHEMBL": "181936"
+      "CHEMBL": "181936",
+      "Formula": "C28H31NO4"
     },
     "COU": {
       "Name": "coumarin",
@@ -933,7 +1005,8 @@
       "INCHI_KEY": "ZYGHJZDHTFUPRJ-UHFFFAOYSA-N",
       "PUBCHEM": "323",
       "CHEBI": "28794",
-      "CHEMBL": "6466"
+      "CHEMBL": "6466",
+      "Formula": "C9H6O2"
     },
     "CPB": {
       "Name": "alvocidib",
@@ -944,7 +1017,8 @@
       "INCHI_KEY": "BIIVYFLTOXDAOV-YVEFUNNKSA-N",
       "PUBCHEM": "5287969",
       "CHEBI": "47344",
-      "CHEMBL": "428690"
+      "CHEMBL": "428690",
+      "Formula": "C21H20ClNO5"
     },
     "CU5": {
       "Name": "s-dihydrowogonin",
@@ -955,7 +1029,8 @@
       "INCHI_KEY": "FKAOWOSRYSMEBS-ZDUSSCGKSA-N",
       "PUBCHEM": "10265977",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C16H14O5"
     },
     "CUE": {
       "Name": "coumestrol",
@@ -966,7 +1041,8 @@
       "INCHI_KEY": "ZZIALNLLNHEQPJ-UHFFFAOYSA-N",
       "PUBCHEM": "5281707",
       "CHEBI": "3908",
-      "CHEMBL": "30707"
+      "CHEMBL": "30707",
+      "Formula": "C15H8O5"
     },
     "CUT": {
       "Name": "2,4-dihydroxybenzophenone",
@@ -977,7 +1053,8 @@
       "INCHI_KEY": "ZXDDPOHVAMWLBH-UHFFFAOYSA-N",
       "PUBCHEM": "8572",
       "CHEBI": "34240",
-      "CHEMBL": "1392"
+      "CHEMBL": "1392",
+      "Formula": "C13H10O3"
     },
     "CWE": {
       "Name": "r-naringenin",
@@ -988,7 +1065,8 @@
       "INCHI_KEY": "FTVWIRXFELQLPI-CYBMUJFWSA-N",
       "PUBCHEM": "667495",
       "CHEBI": "50201",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C15H12O5"
     },
     "CZ0": {
       "Name": "8-hydroxy-4-methyl-9-nitro-2h-benzo[g]chromen-2-one",
@@ -999,7 +1077,8 @@
       "INCHI_KEY": "LDFBABFNEAVJKG-UHFFFAOYSA-N",
       "PUBCHEM": "44456889",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "270722",
+      "Formula": "C14H9NO5"
     },
     "D75": {
       "Name": "daidzein-7-o-glucuronide",
@@ -1010,7 +1089,8 @@
       "INCHI_KEY": "MMIBOZXVZLENRZ-ZFORQUDYSA-N",
       "PUBCHEM": "11316354",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C21H18O10"
     },
     "DAH": {
       "Name": "3,4-dihydroxyphenylalanine",
@@ -1021,7 +1101,8 @@
       "INCHI_KEY": "WTDRDQBEARUVNC-LURJTMIESA-N",
       "PUBCHEM": "6971033",
       "CHEBI": "57504",
-      "CHEMBL": "1009"
+      "CHEMBL": "1009",
+      "Formula": "C9H11NO4"
     },
     "DC8": {
       "Name": "(3as,4r,9br)-2,2-difluoro-4-(4-hydroxyphenyl)-1,2,3,3a,4,9b-hexahydrocyclopenta[c]chromen-8-ol",
@@ -1032,7 +1113,8 @@
       "INCHI_KEY": "QJSMFUTULGSHNQ-ZOBUZTSGSA-N",
       "PUBCHEM": "11197931",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "236718",
+      "Formula": "C18H16F2O3"
     },
     "DDC": {
       "Name": "5,4'-dideoxyflavanone",
@@ -1043,7 +1125,8 @@
       "INCHI_KEY": "SWAJPHCXKPCPQZ-AWEZNQCLSA-N",
       "PUBCHEM": "688857",
       "CHEBI": "41888",
-      "CHEMBL": "402744"
+      "CHEMBL": "402744",
+      "Formula": "C15H12O3"
     },
     "DFL": {
       "Name": "4'-hydroxyflavanone",
@@ -1054,7 +1137,8 @@
       "INCHI_KEY": "ZLHVIYHWWQYJID-HNNXBMFYSA-N",
       "PUBCHEM": "688859",
       "CHEBI": "41965",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C15H12O3"
     },
     "DFV": {
       "Name": "5-deoxyflavanone",
@@ -1065,7 +1149,8 @@
       "INCHI_KEY": "FURUXTVZLHCCNA-AWEZNQCLSA-N",
       "PUBCHEM": "114829",
       "CHEBI": "28777",
-      "CHEMBL": "252642"
+      "CHEMBL": "252642",
+      "Formula": "C15H12O4"
     },
     "DH2": {
       "Name": "trans-dihydroquercetin (taxifolin)",
@@ -1076,7 +1161,8 @@
       "INCHI_KEY": "CXQWRCVTCMQVQX-CABCVRRESA-N",
       "PUBCHEM": "712316",
       "CHEBI": "41963",
-      "CHEMBL": "209462"
+      "CHEMBL": "209462",
+      "Formula": "C15H12O7"
     },
     "DHB": {
       "Name": "3,4-dihydroxybenzoic acid",
@@ -1087,7 +1173,8 @@
       "INCHI_KEY": "YQUVCSBJEUQKSH-UHFFFAOYSA-N",
       "PUBCHEM": "72",
       "CHEBI": "36062",
-      "CHEMBL": "37537"
+      "CHEMBL": "37537",
+      "Formula": "C7H6O4"
     },
     "DHC": {
       "Name": "caffeic acid",
@@ -1098,7 +1185,8 @@
       "INCHI_KEY": "QAIPRVGONGVQAS-DUXPYHPUSA-N",
       "PUBCHEM": "689043",
       "CHEBI": "16433",
-      "CHEMBL": "145"
+      "CHEMBL": "145",
+      "Formula": "C9H8O4"
     },
     "DHY": {
       "Name": "3,4-dihydroxyphenylacetic acid",
@@ -1109,7 +1197,8 @@
       "INCHI_KEY": "CFFZDZCDUFSOFZ-UHFFFAOYSA-N",
       "PUBCHEM": "547",
       "CHEBI": "41941",
-      "CHEMBL": "1284"
+      "CHEMBL": "1284",
+      "Formula": "C8H8O4"
     },
     "DLM": {
       "Name": "delphinidin",
@@ -1120,7 +1209,8 @@
       "INCHI_KEY": "JKHRCGUTYDNCLE-UHFFFAOYSA-O",
       "PUBCHEM": "128853",
       "CHEBI": "28436",
-      "CHEMBL": "276780"
+      "CHEMBL": "276780",
+      "Formula": "C15H11O7"
     },
     "DQH": {
       "Name": "dihydroquercetin (taxifolin)",
@@ -1131,7 +1221,8 @@
       "INCHI_KEY": "CXQWRCVTCMQVQX-LSDHHAIUSA-N",
       "PUBCHEM": "439533",
       "CHEBI": "17948",
-      "CHEMBL": "66"
+      "CHEMBL": "66",
+      "Formula": "C15H12O7"
     },
     "DTC": {
       "Name": "bishydroxy[2h-1-benzopyran-2-one,1,2-benzopyrone]",
@@ -1142,7 +1233,8 @@
       "INCHI_KEY": "HIZKPJUTKKJDGA-BETUJISGSA-N",
       "PUBCHEM": "17753965",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C19H12O6"
     },
     "DZN": {
       "Name": "daidzin",
@@ -1153,7 +1245,8 @@
       "INCHI_KEY": "KYQZWONCHDNPDP-QNDFHXLGSA-N",
       "PUBCHEM": "107971",
       "CHEBI": "42202",
-      "CHEMBL": "486422"
+      "CHEMBL": "486422",
+      "Formula": "C21H20O9"
     },
     "EGT": {
       "Name": "epigallocathechin",
@@ -1164,7 +1257,8 @@
       "INCHI_KEY": "XMOCLSLCDHWDHP-IUODEOHRSA-N",
       "PUBCHEM": "72277",
       "CHEBI": "42255",
-      "CHEMBL": "47386"
+      "CHEMBL": "47386",
+      "Formula": "C15H14O7"
     },
     "EKZ": {
       "Name": "ux1400000",
@@ -1175,7 +1269,8 @@
       "INCHI_KEY": "XESZUVZBAMCAEJ-UHFFFAOYSA-N",
       "PUBCHEM": "7381",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "220845",
+      "Formula": "C10H14O2"
     },
     "ERD": {
       "Name": "eriodictyol",
@@ -1186,7 +1281,8 @@
       "INCHI_KEY": "SBHXYTNGIZCORC-ZDUSSCGKSA-N",
       "PUBCHEM": "440735",
       "CHEBI": "28412",
-      "CHEMBL": "8996"
+      "CHEMBL": "8996",
+      "Formula": "C15H12O6"
     },
     "ESE": {
       "Name": "(1s,3ar,5r,7as)-5-(4-hydroxyphenyl)-7a-methyloctahydro-1h-inden-1-ol",
@@ -1197,7 +1293,8 @@
       "INCHI_KEY": "CEOUGJNTPKXUFS-VDERGJSUSA-N",
       "PUBCHEM": "50940853",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "1651152",
+      "Formula": "C16H22O2"
     },
     "F08": {
       "Name": "methyl 4-(4-oxo-4h-chromen-2-yl)benzoate",
@@ -1208,7 +1305,8 @@
       "INCHI_KEY": "BDADRHKVFGYIRW-UHFFFAOYSA-N",
       "PUBCHEM": "14735886",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2431800",
+      "Formula": "C17H12O4"
     },
     "F70": {
       "Name": "cyanomethyl 4-(4-oxo-4h-chromen-2-yl)benzoate",
@@ -1219,7 +1317,8 @@
       "INCHI_KEY": "VHZDBQAQWIEXCK-UHFFFAOYSA-N",
       "PUBCHEM": "2817491",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2431803",
+      "Formula": "C18H11NO4"
     },
     "F94": {
       "Name": "7,3-dihydroxyflavone",
@@ -1230,7 +1329,8 @@
       "INCHI_KEY": "DYARIVMCYYQNNQ-UHFFFAOYSA-N",
       "PUBCHEM": "5391140",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "253786",
+      "Formula": "C15H10O4"
     },
     "F95": {
       "Name": "(7,8-dihydroxy-2-oxo-2h-chromen-4-yl)acetic acid",
@@ -1241,7 +1341,8 @@
       "INCHI_KEY": "LNRFNPKOQGRTFS-UHFFFAOYSA-N",
       "PUBCHEM": "5513692",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C11H8O6"
     },
     "F9Z": {
       "Name": "chembl1709089",
@@ -1252,7 +1353,8 @@
       "INCHI_KEY": "BIIVYFLTOXDAOV-SJCJKPOMSA-N",
       "PUBCHEM": "6602328",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "1709089",
+      "Formula": "C21H20ClNO5"
     },
     "FER": {
       "Name": "(e)-ferulic acid",
@@ -1263,7 +1365,8 @@
       "INCHI_KEY": "KSEBMYQBYZTDHS-HWKANZROSA-N",
       "PUBCHEM": "445858",
       "CHEBI": "17620",
-      "CHEMBL": "32749"
+      "CHEMBL": "32749",
+      "Formula": "C10H10O4"
     },
     "FLN": {
       "Name": "flavone",
@@ -1274,7 +1377,8 @@
       "INCHI_KEY": "VHBFFQKBGNRLFZ-UHFFFAOYSA-N",
       "PUBCHEM": "10680",
       "CHEBI": "42491",
-      "CHEMBL": "275638"
+      "CHEMBL": "275638",
+      "Formula": "C15H10O2"
     },
     "FSE": {
       "Name": "fisetin",
@@ -1285,7 +1389,8 @@
       "INCHI_KEY": "XHEFDIBZLJXQHF-UHFFFAOYSA-N",
       "PUBCHEM": "5281614",
       "CHEBI": "42567",
-      "CHEMBL": "31574"
+      "CHEMBL": "31574",
+      "Formula": "C15H10O6"
     },
     "G12": {
       "Name": "3,8-dibromo-7-hydroxy-4-methyl-2h-chromen-2-one",
@@ -1296,7 +1401,8 @@
       "INCHI_KEY": "MSOLROYRAHCJNK-UHFFFAOYSA-N",
       "PUBCHEM": "5795340",
       "CHEBI": "109100",
-      "CHEMBL": "273101"
+      "CHEMBL": "273101",
+      "Formula": "C10H6Br2O3"
     },
     "G7G": {
       "Name": "genistein-7-o-glucuronide",
@@ -1307,7 +1413,8 @@
       "INCHI_KEY": "JIVINIISUDEORF-ZFORQUDYSA-N",
       "PUBCHEM": "15940724",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "3527014",
+      "Formula": "C21H18O11"
     },
     "G9J": {
       "Name": "(2s)-3-(3-hydroxyphenyl)-2-(4-iodophenyl)-4-methyl-2h-1-benzopyran-6-ol",
@@ -1318,7 +1425,20 @@
       "INCHI_KEY": "RWKXMXMLZHFKIZ-QFIPXVFZSA-N",
       "PUBCHEM": "137332066",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C22H17IO3"
+    },
+    "GEN": {
+      "Name": "genistein",
+      "Long": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+      "SMILES": "c1(cc(c2c(c1)occ(c2=O)c1ccc(cc1)O)O)O",
+      "ISMILES": "Oc1ccc(cc1)C2=COc3cc(O)cc(O)c3C2=O",
+      "INCHI": "InChI=1S/C15H10O5/c16-9-3-1-8(2-4-9)11-7-20-13-6-10(17)5-12(18)14(13)15(11)19/h1-7,16-18H",
+      "INCHI_KEY": "TZBJGXHYKVUXJN-UHFFFAOYSA-N",
+      "PUBCHEM": "5280961",
+      "CHEBI": "28088",
+      "CHEMBL": "44",
+      "Formula": "C15H10O5"
     },
     "H6N": {
       "Name": "protocatechuic aldehyde",
@@ -1329,7 +1449,8 @@
       "INCHI_KEY": "IBGBGRVKPALMCQ-UHFFFAOYSA-N",
       "PUBCHEM": "8768",
       "CHEBI": "50205",
-      "CHEMBL": "222021"
+      "CHEMBL": "222021",
+      "Formula": "C7H6O3"
     },
     "HC4": {
       "Name": "(e)-p-coumaric acid",
@@ -1340,7 +1461,8 @@
       "INCHI_KEY": "NGSWKAQJJWESNS-ZZXKWVIFSA-N",
       "PUBCHEM": "637542",
       "CHEBI": "32374",
-      "CHEMBL": "66879"
+      "CHEMBL": "66879",
+      "Formula": "C9H8O3"
     },
     "HCC": {
       "Name": "isoliquiritigenin",
@@ -1351,7 +1473,8 @@
       "INCHI_KEY": "DXDRHHKMWQZJHT-FPYGCLRLSA-N",
       "PUBCHEM": "638278",
       "CHEBI": "94010",
-      "CHEMBL": "129795"
+      "CHEMBL": "129795",
+      "Formula": "C15H12O4"
     },
     "HHF": {
       "Name": "3,7-dihydroxy flavone",
@@ -1362,7 +1485,8 @@
       "INCHI_KEY": "UWQJWDYDYIJWKY-UHFFFAOYSA-N",
       "PUBCHEM": "5393152",
       "CHEBI": "109535",
-      "CHEMBL": "210276"
+      "CHEMBL": "210276",
+      "Formula": "C15H10O4"
     },
     "HKS": {
       "Name": "3-{[(2s)-2-amino-2-carboxyethyl]sulfanyl}-5-hydroxy-l-tyrosine",
@@ -1373,7 +1497,8 @@
       "INCHI_KEY": "SXISMOAILJWTID-NKWVEPMBSA-N",
       "PUBCHEM": "14178746",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C12H16N2O6S"
     },
     "HMO": {
       "Name": "isoformononetin",
@@ -1384,7 +1509,8 @@
       "INCHI_KEY": "LNIQZRIHAMVRJA-UHFFFAOYSA-N",
       "PUBCHEM": "3764",
       "CHEBI": "29608",
-      "CHEMBL": "453280"
+      "CHEMBL": "453280",
+      "Formula": "C16H12O4"
     },
     "HOM": {
       "Name": "7-hydroxy-4-methyl-3-(2-hydroxy-ethyl)coumarin",
@@ -1395,7 +1521,8 @@
       "INCHI_KEY": "VCGFYFKJZGIZMX-UHFFFAOYSA-N",
       "PUBCHEM": "5288573",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "251935",
+      "Formula": "C12H12O4"
     },
     "HQE": {
       "Name": "hydroquinone",
@@ -1406,7 +1533,8 @@
       "INCHI_KEY": "QIGBRXMKCJKVMJ-UHFFFAOYSA-N",
       "PUBCHEM": "785",
       "CHEBI": "17594",
-      "CHEMBL": "537"
+      "CHEMBL": "537",
+      "Formula": "C6H6O2"
     },
     "HUL": {
       "Name": "hispidulin",
@@ -1417,7 +1545,8 @@
       "INCHI_KEY": "IHFBPDAQLQOCBX-UHFFFAOYSA-N",
       "PUBCHEM": "5281628",
       "CHEBI": "75902",
-      "CHEMBL": "293776"
+      "CHEMBL": "293776",
+      "Formula": "C16H12O6"
     },
     "HW2": {
       "Name": "isoquercetin",
@@ -1428,7 +1557,8 @@
       "INCHI_KEY": "OVSQVDMCBVZWGM-QSOFNFLRSA-N",
       "PUBCHEM": "5280804",
       "CHEBI": "68352",
-      "CHEMBL": "250450"
+      "CHEMBL": "250450",
+      "Formula": "C21H20O12"
     },
     "HWB": {
       "Name": "cyanidin",
@@ -1439,7 +1569,8 @@
       "INCHI_KEY": "VEVZSMAEJFVWIL-UHFFFAOYSA-O",
       "PUBCHEM": "128861",
       "CHEBI": "27843",
-      "CHEMBL": "404515"
+      "CHEMBL": "404515",
+      "Formula": "C15H11O6"
     },
     "IM3": {
       "Name": "imino-dopa",
@@ -1450,7 +1581,8 @@
       "INCHI_KEY": "VFINRVRRNHRWEQ-UXBLZVDNSA-N",
       "PUBCHEM": "NONE",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C9H9NO4"
     },
     "IPH": {
       "Name": "phenol",
@@ -1461,18 +1593,20 @@
       "INCHI_KEY": "ISWSIDIOOBJBQZ-UHFFFAOYSA-N",
       "PUBCHEM": "20488062",
       "CHEBI": "15882",
-      "CHEMBL": "14060"
+      "CHEMBL": "14060",
+      "Formula": "C6H6O"
     },
     "IPJ": {
       "Name": "4-hydroxy-chalcone",
-      "Long": "-",
+      "Long": "(~{E})-3-(4-hydroxyphenyl)-1-phenyl-prop-2-en-1-one",
       "SMILES": "c1ccc(cc1)C(=O)/C=C/c2ccc(cc2)O",
       "ISMILES": "Oc1ccc(cc1)\\C=C\\C(=O)c2ccccc2",
       "INCHI": "InChI=1S/C15H12O2/c16-14-9-6-12(7-10-14)8-11-15(17)13-4-2-1-3-5-13/h1-11,16H/b11-8+",
       "INCHI_KEY": "PWWCDTYUYPOAIU-DHZHZOJOSA-N",
       "PUBCHEM": "5282361",
       "CHEBI": "34423",
-      "CHEMBL": "7747"
+      "CHEMBL": "7747",
+      "Formula": "C15H12O2"
     },
     "IRH": {
       "Name": "isorhamnetin",
@@ -1483,7 +1617,8 @@
       "INCHI_KEY": "IZQSVPBOUDKVDZ-UHFFFAOYSA-N",
       "PUBCHEM": "5281654",
       "CHEBI": "6052",
-      "CHEMBL": "379064"
+      "CHEMBL": "379064",
+      "Formula": "C16H12O7"
     },
     "J8D": {
       "Name": "diosmetin",
@@ -1494,7 +1629,8 @@
       "INCHI_KEY": "MBNGWHIJMBWFHU-UHFFFAOYSA-N",
       "PUBCHEM": "5281612",
       "CHEBI": "4630",
-      "CHEMBL": "90568"
+      "CHEMBL": "90568",
+      "Formula": "C16H12O6"
     },
     "J8G": {
       "Name": "rhamnetin",
@@ -1505,7 +1641,8 @@
       "INCHI_KEY": "JGUZGNYPMHHYRK-UHFFFAOYSA-N",
       "PUBCHEM": "5281691",
       "CHEBI": "74992",
-      "CHEMBL": "312163"
+      "CHEMBL": "312163",
+      "Formula": "C16H12O7"
     },
     "JJ3": {
       "Name": "(3as,4r,9br)-4-(4-hydroxyphenyl)-6-(methoxymethyl)-1,2,3,3a,4,9b-hexahydrocyclopenta[c]chromen-8-ol",
@@ -1516,7 +1653,8 @@
       "INCHI_KEY": "RHQLNMNKTIOREN-AOIWGVFYSA-N",
       "PUBCHEM": "9927355",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "236086",
+      "Formula": "C20H22O4"
     },
     "JNP": {
       "Name": "7-hydroxy-2,2-dimethylchroman-4-one",
@@ -1527,7 +1665,8 @@
       "INCHI_KEY": "PHEWNYMTGPOCOP-UHFFFAOYSA-N",
       "PUBCHEM": "600902",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "1413378",
+      "Formula": "C11H12O3"
     },
     "KCZ": {
       "Name": "4-[2-[[(2~{r})-2-phenylpropyl]amino]ethyl]benzene-1,2-diol",
@@ -1538,7 +1677,8 @@
       "INCHI_KEY": "NXTJHSKVIAFFNX-ZDUSSCGKSA-N",
       "PUBCHEM": "139209099",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C17H21NO2"
     },
     "KDH": {
       "Name": "(-)-Epigallocatechin gallate",
@@ -1549,7 +1689,8 @@
       "INCHI_KEY": "WMBWREPUVVBILR-WIYYLYMNSA-N",
       "PUBCHEM": "65064",
       "CHEBI": "4806",
-      "CHEMBL": "297453"
+      "CHEMBL": "297453",
+      "Formula": "C22H18O11"
     },
     "KMP": {
       "Name": "kaempferol",
@@ -1560,7 +1701,8 @@
       "INCHI_KEY": "IYRMWMYZSQPJKC-UHFFFAOYSA-N",
       "PUBCHEM": "5280863",
       "CHEBI": "28499",
-      "CHEMBL": "150"
+      "CHEMBL": "150",
+      "Formula": "C15H10O6"
     },
     "KOM": {
       "Name": "7,8-dihydroxy-4-phenylcoumarin",
@@ -1571,7 +1713,8 @@
       "INCHI_KEY": "JRVIIPJSVKTPBK-UHFFFAOYSA-N",
       "PUBCHEM": "5413034",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "1233867",
+      "Formula": "C15H10O4"
     },
     "KXN": {
       "Name": "catechin",
@@ -1582,7 +1725,8 @@
       "INCHI_KEY": "PFTAWBLQPZVEMU-DZGCQCFKSA-N",
       "PUBCHEM": "9064",
       "CHEBI": "15600",
-      "CHEMBL": "311498"
+      "CHEMBL": "311498",
+      "Formula": "C15H14O6"
     },
     "LDP": {
       "Name": "l-dopamine",
@@ -1593,7 +1737,8 @@
       "INCHI_KEY": "VYFYYTLLBUKUHU-UHFFFAOYSA-N",
       "PUBCHEM": "681",
       "CHEBI": "18243",
-      "CHEMBL": "59"
+      "CHEMBL": "59",
+      "Formula": "C8H11NO2"
     },
     "LNR": {
       "Name": "l-norepinephrine",
@@ -1604,7 +1749,8 @@
       "INCHI_KEY": "SFLSHLFXELFNJZ-QMMMGPOBSA-N",
       "PUBCHEM": "439260",
       "CHEBI": "18357",
-      "CHEMBL": "1437"
+      "CHEMBL": "1437",
+      "Formula": "C8H11NO3"
     },
     "LU2": {
       "Name": "luteolin",
@@ -1615,7 +1761,8 @@
       "INCHI_KEY": "IQPNAANSBPBGFQ-UHFFFAOYSA-N",
       "PUBCHEM": "5280445",
       "CHEBI": "15864",
-      "CHEMBL": "151"
+      "CHEMBL": "151",
+      "Formula": "C15H10O6"
     },
     "MCT": {
       "Name": "4-methylcatechol",
@@ -1626,7 +1773,8 @@
       "INCHI_KEY": "ZBCATMYQYDCTIZ-UHFFFAOYSA-N",
       "PUBCHEM": "9958",
       "CHEBI": "17254",
-      "CHEMBL": "158766"
+      "CHEMBL": "158766",
+      "Formula": "C7H8O2"
     },
     "MRI": {
       "Name": "morin",
@@ -1637,7 +1785,8 @@
       "INCHI_KEY": "YXOLAZRVSSWPPT-UHFFFAOYSA-N",
       "PUBCHEM": "5281670",
       "CHEBI": "75092",
-      "CHEMBL": "28626"
+      "CHEMBL": "28626",
+      "Formula": "C15H10O7"
     },
     "MUG": {
       "Name": "mud",
@@ -1648,7 +1797,8 @@
       "INCHI_KEY": "YUDPTGPSBJVHCN-JZYAIQKZSA-N",
       "PUBCHEM": "87330",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C16H18O8"
     },
     "MYC": {
       "Name": "myricetin",
@@ -1659,7 +1809,8 @@
       "INCHI_KEY": "IKMDFBPHZNJCSN-UHFFFAOYSA-N",
       "PUBCHEM": "5281672",
       "CHEBI": "18152",
-      "CHEMBL": "164"
+      "CHEMBL": "164",
+      "Formula": "C15H10O8"
     },
     "MYF": {
       "Name": "pentahydroxyflavone",
@@ -1670,7 +1821,8 @@
       "INCHI_KEY": "ARSRJFRKVXALTF-UHFFFAOYSA-N",
       "PUBCHEM": "5281701",
       "CHEBI": "507499",
-      "CHEMBL": "247484"
+      "CHEMBL": "247484",
+      "Formula": "C15H10O7"
     },
     "MYU": {
       "Name": "quercetagetin",
@@ -1681,7 +1833,8 @@
       "INCHI_KEY": "ZVOLCUVKHLEPEV-UHFFFAOYSA-N",
       "PUBCHEM": "5281680",
       "CHEBI": "8695",
-      "CHEMBL": "413552"
+      "CHEMBL": "413552",
+      "Formula": "C15H10O8"
     },
     "NAR": {
       "Name": "naringenin",
@@ -1692,7 +1845,8 @@
       "INCHI_KEY": "FTVWIRXFELQLPI-ZDUSSCGKSA-N",
       "PUBCHEM": "439246",
       "CHEBI": "17846",
-      "CHEMBL": "9352"
+      "CHEMBL": "9352",
+      "Formula": "C15H12O5"
     },
     "P08": {
       "Name": "pik-108",
@@ -1703,7 +1857,8 @@
       "INCHI_KEY": "VRCXIJAYLCUSHC-INIZCTEOSA-N",
       "PUBCHEM": "54751698",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C22H24N2O3"
     },
     "P5M": {
       "Name": "petunidin",
@@ -1714,7 +1869,8 @@
       "INCHI_KEY": "AFOLOMGWVXKIQL-UHFFFAOYSA-O",
       "PUBCHEM": "441774",
       "CHEBI": "75318",
-      "CHEMBL": "1275624"
+      "CHEMBL": "1275624",
+      "Formula": "C16H13O7"
     },
     "PIT": {
       "Name": "piceatannol",
@@ -1725,7 +1881,8 @@
       "INCHI_KEY": "CDRPUGZCRXZLFL-OWOJBTEDSA-N",
       "PUBCHEM": "667639",
       "CHEBI": "28814",
-      "CHEMBL": "69863"
+      "CHEMBL": "69863",
+      "Formula": "C14H12O4"
     },
     "PYG": {
       "Name": "pyrogallol",
@@ -1736,7 +1893,8 @@
       "INCHI_KEY": "WQGWDDDVZFFDIG-UHFFFAOYSA-N",
       "PUBCHEM": "1057",
       "CHEBI": "16164",
-      "CHEMBL": "307145"
+      "CHEMBL": "307145",
+      "Formula": "C6H6O3"
     },
     "QCT": {
       "Name": "glycoside quercitrin",
@@ -1747,7 +1905,8 @@
       "INCHI_KEY": "OXGUCUVFOIWWQJ-HQBVPOQASA-N",
       "PUBCHEM": "5280459",
       "CHEBI": "17558",
-      "CHEMBL": "82242"
+      "CHEMBL": "82242",
+      "Formula": "C21H20O11"
     },
     "QSO": {
       "Name": "biochanin a",
@@ -1758,7 +1917,8 @@
       "INCHI_KEY": "WUADCCWRTIWANL-UHFFFAOYSA-N",
       "PUBCHEM": "5280373",
       "CHEBI": "17574",
-      "CHEMBL": "131921"
+      "CHEMBL": "131921",
+      "Formula": "C16H12O5"
     },
     "QUE": {
       "Name": "quercetin",
@@ -1769,7 +1929,8 @@
       "INCHI_KEY": "REFJWTPEDVJJIY-UHFFFAOYSA-N",
       "PUBCHEM": "5280343",
       "CHEBI": "16243",
-      "CHEMBL": "50"
+      "CHEMBL": "50",
+      "Formula": "C15H10O7"
     },
     "QX4": {
       "Name": "4-hydroxy-6-methylcoumarin",
@@ -1780,7 +1941,8 @@
       "INCHI_KEY": "WIRGBZBGYNIZIB-UHFFFAOYSA-N",
       "PUBCHEM": "54686349",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "1631885",
+      "Formula": "C10H8O3"
     },
     "RCO": {
       "Name": "resorcinol",
@@ -1791,18 +1953,20 @@
       "INCHI_KEY": "GHMLBKRAJCXXBS-UHFFFAOYSA-N",
       "PUBCHEM": "5054",
       "CHEBI": "27810",
-      "CHEMBL": "24147"
+      "CHEMBL": "24147",
+      "Formula": "C6H6O2"
     },
     "RUT": {
       "Name": "rutin",
-      "Long": "sdfsds",
+      "Long": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-[[(2R,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyl-oxan-2-yl]oxymethyl]oxan-2-yl]oxy-chromen-4-one",
       "SMILES": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(Oc4cc(cc(c4C3=O)O)O)c5ccc(c(c5)O)O)O)O)O)O)O)O",
       "ISMILES": "C[C@@H]1O[C@@H](OC[C@H]2O[C@@H](OC3=C(Oc4cc(O)cc(O)c4C3=O)c5ccc(O)c(O)c5)[C@H](O)[C@@H](O)[C@@H]2O)[C@H](O)[C@H](O)[C@H]1O",
       "INCHI": "InChI=1S/C27H30O16/c1-8-17(32)20(35)22(37)26(40-8)39-7-15-18(33)21(36)23(38)27(42-15)43-25-19(34)16-13(31)5-10(28)6-14(16)41-24(25)9-2-3-11(29)12(30)4-9/h2-6,8,15,17-18,20-23,26-33,35-38H,7H2,1H3/t8-,15+,17-,18+,20+,21-,22+,23+,26+,27-/m0/s1",
       "INCHI_KEY": "IKGXIBQEEMLURG-NVPNHPEKSA-N",
       "PUBCHEM": "5280805",
       "CHEBI": "28527",
-      "CHEMBL": "226335"
+      "CHEMBL": "226335",
+      "Formula": "C27H30O16"
     },
     "SAK": {
       "Name": "sakuranetin",
@@ -1813,7 +1977,8 @@
       "INCHI_KEY": "DJOJDHGQRNZXQQ-AWEZNQCLSA-N",
       "PUBCHEM": "73571",
       "CHEBI": "28927",
-      "CHEMBL": "448297"
+      "CHEMBL": "448297",
+      "Formula": "C16H14O5"
     },
     "SE2": {
       "Name": "3 hydroxycoumarin",
@@ -1824,7 +1989,8 @@
       "INCHI_KEY": "MJKVTPMWOKAVMS-UHFFFAOYSA-N",
       "PUBCHEM": "13650",
       "CHEBI": "113542",
-      "CHEMBL": "150372"
+      "CHEMBL": "150372",
+      "Formula": "C9H6O3"
     },
     "SL0": {
       "Name": "glycoside sl0101",
@@ -1835,7 +2001,8 @@
       "INCHI_KEY": "SXOZSDJHGMAEGZ-IGKKHSBFSA-N",
       "PUBCHEM": "10459196",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "240954",
+      "Formula": "C25H24O12"
     },
     "STL": {
       "Name": "resveratrol",
@@ -1846,7 +2013,8 @@
       "INCHI_KEY": "LUKBXSAWLPMMSZ-OWOJBTEDSA-N",
       "PUBCHEM": "445154",
       "CHEBI": "45713",
-      "CHEMBL": "165"
+      "CHEMBL": "165",
+      "Formula": "C14H12O3"
     },
     "TY8": {
       "Name": "2,4-bis(hydroperoxy)-5-hydroxy-l-phenylalanine",
@@ -1857,7 +2025,8 @@
       "INCHI_KEY": "BYMOOYNBSJDHEX-YFKPBYRVSA-N",
       "PUBCHEM": "49867771",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C9H11NO7"
     },
     "TY9": {
       "Name": "3,4-bis(hydroperoxy)-5-hydroxy-l-phenylalanine",
@@ -1868,7 +2037,8 @@
       "INCHI_KEY": "RUCJCFAVRFCOCO-YFKPBYRVSA-N",
       "PUBCHEM": "49867772",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C9H11NO7"
     },
     "TYJ": {
       "Name": "2,5-dihydroxy-n-methyl-l-tyrosine",
@@ -1879,7 +2049,8 @@
       "INCHI_KEY": "ZAUUPGAGAXIMDO-LURJTMIESA-N",
       "PUBCHEM": "137350072",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C10H13NO5"
     },
     "TYR": {
       "Name": "tyrosine",
@@ -1890,7 +2061,8 @@
       "INCHI_KEY": "OUYCCCASQSFEME-QMMMGPOBSA-N",
       "PUBCHEM": "6057",
       "CHEBI": "58315",
-      "CHEMBL": "925"
+      "CHEMBL": "925",
+      "Formula": "C9H11NO3"
     },
     "U01": {
       "Name": "3-[1-(4-bromo-phenyl)-2-methyl-propyl]-4-hydroxy-chromen-2-one",
@@ -1901,7 +2073,8 @@
       "INCHI_KEY": "KGDWLSFLMSFPSU-INIZCTEOSA-N",
       "PUBCHEM": "54693872",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C19H17BrO3"
     },
     "U03": {
       "Name": "4-hydroxy-7-methoxy-3-(1-phenyl-propyl)-chromen-2-one",
@@ -1912,7 +2085,8 @@
       "INCHI_KEY": "CCPGCKQLIHGSCJ-AWEZNQCLSA-N",
       "PUBCHEM": "54736485",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C19H18O4"
     },
     "UWU": {
       "Name": "6-chloranyl-7-oxidanyl-4-phenyl-chromen-2-one",
@@ -1923,7 +2097,8 @@
       "INCHI_KEY": "TUQNFQUMZKUALD-UHFFFAOYSA-N",
       "PUBCHEM": "5398657",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C15H9ClO3"
     },
     "V55": {
       "Name": "vanillin",
@@ -1934,7 +2109,8 @@
       "INCHI_KEY": "MWOOGOJBHIARFG-UHFFFAOYSA-N",
       "PUBCHEM": "1183",
       "CHEBI": "18346",
-      "CHEMBL": "13883"
+      "CHEMBL": "13883",
+      "Formula": "C8H8O3"
     },
     "VGP": {
       "Name": "pregilvocarcin v",
@@ -1945,7 +2121,8 @@
       "INCHI_KEY": "YVGUIYUDGGDTSX-ZDRXMRRKSA-N",
       "PUBCHEM": "53322932",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C27H28O9"
     },
     "X8W": {
       "Name": "naringenin chalcone",
@@ -1956,7 +2133,8 @@
       "INCHI_KEY": "YQHMWTPYORBCMF-UHFFFAOYSA-N",
       "PUBCHEM": "5280960",
       "CHEBI": "15413",
-      "CHEMBL": "338066"
+      "CHEMBL": "338066",
+      "Formula": "C15H12O5"
     },
     "XDE": {
       "Name": "(+)-epinephrine",
@@ -1967,7 +2145,8 @@
       "INCHI_KEY": "UCTWMZQNUQWSLP-SECBINFHSA-N",
       "PUBCHEM": "247704",
       "CHEBI": "40751",
-      "CHEMBL": "42280"
+      "CHEMBL": "42280",
+      "Formula": "C9H13NO3"
     },
     "XEG": {
       "Name": "(+)-catechin gallate",
@@ -1978,7 +2157,8 @@
       "INCHI_KEY": "LSHVYAFMTMFKBA-PZJWPPBQSA-N",
       "PUBCHEM": "5276454",
       "CHEBI": "76132",
-      "CHEMBL": "483083"
+      "CHEMBL": "483083",
+      "Formula": "C22H18O10"
     },
     "XZZ": {
       "Name": "6-chloro-7-hydroxy-4-methyl-2h-chromen-2-one",
@@ -1989,7 +2169,8 @@
       "INCHI_KEY": "JTXAGHXRIBLWES-UHFFFAOYSA-N",
       "PUBCHEM": "5374887",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "2205240",
+      "Formula": "C10H7ClO3"
     },
     "YTZ": {
       "Name": "sulfathiazole",
@@ -2000,7 +2181,8 @@
       "INCHI_KEY": "JNMRHUJNCSQMMB-UHFFFAOYSA-N",
       "PUBCHEM": "5340",
       "CHEBI": "9337",
-      "CHEMBL": "437"
+      "CHEMBL": "437",
+      "Formula": "C9H9N3O2S2"
     },
     "YZ9": {
       "Name": "ethyl umbelliferone-3-carboxylate",
@@ -2011,7 +2193,8 @@
       "INCHI_KEY": "IETDBZQIWIJQJG-UHFFFAOYSA-N",
       "PUBCHEM": "5289613",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "155103",
+      "Formula": "C12H10O5"
     },
     "ZXU": {
       "Name": "n-(3-{[2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-4-oxo-4h-1-benzopyran-3-yl]oxy}propyl)-nalpha-[(2e)-3-(3,4-dihydroxyphenyl )prop-2-enoyl]-l-tyrosinamide",
@@ -2022,7 +2205,8 @@
       "INCHI_KEY": "IRVRXEMGBYHLMY-REHZOHHSSA-N",
       "PUBCHEM": "145915902",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C36H32N2O12"
     },
     "ZXY": {
       "Name": "montbretin a analogue m06-mba",
@@ -2033,7 +2217,8 @@
       "INCHI_KEY": "MYJPTGWVMBCTRI-MRSBXDGLSA-N",
       "PUBCHEM": "145915903",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "NONE",
+      "Formula": "C32H30N2O11"
     },
     "ZZ1": {
       "Name": "4-methylcoumarin",
@@ -2044,7 +2229,8 @@
       "INCHI_KEY": "PSGQCCSGKGJLRL-UHFFFAOYSA-N",
       "PUBCHEM": "11833",
       "CHEBI": "NONE",
-      "CHEMBL": "NONE"
+      "CHEMBL": "12279",
+      "Formula": "C10H8O2"
     }
   }
 }

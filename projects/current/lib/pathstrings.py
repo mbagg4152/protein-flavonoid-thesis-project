@@ -48,3 +48,4 @@ FN_NCOMP_DICT = JDIR_NPASS + 'ncomp_dict.json'
 FN_NCOMP_CODES = JDIR_NPASS + 'ncomp_codes.json'
 
 FN_SMILES = JDIR_PROT + 'smiles.json'
+FN_KNAP = JDIR_PROT + 'knap_ids.json'
