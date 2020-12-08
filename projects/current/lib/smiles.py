@@ -3,64 +3,85 @@ from pathlib import Path
 from urllib import request
 from urllib.error import HTTPError, URLError
 from util import *
-import re
+from re import findall, sub
+
 import glob
 
-json_keys = ['SMILES', 'Name', 'Long', 'ISMILES', 'INCHI', 'INCHI_KEY']
-snames = ['SMILES', 'metabolite', 'metabolite', 'SMILES', 'INCHI_CD', 'INCHIKEY']
-smiles_list = {}
+K_FORM = 'FORMULA'
+K_IKEY = 'INCHI_KEY'
+K_INCHI = 'INCHI'
+K_ISO = 'ISO_SMILES'
+K_LONG = 'LONG'
+K_NAME = 'COMMON'
+K_SMILE = 'SMILES'
+K_CHEM = 'CHEMBL'
+K_CHEB = 'CHEBI'
+K_PUB = 'PUBCHEM'
+S_IKEY = 'INCHIKEY'
+S_INCHI = 'INCHI_CD'
+S_METAB = 'metabolite'
 knap_ids = []
-re_chebi = r">CHEBI:([0-9]*)"
-re_chembl = r">CHEMBL([0-9]*)"
-re_inchi = r"<tr id=\"chemicalInChI\"><th>InChI<\/th><td style=\"word-wrap: break-word\">(InChI=.*)</td></tr>" \
-           r"<tr id=\"chemicalInChIKey\">"
-re_inchi_key = r"<th>InChIKey<\/th><td>(.*)</td></tr></table></div><div class=\"col-md-4"
-re_knap_data = r'<tr>[.|\s]*<td\sc.*d1\">[.|\s]*<a.*blank\">(C[0-9]*)</a>[.|\s]*</td>[.|\s]*<td.*d1\">([' \
-               r'0-9|-]*)</td>\s*<td\s.*d1\">(.*)</td>[.|\s]*<td\s.*d1\">([0-9|A-Z]+)</td>[.|\s]*<td\s.*d1\">([' \
-               r'\d|\.]+).*(<[|/]td.*<[|/]tr>)'
-re_pubchem_id = r"https:\/\/pubchem\.ncbi\.nlm\.nih\.gov\/compound\/([0-9]*)"
-re_smiles = r"<tr id=\"chemicalIsomeric\"><th>Isomeric SMILES<\/th><td style=\"word-wrap: break-word\">(.*)</td>" \
-            r"</tr><tr id=\"chemicalInChI\"><th>"
-re_knap_name = r'<th class=\"inf\">Name</th>\s*<td colspan=\"4\" class=\"inf\">(.*)</td>\s*</tr>'
-re_knap_results = r'Number of matched data :([0-9]*).*<br>'
-re_knap_org = r'.*</td><td class=\"?org2\"?>([a-zA-Z0-9!@#$&()\\-`.+,/\"\s]*)'
-pdb_url = "http://www.rcsb.org/ligand/"
-re_search_type = r'.*input?\stype?\s=?\s<font?\sclass=\"iw\">\s*(\S*)?\s,?\s</font>'
-new_dir = '..' + SEP + 'misc_files' + SEP + 'smiles'
-pages = new_dir + SEP + 'html_sites' + SEP
-match_dir = new_dir + SEP + 'matches' + SEP
-knap_dir = new_dir + SEP + 'knap' + SEP
+json_keys = [K_INCHI, K_IKEY, K_SMILE, K_ISO, K_LONG, K_NAME]
+snames = [S_INCHI, S_IKEY, K_SMILE, K_SMILE, S_METAB, S_METAB]
+
+smiles_list = {}
 knap_data = {}
-matches = ''
-chem_info = new_dir + SEP + "chem_info.csv"
-match_info = new_dir + SEP + 'matches.csv'
-knap_id_info = new_dir + SEP + 'knap_ids.csv'
-knap_orgs = new_dir + SEP + 'knap_orgs.csv'
+matches = 'LigID\tC_ID\tMatch\tName\tLong\tKSNames\tForm\tKSForm\tSMILES\tIsomeric\tKS_SMILES\tINCHI\tINCHIKEY\t' \
+          'CAS_ID\tCHEMBL\tCHEBI\tPUBCHEM'
+
+RE_CHEBI = r">CHEBI:([0-9]*)"
+RE_CHEMBL = r">CHEMBL([0-9]*)"
+RE_FORM = r'.*<tr id=.ch.*F.*a.>\s*<th>F.*a</th>\s*<td>(.*)</td>\s*</tr>\s*<tr id=.ch.*Mo.*W.*t\">'
+RE_WEIGHT = r'.*<tr id=.ch.*Mo.*W.*t.>\s*<th>Mo.*W.*t</th>\s*<td>(.*)</td>\s*</tr>\s*<tr id=\"ch.*lT.*e\">'
+RE_INCHI = r"<tr id=\"chemicalInChI\"><th>InChI<\/th><td style=\"word-wrap: break-word\">(InChI=.*)</td></tr><tr " \
+           r"id=\"chemicalInChIKey\">"
+RE_INCHI_KEY = r"<th>InChIKey<\/th><td>(.*)</td></tr></table></div><div class=\"col-md-4"
+RE_KNAP_ENTRY = r'<tr>[.|\s]*<td\sc.*d1\">[.|\s]*<a.*blank\">(C[0-9]*)</a>[.|\s]*</td>[.|\s]*<td.*d1\">([ 0-9|-]*)' \
+                r'</td>\s*<td\s.*d1\">(.*)</td>[.|\s]*<td\s.*d1\">([0-9|A-Z]+)</td>[.|\s]*<td\s.*d1\">([\d|\.]+).*' \
+                r'(<[|/]td.*<[|/]tr>)'
+RE_KNAP_NAME = r'<th class=\"inf\">Name</th>\s*<td colspan=\"4\" class=\"inf\">(.*)</td>\s*</tr>'
+RE_KNAP_ORG = r'.*</td><td class=\"?org2\"?>([a-zA-Z0-9!@#$&()\\-`.+,/\"\s]*)'
+RE_NUM_KNAP_RESULTS = r'Number of matched data :([0-9]*).*<br>'
+RE_PUBCHEM = r"https:\/\/pubchem\.ncbi\.nlm\.nih\.gov\/compound\/([0-9]*)"
+RE_SEARCH_TYPE = r'.*input?\stype?\s=?\s<font?\sclass=\"iw\">\s*(\S*)?\s,?\s</font>'
+RE_SMILE = r'id=.ch.*Is.*c.>\s*<th>Is.*S.*S</th>\s*<td.*\">(.*)</td>\s*</tr>\s*<tr.id=.ch.*I.*I.>\s*'
+RE_CHARGE = r'<tr id=.ch.+Fo.+C.+e.>\s*<th>Fo.+\sC.*e</th>\s*<td>([\w\.\-\+]+)</td>'
+RE_ATOM_COUNT = r'\s*<tr id=.ch.*A.*C.*t.>\s*<th>A.*C.*t</th>\s*<td>(.*)</td>\s*</tr>\s*<tr id=.ch.*Ch.*A.*C.*.>\s*<th>'
+RE_CHIRAL = r'<tr.id=.c[a-z]+C.+A.+t.>\s*<th>C[a-z]+\sAt.+Co.+t</th>\s*<td>(\d+)</td>\s*</tr>\s*<tr.id=.c.+B\w+C\w+t.>'
+RE_BOND = r'<tr.id=.c[a-z]+B.+C.+t.>\s*<th>B.+\sC.+t</th>\s*<td>(\d*)</td>\s*</tr>\s*<tr.id=.ch.+A.+A.+C.+t.>'
+RE_AROMA = r'<tr.id=.c[a-z]+Ar.+A.+C.+t.>\s*<th>A.+\sB.+\sC.+t</th>\s*<td>(\d+)</td>\s*</tr>'
+
+pdb_url = "http://www.rcsb.org/ligand/"
+new_dir = '..' + SEP + 'misc_files' + SEP + 'smiles'
+
+knap_dir = new_dir + SEP + 'knap' + SEP
+match_dir = new_dir + SEP + 'matches' + SEP
+pages = new_dir + SEP + 'html_sites' + SEP
+chem_info = new_dir + SEP + "chem_info.tab"
+knap_id_info = new_dir + SEP + 'knap_ids.tab'
+knap_orgs = new_dir + SEP + 'knap_orgs.tab'
+match_info = new_dir + SEP + 'matches.tab'
+
+Path(knap_dir).mkdir(parents=True, exist_ok=True)
+Path(match_dir).mkdir(parents=True, exist_ok=True)
 Path(new_dir).mkdir(parents=True, exist_ok=True)
 Path(pages).mkdir(parents=True, exist_ok=True)
-Path(match_dir).mkdir(parents=True, exist_ok=True)
-Path(knap_dir).mkdir(parents=True, exist_ok=True)
 
 def main():
     global smiles_list, knap_ids
     smiles_list = get_json_data(FN_SMILES)
-    # get_organism_data()
-    knap_ids = get_json_data(FN_KNAP)
-
+    get_knapsack_codes()
     with open(knap_id_info, 'w') as outfile:
         out = ''
         for knap in knap_ids: out += knap + '\n'
         outfile.write(out)
-    get_knap_data()
+    # get_extra_info()
 
-def is_ascii(s):
-    return all(ord(c) < 128 for c in s)
-
-
-def get_organism_data():
+def get_knapsack_codes():
     for key in smiles_list:
         words = []
         for sname in json_keys: words.append(smiles_list.get(key).get(sname).strip().replace(' ', '%20'))
+        # print(str(words))
 
         for i in range(0, len(json_keys)):
             if not is_ascii(words[i]): words[i] = ''.join(str(ord(c)) for c in words[i])
@@ -70,34 +91,35 @@ def get_organism_data():
             name = match_dir + key + ".html"
             files = ''.join(glob.glob(match_dir + key + '_*html')).strip()
             if '_NONE' in files:
+                print('no matches at all. {} has a _NONE file'.format(key))
                 break
 
             if not (os.path.exists(name)):
-                print('NEED TO GET FILE {}'.format(files))
                 if not (os.path.exists(name)):
-                    try:
-                        request.urlretrieve(tmp_url, name)
-                        print('{} {}'.format(tmp_url, name))
+                    try: request.urlretrieve(tmp_url, name)
                     except HTTPError or URLError or InvalidURL or UnicodeEncodeError:
                         print('err getting page')
-                        return False
+                        continue
+
+            if not knap_code_helper(name, key, json_keys[i], tmp_url):
+                if i != len(json_keys) - 1:
+                    print('no match {} {}'.format(key, json_keys[i]))
+                    try: os.remove(name)
+                    except FileNotFoundError: print('!!!NO DELETE')
+                else:
+                    print('no matches at all {} {} ... making _NONE file.'.format(key, json_keys[i]))
+                    new_name = match_dir + key + '_NONE' + ".html"
+                    knap_code_helper(new_name, key, json_keys[i], tmp_url)
+                    try: os.remove(name)
+                    except FileNotFoundError: print('!!!NO DELETE')
             else:
-                if not has_codes_from_knapsack(name, key, json_keys[i], tmp_url):
-                    if snames[i] != 'INCHIKEY' and json_keys[i] != 'INCHI_KEY':
-                        try: os.remove(name)
-                        except FileNotFoundError:
-                            print('##NO DELETE')
-                    else:
-                        new_name = match_dir + key + '_NONE' + ".html"
-                        has_codes_from_knapsack(new_name, key, json_keys[i], tmp_url)
-                        try: os.remove(name)
-                        except FileNotFoundError:
-                            print('##NO DELETE')
+                print('MATCH {} {}'.format(key, json_keys[i]))
+                break
 
     with open(match_info, 'w') as match_file:
         match_file.write(matches)
 
-def get_knap_data():
+def get_parse_knap_pages():
     global knap_ids
     out = ''
     for kid in knap_ids:
@@ -111,53 +133,78 @@ def get_knap_data():
         try:
             with open(tmp_name, 'r') as tmp_file:
                 data = tmp_file.read()
-                orgs = '\t'.join(re.findall(re_knap_org, data))
+                orgs = '\t'.join(findall(RE_KNAP_ORG, data))
                 name = kid
-                if len(re.findall(re_knap_name, data)):
-                    name = ' || '.join(re.findall(re_knap_name, data)[0].split('<br>')) + ':'
+                if len(findall(RE_KNAP_NAME, data)): name = ' || '.join(findall(RE_KNAP_NAME, data)[0].split('<br>'))
+                out += name + ':\t' + orgs + '\n'
+        except FileNotFoundError: continue
+    with open(knap_orgs, 'w') as file: file.write(out)
 
-                out += name + '\t' + orgs + '\n'
-
-
-        except FileNotFoundError:
-            continue
-    with open(knap_orgs, 'w') as file:
-        file.write(out)
-
-def has_codes_from_knapsack(name, key, prop, tmp_url):
+def knap_code_helper(out_path, key, prop, tmp_url):
     global matches, knap_data, knap_ids
-    if not (os.path.exists(name)):
-        try:
-            request.urlretrieve(tmp_url, name)
-            print('{} {}'.format(tmp_url, name))
+    if not (os.path.exists(out_path)):
+        try: request.urlretrieve(tmp_url, out_path)
         except HTTPError or URLError or InvalidURL or UnicodeEncodeError:
             print('err getting page')
             return False
     try:
-        with open(name, 'r') as file:
+        with open(out_path, 'r') as file:
             data = file.read()
-            data = re.sub(r'<font color=#\S{6}>', '', re.sub(r'</font>', '', data))
+            data = sub(r'<font color=#\S{6}>', '', sub(r'</font>', '', data))
             try:
-                num_res = re.findall(re_knap_results, data)[0]
+                num_res = findall(RE_NUM_KNAP_RESULTS, data)[0]
                 if int(num_res) < 1: return False
                 else:
-                    out = ''
-                    values = re.findall(re_knap_data, data)
-
+                    values = findall(RE_KNAP_ENTRY, data)
+                    tmp_entry = smiles_list.get(key) or 'NONE'
+                    name = tmp_entry.get(K_NAME) or 'NONE'
+                    lname = tmp_entry.get(K_LONG) or 'NONE'
+                    smiles = tmp_entry.get(K_SMILE) or 'NONE'
+                    iso = tmp_entry.get(K_ISO) or 'NONE'
+                    form = tmp_entry.get(K_FORM) or 'NONE'
+                    inchi = tmp_entry.get(K_INCHI) or 'NONE'
+                    ikey = tmp_entry.get(K_IKEY) or 'NONE'
+                    pub = tmp_entry.get(K_PUB) or 'NONE'
+                    chebi = tmp_entry.get(K_CHEB) or 'NONE'
+                    chembl = tmp_entry.get(K_CHEM) or 'NONE'
                     for item in values:
-                        names = ' || '.join(item[2].split('<br>'))
-                        last = item[5].replace('</td>', '').replace('</tr>', '')
-                        matches += '{} {} {} {} {} {}\n'.format(item[0], item[1], names, item[3], item[4],
-                                                                str(last))
-                        if item[0] not in knap_ids: knap_ids.append(item[0])
+                        ks_smiles = sub(r'</td>', '', sub(r'</tr>', '', item[5])).strip()
+                        if ks_smiles == '':
+                            if prop == K_SMILE: ks_smiles = ''.join(findall(r'.*word=(.*)', tmp_url))
+                            else: ks_smiles = 'NO SMILES LISTED DIRECTLY'
+                        c_id = item[0]
+                        cas_id = item[1]
+                        ks_names = ' || '.join(item[2].split('<br>'))
+                        ks_form = item[3]
+                        has_exact = False
+                        if not has_exact:
+                            split_names = ks_names.split(' || ')
+                            for compound in split_names:
+                                if bskin(compound) == bskin(name) or bskin(compound) == bskin(lname):
+                                    has_exact = True
+                                    break
+                            if not has_exact:
+                                has_exact = smiles.strip() == ks_smiles.strip() or iso.strip() == ks_smiles.strip()
+
+                        if bskin(ks_form) != bskin(form): has_exact = False
+                        if has_exact:
+                            # LigID C_ID Match Name Long KSNames Form KSForm SMILES Isomeric KS_SMILES INCHI INCHIKEY
+                            # CAS_ID CHEMBL CHEBI PUBCHEM
+                            # LigID, C_ID & Match added later
+                            tmp_out = '\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}' \
+                                      '\t{}\t{}\t{}\t{}\t{}'.format(name, lname, ks_names, form,
+                                                                    ks_form, smiles, iso, ks_smiles, inchi, ikey,
+                                                                    cas_id, chembl, chebi, pub)
+                            if item[0] not in knap_ids:
+                                if tmp_out not in matches:
+                                    matches += key + '\t' + c_id + '\t' + prop + '\t' + tmp_out
+                                    knap_ids.append(item[0])
+
                     return True
             except IndexError: return False
-
-
     except FileNotFoundError:
-        print('no file for {} from property {}, {}'.format(key, prop, name))
-        with open(name, 'w')as failed:
-            failed.write('NOTHING')
+        print('no file for {} from property {}, {}'.format(key, prop, out_path))
+        with open(out_path, 'w')as failed: failed.write('NOTHING')
         return False
 
 
@@ -170,11 +217,9 @@ def get_extra_info():
     for key in smiles_list:
         tmp_url = pdb_url + key
         name = pages + key + ".txt"
-
         if not os.path.exists(name):
             try: request.urlretrieve(tmp_url, name)
-            except HTTPError or URLError as e:
-                print('err getting page')
+            except HTTPError or URLError as e: print('err getting page')
     for key in smiles_list:
         name = pages + key + ".txt"
         try: file = open(name, "r")
@@ -182,19 +227,36 @@ def get_extra_info():
             print('no file')
             continue
         data = file.read()
+        aroma = ''.join(findall(RE_AROMA, data) or ['NONE'])
+        bond = ''.join(findall(RE_BOND, data) or ['NONE'])
+        chebi = ''.join(findall(RE_CHEBI, data)[0]) if len(findall(RE_CHEBI, data)) else 'NONE'
+        chembl = ''.join(findall(RE_CHEMBL, data)[0]) if len(findall(RE_CHEMBL, data)) else 'NONE'
+        chiral = ''.join(findall(RE_CHIRAL, data) or ['NONE'])
+        count = ''.join(findall(RE_ATOM_COUNT, data) or ['NONE'])
+        f_charge = ''.join(findall(RE_CHARGE, data) or ['NONE'])
+        form = sub(' ', '', ''.join(sub('<sub>', '', sub('</sub>', '', (''.join(findall(RE_FORM, data) or ['NONE']))))))
+        inchi = ''.join(findall(RE_INCHI, data) or ['NONE'])
+        inchi_key = ''.join(findall(RE_INCHI_KEY, data) or ['NONE'])
+        pubchem = ''.join(findall(RE_PUBCHEM, data)[0]) if len(findall(RE_PUBCHEM, data)) else 'NONE'
+        smiles = ''.join(findall(RE_SMILE, data)[0]) if len(findall(RE_SMILE, data)) else 'NONE'
+        weight = findall(RE_WEIGHT, data)[0] if len(findall(RE_WEIGHT, data)) else 'NONE'
+        out_str += "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" \
+                   "\t{}\t{}\t{}\n".format(key, smiles, inchi, inchi_key, pubchem, chebi, chembl, form, weight,
+                                           f_charge, count, chiral, bond, aroma)
 
-        inchi, inchi_key, smiles, pubchem, chebi, chembl = 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE'
-        try:
-            inchi, inchi_key = re.findall(re_inchi, data)[0], re.findall(re_inchi_key, data)[0]
-            smiles, pubchem = re.findall(re_smiles, data)[0], re.findall(re_pubchem_id, data)[0]
-            chebi, chembl = re.findall(re_chebi, data)[0], re.findall(re_chembl, data)[0]
-        except IndexError: pass
-        out_str += "{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(key, smiles, inchi, inchi_key, pubchem, chebi, chembl)
+        print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}"
+              "\t{}\t{}\t{}\n".format(key, smiles, inchi, inchi_key, pubchem, chebi, chembl, form, weight, f_charge,
+                                      count, chiral, bond, aroma))
         file.close()
 
     info_file = open(chem_info, 'w')
     info_file.write(out_str)
     info_file.close()
+
+def is_ascii(s):
+    return all(ord(c) < 128 for c in s)
+
+def bskin(line): return ''.join(line.strip().upper())
 
 
 if __name__ == '__main__':
