@@ -10,7 +10,7 @@ import glob
 knap_ids = []
 json_keys = [K_INCHI, K_IKEY, K_SMILE, K_ISO, K_LONG, K_NAME]
 snames = [S_INCHI, S_IKEY, K_SMILE, K_SMILE, S_METAB, S_METAB]
-
+org_list = []
 smiles_list = {}
 part_list = {}
 knap_data = {}
@@ -26,7 +26,7 @@ chem_info = new_dir + SEP + "chem_info.tab"
 knap_id_info = new_dir + SEP + 'knap_ids.tab'
 knap_orgs = new_dir + SEP + 'knap_orgs.tab'
 match_info = new_dir + SEP + 'matches.tab'
-
+org_names = new_dir + SEP + 'orgs.tab'
 Path(knap_dir).mkdir(parents=True, exist_ok=True)
 Path(match_dir).mkdir(parents=True, exist_ok=True)
 Path(new_dir).mkdir(parents=True, exist_ok=True)
@@ -35,14 +35,18 @@ Path(pages).mkdir(parents=True, exist_ok=True)
 
 def main():
     global smiles_list, knap_ids, part_list
-    # smiles_list = get_json_data(FN_SMILES)
+    smiles_list = get_json_data(FN_SMILES)
     part_list = get_json_data(FN_SMILES_PART)
+    knap_ids = get_json_data(FN_KNAP)
     # get_knapsack_codes()
     # with open(knap_id_info, 'w') as outfile:
     #     out = ''
     #     for knap in knap_ids: out += knap + '\n'
     #     outfile.write(out)
-    get_extra_info()
+    # # get_extra_info()
+    # with open(match_info, 'w') as outfile:
+    #     outfile.write(matches)
+    get_parse_knap_pages()
 
 
 def get_knapsack_codes():
@@ -89,9 +93,12 @@ def get_knapsack_codes():
 
 
 def get_parse_knap_pages():
-    global knap_ids
+    global knap_ids, org_list
     out = ''
-    for kid in knap_ids:
+    for key in smiles_list:
+        tmp_dict = smiles_list.get(key)
+        kid = tmp_dict.get('KNAP_ID') or 'NONE'
+        if kid == 'NONE': continue
         tmp_url = 'http://www.knapsackfamily.com/knapsack_core/information.php?sname=C_ID&word=' + kid.strip()
         tmp_name = knap_dir + kid.strip() + '.html'
         if not (os.path.exists(tmp_name)):
@@ -102,12 +109,19 @@ def get_parse_knap_pages():
         try:
             with open(tmp_name, 'r') as tmp_file:
                 data = tmp_file.read()
-                orgs = '\t'.join(findall(RE_KNAP_ORG, data))
-                name = kid
+                found = findall(RE_KNAP_ORG, data)
+                orgs = '\t'.join(found)
+                for org in found:
+                    if org not in org_list: org_list.append(org)
+                name = key
                 if len(findall(RE_KNAP_NAME, data)): name = ' || '.join(findall(RE_KNAP_NAME, data)[0].split('<br>'))
-                out += name + ':\t' + orgs + '\n'
+                out += key + '\t' + kid + '\t' + name + '\t' + orgs + '\n'
         except FileNotFoundError: continue
     with open(knap_orgs, 'w') as file: file.write(out)
+    with open(org_names, 'w') as file:
+        org_out = ''
+        for org in org_list: org_out += org + '\n'
+        file.write(org_out)
 
 
 def knap_code_helper(out_path, key, prop, tmp_url):
@@ -137,6 +151,7 @@ def knap_code_helper(out_path, key, prop, tmp_url):
                     pub = tmp_entry.get(K_PUB) or 'NONE'
                     chebi = tmp_entry.get(K_CHEB) or 'NONE'
                     chembl = tmp_entry.get(K_CHEM) or 'NONE'
+                    weight = tmp_entry.get('WEIGHT') or 'NONE'
                     for item in values:
                         ks_smiles = sub(r'</td>', '', sub(r'</tr>', '', item[5])).strip()
                         if ks_smiles == '':
@@ -146,6 +161,7 @@ def knap_code_helper(out_path, key, prop, tmp_url):
                         cas_id = item[1]
                         ks_names = ' || '.join(item[2].split('<br>'))
                         ks_form = item[3]
+                        ks_weight = item[4]
                         has_exact = False
                         if not has_exact:
                             split_names = ks_names.split(' || ')
@@ -156,7 +172,8 @@ def knap_code_helper(out_path, key, prop, tmp_url):
                             if not has_exact:
                                 has_exact = smiles.strip() == ks_smiles.strip() or iso.strip() == ks_smiles.strip()
 
-                        if bskin(ks_form) != bskin(form): has_exact = False
+                        if bskin(ks_form) != bskin(form):
+                            has_exact = False
                         if has_exact:
                             # LigID C_ID Match Name Long KSNames Form KSForm SMILES Isomeric KS_SMILES INCHI INCHIKEY
                             # CAS_ID CHEMBL CHEBI PUBCHEM
@@ -165,10 +182,10 @@ def knap_code_helper(out_path, key, prop, tmp_url):
                                       '\t{}\t{}\t{}\t{}\t{}'.format(name, lname, ks_names, form,
                                                                     ks_form, smiles, iso, ks_smiles, inchi, ikey,
                                                                     cas_id, chembl, chebi, pub)
+
                             if item[0] not in knap_ids:
-                                if tmp_out not in matches:
-                                    matches += key + '\t' + c_id + '\t' + prop + '\t' + tmp_out
-                                    knap_ids.append(item[0])
+                                matches += '\n' + key + '\t' + c_id + '\t' + prop + '\t' + tmp_out
+                                knap_ids.append(item[0])
 
                     return True
             except IndexError: return False
@@ -184,13 +201,13 @@ def get_knap_url(sname, word):
 
 def get_extra_info():
     out_str = ""
-    for key in part_list:
+    for key in smiles_list:
         tmp_url = pdb_url + key
         name = pages + key + ".txt"
         if not os.path.exists(name):
             try: request.urlretrieve(tmp_url, name)
             except HTTPError or URLError as e: print('err getting page')
-    for key in part_list:
+    for key in smiles_list:
         name = pages + key + ".txt"
         try: file = open(name, "r")
         except FileNotFoundError:
@@ -214,13 +231,10 @@ def get_extra_info():
         common = ''.join(findall(RE_NAME, data)[0]) if len(findall(RE_NAME, data)) else 'NONE'
         long = ''.join(findall(RE_LONG, data)[0]) if len(findall(RE_LONG, data)) else 'NONE'
 
-        out_str += "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" \
-                   "\t{}\t{}\t{}\n".format(key, common, long, smiles, smiles, inchi, inchi_key, pubchem, chebi, chembl,
+        out_str += "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" \
+                   "\t{}\t{}\t{}\n".format(key, smiles, inchi, inchi_key, pubchem, chebi, chembl,
                                            form, weight, f_charge, count, chiral, bond, aroma)
 
-        print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}"
-              "\t{}\t{}\t{}\n".format(key, common, long, smiles, smiles, inchi, inchi_key, pubchem, chebi, chembl,
-                                      form, weight, f_charge, count, chiral, bond, aroma))
         file.close()
 
     info_file = open(chem_info, 'w')
