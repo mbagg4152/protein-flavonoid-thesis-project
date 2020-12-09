@@ -7,51 +7,16 @@ from re import findall, sub
 
 import glob
 
-K_FORM = 'FORMULA'
-K_IKEY = 'INCHI_KEY'
-K_INCHI = 'INCHI'
-K_ISO = 'ISO_SMILES'
-K_LONG = 'LONG'
-K_NAME = 'COMMON'
-K_SMILE = 'SMILES'
-K_CHEM = 'CHEMBL'
-K_CHEB = 'CHEBI'
-K_PUB = 'PUBCHEM'
-S_IKEY = 'INCHIKEY'
-S_INCHI = 'INCHI_CD'
-S_METAB = 'metabolite'
 knap_ids = []
 json_keys = [K_INCHI, K_IKEY, K_SMILE, K_ISO, K_LONG, K_NAME]
 snames = [S_INCHI, S_IKEY, K_SMILE, K_SMILE, S_METAB, S_METAB]
 
 smiles_list = {}
+part_list = {}
 knap_data = {}
 matches = 'LigID\tC_ID\tMatch\tName\tLong\tKSNames\tForm\tKSForm\tSMILES\tIsomeric\tKS_SMILES\tINCHI\tINCHIKEY\t' \
           'CAS_ID\tCHEMBL\tCHEBI\tPUBCHEM'
 
-RE_CHEBI = r">CHEBI:([0-9]*)"
-RE_CHEMBL = r">CHEMBL([0-9]*)"
-RE_FORM = r'.*<tr id=.ch.*F.*a.>\s*<th>F.*a</th>\s*<td>(.*)</td>\s*</tr>\s*<tr id=.ch.*Mo.*W.*t\">'
-RE_WEIGHT = r'.*<tr id=.ch.*Mo.*W.*t.>\s*<th>Mo.*W.*t</th>\s*<td>(.*)</td>\s*</tr>\s*<tr id=\"ch.*lT.*e\">'
-RE_INCHI = r"<tr id=\"chemicalInChI\"><th>InChI<\/th><td style=\"word-wrap: break-word\">(InChI=.*)</td></tr><tr " \
-           r"id=\"chemicalInChIKey\">"
-RE_INCHI_KEY = r"<th>InChIKey<\/th><td>(.*)</td></tr></table></div><div class=\"col-md-4"
-RE_KNAP_ENTRY = r'<tr>[.|\s]*<td\sc.*d1\">[.|\s]*<a.*blank\">(C[0-9]*)</a>[.|\s]*</td>[.|\s]*<td.*d1\">([ 0-9|-]*)' \
-                r'</td>\s*<td\s.*d1\">(.*)</td>[.|\s]*<td\s.*d1\">([0-9|A-Z]+)</td>[.|\s]*<td\s.*d1\">([\d|\.]+).*' \
-                r'(<[|/]td.*<[|/]tr>)'
-RE_KNAP_NAME = r'<th class=\"inf\">Name</th>\s*<td colspan=\"4\" class=\"inf\">(.*)</td>\s*</tr>'
-RE_KNAP_ORG = r'.*</td><td class=\"?org2\"?>([a-zA-Z0-9!@#$&()\\-`.+,/\"\s]*)'
-RE_NUM_KNAP_RESULTS = r'Number of matched data :([0-9]*).*<br>'
-RE_PUBCHEM = r"https:\/\/pubchem\.ncbi\.nlm\.nih\.gov\/compound\/([0-9]*)"
-RE_SEARCH_TYPE = r'.*input?\stype?\s=?\s<font?\sclass=\"iw\">\s*(\S*)?\s,?\s</font>'
-RE_SMILE = r'id=.ch.*Is.*c.>\s*<th>Is.*S.*S</th>\s*<td.*\">(.*)</td>\s*</tr>\s*<tr.id=.ch.*I.*I.>\s*'
-RE_CHARGE = r'<tr id=.ch.+Fo.+C.+e.>\s*<th>Fo.+\sC.*e</th>\s*<td>([\w\.\-\+]+)</td>'
-RE_ATOM_COUNT = r'\s*<tr id=.ch.*A.*C.*t.>\s*<th>A.*C.*t</th>\s*<td>(.*)</td>\s*</tr>\s*<tr id=.ch.*Ch.*A.*C.*.>\s*<th>'
-RE_CHIRAL = r'<tr.id=.c[a-z]+C.+A.+t.>\s*<th>C[a-z]+\sAt.+Co.+t</th>\s*<td>(\d+)</td>\s*</tr>\s*<tr.id=.c.+B\w+C\w+t.>'
-RE_BOND = r'<tr.id=.c[a-z]+B.+C.+t.>\s*<th>B.+\sC.+t</th>\s*<td>(\d*)</td>\s*</tr>\s*<tr.id=.ch.+A.+A.+C.+t.>'
-RE_AROMA = r'<tr.id=.c[a-z]+Ar.+A.+C.+t.>\s*<th>A.+\sB.+\sC.+t</th>\s*<td>(\d+)</td>\s*</tr>'
-
-pdb_url = "http://www.rcsb.org/ligand/"
 new_dir = '..' + SEP + 'misc_files' + SEP + 'smiles'
 
 knap_dir = new_dir + SEP + 'knap' + SEP
@@ -67,15 +32,18 @@ Path(match_dir).mkdir(parents=True, exist_ok=True)
 Path(new_dir).mkdir(parents=True, exist_ok=True)
 Path(pages).mkdir(parents=True, exist_ok=True)
 
+
 def main():
-    global smiles_list, knap_ids
-    smiles_list = get_json_data(FN_SMILES)
-    get_knapsack_codes()
-    with open(knap_id_info, 'w') as outfile:
-        out = ''
-        for knap in knap_ids: out += knap + '\n'
-        outfile.write(out)
-    # get_extra_info()
+    global smiles_list, knap_ids, part_list
+    # smiles_list = get_json_data(FN_SMILES)
+    part_list = get_json_data(FN_SMILES_PART)
+    # get_knapsack_codes()
+    # with open(knap_id_info, 'w') as outfile:
+    #     out = ''
+    #     for knap in knap_ids: out += knap + '\n'
+    #     outfile.write(out)
+    get_extra_info()
+
 
 def get_knapsack_codes():
     for key in smiles_list:
@@ -119,6 +87,7 @@ def get_knapsack_codes():
     with open(match_info, 'w') as match_file:
         match_file.write(matches)
 
+
 def get_parse_knap_pages():
     global knap_ids
     out = ''
@@ -139,6 +108,7 @@ def get_parse_knap_pages():
                 out += name + ':\t' + orgs + '\n'
         except FileNotFoundError: continue
     with open(knap_orgs, 'w') as file: file.write(out)
+
 
 def knap_code_helper(out_path, key, prop, tmp_url):
     global matches, knap_data, knap_ids
@@ -214,13 +184,13 @@ def get_knap_url(sname, word):
 
 def get_extra_info():
     out_str = ""
-    for key in smiles_list:
+    for key in part_list:
         tmp_url = pdb_url + key
         name = pages + key + ".txt"
         if not os.path.exists(name):
             try: request.urlretrieve(tmp_url, name)
             except HTTPError or URLError as e: print('err getting page')
-    for key in smiles_list:
+    for key in part_list:
         name = pages + key + ".txt"
         try: file = open(name, "r")
         except FileNotFoundError:
@@ -240,21 +210,27 @@ def get_extra_info():
         pubchem = ''.join(findall(RE_PUBCHEM, data)[0]) if len(findall(RE_PUBCHEM, data)) else 'NONE'
         smiles = ''.join(findall(RE_SMILE, data)[0]) if len(findall(RE_SMILE, data)) else 'NONE'
         weight = findall(RE_WEIGHT, data)[0] if len(findall(RE_WEIGHT, data)) else 'NONE'
-        out_str += "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" \
-                   "\t{}\t{}\t{}\n".format(key, smiles, inchi, inchi_key, pubchem, chebi, chembl, form, weight,
-                                           f_charge, count, chiral, bond, aroma)
 
-        print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}"
-              "\t{}\t{}\t{}\n".format(key, smiles, inchi, inchi_key, pubchem, chebi, chembl, form, weight, f_charge,
-                                      count, chiral, bond, aroma))
+        common = ''.join(findall(RE_NAME, data)[0]) if len(findall(RE_NAME, data)) else 'NONE'
+        long = ''.join(findall(RE_LONG, data)[0]) if len(findall(RE_LONG, data)) else 'NONE'
+
+        out_str += "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" \
+                   "\t{}\t{}\t{}\n".format(key, common, long, smiles, smiles, inchi, inchi_key, pubchem, chebi, chembl,
+                                           form, weight, f_charge, count, chiral, bond, aroma)
+
+        print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}"
+              "\t{}\t{}\t{}\n".format(key, common, long, smiles, smiles, inchi, inchi_key, pubchem, chebi, chembl,
+                                      form, weight, f_charge, count, chiral, bond, aroma))
         file.close()
 
     info_file = open(chem_info, 'w')
     info_file.write(out_str)
     info_file.close()
 
+
 def is_ascii(s):
     return all(ord(c) < 128 for c in s)
+
 
 def bskin(line): return ''.join(line.strip().upper())
 
