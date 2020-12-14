@@ -1,5 +1,5 @@
-from lib.pathstrings import *
-from lib.miscvals import *
+from const_vals import *
+from const_paths import *
 
 
 class ChemData:

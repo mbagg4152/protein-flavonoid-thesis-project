@@ -11,8 +11,7 @@ COLUMNS       DATA  TYPE    FIELD        DEFINITION
  9 - 10       Continuation   continuation  Allows concatenation of multiple records.
 11 - 80       String         title         Title of the  experiment.
 -----------------------------------------------------------------------------------------------------------------------
- 1 -  6        Record name   "ATOM  "/
-                             "HETATM"
+ 1 -  6        Record name   "ATOM  "/ "HETATM"
  7 - 11        Integer       serial       Atom  serial number.
 13 - 16        Atom          name         Atom name.
 17             Character     altLoc       Alternate location indicator.

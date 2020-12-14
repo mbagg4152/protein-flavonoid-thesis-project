@@ -4,7 +4,7 @@ from pathlib import Path
 from plib.types import *
 from threading import Lock, Thread
 from urllib import request
-from urllib.error import HTTPError, URLError
+import urllib.error
 import multiprocessing
 
 try:
@@ -18,10 +18,16 @@ except ImportError:
 
 plt.rc('xtick', labelsize=4)  # set font size for ticks on x axis for pyplot
 plt.rc('ytick', labelsize=4)  # set font size for ticks on y axis for pyplot
-
-sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
-from lib.jsondata import *
-from lib.util import *
+try:
+    from json_objects import *
+    from util import *
+    from const_paths import *
+except ImportError:
+    # allows for imports from directories at the same level
+    sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
+    from lib.json_objects import *
+    from lib.util import *
+    from lib.const_paths import *
 
 pdb_objects_list = []
 pdb_entries = []
@@ -37,20 +43,14 @@ Path(pdb_dir).mkdir(parents=True, exist_ok=True)
 Path(image_dir).mkdir(parents=True, exist_ok=True)
 thread_lim = multiprocessing.cpu_count() - 1  # determine number of usable threads for the program
 
+
 def main():
-    ans = True
-    while ans:
-        print('\n1. Download & parse all files'
-              '\n2. Run calculations on single file'
-              '\n0. Exit'
-              '\n\n---------------------------------------------------------------------------------\n')
-        ans = int(input('\nChoice: '))
-        if ans == 1: run_parse()
-        elif ans == 2:
-            # to_use = input('\nEnter PDB ID: ').strip().upper()
-            to_use = '2NNL'
-            file_calculations(to_use)
-            pass
+    run_parse()
+
+
+def run_file_calc_thread():
+    test_pdb_ids = get_json_data()
+
 
 def run_parse():
     """For each of the PDB IDs, the PDB file will be downloaded if missing, then each PDB file is parsed accordingly."""
@@ -76,50 +76,46 @@ def run_parse():
     total_time = end_time - init_time
     print('\ntotal time taken to download & parse files: {}'.format(total_time))
 
+
 def run_on_thread(items):
     for pdb_id in items:
         tst_url = PART_URL + pdb_id + '.pdb'
         get_parse_pdbs(tst_url, pdb_dir + pdb_id + '.pdb', pdb_id)
 
+
 def file_calculations(pdb_id):
-    pdb_url = PART_URL + pdb_id + '.pdb'
+    this_url = PART_URL + pdb_id + '.pdb'
     global total_pdb_output, pdb_entries, pdb_objects, pdb_basic_info
-    get_parse_pdbs(pdb_url, pdb_dir + pdb_id + '.pdb', pdb_id, skip_download=True)
-    ans = True
-    while ans:
-        print('1. Find distance between two atoms'
-              '\n2. Find name of any H within 1.2 angstroms of any O'
-              '\n3. Find angle between two planes'
-              '\n9. Change structure ID'
-              '\n0. Back to main menu'
-              '\n\n---------------------------------------------------------------------------------\n')
+    get_parse_pdbs(this_url, pdb_dir + pdb_id + '.pdb', pdb_id, skip_download=True)
+    # ans = True
+    # while ans:
+    #
+    #     ans = int(input('Choice: '))
+    #     struct = get_struct(pdb_id)
+    #
+    #     if ans == 1:  # Find distance between two atoms
+    #         name1, name2 = input('First atom: ').strip().upper(), input('Second atom: ').strip().upper()
+    #         rec1, rec2 = Record(), Record()
+    #         found = 0
+    #         for rec in struct.records:
+    #             if rec.atom == name1: rec1, found = rec, found + 1
+    #             elif rec.atom == name2: rec2, found = rec, found + 1
+    #         if found != 2: print('err finding atoms. had ' + str(found) + ' matches')
+    #         else: show_atom_distance(rec1, rec2)
+    #
+    #     elif ans == 2: find_hydrogen(struct)  # Find name of any H within 1.2 angstroms of any O
+    #
+    #     elif ans == 3:  # Find angle between two planes
+    #         if pdb_id not in struct_planes: print('No ring definitions found for structure!')
+    #         else: plane_operations(struct)
+    #
+    #     elif ans == 9:  # Change structure ID
+    #         pdb_id = input('\nEnter PDB ID: ').strip().upper()
+    #         this_url = PART_URL + pdb_id + '.pdb'
+    #         get_parse_pdbs(this_url, pdb_dir + pdb_id + '.pdb', pdb_id, skip_download=True)
+    #         struct = get_struct(pdb_id)
+    # print('\n---------------------------------------------------------------------------------\n')
 
-        ans = int(input('Choice: '))
-        struct = get_struct(pdb_id)
-
-        if ans == 1:  # Find distance between two atoms
-            name1, name2 = input('First atom: ').strip().upper(), input('Second atom: ').strip().upper()
-            rec1, rec2 = Record(), Record()
-            found = 0
-            for rec in struct.records:
-                if rec.atom == name1: rec1, found = rec, found + 1
-                elif rec.atom == name2: rec2, found = rec, found + 1
-            if found != 2: print('err finding atoms. had ' + str(found) + ' matches')
-            else: show_atom_distance(rec1, rec2)
-
-        elif ans == 2: find_hydrogen(struct)  # Find name of any H within 1.2 angstroms of any O
-
-        elif ans == 3:  # Find angle between two planes
-            if pdb_id not in struct_planes: print('No plane definitions found for structure!')
-            else: plane_operations(struct)
-
-        elif ans == 9:  # Change structure ID
-            pdb_id = input('\nEnter PDB ID: ').strip().upper()
-            pdb_url = PART_URL + pdb_id + '.pdb'
-            get_parse_pdbs(pdb_url, pdb_dir + pdb_id + '.pdb', pdb_id, skip_download=True)
-            struct = get_struct(pdb_id)
-
-        print('\n---------------------------------------------------------------------------------\n')
 
 def get_struct(pdb_id):
     """Find structure from global list of processed PDB files using PDB ID."""
@@ -127,6 +123,7 @@ def get_struct(pdb_id):
         if pdb_id == entry.pdb_id: return entry
     print('!!!WARNING!!!Could not find entry for PDB ID {}, returning empty entry'.format(pdb_id))
     return Struct()
+
 
 def find_hydrogen(entry: Struct):
     """Find every H atom that is within 1.2 angstroms of any O atom."""
@@ -146,6 +143,7 @@ def find_hydrogen(entry: Struct):
     for item in hydrogens: h_str += item.atom + ' '
     for item in selected_hydrogens: close_str += item.atom + ' '
     print('O atoms: {}, H atoms: {}, H atoms within 1.2 angstroms of an O: {}'.format(o_str, h_str, close_str))
+
 
 def plane_operations(struct):
     if len(struct.planes) < 2:
@@ -175,13 +173,16 @@ def plane_operations(struct):
     angle = plane_angles(eqn0, eqn1)
     print('the angle between the planes is {:6.3f} degrees'.format(angle))
 
+
 def plane_angles(e0: Equation, e1: Equation):
     top = abs((e0.a * e1.a) + (e0.b * e1.b) + (e0.c * e1.c))
     bottom = (sqrt((e0.a ** 2) + (e0.b ** 2) + (e0.c ** 2))) * (sqrt((e1.a ** 2) + (e1.b ** 2) + (e1.c ** 2)))
     return degrees(acos(top / bottom))
 
+
 def same_atom(atom1, atom2):
     return (atom1.x == atom2.x) and (atom1.y == atom2.y) and (atom1.z == atom2.z)
+
 
 def quick_plot(plane, path):
     """Output figures which show the planes and the atoms in a graph at different viewing angles."""
@@ -209,6 +210,7 @@ def quick_plot(plane, path):
         ax.view_init(views[i], angles[i])  # make subplot at specific view & angle
     fig.savefig(path + '.png', dpi=200)
 
+
 def get_parse_pdbs(url, path, pdb_id, skip_download=False):
     global total_pdb_output, pdb_entries, pdb_objects, pdb_basic_info
     lock_total, lock_entry, lock_obj, lock_basic = Lock(), Lock(), Lock(), Lock()
@@ -217,13 +219,15 @@ def get_parse_pdbs(url, path, pdb_id, skip_download=False):
         if not os.path.exists(path):
             print('***PDB file not found for ' + pdb_id + ', starting download')
 
-            try: request.urlretrieve(url, path)
-            except HTTPError or URLError as e:
-                print("!!!HTTP/URL error, couldn't get pdb file " + pdb_id + '. Error: ' + e.reason +
-                      '. Will look for .cif file.')
+            try:
+                urllib.request.urlretrieve(url, path)
+                print('✓✓✓PDB' + pdb_id + ' downloaded.')
+            except urllib.error.URLError or urllib.error.HTTPError:
+                print("!!!HTTP/URL error, couldn't get pdb file " + pdb_id + '. Will look for .cif file.')
                 cif = path.replace('.pdb', '.cif')
                 url = url.replace('.pdb', '.cif')
                 get_convert_cifs(url, cif, path)
+        else: print('$$$PDB file for ' + pdb_id + ' exists')
 
     try: file = open(path, 'r')
     except FileNotFoundError:
@@ -253,23 +257,29 @@ def get_parse_pdbs(url, path, pdb_id, skip_download=False):
         pdb_basic_info += entry_str(pdb_id, tmp_entry.group, tmp_entry.ec_str, len(tmp_entry.records),
                                     tmp_entry.org_sci, tmp_entry.org_taxid, tmp_entry.ex_sys) + '\n'
 
+
 def get_convert_cifs(url, cif_path, pdb_path):
     try: request.urlretrieve(url, cif_path)
-    except HTTPError or URLError as e:
-        print("!!!HTTP or URL error, couldn't get " + url + '. Got error: ' + e.reason)
+    except urllib.error.URLError or urllib.error.HTTPError as e:
+        print("!!!HTTP or URL error, couldn't get " + url + '.')
         return
-    p = MMCIFParser()
-    struc = p.get_structure('', cif_path)
-    io = PDBIO()
-    io.set_structure(struc)
-    io.save(pdb_path)
-    print('^^^SUCCESSFULLY CONVERTED CIF TO PDB')
+    try:
+        p = MMCIFParser()
+        struc = p.get_structure('', cif_path)
+        io = PDBIO()
+        io.set_structure(struc)
+        io.save(pdb_path)
+        print('^^^SUCCESSFULLY CONVERTED CIF TO PDB')
+    except TypeError: print('Problem making pdb file')
+
 
 def show_entry(pdb_id, grp, ec_nums, num_rec, org, tax, ex_sys):
     print(entry_str(pdb_id, grp, ec_nums, num_rec, org, tax, ex_sys))
 
+
 def entry_str(pdb_id, grp, ec_nums, num_rec, org, tax, ex_sys):
     return '{} || {} || {} || {} || {} || {} || {} records'.format(pdb_id, grp, org, tax, ex_sys, ec_nums, num_rec)
+
 
 if __name__ == '__main__':
     main()

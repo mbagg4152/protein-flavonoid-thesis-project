@@ -28,10 +28,10 @@ CHEM_DIR, FASTA_DIR, GENE_DIR = SEP + 'Chemical_Data', SEP + 'FASTA_Data', SEP +
 # pathways for the json data  (and the name of the json object used in all files)
 JSON_DIR = '..' + SEP + 'json_data' + SEP
 FLAV_JSON, PROT_JSON, JKEY = JSON_DIR + 'flavonoid' + SEP, JSON_DIR + 'protein' + SEP, 'obj'
-FN_FLAVS, FN_PATH_DICT = FLAV_JSON + 'flavs.json', FLAV_JSON + 'path_names_codes.json'
-FN_PATH_LIST, FN_PLANT_DICT = FLAV_JSON + 'path_codes.json', FLAV_JSON + 'plant_names_codes.json'
-FN_PLANT_DICT_COMMON, FN_PLANT_LIST = FLAV_JSON + 'plant_names_codes_more.json', FLAV_JSON + 'plant_codes.json'
-FN_MED, FN_SHORT, FN_SINGLE = FLAV_JSON + 'test_med.json', FLAV_JSON + 'test_short.json', FLAV_JSON + 'test_single.json'
+FN_FLAVS, FN_PATH_DICT = FLAV_JSON + 'flav_names.json', FLAV_JSON + 'flav_path_names_codes.json'
+FN_PATH_LIST, FN_PLANT_DICT = FLAV_JSON + 'flav_path_codes.json', FLAV_JSON + 'flav_plant_names_codes.json'
+FN_PLANT_DICT_COMMON, FN_PLANT_LIST = FLAV_JSON + 'flav_plant_names_codes_more.json', FLAV_JSON + 'flav_plant_codes.json'
+FN_MED, FN_SHORT, FN_SINGLE = FLAV_JSON + 'flav_test_med.json', FLAV_JSON + 'flav_test_short.json', FLAV_JSON + 'flav_test_single.json'
 
 # misc strings
 NL, SP, NIX, CSV, GDATA = '\n', ' ', '', '.csv', 'Gene_data_'

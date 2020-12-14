@@ -1,3 +1,4 @@
+import re
 from itertools import combinations
 from math import sqrt
 from plib.strings_consts import *
@@ -11,9 +12,12 @@ except ImportError:
           '`pip3 install scipy` or `pip install scipy`\n'
           '`pip3 install numpy` or `pip install numpy`')
     exit(1)
+try: from util import skin
+except ImportError:
+    # allows for imports from directories at the same level
+    sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
+    from lib.util import *
 
-sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
-from lib.util import *
 
 class Atom:
     def __init__(self, name=DS, elem=DS, x=DF, y=DF, z=DF, from_center=DF, ligand=DS, chain=DS):
@@ -35,12 +39,14 @@ class Atom:
 
     def from_origin(self): self.from_center = sqrt((self.x ** 2) + (self.y ** 2) + (self.z ** 2))
 
+
 class Equation:
     def __init__(self, a, b, c, d):
         self.a = a
         self.b = b
         self.c = c
         self.d = d
+
     def string(self):
         return '{:6.3f}x + {:6.3f}y + {:6.3f}z + {:6.3f} = 0'.format(self.a, self.b, self.c, self.d)
 
@@ -54,6 +60,7 @@ class Equation:
     def func_form_tup(self):
         z = -self.c
         return self.a / z, self.b / z, self.d / z
+
 
 class Struct:
     def __init__(self, pdb_id=None, group=None, title=None, ec_nums=None, records=None, org_name=None, org_sci=None,
@@ -96,6 +103,7 @@ class Struct:
         plane.chain = chain
         self.planes.append(plane)
 
+
 class Record:
     def __init__(self, pdb_id=DS, label=DS, sn=DS, atom=DS, alt_loc=DS, lig_code=DS, chain=DS, lig_seq=DS, icode=DS,
                  x=DF, y=DF, z=DF, occp=DS, temp=DS, elem=DS, charge=DS):
@@ -121,6 +129,7 @@ class Record:
               'Chain: {}\n'.format(self.pdb_id, self.label, self.atom, self.sn, self.elem, self.lig_code,
                                    self.lig_seq, self.x, self.y, self.z, self.chain)
         return out
+
 
 class Plane:
     def __init__(self, atoms: [Atom], eqn=None, ligand=DS, chain=DS):
@@ -171,6 +180,7 @@ class Plane:
 def atom_from_record(rec: Record):
     return Atom(rec.atom, rec.elem, rec.x, rec.y, rec.z, ligand=rec.lig_code, chain=rec.chain)
 
+
 def new_record(line, name):
     """Make new record object from PDB file. Will only create coordinate properties for ATOM/HETATM records."""
     if len(line) < 60: tmp_rec = Record()
@@ -180,15 +190,21 @@ def new_record(line, name):
         # since taking a subsection of a string works as such: substring = string[start:end-1]
         label = skin(line[0:6])
         if K_ATM in label or K_HAT in label:
-            x = get_coord(skin(line[30:38]).replace(':', ''))
-            y = get_coord(skin(line[38:46]).replace(':', ''))
-            z = get_coord(skin(line[46:54]).replace(':', ''))
+            coord_line = re.findall(r'(-?\d+\.*\d*\s*)(-?\d+\.*\d*\s*)(-?\d+\.*\d*\s)', line[30:55])
+            if not len(coord_line): x, y, z = None, None, None
+            else:
+                match = coord_line[0]
+                # print('for {} match: {} line: {}'.format(name, match, coord_line))
+                x = get_coord(skin(match[0]).replace(':', ''), name)
+                y = get_coord(skin(match[1]).replace(':', ''), name)
+                z = get_coord(skin(match[2]).replace(':', ''), name)
         else: x, y, z = None, None, None
         tmp_rec = Record(pdb_id=name, label=label, sn=skin(line[6:11]), atom=skin(line[12:16]),
                          alt_loc=line[16:17], lig_code=skin(line[17:20]), chain=skin(line[21:22]),
                          lig_seq=skin(line[22:26]), icode=line[26:27], x=x, y=y, z=z, occp=skin(line[54:60]),
                          temp=skin(line[60:66]), elem=skin(line[76:78]), charge=skin(line[78:80]))
     return tmp_rec
+
 
 def new_struct(lines, pdb_id):
     struct = Struct()
@@ -215,19 +231,26 @@ def new_struct(lines, pdb_id):
 
     return struct
 
-def get_coord(coord):
+
+def get_coord(coord, pdb_id):
     """Parses string for float coordinate. Blanks, Nones & errors result in return value of 0.0."""
     if coord is None or coord == '': return 0.0
     else:
         tmp_coord = ''
         for c in coord:
-            if c == '.' or c == '-' or c.isdigit(): tmp_coord += c
-        if tmp_coord == '': return 0.0
-        else: return float(tmp_coord)
+            if c == '.' or coord.index(c) or c.isdigit(): tmp_coord += c
+        try:
+            if tmp_coord == '': return 0.0
+            else: return float(tmp_coord)
+        except ValueError as e:
+            print('error with file {}: {}. input val = {}'.format(pdb_id, e, coord))
+            return 0.0
+
 
 def get_vector(a: Atom, b: Atom):
     """ Returns (Bx-Ax, By-Ay, Bz-Az) """
     return b.x - a.x, b.y - a.y, b.z - a.z
+
 
 def find_plane_eqn(pa, pb, pc):
     """Finds components of plane formula ax + by + cz + d = 0 & creates equation object with calculated values."""
@@ -239,18 +262,22 @@ def find_plane_eqn(pa, pb, pc):
     eqn = Equation(a, b, c, d)  # make equation object
     return eqn
 
+
 def f_min(val, p):
     plane = p[0:3]
     dist = (plane * val.T).sum(axis=1) + p[3]
     return dist / np.linalg.norm(plane)
 
+
 def find_residuals(params, signal, val): return f_min(val, params)
+
 
 def show_atom_distance(atm1, atm2):
     """Print distance between two atoms with float formatting."""
     dist = atom_distance(atm1, atm2)
     print('distance between {} ({:6.3f}, {:6.3f}, {:6.3f}) & {} ({:6.3f}, {:6.3f}, {:6.3f}) is '
           '~{:6.4f} angstroms'.format(atm1.atom, atm1.x, atm1.y, atm1.z, atm2.atom, atm2.x, atm2.y, atm2.z, dist))
+
 
 def atom_distance(atm1, atm2):
     """Find distance between two atoms"""

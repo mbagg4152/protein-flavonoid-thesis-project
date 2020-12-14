@@ -8,12 +8,12 @@ from re import findall, sub
 import glob
 
 knap_ids = []
+org_list = []
 json_keys = [K_INCHI, K_IKEY, K_SMILE, K_ISO, K_LONG, K_NAME]
 snames = [S_INCHI, S_IKEY, K_SMILE, K_SMILE, S_METAB, S_METAB]
-org_list = []
-smiles_list = {}
-part_list = {}
 knap_data = {}
+part_list = {}
+smiles_list = {}
 matches = 'LigID\tC_ID\tMatch\tName\tLong\tKSNames\tForm\tKSForm\tSMILES\tIsomeric\tKS_SMILES\tINCHI\tINCHIKEY\t' \
           'CAS_ID\tCHEMBL\tCHEBI\tPUBCHEM'
 
@@ -35,9 +35,9 @@ Path(pages).mkdir(parents=True, exist_ok=True)
 
 def main():
     global smiles_list, knap_ids, part_list
-    smiles_list = get_json_data(FN_SMILES)
-    part_list = get_json_data(FN_SMILES_PART)
-    knap_ids = get_json_data(FN_KNAP)
+    smiles_list = get_json_data(FN_LIG_IDENTIFIERS)
+    part_list = get_json_data(FN_LIG_IDENTIFIERS_PART)
+    knap_ids = get_json_data(FN_PDB_KNAP_IDS)
     # get_knapsack_codes()
     # with open(knap_id_info, 'w') as outfile:
     #     out = ''
@@ -53,7 +53,6 @@ def get_knapsack_codes():
     for key in smiles_list:
         words = []
         for sname in json_keys: words.append(smiles_list.get(key).get(sname).strip().replace(' ', '%20'))
-        # print(str(words))
 
         for i in range(0, len(json_keys)):
             if not is_ascii(words[i]): words[i] = ''.join(str(ord(c)) for c in words[i])
@@ -202,7 +201,7 @@ def get_knap_url(sname, word):
 def get_extra_info():
     out_str = ""
     for key in smiles_list:
-        tmp_url = pdb_url + key
+        tmp_url = PDB_URL + key
         name = pages + key + ".txt"
         if not os.path.exists(name):
             try: request.urlretrieve(tmp_url, name)

@@ -2,14 +2,12 @@ import json
 import os
 import re
 
-try: from pathstrings import *
-except ModuleNotFoundError: from lib.pathstrings import *
 try:
-    from miscvals import *
-    from pathstrings import SEP
+    from const_vals import *
+    from const_paths import *
 except ModuleNotFoundError:
-    from lib.miscvals import *
-    from lib.pathstrings import SEP
+    from lib.const_vals import *
+    from lib.const_paths import *
 
 
 def get_json_data(file_name, key=None):
@@ -166,6 +164,7 @@ def mult_replace(line, pairs):
     """
     for pair in pairs: line = line.replace(pair[0], pair[1])
     return line
+
 
 def skin(line):
     """

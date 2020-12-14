@@ -3,7 +3,7 @@ import re
 
 try:
     from util import *
-    from pathstrings import *
+    from const_paths import *
 except ModuleNotFoundError:
     from lib.util import *
     from lib.pathstrings import *

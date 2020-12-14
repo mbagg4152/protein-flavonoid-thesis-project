@@ -1,6 +1,6 @@
-from jsondata import *
-from pathstrings import SEP
-from miscvals import *
+from json_objects import *
+from const_paths import SEP
+from const_vals import *
 import os
 import re
 
