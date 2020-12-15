@@ -54,6 +54,7 @@ FN_PDB_SINGLE = JSON_DIR + 'ProtPdbSingleID.json'
 FN_PROTEIN = JSON_DIR + 'ProtProteinIDs.json'
 FN_RINGS = JSON_DIR + 'ProtRings.json'
 FN_LIG_TESTS = JSON_DIR + 'ProtTestLigandIDs.json'
+FN_PUBCHEM_PDB = JSON_DIR + 'ProtPubchemPDB.json'
 
 FN_NCOMP_CODES = JSON_DIR + 'NpassCompCodes.json'
 FN_NCOMP_DICT = JSON_DIR + 'NpassCompCodesNames.json'
