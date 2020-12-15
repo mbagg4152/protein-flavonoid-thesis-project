@@ -8,7 +8,7 @@ ERR_VAL = 'ERR_WITH_REQUEST'
 OUT_JSON = '/json'
 OUT_TXT = '/txt'
 PUBCHEM_PREFIX = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/'
-SYN_HEAD = 'Synonyms ({} Separated)'
+SYN_HEAD = 'Synonyms (!! Separated)'
 PROP_PAIRS = [('IUPACName', 'IUPAC'), ('InChI', 'InChI'), ('InChIKey', 'InChIKey'), ('CanonicalSMILES', 'CannonSMILES'),
               ('IsomericSMILES', 'IsoSMILES'), ('MolecularFormula', 'Formula'), ('MolecularWeight', 'Weight'), ('Charge', 'Charge'),
               ('Fingerprint2D', 'Fingerprint2D'), ('RotatableBondCount', '#RotatableBonds'), ('HeavyAtomCount', '#HeavyAtoms'),
@@ -63,33 +63,18 @@ def fetch_pubchem_data():
         out = key + '\t' + pc_id + '\t'
         data = make_request(make_url(pc_id, ACT_PROP, OUT_JSON), 'PropertyTable', 'Properties', key, pc_id, 'PROPERTIES', prop_dir)
         if data != ERR_VAL:
-            for prop in PROPS:
-                val = data.get(prop)
-                data_str = get_data_str(val, ',')
-                out += data_str
-                if len(data_str) > 50000:
-                    print('?????len of {} greater than 5K char for {}, {}. len = {}'.format(prop, key, pc_id, len(data_str)))
+            for prop in PROPS: out += get_data_str(data.get(prop), ',')
         else: out += ''.join(['NONE\t' for prop in PROPS])
 
         data = make_request(make_url(pc_id, ACT_XREF, OUT_JSON), 'InformationList', 'Information', key, pc_id, 'XREFS', xref_dir)
         if data != ERR_VAL:
-            for xref in XREFS:
-                val = data.get(xref)
-                data_str = get_data_str(val, ',')
-                out += data_str
-                if len(data_str) > 50000:
-                    print('?????len of {} greater than 5K char for {}, {}. len = {}'.format(xref, key, pc_id, len(data_str)))
+            for xref in XREFS: out += get_data_str(data.get(xref), ',')
         else: out += ''.join(['NONE\t' for xref in XREFS])
 
         data = make_request(make_url(pc_id, ACT_SYN, OUT_JSON), 'InformationList', 'Information', key, pc_id, 'SYNONYMS', syn_dir)
         if data != ERR_VAL:
-            val = data.get('Synonym')
-            names = get_data_str(val, '{}')
-            if len(names) > 50000:
-                print('?????len of synonyms greater than 5K char for {}, {}. len = {}'.format(key, pc_id, len(names)))
-            # out += names + '\t'
-            out += ' ' + '\t'
-            name_list = names.split('{}')
+            out += get_data_str(data.get('Synonym'), '!!')
+            name_list = get_data_str(data.get('Synonym'), '!!').split('!!')
             for misc in MISC:
                 tmp_list = []
                 for name in name_list:
@@ -108,22 +93,30 @@ def fetch_pubchem_data():
 
 def make_request(url, key1, key2, pdb, pub, search, out_dir):
     has_file = False
+
     if os.path.exists(out_dir + pdb + '.json'):
         try:
             with open(out_dir + pdb + '.json') as tmp_json: content = json.load(tmp_json)
             has_file = True
-        except FileNotFoundError as e: return request_err_handler(search, pdb, pub, e)
+        except (FileNotFoundError, json.JSONDecodeError) as e: return request_err_handler(search, pdb, pub, e)
     else:
-        try:
-            content = url_req.urlopen(url).read().decode('utf-8').replace('\n', '')
-            with open(out_dir + pdb + '.json', 'w') as tmp_file: tmp_file.write(content)
-        except (url_err.HTTPError, url_err.URLError, ValueError, UnicodeDecodeError)as e:
-            return request_err_handler(search, pdb, pub, e)
+        with open(out_dir + pdb + '.json', 'w') as tmp_file:
+            try:
+                content = url_req.urlopen(url).read().decode('utf-8').replace('\n', '')
+                tmp_file.write(content)
+            except (url_err.HTTPError, url_err.URLError, ValueError, UnicodeDecodeError)as e:
+                failed_obj = '{"' + key1 + '": {"' + key2 + '": [{"msg": "there was no data found for this compound"}]}}'
+                tmp_file.write(failed_obj)
+                return request_err_handler(search, pdb, pub, e)
 
     try:
         if has_file:
-            print('[data is from local file] got {} for {} with pubchem id {}'.format(search.lower(), pdb, pub))
-            return content[key1][key2][0]
+            if 'there was no data found for this compound' in str(content):
+                print('[from local file] searched before and no {} for {} with pubchem id {}'.format(search.lower(), pdb, pub))
+                return ERR_VAL
+            else:
+                print('[data is from local file] got {} for {} with pubchem id {}'.format(search.lower(), pdb, pub))
+                return content[key1][key2][0]
         else:
             print('got {} for {} with pubchem id {}'.format(search.lower(), pdb, pub))
             return json.loads(content)[key1][key2][0]
@@ -135,10 +128,19 @@ def request_err_handler(search, pdb, pub, err):
 
 def get_data_str(val, sep):
     if isinstance(val, list):
-        uniq = list(set(val))
-        for i in range(0, len(uniq)):
-            tmp = uniq[i]
-            if not isinstance(tmp, str): uniq[i] = str(tmp)
+        uniq = []
+        total_len = 0
+        for item in val:
+            if not isinstance(item, str): item = str(item)
+            if total_len == 50000 or (total_len + len(item) + len(sep)) >= 50000:
+                tmp_total = total_len
+                while tmp_total + (2 * len(sep)) + len('CHOPPED_LIST') > 50000:
+                    del uniq[-1]
+                    tmp_total -= (len(uniq[-1]) + len(sep))
+                uniq.insert(0, 'CHOPPED_LIST')
+                break
+            total_len += len(item) + len(sep)
+            if item not in uniq: uniq.append(item)
         return sep.join(uniq) + '\t'
     else: return '{}'.format(val) + '\t'
 
