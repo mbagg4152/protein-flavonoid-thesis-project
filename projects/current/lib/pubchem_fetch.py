@@ -56,7 +56,7 @@ def fetch_pubchem_data():
     global total_out
     #####################################################################
     # Vals that need multiple columns
-    # GeneID
+    # GeneID, synonyms
     #####################################################################
     for key in pubchem_pdb:
         pc_id = pubchem_pdb.get(key)
@@ -67,7 +67,8 @@ def fetch_pubchem_data():
                 val = data.get(prop)
                 data_str = get_data_str(val, ',')
                 out += data_str
-                if len(data_str) > 5000: print('?????len of {} greater than 5K char for {}, {}'.format(prop, key, pc_id))
+                if len(data_str) > 5000:
+                    print('?????len of {} greater than 5K char for {}, {}. len = {}'.format(prop, key, pc_id, len(data_str)))
         else: out += ''.join(['NONE\t' for prop in PROPS])
 
         data = make_request(make_url(pc_id, ACT_XREF, OUT_JSON), 'InformationList', 'Information', key, pc_id, 'XREFS', xref_dir)
@@ -76,14 +77,16 @@ def fetch_pubchem_data():
                 val = data.get(xref)
                 data_str = get_data_str(val, ',')
                 out += data_str
-                if len(data_str) > 5000: print('?????len of {} greater than 5K char for {}, {}'.format(xref, key, pc_id))
+                if len(data_str) > 5000:
+                    print('?????len of {} greater than 5K char for {}, {}. len = {}'.format(xref, key, pc_id, len(data_str)))
         else: out += ''.join(['NONE\t' for xref in XREFS])
 
         data = make_request(make_url(pc_id, ACT_SYN, OUT_JSON), 'InformationList', 'Information', key, pc_id, 'SYNONYMS', syn_dir)
         if data != ERR_VAL:
             val = data.get('Synonym')
             names = get_data_str(val, '{}')
-            if len(names) > 5000: print('?????len of synonyms greater than 5K char for {}, {}'.format(key, pc_id))
+            if len(names) > 5000:
+                print('?????len of synonyms greater than 5K char for {}, {}. len = {}'.format(key, pc_id, len(names)))
             # out += names + '\t'
             out += ' ' + '\t'
             name_list = names.split('{}')
@@ -132,10 +135,11 @@ def request_err_handler(search, pdb, pub, err):
 
 def get_data_str(val, sep):
     if isinstance(val, list):
-        for i in range(0, len(val)):
-            tmp = val[i]
-            if not isinstance(tmp, str): val[i] = str(tmp)
-        return sep.join(val) + '\t'
+        uniq = list(set(val))
+        for i in range(0, len(uniq)):
+            tmp = uniq[i]
+            if not isinstance(tmp, str): uniq[i] = str(tmp)
+        return sep.join(uniq) + '\t'
     else: return '{}'.format(val) + '\t'
 
 def make_url(pc_id, action, output_form): return PUBCHEM_PREFIX + pc_id + action + output_form
