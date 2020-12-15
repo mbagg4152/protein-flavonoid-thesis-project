@@ -67,7 +67,7 @@ def fetch_pubchem_data():
                 val = data.get(prop)
                 data_str = get_data_str(val, ',')
                 out += data_str
-                if len(data_str) > 5000:
+                if len(data_str) > 50000:
                     print('?????len of {} greater than 5K char for {}, {}. len = {}'.format(prop, key, pc_id, len(data_str)))
         else: out += ''.join(['NONE\t' for prop in PROPS])
 
@@ -77,7 +77,7 @@ def fetch_pubchem_data():
                 val = data.get(xref)
                 data_str = get_data_str(val, ',')
                 out += data_str
-                if len(data_str) > 5000:
+                if len(data_str) > 50000:
                     print('?????len of {} greater than 5K char for {}, {}. len = {}'.format(xref, key, pc_id, len(data_str)))
         else: out += ''.join(['NONE\t' for xref in XREFS])
 
@@ -85,7 +85,7 @@ def fetch_pubchem_data():
         if data != ERR_VAL:
             val = data.get('Synonym')
             names = get_data_str(val, '{}')
-            if len(names) > 5000:
+            if len(names) > 50000:
                 print('?????len of synonyms greater than 5K char for {}, {}. len = {}'.format(key, pc_id, len(names)))
             # out += names + '\t'
             out += ' ' + '\t'
