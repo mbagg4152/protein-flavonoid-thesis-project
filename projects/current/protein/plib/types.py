@@ -20,7 +20,7 @@ except ImportError:
 
 
 class Atom:
-    def __init__(self, name=DS, elem=DS, x=DF, y=DF, z=DF, from_center=DF, ligand=DS, chain=DS):
+    def __init__(self, name=DS, elem=DS, x=DF, y=DF, z=DF, from_center=DF, ligand=DS, chain=DS, seq=DS):
         self.name = name
         self.elem = elem
         self.x = x
@@ -29,6 +29,7 @@ class Atom:
         self.from_center = from_center
         self.ligand = ligand
         self.chain = chain
+        self.seq = seq
         self.from_origin()
 
     def show(self): print(self.string())
@@ -47,61 +48,50 @@ class Equation:
         self.c = c
         self.d = d
 
-    def string(self):
-        return '{:6.3f}x + {:6.3f}y + {:6.3f}z + {:6.3f} = 0'.format(self.a, self.b, self.c, self.d)
-
-    def show(self):
-        print('{:6.3f}x + {:6.3f}y + {:6.3f}z + {:6.3f} = 0'.format(self.a, self.b, self.c, self.d))
-
-    def func_form(self):
-        z = -self.c
-        return 'z = {:6.3f}x + {:6.3f}y + {:6.3f}'.format(self.a / z, self.b / z, self.d / z)
-
-    def func_form_tup(self):
-        z = -self.c
-        return self.a / z, self.b / z, self.d / z
+    def func_form(self): return 'z = {:6.3f}x + {:6.3f}y + {:6.3f}'.format(self.a / -self.c, self.b / -self.c, self.d / -self.c)
+    def func_form_tup(self): return self.a / -self.c, self.b / -self.c, self.d / -self.c
+    def show(self): print('{:6.3f}x + {:6.3f}y + {:6.3f}z + {:6.3f} = 0'.format(self.a, self.b, self.c, self.d))
+    def string(self): return '{:6.3f}x + {:6.3f}y + {:6.3f}z + {:6.3f} = 0'.format(self.a, self.b, self.c, self.d)
 
 
 class Struct:
-    def __init__(self, pdb_id=None, group=None, title=None, ec_nums=None, records=None, org_name=None, org_sci=None,
-                 org_taxid=None, ex_sys=None, ex_sys_taxid=None, organ=None, file_type=None, ec_str=None,
-                 atoms=None, planes=None):
-        self.pdb_id = pdb_id if pdb_id is not None else ''
-        self.group = group if group is not None else ''
-        self.title = title if title is not None else ''
-        self.ec_nums = ec_nums if ec_nums is not None else []
-        self.records = records if records is not None else []
-        self.org_name = org_name if org_name is not None else 'No common name'
-        self.org_sci = org_sci if org_sci is not None else 'No scientific name'
-        self.org_taxid = org_taxid if org_taxid is not None else 'No taxonomy ID'
-        self.ex_sys = ex_sys if ex_sys is not None else 'No expression system'
-        self.ex_sys_taxid = ex_sys_taxid if ex_sys_taxid is not None else 'No expression system taxonomy ID'
-        self.organ = organ if organ is not None else 'No organ'
-        self.file_type = file_type if file_type is not None else ''
-        self.ec_str = ec_str if ec_str is not None else 'No EC numbers'
-        self.atoms = atoms if atoms is not None else []
-        self.planes = planes if planes is not None else []
+    def __init__(self, pdb_id=NS, group=NS, title=NS, ec_nums=DL, records=DL, org_name=NS, org_sci=NS, org_taxid=NS, ex_sys=NS,
+                 ex_sys_taxid=NS, organ=NS, ft=NS, ec_str=NS, atoms=DL, rings=DL, ligands=DL):
+        self.atoms = atoms
+        self.ec_nums = ec_nums
+        self.ec_str = ec_str
+        self.ex_sys = ex_sys
+        self.ex_sys_taxid = ex_sys_taxid
+        self.ft = ft
+        self.group = group
+        self.ligands = ligands
+        self.org_name = org_name
+        self.org_sci = org_sci
+        self.org_taxid = org_taxid
+        self.organ = organ
+        self.pdb_id = pdb_id
+        self.rings = rings
+        self.records = records
+        self.title = title
 
-    def get_record(self, atom_name, lig_code, chain):
+    def get_record(self, atom_name, lig_code, chain, seq):
         for record in self.records:
-            if record.atom == atom_name and record.lig_code == lig_code and record.chain == chain: return record
+            if record.atom == atom_name and record.lig_code == lig_code and record.chain == chain and seq == record.lig_seq: return record
         print('!!!Nothing for atom {} in chain {} of ligand {}'.format(atom_name, chain, lig_code))
         return Record()
 
-    def new_plane(self, atom_names, lig_code, chain):
+    def new_ring(self, atom_names, lig_code, chain, seq):
         atoms = []
         for name in atom_names:
-            tmp_rec = self.get_record(name, lig_code, chain)
+            tmp_rec = self.get_record(name, lig_code, chain, seq)
             if tmp_rec is None: return
             tmp_atm = atom_from_record(tmp_rec)
             tmp_atm.from_origin()
             self.atoms.append(tmp_atm)
             atoms.append(tmp_atm)
-        plane = Plane(atoms)
+        plane = Ring(atoms=atoms, ligand=lig_code, chain=chain, seq=seq)
         plane.set_eqn()
-        plane.ligand = lig_code
-        plane.chain = chain
-        self.planes.append(plane)
+        self.rings.append(plane)
 
 
 class Record:
@@ -125,18 +115,20 @@ class Record:
         self.z = z
 
     def info_str(self):
-        out = '> {}, {} | Atom: {} | S#: {} | Elem: {} | Lig: {} | LigSeq: {} | X, Y, Z: ({}, {}, {}) | ' \
-              'Chain: {}\n'.format(self.pdb_id, self.label, self.atom, self.sn, self.elem, self.lig_code,
-                                   self.lig_seq, self.x, self.y, self.z, self.chain)
+        out = '> {}, {} | ATOM {} | SN {} | ELEM {} | LIG {} | SEQ {} | X, Y, Z: ({}, {}, {}) | ' \
+              'CHAIN {}\n'.format(self.pdb_id, self.label, self.atom, self.sn, self.elem, self.lig_code,
+                                  self.lig_seq, self.x, self.y, self.z, self.chain)
         return out
 
+    def show(self): print('{}: {} {} SEQ_{} CHAIN_{}'.format(self.pdb_id, self.atom, self.lig_code, self.lig_seq, self.chain))
 
-class Plane:
-    def __init__(self, atoms: [Atom], eqn=None, ligand=DS, chain=DS):
+class Ring:
+    def __init__(self, atoms: [Atom], eqn=None, ligand=DS, chain=DS, seq=DS):
         self.atoms = atoms
         self.eqn = eqn if eqn is not None else Equation(DF, DF, DF, DF)
         self.ligand = ligand
         self.chain = chain
+        self.seq = seq
 
     def string(self):
         atoms = ''
@@ -178,23 +170,22 @@ class Plane:
 
 
 def atom_from_record(rec: Record):
-    return Atom(rec.atom, rec.elem, rec.x, rec.y, rec.z, ligand=rec.lig_code, chain=rec.chain)
+    return Atom(rec.atom, rec.elem, rec.x, rec.y, rec.z, ligand=rec.lig_code, chain=rec.chain, seq=rec.lig_seq)
 
 
 def new_record(line, name):
     """Make new record object from PDB file. Will only create coordinate properties for ATOM/HETATM records."""
     if len(line) < 60: tmp_rec = Record()
     else:
-        # ranges taken from the PDB documentation, column values are found in record_formats.txt
-        # beginning of range listed in file is one less due to list indices starting at 0. the end value is the same
-        # since taking a subsection of a string works as such: substring = string[start:end-1]
+        # ranges taken from the PDB documentation, column values are found in record_formats.txt beginning of range listed in file is one
+        # less due to list indices starting at 0. the end value is the same since taking a subsection of a string works as such:
+        # substring = string[start:end-1]
         label = skin(line[0:6])
         if K_ATM in label or K_HAT in label:
-            coord_line = re.findall(r'(-?\d+\.*\d*\s*)(-?\d+\.*\d*\s*)(-?\d+\.*\d*\s)', line[30:55])
+            coord_line = re.findall(r'(-?\d+\.*\d*\s*)(-?\d+\.*\d*\s*)(-?\d+\.*\d*\s)', line[30:54])
             if not len(coord_line): x, y, z = None, None, None
             else:
                 match = coord_line[0]
-                # print('for {} match: {} line: {}'.format(name, match, coord_line))
                 x = get_coord(skin(match[0]).replace(':', ''), name)
                 y = get_coord(skin(match[1]).replace(':', ''), name)
                 z = get_coord(skin(match[2]).replace(':', ''), name)
