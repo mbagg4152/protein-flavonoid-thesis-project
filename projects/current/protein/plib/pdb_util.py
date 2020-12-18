@@ -1,21 +1,37 @@
-from types import *
+from plib.types import ProtStruct
+from plib.strings_consts import *
+from plib.types import *
+import numpy as np
+import sys
+import urllib.error as url_err
+import urllib.request as url_req
 
-def get_struct(pdb_id):
-    """Find structure from global list of processed PDB files using PDB ID."""
-    for entry in pdb_entries:
-        if pdb_id == entry.pdb_id: return entry
-    print('!!!WARNING!!!Could not find entry for PDB ID {}, returning empty entry'.format(pdb_id))
-    return Struct()
+try:
+    import matplotlib.pyplot as plt
+    from Bio.PDB import PDBIO, MMCIFParser
+except ImportError:
+    print('Program needs matplotlib and biopython to work. One or both are missing. In the terminal, try:\n'
+          '`pip3 install -U matplotlib` or `pip install -U matplotlib`\n`pip3 install biopython` or `pip install biopython`')
+    exit(1)
+try:
+    from json_objects import *
+    from util import *
+except ImportError:
+    sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
+    from lib.json_objects import *
+    from lib.util import *
+
+plt.rc('xtick', labelsize=4)  # set font size for ticks on x axis for pyplot
+plt.rc('ytick', labelsize=4)  # set font size for ticks on y axis for pyplot
 
 def same_atom(atom1, atom2):
     return (atom1.x == atom2.x) and (atom1.y == atom2.y) and (atom1.z == atom2.z)
-
 
 def quick_plot(plane, path):
     """Output figures which show the planes and the atoms in a graph at different viewing angles."""
     print('Making graphs....')
     atoms = plane.atoms
-    atoms.sort(key=lambda a: a.from_center)
+    # atoms.sort(key=lambda a: a.from_center)
 
     # make list of x, y & z coordinates using each of the atoms
     x, y, z = list((atm.x for atm in atoms)), list((atm.y for atm in atoms)), list((atm.z for atm in atoms))
@@ -38,8 +54,8 @@ def quick_plot(plane, path):
     fig.savefig(path + '.png', dpi=200)
 
 def get_convert_cifs(url, cif_path, pdb_path):
-    try: request.urlretrieve(url, cif_path)
-    except urllib.error.URLError or urllib.error.HTTPError as e:
+    try: url_req.urlretrieve(url, cif_path)
+    except (url_err.URLError, url_err.HTTPError):
         print("!!!HTTP or URL error, couldn't get " + url + '.')
         return
     try:
@@ -50,9 +66,3 @@ def get_convert_cifs(url, cif_path, pdb_path):
         io.save(pdb_path)
         print('^^^SUCCESSFULLY CONVERTED CIF TO PDB')
     except TypeError: print('Problem making pdb file')
-
-def show_entry(pdb_id, grp, ec_nums, num_rec, org, tax, ex_sys):
-    print(entry_str(pdb_id, grp, ec_nums, num_rec, org, tax, ex_sys))
-
-def entry_str(pdb_id, grp, ec_nums, num_rec, org, tax, ex_sys):
-    return '{} || {} || {} || {} || {} || {} || {} records'.format(pdb_id, grp, org, tax, ex_sys, ec_nums, num_rec)

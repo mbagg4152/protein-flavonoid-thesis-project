@@ -7,25 +7,8 @@ from urllib import request
 import urllib.error
 import multiprocessing
 from plib.pdb_util import *
+from itertools import groupby
 
-try:
-    import matplotlib.pyplot as plt
-    from Bio.PDB import PDBIO, MMCIFParser
-except ImportError:
-    print('Program needs matplotlib and biopython to work. One or both are missing. In the terminal, try:\n'
-          '`pip3 install -U matplotlib` or `pip install -U matplotlib`\n'
-          '`pip3 install biopython` or `pip install biopython`')
-    exit(1)
-try:
-    from json_objects import *
-    from util import *
-except ImportError:
-    # allows for imports from directories at the same level
-    sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
-    from lib.json_objects import *
-    from lib.util import *
-plt.rc('xtick', labelsize=4)  # set font size for ticks on x axis for pyplot
-plt.rc('ytick', labelsize=4)  # set font size for ticks on y axis for pyplot
 pdb_objects_list = []
 pdb_entries = []
 pdb_objects = {}
@@ -43,6 +26,9 @@ thread_lim = multiprocessing.cpu_count() - 1  # determine number of usable threa
 def main():
     run_file_calc_thread()
     # run_parse()
+    with open(formatted_out, 'w+') as out_file:
+        out_file.write(total_pdb_output)
+        out_file.close()
 
 def run_file_calc_thread():
     test_pdb_ids = get_json_data(FN_LIG_TESTS)
@@ -65,9 +51,6 @@ def run_parse():
         out_file.write(total_pdb_output)
         out_file.close()
 
-    with open(formatted_basic, 'w+')as out_basic:
-        out_basic.write(pdb_basic_info)
-        out_basic.close()
     end_time = datetime.now()
     total_time = end_time - init_time
     print('\ntotal time taken to download & parse files: {}'.format(total_time))
@@ -82,7 +65,7 @@ def file_calculations(pdb_id):
     global total_pdb_output, pdb_entries, pdb_objects, pdb_basic_info
     get_parse_pdbs(this_url, pdb_test_dir + pdb_id + '.pdb', pdb_id, skip_download=True)
 
-def find_hydrogen(entry: Struct):
+def find_hydrogen(entry: ProtStruct):
     """Find every H atom that is within 1.2 angstroms of any O atom."""
     oxygens, hydrogens, selected_hydrogens = [], [], []
     for rec in entry.records:
@@ -141,7 +124,6 @@ def get_parse_pdbs(url, path, pdb_id, skip_download=False):
     if not skip_download:
         if not os.path.exists(path):
             print('***PDB file not found for ' + pdb_id + ', starting download')
-
             try:
                 urllib.request.urlretrieve(url, path)
                 print('✓✓✓PDB ' + pdb_id + ' downloaded.')
@@ -157,8 +139,9 @@ def get_parse_pdbs(url, path, pdb_id, skip_download=False):
         print('!!!PDB file not found')
         return
     f_lines = file.readlines()
-    tmp_entry = new_struct(lines=f_lines, pdb_id=pdb_id)
-    tmp_entry.ligands = []
+    t_struct = new_struct(lines=f_lines, pdb_id=pdb_id)
+    t_struct.ligands = []
+
     for line in f_lines:
         if K_ATM in line or K_HAT in line:
             rec = new_record(line=line, name=pdb_id)
@@ -168,26 +151,52 @@ def get_parse_pdbs(url, path, pdb_id, skip_download=False):
                 with lock_obj:
                     if pdb_id in pdb_objects.keys(): pdb_objects[pdb_id].append(rec)
                     else: pdb_objects[pdb_id] = [rec]
-                tmp_entry.records.append(rec)
-                if skin(rec.lig_code) not in tmp_entry.ligands: tmp_entry.ligands.append(skin(rec.lig_code))
-
-    for lig in struct_rings:
-
-        if lig in tmp_entry.ligands:
+                if isinstance(rec, AtomRec): t_struct.records.append(rec)
+                if skin(rec.lig_code) not in t_struct.ligands: t_struct.ligands.append(skin(rec.lig_code))
+    for lig in t_struct.ligands:
+        if lig in list(struct_rings.keys()):
             rings = struct_rings.get(lig)
             for ring in rings:
                 good_recs = []
-                for atom in rings.get(ring):
-                    good_recs.extend([o for o in tmp_entry.records if o.atom == atom and o.pdb_id == pdb_id])
+                for atom_name in rings.get(ring):
+                    for recs in t_struct.records:
+                        # print('lig ' + lig)
+                        if isinstance(recs, AtomRec):
+                            try:
+                                if recs.atom == atom_name and recs.pdb_id == pdb_id and recs.lig_code == lig: good_recs.append(recs)
+                            except AttributeError: print('record was type {}'.format(str(type(recs))))
                 if len(good_recs):
-                    print('!!!!matched records from {} for ligand {} ring {}'.format(pdb_id, lig, ring))
-                    for gr in good_recs:
-                        gr.show()
+                    seq_list = list(set([o.seq for o in good_recs]))
+                    chain_list = list(set([o.chain for o in good_recs]))
+                    print(str(chain_list))
+                    for seq in seq_list:
+                        passed_recs = []
+                        for gr in good_recs:
+                            if gr.seq == seq: passed_recs.append(gr)
 
-    with lock_entry: pdb_entries.append(tmp_entry)
-    with lock_basic:
-        pdb_basic_info += entry_str(pdb_id, tmp_entry.group, tmp_entry.ec_str, len(tmp_entry.records),
-                                    tmp_entry.org_sci, tmp_entry.org_taxid, tmp_entry.ex_sys) + '\n'
+                        if len(passed_recs):
+                            for ch in chain_list:
+                                sect = []
+                                names = []
+                                for pr in passed_recs:
+                                    if pr.chain.strip() == ch.strip():
+                                        sect.append(pr)
+                                        names.append(pr.atom)
+
+                                if len(sect):
+                                    try: t_struct.new_ring(names, sect[0].lig_code, sect[0].chain, sect[0].seq, ring)
+                                    except AttributeError: pass
+        for rng in t_struct.rings:
+            if not isinstance(rng, Ring): t_struct.rings.remove(rng)
+            else: print(pdb_id + ' ' + rng.string())
+    with lock_entry: pdb_entries.append(t_struct)
+
+def get_struct(pdb_id):
+    """Find structure from global list of processed PDB files using PDB ID."""
+    for entry in pdb_entries:
+        if pdb_id == entry.pdb_id: return entry
+    print('!!!WARNING!!!Could not find entry for PDB ID {}, returning empty entry'.format(pdb_id))
+    return ProtStruct()
 
 if __name__ == '__main__':
     main()

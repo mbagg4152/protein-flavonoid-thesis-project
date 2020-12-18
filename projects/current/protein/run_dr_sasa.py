@@ -3,6 +3,8 @@ import os
 from os.path import exists
 from pathlib import Path
 import platform
+import urllib.request as url_req
+import urllib.error as url_err
 
 sep = os.sep
 DS_DIR = os.getcwd() + sep + 'dr_sasa'
@@ -84,20 +86,26 @@ def check_install():
 
             os.system(cmd)
 
-def fetch_run(url, dir_path1, dir_path2, file_path1, file_path2):
-    cmd1 = 'cd ' + dir_path1 + ';' + \
-           'wget -O ' + file_path1 + ' ' + url + ';' + \
-           DS_PATH + ' -m 4 -i ' + file_path1
-    cmd2 = 'cd ' + dir_path2 + ';' + \
-           'wget -O ' + file_path2 + ' ' + url + ';' + \
-           DS_PATH + ' -m 0 -i ' + file_path2
-    print('running mode 0')
-    os.system(cmd2)
-    print('running mode 4')
-    os.system(cmd1)
+def fetch_run(url, dir_path_m4, dir_path_m0, file_path_m4, file_path_m0):
+    cmd_m0_1 = 'cd ' + dir_path_m0
+    cmd_m0_2 = cmd_m0_1 + ';' + DS_PATH + ' -m 0 -i ' + file_path_m0
+    cmd_m4_1 = 'cd ' + dir_path_m4
+    cmd_m4_2 = cmd_m4_1 + ';' + DS_PATH + ' -m 4 -i ' + file_path_m4
 
-def atom_distance(rec1, rec2):
-    pass
+    os.system(cmd_m0_1)
+    try:
+        url_req.urlretrieve(url, file_path_m0)
+        print('running mode 0')
+
+        os.system(cmd_m0_2)
+    except (url_err.HTTPError, url_err.URLError): print('Could\'t get file from ' + url + ', will not run dr sasa in mode 0 for this pdb')
+    os.system(cmd_m4_1)
+    try:
+        url_req.urlretrieve(url, file_path_m4)
+        print('running mode 4')
+
+        os.system(cmd_m4_2)
+    except (url_err.HTTPError, url_err.URLError): print('Could\'t get file from ' + url + ', will not run dr sasa in mode 4 for this pdb')
 
 if __name__ == '__main__':
     main()
