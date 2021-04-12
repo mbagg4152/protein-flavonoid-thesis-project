@@ -307,9 +307,13 @@ Need to fill in.
 
 <!--  -->
 ---
-## `parsers/knap_parse.py`
+## `parsers/paconstants.py`
 Need to fill in
 
+<!--  -->
+---
+## `parsers/pubche.py`
+Need to fill in
 
 <!--  -->
 ---
@@ -434,7 +438,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc3MzAyNzU1LDE1NjM0ODczMTksLTExNT
-Q5MDgyNjcsMTg5NDkwOTIxMSwtODMyMTEzMjA3LC0xODcxMTAz
-LC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbLTg3OTQzODE1NywxNTYzNDg3MzE5LC0xMT
+U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
+MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
 -->
