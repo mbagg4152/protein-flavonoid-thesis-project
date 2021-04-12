@@ -44,12 +44,14 @@ JW started the code to get information from KEGG about the species we were inter
 - `pfpy/projects/original/:` contains the code from when Jordan Wilson was developing  
 - `pfpy/projects/current/:` current code
 - `pfpy/projects/current/flavonoid/:` code (and related files) for flavonoid prediction
-	- `pfpy/projects/current/flavonoid/fjson/:` json files required by flavonoid project
-	- `pfpy/projects/current/flavonoid/flib/:` library files used only in flavonoid project
-	- `pfpy/projects/current/flavonoid/data/:` output data folder
-	- `pfpy/projects/current/flavonoid/data/Chemical_Data/:` contains the files for the list of plants predicted per flavonoid  
-- `pfpy/projects/current/flavonoid/data/FASTA_Data/:` contains FASTA EC number data  
-- `pfpy/projects/current/flavonoid/data/Gene_Data/:` contains the data pulled from KEGG for each plant pathway      
+	- `../flavonoid/fjson/:` json files required by flavonoid project
+	- `../flavonoid/flib/:` library files used only in flavonoid project
+	- `../flavonoid/data/:` output data folder
+	- `../flavonoid/data/Chemical_Data/:` contains the files for the list of plants predicted per flavonoid  
+	- `../flavonoid/data/FASTA_Data/:` contains FASTA EC number data  
+	- `../flavonoid/data/Gene_Data/:` contains the data pulled from KEGG for each plant pathway      
+
+
 - `pfpy/projects/current/protein/:` code for the protein-flavonoid interaction project
 
 - `pfpy/projects/current/sharedlib` contains the library/helper code and other assorted test code files.  
@@ -417,7 +419,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE1NjQ5NzM0LDE1NjM0ODczMTksLTExNT
-Q5MDgyNjcsMTg5NDkwOTIxMSwtODMyMTEzMjA3LC0xODcxMTAz
-LC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMjEyNTc4MTQxMiwxNTYzNDg3MzE5LC0xMT
+U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
+MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
 -->
