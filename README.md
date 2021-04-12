@@ -312,12 +312,13 @@ Need to fill in
 
 <!--  -->
 ---
-## `parsers/pubche.py`
+## `parsers/pubchem_fetch.py`
 Need to fill in
+
 
 <!--  -->
 ---
-## `parse_pdbs.py`
+## `protein/pdb_operations.py`
 This program reads in a `JSON` file of PDB IDs and then appends the IDs to the end of a specific URL in order to download each desired PDB or mmCIF file. This is just one of the program options.
 The program can also run calculations on specific PDB structures and is currently set up in a menu-like fashion.   The options include:
 - Finding the distance between two atoms
@@ -438,7 +439,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3OTQzODE1NywxNTYzNDg3MzE5LC0xMT
+eyJoaXN0b3J5IjpbMTE2NDI1NzczMywxNTYzNDg3MzE5LC0xMT
 U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
 MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
 -->
