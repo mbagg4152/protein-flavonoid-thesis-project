@@ -108,8 +108,14 @@ KNApSAcK has a simple partial URL-fetch system for the purpose of being used in 
 __Note:__ Not all files or functions are covered below.  
 
 ## `flavonoid/keggv1.py, keggv2.py`
-The original main file of the program for the flavonoid prediction portion of the project.  
- 
+Previous versions of the main script used in the flavonoid project.
+
+## `flavonoid/keggv2_with_libs.py`
+This file is a 'condensed' version of  `keggv2.py`. Instead of relying on the external imports from the `lib` directory, all of the important variables, functions, etc. are located in within the main file.   
+__Note:__ the  `json_data` directory is still needed for the program to work correctly.    
+This file was made more for convenience since imports can sometimes behave strangely, plus this decreases the number of code files needed to accomplish the same tasks.   
+When continuing development, if you wish to keep a condensed version, it is highly suggested to work on the main and library files first, then build the condensed version.   
+
 ## `flavonoid/keggv3.py`
 The current main file of the program for the flavonoid prediction portion of the project.  
 
@@ -129,11 +135,8 @@ Once the gene data is collected,the data is split up into different list items. 
 Then the data is added to a list such that this gene data is associated with the appropriate plant.
 
 
-## `flavonoid/keggv2_with_libs.py`
-This file is a 'condensed' version of  `keggv2.py`. Instead of relying on the external imports from the `lib` directory, all of the important variables, functions, etc. are located in within the main file.   
-__Note:__ the  `json_data` directory is still needed for the program to work correctly.    
-This file was made more for convenience since imports can sometimes behave strangely, plus this decreases the number of code files needed to accomplish the same tasks.   
-When continuing development, if you wish to keep a condensed version, it is highly suggested to work on the main and library files first, then build the condensed version.   
+
+
 
 <!--  -->
 ---
@@ -426,7 +429,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAwMjY3Mjc5LDE1NjM0ODczMTksLTExNT
-Q5MDgyNjcsMTg5NDkwOTIxMSwtODMyMTEzMjA3LC0xODcxMTAz
-LC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
+eyJoaXN0b3J5IjpbMTk5OTkyNzI1NSwxNTYzNDg3MzE5LC0xMT
+U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
+MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
 -->
