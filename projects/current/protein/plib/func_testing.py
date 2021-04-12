@@ -6,7 +6,7 @@ import re
 
 RE_SEQ = r'(&gt;.*</pre></div>)'
 sep = os.sep
-path_cwd = os.getcwd().replace('lib', '').replace('//', '/').replace('\\\\', '\\')
+path_cwd = os.getcwd().replace('sharedlib', '').replace('//', '/').replace('\\\\', '\\')
 tst_dir = path_cwd + 'misc_files' + sep
 kdb = KEGG()
 pdata = PDB()

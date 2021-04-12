@@ -2,13 +2,13 @@ import json
 import os
 import re
 
-try:
-    from const_vals import *
-    from const_paths import *
-except ModuleNotFoundError:
-    from lib.const_vals import *
-    from lib.const_paths import *
+# try:
+#     from const_vals import *
+#
+# except ModuleNotFoundError:
+#     from sharedlib.const_vals import *
 
+JKEY = 'obj'
 
 def get_json_data(file_name, key=None):
     """
@@ -18,7 +18,8 @@ def get_json_data(file_name, key=None):
     if key is None: key = JKEY
     data = ''
     try:
-        with open(file_name) as jsonFile: data = json.load(jsonFile)
+        with open(file_name) as jsonFile:
+            data = json.load(jsonFile)
     except FileNotFoundError:
         file_name = '..' + SEP + file_name
         with open(file_name) as jsonFile:
@@ -95,8 +96,10 @@ def save_file(lists_to_write, output_dir, current):
     for line in lists_to_write:
         for item in line:
             item = str(item).replace(NL, NIX)  # removes the new lines in each list of list
-            if item == NIX:   writedoc.write('-')  # if the list in the list of list is empty writes a dash
-            else: writedoc.write(item)  # write the entry in the list of lists to the file
+            if item == NIX:
+                writedoc.write('-')  # if the list in the list of list is empty writes a dash
+            else:
+                writedoc.write(item)  # write the entry in the list of lists to the file
             writedoc.write(', ')  # tab delineated; use "," for csv files
     writedoc.write(NL)
     writedoc.close()
@@ -129,8 +132,10 @@ def is_http_error(msg):
     """
     Checks if a string is an HTTP error.
     """
-    if str(msg).strip() in HTTP_ERRS: return False
-    else: return True
+    if str(msg).strip() in HTTP_ERRS:
+        return False
+    else:
+        return True
 
 
 def init_dirs(main_dir, gene, fasta, chem):
@@ -138,14 +143,22 @@ def init_dirs(main_dir, gene, fasta, chem):
     Initializes directories for keggv2.py
     """
     # replaced WindowsError with OSError for more general usage. try to make data directories and handle any errors
-    try: os.mkdir(main_dir)
-    except OSError: pass
-    try: os.mkdir(gene)
-    except OSError or FileExistsError: pass
-    try: os.mkdir(fasta)
-    except OSError or FileExistsError: pass
-    try: os.mkdir(chem)
-    except OSError or FileExistsError: pass
+    try:
+        os.mkdir(main_dir)
+    except OSError:
+        pass
+    try:
+        os.mkdir(gene)
+    except OSError or FileExistsError:
+        pass
+    try:
+        os.mkdir(fasta)
+    except OSError or FileExistsError:
+        pass
+    try:
+        os.mkdir(chem)
+    except OSError or FileExistsError:
+        pass
 
 
 def quick_fetch(pattern, line):
@@ -153,8 +166,10 @@ def quick_fetch(pattern, line):
     Fetch one item from re.findall and return as a string.
     """
     out = ''
-    try: out = re.findall(pattern, line)[0]
-    except IndexError: out = ''
+    try:
+        out = re.findall(pattern, line)[0]
+    except IndexError:
+        out = ''
     return out
 
 

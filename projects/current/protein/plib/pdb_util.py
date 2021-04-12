@@ -18,8 +18,8 @@ try:
     from util import *
 except ImportError:
     sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
-    from lib.json_objects import *
-    from lib.util import *
+    from sharedlib.json_objects import *
+    from sharedlib.util import *
 
 plt.rc('xtick', labelsize=4)  # set font size for ticks on x axis for pyplot
 plt.rc('ytick', labelsize=4)  # set font size for ticks on y axis for pyplot

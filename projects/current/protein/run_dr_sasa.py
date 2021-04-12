@@ -22,7 +22,7 @@ try: from json_objects import *
 except ImportError:
     # allows for imports from directories at the same level
     sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
-    from lib.json_objects import *
+    from sharedlib.json_objects import *
 
 Path(DSO_REL_M4).mkdir(parents=True, exist_ok=True)
 Path(DSO_REL_M0).mkdir(parents=True, exist_ok=True)

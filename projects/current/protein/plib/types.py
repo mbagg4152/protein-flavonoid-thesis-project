@@ -17,7 +17,7 @@ try: from util import skin
 except ImportError:
     # allows for imports from directories at the same level
     sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
-    from lib.util import *
+    from sharedlib.util import *
 
 class Equation:
     def __init__(self, a, b, c, d):

@@ -1,0 +1,1376 @@
+{
+  "obj": [
+    {
+      "LID": "XEG",
+      "CName": "(+)-catechin gallate",
+      "LName": "(2r,3s)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3,4-dihydro-2h-chromen-3-yl 3,4,5-trihydroxybenzoate",
+      "IUPAC": "[(2R,3S)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3,4-dihydro-2H-chromen-3-yl] 3,4,5-trihydroxybenzoate",
+      "Smiles": "c1cc(c(cc1[C@@H]2[C@H](Cc3c(cc(cc3O2)O)O)OC(=O)c4cc(c(c(c4)O)O)O)O)O"
+    },
+    {
+      "LID": "XDE",
+      "CName": "(+)-epinephrine",
+      "LName": "4-[(1s)-1-hydroxy-2-(methylamino)ethyl]benzene-1,2-diol",
+      "IUPAC": "4-[(1S)-1-hydroxy-2-(methylamino)ethyl]benzene-1,2-diol",
+      "Smiles": "CNC[C@H](c1ccc(c(c1)O)O)O"
+    },
+    {
+      "LID": "30Z",
+      "CName": "(±)-nordihydroguaiaretic acid",
+      "LName": "4-[(2r,3s)-3-[(3,4-dihydroxyphenyl)methyl]-2-methylbutyl]benzene-1,2-diol",
+      "IUPAC": "4-[(2S,3S)-4-(3,4-dihydroxyphenyl)-2,3-dimethylbutyl]benzene-1,2-diol",
+      "Smiles": "C[C@@H](Cc1ccc(c(c1)O)O)[C@@H](C)Cc2ccc(c(c2)O)O"
+    },
+    {
+      "LID": "28E",
+      "CName": "(−)-epicatechin",
+      "LName": "(2r,3r)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2h-chromene-3,5,7-triol",
+      "IUPAC": "(2R,3R)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2H-chromene-3,5,7-triol",
+      "Smiles": "c1cc(c(cc1[C@@H]2[C@@H](Cc3c(cc(cc3O2)O)O)O)O)O"
+    },
+    {
+      "LID": "ESE",
+      "CName": "(1s,3ar,5r,7as)-5-(4-hydroxyphenyl)-7a-methyloctahydro-1h-inden-1-ol",
+      "LName": "(1s,3ar,5r,7as)-5-(4-hydroxyphenyl)-7a-methyloctahydro-1h-inden-1-ol",
+      "IUPAC": "(1S,3aR,5R,7aS)-5-(4-hydroxyphenyl)-7a-methyl-1,2,3,3a,4,5,6,7-octahydroinden-1-ol",
+      "Smiles": "C[C@]12CC[C@H](C[C@H]1CC[C@@H]2O)c3ccc(cc3)O"
+    },
+    {
+      "LID": "8U8",
+      "CName": "(2~{r},3~{s},4~{s},5~{r},6~{s})-6-(4-methyl-2-oxidanylidene-chromen-7-yl)oxy-3,4,5-tris(oxidanyl)oxane-2-carboxylic acid ",
+      "LName": "(2~{r},3~{s},4~{s},5~{r},6~{s})-6-(4-methyl-2-oxidanylidene-chromen-7-yl)oxy-3,4,5-tris(oxidanyl)oxane-2-carboxylic acid ",
+      "IUPAC": "(2R,3S,4S,5R,6S)-3,4,5-trihydroxy-6-(4-methyl-2-oxochromen-7-yl)oxyoxane-2-carboxylic acid",
+      "Smiles": "CC1=CC(=O)Oc2c1ccc(c2)O[C@H]3[C@@H]([C@H]([C@@H]([C@@H](O3)C(=O)O)O)O)O"
+    },
+    {
+      "LID": "6QT",
+      "CName": "(2~{r})-2-(3-hydroxyphenyl)-6-oxidanyl-2,3-dihydrochromen-4-one",
+      "LName": "(2~{r})-2-(3-hydroxyphenyl)-6-oxidanyl-2,3-dihydrochromen-4-one",
+      "IUPAC": "(2R)-6-hydroxy-2-(3-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(cc(c1)O)[C@H]2CC(=O)c3cc(ccc3O2)O"
+    },
+    {
+      "LID": "6J6",
+      "CName": "(2~{r})-2-[3,4-bis(oxidanyl)phenyl]-6-oxidanyl-2,3-dihydrochromen-4-one",
+      "LName": "(2~{r})-2-[3,4-bis(oxidanyl)phenyl]-6-oxidanyl-2,3-dihydrochromen-4-one",
+      "IUPAC": "(2R)-2-(3,4-dihydroxyphenyl)-6-hydroxy-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(c(cc1[C@H]2CC(=O)c3cc(ccc3O2)O)O)O"
+    },
+    {
+      "LID": "BUU",
+      "CName": "(2~{s})-2-azanyl-3-[3-[(2-nitrophenyl)methoxy]-4-oxidanyl-phenyl]propanoic acid",
+      "LName": "(2~{s})-2-azanyl-3-[3-[(2-nitrophenyl)methoxy]-4-oxidanyl-phenyl]propanoic acid",
+      "IUPAC": "(2S)-2-amino-3-(4-hydroxy-3-methoxyphenyl)propanoic acid",
+      "Smiles": "COc1cc(ccc1O)C[C@@H](C(=O)O)N"
+    },
+    {
+      "LID": "6NL",
+      "CName": "(2e)-3-(3-hydroxy-4-methoxyphenyl)-1-(7-methoxy-2h-1,3-benzodioxol-5-yl)-2-methylprop-2-en-1-one",
+      "LName": "(2e)-3-(3-hydroxy-4-methoxyphenyl)-1-(7-methoxy-2h-1,3-benzodioxol-5-yl)-2-methylprop-2-en-1-one",
+      "IUPAC": "(E)-3-(3-hydroxy-4-methoxyphenyl)-1-(7-methoxy-1,3-benzodioxol-5-yl)-2-methylprop-2-en-1-one",
+      "Smiles": "C/C(=C\\c1ccc(c(c1)O)OC)/C(=O)c2cc3c(c(c2)OC)OCO3"
+    },
+    {
+      "LID": "CM4",
+      "CName": "(2r,3r,4s)-3-(4-hydroxyphenyl)-4-methyl-2-[4-(2-pyrrolidin-1-ylethoxy)phenyl]chroman-6-ol",
+      "LName": "(2r,3r,4s)-3-(4-hydroxyphenyl)-4-methyl-2-[4-(2-pyrrolidin-1-ylethoxy)phenyl]chroman-6-ol",
+      "IUPAC": "(2R,3R,4S)-3-(4-hydroxyphenyl)-4-methyl-2-[4-(2-pyrrolidin-1-ylethoxy)phenyl]-3,4-dihydro-2H-chromen-6-ol",
+      "Smiles": "C[C@@H]1c2cc(ccc2O[C@H]([C@H]1c3ccc(cc3)O)c4ccc(cc4)OCCN5CCCC5)O"
+    },
+    {
+      "LID": "G9J",
+      "CName": "(2s)-3-(3-hydroxyphenyl)-2-(4-iodophenyl)-4-methyl-2h-1-benzopyran-6-ol",
+      "LName": "(2s)-3-(3-hydroxyphenyl)-2-(4-iodophenyl)-4-methyl-2h-1-benzopyran-6-ol",
+      "IUPAC": "(2S)-3-(3-hydroxyphenyl)-2-(4-iodophenyl)-4-methyl-2H-chromen-6-ol",
+      "Smiles": "CC1=C([C@@H](Oc2c1cc(cc2)O)c3ccc(cc3)I)c4cccc(c4)O"
+    },
+    {
+      "LID": "DC8",
+      "CName": "(3as,4r,9br)-2,2-difluoro-4-(4-hydroxyphenyl)-1,2,3,3a,4,9b-hexahydrocyclopenta[c]chromen-8-ol",
+      "LName": "(3as,4r,9br)-2,2-difluoro-4-(4-hydroxyphenyl)-1,2,3,3a,4,9b-hexahydrocyclopenta[c]chromen-8-ol",
+      "IUPAC": "(3aS,4R,9bR)-2,2-difluoro-4-(4-hydroxyphenyl)-3,3a,4,9b-tetrahydro-1H-cyclopenta[c]chromen-8-ol",
+      "Smiles": "c1cc(ccc1[C@H]2[C@H]3CC(C[C@H]3c4cc(ccc4O2)O)(F)F)O"
+    },
+    {
+      "LID": "3AS",
+      "CName": "(3as,4r,9br)-2,2-difluoro-4-(4-hydroxyphenyl)-6-(methoxymethyl)-1,2,3,3a,4,9b-hexahydrocyclopenta[c]chromen-8-ol",
+      "LName": "(3as,4r,9br)-2,2-difluoro-4-(4-hydroxyphenyl)-6-(methoxymethyl)-1,2,3,3a,4,9b-hexahydrocyclopenta[c]chromen-8-ol",
+      "IUPAC": "(3aS,4R,9bR)-2,2-difluoro-4-(4-hydroxyphenyl)-6-(methoxymethyl)-3,3a,4,9b-tetrahydro-1H-cyclopenta[c]chromen-8-ol",
+      "Smiles": "COCc1cc(cc2c1O[C@H]([C@@H]3[C@H]2CC(C3)(F)F)c4ccc(cc4)O)O"
+    },
+    {
+      "LID": "JJ3",
+      "CName": "(3as,4r,9br)-4-(4-hydroxyphenyl)-6-(methoxymethyl)-1,2,3,3a,4,9b-hexahydrocyclopenta[c]chromen-8-ol",
+      "LName": "(3as,4r,9br)-4-(4-hydroxyphenyl)-6-(methoxymethyl)-1,2,3,3a,4,9b-hexahydrocyclopenta[c]chromen-8-ol",
+      "IUPAC": "(3aS,4R,9bR)-4-(4-hydroxyphenyl)-6-(methoxymethyl)-1,2,3,3a,4,9b-hexahydrocyclopenta[c]chromen-8-ol",
+      "Smiles": "COCc1cc(cc2c1O[C@H]([C@@H]3[C@H]2CCC3)c4ccc(cc4)O)O"
+    },
+    {
+      "LID": "9CX",
+      "CName": "(3s)-6,8-dihydroxy-3-{[(2r,6s)-6-methyloxan-2-yl]methyl}-3,4-dihydro-1h-2-benzopyran-1-one",
+      "LName": "(3s)-6,8-dihydroxy-3-{[(2r,6s)-6-methyloxan-2-yl]methyl}-3,4-dihydro-1h-2-benzopyran-1-one",
+      "IUPAC": "(3S)-6,8-dihydroxy-3-[[(2R,6S)-6-methyloxan-2-yl]methyl]-3,4-dihydroisochromen-1-one",
+      "Smiles": "C[C@H]1CCC[C@@H](O1)C[C@@H]2Cc3cc(cc(c3C(=O)O2)O)O"
+    },
+    {
+      "LID": "F95",
+      "CName": "(7,8-dihydroxy-2-oxo-2h-chromen-4-yl)acetic acid",
+      "LName": "(7,8-dihydroxy-2-oxo-2h-chromen-4-yl)acetic acid",
+      "IUPAC": "2-(7,8-dihydroxy-2-oxochromen-4-yl)acetic acid",
+      "Smiles": "c1cc(c(c2c1C(=CC(=O)O2)CC(=O)O)O)O"
+    },
+    {
+      "LID": "0EA",
+      "CName": "(betar)-beta,3-dihydroxy-n-methyl-l-tyrosine",
+      "LName": "(betar)-beta,3-dihydroxy-n-methyl-l-tyrosine",
+      "IUPAC": "(2S,3R)-3-(3,4-dihydroxyphenyl)-3-hydroxy-2-(methylamino)propanoic acid",
+      "Smiles": "CN[C@@H]([C@@H](c1ccc(c(c1)O)O)O)C(=O)O"
+    },
+    {
+      "LID": "0XR",
+      "CName": "(e)-ethyl caffeate",
+      "LName": "ethyl (2e)-3-(3,4-dihydroxyphenyl)prop-2-enoate",
+      "IUPAC": "(E)-3-(4-hydroxy-3-methoxyphenyl)prop-2-enoic acid",
+      "Smiles": "COc1cc(ccc1O)\\C=C\\C(=O)O"
+    },
+    {
+      "LID": "0XR",
+      "CName": "(e)-ethyl caffeate",
+      "LName": "ethyl (2e)-3-(3,4-dihydroxyphenyl)prop-2-enoate",
+      "IUPAC": "ethyl (E)-3-(3,4-dihydroxyphenyl)prop-2-enoate",
+      "Smiles": "CCOC(=O)/C=C/c1ccc(c(c1)O)O"
+    },
+    {
+      "LID": "FER",
+      "CName": "(e)-ferulic acid",
+      "LName": "3-(4-hydroxy-3-methoxyphenyl)-2-propenoic acid",
+      "IUPAC": "(E)-3-(4-hydroxy-3-methoxyphenyl)prop-2-enoic acid",
+      "Smiles": "COc1cc(ccc1O)\\C=C\\C(=O)O"
+    },
+    {
+      "LID": "HC4",
+      "CName": "(e)-p-coumaric acid",
+      "LName": "(e)-3-(4-hydroxyphenyl)prop-2-enoic acid",
+      "IUPAC": "(E)-3-(4-hydroxyphenyl)prop-2-enoic acid",
+      "Smiles": "c1cc(ccc1\\C=C\\C(=O)O)O"
+    },
+    {
+      "LID": "BCU",
+      "CName": "(r)-chroman-3-methanol",
+      "LName": "(3r)-3,4-dihydro-2h-chromen-3-ylmethanol",
+      "IUPAC": "[(3R)-3,4-dihydro-2H-chromen-3-yl]methanol",
+      "Smiles": "c1ccc2c(c1)C[C@@H](CO2)CO"
+    },
+    {
+      "LID": "3QV",
+      "CName": "153271",
+      "LName": "7-hydroxy-2-oxo-2h-chromene-3-carbonitrile",
+      "IUPAC": "7-hydroxy-2-oxochromene-3-carbonitrile",
+      "Smiles": "c1cc2c(cc1O)OC(=O)C(=C2)C#N"
+    },
+    {
+      "LID": "1V8",
+      "CName": "2-(1,3-benzodioxol-5-yl)-4h-chromen-4-one",
+      "LName": "2-(1,3-benzodioxol-5-yl)-4h-chromen-4-one",
+      "IUPAC": "2-(1,3-benzodioxol-5-yl)chromen-4-one",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc4c(c3)OCO4"
+    },
+    {
+      "LID": "7LU",
+      "CName": "2-[3,4-bis(oxidanyl)phenyl]-7-chloranyl-5-oxidanyl-chromen-4-one ",
+      "LName": "2-[3,4-bis(oxidanyl)phenyl]-7-chloranyl-5-oxidanyl-chromen-4-one ",
+      "IUPAC": "7-chloro-2-(3,4-dihydroxyphenyl)-5-hydroxychromen-4-one",
+      "Smiles": "c1cc(c(cc1C2=CC(=O)c3c(cc(cc3O2)Cl)O)O)O"
+    },
+    {
+      "LID": "1VF",
+      "CName": "2-[4-(4-methylpiperazine-1-carbonyl)phenyl]chromen-4-one",
+      "LName": "2-[4-(4-methylpiperazine-1-carbonyl)phenyl]chromen-4-one",
+      "IUPAC": "2-[4-(4-methylpiperazine-1-carbonyl)phenyl]chromen-4-one",
+      "Smiles": "CN1CCN(CC1)C(=O)c2ccc(cc2)C3=CC(=O)c4ccccc4O3"
+    },
+    {
+      "LID": "TY8",
+      "CName": "2,4-bis(hydroperoxy)-5-hydroxy-l-phenylalanine",
+      "LName": "(2s)-2-azanyl-3-(2,4-dihydroperoxy-5-hydroxy-phenyl)propanoic acid",
+      "IUPAC": "(2S)-2-amino-3-(2,4-dihydroperoxy-5-hydroxyphenyl)propanoic acid",
+      "Smiles": "c1c(c(cc(c1O)OO)OO)C[C@@H](C(=O)O)N"
+    },
+    {
+      "LID": "CUT",
+      "CName": "2,4-dihydroxybenzophenone",
+      "LName": "[2,4-bis(oxidanyl)phenyl]-phenyl-methanone",
+      "IUPAC": "(2,4-dihydroxyphenyl)-phenylmethanone",
+      "Smiles": "c1ccc(cc1)C(=O)c2ccc(cc2O)O"
+    },
+    {
+      "LID": "4EU",
+      "CName": "2,4,4'-trihydroxybenzophenone",
+      "LName": "(2,4-dihydroxyphenyl)(4-hydroxyphenyl)methanone",
+      "IUPAC": "(2,4-dihydroxyphenyl)-(4-hydroxyphenyl)methanone",
+      "Smiles": "c1cc(ccc1C(=O)c2ccc(cc2O)O)O"
+    },
+    {
+      "LID": "TYJ",
+      "CName": "2,5-dihydroxy-n-methyl-l-tyrosine",
+      "LName": "(2s)-2-(methylamino)-3-(2,4,5-trihydroxyphenyl)propanoic acid",
+      "IUPAC": "(2S)-2-(methylamino)-3-(2,4,5-trihydroxyphenyl)propanoic acid",
+      "Smiles": "CN[C@@H](Cc1cc(c(cc1O)O)O)C(=O)O"
+    },
+    {
+      "LID": "2HI",
+      "CName": "2,7,4'-trihydroxyisoflavanone",
+      "LName": "(2s,3r)-2,7-dihydroxy-3-(4-hydroxyphenyl)-2,3-dihydro-4h-chromen-4-one ",
+      "IUPAC": "(2S,3R)-2,7-dihydroxy-3-(4-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(ccc1[C@@H]2[C@H](Oc3cc(ccc3C2=O)O)O)O"
+    },
+    {
+      "LID": "3AV",
+      "CName": "2699",
+      "LName": "6-methyl-2h-chromen-2-one",
+      "IUPAC": "6-methylchromen-2-one",
+      "Smiles": "Cc1ccc2c(c1)C=CC(=O)O2"
+    },
+    {
+      "LID": "SE2",
+      "CName": "3 hydroxycoumarin",
+      "LName": "3-hydroxy-2h-chromen-2-one",
+      "IUPAC": "3-hydroxychromen-2-one",
+      "Smiles": "c1ccc2c(c1)C=C(C(=O)O2)O"
+    },
+    {
+      "LID": "CHV",
+      "CName": "3-(4-chloro-2-hydroxyphenoxy)-7-hydroxy-2h-chromen-2-one",
+      "LName": "3-(4-chloro-2-hydroxyphenoxy)-7-hydroxy-2h-chromen-2-one",
+      "IUPAC": "3-(4-chloro-2-hydroxyphenoxy)-7-hydroxychromen-2-one",
+      "Smiles": "c1cc2c(cc1O)OC(=O)C(=C2)Oc3ccc(cc3O)Cl"
+    },
+    {
+      "LID": "U01",
+      "CName": "3-[1-(4-bromo-phenyl)-2-methyl-propyl]-4-hydroxy-chromen-2-one",
+      "LName": "3-[1-(4-bromo-phenyl)-2-methyl-propyl]-4-hydroxy-chromen-2-one",
+      "IUPAC": "3-[(1S)-1-(4-bromophenyl)-2-methylpropyl]-4-hydroxychromen-2-one",
+      "Smiles": "CC(C)[C@@H](c1ccc(cc1)Br)C2=C(c3ccccc3OC2=O)O"
+    },
+    {
+      "LID": "HKS",
+      "CName": "3-{[(2s)-2-amino-2-carboxyethyl]sulfanyl}-5-hydroxy-l-tyrosine",
+      "LName": "(2~{s})-2-azanyl-3-[3-[(2~{s})-2-azanyl-3-oxidanyl-3-oxidanylidene-propyl]sulfanyl-4,5-bis(oxidanyl)phenyl]propanoic acid",
+      "IUPAC": "(2S)-2-amino-3-[3-[(2S)-2-amino-2-carboxyethyl]sulfanyl-4,5-dihydroxyphenyl]propanoic acid",
+      "Smiles": "c1c(cc(c(c1O)O)SC[C@H](C(=O)O)N)C[C@@H](C(=O)O)N"
+    },
+    {
+      "LID": "9CF",
+      "CName": "3-epi-isocladosporin",
+      "LName": "(3s)-6,8-dihydroxy-3-{[(2r,6r)-6-methyloxan-2-yl]methyl}-3,4-dihydro-1h-2-benzopyran-1-one",
+      "IUPAC": "(3S)-6,8-dihydroxy-3-[[(2R,6R)-6-methyloxan-2-yl]methyl]-3,4-dihydroisochromen-1-one",
+      "Smiles": "C[C@@H]1CCC[C@@H](O1)C[C@@H]2Cc3cc(cc(c3C(=O)O2)O)O"
+    },
+    {
+      "LID": "3YM",
+      "CName": "3-methoxy-l-tyrosine",
+      "LName": "(2s)-2-azanyl-3-(3-methoxy-4-oxidanyl-phenyl)propanoic acid",
+      "IUPAC": "(2S)-2-amino-3-(4-hydroxy-3-methoxyphenyl)propanoic acid",
+      "Smiles": "COc1cc(ccc1O)C[C@@H](C(=O)O)N"
+    },
+    {
+      "LID": "TY9",
+      "CName": "3,4-bis(hydroperoxy)-5-hydroxy-l-phenylalanine",
+      "LName": "(2s)-2-azanyl-3-(3,4-dihydroperoxy-5-hydroxy-phenyl)propanoic acid",
+      "IUPAC": "(2S)-2-amino-3-(3,4-dihydroperoxy-5-hydroxyphenyl)propanoic acid",
+      "Smiles": "c1c(cc(c(c1O)OO)OO)C[C@@H](C(=O)O)N"
+    },
+    {
+      "LID": "DHB",
+      "CName": "3,4-dihydroxybenzoic acid",
+      "LName": "3,4-dihydroxybenzoic acid",
+      "IUPAC": "3,4-dihydroxybenzoic acid",
+      "Smiles": "c1cc(c(cc1C(=O)O)O)O"
+    },
+    {
+      "LID": "DHY",
+      "CName": "3,4-dihydroxyphenylacetic acid",
+      "LName": "2-(3,4-dihydroxyphenyl)ethanoic acid",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)acetic acid",
+      "Smiles": "c1cc(c(cc1CC(=O)O)O)O"
+    },
+    {
+      "LID": "DAH",
+      "CName": "3,4-dihydroxyphenylalanine",
+      "LName": "(2s)-2-azanyl-3-[3,4-bis(oxidanyl)phenyl]propanoic acid",
+      "IUPAC": "(2S)-2-amino-3-(3,4-dihydroxyphenyl)propanoic acid",
+      "Smiles": "c1cc(c(cc1C[C@@H](C(=O)O)N)O)O"
+    },
+    {
+      "LID": "6JO",
+      "CName": "3,6,3'-trihydroxyflavone",
+      "LName": "3,6-dihydroxy-2-(3-hydroxyphenyl)-4h-1-benzopyran-4-one",
+      "IUPAC": "3,6-dihydroxy-2-(3-hydroxyphenyl)chromen-4-one",
+      "Smiles": "c1cc(cc(c1)O)C2=C(C(=O)c3cc(ccc3O2)O)O"
+    },
+    {
+      "LID": "6JM",
+      "CName": "3,6,3',4'-tetrahydroxyflavone",
+      "LName": "2-(3,4-dihydroxyphenyl)-3,6-dihydroxy-4h-1-benzopyran-4-one",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-3,6-dihydroxychromen-4-one",
+      "Smiles": "c1cc(c(cc1C2=C(C(=O)c3cc(ccc3O2)O)O)O)O"
+    },
+    {
+      "LID": "HHF",
+      "CName": "3,7-dihydroxy flavone",
+      "LName": "3,7-dihydroxy flavone",
+      "IUPAC": "3,7-dihydroxy-2-phenylchromen-4-one",
+      "Smiles": "c1ccc(cc1)C2=C(C(=O)c3ccc(cc3O2)O)O"
+    },
+    {
+      "LID": "G12",
+      "CName": "3,8-dibromo-7-hydroxy-4-methyl-2h-chromen-2-one",
+      "LName": "3,8-dibromo-7-hydroxy-4-methyl-2h-chromen-2-one",
+      "IUPAC": "3,8-dibromo-7-hydroxy-4-methylchromen-2-one",
+      "Smiles": "CC1=C(C(=O)Oc2c1ccc(c2Br)O)Br"
+    },
+    {
+      "LID": "20B",
+      "CName": "3'-hydroxyflavone",
+      "LName": "2-(3-hydroxyphenyl)-4h-chromen-4-one",
+      "IUPAC": "2-(3-hydroxyphenyl)chromen-4-one",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3cccc(c3)O"
+    },
+    {
+      "LID": "16S",
+      "CName": "3',4'-dihydroxyflavone",
+      "LName": "2-(3,4-dihydroxyphenyl)-4h-chromen-4-one",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)chromen-4-one",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc(c(c3)O)O"
+    },
+    {
+      "LID": "KCZ",
+      "CName": "4-[2-[[(2~{r})-2-phenylpropyl]amino]ethyl]benzene-1,2-diol",
+      "LName": "4-[2-[[(2~{r})-2-phenylpropyl]amino]ethyl]benzene-1,2-diol",
+      "IUPAC": "4-[2-[[(2R)-2-phenylpropyl]amino]ethyl]benzene-1,2-diol",
+      "Smiles": "C[C@@H](CNCCc1ccc(c(c1)O)O)c2ccccc2"
+    },
+    {
+      "LID": "93H",
+      "CName": "4-[2-[2-(4-methoxyphenyl)ethylamino]ethyl]benzene-1,2-diol",
+      "LName": "4-[2-[2-(4-methoxyphenyl)ethylamino]ethyl]benzene-1,2-diol",
+      "IUPAC": "4-[2-[2-(4-methoxyphenyl)ethylamino]ethyl]benzene-1,2-diol",
+      "Smiles": "COc1ccc(cc1)CCNCCc2ccc(c(c2)O)O"
+    },
+    {
+      "LID": "QX4",
+      "CName": "4-hydroxy-6-methylcoumarin",
+      "LName": "4-hydroxy-6-methyl-2h-1-benzopyran-2-one",
+      "IUPAC": "4-hydroxy-6-methylchromen-2-one",
+      "Smiles": "Cc1ccc2c(c1)C(=CC(=O)O2)O"
+    },
+    {
+      "LID": "CC2",
+      "CName": "4-hydroxy-6,7-dimethyl-3-(naphthalen-1-ylmethyl)-2h-chromen-2-one",
+      "LName": "4-hydroxy-6,7-dimethyl-3-(naphthalen-1-ylmethyl)-2h-chromen-2-one",
+      "IUPAC": "4-hydroxy-6,7-dimethyl-3-(naphthalen-1-ylmethyl)chromen-2-one",
+      "Smiles": "Cc1cc2c(cc1C)OC(=O)C(=C2O)Cc3cccc4c3cccc4"
+    },
+    {
+      "LID": "U03",
+      "CName": "4-hydroxy-7-methoxy-3-(1-phenyl-propyl)-chromen-2-one",
+      "LName": "4-hydroxy-7-methoxy-3-(1-phenyl-propyl)-chromen-2-one",
+      "IUPAC": "4-hydroxy-7-methoxy-3-(1-phenylpropyl)chromen-2-one",
+      "Smiles": "CCC(c1ccccc1)C2=C(c3ccc(cc3OC2=O)OC)O"
+    },
+    {
+      "LID": "IPJ",
+      "CName": "4-hydroxy-chalcone",
+      "LName": "-",
+      "IUPAC": "(E)-3-(4-hydroxyphenyl)-1-phenylprop-2-en-1-one",
+      "Smiles": "c1ccc(cc1)C(=O)/C=C/c2ccc(cc2)O"
+    },
+    {
+      "LID": "MCT",
+      "CName": "4-methylcatechol",
+      "LName": "4-methylbenzene-1,2-diol",
+      "IUPAC": "4-methylbenzene-1,2-diol",
+      "Smiles": "Cc1ccc(c(c1)O)O"
+    },
+    {
+      "LID": "ZZ1",
+      "CName": "4-methylcoumarin",
+      "LName": "4-methyl-2h-chromen-2-one",
+      "IUPAC": "4-methylchromen-2-one",
+      "Smiles": "CC1=CC(=O)Oc2c1cccc2"
+    },
+    {
+      "LID": "A73",
+      "CName": "4' -bromo flavone",
+      "LName": "2-(4-bromophenyl)-4h-chromen-4-one",
+      "IUPAC": "2-(4-bromophenyl)chromen-4-one",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc(cc3)Br"
+    },
+    {
+      "LID": "3G5",
+      "CName": "4'-carboxy-6,8-bromo-flavonol",
+      "LName": "4'-carboxy-6,8-bromo-flavonol",
+      "IUPAC": "4-(6,8-dibromo-3-hydroxy-4-oxochromen-2-yl)benzoic acid",
+      "Smiles": "c1cc(ccc1C2=C(C(=O)c3cc(cc(c3O2)Br)Br)O)C(=O)O"
+    },
+    {
+      "LID": "7FC",
+      "CName": "4'-carboxy-6,8-chloro-flavonol",
+      "LName": "4-[6,8-bis(chloranyl)-3-oxidanyl-4-oxidanylidene-chromen-2-yl]benzoic acid",
+      "IUPAC": "4-(6,8-dichloro-3-hydroxy-4-oxochromen-2-yl)benzoic acid",
+      "Smiles": "c1cc(ccc1C2=C(C(=O)c3cc(cc(c3O2)Cl)Cl)O)C(=O)O"
+    },
+    {
+      "LID": "1V1",
+      "CName": "4'-chloro flavone",
+      "LName": "2-(4-chlorophenyl)-4h-chromen-4-one",
+      "IUPAC": "2-(4-chlorophenyl)chromen-4-one",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc(cc3)Cl"
+    },
+    {
+      "LID": "1UZ",
+      "CName": "4'-cyano flavone",
+      "LName": "4-(4-oxo-4h-chromen-2-yl)benzonitrile",
+      "IUPAC": "4-(4-oxochromen-2-yl)benzonitrile",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc(cc3)C#N"
+    },
+    {
+      "LID": "1UT",
+      "CName": "4'-dimethylamino flavone",
+      "LName": "2-[4-(dimethylamino)phenyl]-4h-chromen-4-one",
+      "IUPAC": "2-[4-(dimethylamino)phenyl]chromen-4-one",
+      "Smiles": "CN(C)c1ccc(cc1)C2=CC(=O)c3ccccc3O2"
+    },
+    {
+      "LID": "20D",
+      "CName": "4'-fluoro flavone",
+      "LName": "2-(4-fluorophenyl)-4h-chromen-4-one",
+      "IUPAC": "2-(4-fluorophenyl)chromen-4-one",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc(cc3)F"
+    },
+    {
+      "LID": "DFL",
+      "CName": "4'-hydroxyflavanone",
+      "LName": "2-(4-hydroxy-phenyl)-chroman-4-one",
+      "IUPAC": "(2S)-2-(4-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+      "Smiles": "c1ccc2c(c1)C(=O)C[C@H](O2)c3ccc(cc3)O"
+    },
+    {
+      "LID": "A64",
+      "CName": "4'-isopropylflavone",
+      "LName": "2-(4-isopropylphenyl)-4h-chromen-4-one",
+      "IUPAC": "2-(4-propan-2-ylphenyl)chromen-4-one",
+      "Smiles": "CC(C)c1ccc(cc1)C2=CC(=O)c3ccccc3O2"
+    },
+    {
+      "LID": "A63",
+      "CName": "4'-methoxy flavone",
+      "LName": "2-(4-methoxyphenyl)-4h-chromen-4-one ",
+      "IUPAC": "2-(4-methoxyphenyl)chromen-4-one",
+      "Smiles": "COc1ccc(cc1)C2=CC(=O)c3ccccc3O2"
+    },
+    {
+      "LID": "431",
+      "CName": "4'-methylflavone",
+      "LName": "2-(4-methylphenyl)-4h-chromen-4-one",
+      "IUPAC": "2-(4-fluorophenyl)chromen-4-one",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc(cc3)F"
+    },
+    {
+      "LID": "1V0",
+      "CName": "4'-nitro flavone",
+      "LName": "2-(4-nitrophenyl)-4h-chromen-4-one",
+      "IUPAC": "2-(4-nitrophenyl)chromen-4-one",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc(cc3)[N+](=O)[O-]"
+    },
+    {
+      "LID": "1VG",
+      "CName": "4'-tetrazole flavone",
+      "LName": "2-[4-(1h-tetrazol-5-yl)phenyl]-4h-chromen-4-one",
+      "IUPAC": "2-[4-(2H-tetrazol-5-yl)phenyl]chromen-4-one",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc(cc3)c4[nH]nnn4"
+    },
+    {
+      "LID": "7V6",
+      "CName": "5-[(3r)-3-(4-boranylphenyl)-3-oxidanyl-propyl]-2-oxidanyl-benzoic acid",
+      "LName": "5-[(3r)-3-(4-boranylphenyl)-3-oxidanyl-propyl]-2-oxidanyl-benzoic acid",
+      "IUPAC": "Unknown",
+      "Smiles": "Bc1ccc(cc1)[C@@H](CCc2ccc(c(c2)C(=O)O)O)O"
+    },
+    {
+      "LID": "DFV",
+      "CName": "5-deoxyflavanone",
+      "LName": "7-hydroxy-2-(4-hydroxy-phenyl)-chroman-4-one",
+      "IUPAC": "(2S)-7-hydroxy-2-(4-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(ccc1[C@@H]2CC(=O)c3ccc(cc3O2)O)O"
+    },
+    {
+      "LID": "6BK",
+      "CName": "5,3',4'-trihydroxyflavone",
+      "LName": "2-(3,4-dihydroxyphenyl)-5-hydroxy-4h-1-benzopyran-4-one ",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-5-hydroxychromen-4-one",
+      "Smiles": "c1cc(c2c(c1)OC(=CC2=O)c3ccc(c(c3)O)O)O"
+    },
+    {
+      "LID": "DDC",
+      "CName": "5,4'-dideoxyflavanone",
+      "LName": "7-hydroxy-2-phenyl-chroman-4-one",
+      "IUPAC": "(2S)-7-hydroxy-2-phenyl-2,3-dihydrochromen-4-one",
+      "Smiles": "c1ccc(cc1)[C@@H]2CC(=O)c3ccc(cc3O2)O"
+    },
+    {
+      "LID": "B7S",
+      "CName": "5,7-dihydroxychromone",
+      "LName": "5,7-dihydroxy-4h-1-benzopyran-4-one",
+      "IUPAC": "5,7-dihydroxychromen-4-one",
+      "Smiles": "c1c(cc2c(c1O)C(=O)C=CO2)O"
+    },
+    {
+      "LID": "4JQ",
+      "CName": "6-aminocoumarin",
+      "LName": "6-amino-2h-chromen-2-one",
+      "IUPAC": "6-aminochromen-2-one",
+      "Smiles": "c1cc2c(cc1N)C=CC(=O)O2"
+    },
+    {
+      "LID": "0FO",
+      "CName": "6-bromo-4-hydroxycoumarin",
+      "LName": "6-bromo-4-hydroxy-2h-chromen-2-one",
+      "IUPAC": "6-bromo-4-hydroxychromen-2-one",
+      "Smiles": "c1cc2c(cc1Br)C(=CC(=O)O2)O"
+    },
+    {
+      "LID": "UWU",
+      "CName": "6-chloranyl-7-oxidanyl-4-phenyl-chromen-2-one",
+      "LName": "6-chloranyl-7-oxidanyl-4-phenyl-chromen-2-one",
+      "IUPAC": "6-chloro-7-hydroxy-4-phenylchromen-2-one",
+      "Smiles": "c1ccc(cc1)C2=CC(=O)Oc3c2cc(c(c3)O)Cl"
+    },
+    {
+      "LID": "1V3",
+      "CName": "6-chloro flavone",
+      "LName": "6-chloro-2-phenyl-4h-chromen-4-one",
+      "IUPAC": "6-chloro-2-phenylchromen-4-one",
+      "Smiles": "c1ccc(cc1)C2=CC(=O)c3cc(ccc3O2)Cl"
+    },
+    {
+      "LID": "XZZ",
+      "CName": "6-chloro-7-hydroxy-4-methyl-2h-chromen-2-one",
+      "LName": "6-chloro-7-hydroxy-4-methyl-2h-chromen-2-one",
+      "IUPAC": "6-chloro-7-hydroxy-4-methylchromen-2-one",
+      "Smiles": "CC1=CC(=O)Oc2c1cc(c(c2)O)Cl"
+    },
+    {
+      "LID": "1V4",
+      "CName": "6-fluoro flavone",
+      "LName": "6-fluoro-2-phenyl-4h-chromen-4-one",
+      "IUPAC": "6-fluoro-2-phenylchromen-4-one",
+      "Smiles": "c1ccc(cc1)C2=CC(=O)c3cc(ccc3O2)F"
+    },
+    {
+      "LID": "15W",
+      "CName": "7-hydroxy -4'-methoxyflavone",
+      "LName": "7-hydroxy-2-(4-methoxyphenyl)-4h-chromen-4-one",
+      "IUPAC": "7-hydroxy-2-(4-methoxyphenyl)chromen-4-one",
+      "Smiles": "COc1ccc(cc1)C2=CC(=O)c3ccc(cc3O2)O"
+    },
+    {
+      "LID": "JNP",
+      "CName": "7-hydroxy-2,2-dimethylchroman-4-one",
+      "LName": "7-hydroxy-2,2-dimethyl-2,3-dihydro-4h-1-benzopyran-4-one",
+      "IUPAC": "7-hydroxy-2,2-dimethyl-3H-chromen-4-one",
+      "Smiles": "CC1(CC(=O)c2ccc(cc2O1)O)C"
+    },
+    {
+      "LID": "1W3",
+      "CName": "7-hydroxy-3-[(e)-2-(4-hydroxy-3,5-dimethylphenyl)ethenyl]-4-methyl-2h-chromen-2-one",
+      "LName": "7-hydroxy-3-[(e)-2-(4-hydroxy-3,5-dimethylphenyl)ethenyl]-4-methyl-2h-chromen-2-one",
+      "IUPAC": "7-hydroxy-3-[(E)-2-(4-hydroxy-3,5-dimethylphenyl)ethenyl]-4-methylchromen-2-one",
+      "Smiles": "Cc1cc(cc(c1O)C)/C=C/C2=C(c3ccc(cc3OC2=O)O)C"
+    },
+    {
+      "LID": "HOM",
+      "CName": "7-hydroxy-4-methyl-3-(2-hydroxy-ethyl)coumarin",
+      "LName": "7-hydroxy-4-methyl-3-(2-hydroxy-ethyl)coumarin",
+      "IUPAC": "7-hydroxy-3-(2-hydroxyethyl)-4-methylchromen-2-one",
+      "Smiles": "CC1=C(C(=O)Oc2c1ccc(c2)O)CCO"
+    },
+    {
+      "LID": "F94",
+      "CName": "7,3-dihydroxyflavone",
+      "LName": "7-hydroxy-2-(3-hydroxyphenyl)-4h-chromen-4-one",
+      "IUPAC": "7-hydroxy-2-(3-hydroxyphenyl)chromen-4-one",
+      "Smiles": "c1cc(cc(c1)O)C2=CC(=O)c3ccc(cc3O2)O"
+    },
+    {
+      "LID": "15Z",
+      "CName": "7,3',4'-trihydroxyflavone",
+      "LName": "2-(3,4-dihydroxyphenyl)-7-hydroxy-4h-chromen-4-one",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-7-hydroxychromen-4-one",
+      "Smiles": "c1cc(c(cc1C2=CC(=O)c3ccc(cc3O2)O)O)O"
+    },
+    {
+      "LID": "47X",
+      "CName": "7,3',4'-trihydroxyisoflavone",
+      "LName": "3-(3,4-dihydroxyphenyl)-7-hydroxy-4h-chromen-4-one",
+      "IUPAC": "3-(3,4-dihydroxyphenyl)-7-hydroxychromen-4-one",
+      "Smiles": "c1cc(c(cc1C2=COc3cc(ccc3C2=O)O)O)O"
+    },
+    {
+      "LID": "KOM",
+      "CName": "7,8-dihydroxy-4-phenylcoumarin",
+      "LName": "7,8-dihydroxy-4-phenyl-2h-chromen-2-one",
+      "IUPAC": "7,8-dihydroxy-4-phenylchromen-2-one",
+      "Smiles": "c1ccc(cc1)C2=CC(=O)Oc3c2ccc(c3O)O"
+    },
+    {
+      "LID": "CZ0",
+      "CName": "8-hydroxy-4-methyl-9-nitro-2h-benzo[g]chromen-2-one",
+      "LName": "8-hydroxy-4-methyl-9-nitro-2h-benzo[g]chromen-2-one",
+      "IUPAC": "8-hydroxy-4-methyl-9-nitrobenzo[g]chromen-2-one",
+      "Smiles": "CC1=CC(=O)Oc2c1cc3ccc(c(c3c2)[N+](=O)[O-])O"
+    },
+    {
+      "LID": "8CM",
+      "CName": "8-hydroxycoumarin",
+      "LName": "8-hydroxycoumarin",
+      "IUPAC": "8-hydroxychromen-2-one",
+      "Smiles": "c1cc2c(c(c1)O)OC(=O)C=C2"
+    },
+    {
+      "LID": "AFE",
+      "CName": "afzelin",
+      "LName": "5,7-dihydroxy-2-(4-hydroxyphenyl)-4-oxo-4h-chromen-3-yl 6-deoxy-alpha-l-mannopyranoside",
+      "IUPAC": "5,7-dihydroxy-2-(4-hydroxyphenyl)-3-[(2S,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxychromen-4-one",
+      "Smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=C(Oc3cc(cc(c3C2=O)O)O)c4ccc(cc4)O)O)O)O"
+    },
+    {
+      "LID": "BHF",
+      "CName": "alpha-naphthoflavone or 7,8-benzoflavone",
+      "LName": "2-phenyl-4h-benzo[h]chromen-4-one",
+      "IUPAC": "2-phenylbenzo[h]chromen-4-one",
+      "Smiles": "c1ccc(cc1)C2=CC(=O)c3ccc4ccccc4c3O2"
+    },
+    {
+      "LID": "CPB",
+      "CName": "alvocidib",
+      "LName": "2-(2-chloro-phenyl)-5,7-dihydroxy-8-(3-hydroxy-1-methyl-piperidin-4-yl)-4h-benzopyran-4-one",
+      "IUPAC": "2-(2-chlorophenyl)-5,7-dihydroxy-8-[(3S,4R)-3-hydroxy-1-methylpiperidin-4-yl]chromen-4-one",
+      "Smiles": "C[N@]1CC[C@@H]([C@@H](C1)O)c2c(cc(c3c2OC(=CC3=O)c4ccccc4Cl)O)O"
+    },
+    {
+      "LID": "AGI",
+      "CName": "apigenin",
+      "LName": "5,7-dihydroxy-2-(4-hydroxyphenyl)-4h-chromen-4-one",
+      "IUPAC": "5,7-dihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+      "Smiles": "c1cc(ccc1C2=CC(=O)c3c(cc(cc3O2)O)O)O"
+    },
+    {
+      "LID": "9CC",
+      "CName": "asperentin",
+      "LName": "(3r)-6,8-dihydroxy-3-{[(2s,6r)-6-methyloxan-2-yl]methyl}-3,4-dihydro-1h-2-benzopyran-1-one",
+      "IUPAC": "(3R)-6,8-dihydroxy-3-[[(2S,6R)-6-methyloxan-2-yl]methyl]-3,4-dihydroisochromen-1-one",
+      "Smiles": "C[C@@H]1CCC[C@H](O1)C[C@H]2Cc3cc(cc(c3C(=O)O2)O)O"
+    },
+    {
+      "LID": "3WL",
+      "CName": "baicalein",
+      "LName": "5,6,7-trihydroxy-2-phenyl-4h-chromen-4-one",
+      "IUPAC": "5,6,7-trihydroxy-2-phenylchromen-4-one",
+      "Smiles": "c1ccc(cc1)C2=CC(=O)c3c(cc(c(c3O)O)O)O2"
+    },
+    {
+      "LID": "0XE",
+      "CName": "baicalin",
+      "LName": "5,6-dihydroxy-4-oxo-2-phenyl-4h-chromen-7-yl beta-d-glucopyranosiduronic acid",
+      "IUPAC": "(2S,3S,4S,5R,6S)-6-(5,6-dihydroxy-4-oxo-2-phenylchromen-7-yl)oxy-3,4,5-trihydroxyoxane-2-carboxylic acid",
+      "Smiles": "c1ccc(cc1)C2=CC(=O)c3c(cc(c(c3O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)O)O2"
+    },
+    {
+      "LID": "QSO",
+      "CName": "biochanin a",
+      "LName": "5,7-dihydroxy-3-(4-methoxyphenyl)-4h-chromen-4-one ",
+      "IUPAC": "5,7-dihydroxy-3-(4-methoxyphenyl)chromen-4-one",
+      "Smiles": "COc1ccc(cc1)C2=COc3cc(cc(c3C2=O)O)O"
+    },
+    {
+      "LID": "DTC",
+      "CName": "bishydroxy[2h-1-benzopyran-2-one,1,2-benzopyrone]",
+      "LName": "bishydroxy[2h-1-benzopyran-2-one,1,2-benzopyrone]",
+      "IUPAC": "3-[(2,4-dioxochromen-3-yl)methyl]chromene-2,4-dione",
+      "Smiles": "c1ccc2c(c1)C(=O)C(C(=O)O2)CC3C(=O)c4ccccc4OC3=O"
+    },
+    {
+      "LID": "BVB",
+      "CName": "bromo-resveratrol",
+      "LName": "5-[(e)-2-(4-bromophenyl)ethenyl]benzene-1,3-diol ",
+      "IUPAC": "5-[(E)-2-(4-bromophenyl)ethenyl]benzene-1,3-diol",
+      "Smiles": "c1cc(ccc1\\C=C\\c2cc(cc(c2)O)O)O"
+    },
+    {
+      "LID": "BVB",
+      "CName": "bromo-resveratrol",
+      "LName": "5-[(e)-2-(4-bromophenyl)ethenyl]benzene-1,3-diol ",
+      "IUPAC": "5-[(E)-2-(4-bromophenyl)ethenyl]benzene-1,3-diol",
+      "Smiles": "c1cc(ccc1/C=C/c2cc(cc(c2)O)O)Br"
+    },
+    {
+      "LID": "BUN",
+      "CName": "butein",
+      "LName": "(2e)-1-(2,4-dihydroxyphenyl)-3-(3,4-dihydroxyphenyl)prop-2-en-1-one",
+      "IUPAC": "(E)-1-(2,4-dihydroxyphenyl)-3-(3,4-dihydroxyphenyl)prop-2-en-1-one",
+      "Smiles": "c1cc(c(cc1/C=C/C(=O)c2ccc(cc2O)O)O)O"
+    },
+    {
+      "LID": "DHC",
+      "CName": "caffeic acid",
+      "LName": "(e)-3-(3,4-dihydroxyphenyl)prop-2-enoic acid",
+      "IUPAC": "(E)-3-(3,4-dihydroxyphenyl)prop-2-enoic acid",
+      "Smiles": "c1cc(c(cc1\\C=C\\C(=O)O)O)O"
+    },
+    {
+      "LID": "142",
+      "CName": "carbidopa",
+      "LName": "(2s)-3-(3,4-dihydroxyphenyl)-2-hydrazinyl-2-methyl-propanoic acid",
+      "IUPAC": "3-(3,4-dihydroxyphenyl)-2-hydrazinyl-2-methylpropanoic acid",
+      "Smiles": "CN[C@@H]([C@@H](c1ccc(c(c1)O)O)O)C(=O)O"
+    },
+    {
+      "LID": "KXN",
+      "CName": "catechin",
+      "LName": "(2r,3s)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2h-chromene-3,5,7-triol",
+      "IUPAC": "(2R,3S)-2-(3,4-dihydroxyphenyl)-3,4-dihydro-2H-chromene-3,5,7-triol",
+      "Smiles": "c1cc(c(cc1[C@@H]2[C@H](Cc3c(cc(cc3O2)O)O)O)O)O"
+    },
+    {
+      "LID": "CAQ",
+      "CName": "catechol",
+      "LName": "1,2-dihydroxybenzene",
+      "IUPAC": "benzene-1,2-diol",
+      "Smiles": "c1ccc(c(c1)O)O"
+    },
+    {
+      "LID": "CAQ",
+      "CName": "catechol",
+      "LName": "1,2-dihydroxybenzene",
+      "IUPAC": "benzene-1,2-diol",
+      "Smiles": "c1ccc(cc1)O"
+    },
+    {
+      "LID": "F9Z",
+      "CName": "chembl1709089",
+      "LName": "2-(2-chlorophenyl)-8-[(3~{r},4~{r})-1-methyl-3-oxidanyl-piperidin-4-yl]-5,7-bis(oxidanyl)chromen-4-one",
+      "IUPAC": "2-(2-chlorophenyl)-5,7-dihydroxy-8-[(3R,4R)-3-hydroxy-1-methylpiperidin-4-yl]chromen-4-one",
+      "Smiles": "CN1CC[C@@H]([C@H](C1)O)c2c(cc(c3c2OC(=CC3=O)c4ccccc4Cl)O)O"
+    },
+    {
+      "LID": "57D",
+      "CName": "chrysin",
+      "LName": "5,7-dihydroxyflavone",
+      "IUPAC": "5,7-dihydroxy-2-phenylchromen-4-one",
+      "Smiles": "c1ccc(cc1)C2=CC(=O)c3c(cc(cc3O2)O)O"
+    },
+    {
+      "LID": "COU",
+      "CName": "coumarin",
+      "LName": "1,2-benzopyrone",
+      "IUPAC": "chromen-2-one",
+      "Smiles": "c1ccc2c(c1)C=CC(=O)O2"
+    },
+    {
+      "LID": "CUE",
+      "CName": "coumestrol",
+      "LName": "3,9-dihydroxy-6-benzofurano[3,2-c]chromenone.",
+      "IUPAC": "3,9-dihydroxy-[1]benzofuro[3,2-c]chromen-6-one",
+      "Smiles": "c1cc2c(cc1O)oc-3c2C(=O)Oc4c3ccc(c4)O"
+    },
+    {
+      "LID": "HWB",
+      "CName": "cyanidin",
+      "LName": "1-benzopyrylium, 2-(3,4-dihydroxyphenyl)-3,5,7-trihydroxy-",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)chromenylium-3,5,7-triol",
+      "Smiles": "c1cc(c(cc1c2c(cc3c(cc(cc3[o+]2)O)O)O)O)O"
+    },
+    {
+      "LID": "F70",
+      "CName": "cyanomethyl 4-(4-oxo-4h-chromen-2-yl)benzoate",
+      "LName": "cyanomethyl 4-(4-oxo-4h-chromen-2-yl)benzoate",
+      "IUPAC": "cyanomethyl 4-(4-oxochromen-2-yl)benzoate",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc(cc3)C(=O)OCC#N"
+    },
+    {
+      "LID": "D75",
+      "CName": "daidzein-7-o-glucuronide",
+      "LName": "",
+      "IUPAC": "(2S,3S,4S,5R,6S)-3,4,5-trihydroxy-6-[3-(4-hydroxyphenyl)-4-oxochromen-7-yl]oxyoxane-2-carboxylic acid",
+      "Smiles": "c1cc(ccc1C2=COc3cc(ccc3C2=O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)O)O"
+    },
+    {
+      "LID": "DZN",
+      "CName": "daidzin",
+      "LName": "3-(4-hydroxyphenyl)-4-oxo-4h-chromen-7-yl β-d-glucopyranoside",
+      "IUPAC": "3-(4-hydroxyphenyl)-7-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxychromen-4-one",
+      "Smiles": "c1cc(ccc1C2=COc3cc(ccc3C2=O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O"
+    },
+    {
+      "LID": "CC6",
+      "CName": "datiscetin",
+      "LName": "3,5,7-trihydroxy-2-(2-hydroxyphenyl)-4h-1-benzopyran-4-one",
+      "IUPAC": "3,5,7-trihydroxy-2-(2-hydroxyphenyl)chromen-4-one",
+      "Smiles": "c1ccc(c(c1)C2=C(C(=O)c3c(cc(cc3O2)O)O)O)O"
+    },
+    {
+      "LID": "DLM",
+      "CName": "delphinidin",
+      "LName": "3,5,7-trihydroxy-2-(3,4,5-trihydroxyphenyl)chromenium",
+      "IUPAC": "2-(3,4,5-trihydroxyphenyl)chromenylium-3,5,7-triol",
+      "Smiles": "c1c(cc(c(c1O)O)O)c2c(cc3c(cc(cc3[o+]2)O)O)O"
+    },
+    {
+      "LID": "DQH",
+      "CName": "dihydroquercetin  (taxifolin)",
+      "LName": "(2r,3r)-2-(3,4-dihydroxyphenyl)-3,5,7-trihydroxy-2,3-dihydro-4h-chromen-4-one",
+      "IUPAC": "(2R,3R)-2-(3,4-dihydroxyphenyl)-3,5,7-trihydroxy-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(c(cc1[C@@H]2[C@H](C(=O)c3c(cc(cc3O2)O)O)O)O)O"
+    },
+    {
+      "LID": "J8D",
+      "CName": "diosmetin",
+      "LName": "5,7-dihydroxy-2-(3-hydroxy-4-methoxyphenyl)-4h-1-benzopyran-4-one",
+      "IUPAC": "5,7-dihydroxy-2-(3-hydroxy-4-methoxyphenyl)chromen-4-one",
+      "Smiles": "COc1ccc(cc1O)C2=CC(=O)c3c(cc(cc3O2)O)O"
+    },
+    {
+      "LID": "KDH",
+      "CName": "epigallocatechin-3-gallate (egcg)",
+      "LName": "(2r,3r)-5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2h-chromen-3-yl 3,4,5-trihydroxybenzoate",
+      "IUPAC": "[(2R,3R)-5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2H-chromen-3-yl] 3,4,5-trihydroxybenzoate",
+      "Smiles": "c1c(cc(c(c1O)O)O)[C@@H]2[C@@H](Cc3c(cc(cc3O2)O)O)OC(=O)c4cc(c(c(c4)O)O)O"
+    },
+    {
+      "LID": "EGT",
+      "CName": "epigallocathechin",
+      "LName": "2-(3,4,5-trihydroxy-phenyl)-chroman-3,5,7-triol",
+      "IUPAC": "(2R,3R)-2-(3,4,5-trihydroxyphenyl)-3,4-dihydro-2H-chromene-3,5,7-triol",
+      "Smiles": "c1c(cc(c(c1O)O)O)[C@@H]2[C@@H](Cc3c(cc(cc3O2)O)O)O"
+    },
+    {
+      "LID": "ERD",
+      "CName": "eriodictyol",
+      "LName": "(2s)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-2,3-dihydro-4h-chromen-4-one ",
+      "IUPAC": "(2S)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(c(cc1[C@@H]2CC(=O)c3c(cc(cc3O2)O)O)O)O"
+    },
+    {
+      "LID": "1UW",
+      "CName": "ethyl 4-(4-oxo-4h-chromen-2-yl)benzoate",
+      "LName": "ethyl 4-(4-oxo-4h-chromen-2-yl)benzoate",
+      "IUPAC": "ethyl 4-(4-oxochromen-2-yl)benzoate",
+      "Smiles": "CCOC(=O)c1ccc(cc1)C2=CC(=O)c3ccccc3O2"
+    },
+    {
+      "LID": "YZ9",
+      "CName": "ethyl umbelliferone-3-carboxylate",
+      "LName": "7-hydroxy-2-oxo-chromene-3-carboxylic acid ethyl ester",
+      "IUPAC": "ethyl 7-hydroxy-2-oxochromene-3-carboxylate",
+      "Smiles": "CCOC(=O)C1=Cc2ccc(cc2OC1=O)O"
+    },
+    {
+      "LID": "FSE",
+      "CName": "fisetin",
+      "LName": "3,7,3',4'-tetrahydroxyflavone",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-3,7-dihydroxychromen-4-one",
+      "Smiles": "c1cc(c(cc1C2=C(C(=O)c3ccc(cc3O2)O)O)O)O"
+    },
+    {
+      "LID": "FLN",
+      "CName": "flavone",
+      "LName": "2-phenyl-4h-chromen-4-one",
+      "IUPAC": "2-phenylchromen-4-one",
+      "Smiles": "c1ccc(cc1)C2=CC(=O)c3ccccc3O2"
+    },
+    {
+      "LID": "1UR",
+      "CName": "flavone-4'-carboxylic",
+      "LName": "4-(4-oxo-4h-chromen-2-yl)benzoic acid",
+      "IUPAC": "4-(4-oxochromen-2-yl)benzoic acid",
+      "Smiles": "c1ccc2c(c1)C(=O)C=C(O2)c3ccc(cc3)C(=O)O"
+    },
+    {
+      "LID": "GEN",
+      "CName": "genistein",
+      "LName": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+      "IUPAC": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+      "Smiles": "c1cc(ccc1C2=COc3cc(cc(c3C2=O)O)O)O"
+    },
+    {
+      "LID": "GEN",
+      "CName": "genistein",
+      "LName": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one.",
+      "IUPAC": "5,7-dihydroxy-3-(4-hydroxyphenyl)chromen-4-one",
+      "Smiles": "c1cc(ccc1C2=COc3cc(cc(c3C2=O)O)O)O"
+    },
+    {
+      "LID": "G7G",
+      "CName": "genistein-7-o-glucuronide",
+      "LName": "4h-1-benzopyran-4-one, 7-(β-d-glucopyranuronosyloxy)-5-hydroxy-3-(4-hydroxyphenyl)",
+      "IUPAC": "(2S,3S,4S,5R,6S)-3,4,5-trihydroxy-6-[5-hydroxy-3-(4-hydroxyphenyl)-4-oxochromen-7-yl]oxyoxane-2-carboxylic acid",
+      "Smiles": "c1cc(ccc1C2=COc3cc(cc(c3C2=O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)O)O"
+    },
+    {
+      "LID": "QCT",
+      "CName": "glycoside quercitrin",
+      "LName": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-4-oxo-4h-chromen-3-yl 6-deoxy-alpha-l-mannopyranoside",
+      "IUPAC": "",
+      "Smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=C(Oc3cc(cc(c3C2=O)O)O)c4ccc(c(c4)O)O)O)O)O"
+    },
+    {
+      "LID": "QCT",
+      "CName": "glycoside quercitrin",
+      "LName": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-4-oxo-4h-chromen-3-yl 6-deoxy-alpha-l-mannopyranoside",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-[(2S,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxychromen-4-one",
+      "Smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=C(Oc3cc(cc(c3C2=O)O)O)c4ccc(c(c4)O)O)O)O)O"
+    },
+    {
+      "LID": "SL0",
+      "CName": "glycoside sl0101",
+      "LName": "5,7-dihydroxy-2-(4-hydroxyphenyl)-4-oxo-4h-chromen-3-yl 3,4-di-o-acetyl-6-deoxy-alpha-l-mannopyranoside",
+      "IUPAC": "[4-acetyloxy-6-[5,7-dihydroxy-2-(4-hydroxyphenyl)-4-oxochromen-3-yl]oxy-5-hydroxy-2-methyloxan-3-yl] acetate",
+      "Smiles": "CC1C(C(C(C(O1)OC2=C(Oc3cc(cc(c3C2=O)O)O)c4ccc(cc4)O)O)OC(=O)C)OC(=O)C"
+    },
+    {
+      "LID": "6JP",
+      "CName": "hesperetin",
+      "LName": " (2s)-5,7-dihydroxy-2-(3-hydroxy-4-methoxyphenyl)-2,3-dihydro-4h-1-benzopyran-4-one",
+      "IUPAC": "(2S)-5,7-dihydroxy-2-(3-hydroxy-4-methoxyphenyl)-2,3-dihydrochromen-4-one",
+      "Smiles": "COc1ccc(cc1O)[C@@H]2CC(=O)c3c(cc(cc3O2)O)O"
+    },
+    {
+      "LID": "HUL",
+      "CName": "hispidulin",
+      "LName": "5,7-dihydroxy-2-(4-hydroxyphenyl)-6-methoxy-4h-chromen-4-one",
+      "IUPAC": "5,7-dihydroxy-2-(4-hydroxyphenyl)-6-methoxychromen-4-one",
+      "Smiles": "COc1c(cc2c(c1O)C(=O)C=C(O2)c3ccc(cc3)O)O"
+    },
+    {
+      "LID": "HQE",
+      "CName": "hydroquinone",
+      "LName": "benezene-1,4-diol",
+      "IUPAC": "benzene-1,4-diol",
+      "Smiles": "c1cc(ccc1O)O"
+    },
+    {
+      "LID": "975",
+      "CName": "hydroxytyrosol",
+      "LName": "4-(2-hydroxyethyl)benzene-1,2-diol",
+      "IUPAC": "4-[2-[2-(4-methoxyphenyl)ethylamino]ethyl]benzene-1,2-diol",
+      "Smiles": "COc1ccc(cc1)CCNCCc2ccc(c(c2)O)O"
+    },
+    {
+      "LID": "4MU",
+      "CName": "hymecromone",
+      "LName": "7-hydroxy-4-methyl-2h-chromen-2-one",
+      "IUPAC": "7-hydroxy-4-methylchromen-2-one",
+      "Smiles": "CC1=CC(=O)Oc2c1ccc(c2)O"
+    },
+    {
+      "LID": "7CA",
+      "CName": "icarisid ii",
+      "LName": "5,7-dihydroxy-2-(4-methoxyphenyl)-8-(3-methylbutyl)-4-oxo-4h-chromen-3-yl 6-deoxy-alpha-l-mannopyranoside",
+      "IUPAC": "5,7-dihydroxy-2-(4-methoxyphenyl)-8-(3-methylbutyl)-3-[(2S,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxychromen-4-one",
+      "Smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=C(Oc3c(c(cc(c3C2=O)O)O)CCC(C)C)c4ccc(cc4)OC)O)O)O"
+    },
+    {
+      "LID": "IM3",
+      "CName": "imino-dopa",
+      "LName": "(2e)-3-(3,4-dihydroxyphenyl)-2-iminopropanoic acid",
+      "IUPAC": "3-(3,4-dihydroxyphenyl)-2-iminopropanoic acid",
+      "Smiles": "[H]/N=C(\\Cc1ccc(c(c1)O)O)/C(=O)O"
+    },
+    {
+      "LID": "4HC",
+      "CName": "in00458",
+      "LName": "4-hydroxy-2h-chromen-2-one",
+      "IUPAC": "4-hydroxychromen-2-one",
+      "Smiles": "c1ccc2c(c1)C(=CC(=O)O2)O"
+    },
+    {
+      "LID": "32Y",
+      "CName": "inh2bp",
+      "LName": "6-amino-5-iodo-2h-chromen-2-one",
+      "IUPAC": "6-amino-5-iodochromen-2-one",
+      "Smiles": "c1cc2c(c(c1N)I)C=CC(=O)O2"
+    },
+    {
+      "LID": "9CU",
+      "CName": "isocladosorpin",
+      "LName": "(3r)-6,8-dihydroxy-3-{[(2r,6r)-6-methyloxan-2-yl]methyl}-3,4-dihydro-1h-2-benzopyran-1-one",
+      "IUPAC": "(3R)-6,8-dihydroxy-3-[[(2R,6R)-6-methyloxan-2-yl]methyl]-3,4-dihydroisochromen-1-one",
+      "Smiles": "C[C@@H]1CCC[C@@H](O1)C[C@H]2Cc3cc(cc(c3C(=O)O2)O)O"
+    },
+    {
+      "LID": "HMO",
+      "CName": "isoformononetin",
+      "LName": "4'-hydroxy-7-methoxyisoflavone",
+      "IUPAC": "3-(4-hydroxyphenyl)-7-methoxychromen-4-one",
+      "Smiles": "COc1ccc2c(c1)OC=C(C2=O)c3ccc(cc3)O"
+    },
+    {
+      "LID": "HCC",
+      "CName": "isoliquiritigenin",
+      "LName": "2',4,4'-trihydroxychalcone",
+      "IUPAC": "1-(2,4-dihydroxyphenyl)-3-(4-hydroxyphenyl)prop-2-en-1-one",
+      "Smiles": "c1cc(ccc1C=CC(=O)c2ccc(cc2O)O)O"
+    },
+    {
+      "LID": "HW2",
+      "CName": "isoquercetin",
+      "LName": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-4-oxo-4h-chromen-3-yl β-d-glucopyranoside",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxychromen-4-one",
+      "Smiles": "c1cc(c(cc1C2=C(C(=O)c3c(cc(cc3O2)O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)O"
+    },
+    {
+      "LID": "IRH",
+      "CName": "isorhamnetin",
+      "LName": "3,4',5,7-tetrahydroxy-3'-methoxyflavone",
+      "IUPAC": "3,5,7-trihydroxy-2-(4-hydroxy-3-methoxyphenyl)chromen-4-one",
+      "Smiles": "COc1cc(ccc1O)C2=C(C(=O)c3c(cc(cc3O2)O)O)O"
+    },
+    {
+      "LID": "KMP",
+      "CName": "kaempferol",
+      "LName": "3,5,7-trihydroxy-2-(4-hydroxyphenyl)-4h-chromen-4-one",
+      "IUPAC": "3,5,7-trihydroxy-2-(4-hydroxyphenyl)chromen-4-one",
+      "Smiles": "c1cc(ccc1C2=C(C(=O)c3c(cc(cc3O2)O)O)O)O"
+    },
+    {
+      "LID": "LDP",
+      "CName": "l-dopamine",
+      "LName": "4-(2-aminoethyl)benzene-1,2-diol1qsa",
+      "IUPAC": "4-(2-aminoethyl)benzene-1,2-diol",
+      "Smiles": "c1cc(c(cc1CCN)O)O"
+    },
+    {
+      "LID": "ALE",
+      "CName": "l-epinephrine",
+      "LName": "4-[(1r)-2-(methylamino)-1-oxidanyl-ethyl]benzene-1,2-diol",
+      "IUPAC": "4-[(1R)-1-hydroxy-2-(methylamino)ethyl]benzene-1,2-diol",
+      "Smiles": "CNC[C@@H](c1ccc(c(c1)O)O)O"
+    },
+    {
+      "LID": "LNR",
+      "CName": "l-norepinephrine",
+      "LName": "4-[(1r)-2-azanyl-1-oxidanyl-ethyl]benzene-1,2-diol",
+      "IUPAC": "4-[(1R)-2-amino-1-hydroxyethyl]benzene-1,2-diol",
+      "Smiles": "c1cc(c(cc1[C@H](CN)O)O)O"
+    },
+    {
+      "LID": "LU2",
+      "CName": "luteolin",
+      "LName": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-4h-chromen-4-one",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxychromen-4-one",
+      "Smiles": "c1cc(c(cc1C2=CC(=O)c3c(cc(cc3O2)O)O)O)O"
+    },
+    {
+      "LID": "6B5",
+      "CName": "luteolin 7-methyl ether",
+      "LName": "2-(3,4-dihydroxyphenyl)-5-hydroxy-7-methoxy-4h-1-chromen-4-one",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-5-hydroxy-7-methoxychromen-4-one",
+      "Smiles": "COc1cc(c2c(c1)OC(=CC2=O)c3ccc(c(c3)O)O)O"
+    },
+    {
+      "LID": "5J7",
+      "CName": "mba-grx",
+      "LName": "5,7-dihydroxy-4-oxo-2-(3,4,5-trihydroxyphenyl)-4h-chromen-3-yl 6-deoxy-2-o-{6-o-[(2e)-3-(3,4-dihydroxyphenyl)prop-2-enoyl]-beta-d-glucopyranosyl}-alpha-l-mannopyranoside",
+      "IUPAC": "[(2R,3S,4S,5R,6S)-6-[(2S,3R,4R,5R,6S)-2-[5,7-dihydroxy-4-oxo-2-(3,4,5-trihydroxyphenyl)chromen-3-yl]oxy-4,5-dihydroxy-6-methyloxan-3-yl]oxy-3,4,5-trihydroxyoxan-2-yl]methyl (E)-3-(3,4-dihydroxyphenyl)prop-2-enoate",
+      "Smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=C(Oc3cc(cc(c3C2=O)O)O)c4cc(c(c(c4)O)O)O)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)COC(=O)/C=C/c6ccc(c(c6)O)O)O)O)O)O)O"
+    },
+    {
+      "LID": "F08",
+      "CName": "methyl 4-(4-oxo-4h-chromen-2-yl)benzoate",
+      "LName": "methyl 4-(4-oxo-4h-chromen-2-yl)benzoate",
+      "IUPAC": "methyl 4-(4-oxochromen-2-yl)benzoate",
+      "Smiles": "COC(=O)c1ccc(cc1)C2=CC(=O)c3ccccc3O2"
+    },
+    {
+      "LID": "3L9",
+      "CName": "montbretin a",
+      "LName": "montbretin a",
+      "IUPAC": "[(2R,3S,4S,5R,6S)-6-[(2S,3R,4R,5R,6S)-2-[2-[4-[(2S,3R,4R,5R)-3,4-dihydroxy-5-[(2S,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxyoxan-2-yl]oxy-3,5-dihydroxyphenyl]-5,7-dihydroxy-4-oxochromen-3-yl]oxy-4,5-dihydroxy-6-methyloxan-3-yl]oxy-3,4-dihydroxy-5-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxan-2-yl]methyl (E)-3-(3,4-dihydroxyphenyl)prop-2-enoate",
+      "Smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2CO[C@H]([C@@H]([C@H]2O)O)Oc3c(cc(cc3O)C4=C(C(=O)c5c(cc(cc5O4)O)O)O[C@H]6[C@@H]([C@@H]([C@H]([C@@H](O6)C)O)O)O[C@H]7[C@@H]([C@H]([C@@H]([C@H](O7)COC(=O)/C=C/c8ccc(c(c8)O)O)O)O)O[C@H]9[C@@H]([C@H]([C@@H]([C@H](O9)CO)O)O)O)O)O)O)O"
+    },
+    {
+      "LID": "ZXY",
+      "CName": "montbretin a analogue m06-mba",
+      "LName": "n-(3-{[2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-4-oxo-4h-1-benzopyran-3-yl]oxy}propyl)-1-[(2e)-3-(3,4-dihydroxyphenyl)prop-2-enoyl]-l-prolinamide",
+      "IUPAC": "(2S)-N-[3-[2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-4-oxochromen-3-yl]oxypropyl]-1-[(E)-3-(3,4-dihydroxyphenyl)prop-2-enoyl]pyrrolidine-2-carboxamide",
+      "Smiles": "c1cc(c(cc1/C=C/C(=O)N2CCC[C@H]2C(=O)NCCCOC3=C(Oc4cc(cc(c4C3=O)O)O)c5ccc(c(c5)O)O)O)O"
+    },
+    {
+      "LID": "MRI",
+      "CName": "morin",
+      "LName": "2-[2,4-bis(oxidanyl)phenyl]-3,5,7-tris(oxidanyl)chromen-4-one",
+      "IUPAC": "2-(2,4-dihydroxyphenyl)-3,5,7-trihydroxychromen-4-one",
+      "Smiles": "c1cc(c(cc1O)O)C2=C(C(=O)c3c(cc(cc3O2)O)O)O"
+    },
+    {
+      "LID": "MUG",
+      "CName": "mud",
+      "LName": "4-methylumbelliferyl-alpha-d-glucose",
+      "IUPAC": "4-methyl-7-[(2R,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxychromen-2-one",
+      "Smiles": "CC1=CC(=O)Oc2c1ccc(c2)O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O"
+    },
+    {
+      "LID": "MYC",
+      "CName": "myricetin",
+      "LName": "3,5,7-trihydroxy-2-(3,4,5-trihydroxyphenyl)-4h-chromen-4-one",
+      "IUPAC": "3,5,7-trihydroxy-2-(3,4,5-trihydroxyphenyl)chromen-4-one",
+      "Smiles": "c1c(cc(c(c1O)O)O)C2=C(C(=O)c3c(cc(cc3O2)O)O)O"
+    },
+    {
+      "LID": "ZXU",
+      "CName": "n-(3-{[2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-4-oxo-4h-1-benzopyran-3-yl]oxy}propyl)-nalpha-[(2e)-3-(3,4-dihydroxyphenyl )prop-2-enoyl]-l-tyrosinamide",
+      "LName": "n-(3-{[2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-4-oxo-4h-1-benzopyran-3-yl]oxy}propyl)-nalpha-[(2e)-3-(3,4-dihydroxyphenyl )prop-2-enoyl]-l-tyrosinamide",
+      "IUPAC": "",
+      "Smiles": "c1cc(ccc1C[C@@H](C(=O)NCCCOC2=C(Oc3cc(cc(c3C2=O)O)O)c4ccc(c(c4)O)O)NC(=O)/C=C/c5ccc(c(c5)O)O)O"
+    },
+    {
+      "LID": "7DP",
+      "CName": "n-acetyldopamine",
+      "LName": "~{n}-[2-[3,4-bis(oxidanyl)phenyl]ethyl]ethanamide",
+      "IUPAC": "N-[2-(3,4-dihydroxyphenyl)ethyl]acetamide",
+      "Smiles": "CC(=O)NCCc1ccc(c(c1)O)O"
+    },
+    {
+      "LID": "03V",
+      "CName": "naphthalen-2-ol",
+      "LName": "1-((1e)-2-(2-pyridyl)-2-azavinyl)naphthalen-2-ol",
+      "IUPAC": "naphthalen-2-ol",
+      "Smiles": "c1ccc2cc(ccc2c1)O"
+    },
+    {
+      "LID": "NAR",
+      "CName": "naringenin",
+      "LName": "4',5,7-trihydroxyflavanone",
+      "IUPAC": "(2S)-5,7-dihydroxy-2-(4-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(ccc1[C@@H]2CC(=O)c3c(cc(cc3O2)O)O)O"
+    },
+    {
+      "LID": "NAR",
+      "CName": "naringenin",
+      "LName": "5,7-dihydroxy-2-(4-hydroxyphenyl)chroman-4-one.",
+      "IUPAC": "(2S)-5,7-dihydroxy-2-(4-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(ccc1[C@@H]2CC(=O)c3c(cc(cc3O2)O)O)O"
+    },
+    {
+      "LID": "NAR",
+      "CName": "naringenin",
+      "LName": "(2s)-5,7-dihydroxy-2-(4-hydroxyphenyl)-2,3-dihydro-4h-chromen-4-on",
+      "IUPAC": "(2S)-5,7-dihydroxy-2-(4-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(ccc1[C@@H]2CC(=O)c3c(cc(cc3O2)O)O)O"
+    },
+    {
+      "LID": "X8W",
+      "CName": "naringenin chalcone",
+      "LName": "(2e)-3-(4-hydroxyphenyl)-1-(2,4,6-trihydroxyphenyl)prop-2-en-1-one",
+      "IUPAC": "(E)-3-(4-hydroxyphenyl)-1-(2,4,6-trihydroxyphenyl)prop-2-en-1-one",
+      "Smiles": "c1cc(ccc1/C=C/C(=O)c2c(cc(cc2O)O)O)O"
+    },
+    {
+      "LID": "A0O",
+      "CName": "osthol",
+      "LName": "7-methoxy-8-(3-methylbut-2-enyl)chromen-2-one",
+      "IUPAC": "7-methoxy-8-(3-methylbut-2-enyl)chromen-2-one",
+      "Smiles": "CC(=CCc1c(ccc2c1OC(=O)C=C2)OC)C"
+    },
+    {
+      "LID": "MYF",
+      "CName": "pentahydroxyflavone",
+      "LName": "5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)-4h-chromen-4-one ",
+      "IUPAC": "5,7-dihydroxy-2-(3,4,5-trihydroxyphenyl)chromen-4-one",
+      "Smiles": "c1c(cc(c(c1O)O)O)C2=CC(=O)c3c(cc(cc3O2)O)O"
+    },
+    {
+      "LID": "P5M",
+      "CName": "petunidin",
+      "LName": "2-(3,4-dihydroxy-5-methoxyphenyl)-3,5,7-trihydroxychromenium",
+      "IUPAC": "2-(3,4-Dihydroxy-5-methoxyphenyl)-3,5,7-trihydroxychromenium",
+      "Smiles": "COc1cc(cc(c1O)O)c2c(cc3c(cc(cc3[o+]2)O)O)O"
+    },
+    {
+      "LID": "IPH",
+      "CName": "phenol",
+      "LName": "hydroxybenzene",
+      "IUPAC": "phenol",
+      "Smiles": "c1ccc(cc1)O"
+    },
+    {
+      "LID": "PIT",
+      "CName": "piceatannol",
+      "LName": "(e)-4-[2-(3,5dihydroxyphenyl)ethenyl]1,2-benzenediol",
+      "IUPAC": "4-[(E)-2-(3,5-dihydroxyphenyl)ethenyl]benzene-1,2-diol",
+      "Smiles": "c1cc(c(cc1\\C=C\\c2cc(cc(c2)O)O)O)O"
+    },
+    {
+      "LID": "P08",
+      "CName": "pik-108",
+      "LName": "4h-1-benzopyran-4-one, 6-methyl-2-(4-morpholinyl)-8-[(1s)-1-(phenylamino)ethyl]-",
+      "IUPAC": "8-[(1S)-1-anilinoethyl]-6-methyl-2-morpholin-4-ylchromen-4-one",
+      "Smiles": "Cc1cc2c(c(c1)[C@H](C)Nc3ccccc3)OC(=CC2=O)N4CCOCC4"
+    },
+    {
+      "LID": "VGP",
+      "CName": "pregilvocarcin v",
+      "LName": "(1r)-1,4-anhydro-6-deoxy-1-[(6r)-8-ethenyl-1,6-dihydroxy-10,12-dimethoxy-6h-dibenzo[c,h]chromen-4-yl]-d-galactitol",
+      "IUPAC": "(6R)-4-[(2R,3R,4R,5S)-3,4-dihydroxy-5-[(1R)-1-hydroxyethyl]oxolan-2-yl]-8-ethenyl-10,12-dimethoxy-6H-naphtho[1,2-c]isochromene-1,6-diol",
+      "Smiles": "C[C@H]([C@H]1[C@@H]([C@H]([C@H](O1)c2ccc(c3c2c4c(cc3OC)-c5c(cc(cc5OC)C=C)[C@@H](O4)O)O)O)O)O"
+    },
+    {
+      "LID": "H6N",
+      "CName": "protocatechuic aldehyde",
+      "LName": "3,4-bis(oxidanyl)benzaldehyde",
+      "IUPAC": "3,4-dihydroxybenzaldehyde",
+      "Smiles": "c1cc(c(cc1C=O)O)O"
+    },
+    {
+      "LID": "PYG",
+      "CName": "pyrogallol",
+      "LName": "benzene-1,2,3-triol",
+      "IUPAC": "benzene-1,2,3-triol",
+      "Smiles": "c1cc(c(c(c1)O)O)O"
+    },
+    {
+      "LID": "2SR",
+      "CName": "q27453241",
+      "LName": "(2r)-8-(3,4-dimethoxyphenyl)-6-methyl-2-(tetrahydro-2h-pyran-4-yl)-2h-chromen-4-ol",
+      "IUPAC": "(2R)-8-(3,4-dimethoxyphenyl)-6-methyl-2-(oxan-4-yl)-2H-chromen-4-ol",
+      "Smiles": "Cc1cc(c2c(c1)C(=C[C@H](O2)C3CCOCC3)O)c4ccc(c(c4)OC)OC"
+    },
+    {
+      "LID": "MYU",
+      "CName": "quercetagetin",
+      "LName": "3,5,6,7-tetrahydroxy-2-(3,4-dihydroxyphenyl)-4h-chromen-4-one ",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-3,5,6,7-tetrahydroxychromen-4-one",
+      "Smiles": "c1cc(c(cc1C2=C(C(=O)c3c(cc(c(c3O)O)O)O2)O)O)O"
+    },
+    {
+      "LID": "QUE",
+      "CName": "quercetin",
+      "LName": "3,5,7,3',4'-pentahydroxyflavone",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-3,5,7-trihydroxychromen-4-one",
+      "Smiles": "c1cc(c(cc1C2=C(C(=O)c3c(cc(cc3O2)O)O)O)O)O"
+    },
+    {
+      "LID": "CWE",
+      "CName": "r-naringenin",
+      "LName": "",
+      "IUPAC": "(2R)-5,7-dihydroxy-2-(4-hydroxyphenyl)-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(ccc1[C@H]2CC(=O)c3c(cc(cc3O2)O)O)O"
+    },
+    {
+      "LID": "RCO",
+      "CName": "resorcinol",
+      "LName": "1,3-dihydroxybenzene",
+      "IUPAC": "benzene-1,3-diol",
+      "Smiles": "c1cc(cc(c1)O)O"
+    },
+    {
+      "LID": "RCO",
+      "CName": "resorcinol",
+      "LName": "1,3-dihydroxybenzene",
+      "IUPAC": "benzene-1,3-diol",
+      "Smiles": "c1cc(c(cc1[C@H](CN)O)O)O"
+    },
+    {
+      "LID": "STL",
+      "CName": "resveratrol",
+      "LName": "(e)-5-(4-hydroxystyryl)benzene-1,3-diol",
+      "IUPAC": "5-[(E)-2-(4-hydroxyphenyl)ethenyl]benzene-1,3-diol",
+      "Smiles": "c1cc(ccc1\\C=C\\c2cc(cc(c2)O)O)O"
+    },
+    {
+      "LID": "STL",
+      "CName": "resveratrol",
+      "LName": "(e)-5-(4-hydroxystyryl)benzene-1,3-diol",
+      "IUPAC": "5-[(E)-2-(4-hydroxyphenyl)ethenyl]benzene-1,3-diol",
+      "Smiles": "c1c(cc(c(c1O)O)O)[C@@H]2[C@@H](Cc3c(cc(cc3O2)O)O)OC(=O)c4cc(c(c(c4)O)O)O"
+    },
+    {
+      "LID": "J8G",
+      "CName": "rhamnetin",
+      "LName": "2-(3,4-dihydroxyphenyl)-3,5-dihydroxy-7-methoxy-4h-1-benzopyran-4-one",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-3,5-dihydroxy-7-methoxychromen-4-one",
+      "Smiles": "COc1cc(c2c(c1)OC(=C(C2=O)O)c3ccc(c(c3)O)O)O"
+    },
+    {
+      "LID": "RUT",
+      "CName": "rutin",
+      "LName": "",
+      "IUPAC": "2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-[(2S,3R,4S,5S,6R)-3,4,5-trihydroxy-6-[[(2R,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxymethyl]oxan-2-yl]oxychromen-4-one",
+      "Smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(Oc4cc(cc(c4C3=O)O)O)c5ccc(c(c5)O)O)O)O)O)O)O)O"
+    },
+    {
+      "LID": "CU5",
+      "CName": "s-dihydrowogonin",
+      "LName": "",
+      "IUPAC": "(2S)-5,7-dihydroxy-8-methoxy-2-phenyl-2,3-dihydrochromen-4-one",
+      "Smiles": "COc1c(cc(c2c1O[C@@H](CC2=O)c3ccccc3)O)O"
+    },
+    {
+      "LID": "SAK",
+      "CName": "sakuranetin",
+      "LName": "(2s)-5-hydroxy-2-(4-hydroxyphenyl)-7-methoxy-2,3-dihydro-4h-chromen-4-one",
+      "IUPAC": "(2S)-5-hydroxy-2-(4-hydroxyphenyl)-7-methoxy-2,3-dihydrochromen-4-one",
+      "Smiles": "COc1cc(c2c(c1)O[C@@H](CC2=O)c3ccc(cc3)O)O"
+    },
+    {
+      "LID": "YTZ",
+      "CName": "sulfathiazole",
+      "LName": "4-amino-n-(1,3-thiazol-2-yl)benzenesulfonamide",
+      "IUPAC": "4-amino-N-(1,3-thiazol-2-yl)benzenesulfonamide",
+      "Smiles": "c1cc(ccc1N)S(=O)(=O)Nc2nccs2"
+    },
+    {
+      "LID": "DH2",
+      "CName": "trans-dihydroquercetin (taxifolin)",
+      "LName": "(2s,3s)-2-(3,4-dihydroxyphenyl)-3,5,7-trihydroxy-2,3-dihydro-4h-chromen-4-one",
+      "IUPAC": "(2S,3S)-2-(3,4-dihydroxyphenyl)-3,5,7-trihydroxy-2,3-dihydrochromen-4-one",
+      "Smiles": "c1cc(c(cc1[C@H]2[C@@H](C(=O)c3c(cc(cc3O2)O)O)O)O)O"
+    },
+    {
+      "LID": "TYR",
+      "CName": "tyrosine",
+      "LName": "(2s)-2-amino-3-(4-hydroxyphenyl)propanoic acid",
+      "IUPAC": "(2S)-2-amino-3-(4-hydroxyphenyl)propanoic acid",
+      "Smiles": "c1cc(ccc1C[C@@H](C(=O)O)N)O"
+    },
+    {
+      "LID": "07L",
+      "CName": "umbelliferone",
+      "LName": "7-hydroxy-2h-chromen-2-one",
+      "IUPAC": "7-hydroxychromen-2-one",
+      "Smiles": "c1cc2c(cc1O)OC(=O)C=C2"
+    },
+    {
+      "LID": "EKZ",
+      "CName": "ux1400000",
+      "LName": "4-tert-butylbenzene-1,2-diol",
+      "IUPAC": "4-tert-butylbenzene-1,2-diol",
+      "Smiles": "CC(C)(C)c1ccc(c(c1)O)O"
+    },
+    {
+      "LID": "V55",
+      "CName": "vanillin",
+      "LName": "4-hydroxy-3-methoxybenzaldehyde",
+      "IUPAC": "4-hydroxy-3-methoxybenzaldehyde",
+      "Smiles": "COc1cc(ccc1O)C=O"
+    },
+    {
+      "LID": "BHF",
+      "CName": "α-naphthoflavone",
+      "LName": "2-phenyl-4h-benzo[h]chromen-4-one",
+      "IUPAC": "2-phenylbenzo[h]chromen-4-one",
+      "Smiles": "c1ccc(cc1)C2=CC(=O)c3ccc4ccccc4c3O2"
+    }
+  ]
+}
