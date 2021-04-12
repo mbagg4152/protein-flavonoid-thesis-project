@@ -141,7 +141,7 @@ Then the data is added to a list such that this gene data is associated with the
 <!--  -->
 ---
 ## `flavonoid/flib/prediction_logic.py`
-This uses the labeled EC numbers from `flib/fconstants.o` as well as the logic used in order to make the predictions.  
+This uses the labeled EC numbers from `flib/fconstants.py` as well as the logic used in order to make the predictions.  
 Some of the EC number variables are shown below:
 ```python
 E1 = 'EC:4.3.1.24'
@@ -160,7 +160,7 @@ Takes in a list and elements and returns true only if all of the passed elements
   
 ### The Logical Functions  
 Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite compounds which are found on the map. The prerequisite functions are used to get the total result for the specific compound. If the prerequisite returns `False`, the compound logic function will also return `False`.  
-Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
+Each function named using the compound's PDB ID (or abbreviation, if no ID is available) in order to keep code lines at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
 For example, the function for Cinnamic acid, which requires `EC:4.3.1.24` OR `EC:4.3.1.25` is written as such:  
 ```python
 def tca(e): return or_in(e, E1, E2)  # cinnamic acid
@@ -172,20 +172,7 @@ The functions return `True` or `False` based on whether or not the required EC n
 
 <!--  -->
 ---
-## `lib/knapsackinfo.py`
-This program uses the `wget` command in order to pull the information for each of the species from KNApSAcK. 
-For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of interest.  
-After the HTML page for each plant is retrieved, the file is then parsed.
-Any lines containing the names of the flavonoids of interest will be saved, stripped of HTML syntax and broken down into a list of lists for the plant.
-This program was written with the purpose of making data collection for both the compounds and their relatives easier.  
-More searching will be done in order to determine how easy or difficult it would be to update this code to work with 
-other databases.
-
-__Note:__ It will not work correctly if the `wget` system command is not installed (this has not yet been tested on Windows, may potentially only be compatible with Linux systems). 
-
-<!--  -->
----
-## `lib/datatypes.py`
+## `fllib/datatypes.py`
 This contains the custom data types that are or have been used in the program.  
 ### `ChemData` 
 This class holds the data for each flavonoid. The objects are initialized with their file name and label and only later in the program, their empty list of plants will be filled.  
@@ -278,6 +265,23 @@ __Functions__
 * `__eq__`: defines equality of the object  
 * `is_in`: determines if an identical or nearly identical object is already in the list  
 * `simple`: returns a formatted string  
+
+
+
+<!--  -->
+---
+## `lib/knapsackinfo.py`
+This program uses the `wget` command in order to pull the information for each of the species from KNApSAcK. 
+For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of interest.  
+After the HTML page for each plant is retrieved, the file is then parsed.
+Any lines containing the names of the flavonoids of interest will be saved, stripped of HTML syntax and broken down into a list of lists for the plant.
+This program was written with the purpose of making data collection for both the compounds and their relatives easier.  
+More searching will be done in order to determine how easy or difficult it would be to update this code to work with 
+other databases.
+
+__Note:__ It will not work correctly if the `wget` system command is not installed (this has not yet been tested on Windows, may potentially only be compatible with Linux systems). 
+
+
 
 <!--  -->
 ---
@@ -429,7 +433,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDQ4MzIyMzQsMTU2MzQ4NzMxOSwtMT
+eyJoaXN0b3J5IjpbLTE0MTE3OTc4ODAsMTU2MzQ4NzMxOSwtMT
 E1NDkwODI2NywxODk0OTA5MjExLC04MzIxMTMyMDcsLTE4NzEx
 MDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ
 ==
