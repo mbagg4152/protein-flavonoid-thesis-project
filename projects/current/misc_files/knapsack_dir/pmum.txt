@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Prunus mume</font><br><br>
-   	      Number of matched data :16 <br>
+   	      Number of matched data :17 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -50,6 +50,7 @@
 <tr><td class="d1"><a href=information.php?word=C00045384 target="_blank">C00045384</a></td><td class="d1">457639-62-2</td><td class="d1">Prunose I</td><td class="d1">C31H38O18</td><td class="d1">698.20581441</td><td class="d1"><font color=#FF00BF>Prunus mume</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00045385 target="_blank">C00045385</a></td><td class="d1">457640-04-9</td><td class="d1">Prunose II</td><td class="d1">C29H36O17</td><td class="d1">656.19524973</td><td class="d1"><font color=#FF00BF>Prunus mume</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00051443 target="_blank">C00051443</a></td><td class="d1">6915-15-7</td><td class="d1">Malic acid</td><td class="d1">C4H6O5</td><td class="d1">134.0215233</td><td class="d1"><font color=#FF00BF>Prunus mume</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057260 target="_blank">C00057260</a></td><td class="d1">222973-44-6</td><td class="d1">Mumefural</td><td class="d1">C12H12O9</td><td class="d1">300.04813198</td><td class="d1"><font color=#FF00BF>Prunus mume</font></td></tr>
 
              </table>
          </div>

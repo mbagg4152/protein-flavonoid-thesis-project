@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Cucumis melo</font><br><br>
-   	      Number of matched data :20 <br>
+   	      Number of matched data :28 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -41,7 +41,7 @@
 <tr><td class="d1"><a href=information.php?word=C00000008 target="_blank">C00000008</a></td><td class="d1">7044-72-6</td><td class="d1">Gibberellin A8</td><td class="d1">C19H24O7</td><td class="d1">364.15220312</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00000020 target="_blank">C00000020</a></td><td class="d1">19143-87-4</td><td class="d1">Gibberellin A20</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00000034 target="_blank">C00000034</a></td><td class="d1">32630-92-5</td><td class="d1">Gibberellin A34</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
-<tr><td class="d1"><a href=information.php?word=C00000358 target="_blank">C00000358</a></td><td class="d1">111-27-3</td><td class="d1">1-Hexanol</td><td class="d1">C6H14O</td><td class="d1">102.10446507</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000358 target="_blank">C00000358</a></td><td class="d1">111-27-3</td><td class="d1">Hexan-1-ol</td><td class="d1">C6H14O</td><td class="d1">102.10446507</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00003682 target="_blank">C00003682</a></td><td class="d1">6040-19-3</td><td class="d1">Cucurbitacin A</td><td class="d1">C32H46O9</td><td class="d1">574.31418307</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00003683 target="_blank">C00003683</a></td><td class="d1">6199-67-3</td><td class="d1">Cucurbitacin B</td><td class="d1">C32H46O8</td><td class="d1">558.31926845</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00003688 target="_blank">C00003688</a></td><td class="d1">751-96-2</td><td class="d1">Cucurbitacin H</td><td class="d1">C30H46O8</td><td class="d1">534.31926845</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
@@ -54,6 +54,14 @@
 <tr><td class="d1"><a href=information.php?word=C00047823 target="_blank">C00047823</a></td><td class="d1">751-95-1</td><td class="d1">Cucurbitacin G</td><td class="d1">C30H46O8</td><td class="d1">534.31926845</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00047824 target="_blank">C00047824</a></td><td class="d1">55903-92-9</td><td class="d1">Cucurbitacin R</td><td class="d1">C30H46O7</td><td class="d1">518.32435382</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00047845 target="_blank">C00047845</a></td><td class="d1">68354-21-2</td><td class="d1">Dihydroisocucurbitacin B</td><td class="d1">C32H48O8</td><td class="d1">560.33491851</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054652 target="_blank">C00054652</a></td><td class="d1">76238-22-7</td><td class="d1">9-Acetoxy-3-nonene</td><td class="d1">C11H20O2</td><td class="d1">184.14632988</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054716 target="_blank">C00054716</a></td><td class="d1">83334-93-4</td><td class="d1">1-Acetoxy-3,6-nonadiene</td><td class="d1">C11H18O2</td><td class="d1">182.13067982</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055024 target="_blank">C00055024</a></td><td class="d1">144889-21-4</td><td class="d1">CmCTI-I</td><td class="d1">C130H213N33O39S8</td><td class="d1">3116.34641015</td><td class="d1"><font color=#FF00BF>Cucumis melo</font> var. conomon Makino</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055025 target="_blank">C00055025</a></td><td class="d1">144889-23-6</td><td class="d1">CmCTI-III</td><td class="d1">C141H230N38O42S8</td><td class="d1">3383.47954959</td><td class="d1"><font color=#FF00BF>Cucumis melo</font> var. conomon Makino</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056779 target="_blank">C00056779</a></td><td class="d1">1276662-79-3</td><td class="d1">5,7-Dihydroxy-2-(4-hydroxyphenethyl)chromone</td><td class="d1">C17H14O5</td><td class="d1">298.08412356</td><td class="d1"><font color=#FF00BF>Cucumis melo</font> var. reticulatus</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056780 target="_blank">C00056780</a></td><td class="d1">1276662-80-6</td><td class="d1">2-[2-(3,4-Dihydroxyphenyl)ethyl]-5,7-dihydroxy-4H-1-benzopyran-4-one</td><td class="d1">C17H14O6</td><td class="d1">314.07903818</td><td class="d1"><font color=#FF00BF>Cucumis melo</font> var. reticulatus</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056864 target="_blank">C00056864</a></td><td class="d1">1135141-78-4</td><td class="d1">2,16,19,20,25-Pentahydroxycucurbit-5-ene-3,11,22-trione</td><td class="d1">C30H46O8</td><td class="d1">534.31926845</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057013 target="_blank">C00057013</a></td><td class="d1">13049-88-2</td><td class="d1">3-Nonen-1-yl acetate</td><td class="d1">C11H20O2</td><td class="d1">184.14632988</td><td class="d1"><font color=#FF00BF>Cucumis melo</font></td></tr>
 
              </table>
          </div>

@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Papaver somniferum</font><br><br>
-   	      Number of matched data :109 <br>
+   	      Number of matched data :122 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -96,6 +96,7 @@
 <tr><td class="d1"><a href=information.php?word=C00028454 target="_blank">C00028454</a></td><td class="d1">2888-77-9</td><td class="d1">Laudanosine</td><td class="d1">C21H27NO4</td><td class="d1">357.19400836</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00028646 target="_blank">C00028646</a></td><td class="d1">125187-48-6</td><td class="d1">Narceinone</td><td class="d1">C23H25NO9</td><td class="d1">459.15293141</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00028775 target="_blank">C00028775</a></td><td class="d1">467-04-9</td><td class="d1">Oripavine</td><td class="d1">C18H19NO3</td><td class="d1">297.13649348</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00032163 target="_blank">C00032163</a></td><td class="d1">83-45-4</td><td class="d1">Stigmastanol</td><td class="d1">C19H21NO4</td><td class="d1">327.14705817</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00034467 target="_blank">C00034467</a></td><td class="d1">3688-65-1</td><td class="d1">Codeine N-oxide</td><td class="d1">C18H21NO4</td><td class="d1">315.14705817</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00034613 target="_blank">C00034613</a></td><td class="d1">22672-77-1</td><td class="d1">(S)-Norcoclaurine</td><td class="d1">C16H17NO3</td><td class="d1">271.12084342</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00037598 target="_blank">C00037598</a></td><td class="d1">522-57-6</td><td class="d1">Papaveraldine</td><td class="d1">C20H19NO5</td><td class="d1">353.12632273</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font> L.</td></tr>
@@ -143,6 +144,18 @@
 <tr><td class="d1"><a href=information.php?word=C00052016 target="_blank">C00052016</a></td><td class="d1">57538-24-6</td><td class="d1">Norcodamine</td><td class="d1">C19H23NO4</td><td class="d1">329.16270823</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00052018 target="_blank">C00052018</a></td><td class="d1"></td><td class="d1">Nororientaline</td><td class="d1">C18H21NO4</td><td class="d1">315.14705817</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00052036 target="_blank">C00052036</a></td><td class="d1"></td><td class="d1">3,4-Dihydroxyphenylacetaldehyde</td><td class="d1">C8H8O3</td><td class="d1">152.04734412</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055112 target="_blank">C00055112</a></td><td class="d1">18361-67-6</td><td class="d1">Alkaloid A4</td><td class="d1">C20H21NO6</td><td class="d1">371.13688741</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056562 target="_blank">C00056562</a></td><td class="d1">117611-62-8</td><td class="d1">O-Methylsomniferine</td><td class="d1">C37H38N2O7</td><td class="d1">622.26790158</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056728 target="_blank">C00056728</a></td><td class="d1">125208-64-2</td><td class="d1">4-Methylnonacosane</td><td class="d1">C30H62</td><td class="d1">422.48515198</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056935 target="_blank">C00056935</a></td><td class="d1">1206614-00-7</td><td class="d1">N-Norlaudanidine</td><td class="d1">C19H23NO4</td><td class="d1">329.16270823</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057015 target="_blank">C00057015</a></td><td class="d1">13111-79-0</td><td class="d1">D-glycero-D-manno-2-Octulose</td><td class="d1">C8H16O8</td><td class="d1">240.08451749</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057101 target="_blank">C00057101</a></td><td class="d1">15215-66-4</td><td class="d1">13-Oxocryptopine</td><td class="d1">C21H21NO6</td><td class="d1">383.13688741</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057161 target="_blank">C00057161</a></td><td class="d1">180005-28-1</td><td class="d1">1,9-Octacosanediol</td><td class="d1">C28H58O2</td><td class="d1">426.44368109</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057162 target="_blank">C00057162</a></td><td class="d1">180005-29-2</td><td class="d1">1,10-Nonacosanediol</td><td class="d1">C29H60O2</td><td class="d1">440.45933116</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057178 target="_blank">C00057178</a></td><td class="d1">18694-10-5</td><td class="d1">Palaudine</td><td class="d1">C19H19NO4</td><td class="d1">325.1314081</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057342 target="_blank">C00057342</a></td><td class="d1">31469-35-9</td><td class="d1">7-Pentacosanone</td><td class="d1">C25H50O</td><td class="d1">366.38616622</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057403 target="_blank">C00057403</a></td><td class="d1">483-89-6</td><td class="d1">Nornarceine</td><td class="d1">C22H25NO8</td><td class="d1">431.15801678</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057481 target="_blank">C00057481</a></td><td class="d1">639-46-3</td><td class="d1">Morphine N-oxide</td><td class="d1">C17H19NO4</td><td class="d1">301.1314081</td><td class="d1"><font color=#FF00BF>Papaver somniferum</font></td></tr>
 
              </table>
          </div>

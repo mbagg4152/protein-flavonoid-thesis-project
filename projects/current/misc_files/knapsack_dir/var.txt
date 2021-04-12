@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Vigna angularis</font><br><br>
-   	      Number of matched data :19 <br>
+   	      Number of matched data :28 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -42,7 +42,7 @@
 <tr><td class="d1"><a href=information.php?word=C00002526 target="_blank">C00002526</a></td><td class="d1">446-72-0</td><td class="d1">Genistein</td><td class="d1">C15H10O5</td><td class="d1">270.05282343</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00002541 target="_blank">C00002541</a></td><td class="d1">40105-60-0</td><td class="d1">Kievitone</td><td class="d1">C20H20O6</td><td class="d1">356.12598837</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00003504 target="_blank">C00003504</a></td><td class="d1">82801-38-5</td><td class="d1">Azukisaponin III</td><td class="d1">C42H66O15</td><td class="d1">810.44017144</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
-<tr><td class="d1"><a href=information.php?word=C00006614 target="_blank">C00006614</a></td><td class="d1">13306-05-3</td><td class="d1">Cyanidin</td><td class="d1">C15H11O6</td><td class="d1">287.05556308</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006614 target="_blank">C00006614</a></td><td class="d1">13306-05-3</td><td class="d1">Cyanidin</td><td class="d1">C15H11O6+</td><td class="d1">287.05556308</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00008817 target="_blank">C00008817</a></td><td class="d1">970-73-0</td><td class="d1">Gallocatechin</td><td class="d1">C15H14O7</td><td class="d1">306.0739528</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00008852 target="_blank">C00008852</a></td><td class="d1">65597-47-9</td><td class="d1">Catechin 7-O-beta-D-glucopyranoside</td><td class="d1">C21H24O11</td><td class="d1">452.13186161</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00009067 target="_blank">C00009067</a></td><td class="d1">80685-13-8</td><td class="d1">Catechin-(4alpha->8)-epiafzelechin</td><td class="d1">C30H26O11</td><td class="d1">562.14751167</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
@@ -53,6 +53,15 @@
 <tr><td class="d1"><a href=information.php?word=C00010080 target="_blank">C00010080</a></td><td class="d1">53681-67-7</td><td class="d1">Daidzein 7,4'-di-O-glucoside</td><td class="d1">C27H30O14</td><td class="d1">578.16355567</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00010141 target="_blank">C00010141</a></td><td class="d1">88048-22-0</td><td class="d1">2'-Hydroxydaidzein 7,4'-di-O-glucoside</td><td class="d1">C27H30O15</td><td class="d1">594.15847029</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00019147 target="_blank">C00019147</a></td><td class="d1">82793-05-3</td><td class="d1">Azukisaponin V</td><td class="d1">C48H78O18</td><td class="d1">942.51881569</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00052854 target="_blank">C00052854</a></td><td class="d1">82793-03-1</td><td class="d1">Azukisaponin II</td><td class="d1">C42H68O14</td><td class="d1">796.46090688</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054181 target="_blank">C00054181</a></td><td class="d1">82793-04-2</td><td class="d1">Azukisaponin IV</td><td class="d1">C48H76O20</td><td class="d1">972.49299487</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054626 target="_blank">C00054626</a></td><td class="d1">82793-02-0</td><td class="d1">Azukisaponin I</td><td class="d1">C42H68O13</td><td class="d1">780.46599226</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054755 target="_blank">C00054755</a></td><td class="d1">86425-22-1</td><td class="d1">Anhydrosophoradiol</td><td class="d1">C30H48O</td><td class="d1">424.37051615</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054756 target="_blank">C00054756</a></td><td class="d1">86425-21-0</td><td class="d1">Azukisapogenol</td><td class="d1">C30H48O4</td><td class="d1">472.35526002</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054757 target="_blank">C00054757</a></td><td class="d1">82801-39-6</td><td class="d1">Azukisaponin VI</td><td class="d1">C54H86O25</td><td class="d1">1134.5458183</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055476 target="_blank">C00055476</a></td><td class="d1">244776-45-2</td><td class="d1">AzII</td><td class="d1">C54H82O23</td><td class="d1">1098.52468893</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055477 target="_blank">C00055477</a></td><td class="d1">244776-46-3</td><td class="d1">AzIII</td><td class="d1">C54H82O22</td><td class="d1">1082.52977431</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055478 target="_blank">C00055478</a></td><td class="d1">244776-47-4</td><td class="d1">AzIV</td><td class="d1">C54H84O22</td><td class="d1">1084.54542437</td><td class="d1"><font color=#FF00BF>Vigna angularis</font></td></tr>
 
              </table>
          </div>

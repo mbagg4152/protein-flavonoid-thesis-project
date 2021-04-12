@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Ziziphus jujuba</font><br><br>
-   	      Number of matched data :63 <br>
+   	      Number of matched data :66 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -80,10 +80,11 @@
 <tr><td class="d1"><a href=information.php?word=C00029633 target="_blank">C00029633</a></td><td class="d1">7372-30-7</td><td class="d1">Ursolic acid</td><td class="d1">C30H48O3</td><td class="d1">456.3603454</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font> var.spinosa</td></tr>
 <tr><td class="d1"><a href=information.php?word=C00029834 target="_blank">C00029834</a></td><td class="d1">23526-45-6</td><td class="d1">(+)-Blumenol A</td><td class="d1">C13H20O3</td><td class="d1">224.1412445</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00032551 target="_blank">C00032551</a></td><td class="d1">76819-28-8</td><td class="d1">Zizybeoside I</td><td class="d1">C19H28O11</td><td class="d1">432.16316174</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font> var.inermis</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00034471 target="_blank">C00034471</a></td><td class="d1">53947-96-9</td><td class="d1">Nummularine B</td><td class="d1">C32H41N5O6</td><td class="d1">591.30568408</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00034675 target="_blank">C00034675</a></td><td class="d1">107462-33-9</td><td class="d1">Sanjoinine B</td><td class="d1">C30H40N4O4</td><td class="d1">520.30495579</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font> var.spinosa</td></tr>
 <tr><td class="d1"><a href=information.php?word=C00035166 target="_blank">C00035166</a></td><td class="d1">64069-53-0</td><td class="d1">Juzirine</td><td class="d1">C17H15NO3</td><td class="d1">281.10519335</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font> var.spinosa</td></tr>
-<tr><td class="d1"><a href=information.php?word=C00044025 target="_blank">C00044025</a></td><td class="d1">55466-05-2</td><td class="d1">Jujuboside B</td><td class="d1">C52H84O21</td><td class="d1">1044.55050975</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00044025 target="_blank">C00044025</a></td><td class="d1">55466-05-2</td><td class="d1">Jujuboside B</td><td class="d1">C52H84O21</td><td class="d1">1044.55050975</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font> var.spinosa</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00044025 target="_blank">C00044025</a></td><td class="d1">55466-05-2</td><td class="d1">Jujuboside B</td><td class="d1">C52H84O21</td><td class="d1">1044.55050975</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00045143 target="_blank">C00045143</a></td><td class="d1">81425-28-7</td><td class="d1">Zizyvoside I</td><td class="d1">C25H40O12</td><td class="d1">532.25197674</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font> var.inermis</td></tr>
 <tr><td class="d1"><a href=information.php?word=C00051047 target="_blank">C00051047</a></td><td class="d1">146445-93-4</td><td class="d1">Jujubasaponin IV</td><td class="d1">C48H78O18</td><td class="d1">942.51881569</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00051048 target="_blank">C00051048</a></td><td class="d1">146503-31-3</td><td class="d1">Jujubasaponin V</td><td class="d1">C48H78O18</td><td class="d1">942.51881569</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
@@ -97,6 +98,8 @@
 <tr><td class="d1"><a href=information.php?word=C00051443 target="_blank">C00051443</a></td><td class="d1">6915-15-7</td><td class="d1">Malic acid</td><td class="d1">C4H6O5</td><td class="d1">134.0215233</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00051985 target="_blank">C00051985</a></td><td class="d1">608-07-1</td><td class="d1">5-Methoxytryptamine</td><td class="d1">C11H14N2O</td><td class="d1">190.11061308</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00052006 target="_blank">C00052006</a></td><td class="d1">73-31-4</td><td class="d1">Melatonin</td><td class="d1">C13H16N2O2</td><td class="d1">232.12117777</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055958 target="_blank">C00055958</a></td><td class="d1">1809869-74-6</td><td class="d1">Jubanine G</td><td class="d1">C29H43N5O6</td><td class="d1">557.32133414</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055959 target="_blank">C00055959</a></td><td class="d1">1809869-75-7</td><td class="d1">Jubanine H</td><td class="d1">C30H45N5O6</td><td class="d1">571.33698421</td><td class="d1"><font color=#FF00BF>Ziziphus jujuba</font></td></tr>
 
              </table>
          </div>

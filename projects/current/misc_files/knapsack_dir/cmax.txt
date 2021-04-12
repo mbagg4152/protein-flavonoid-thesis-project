@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Cucurbita maxima</font><br><br>
-   	      Number of matched data :32 <br>
+   	      Number of matched data :35 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -66,6 +66,9 @@
 <tr><td class="d1"><a href=information.php?word=C00022948 target="_blank">C00022948</a></td><td class="d1">103955-77-7</td><td class="d1">Cucurbitaxanthin A</td><td class="d1">C40H56O3</td><td class="d1">584.42294565</td><td class="d1"><font color=#FF00BF>Cucurbita maxima</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00022954 target="_blank">C00022954</a></td><td class="d1">107390-61-4</td><td class="d1">Cucurbitaxanthin B</td><td class="d1">C40H56O4</td><td class="d1">600.41786028</td><td class="d1"><font color=#FF00BF>Cucurbita maxima</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00034695 target="_blank">C00034695</a></td><td class="d1">471-80-7</td><td class="d1">Steviol</td><td class="d1">C20H30O3</td><td class="d1">318.21949482</td><td class="d1"><font color=#FF00BF>Cucurbita maxima</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055133 target="_blank">C00055133</a></td><td class="d1">95043-18-8</td><td class="d1">25-Dehydrofungisterol</td><td class="d1">C28H46O</td><td class="d1">398.35486609</td><td class="d1"><font color=#FF00BF>Cucurbita maxima</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055179 target="_blank">C00055179</a></td><td class="d1">52936-69-3</td><td class="d1">Codisterol</td><td class="d1">C28H46O</td><td class="d1">398.35486609</td><td class="d1"><font color=#FF00BF>Cucurbita maxima</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055485 target="_blank">C00055485</a></td><td class="d1">84795-93-7</td><td class="d1">CMTI-I</td><td class="d1">C134H221N39O42S7</td><td class="d1">3272.44012759</td><td class="d1"><font color=#FF00BF>Cucurbita maxima</font></td></tr>
 
              </table>
          </div>

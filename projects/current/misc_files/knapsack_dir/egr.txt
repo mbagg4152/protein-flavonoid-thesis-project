@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Eucalyptus grandis</font><br><br>
-   	      Number of matched data :10 <br>
+   	      Number of matched data :11 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -44,6 +44,7 @@
 <tr><td class="d1"><a href=information.php?word=C00002668 target="_blank">C00002668</a></td><td class="d1">99-50-3</td><td class="d1">Protocatechuic acid</td><td class="d1">C7H6O4</td><td class="d1">154.02660868</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00003040 target="_blank">C00003040</a></td><td class="d1">99-87-6</td><td class="d1">p-Cymene</td><td class="d1">C10H14</td><td class="d1">134.10955045</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00040952 target="_blank">C00040952</a></td><td class="d1">77794-62-8</td><td class="d1">Euglobal IIc</td><td class="d1">C23H30O5</td><td class="d1">386.20932407</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00048310 target="_blank">C00048310</a></td><td class="d1">673-84-7</td><td class="d1">2,6-Dimethyl-2,4,6-octatriene</td><td class="d1">C10H16</td><td class="d1">136.12520051</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font> x urophylla</td></tr>
 
              </table>
          </div>

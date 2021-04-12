@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Juglans regia</font><br><br>
-   	      Number of matched data :26 <br>
+   	      Number of matched data :34 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -60,6 +60,14 @@
 <tr><td class="d1"><a href=information.php?word=C00035393 target="_blank">C00035393</a></td><td class="d1">517-46-4</td><td class="d1">Strictinin</td><td class="d1">C27H22O18</td><td class="d1">634.0806139</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00050678 target="_blank">C00050678</a></td><td class="d1">58-27-5</td><td class="d1">2-Methyl-1,4-naphthoquinone</td><td class="d1">C11H8O2</td><td class="d1">172.0524295</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00052006 target="_blank">C00052006</a></td><td class="d1">73-31-4</td><td class="d1">Melatonin</td><td class="d1">C13H16N2O2</td><td class="d1">232.12117777</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054155 target="_blank">C00054155</a></td><td class="d1">61836-43-9</td><td class="d1">3,3'-Bisjuglone</td><td class="d1">C20H10O6</td><td class="d1">346.04773805</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054247 target="_blank">C00054247</a></td><td class="d1">50838-55-6</td><td class="d1">Cyclotrijuglone</td><td class="d1">C30H12O9</td><td class="d1">516.04813198</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054552 target="_blank">C00054552</a></td><td class="d1">33209-75-5</td><td class="d1">Benzjuglansoic acid</td><td class="d1">C11H14O3</td><td class="d1">194.09429431</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056618 target="_blank">C00056618</a></td><td class="d1">120330-52-1</td><td class="d1">6-Epi-7-isocucurbic acid</td><td class="d1">C12H20O3</td><td class="d1">212.1412445</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056641 target="_blank">C00056641</a></td><td class="d1">1207847-80-0</td><td class="d1">8-Methoxy-7-octyl-1-naphthalenecarboxylic acid</td><td class="d1">C20H26O3</td><td class="d1">314.1881947</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056642 target="_blank">C00056642</a></td><td class="d1">1207847-81-1</td><td class="d1">Juglansbenzoate</td><td class="d1">C45H82O3</td><td class="d1">670.62639648</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056941 target="_blank">C00056941</a></td><td class="d1">1207847-82-2</td><td class="d1">Regiaoleate</td><td class="d1">C39H76O2</td><td class="d1">576.58453167</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056942 target="_blank">C00056942</a></td><td class="d1">1207847-83-3</td><td class="d1">Regiapalmitate</td><td class="d1">C53H104O2</td><td class="d1">772.80363256</td><td class="d1"><font color=#FF00BF>Juglans regia</font></td></tr>
 
              </table>
          </div>

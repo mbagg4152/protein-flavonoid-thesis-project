@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Sesamum indicum</font><br><br>
-   	      Number of matched data :19 <br>
+   	      Number of matched data :25 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -53,6 +53,12 @@
 <tr><td class="d1"><a href=information.php?word=C00036039 target="_blank">C00036039</a></td><td class="d1">638199-40-3</td><td class="d1">Anthrasesamone C</td><td class="d1">C20H17ClO4</td><td class="d1">356.08153674</td><td class="d1"><font color=#FF00BF>Sesamum indicum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00036871 target="_blank">C00036871</a></td><td class="d1">95519-12-3</td><td class="d1">Campneoside I</td><td class="d1">C30H38O16</td><td class="d1">654.21598517</td><td class="d1"><font color=#FF00BF>Sesamum indicum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00036899 target="_blank">C00036899</a></td><td class="d1">275817-14-6</td><td class="d1">Chlorosesamone</td><td class="d1">C15H13ClO4</td><td class="d1">292.05023661</td><td class="d1"><font color=#FF00BF>Sesamum indicum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054477 target="_blank">C00054477</a></td><td class="d1">923013-90-5</td><td class="d1">Anthrasesamone D</td><td class="d1">C20H18O5</td><td class="d1">338.11542369</td><td class="d1"><font color=#FF00BF>Sesamum indicum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054478 target="_blank">C00054478</a></td><td class="d1">923013-91-6</td><td class="d1">Anthrasesamone E</td><td class="d1">C20H18O4</td><td class="d1">322.12050906</td><td class="d1"><font color=#FF00BF>Sesamum indicum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054479 target="_blank">C00054479</a></td><td class="d1">1072796-85-0</td><td class="d1">Anthrasesamone F</td><td class="d1">C20H18O5</td><td class="d1">338.11542369</td><td class="d1"><font color=#FF00BF>Sesamum indicum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056290 target="_blank">C00056290</a></td><td class="d1">4966-05-6</td><td class="d1">2-Geranyl-1,4-naphthoquinone</td><td class="d1">C20H22O2</td><td class="d1">294.16197995</td><td class="d1"><font color=#FF00BF>Sesamum indicum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056462 target="_blank">C00056462</a></td><td class="d1">111261-12-2</td><td class="d1">2,3-Epoxysesamone</td><td class="d1">C15H14O5</td><td class="d1">274.08412356</td><td class="d1"><font color=#FF00BF>Sesamum indicum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057650 target="_blank">C00057650</a></td><td class="d1">914253-78-4</td><td class="d1">Saminol</td><td class="d1">C13H14O6</td><td class="d1">266.07903818</td><td class="d1"><font color=#FF00BF>Sesamum indicum</font></td></tr>
 
              </table>
          </div>

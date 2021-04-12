@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Durio zibethinus</font><br><br>
-   	      Number of matched data :29 <br>
+   	      Number of matched data :34 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -63,6 +63,11 @@
 <tr><td class="d1"><a href=information.php?word=C00053479 target="_blank">C00053479</a></td><td class="d1">10307-60-5</td><td class="d1">Methyl (2S)-2-methylbutanoate</td><td class="d1">C6H12O2</td><td class="d1">116.08372963</td><td class="d1"><font color=#FF00BF>Durio zibethinus</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00053705 target="_blank">C00053705</a></td><td class="d1">151409-47-1</td><td class="d1">Propyl (2S)-2-methylbutanoate</td><td class="d1">C8H16O2</td><td class="d1">144.11502975</td><td class="d1"><font color=#FF00BF>Durio zibethinus</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00053842 target="_blank">C00053842</a></td><td class="d1">134454-31-2</td><td class="d1">trans-4,5-epoxy-(2E)-dec-2-enal</td><td class="d1">C10H16O2</td><td class="d1">168.11502975</td><td class="d1"><font color=#FF00BF>Durio zibethinus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054010 target="_blank">C00054010</a></td><td class="d1">4253-89-8</td><td class="d1">Bis(1-methylethyl) disulfide</td><td class="d1">C6H14S2</td><td class="d1">150.05369191</td><td class="d1"><font color=#FF00BF>Durio zibethinus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055803 target="_blank">C00055803</a></td><td class="d1">6028-61-1</td><td class="d1">Dipropyl trisulfide</td><td class="d1">C6H14S3</td><td class="d1">182.02576264</td><td class="d1"><font color=#FF00BF>Durio zibethinus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057171 target="_blank">C00057171</a></td><td class="d1">183554-17-8</td><td class="d1">4-Methyl-2,3,5-trithiaheptane</td><td class="d1">C5H12S3</td><td class="d1">168.01011257</td><td class="d1"><font color=#FF00BF>Durio zibethinus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057390 target="_blank">C00057390</a></td><td class="d1">43040-01-3</td><td class="d1">3-Methyl-1,2,4-trithiane</td><td class="d1">C4H8S3</td><td class="d1">151.97881245</td><td class="d1"><font color=#FF00BF>Durio zibethinus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057684 target="_blank">C00057684</a></td><td class="d1">94944-48-6</td><td class="d1">5-Methyl-3,4,6-trithiaoctane</td><td class="d1">C6H14S3</td><td class="d1">182.02576264</td><td class="d1"><font color=#FF00BF>Durio zibethinus</font></td></tr>
 
              </table>
          </div>

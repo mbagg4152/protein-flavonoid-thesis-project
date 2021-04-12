@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Cajanus cajan</font><br><br>
-   	      Number of matched data :19 <br>
+   	      Number of matched data :23 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -53,6 +53,10 @@
 <tr><td class="d1"><a href=information.php?word=C00015437 target="_blank">C00015437</a></td><td class="d1">80489-90-3</td><td class="d1">3-Hydroxy-4-isopentenyl-5-methoxybibenzyl-2-carboxylic acid</td><td class="d1">C21H24O4</td><td class="d1">340.16745925</td><td class="d1"><font color=#FF00BF>Cajanus cajan</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00015521 target="_blank">C00015521</a></td><td class="d1">161582-47-4</td><td class="d1">3-Hydroxy-5-methoxystilbene-2-carboxylic acid</td><td class="d1">C16H14O4</td><td class="d1">270.08920894</td><td class="d1"><font color=#FF00BF>Cajanus cajan</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00015604 target="_blank">C00015604</a></td><td class="d1">64125-60-6</td><td class="d1">Longistyline C</td><td class="d1">C20H22O2</td><td class="d1">294.16197995</td><td class="d1"><font color=#FF00BF>Cajanus cajan</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054331 target="_blank">C00054331</a></td><td class="d1">87402-84-4</td><td class="d1">Cajaninstilbene acid</td><td class="d1">C21H22O4</td><td class="d1">338.15180919</td><td class="d1"><font color=#FF00BF>Cajanus cajan</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054881 target="_blank">C00054881</a></td><td class="d1">1206705-33-0</td><td class="d1">Cajanuslactone</td><td class="d1">C21H20O4</td><td class="d1">336.13615913</td><td class="d1"><font color=#FF00BF>Cajanus cajan</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055311 target="_blank">C00055311</a></td><td class="d1">71241-94-6</td><td class="d1">Cajaquinone</td><td class="d1">C16H12O5</td><td class="d1">284.06847349</td><td class="d1"><font color=#FF00BF>Cajanus cajan</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056473 target="_blank">C00056473</a></td><td class="d1">112147-37-2</td><td class="d1">3-(2,4-Dihydroxyphenyl)-8,9-dihydro-5-hydroxy-8-(1-methylethenyl)-4H-furo[2,3-h]-1-benzopyran-4-one</td><td class="d1">C20H16O6</td><td class="d1">352.09468824</td><td class="d1"><font color=#FF00BF>Cajanus cajan</font></td></tr>
 
              </table>
          </div>

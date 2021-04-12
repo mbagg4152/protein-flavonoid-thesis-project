@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Camelina sativa</font><br><br>
-   	      Number of matched data :6 <br>
+   	      Number of matched data :7 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -39,7 +39,8 @@
 <tr><td class="d1"><a href=information.php?word=C00007831 target="_blank">C00007831</a></td><td class="d1">67884-10-0</td><td class="d1">Glucocamelinin</td><td class="d1">C18H35NO10S3</td><td class="d1">521.14230854</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00007832 target="_blank">C00007832</a></td><td class="d1">67920-64-3</td><td class="d1">9-Methylsulfinylnonyl glucosinolate</td><td class="d1">C17H33NO10S3</td><td class="d1">507.12665847</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00035628 target="_blank">C00035628</a></td><td class="d1">5561-99-9</td><td class="d1">Gondoic acid</td><td class="d1">C20H38O2</td><td class="d1">310.28718046</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
-<tr><td class="d1"><a href=information.php?word=C00036628 target="_blank">C00036628</a></td><td class="d1">135531-87-2</td><td class="d1">6-Methoxycamalexin</td><td class="d1">C12H10N2OS</td><td class="d1">230.05138369</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00036628 target="_blank">C00036628</a></td><td class="d1">135531-87-2</td><td class="d1">6-Methoxy-3-(2-thiazolyl)-1H-indole</td><td class="d1">C12H10N2OS</td><td class="d1">230.05138369</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054765 target="_blank">C00054765</a></td><td class="d1">75272-83-2</td><td class="d1">Camelinin</td><td class="d1">C12H23NOS2</td><td class="d1">261.12210582</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
 
              </table>
          </div>

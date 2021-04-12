@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Chenopodium quinoa</font><br><br>
-   	      Number of matched data :24 <br>
+   	      Number of matched data :26 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -58,6 +58,8 @@
 <tr><td class="d1"><a href=information.php?word=C00051836 target="_blank">C00051836</a></td><td class="d1"></td><td class="d1">Leuko-DOPA-chrome-glucoside</td><td class="d1">C15H18O8</td><td class="d1">326.10016755</td><td class="d1"><font color=#FF00BF>Chenopodium quinoa</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00051838 target="_blank">C00051838</a></td><td class="d1">4430-97-1</td><td class="d1">o-DOPA-quinone</td><td class="d1">C9H9NO4</td><td class="d1">195.05315778</td><td class="d1"><font color=#FF00BF>Chenopodium quinoa</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00051980 target="_blank">C00051980</a></td><td class="d1"></td><td class="d1">4,5-seco-DOPA</td><td class="d1">C9H11NO6</td><td class="d1">229.05863709</td><td class="d1"><font color=#FF00BF>Chenopodium quinoa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054246 target="_blank">C00054246</a></td><td class="d1">146671-16-1</td><td class="d1">Chenopodin</td><td class="d1">C92H154N26O37S</td><td class="d1">2247.06889086</td><td class="d1"><font color=#FF00BF>Chenopodium quinoa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056965 target="_blank">C00056965</a></td><td class="d1">123597-11-5</td><td class="d1">Quinoside A</td><td class="d1">C53H86O23</td><td class="d1">1090.55598906</td><td class="d1"><font color=#FF00BF>Chenopodium quinoa</font></td></tr>
 
              </table>
          </div>

@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Setaria italica</font><br><br>
-   	      Number of matched data :10 <br>
+   	      Number of matched data :11 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -44,6 +44,7 @@
 <tr><td class="d1"><a href=information.php?word=C00013716 target="_blank">C00013716</a></td><td class="d1">126394-59-0</td><td class="d1">Setaricin</td><td class="d1">C22H22O11</td><td class="d1">462.11621155</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00013735 target="_blank">C00013735</a></td><td class="d1">165747-37-5</td><td class="d1">3,6,7-Trihydroxy-4'-methoxyflavone 7-rhamnoside</td><td class="d1">C22H22O10</td><td class="d1">446.12129692</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00020026 target="_blank">C00020026</a></td><td class="d1">31005-07-9</td><td class="d1">Setarin</td><td class="d1">C12H10O3</td><td class="d1">202.06299419</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054681 target="_blank">C00054681</a></td><td class="d1">142942-85-6</td><td class="d1">9,19-Cyclocholesta-7,20-diene-3,14,26-triol</td><td class="d1">C27H42O3</td><td class="d1">414.31339521</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
 
              </table>
          </div>

@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Gossypium hirsutum</font><br><br>
-   	      Number of matched data :35 <br>
+   	      Number of matched data :37 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -40,7 +40,7 @@
 <tr><td class="d1"><a href=information.php?word=C00000091 target="_blank">C00000091</a></td><td class="d1">1637-39-4</td><td class="d1">trans-Zeatin</td><td class="d1">C10H13N5O</td><td class="d1">219.11201007</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00000094 target="_blank">C00000094</a></td><td class="d1">2365-40-4</td><td class="d1">N6-(delta2-Isopentenyl)adenine</td><td class="d1">C10H13N5</td><td class="d1">203.11709545</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00000096 target="_blank">C00000096</a></td><td class="d1">6025-53-2</td><td class="d1">9-Ribosyl-trans-zeatin</td><td class="d1">C15H21N5O5</td><td class="d1">351.15426882</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
-<tr><td class="d1"><a href=information.php?word=C00000134 target="_blank">C00000134</a></td><td class="d1">21293-29-8</td><td class="d1">(s)-(+)-Abscisic acid</td><td class="d1">C15H20O4</td><td class="d1">264.13615913</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000134 target="_blank">C00000134</a></td><td class="d1">21293-29-8</td><td class="d1">Abscisic acid</td><td class="d1">C15H20O4</td><td class="d1">264.13615913</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00000499 target="_blank">C00000499</a></td><td class="d1">65024-84-2</td><td class="d1">Heliocide H1</td><td class="d1">C25H30O5</td><td class="d1">410.20932407</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00000500 target="_blank">C00000500</a></td><td class="d1">64960-68-5</td><td class="d1">Heliocide H4</td><td class="d1">C25H30O5</td><td class="d1">410.20932407</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00001151 target="_blank">C00001151</a></td><td class="d1">57-50-1</td><td class="d1">Sucrose</td><td class="d1">C12H22O11</td><td class="d1">342.11621155</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
@@ -58,7 +58,7 @@
 <tr><td class="d1"><a href=information.php?word=C00004652 target="_blank">C00004652</a></td><td class="d1">33554-59-5</td><td class="d1">Quercetin 3,5,3',4'-tetramethyl ether</td><td class="d1">C19H18O7</td><td class="d1">358.10525293</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00005139 target="_blank">C00005139</a></td><td class="d1">31159-41-8</td><td class="d1">Isoastragalin</td><td class="d1">C21H20O11</td><td class="d1">448.10056148</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00005361 target="_blank">C00005361</a></td><td class="d1">47580-51-1</td><td class="d1">Sexangularetin 3-glucoside-7-rhamnoside</td><td class="d1">C28H32O16</td><td class="d1">624.16903498</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
-<tr><td class="d1"><a href=information.php?word=C00005373 target="_blank">C00005373</a></td><td class="d1">482-35-9</td><td class="d1">Hirsutrin</td><td class="d1">C21H20O12</td><td class="d1">464.09547611</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font> L.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00005373 target="_blank">C00005373</a></td><td class="d1">482-35-9</td><td class="d1">Quercetin-3-O-glucoside</td><td class="d1">C21H20O12</td><td class="d1">464.09547611</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font> L.</td></tr>
 <tr><td class="d1"><a href=information.php?word=C00005382 target="_blank">C00005382</a></td><td class="d1">491-50-9</td><td class="d1">Quercimeritrin</td><td class="d1">C21H20O12</td><td class="d1">464.09547611</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00005386 target="_blank">C00005386</a></td><td class="d1">19254-30-9</td><td class="d1">Quercetin 3'-glucoside</td><td class="d1">C21H20O12</td><td class="d1">464.09547611</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00007452 target="_blank">C00007452</a></td><td class="d1">22372-29-8</td><td class="d1">Sucrose 6-phosphate</td><td class="d1">C12H23O14P</td><td class="d1">422.08254194</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
@@ -67,8 +67,10 @@
 <tr><td class="d1"><a href=information.php?word=C00013227 target="_blank">C00013227</a></td><td class="d1">34069-05-1</td><td class="d1">Lacinilene D</td><td class="d1">C14H16O3</td><td class="d1">232.10994438</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00020116 target="_blank">C00020116</a></td><td class="d1">41653-72-9</td><td class="d1">Lacinilene C</td><td class="d1">C15H18O3</td><td class="d1">246.12559444</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00020170 target="_blank">C00020170</a></td><td class="d1">40525-06-2</td><td class="d1">Lacinilene A</td><td class="d1">C14H16O</td><td class="d1">200.12011513</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
-<tr><td class="d1"><a href=information.php?word=C00021903 target="_blank">C00021903</a></td><td class="d1">13474-59-4</td><td class="d1">trans-alpha-Bergamotene</td><td class="d1">C15H24</td><td class="d1">204.18780077</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00021903 target="_blank">C00021903</a></td><td class="d1">13474-59-4</td><td class="d1">(Z)-alpha-exo-bergamotol</td><td class="d1">C15H24</td><td class="d1">204.18780077</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00046784 target="_blank">C00046784</a></td><td class="d1">78-79-5</td><td class="d1">Isoprene</td><td class="d1">C5H8</td><td class="d1">68.06260026</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00048311 target="_blank">C00048311</a></td><td class="d1">17699-05-7</td><td class="d1">alpha-Bergamotene</td><td class="d1">C15H24</td><td class="d1">204.18780077</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00052870 target="_blank">C00052870</a></td><td class="d1">6895-56-3</td><td class="d1">Bergamotene</td><td class="d1">C15H24</td><td class="d1">204.18780077</td><td class="d1"><font color=#FF00BF>Gossypium hirsutum</font></td></tr>
 
              </table>
          </div>

@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Ricinus communis</font><br><br>
-   	      Number of matched data :20 <br>
+   	      Number of matched data :22 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -45,6 +45,7 @@
 <tr><td class="d1"><a href=information.php?word=C00001214 target="_blank">C00001214</a></td><td class="d1">120-87-6</td><td class="d1">9,10-Dihydroxystearic acid</td><td class="d1">C18H36O4</td><td class="d1">316.26135964</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00001237 target="_blank">C00001237</a></td><td class="d1">141-22-0</td><td class="d1">Ricinoleic acid</td><td class="d1">C18H34O3</td><td class="d1">298.25079495</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00002069 target="_blank">C00002069</a></td><td class="d1">524-40-3</td><td class="d1">Ricinine</td><td class="d1">C8H8N2O2</td><td class="d1">164.05857751</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002559 target="_blank">C00002559</a></td><td class="d1">13401-40-6</td><td class="d1">Phaseolin</td><td class="d1">C20H18O4</td><td class="d1">322.12050906</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00002915 target="_blank">C00002915</a></td><td class="d1">23094-69-1</td><td class="d1">Corilagin</td><td class="d1">C27H22O18</td><td class="d1">634.0806139</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00003650 target="_blank">C00003650</a></td><td class="d1">469-38-5</td><td class="d1">Cycloartenol</td><td class="d1">C30H50O</td><td class="d1">426.38616622</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00003749 target="_blank">C00003749</a></td><td class="d1">545-47-1</td><td class="d1">Lupeol</td><td class="d1">C30H50O</td><td class="d1">426.38616622</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
@@ -54,6 +55,7 @@
 <tr><td class="d1"><a href=information.php?word=C00007282 target="_blank">C00007282</a></td><td class="d1">7200-26-2</td><td class="d1">(S)-2,3-Epoxysqualene</td><td class="d1">C30H50O</td><td class="d1">426.38616622</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00013786 target="_blank">C00013786</a></td><td class="d1">195702-53-5</td><td class="d1">Kaempferol 3-(6''-acetylglucosyl)-(1->3)-galactoside</td><td class="d1">C29H32O17</td><td class="d1">652.1639496</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00014318 target="_blank">C00014318</a></td><td class="d1">172089-70-2</td><td class="d1">Naringenin 7-(2-p-Coumaroylglucoside)</td><td class="d1">C30H28O12</td><td class="d1">580.15807636</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00057288 target="_blank">C00057288</a></td><td class="d1">2540-54-7</td><td class="d1">Ricinolein</td><td class="d1">C57H104O9</td><td class="d1">932.76803492</td><td class="d1"><font color=#FF00BF>Ricinus communis</font></td></tr>
 
              </table>
          </div>

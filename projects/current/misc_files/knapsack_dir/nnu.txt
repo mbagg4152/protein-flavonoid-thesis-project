@@ -26,7 +26,7 @@
              <br>
              input type = <font class="iw">organism , </font>
 	     input word = <font class="iw">Nelumbo nucifera</font><br><br>
-   	      Number of matched data :21 <br>
+   	      Number of matched data :23 <br>
 
              <table class="sortable d1">
                  <th class="w1">C_ID</th>
@@ -40,8 +40,8 @@
 <tr><td class="d1"><a href=information.php?word=C00001905 target="_blank">C00001905</a></td><td class="d1">2128-60-1</td><td class="d1">Pronuciferine</td><td class="d1">C19H21NO3</td><td class="d1">311.15214354</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00002644 target="_blank">C00002644</a></td><td class="d1">120-80-9</td><td class="d1">Pyrocatechin</td><td class="d1">C6H6O2</td><td class="d1">110.03677944</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00003912 target="_blank">C00003912</a></td><td class="d1">17290-70-9</td><td class="d1">Isosinensetin</td><td class="d1">C20H20O7</td><td class="d1">372.12090299</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
-<tr><td class="d1"><a href=information.php?word=C00005372 target="_blank">C00005372</a></td><td class="d1">482-36-0</td><td class="d1">Quercetin 3-galactoside</td><td class="d1">C21H20O12</td><td class="d1">464.09547611</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
-<tr><td class="d1"><a href=information.php?word=C00005373 target="_blank">C00005373</a></td><td class="d1">482-35-9</td><td class="d1">Hirsutrin</td><td class="d1">C21H20O12</td><td class="d1">464.09547611</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00005372 target="_blank">C00005372</a></td><td class="d1">482-36-0</td><td class="d1">Quercetin-3-beta-galactoside</td><td class="d1">C21H20O12</td><td class="d1">464.09547611</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00005373 target="_blank">C00005373</a></td><td class="d1">482-35-9</td><td class="d1">Quercetin-3-O-glucoside</td><td class="d1">C21H20O12</td><td class="d1">464.09547611</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00007235 target="_blank">C00007235</a></td><td class="d1">480-17-1</td><td class="d1">Leucocyanidin</td><td class="d1">C15H14O7</td><td class="d1">306.0739528</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00025625 target="_blank">C00025625</a></td><td class="d1">548-08-3</td><td class="d1">(-)-Roemerine</td><td class="d1">C18H17NO2</td><td class="d1">279.12592879</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00025845 target="_blank">C00025845</a></td><td class="d1">36285-03-7</td><td class="d1">Dehydroroemerine</td><td class="d1">C18H15NO2</td><td class="d1">277.11027873</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
@@ -55,6 +55,8 @@
 <tr><td class="d1"><a href=information.php?word=C00050650 target="_blank">C00050650</a></td><td class="d1">19641-12-4</td><td class="d1">1-Methyl-corypalline</td><td class="d1">C12H17NO2</td><td class="d1">207.12592879</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00050943 target="_blank">C00050943</a></td><td class="d1">20072-25-7</td><td class="d1">Isoleurosine</td><td class="d1">C46H58N4O8</td><td class="d1">794.42546486</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
 <tr><td class="d1"><a href=information.php?word=C00053535 target="_blank">C00053535</a></td><td class="d1">2292-16-2</td><td class="d1">Neferine</td><td class="d1">C38H44N2O6</td><td class="d1">624.31993715</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054276 target="_blank">C00054276</a></td><td class="d1">7630-74-2</td><td class="d1">Dehydronuciferine</td><td class="d1">C19H19NO2</td><td class="d1">293.14157886</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054816 target="_blank">C00054816</a></td><td class="d1">41679-82-7</td><td class="d1">Dehydroanonaine</td><td class="d1">C17H13NO2</td><td class="d1">263.09462867</td><td class="d1"><font color=#FF00BF>Nelumbo nucifera</font></td></tr>
 
              </table>
          </div>
