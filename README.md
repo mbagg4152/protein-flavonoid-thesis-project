@@ -266,7 +266,22 @@ __Functions__
 * `is_in`: determines if an identical or nearly identical object is already in the list  
 * `simple`: returns a formatted string  
 
+<!--  -->
+---
+## `flavonoid/flib/util.py`
+This file contains various utility functions used throughout the program.
 
+#### `get_json_data`  
+This function uses the python JSON library in order to parse JSON files into usable python objects. Can return lists or dictionaries, depending on the JSON file's structure.  Function also included in `parsers/parserutil.py`
+
+#### `remove_dupes`   
+Removes duplicate elements from a list.  
+
+#### `list_partition`
+This function takes in a list and then splits it into as many parts as specified by parameter `num`.  
+
+#### `write_readme`  
+Writes the program's original `README` file.
 
 <!--  -->
 ---
@@ -281,22 +296,8 @@ other databases.
 
 __Note:__ It will not work correctly if the `wget` system command is not installed (this has not yet been tested on Windows, may potentially only be compatible with Linux systems). 
 
-<!--  -->
----
-## `lib/util.py`
-This file contains various utility functions used throughout the program.
 
-#### `get_json_data`  
-This function uses the python JSON library in order to parse JSON files into usable python objects. Can return lists or dictionaries, depending on the JSON file's structure.  
 
-#### `remove_dupes`   
-Removes duplicate elements from a list.  
-
-#### `list_partition`
-This function takes in a list and then splits it into as many parts as specified by parameter `num`.  
-
-#### `write_readme`  
-Writes the program's original `README` file.
 
 <!--  -->
 ---
@@ -421,7 +422,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTA0Nzk4MCwxNTYzNDg3MzE5LC0xMT
-U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
-MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbMTYxNzIxMzI0LDE1NjM0ODczMTksLTExNT
+Q5MDgyNjcsMTg5NDkwOTIxMSwtODMyMTEzMjA3LC0xODcxMTAz
+LC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
 -->
