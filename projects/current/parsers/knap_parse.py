@@ -1,7 +1,7 @@
 import sys
 import os
 import re
-from parsersconstants import *
+from paconstants import *
 
 new_dir = '..' + SEP + 'misc_files' + SEP + 'knapsack_dir'
 ks_data_name = new_dir + SEP + '000_knapsack_data.csv'
@@ -51,8 +51,8 @@ def parse_file(file_name, plant_name):
         rel_match = 0
         # some entries don't have a CAS ID. if nothing is found using regular expression testing, then the
         # flavonoid name will follow right after the knapsack ID
-        tmp_has_cas = re.findall(re_has_cas, line)
-        tmp_no_cas = re.findall(re_no_cas, line)
+        tmp_has_cas = re.findall(RE_HAS_CAS, line)
+        tmp_no_cas = re.findall(RE_NO_CAS, line)
         tmp_list = []
         if len(tmp_no_cas) > 0:
             tmp_id = tmp_no_cas[0][0]

@@ -1,30 +1,11 @@
-import urllib.request as url_req
-import urllib.error as url_err
-from util import *
+from paconstants import *
+from parseutil import *
 from pathlib import Path
 import os
+import urllib.error as url_err
+import urllib.request as url_req
 
-ERR_VAL = 'ERR_WITH_REQUEST'
-OUT_JSON = '/json'
-OUT_TXT = '/txt'
-PUBCHEM_PREFIX = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/'
-SYN_HEAD = 'Synonyms (!! Separated)'
-PROP_PAIRS = [('IUPACName', 'IUPAC'), ('InChI', 'InChI'), ('InChIKey', 'InChIKey'), ('CanonicalSMILES', 'CannonSMILES'),
-              ('IsomericSMILES', 'IsoSMILES'), ('MolecularFormula', 'Formula'), ('MolecularWeight', 'Weight'),
-              ('Charge', 'Charge'),
-              ('Fingerprint2D', 'Fingerprint2D'), ('RotatableBondCount', '#RotatableBonds'),
-              ('HeavyAtomCount', '#HeavyAtoms'),
-              ('IsotopeAtomCount', '#IsotopeAtoms'), ('AtomStereoCount', '#StereoAtoms'),
-              ('DefinedAtomStereoCount', '#DefStereoAtoms'),
-              ('UndefinedAtomStereoCount', '#UndefStereoAtoms'), ('BondStereoCount', '#StereoBonds'),
-              ('DefinedBondStereoCount', '#DefStereoBonds'), ('UndefinedBondStereoCount', '#UndefStereoBonds'),
-              ('CovalentUnitCount', '#CovalentUnits'), ('HBondDonorCount', '#HBondDonors'),
-              ('HBondAcceptorCount', '#HBondAcceptors')]
-XREF_PAIRS = [('RN', 'CAS ID(S)'), ('MMDBID', 'MMDBID(S)'), ('ProteinGI', 'ProtGI(S)'), ('NucleotideGI', 'NTGI(S)'),
-              ('TaxonomyID', 'TaxID(S)'), ('MIMID', 'MIMID(S)'), ('GeneID', 'GeneID(S)'), ('ProbeID', 'ProbeID(S)')]
-MISC_PAIRS = [('ZINC', 'ZINC ID'), ('CTK', 'ChemTik ID'), ('CHEMBL', 'CHEMBL ID'), ('CHEBI:', 'CHEBI ID'),
-              ('BDBM', 'BindingDB ID'),
-              ('SCHEMBL', 'SureChEMBL ID'), ('DTXSID', 'EPA DSSTox')]
+SEP = os.sep
 
 PROPS = [i[0] for i in PROP_PAIRS]
 PROP_LBLS = [i[1] for i in PROP_PAIRS]
@@ -55,7 +36,7 @@ Path(xref_dir).mkdir(parents=True, exist_ok=True)
 
 def main():
     global pubchem_pdb
-    pubchem_pdb = get_json_data(FN_PUBCHEM_PDB)
+    pubchem_pdb = get_json_data(PUB_PDB)
     fetch_pubchem_data()
     with open(results, 'w') as file: file.write(total_out)
 

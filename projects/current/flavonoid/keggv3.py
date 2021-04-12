@@ -1,6 +1,6 @@
 from flib.fconstants import *
-from flib.flav_data_types import *
-from flib.flav_logic import *
+from flib.data_types import *
+from flib.prediction_logic import *
 from urllib import request
 from urllib.error import HTTPError, URLError
 import datetime

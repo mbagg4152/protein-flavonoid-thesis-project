@@ -8,8 +8,8 @@ sys.path.append(os.getcwd().replace(os.sep + 'flavonoid', ''))
 
 from bioservices.kegg import KEGG
 from flib.fconstants import *
-from flib.flav_data_types import *
-from flib.flav_logic import *
+from flib.data_types import *
+from flib.prediction_logic import *
 
 init_time = datetime.datetime.now()
 kegg = KEGG()

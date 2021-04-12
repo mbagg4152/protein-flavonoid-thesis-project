@@ -1,7 +1,7 @@
 import re
 from itertools import combinations
 from math import sqrt
-from plib.strings_consts import *
+from plib.prconstants import *
 import sys
 import inspect
 

@@ -1,5 +1,5 @@
 import re
-from parsersconstants import *
+from paconstants import *
 
 plant_dict_output = ''
 plant_codes = ''
@@ -10,12 +10,12 @@ kegg_names = []
 kegg_upper = []
 comp_names = []
 comp_upper = []
-plant_dict = get_json_data(plant_names_codes)
-flavs = get_json_data(flav_names)
-nc_codes = get_json_data(ncomp_codes)
-nc_dict = get_json_data(ncomp_dict)
-np_codes = get_json_data(nplant_codes)
-np_dict = get_json_data(nplant_dict)
+plant_dict = get_json_data(PLANT_NAMES_CODES)
+flavs = get_json_data(FLAV_NAMES)
+nc_codes = get_json_data(NCOMP_CODES)
+nc_dict = get_json_data(NCOMP_DICT)
+np_codes = get_json_data(NPLANT_CODES)
+np_dict = get_json_data(NPLANT_DICT)
 big_output = ''
 
 
@@ -26,13 +26,13 @@ def main():
 
 
 def do_output():
-    file = open(pairs_in, 'r', encoding="utf8", errors='ignore')
+    file = open(PAIRS_IN, 'r', encoding="utf8", errors='ignore')
     contents = file.readlines()
     file.close()
 
     for line in contents: proc_pairs(line)
 
-    out_file = open(selected, 'w')
+    out_file = open(SELECTED, 'w')
     out_file.write(big_output)
     out_file.close()
 
@@ -40,8 +40,8 @@ def do_output():
 def proc_pairs(line):
     global big_output
     try:
-        tmp_comp = re.findall(re_org_comp_id, line)[0].strip().strip('\t\r\n')
-        tmp_plant = re.findall(re_org_name_pairs, line)[0].strip().strip('\t\r\n')
+        tmp_comp = re.findall(RE_ORG_COMP_ID, line)[0].strip().strip('\t\r\n')
+        tmp_plant = re.findall(RE_ORG_NAME_PAIRS, line)[0].strip().strip('\t\r\n')
         if tmp_comp in nc_codes and tmp_plant in np_codes:
             plant_name = np_dict.get(tmp_plant)
             comp_name = nc_dict.get(tmp_comp)
@@ -54,7 +54,7 @@ def proc_pairs(line):
 
 def setup_comp_files():
     global comp_names
-    file = open(comp_in, 'r', encoding="utf8", errors='ignore')
+    file = open(CMP_IN, 'r', encoding="utf8", errors='ignore')
     contents = file.readlines()
     file.close()
     comp_names = flavs
@@ -66,11 +66,11 @@ def setup_comp_files():
     for line in contents: make_comp_data(line)
 
     for line in contents: make_plant_data(line)
-    out_file = open(comp_dict, 'w')
+    out_file = open(CMP_DICT, 'w')
     out_file.write(comp_dict_out)
     out_file.close()
 
-    out_file = open(cmp_codes, 'w')
+    out_file = open(CMP_CODES, 'w')
     out_file.write(comp_codes_out)
     out_file.close()
 
@@ -78,8 +78,8 @@ def setup_comp_files():
 def make_comp_data(line):
     global comp_codes_out, comp_dict_out
     try:
-        tmp_id = re.findall(re_comp_id, line)[0].strip().strip('\t\r\n')
-        tmp_name = re.findall(re_comp_name, line)[0].strip().strip('\t\r\n')
+        tmp_id = re.findall(RE_COMP_ID, line)[0].strip().strip('\t\r\n')
+        tmp_name = re.findall(RE_COMP_NAME, line)[0].strip().strip('\t\r\n')
         tmp_nosp = "".join(tmp_name.split())
 
         for comp in comp_upper:
@@ -96,7 +96,7 @@ def make_comp_data(line):
 
 def setup_org_files():
     global kegg_names, kegg_upper
-    file = open(org_in, 'r', encoding="utf8", errors='ignore')
+    file = open(ORG_IN, 'r', encoding="utf8", errors='ignore')
     contents = file.readlines()
     file.close()
     kegg_names = list(plant_dict.values())
@@ -106,11 +106,11 @@ def setup_org_files():
         kegg_upper.append(name.upper())
 
     for line in contents: make_plant_data(line)
-    out_file = open(org_out, 'w')
+    out_file = open(ORG_OUT, 'w')
     out_file.write(plant_dict_output)
     out_file.close()
 
-    out_file = open(org_codes, 'w')
+    out_file = open(ORG_CODES, 'w')
     out_file.write(plant_codes)
     out_file.close()
 
@@ -118,8 +118,8 @@ def setup_org_files():
 def make_plant_data(line):
     global plant_dict_output, plant_codes
     try:
-        tmp_id = re.findall(re_org_id, line)[0].strip().strip('\t\r\n')
-        tmp_name = re.findall(re_org_name, line)[0].strip().strip('\t\r\n')
+        tmp_id = re.findall(RE_ORG_ID, line)[0].strip().strip('\t\r\n')
+        tmp_name = re.findall(RE_ORG_NAME, line)[0].strip().strip('\t\r\n')
         tmp_nosp = "".join(tmp_name.split())
 
         if tmp_nosp.upper() in kegg_upper:

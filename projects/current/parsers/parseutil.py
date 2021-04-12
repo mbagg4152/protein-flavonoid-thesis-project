@@ -2,12 +2,6 @@ import json
 import os
 import re
 
-# try:
-#     from const_vals import *
-#
-# except ModuleNotFoundError:
-#     from sharedlib.const_vals import *
-
 JKEY = 'obj'
 
 

@@ -1,5 +1,5 @@
 from plib.types import ProtStruct
-from plib.strings_consts import *
+from plib.prconstants import *
 from plib.types import *
 import numpy as np
 import sys

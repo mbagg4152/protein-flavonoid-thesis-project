@@ -4,7 +4,7 @@ from urllib import request
 from urllib.error import HTTPError, URLError
 # from util import *
 from re import findall, sub
-from parsersconstants import *
+from paconstants import *
 import glob
 
 knap_ids = []
@@ -35,9 +35,9 @@ Path(pages).mkdir(parents=True, exist_ok=True)
 
 def main():
     global smiles_list, knap_ids, part_list
-    smiles_list = get_json_data(lig_id_dict)
-    part_list = get_json_data(lig_id_part)
-    knap_ids = get_json_data(pdb_knap_ids)
+    smiles_list = get_json_data(LIG_ID_DICT)
+    part_list = get_json_data(LIG_ID_PART)
+    knap_ids = get_json_data(PDB_KNAP_IDS)
     get_knapsack_codes()
     with open(knap_id_info, 'w') as outfile:
         out = ''
@@ -114,12 +114,12 @@ def get_parse_knap_pages():
         try:
             with open(tmp_name, 'r') as tmp_file:
                 data = tmp_file.read()
-                found = findall(re_knap_org, data)
+                found = findall(RE_KNAP_ORG, data)
                 orgs = '\t'.join(found)
                 for org in found:
                     if org not in org_list: org_list.append(org)
                 name = key
-                if len(findall(re_knap_name, data)): name = ' || '.join(findall(re_knap_name, data)[0].split('<br>'))
+                if len(findall(RE_KNAP_NAME, data)): name = ' || '.join(findall(RE_KNAP_NAME, data)[0].split('<br>'))
                 out += key + '\t' + kid + '\t' + name + '\t' + orgs + '\n'
         except FileNotFoundError:
             continue
@@ -144,11 +144,11 @@ def knap_code_helper(out_path, key, prop, tmp_url):
             data = file.read()
             data = sub(r'<font color=#\S{6}>', '', sub(r'</font>', '', data))
             try:
-                num_res = findall(re_num_knap_results, data)[0]
+                num_res = findall(RE_NUM_KNAP_RESULTS, data)[0]
                 if int(num_res) < 1:
                     return False
                 else:
-                    values = findall(re_knap_entry, data)
+                    values = findall(RE_KNAP_ENTRY, data)
                     tmp_entry = smiles_list.get(key) or 'NONE'
                     name = tmp_entry.get(K_NAME) or 'NONE'
                     lname = tmp_entry.get(K_LONG) or 'NONE'
@@ -215,7 +215,7 @@ def get_knap_url(sname, word):
 def get_extra_info():
     out_str = ""
     for key in smiles_list:
-        tmp_url = PDB_URL + key
+        tmp_url = URL_PDB + key
         name = pages + key + ".txt"
         if not os.path.exists(name):
             try:
@@ -230,22 +230,22 @@ def get_extra_info():
             print('no file')
             continue
         data = file.read()
-        aroma = ''.join(findall(re_aroma, data) or ['NONE'])
-        bond = ''.join(findall(re_bond, data) or ['NONE'])
-        chebi = ''.join(findall(re_chebi, data)[0]) if len(findall(re_chebi, data)) else 'NONE'
-        chembl = ''.join(findall(re_chembl, data)[0]) if len(findall(re_chembl, data)) else 'NONE'
-        chiral = ''.join(findall(re_chiral, data) or ['NONE'])
-        count = ''.join(findall(re_atom_count, data) or ['NONE'])
-        f_charge = ''.join(findall(re_charge, data) or ['NONE'])
-        form = sub(' ', '', ''.join(sub('<sub>', '', sub('</sub>', '', (''.join(findall(re_form, data) or ['NONE']))))))
-        inchi = ''.join(findall(re_inchi, data) or ['NONE'])
-        inchi_key = ''.join(findall(re_inchi_key, data) or ['NONE'])
-        pubchem = ''.join(findall(re_pubchem, data)[0]) if len(findall(re_pubchem, data)) else 'NONE'
-        smiles = ''.join(findall(re_smile, data)[0]) if len(findall(re_smile, data)) else 'NONE'
-        weight = findall(re_weight, data)[0] if len(findall(re_weight, data)) else 'NONE'
+        aroma = ''.join(findall(RE_AROMA, data) or ['NONE'])
+        bond = ''.join(findall(RE_BOND, data) or ['NONE'])
+        chebi = ''.join(findall(RE_CHEBI, data)[0]) if len(findall(RE_CHEBI, data)) else 'NONE'
+        chembl = ''.join(findall(RE_CHEMBL, data)[0]) if len(findall(RE_CHEMBL, data)) else 'NONE'
+        chiral = ''.join(findall(RE_CHIRAL, data) or ['NONE'])
+        count = ''.join(findall(RE_ATOM_COUNT, data) or ['NONE'])
+        f_charge = ''.join(findall(RE_CHARGE, data) or ['NONE'])
+        form = sub(' ', '', ''.join(sub('<sub>', '', sub('</sub>', '', (''.join(findall(RE_FORMULA, data) or ['NONE']))))))
+        inchi = ''.join(findall(RE_INCHI, data) or ['NONE'])
+        inchi_key = ''.join(findall(RE_INCHI_KEY, data) or ['NONE'])
+        pubchem = ''.join(findall(RE_PUBCHEM, data)[0]) if len(findall(RE_PUBCHEM, data)) else 'NONE'
+        smiles = ''.join(findall(RE_SMILES, data)[0]) if len(findall(RE_SMILES, data)) else 'NONE'
+        weight = findall(RE_WEIGHT, data)[0] if len(findall(RE_WEIGHT, data)) else 'NONE'
 
-        common = ''.join(findall(re_name, data)[0]) if len(findall(re_name, data)) else 'NONE'
-        long = ''.join(findall(re_long, data)[0]) if len(findall(re_long, data)) else 'NONE'
+        common = ''.join(findall(RE_NAME_REG, data)[0]) if len(findall(RE_NAME_REG, data)) else 'NONE'
+        long = ''.join(findall(RE_NAME_LONG, data)[0]) if len(findall(RE_NAME_LONG, data)) else 'NONE'
 
         out_str += "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" \
                    "\t{}\t{}\t{}\n".format(key, smiles, inchi, inchi_key, pubchem, chebi, chembl,

@@ -16,7 +16,7 @@ DS_OUT_M0 = '..' + sep + '..' + sep + '..' + sep + 'm0'
 DSO_REL_M4 = os.getcwd() + sep + 'm4'
 DSO_REL_M0 = os.getcwd() + sep + 'm0'
 sys.path.append(os.getcwd().replace(sep + 'protein', ''))  # allows for imports from directories at the same level
-from plib.strings_consts import *
+from plib.prconstants import *
 
 try: from json_objects import *
 except ImportError:
