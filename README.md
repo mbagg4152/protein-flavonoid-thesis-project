@@ -295,6 +295,20 @@ More searching will be done in order to determine how easy or difficult it would
 other databases.
 
 __Note:__ It will not work correctly if the `wget` system command is not installed (this has not yet been tested on Windows, may potentially only be compatible with Linux systems). 
+<!--  -->
+---
+## `parsers/knap_parse_pdb.py`
+Need to fill in.
+
+<!--  -->
+---
+## `parsers/npass_parse.py`
+Need to fill in.
+
+<!--  -->
+---
+## `parsers/knap_parse.py`
+Need to fill in
 
 
 <!--  -->
@@ -420,7 +434,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY3MTQwMjUwLDE1NjM0ODczMTksLTExNT
+eyJoaXN0b3J5IjpbNzc3MzAyNzU1LDE1NjM0ODczMTksLTExNT
 Q5MDgyNjcsMTg5NDkwOTIxMSwtODMyMTEzMjA3LC0xODcxMTAz
 LC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
 -->
