@@ -55,7 +55,7 @@ JW started the code to get information from KEGG about the species we were inter
 - `pfpy/projects/current/protein:` code for the protein-flavonoid interaction project.
 	- `/images:`output directory for the images of the protein rings as planes.
 	- `/pdb-test-files:`specific PDB files of interest to be tested.
-	- `/plib:` 
+	- `/plib:` contains library files used in the protein project.
 	- `/prjson:` contains the JSON files needed for the protein project.
 
 - `pfpy/projects/current/parsers:` contains code used for parsing data while conducting research.
@@ -426,7 +426,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzAxNjc5MDksMTU2MzQ4NzMxOSwtMT
+eyJoaXN0b3J5IjpbLTE1MTU0MzQ3NTUsMTU2MzQ4NzMxOSwtMT
 E1NDkwODI2NywxODk0OTA5MjExLC04MzIxMTMyMDcsLTE4NzEx
 MDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ
 ==
