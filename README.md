@@ -41,18 +41,19 @@ JW started the code to get information from KEGG about the species we were inter
 ---
 ## Project Structure
 - `pfpy` main folder  
-- `pfpy/projects/original/:` contains the code from when Jordan Wilson was developing  
-- `pfpy/projects/current/:` current code
+- `pfpy/projects/original/:` Contains the code from when Jordan Wilson was developing  
+- `pfpy/projects/current/:` Current code
 - `pfpy/projects/current/flavonoid/:` code (and related files) for flavonoid prediction
-	- `../fjson/:` json files required by flavonoid project
+	- `../fjson/:` JSON files required by flavonoid project
 	- `../flib/:` library files used only in flavonoid project
 	- `../data/:` output data folder
-		- `../data/Chemical_Data/:` contains the files for the list of plants predicted per flavonoid  
-		- `../data/FASTA_Data/:` contains FASTA EC number data  
-		- `../data/Gene_Data/:` contains the data pulled from KEGG for each plant pathway      
+		- `../Chemical_Data/:` contains the files for the list of plants predicted per flavonoid  
+		- `../FASTA_Data/:` contains FASTA EC number data  
+		- `../Gene_Data/:` contains the data pulled from KEGG for each plant pathway      
 
 
 - `pfpy/projects/current/protein/:` code for the protein-flavonoid interaction project
+	- `../`
 
 - `pfpy/projects/current/sharedlib` contains the library/helper code and other assorted test code files.  
 - `pfpy/projects/current/misc_output` contains output from testing programs not used by kegg-prog.py    
@@ -419,7 +420,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MzQzODEwOCwxNTYzNDg3MzE5LC0xMT
+eyJoaXN0b3J5IjpbMTI0MDgwODUzMSwxNTYzNDg3MzE5LC0xMT
 U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
 MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
 -->
