@@ -172,7 +172,7 @@ The functions return `True` or `False` based on whether or not the required EC n
 
 <!--  -->
 ---
-## `fllib/datatypes.py`
+## `flavonoid/flib/data_types.py`
 This contains the custom data types that are or have been used in the program.  
 ### `ChemData` 
 This class holds the data for each flavonoid. The objects are initialized with their file name and label and only later in the program, their empty list of plants will be filled.  
@@ -270,7 +270,7 @@ __Functions__
 
 <!--  -->
 ---
-## `lib/knapsackinfo.py`
+## `parsers/knap_parse.py`
 This program uses the `wget` command in order to pull the information for each of the species from KNApSAcK. 
 For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of interest.  
 After the HTML page for each plant is retrieved, the file is then parsed.
@@ -280,18 +280,6 @@ More searching will be done in order to determine how easy or difficult it would
 other databases.
 
 __Note:__ It will not work correctly if the `wget` system command is not installed (this has not yet been tested on Windows, may potentially only be compatible with Linux systems). 
-
-
-
-<!--  -->
----
-## `lib/jsondata.py`
-This file calls the `get_json_data(filename,key)` function from util.py, which reads in the list of plant and pathway codes as well as the file containing the scientific name for each plant and the full name of each pathway map.
-
-<!--  -->
----
-## `lib/pathstrings.py`
-This file just contains the strings which hold the dedicated output folder and file names.
 
 <!--  -->
 ---
@@ -433,8 +421,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTE3OTc4ODAsMTU2MzQ4NzMxOSwtMT
-E1NDkwODI2NywxODk0OTA5MjExLC04MzIxMTMyMDcsLTE4NzEx
-MDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ
-==
+eyJoaXN0b3J5IjpbMTc1OTA0Nzk4MCwxNTYzNDg3MzE5LC0xMT
+U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
+MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
 -->
