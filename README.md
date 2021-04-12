@@ -41,20 +41,20 @@ JW started the code to get information from KEGG about the species we were inter
 ---
 ## Project Structure
 - `pfpy` main folder  
-- `pfpy/projects/original:` contains the code from when Jordan Wilson was developing  
-- `pfpy/projects/current:` current code
-- `pfpy/projects/current/flavonoid:` code (and related files) for flavonoid prediction
-	- `/fjson:` JSON files required by flavonoid project
-	- `/flib:` library files used only in flavonoid project
-	- `/data:` output data folder
-		- `/Chemical_Data:` contains the files for the list of plants predicted per flavonoid  
-		- `/FASTA_Data:` contains FASTA EC number data  
-		- `/Gene_Data:` contains the data pulled from KEGG for each plant pathway      
+- `pfpy/projects/original:` contains the code from when Jordan Wilson was developing.
+- `pfpy/projects/current:` current code.
+- `pfpy/projects/current/flavonoid:` code (and related files) for flavonoid prediction.
+	- `/fjson:` JSON files required by flavonoid project.
+	- `/flib:` library files used only in flavonoid project.
+	- `/data:` output data folder.
+		- `/Chemical_Data:` contains the files for the list of plants predicted per flavonoid.  
+		- `/FASTA_Data:` contains FASTA EC number data.  
+		- `/Gene_Data:` contains the data pulled from KEGG for each plant pathway.      
 
 
-- `pfpy/projects/current/protein:` code for the protein-flavonoid interaction project
-	- `/images:`output directory for the images of the 
-	- `/pdb-test-files:`
+- `pfpy/projects/current/protein:` code for the protein-flavonoid interaction project.
+	- `/images:`output directory for the images of the protein rings as planes.
+	- `/pdb-test-files:`specific PDB files of interest to be tested.
 	- `/plib:` 
 	- `/prjson:` contains the JSON files needed for the protein project.
 
@@ -426,7 +426,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTc5NTcxNzksMTU2MzQ4NzMxOSwtMT
+eyJoaXN0b3J5IjpbLTIwNzAxNjc5MDksMTU2MzQ4NzMxOSwtMT
 E1NDkwODI2NywxODk0OTA5MjExLC04MzIxMTMyMDcsLTE4NzEx
 MDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ
 ==
