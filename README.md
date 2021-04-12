@@ -297,8 +297,6 @@ other databases.
 __Note:__ It will not work correctly if the `wget` system command is not installed (this has not yet been tested on Windows, may potentially only be compatible with Linux systems). 
 
 
-
-
 <!--  -->
 ---
 ## `parse_pdbs.py`
@@ -319,7 +317,7 @@ If `urllib` receives an error code from trying to get a .pdb file, that is most 
 
 <!--  -->
 ---
-## `protein/types.py`
+## `protein/plib/types.py`
 This file contains two different classes and functions that are used to create new objects, which are used in `pdb_parsing.py`.  
 ### `Record`
 This object holds the information from PDB files for a single `ATOM/HETATM` line or record.  For example, the following lines would be appropriately converted into `Record` objects using the function `new_record`:     
@@ -370,7 +368,7 @@ Then using the vectors, finds a, b, c & d by computing AB x AC
 
 <!--  -->
 ---
-## `protein/strings_consts.py`
+## `protein/plib/prconstants.py`
 This file simply contains several strings & constant values for `protein.py`.
     
 <!--  -->
@@ -422,7 +420,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMDYyNTY0LDE1NjM0ODczMTksLTExNT
+eyJoaXN0b3J5IjpbOTY3MTQwMjUwLDE1NjM0ODczMTksLTExNT
 Q5MDgyNjcsMTg5NDkwOTIxMSwtODMyMTEzMjA3LC0xODcxMTAz
 LC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
 -->
