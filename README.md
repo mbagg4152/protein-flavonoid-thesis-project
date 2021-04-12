@@ -140,8 +140,8 @@ Then the data is added to a list such that this gene data is associated with the
 
 <!--  -->
 ---
-## `lib/compoundinfo.py`
-This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
+## `flavonoid/flib/prediction_logic.py`
+This uses the labeled EC numbers from `flib/fconstants.py` as well as the logic used in order to make the predictions.  
 Some of the EC number variables are shown below:
 ```python
 E1 = 'EC:4.3.1.24'
@@ -160,7 +160,7 @@ Takes in a list and elements and returns true only if all of the passed elements
   
 ### The Logical Functions  
 Different logical functions have been written not only for the flavonoids of interest, but also for the prerequisite compounds which are found on the map. The prerequisite functions are used to get the total result for the specific compound. If the prerequisite returns `False`, the compound logic function will also return `False`.  
-Each function named using the compound's PDBj ID (or abbreviation, if no ID is available) in order to keep code lines at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
+Each function named using the compound's PDB ID (or abbreviation, if no ID is available) in order to keep code lines at a decent length. Each function does have its compound's full name commented at the end of its respective line. 
 For example, the function for Cinnamic acid, which requires `EC:4.3.1.24` OR `EC:4.3.1.25` is written as such:  
 ```python
 def tca(e): return or_in(e, E1, E2)  # cinnamic acid
@@ -172,20 +172,7 @@ The functions return `True` or `False` based on whether or not the required EC n
 
 <!--  -->
 ---
-## `lib/knapsackinfo.py`
-This program uses the `wget` command in order to pull the information for each of the species from KNApSAcK. 
-For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of interest.  
-After the HTML page for each plant is retrieved, the file is then parsed.
-Any lines containing the names of the flavonoids of interest will be saved, stripped of HTML syntax and broken down into a list of lists for the plant.
-This program was written with the purpose of making data collection for both the compounds and their relatives easier.  
-More searching will be done in order to determine how easy or difficult it would be to update this code to work with 
-other databases.
-
-__Note:__ It will not work correctly if the `wget` system command is not installed (this has not yet been tested on Windows, may potentially only be compatible with Linux systems). 
-
-<!--  -->
----
-## `lib/datatypes.py`
+## `flavonoid/flib/data_types.py`
 This contains the custom data types that are or have been used in the program.  
 ### `ChemData` 
 This class holds the data for each flavonoid. The objects are initialized with their file name and label and only later in the program, their empty list of plants will be filled.  
@@ -281,21 +268,11 @@ __Functions__
 
 <!--  -->
 ---
-## `lib/jsondata.py`
-This file calls the `get_json_data(filename,key)` function from util.py, which reads in the list of plant and pathway codes as well as the file containing the scientific name for each plant and the full name of each pathway map.
-
-<!--  -->
----
-## `lib/pathstrings.py`
-This file just contains the strings which hold the dedicated output folder and file names.
-
-<!--  -->
----
-## `lib/util.py`
+## `flavonoid/flib/util.py`
 This file contains various utility functions used throughout the program.
 
 #### `get_json_data`  
-This function uses the python JSON library in order to parse JSON files into usable python objects. Can return lists or dictionaries, depending on the JSON file's structure.  
+This function uses the python JSON library in order to parse JSON files into usable python objects. Can return lists or dictionaries, depending on the JSON file's structure.  Function also included in `parsers/parserutil.py`.
 
 #### `remove_dupes`   
 Removes duplicate elements from a list.  
@@ -308,7 +285,39 @@ Writes the program's original `README` file.
 
 <!--  -->
 ---
-## `protein/pdb_parsing.py`
+## `parsers/knap_parse.py`
+This program uses the `wget` command in order to pull the information for each of the species from KNApSAcK. 
+For each plant, it compiles a list of entries from the database if the entry line contains one of the flavonoids of interest.  
+After the HTML page for each plant is retrieved, the file is then parsed.
+Any lines containing the names of the flavonoids of interest will be saved, stripped of HTML syntax and broken down into a list of lists for the plant.
+This program was written with the purpose of making data collection for both the compounds and their relatives easier.  
+More searching will be done in order to determine how easy or difficult it would be to update this code to work with 
+other databases.
+
+__Note:__ It will not work correctly if the `wget` system command is not installed (this has not yet been tested on Windows, may potentially only be compatible with Linux systems). 
+<!--  -->
+---
+## `parsers/knap_parse_pdb.py`
+Need to fill in.
+
+<!--  -->
+---
+## `parsers/npass_parse.py`
+Need to fill in.
+
+<!--  -->
+---
+## `parsers/paconstants.py`
+Need to fill in
+
+<!--  -->
+---
+## `parsers/pubche.py`
+Need to fill in
+
+<!--  -->
+---
+## `parse_pdbs.py`
 This program reads in a `JSON` file of PDB IDs and then appends the IDs to the end of a specific URL in order to download each desired PDB or mmCIF file. This is just one of the program options.
 The program can also run calculations on specific PDB structures and is currently set up in a menu-like fashion.   The options include:
 - Finding the distance between two atoms
@@ -326,7 +335,7 @@ If `urllib` receives an error code from trying to get a .pdb file, that is most 
 
 <!--  -->
 ---
-## `protein/types.py`
+## `protein/plib/types.py`
 This file contains two different classes and functions that are used to create new objects, which are used in `pdb_parsing.py`.  
 ### `Record`
 This object holds the information from PDB files for a single `ATOM/HETATM` line or record.  For example, the following lines would be appropriately converted into `Record` objects using the function `new_record`:     
@@ -377,7 +386,7 @@ Then using the vectors, finds a, b, c & d by computing AB x AC
 
 <!--  -->
 ---
-## `protein/strings_consts.py`
+## `protein/plib/prconstants.py`
 This file simply contains several strings & constant values for `protein.py`.
     
 <!--  -->
@@ -429,7 +438,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5OTkyNzI1NSwxNTYzNDg3MzE5LC0xMT
+eyJoaXN0b3J5IjpbLTg3OTQzODE1NywxNTYzNDg3MzE5LC0xMT
 U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
 MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
 -->
