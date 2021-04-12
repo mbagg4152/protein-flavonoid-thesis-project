@@ -107,10 +107,10 @@ KNApSAcK has a simple partial URL-fetch system for the purpose of being used in 
 # Important Files and Functions
 __Note:__ Not all files or functions are covered below.  
 
-## `flavonoid/keggv1.py`
+## `flavonoid/keggv1.py, keggv2.py`
 The original main file of the program for the flavonoid prediction portion of the project.  
  
-## `flavonoid/keggv2.py`
+## `flavonoid/keggv3.py`
 The current main file of the program for the flavonoid prediction portion of the project.  
 
   
@@ -426,8 +426,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTU0MzQ3NTUsMTU2MzQ4NzMxOSwtMT
-E1NDkwODI2NywxODk0OTA5MjExLC04MzIxMTMyMDcsLTE4NzEx
-MDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ
-==
+eyJoaXN0b3J5IjpbNjAwMjY3Mjc5LDE1NjM0ODczMTksLTExNT
+Q5MDgyNjcsMTg5NDkwOTIxMSwtODMyMTEzMjA3LC0xODcxMTAz
+LC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
 -->
