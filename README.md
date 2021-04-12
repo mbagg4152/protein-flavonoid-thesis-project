@@ -41,16 +41,27 @@ JW started the code to get information from KEGG about the species we were inter
 ---
 ## Project Structure
 - `pfpy` main folder  
-- `pfpy/projects/original/` contains the code from when Jordan Wilson was developing  
-- `pfpy/projects/current/` current code
-- `pfpy/projects/current/flavonoid` code (and related files) for flavonoid prediction  
-- `pfpy/projects/current/protein` code for the protein-flavonoid interaction project
-- `pfpy/projects/current/flavonoid/data/` output data folder  
-- `pfpy/projects/current/flavonoid/data/Chemical_Data` contains the files for the list of plants predicted per flavonoid  
-- `pfpy/projects/current/flavonoid/data/FASTA_Data` contains FASTA EC number data  
-- `pfpy/projects/current/flavonoid/data/Gene_Data` contains the data pulled from KEGG for each plant pathway  
-- `pfpy/projects/current/json_data`  holds the lists of plants & pathways used in the KEGG program (in JSON format).  
-- `pfpy/projects/current/lib` contains the library/helper code and other assorted test code files.  
+- `pfpy/projects/original:` contains the code from when Jordan Wilson was developing.
+- `pfpy/projects/current:` current code.
+- `pfpy/projects/current/flavonoid:` code (and related files) for flavonoid prediction.
+	- `/fjson:` JSON files required by flavonoid project.
+	- `/flib:` library files used only in flavonoid project.
+	- `/data:` output data folder.
+		- `/Chemical_Data:` contains the files for the list of plants predicted per flavonoid.  
+		- `/FASTA_Data:` contains FASTA EC number data.  
+		- `/Gene_Data:` contains the data pulled from KEGG for each plant pathway.      
+
+
+- `pfpy/projects/current/protein:` code for the protein-flavonoid interaction project.
+	- `/images:`output directory for the images of the protein rings as planes.
+	- `/pdb-test-files:`specific PDB files of interest to be tested.
+	- `/plib:` contains library files used in the protein project.
+	- `/prjson:` contains the JSON files needed for the protein project.
+
+- `pfpy/projects/current/parsers:` contains code used for parsing data while conducting research.
+	- `/pajson:` contains the JSON files needed in the parsing process.
+
+- `pfpy/projects/current/sharedlib` contains the library/helper code and other assorted test code files.  
 - `pfpy/projects/current/misc_output` contains output from testing programs not used by kegg-prog.py    
 
 <!--  -->
@@ -96,10 +107,16 @@ KNApSAcK has a simple partial URL-fetch system for the purpose of being used in 
 # Important Files and Functions
 __Note:__ Not all files or functions are covered below.  
 
-## `flavonoid/keggv1.py`
-The original main file of the program for the flavonoid prediction portion of the project.  
- 
-## `flavonoid/keggv2.py`
+## `flavonoid/keggv1.py, keggv2.py`
+Previous versions of the main script used in the flavonoid project.
+
+## `flavonoid/keggv2_with_libs.py`
+This file is a 'condensed' version of  `keggv2.py`. Instead of relying on the external imports from the `lib` directory, all of the important variables, functions, etc. are located in within the main file.   
+__Note:__ the  `json_data` directory is still needed for the program to work correctly.    
+This file was made more for convenience since imports can sometimes behave strangely, plus this decreases the number of code files needed to accomplish the same tasks.   
+When continuing development, if you wish to keep a condensed version, it is highly suggested to work on the main and library files first, then build the condensed version.   
+
+## `flavonoid/keggv3.py`
 The current main file of the program for the flavonoid prediction portion of the project.  
 
   
@@ -118,11 +135,8 @@ Once the gene data is collected,the data is split up into different list items. 
 Then the data is added to a list such that this gene data is associated with the appropriate plant.
 
 
-## `flavonoid/keggv2_with_libs.py`
-This file is a 'condensed' version of  `keggv2.py`. Instead of relying on the external imports from the `lib` directory, all of the important variables, functions, etc. are located in within the main file.   
-__Note:__ the  `json_data` directory is still needed for the program to work correctly.    
-This file was made more for convenience since imports can sometimes behave strangely, plus this decreases the number of code files needed to accomplish the same tasks.   
-When continuing development, if you wish to keep a condensed version, it is highly suggested to work on the main and library files first, then build the condensed version.   
+
+
 
 <!--  -->
 ---
@@ -415,7 +429,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzQ4NzMxOSwtMTE1NDkwODI2NywxOD
-k0OTA5MjExLC04MzIxMTMyMDcsLTE4NzExMDMsLTE4Nzc1NTMw
-MjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ==
+eyJoaXN0b3J5IjpbMTk5OTkyNzI1NSwxNTYzNDg3MzE5LC0xMT
+U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
+MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
 -->
