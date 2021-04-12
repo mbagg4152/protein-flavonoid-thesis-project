@@ -272,7 +272,7 @@ __Functions__
 This file contains various utility functions used throughout the program.
 
 #### `get_json_data`  
-This function uses the python JSON library in order to parse JSON files into usable python objects. Can return lists or dictionaries, depending on the JSON file's structure.  Function also included in `parsers/parserutil.py`
+This function uses the python JSON library in order to parse JSON files into usable python objects. Can return lists or dictionaries, depending on the JSON file's structure.  Function also included in `parsers/parserutil.py`.
 
 #### `remove_dupes`   
 Removes duplicate elements from a list.  
@@ -301,7 +301,7 @@ __Note:__ It will not work correctly if the `wget` system command is not install
 
 <!--  -->
 ---
-## `protein/pdb_parsing.py`
+## `parse_pdbs.py`
 This program reads in a `JSON` file of PDB IDs and then appends the IDs to the end of a specific URL in order to download each desired PDB or mmCIF file. This is just one of the program options.
 The program can also run calculations on specific PDB structures and is currently set up in a menu-like fashion.   The options include:
 - Finding the distance between two atoms
@@ -422,7 +422,7 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzIxMzI0LDE1NjM0ODczMTksLTExNT
+eyJoaXN0b3J5IjpbMjExMDYyNTY0LDE1NjM0ODczMTksLTExNT
 Q5MDgyNjcsMTg5NDkwOTIxMSwtODMyMTEzMjA3LC0xODcxMTAz
 LC0xODc3NTUzMDIxLDk4NDQ4NTEyMywxMjc1NDAxNjE4XX0=
 -->
