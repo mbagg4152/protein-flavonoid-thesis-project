@@ -2,10 +2,10 @@ import os
 
 SEP = os.sep
 JKEY = 'obj'
-P_JSON_DIR = '..' + SEP + 'protein' + SEP + 'pjson' + SEP
+P_JSON_DIR = '..' + SEP + 'protein' + SEP + 'prjson' + SEP
 FN_LIGAND_CODES = P_JSON_DIR + 'P_ligand_codes.json'
 FN_LIGAND_INFO = P_JSON_DIR + 'P_ligand_info.json'
-FN_LIG_IDENTIFIERS = P_JSON_DIR + 'P_ligand_identifiers.json'
+FN_LIG_IDENTIFIERS = P_JSON_DIR + 'lig_identifiers.json'
 FN_LIG_IDENTIFIERS_PART = P_JSON_DIR + 'P_ligand_identifiers_part.json'
 FN_PDB_IDS = P_JSON_DIR + 'P_pdb_ids.json'
 FN_PDB_IDS_SHORT = P_JSON_DIR + 'P_pdb_ids_short.json'

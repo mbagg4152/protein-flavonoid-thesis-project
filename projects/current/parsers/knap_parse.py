@@ -3,13 +3,6 @@ import os
 import re
 from parsersconstants import *
 
-sys.path.append(os.getcwd().replace(os.sep + 'parsers', ''))
-
-# from sharedlib.json_objects import *
-# from sharedlib.const_paths import SEP
-# from sharedlib.const_vals import *
-
-
 new_dir = '..' + SEP + 'misc_files' + SEP + 'knapsack_dir'
 ks_data_name = new_dir + SEP + '000_knapsack_data.csv'
 plant_flavs = {}

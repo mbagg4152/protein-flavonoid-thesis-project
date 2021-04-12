@@ -1,16 +1,4 @@
-K_CHEB = 'CHEBI'
-K_CHEM = 'CHEMBL'
-K_FORM = 'FORMULA'
-K_IKEY = 'INCHI_KEY'
-K_INCHI = 'INCHI'
-K_ISO = 'ISO_SMILES'
-K_LONG = 'LONG'
-K_NAME = 'COMMON'
-K_PUB = 'PUBCHEM'
-K_SMILE = 'SMILES'
-S_IKEY = 'INCHIKEY'
-S_INCHI = 'INCHI_CD'
-S_METAB = 'metabolite'
+
 
 # regular expressions
 

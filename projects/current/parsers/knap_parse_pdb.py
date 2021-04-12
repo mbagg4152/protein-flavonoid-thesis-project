@@ -2,9 +2,9 @@ from http.client import InvalidURL
 from pathlib import Path
 from urllib import request
 from urllib.error import HTTPError, URLError
-from util import *
+# from util import *
 from re import findall, sub
-
+from parsersconstants import *
 import glob
 
 knap_ids = []
@@ -35,17 +35,17 @@ Path(pages).mkdir(parents=True, exist_ok=True)
 
 def main():
     global smiles_list, knap_ids, part_list
-    smiles_list = get_json_data(FN_LIG_IDENTIFIERS)
-    part_list = get_json_data(FN_LIG_IDENTIFIERS_PART)
-    knap_ids = get_json_data(FN_PDB_KNAP_IDS)
-    # get_knapsack_codes()
-    # with open(knap_id_info, 'w') as outfile:
-    #     out = ''
-    #     for knap in knap_ids: out += knap + '\n'
-    #     outfile.write(out)
-    # # get_extra_info()
-    # with open(match_info, 'w') as outfile:
-    #     outfile.write(matches)
+    smiles_list = get_json_data(lig_id_dict)
+    part_list = get_json_data(lig_id_part)
+    knap_ids = get_json_data(pdb_knap_ids)
+    get_knapsack_codes()
+    with open(knap_id_info, 'w') as outfile:
+        out = ''
+        for knap in knap_ids: out += knap + '\n'
+        outfile.write(out)
+    # get_extra_info()
+    with open(match_info, 'w') as outfile:
+        outfile.write(matches)
     get_parse_knap_pages()
 
 
@@ -67,7 +67,8 @@ def get_knapsack_codes():
 
             if not (os.path.exists(name)):
                 if not (os.path.exists(name)):
-                    try: request.urlretrieve(tmp_url, name)
+                    try:
+                        request.urlretrieve(tmp_url, name)
                     except HTTPError or URLError or InvalidURL or UnicodeEncodeError:
                         print('err getting page')
                         continue
@@ -75,14 +76,18 @@ def get_knapsack_codes():
             if not knap_code_helper(name, key, json_keys[i], tmp_url):
                 if i != len(json_keys) - 1:
                     print('no match {} {}'.format(key, json_keys[i]))
-                    try: os.remove(name)
-                    except FileNotFoundError: print('!!!NO DELETE')
+                    try:
+                        os.remove(name)
+                    except FileNotFoundError:
+                        print('!!!NO DELETE')
                 else:
                     print('no matches at all {} {} ... making _NONE file.'.format(key, json_keys[i]))
                     new_name = match_dir + key + '_NONE' + ".html"
                     knap_code_helper(new_name, key, json_keys[i], tmp_url)
-                    try: os.remove(name)
-                    except FileNotFoundError: print('!!!NO DELETE')
+                    try:
+                        os.remove(name)
+                    except FileNotFoundError:
+                        print('!!!NO DELETE')
             else:
                 print('MATCH {} {}'.format(key, json_keys[i]))
                 break
@@ -101,22 +106,25 @@ def get_parse_knap_pages():
         tmp_url = 'http://www.knapsackfamily.com/knapsack_core/information.php?sname=C_ID&word=' + kid.strip()
         tmp_name = knap_dir + kid.strip() + '.html'
         if not (os.path.exists(tmp_name)):
-            try: request.urlretrieve(tmp_url, tmp_name)
+            try:
+                request.urlretrieve(tmp_url, tmp_name)
             except HTTPError or URLError or InvalidURL or UnicodeEncodeError:
                 print('err getting page')
                 return False
         try:
             with open(tmp_name, 'r') as tmp_file:
                 data = tmp_file.read()
-                found = findall(RE_KNAP_ORG, data)
+                found = findall(re_knap_org, data)
                 orgs = '\t'.join(found)
                 for org in found:
                     if org not in org_list: org_list.append(org)
                 name = key
-                if len(findall(RE_KNAP_NAME, data)): name = ' || '.join(findall(RE_KNAP_NAME, data)[0].split('<br>'))
+                if len(findall(re_knap_name, data)): name = ' || '.join(findall(re_knap_name, data)[0].split('<br>'))
                 out += key + '\t' + kid + '\t' + name + '\t' + orgs + '\n'
-        except FileNotFoundError: continue
-    with open(knap_orgs, 'w') as file: file.write(out)
+        except FileNotFoundError:
+            continue
+    with open(knap_orgs, 'w') as file:
+        file.write(out)
     with open(org_names, 'w') as file:
         org_out = ''
         for org in org_list: org_out += org + '\n'
@@ -126,7 +134,8 @@ def get_parse_knap_pages():
 def knap_code_helper(out_path, key, prop, tmp_url):
     global matches, knap_data, knap_ids
     if not (os.path.exists(out_path)):
-        try: request.urlretrieve(tmp_url, out_path)
+        try:
+            request.urlretrieve(tmp_url, out_path)
         except HTTPError or URLError or InvalidURL or UnicodeEncodeError:
             print('err getting page')
             return False
@@ -135,10 +144,11 @@ def knap_code_helper(out_path, key, prop, tmp_url):
             data = file.read()
             data = sub(r'<font color=#\S{6}>', '', sub(r'</font>', '', data))
             try:
-                num_res = findall(RE_NUM_KNAP_RESULTS, data)[0]
-                if int(num_res) < 1: return False
+                num_res = findall(re_num_knap_results, data)[0]
+                if int(num_res) < 1:
+                    return False
                 else:
-                    values = findall(RE_KNAP_ENTRY, data)
+                    values = findall(re_knap_entry, data)
                     tmp_entry = smiles_list.get(key) or 'NONE'
                     name = tmp_entry.get(K_NAME) or 'NONE'
                     lname = tmp_entry.get(K_LONG) or 'NONE'
@@ -154,8 +164,10 @@ def knap_code_helper(out_path, key, prop, tmp_url):
                     for item in values:
                         ks_smiles = sub(r'</td>', '', sub(r'</tr>', '', item[5])).strip()
                         if ks_smiles == '':
-                            if prop == K_SMILE: ks_smiles = ''.join(findall(r'.*word=(.*)', tmp_url))
-                            else: ks_smiles = 'NO SMILES LISTED DIRECTLY'
+                            if prop == K_SMILE:
+                                ks_smiles = ''.join(findall(r'.*word=(.*)', tmp_url))
+                            else:
+                                ks_smiles = 'NO SMILES LISTED DIRECTLY'
                         c_id = item[0]
                         cas_id = item[1]
                         ks_names = ' || '.join(item[2].split('<br>'))
@@ -187,10 +199,12 @@ def knap_code_helper(out_path, key, prop, tmp_url):
                                 knap_ids.append(item[0])
 
                     return True
-            except IndexError: return False
+            except IndexError:
+                return False
     except FileNotFoundError:
         print('no file for {} from property {}, {}'.format(key, prop, out_path))
-        with open(out_path, 'w')as failed: failed.write('NOTHING')
+        with open(out_path, 'w')as failed:
+            failed.write('NOTHING')
         return False
 
 
@@ -204,31 +218,34 @@ def get_extra_info():
         tmp_url = PDB_URL + key
         name = pages + key + ".txt"
         if not os.path.exists(name):
-            try: request.urlretrieve(tmp_url, name)
-            except HTTPError or URLError as e: print('err getting page')
+            try:
+                request.urlretrieve(tmp_url, name)
+            except HTTPError or URLError as e:
+                print('err getting page')
     for key in smiles_list:
         name = pages + key + ".txt"
-        try: file = open(name, "r")
+        try:
+            file = open(name, "r")
         except FileNotFoundError:
             print('no file')
             continue
         data = file.read()
-        aroma = ''.join(findall(RE_AROMA, data) or ['NONE'])
-        bond = ''.join(findall(RE_BOND, data) or ['NONE'])
-        chebi = ''.join(findall(RE_CHEBI, data)[0]) if len(findall(RE_CHEBI, data)) else 'NONE'
-        chembl = ''.join(findall(RE_CHEMBL, data)[0]) if len(findall(RE_CHEMBL, data)) else 'NONE'
-        chiral = ''.join(findall(RE_CHIRAL, data) or ['NONE'])
-        count = ''.join(findall(RE_ATOM_COUNT, data) or ['NONE'])
-        f_charge = ''.join(findall(RE_CHARGE, data) or ['NONE'])
-        form = sub(' ', '', ''.join(sub('<sub>', '', sub('</sub>', '', (''.join(findall(RE_FORM, data) or ['NONE']))))))
-        inchi = ''.join(findall(RE_INCHI, data) or ['NONE'])
-        inchi_key = ''.join(findall(RE_INCHI_KEY, data) or ['NONE'])
-        pubchem = ''.join(findall(RE_PUBCHEM, data)[0]) if len(findall(RE_PUBCHEM, data)) else 'NONE'
-        smiles = ''.join(findall(RE_SMILE, data)[0]) if len(findall(RE_SMILE, data)) else 'NONE'
-        weight = findall(RE_WEIGHT, data)[0] if len(findall(RE_WEIGHT, data)) else 'NONE'
+        aroma = ''.join(findall(re_aroma, data) or ['NONE'])
+        bond = ''.join(findall(re_bond, data) or ['NONE'])
+        chebi = ''.join(findall(re_chebi, data)[0]) if len(findall(re_chebi, data)) else 'NONE'
+        chembl = ''.join(findall(re_chembl, data)[0]) if len(findall(re_chembl, data)) else 'NONE'
+        chiral = ''.join(findall(re_chiral, data) or ['NONE'])
+        count = ''.join(findall(re_atom_count, data) or ['NONE'])
+        f_charge = ''.join(findall(re_charge, data) or ['NONE'])
+        form = sub(' ', '', ''.join(sub('<sub>', '', sub('</sub>', '', (''.join(findall(re_form, data) or ['NONE']))))))
+        inchi = ''.join(findall(re_inchi, data) or ['NONE'])
+        inchi_key = ''.join(findall(re_inchi_key, data) or ['NONE'])
+        pubchem = ''.join(findall(re_pubchem, data)[0]) if len(findall(re_pubchem, data)) else 'NONE'
+        smiles = ''.join(findall(re_smile, data)[0]) if len(findall(re_smile, data)) else 'NONE'
+        weight = findall(re_weight, data)[0] if len(findall(re_weight, data)) else 'NONE'
 
-        common = ''.join(findall(RE_NAME, data)[0]) if len(findall(RE_NAME, data)) else 'NONE'
-        long = ''.join(findall(RE_LONG, data)[0]) if len(findall(RE_LONG, data)) else 'NONE'
+        common = ''.join(findall(re_name, data)[0]) if len(findall(re_name, data)) else 'NONE'
+        long = ''.join(findall(re_long, data)[0]) if len(findall(re_long, data)) else 'NONE'
 
         out_str += "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}" \
                    "\t{}\t{}\t{}\n".format(key, smiles, inchi, inchi_key, pubchem, chebi, chembl,
