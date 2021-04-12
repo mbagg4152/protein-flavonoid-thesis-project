@@ -140,8 +140,8 @@ Then the data is added to a list such that this gene data is associated with the
 
 <!--  -->
 ---
-## `lib/compoundinfo.py`
-This contains the labeled EC numbers as well as the logic used in order to make the predictions.  
+## `flavonoid/flib/prediction_logic.py`
+This uses the labeled EC numbers from `flib/fconstants.o` as well as the logic used in order to make the predictions.  
 Some of the EC number variables are shown below:
 ```python
 E1 = 'EC:4.3.1.24'
@@ -429,7 +429,8 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5OTkyNzI1NSwxNTYzNDg3MzE5LC0xMT
-U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
-MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbLTE1MDQ4MzIyMzQsMTU2MzQ4NzMxOSwtMT
+E1NDkwODI2NywxODk0OTA5MjExLC04MzIxMTMyMDcsLTE4NzEx
+MDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ
+==
 -->
