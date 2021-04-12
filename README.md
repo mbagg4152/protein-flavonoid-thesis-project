@@ -41,19 +41,21 @@ JW started the code to get information from KEGG about the species we were inter
 ---
 ## Project Structure
 - `pfpy` main folder  
-- `pfpy/projects/original/:` Contains the code from when Jordan Wilson was developing  
-- `pfpy/projects/current/:` Current code
-- `pfpy/projects/current/flavonoid/:` code (and related files) for flavonoid prediction
-	- `../fjson/:` JSON files required by flavonoid project
-	- `../flib/:` library files used only in flavonoid project
-	- `../data/:` output data folder
-		- `../Chemical_Data/:` contains the files for the list of plants predicted per flavonoid  
-		- `../FASTA_Data/:` contains FASTA EC number data  
-		- `../Gene_Data/:` contains the data pulled from KEGG for each plant pathway      
+- `pfpy/projects/original:` Contains the code from when Jordan Wilson was developing  
+- `pfpy/projects/current:` Current code
+- `pfpy/projects/current/flavonoid:` code (and related files) for flavonoid prediction
+	- `/fjson:` JSON files required by flavonoid project
+	- `/flib:` library files used only in flavonoid project
+	- `/data:` output data folder
+		- `/Chemical_Data:` contains the files for the list of plants predicted per flavonoid  
+		- `/FASTA_Data:` contains FASTA EC number data  
+		- `/Gene_Data:` contains the data pulled from KEGG for each plant pathway      
 
 
-- `pfpy/projects/current/protein/:` code for the protein-flavonoid interaction project
-	- `../`
+- `pfpy/projects/current/protein:` code for the protein-flavonoid interaction project
+	- `/images:`
+	- `/pdb-test-files:`
+	- ``
 
 - `pfpy/projects/current/sharedlib` contains the library/helper code and other assorted test code files.  
 - `pfpy/projects/current/misc_output` contains output from testing programs not used by kegg-prog.py    
@@ -420,7 +422,8 @@ Version | Change |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MDgwODUzMSwxNTYzNDg3MzE5LC0xMT
-U0OTA4MjY3LDE4OTQ5MDkyMTEsLTgzMjExMzIwNywtMTg3MTEw
-MywtMTg3NzU1MzAyMSw5ODQ0ODUxMjMsMTI3NTQwMTYxOF19
+eyJoaXN0b3J5IjpbLTEyNjM5NzQ2OTUsMTU2MzQ4NzMxOSwtMT
+E1NDkwODI2NywxODk0OTA5MjExLC04MzIxMTMyMDcsLTE4NzEx
+MDMsLTE4Nzc1NTMwMjEsOTg0NDg1MTIzLDEyNzU0MDE2MThdfQ
+==
 -->
