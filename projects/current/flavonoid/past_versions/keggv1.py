@@ -51,7 +51,7 @@ def main():
     master_pathway_parser()
     make_matrix_and_counts()
     make_fasta()
-    write_readme(path_main, FN_README, init_time, fasta_path, gene_path)
+    write_readme(path_main, README, init_time, fasta_path, gene_path)
     finish_up()
 
 
@@ -68,9 +68,9 @@ def start():
     # create sub dirs for gene, FASTA & chemical data
     cwd = os.getcwd() + SEP
     main_dir = cwd + decision
-    chem_path = main_dir + CHEM_DIR
-    fasta_path = main_dir + FASTA_DIR
-    gene_path = main_dir + GENE_DIR
+    chem_path = main_dir + DIR_CHEM
+    fasta_path = main_dir + DIR_FASTA
+    gene_path = main_dir + DIR_GENE
 
     # replaced WindowsError with OSError for more general usage. try to make data directories and handle any errors
     try:
@@ -217,9 +217,9 @@ def make_fasta():
     print('- looping through master fasta...')
     for key in master_fasta:
         tmp_dict = dna_dict[key]  # get dictionary for the current key (gene name)
-        this_ec = tmp_dict[E_KEY]  # get ec number using the key EC
+        this_ec = tmp_dict[EKY]  # get ec number using the key EC
         # make the line to be added to the dictionary & then printed
-        tmp_line = '>' + str(key) + ' ' + str(tmp_dict[P_KEY]) + ' ' + str(this_ec) + '\n' + str(tmp_dict[N_KEY][0])
+        tmp_line = '>' + str(key) + ' ' + str(tmp_dict[PKY]) + ' ' + str(this_ec) + '\n' + str(tmp_dict[NKY][0])
         master_out += tmp_line + '\n'
         this_ec = this_ec.replace('[', NIX).replace(']', NIX)
 
@@ -289,7 +289,7 @@ def fasta_helper(gene_list):
                 else:
                     continue
         raw_info = kegg.parse(raw)  # turn kegg gene data into dictionary
-        ortho_line = raw_info.get(O_KEY)  # get data from dictionary using the key ORTHOLOGY
+        ortho_line = raw_info.get(OKY)  # get data from dictionary using the key ORTHOLOGY
         split_gene = gene.split(':')
         org_code = split_gene[0].strip()  # kegg code is first half
         gene_name = split_gene[1].strip()  # gene name is second half
@@ -317,7 +317,7 @@ def fasta_helper(gene_list):
         joined_dna_seq = [ntseq.replace(SP, NIX)]  # remove spaces from sequence
 
         with lock_dna:
-            tmp_entry = {E_KEY: ec_num, N_KEY: joined_dna_seq, P_KEY: organism_name}
+            tmp_entry = {EKY: ec_num, NKY: joined_dna_seq, PKY: organism_name}
             dna_dict[gene_name] = tmp_entry
             os.system('echo ' + str(dna_dict) + ' >> dna-dict.txt')
 

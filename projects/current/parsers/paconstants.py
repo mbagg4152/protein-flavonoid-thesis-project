@@ -15,11 +15,16 @@ NPLANT_DICT = 'pajson' + SEP + 'organism_codes_names.json'
 PDB_KNAP_IDS = 'pajson' + SEP + 'pdb_knap_ids.json'
 PLANT_NAMES_CODES = 'pajson' + SEP + 'plant_names_codes.json'
 PUB_PDB = 'pajson' + SEP + 'pub_pdb.json'
+KS_FLAVS = 'pajson' + SEP + 'knapsack_flavs.json'
 
 flav_list = get_json_data(FLAV_NAMES)
-flav_relatives = get_json_data(FLAV_REL)
+try:
+    flav_relatives = get_json_data(FLAV_REL)
+except UnicodeDecodeError:
+    pass
 flav_synonyms = get_json_data(FLAV_SYNS)
 plant_dict = get_json_data(PLANT_NAMES_CODES)
+flav_dict = get_json_data(KS_FLAVS)
 
 CMP_CODES = '..' + SEP + 'misc_files' + SEP + 'npass' + SEP + 'comp_codes.txt'
 CMP_DICT = '..' + SEP + 'misc_files' + SEP + 'npass' + SEP + 'comp_dict.txt'
@@ -29,6 +34,8 @@ ORG_IN = '..' + SEP + 'misc_files' + SEP + 'npass' + SEP + 'npass_species.txt'
 ORG_OUT = '..' + SEP + 'misc_files' + SEP + 'npass' + SEP + 'parsed_species.txt'
 PAIRS_IN = '..' + SEP + 'misc_files' + SEP + 'npass' + SEP + 'plants_compounds.txt'
 SELECTED = '..' + SEP + 'misc_files' + SEP + 'npass' + SEP + 'selected.txt'
+
+RE_KS_PLANT = r'<td\sclass=org>\w+<.td><td\sclass=org>\w+<.td><td.class=org2>([\s\w]*)<'
 
 RE_AROMA = r'<tr.id=.c[a-z]+Ar.+A.+C.+t.>\s*<th>A.+\sB.+\sC.+t</th>\s*<td>(\d+)</td>\s*</tr>'
 RE_ATOM_COUNT = r'\s*<tr id=.ch.*A.*C.*t.>\s*<th>A.*C.*t</th>\s*<td>(.*)</td>\s*</tr>\s*<tr id=.ch.*Ch.*A.*C.*.>\s*<th>'
@@ -63,7 +70,8 @@ RE_PUBCHEM = r"https:\/\/pubchem\.ncbi\.nlm\.nih\.gov\/compound\/([0-9]*)"
 RE_SMILES = r'id=.ch.*Is.*c.>\s*<th>Is.*S.*S</th>\s*<td.*\">(.*)</td>\s*</tr>\s*<tr.id=.ch.*I.*I.>\s*'
 RE_WEIGHT = r'.*<tr id=.ch.*Mo.*W.*t.>\s*<th>Mo.*W.*t</th>\s*<td>(.*)</td>\s*</tr>\s*<tr id=\"ch.*lT.*e\">'
 
-URL_KNAP = "'http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism&word="  # knapsack partial URL
+URL_KNAP_ORG = "http://www.knapsackfamily.com/knapsack_core/result.php?sname=organism&word="  # knapsack partial URL
+URL_KNAP_CHEM = 'http://www.knapsackfamily.com/knapsack_core/information.php?sname=C_ID&word='
 URL_PDB = "http://www.rcsb.org/ligand/"
 URL_DBGET = 'https://www.kegg.jp/dbget-bin/www_bget?-f+-n+n+'
 

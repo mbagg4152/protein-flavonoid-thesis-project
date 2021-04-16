@@ -86,9 +86,9 @@ def init_setup():
         decision = 'data'
     path_cwd = os.getcwd() + SEP  # get directory where program is being run
     path_main = path_cwd + decision  # make the main/data dir path
-    path_chem = path_main + CHEM_DIR  # make the chem data path for prediction output
-    path_fasta = path_main + FASTA_DIR  # make the fasta data path for the fetched fasta data
-    path_gene = path_main + GENE_DIR  # make the gene data path for the fetched gene data
+    path_chem = path_main + DIR_CHEM  # make the chem data path for prediction output
+    path_fasta = path_main + DIR_FASTA  # make the fasta data path for the fetched fasta data
+    path_gene = path_main + DIR_GENE  # make the gene data path for the fetched gene data
 
     init_dirs(path_main, path_gene, path_fasta, path_chem)  # (futil.py) initialize directories if they don't exist
 
@@ -140,7 +140,7 @@ def path_parse(paths):
         with lock_kegg_get:
             raw = kegg.get(path)  # get KEGG entry for pathway
             gene_entry = kegg.parse(raw)  # parse kegg entry into dictionary for easier access
-            entry_dict = gene_entry.get(G_KEY)  # get the data for the dictionary key GENE
+            entry_dict = gene_entry.get(GKY)  # get the data for the dictionary key GENE
         if entry_dict is not None:
             plant_code = ''.join(re.split(RE_ALPH, path))  # get only the letters from the path
             plant_name = plant_dict.get(plant_code)  # get the plant name by accessing the plant dictionary
@@ -285,6 +285,7 @@ def build_fasta(genes):
     """
     global list_fasta_ec
     for gene in genes:
+
         # using the plant code and gene id create a string formatted as code:gene
         combined = gene.plant_code.strip() + ':' + gene.gene_id.replace('(RAP-DB) ', '').strip()
         db_url = URL_DBGET + combined  # append code-gene string to the end of the dbget incomplete URL
@@ -297,7 +298,8 @@ def build_fasta(genes):
             continue
 
         # get the header of the FASTA entry using regular expressions, &gt; is the HTML representation of >
-        fasta_header = ''.join(re.findall(RE_NT_HEAD, url_data)).replace('&gt;', '>')
+        fasta_header = ''.join(re.findall(RE_NT_HEAD, url_data)).replace('&gt;', '>') + \
+                       ' {' + plant_dict[gene.plant_code.strip()] + '}'
         fasta_body = ''.join(re.findall(RE_NT_SEQ, url_data))  # get the DNA sequence body using regular expressions
         full_fasta_entry = fasta_header + '\n' + fasta_body  # create FASTA entry string
         # create new entry object

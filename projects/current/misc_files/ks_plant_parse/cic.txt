@@ -1,0 +1,53 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Citrus clementina</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Citrus clementina</font><br><br>
+   	      Number of matched data :6 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00000575 target="_blank">C00000575</a></td><td class="d1">484-20-8</td><td class="d1">Bergaptan</td><td class="d1">C12H8O4</td><td class="d1">216.04225874</td><td class="d1"><font color=#FF00BF>Citrus clementina</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000583 target="_blank">C00000583</a></td><td class="d1">482-27-9</td><td class="d1">Isopimpinellin</td><td class="d1">C13H10O5</td><td class="d1">246.05282343</td><td class="d1"><font color=#FF00BF>Citrus clementina</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002490 target="_blank">C00002490</a></td><td class="d1">737-52-0</td><td class="d1">Oxypeucedanin</td><td class="d1">C16H14O5</td><td class="d1">286.08412356</td><td class="d1"><font color=#FF00BF>Citrus clementina</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00029763 target="_blank">C00029763</a></td><td class="d1">495-02-3</td><td class="d1">Aurapten</td><td class="d1">C19H22O3</td><td class="d1">298.15689457</td><td class="d1"><font color=#FF00BF>Citrus clementina</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00047753 target="_blank">C00047753</a></td><td class="d1">7380-40-7</td><td class="d1">Bergamottin</td><td class="d1">C21H22O4</td><td class="d1">338.15180919</td><td class="d1"><font color=#FF00BF>Citrus clementina</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00053431 target="_blank">C00053431</a></td><td class="d1">35997-39-8</td><td class="d1">Lilac alcohol</td><td class="d1">C10H18O2</td><td class="d1">170.13067982</td><td class="d1"><font color=#FF00BF>Citrus clementina</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

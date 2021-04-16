@@ -247,8 +247,8 @@ class FastaEcEntry:
         return self.dna_seq
 
 
-data_lists = [ChemData(AGI, [], FN_AGI), ChemData(BUN, [], FN_BUN), ChemData(KXN, [], FN_KXN),
-              ChemData(HWB, [], FN_HWB), ChemData(EC, [], FN_EC), ChemData(EGT, [], FN_EGT), ChemData(ERD, [], FN_ERD),
-              ChemData(GC, [], FN_GC), ChemData(GEN, [], FN_GEN), ChemData(KMP, [], FN_KMP), ChemData(LU2, [], FN_LU2),
-              ChemData(MYC, [], FN_MYC), ChemData(NAR, [], FN_NAR), ChemData(QUE, [], FN_QUER),
-              ChemData(HCC, [], FN_HCC)]
+data_lists = [ChemData(AGI, [], CSV_AGI), ChemData(BUN, [], CSV_BUN), ChemData(KXN, [], CSV_KXN),
+              ChemData(HWB, [], CSV_HWB), ChemData(EC, [], CSV_EC), ChemData(EGT, [], CSV_EGT), ChemData(ERD, [], CSV_ERD),
+              ChemData(GC, [], CSV_GC), ChemData(GEN, [], CSV_GEN), ChemData(KMP, [], CSV_KMP), ChemData(LU2, [], CSV_LU2),
+              ChemData(MYC, [], CSV_MYC), ChemData(NAR, [], CSV_NAR), ChemData(QUE, [], CSV_QUE),
+              ChemData(HCC, [], CSV_HCC)]

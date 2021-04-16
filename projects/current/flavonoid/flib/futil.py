@@ -1,7 +1,7 @@
 import json
 import os
 import re
-
+SEP = os.sep  # get the right slash. / for linux, \ for windows
 JKEY = 'obj'
 
 
@@ -90,13 +90,13 @@ def save_file(lists_to_write, output_dir, current):
     writedoc = open(output_dir, 'w')  # open file to be written
     for line in lists_to_write:
         for item in line:
-            item = str(item).replace(NL, NIX)  # removes the new lines in each list of list
-            if item == NIX:
+            item = str(item).replace('\n', '')  # removes the new lines in each list of list
+            if item == '':
                 writedoc.write('-')  # if the list in the list of list is empty writes a dash
             else:
                 writedoc.write(item)  # write the entry in the list of lists to the file
             writedoc.write(', ')  # tab delineated; use "," for csv files
-    writedoc.write(NL)
+    writedoc.write('\n')
     writedoc.close()
 
 

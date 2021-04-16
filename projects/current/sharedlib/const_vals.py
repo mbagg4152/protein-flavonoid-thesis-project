@@ -1,8 +1,4 @@
 
-
-# regular expressions
-
-
 # misc. string values
 CHUNK_SIZE, RETRY = 30, 20
 
