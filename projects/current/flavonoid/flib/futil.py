@@ -1,9 +1,9 @@
 import json
 import os
 import re
+
 SEP = os.sep  # get the right slash. / for linux, \ for windows
 JKEY = 'obj'
-
 
 def get_json_data(file_name, key=None):
     """
@@ -21,7 +21,6 @@ def get_json_data(file_name, key=None):
             data = json.load(jsonFile)
     return data[key]
 
-
 def remove_dupes(dupe_list):
     """
     removes duplicate elements
@@ -31,7 +30,6 @@ def remove_dupes(dupe_list):
         # adds item to empty list if it's not already in the list
         if item not in unique_list: unique_list.append(item)
     return unique_list
-
 
 def unique_element_list(list_name, index):
     """
@@ -45,7 +43,6 @@ def unique_element_list(list_name, index):
         if i[int(index)] not in element_list: element_list.append(i[int(index)])
     return element_list
 
-
 def list_partition(seq, num):
     """
     This function takes in a list and then splits it into as many parts as specified by parameter num
@@ -58,7 +55,6 @@ def list_partition(seq, num):
         last += avg
 
     return out
-
 
 def write_readme(main_dir, readme, init_time, fasta_path, gene_path):
     """
@@ -80,7 +76,6 @@ def write_readme(main_dir, readme, init_time, fasta_path, gene_path):
             ' and FASTA files organized by EC number, these are located in ' + fasta_path)
         readme_doc.close()
 
-
 def save_file(lists_to_write, output_dir, current):
     """
     This function takes a list or list of lists and then writes its contents to a file.
@@ -99,8 +94,7 @@ def save_file(lists_to_write, output_dir, current):
     writedoc.write('\n')
     writedoc.close()
 
-
-def write_append(path, content, write_over=None):
+def write_append(path, content, write_over=None, skip=None):
     """
     This function takes a file name and the contents to be written to a file. If the file doesn't exist, it is
     created then written to. If it does exist, then it is appended to. The optional arg write_over is used for when
@@ -117,6 +111,8 @@ def write_append(path, content, write_over=None):
             file = open(path, 'w')
             file.write(content)
             file.close()
+        elif skip:
+            pass
         else:
             file = open(path, 'a')
             file.write(content)
@@ -131,7 +127,6 @@ def is_http_error(msg):
         return False
     else:
         return True
-
 
 def init_dirs(main_dir, gene, fasta, chem):
     """
@@ -155,7 +150,6 @@ def init_dirs(main_dir, gene, fasta, chem):
     except OSError or FileExistsError:
         pass
 
-
 def quick_fetch(pattern, line):
     """
     Fetch one item from re.findall and return as a string.
@@ -167,14 +161,12 @@ def quick_fetch(pattern, line):
         out = ''
     return out
 
-
 def mult_replace(line, pairs):
     """
     This function makes multiple string replacements.
     """
     for pair in pairs: line = line.replace(pair[0], pair[1])
     return line
-
 
 def skin(line):
     """

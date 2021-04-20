@@ -52,7 +52,6 @@ path_gene = ' '  # will hold path of directory that contains the gene data outpu
 path_main = ' '  # will hold path of parent directory of program
 thread_lim = 5  # max number of threads to be used in accessing data
 
-
 def main():
     """
     This is the main function of the file which calls specific functions in order when running and displays the total
@@ -62,12 +61,11 @@ def main():
     get_parse_pathway_genes()
     flavonoid_predictions()
     make_plant_ec_counts()
-    build_nt_fasta_by_ec()
+    # build_nt_fasta_by_ec()
 
     end_time = datetime.datetime.now()
     total_time = end_time - init_time
     print('\nRun time: ' + str(total_time))
-
 
 def init_setup():
     """
@@ -98,7 +96,6 @@ def init_setup():
         tmp_plant = Plant(code=key, name=plant_dict[key])  # object made for current plant
         if not tmp_plant.is_in(list_all_plants): list_all_plants.append(tmp_plant)  # add if not already present in list
 
-
 def get_parse_pathway_genes():
     """
     This function breaks the list of plant pathways into different lists in order for different data to be processed
@@ -124,9 +121,8 @@ def get_parse_pathway_genes():
         for gene in item.genes:
             tmp_output += gene.simple() + '\n'  # use the simple function to get a formatted string for this pathway
             master_output += gene.simple() + '\n'  # get formatted string for the master file
-        write_append(tmp_file_path, tmp_output)  # write the file for the pathway
-    write_append(master_gene, master_output)  # write the master file
-
+        write_append(tmp_file_path, tmp_output, skip=True)  # write the file for the pathway
+    write_append(master_gene, master_output, skip=True)  # write the master file
 
 def path_parse(paths):
     """
@@ -137,6 +133,17 @@ def path_parse(paths):
     for path in paths:
         global list_all_plants, list_genes_by_path
         print(path)
+        # try:
+        #     with open(path_gene + SEP + path + CSV) as tmp_file:
+        #         tmp_data = tmp_file.read()
+        #         print(tmp_data)
+        #         tmp_file.close()
+        #         plant_code = ''.join(re.split(RE_ALPH, path))  # get only the letters from the path
+        #         plant_name = plant_dict.get(plant_code)  # get the plant name by accessing the plant dictionary
+        #         with lock_add_gene:
+        #             list_genes_by_path.append(PathGene(path=path))  # add new path to the list
+        #
+        # except FileNotFoundError:
         with lock_kegg_get:
             raw = kegg.get(path)  # get KEGG entry for pathway
             gene_entry = kegg.parse(raw)  # parse kegg entry into dictionary for easier access
@@ -167,7 +174,8 @@ def path_parse(paths):
                                     compound=name, path=path, plant_code=plant_code)
                     with lock_add_gene:
                         for gene_path in list_genes_by_path:
-                            if gene_path.path == path: gene_path.genes.append(tmp_gene)  # add to list of genes for path
+                            if gene_path.path == path: gene_path.genes.append(
+                                tmp_gene)  # add to list of genes for path
                     with lock_access_plant:
                         for index, plant in enumerate(list_all_plants):
                             if plant.name == tmp_gene.plant:
@@ -176,11 +184,12 @@ def path_parse(paths):
                                 if not tmp_gene.is_in(tmp_plant.genes): tmp_plant.genes.append(tmp_gene)
                                 # add to list of all genes if not already present
                                 if not tmp_gene.is_in(list_all_genes): list_all_genes.append(tmp_gene)
-                                tmp_plant.ec_nums.extend(ec_num)  # add to the plants list of ec numbers (dupes okay)
-                                list_all_plants[index] = plant  # update the list of plants with modified plant object
+                                tmp_plant.ec_nums.extend(
+                                    ec_num)  # add to the plants list of ec numbers (dupes okay)
+                                list_all_plants[
+                                    index] = plant  # update the list of plants with modified plant object
                 except IndexError:
                     pass  # couldn't find items using regular expression findall
-
 
 def flavonoid_predictions():
     """
@@ -206,10 +215,9 @@ def flavonoid_predictions():
         save_file([key.plants], key.file_name, path_chem)
 
         item_count = len(key.plants)
-        print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +
-              'Data saved in ' + path_chem + SEP + key.file_name + '.')
+        print(key.label + ' predicted in ' + str(item_count) + ' entries. ' + 'Data saved in ..' + SEP
+              + 'Chemical_Data' + SEP + key.file_name + '.')
     write_append(path_main + SEP + 'plant-ec-nums.csv', plant_ec_output)
-
 
 def make_plant_ec_counts():
     """
@@ -228,7 +236,6 @@ def make_plant_ec_counts():
         out += '\n'
     write_append(path_main + SEP + 'MasterCount.csv', out)  # write string to the output file
 
-
 def fill_count_matrix(plant):
     """
     This function builds the ec counts for each list.
@@ -244,7 +251,6 @@ def fill_count_matrix(plant):
             plant.ec_counts.append(tmp_count)
     with lock_access_plant:
         list_all_plant_matrix.append(tmp_plant)  # update count matrix
-
 
 def build_nt_fasta_by_ec():
     """
@@ -275,7 +281,6 @@ def build_nt_fasta_by_ec():
     write_append(master_fasta, master_output)  # write the master FASTA file
     print('Done making the FASTA files.')
 
-
 def build_fasta(genes):
     """
     This function uses the plant code and gene id in order to find the matching FASTA sequence using the appropriate
@@ -285,7 +290,6 @@ def build_fasta(genes):
     """
     global list_fasta_ec
     for gene in genes:
-
         # using the plant code and gene id create a string formatted as code:gene
         combined = gene.plant_code.strip() + ':' + gene.gene_id.replace('(RAP-DB) ', '').strip()
         db_url = URL_DBGET + combined  # append code-gene string to the end of the dbget incomplete URL
@@ -308,7 +312,6 @@ def build_fasta(genes):
             for g in gene.ec_nums:
                 tmp_ec = EcFastaCollection(ec_num=g, ec_entries=[tmp_entry])
                 list_fasta_ec.append(tmp_ec)
-
 
 if __name__ == '__main__':
     main()

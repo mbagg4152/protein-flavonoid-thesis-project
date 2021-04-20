@@ -1,6 +1,5 @@
 from flib.fconstants import *
 
-
 class ChemData:
     """
     This class holds the data for each flavonoid. The objects are initialized with their file name and label and only
@@ -31,7 +30,6 @@ class ChemData:
         for item in items:
             if self == item: return True
         return False
-
 
 class Plant:
     """
@@ -89,7 +87,6 @@ class Plant:
             if ec.number == ec_number:
                 ec.count += 1
 
-
 class PathGene:
     """
     This object is used to hold Gene objects in a way such that they are sorted by the pathway from which they were
@@ -117,7 +114,6 @@ class PathGene:
         for item in items:
             if self == item: return True
         return False
-
 
 class Gene:
     """
@@ -165,7 +161,6 @@ class Gene:
     def no_plant(self):
         return self.gene_id + ', ' + self.compound + ', ' + self.ec_nums + ', ' + self.ortho
 
-
 class EcFastaCollection:
     """
     This object is used to hold the associated FASTA entries for any given EC number.
@@ -193,7 +188,6 @@ class EcFastaCollection:
             if self == item: return True
         return False
 
-
 class EcCounts:
     """
     This object is a property of the Plant object and is used to hold each EC number and the number of times it occurs
@@ -210,7 +204,6 @@ class EcCounts:
     def __init__(self, number=None, count=None):
         self.number = number if number is not None else ' '
         self.count = count if number is not None else 0
-
 
 class FastaEcEntry:
     """
@@ -246,9 +239,11 @@ class FastaEcEntry:
     def simple(self):
         return self.dna_seq
 
-
 data_lists = [ChemData(AGI, [], CSV_AGI), ChemData(BUN, [], CSV_BUN), ChemData(KXN, [], CSV_KXN),
-              ChemData(HWB, [], CSV_HWB), ChemData(EC, [], CSV_EC), ChemData(EGT, [], CSV_EGT), ChemData(ERD, [], CSV_ERD),
-              ChemData(GC, [], CSV_GC), ChemData(GEN, [], CSV_GEN), ChemData(KMP, [], CSV_KMP), ChemData(LU2, [], CSV_LU2),
-              ChemData(MYC, [], CSV_MYC), ChemData(NAR, [], CSV_NAR), ChemData(QUE, [], CSV_QUE),
-              ChemData(HCC, [], CSV_HCC)]
+              ChemData(HWB, [], CSV_HWB), ChemData(EC, [], CSV_EC), ChemData(EGT, [], CSV_EGT),
+              ChemData(ERD, [], CSV_ERD), ChemData(GC, [], CSV_GC), ChemData(GEN, [], CSV_GEN),
+              ChemData(KMP, [], CSV_KMP), ChemData(LU2, [], CSV_LU2), ChemData(MYC, [], CSV_MYC),
+              ChemData(NAR, [], CSV_NAR), ChemData(QUE, [], CSV_QUE), ChemData(HCC, [], CSV_HCC),
+              ChemData(DHKM, [], CSV_DHKM), ChemData(DHMY, [], CSV_DHMY), ChemData(DHQU, [], CSV_DHQU),
+              ChemData(DLM, [], CSV_DLM), ChemData(LDLM, [], CSV_LDLM), ChemData(LHWB, [], CSV_LHWB),
+              ChemData(NACH, [], CSV_NACH)]
