@@ -1,6 +1,6 @@
 from flib.fconstants import *
 
-class ChemData:
+class Flav:
     """
     This class holds the data for each flavonoid. The objects are initialized with their file name and label and only
     later in the program, their empty list of plants will be filled.
@@ -239,11 +239,16 @@ class FastaEcEntry:
     def simple(self):
         return self.dna_seq
 
-data_lists = [ChemData(AGI, [], CSV_AGI), ChemData(BUN, [], CSV_BUN), ChemData(KXN, [], CSV_KXN),
-              ChemData(HWB, [], CSV_HWB), ChemData(EC, [], CSV_EC), ChemData(EGT, [], CSV_EGT),
-              ChemData(ERD, [], CSV_ERD), ChemData(GC, [], CSV_GC), ChemData(GEN, [], CSV_GEN),
-              ChemData(KMP, [], CSV_KMP), ChemData(LU2, [], CSV_LU2), ChemData(MYC, [], CSV_MYC),
-              ChemData(NAR, [], CSV_NAR), ChemData(QUE, [], CSV_QUE), ChemData(HCC, [], CSV_HCC),
-              ChemData(DHKM, [], CSV_DHKM), ChemData(DHMY, [], CSV_DHMY), ChemData(DHQU, [], CSV_DHQU),
-              ChemData(DLM, [], CSV_DLM), ChemData(LDLM, [], CSV_LDLM), ChemData(LHWB, [], CSV_LHWB),
-              ChemData(NACH, [], CSV_NACH)]
+data_lists = [Flav(AGI, [], CSV_AGI), Flav(APIF, [], CSV_APIF), Flav(AZEL, [], CSV_AZEL), Flav(BUN, [], CSV_BUN),
+              Flav(BUTN, [], CSV_BUTN), Flav(CHSN, [], CSV_CHSN), Flav(DDZN, [], CSV_DDZN), Flav(DF74, [], CSV_DF74),
+              Flav(DFV, [], CSV_DFV), Flav(DHGN, [], CSV_DHGN), Flav(DHKM, [], CSV_DHKM), Flav(DHMF, [], CSV_DHMF),
+              Flav(DHMY, [], CSV_DHMY), Flav(DHQU, [], CSV_DHQU), Flav(DLM, [], CSV_DLM), Flav(EC, [], CSV_EC),
+              Flav(EGT, [], CSV_EGT), Flav(ERCH, [], CSV_ERCH), Flav(ERD, [], CSV_ERD), Flav(EZEL, [], CSV_EZEL),
+              Flav(FSTN, [], CSV_FSTN), Flav(G50, [], CSV_G50), Flav(GBZL, [], CSV_GBZL), Flav(GC, [], CSV_GC),
+              Flav(GEN, [], CSV_GEN), Flav(GLGN, [], CSV_GLGN), Flav(HCC, [], CSV_HCC), Flav(HDZ6, [], HDZ6),
+              Flav(HESP, [], CSV_HESP), Flav(HWB, [], CSV_HWB), Flav(KMP, [], CSV_KMP), Flav(KXN, [], CSV_KXN),
+              Flav(LDLM, [], CSV_LDLM), Flav(LHWB, [], CSV_LHWB), Flav(LPLR, [], CSV_LPLR), Flav(LU2, [], CSV_LU2),
+              Flav(LUTF, [], CSV_LUTF), Flav(MYC, [], CSV_MYC), Flav(MYF, [], CSV_MYF), Flav(NACH, [], CSV_NACH),
+              Flav(NAR, [], CSV_NAR), Flav(PBAN, [], CSV_PBAN), Flav(PCCH, [], CSV_PCCH), Flav(PCEM, [], CSV_PCEM),
+              Flav(PLRG, [], CSV_PLRG), Flav(QUE, [], CSV_QUE), Flav(T2674, [], CSV_T2674), Flav(T274, [], CSV_T274),
+              Flav(T674, [], CSV_T674)]

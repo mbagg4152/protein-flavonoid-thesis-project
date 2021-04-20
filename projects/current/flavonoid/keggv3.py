@@ -50,6 +50,7 @@ path_cwd = ' '  # current working directory at initial runtime
 path_fasta = ' '  # will hold path of directory that contains the fasta output
 path_gene = ' '  # will hold path of directory that contains the gene data output
 path_main = ' '  # will hold path of parent directory of program
+path_raw_gene = ''
 thread_lim = 5  # max number of threads to be used in accessing data
 
 def main():
@@ -75,7 +76,7 @@ def init_setup():
     can be found in the JSON files. After making the list, it creates a list of plant objects that will be used
     throughout the program.
     """
-    global path_cwd, path_main, path_chem, path_fasta, path_gene, list_plant_paths, list_all_plants
+    global path_cwd, path_main, path_chem, path_fasta, path_gene, list_plant_paths, list_all_plants, path_raw_gene
     decision = ''
     if len(sys.argv) > 1:  # if length of args is greater than one that means user supplied arg other than program name
         decision = sys.argv[1]  # read in the desired output directory as a commandline argument
@@ -87,8 +88,12 @@ def init_setup():
     path_chem = path_main + DIR_CHEM  # make the chem data path for prediction output
     path_fasta = path_main + DIR_FASTA  # make the fasta data path for the fetched fasta data
     path_gene = path_main + DIR_GENE  # make the gene data path for the fetched gene data
-
-    init_dirs(path_main, path_gene, path_fasta, path_chem)  # (futil.py) initialize directories if they don't exist
+    path_raw_gene = path_main + DIR_RAW
+    init_dir(path_main)  # (futil.py) initialize directories if they don't exist
+    init_dir(path_gene)
+    init_dir(path_fasta)
+    init_dir(path_chem)
+    init_dir(path_raw_gene)
 
     list_plant_paths = [i + j for i in plant_list for j in path_map_list]  # make plant and path combination list
 
@@ -133,63 +138,66 @@ def path_parse(paths):
     for path in paths:
         global list_all_plants, list_genes_by_path
         print(path)
-        # try:
-        #     with open(path_gene + SEP + path + CSV) as tmp_file:
-        #         tmp_data = tmp_file.read()
-        #         print(tmp_data)
-        #         tmp_file.close()
-        #         plant_code = ''.join(re.split(RE_ALPH, path))  # get only the letters from the path
-        #         plant_name = plant_dict.get(plant_code)  # get the plant name by accessing the plant dictionary
-        #         with lock_add_gene:
-        #             list_genes_by_path.append(PathGene(path=path))  # add new path to the list
-        #
-        # except FileNotFoundError:
+        no_data = False
         with lock_kegg_get:
-            raw = kegg.get(path)  # get KEGG entry for pathway
+            raw = ''
+            try:
+                with open(path_raw_gene + SEP + path + '.csv', 'r') as tmp_read:
+                    raw = tmp_read.read()
+                    tmp_read.close()
+            except FileNotFoundError:
+                raw = kegg.get(path)  # get KEGG entry for pathway
+                with open(path_raw_gene + SEP + path + '.csv', 'w') as tmp_get:
+                    try: tmp_get.write(raw)
+                    except TypeError: no_data = True
+                    tmp_get.close()
+
             gene_entry = kegg.parse(raw)  # parse kegg entry into dictionary for easier access
             entry_dict = gene_entry.get(GKY)  # get the data for the dictionary key GENE
-        if entry_dict is not None:
-            plant_code = ''.join(re.split(RE_ALPH, path))  # get only the letters from the path
-            plant_name = plant_dict.get(plant_code)  # get the plant name by accessing the plant dictionary
-            with lock_add_gene:
-                list_genes_by_path.append(PathGene(path=path))  # add new path to the list
-            for key in entry_dict:
-                try:
-                    # find EC number in the entry using regular expressions then remove square brackets
-                    ec_num = re.findall(RE_EC, entry_dict[key])
 
-                    in_count = 0
-                    for i in range(0, len(ec_num)):
-                        item = ec_num[i].replace('[', '').replace(']', '').replace(':', '').replace(' ', '')
-                        ec_num[i] = 'EC:' + item
+        if not no_data:
+            if entry_dict is not None:
+                plant_code = ''.join(re.split(RE_ALPH, path))  # get only the letters from the path
+                plant_name = plant_dict.get(plant_code)  # get the plant name by accessing the plant dictionary
+                with lock_add_gene:
+                    list_genes_by_path.append(PathGene(path=path))  # add new path to the list
+                for key in entry_dict:
+                    try:
+                        # find EC number in the entry using regular expressions then remove square brackets
+                        ec_num = re.findall(RE_EC, entry_dict[key])
 
-                    # get the orthology ID using regular expressions then remove square brackets
-                    orthology = mult_replace(quick_fetch(RE_KO, entry_dict[key]), [('[', ''), (']', '')])
+                        in_count = 0
+                        for i in range(0, len(ec_num)):
+                            item = ec_num[i].replace('[', '').replace(']', '').replace(':', '').replace(' ', '')
+                            ec_num[i] = 'EC:' + item
 
-                    # remove the EC & KO using regular expressions in order to get the compound name
-                    name = re.sub(RE_KO, '', (re.sub(RE_EC, '', entry_dict[key])))
+                        # get the orthology ID using regular expressions then remove square brackets
+                        orthology = mult_replace(quick_fetch(RE_KO, entry_dict[key]), [('[', ''), (']', '')])
 
-                    # create new gene object using the information from kegg
-                    tmp_gene = Gene(gene_id=key, plant=plant_name, ec_nums=ec_num, ortho=orthology,
-                                    compound=name, path=path, plant_code=plant_code)
-                    with lock_add_gene:
-                        for gene_path in list_genes_by_path:
-                            if gene_path.path == path: gene_path.genes.append(
-                                tmp_gene)  # add to list of genes for path
-                    with lock_access_plant:
-                        for index, plant in enumerate(list_all_plants):
-                            if plant.name == tmp_gene.plant:
-                                tmp_plant = plant
-                                # add to list of plants genes if not already present
-                                if not tmp_gene.is_in(tmp_plant.genes): tmp_plant.genes.append(tmp_gene)
-                                # add to list of all genes if not already present
-                                if not tmp_gene.is_in(list_all_genes): list_all_genes.append(tmp_gene)
-                                tmp_plant.ec_nums.extend(
-                                    ec_num)  # add to the plants list of ec numbers (dupes okay)
-                                list_all_plants[
-                                    index] = plant  # update the list of plants with modified plant object
-                except IndexError:
-                    pass  # couldn't find items using regular expression findall
+                        # remove the EC & KO using regular expressions in order to get the compound name
+                        name = re.sub(RE_KO, '', (re.sub(RE_EC, '', entry_dict[key])))
+
+                        # create new gene object using the information from kegg
+                        tmp_gene = Gene(gene_id=key, plant=plant_name, ec_nums=ec_num, ortho=orthology,
+                                        compound=name, path=path, plant_code=plant_code)
+                        with lock_add_gene:
+                            for gene_path in list_genes_by_path:
+                                if gene_path.path == path: gene_path.genes.append(
+                                    tmp_gene)  # add to list of genes for path
+                        with lock_access_plant:
+                            for index, plant in enumerate(list_all_plants):
+                                if plant.name == tmp_gene.plant:
+                                    tmp_plant = plant
+                                    # add to list of plants genes if not already present
+                                    if not tmp_gene.is_in(tmp_plant.genes): tmp_plant.genes.append(tmp_gene)
+                                    # add to list of all genes if not already present
+                                    if not tmp_gene.is_in(list_all_genes): list_all_genes.append(tmp_gene)
+                                    tmp_plant.ec_nums.extend(
+                                        ec_num)  # add to the plants list of ec numbers (dupes okay)
+                                    list_all_plants[
+                                        index] = plant  # update the list of plants with modified plant object
+                    except IndexError:
+                        pass  # couldn't find items using regular expression findall
 
 def flavonoid_predictions():
     """

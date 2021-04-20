@@ -17,6 +17,7 @@ URL_DBGET = 'https://www.kegg.jp/dbget-bin/www_bget?-f+-n+n+'
 DIR_CHEM = SEP + 'Chemical_Data'
 DIR_FASTA = SEP + 'FASTA_Data'
 DIR_GENE = SEP + 'Gene_Data'
+DIR_RAW = DIR_GENE + SEP + 'Raw_Gene'
 
 # pathways for the json data  (and the name of the json object used in all files)
 JSON_DIR = '..' + SEP + 'json_data' + SEP
@@ -79,7 +80,7 @@ CSV_QUE = 'quercetin.csv'
 CSV_SOA = 'EC-2-3-1-30.csv'
 CSV_V1G = 'EC-2-4-1-136.csv'
 
-CSV_AFZN = 'afzelechin.csv'
+CSV_AZEL = 'afzelechin.csv'
 CSV_APIF = 'apiforol.csv'
 CSV_BUTN = 'butin.csv'
 CSV_CHSN = 'chrysin.csv'
@@ -92,7 +93,7 @@ CSV_DHMF = 'dihydrotricetin.csv'
 CSV_DHMY = 'dihydromyricetin.csv'
 CSV_DHQU = 'dihydroquercetin.csv'
 CSV_DLM = 'delphinidin.csv'
-CSV_EPFZ = 'epiafzelechin.csv'
+CSV_EZEL = 'epiafzelechin.csv'
 CSV_ERCH = 'eriodictyol_chalcone.csv'
 CSV_FSTN = 'dihydrofisetin.csv'
 CSV_G50 = 'phloretin.csv'
@@ -116,7 +117,7 @@ CSV_T674 = "6-7-4Trihydroxyflavanone.csv"
 
 # labels for each of the compounds
 
-AFZN = '(+)-Afzelechin'
+
 AGI = 'Apigenin'
 APIF = 'Apiforol'
 BUN = 'Butein'
@@ -151,9 +152,9 @@ PYG = 'Pyrogallol'
 QUE = 'Quercetin'
 RCO = 'Resorcinol'
 STL = 'Resveratrol'
-
+AZEL = '(+)-Afzelechin'
 DHMF = 'Dihydrotricetin'
-EPFZ = '(-)-Epiafzelechin'
+EZEL = '(-)-Epiafzelechin'
 ERCH = 'Eriodictyol Chalcone'
 FSTN = 'Dihydrofisetin'
 G50 = 'Phloretin'
@@ -195,6 +196,10 @@ E19 = 'EC:1.3.1.77'
 E20 = 'EC:1.17.1.3'
 E21 = 'EC:1.14.14.87'
 E22 = 'EC:4.2.1.105'
+E23 = '2.4.1.357'
+E24 = '1.3.1.117'
+E25 = '1.1.1.234'
+
 GGT = 'EC:2.4.1.74'
 DEC = 'EC:2.3.1.70'
 SOA = 'EC:2.3.1.30'

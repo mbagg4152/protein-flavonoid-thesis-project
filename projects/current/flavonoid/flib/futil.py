@@ -128,27 +128,16 @@ def is_http_error(msg):
     else:
         return True
 
-def init_dirs(main_dir, gene, fasta, chem):
+def init_dir(dir_path):
     """
     Initializes directories for keggv2.py
     """
     # replaced WindowsError with OSError for more general usage. try to make data directories and handle any errors
     try:
-        os.mkdir(main_dir)
+        os.mkdir(dir_path)
     except OSError:
         pass
-    try:
-        os.mkdir(gene)
-    except OSError or FileExistsError:
-        pass
-    try:
-        os.mkdir(fasta)
-    except OSError or FileExistsError:
-        pass
-    try:
-        os.mkdir(chem)
-    except OSError or FileExistsError:
-        pass
+
 
 def quick_fetch(pattern, line):
     """
