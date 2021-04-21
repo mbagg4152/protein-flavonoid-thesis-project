@@ -76,7 +76,7 @@ def write_readme(main_dir, readme, init_time, fasta_path, gene_path):
             ' and FASTA files organized by EC number, these are located in ' + fasta_path)
         readme_doc.close()
 
-def save_file(lists_to_write, output_dir, current):
+def save_file(lists_to_write, output_dir, current, sep=', '):
     """
     This function takes a list or list of lists and then writes its contents to a file.
     """
@@ -90,7 +90,7 @@ def save_file(lists_to_write, output_dir, current):
                 writedoc.write('-')  # if the list in the list of list is empty writes a dash
             else:
                 writedoc.write(item)  # write the entry in the list of lists to the file
-            writedoc.write(', ')  # tab delineated; use "," for csv files
+            writedoc.write(sep)  # tab delineated; use "," for csv files
     writedoc.write('\n')
     writedoc.close()
 
@@ -118,7 +118,6 @@ def write_append(path, content, write_over=None, skip=None):
             file.write(content)
             file.close()
 
-
 def is_http_error(msg):
     """
     Checks if a string is an HTTP error.
@@ -137,7 +136,6 @@ def init_dir(dir_path):
         os.mkdir(dir_path)
     except OSError:
         pass
-
 
 def quick_fetch(pattern, line):
     """

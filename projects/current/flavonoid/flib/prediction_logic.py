@@ -56,7 +56,7 @@ def dhgn(e): return nar(e) and (E21 in e)  # 2-Hydroxy-2,3-dihydrogenistein
 
 def hesp(e): return nar(e)  # hesperetin
 
-def apif(e): return nar(e) and (E25 in e)  # apiforol
+def apif(e): return nar(e) and (or_in(e, E17_1, E17_FULL, E17_2))  # apiforol
 
 def agi(e): return nar(e) and or_in(e, E11, E12)  # apigenin
 
@@ -68,7 +68,7 @@ def erch(e): return (nar(e) and or_in(e, E13, E14)) or (fca(e) and (E09 in e))  
 
 def erd(e): return erch(e)  # eriodictyol. same as erch for now, one of the direct steps on map
 
-def lutf(e): return erd(e) and (E25 in e)  # luteoforol
+def lutf(e): return erd(e) and (or_in(e, E17_1, E17_FULL, E17_2))  # luteoforol
 
 def dhmf(e): return erd(e) and (E13 in e)  # dihydrotricetin
 
@@ -76,7 +76,7 @@ def myf(e): return lutf(e) and (E13 in e) or (dhmf(e) and (E11 in e))  # triceti
 
 def dhkm(e): return nar(e) and (E15 in e)  # dihydrokaempferol
 
-def lplr(e): return dhkm(e) and (E17 in e)  # leucopelargonidin
+def lplr(e): return dhkm(e) and (E17_1 in e)  # leucopelargonidin
 
 def plrg(e): return lplr(e) and (E18 in e)  # pelargonidin
 
@@ -88,7 +88,7 @@ def kmp(e): return dhkm(e) and (E16 in e)  # kaempferol
 
 def dhqu(e): return (dhkm(e) and or_in(e, E13, E14)) or (erd(e) and (E15 in e))  # dihydroquercetin
 
-def lhwb(e): return dhqu(e) and or_in(e, E17, E17_2)  # leucocyanidin
+def lhwb(e): return dhqu(e) and or_in(e, E17_1, E17_FULL)  # leucocyanidin
 
 def que(e): return (kmp(e) and or_in(e, E13, E14)) or (dhqu(e) and (E16 in e))  # quercetin
 
@@ -102,7 +102,7 @@ def dhmy(e): return (dhqu(e) and (E13 in e)) or (erd(e) and and_in(e, E13, E15))
 
 def myc(e): return (dhmy(e) and (E16 in e)) or (que(e) and (E13 in e))  # myricetin
 
-def ldlm(e): return dhmy(e) and or_in(e, E17, E17_2)  # leucodelphinidin
+def ldlm(e): return dhmy(e) and or_in(e, E17_1, E17_FULL)  # leucodelphinidin
 
 def dlm(e): return ldlm(e) and (E18 in e)  # delphinidin
 

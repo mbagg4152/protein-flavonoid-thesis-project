@@ -126,8 +126,8 @@ def get_parse_pathway_genes():
         for gene in item.genes:
             tmp_output += gene.simple() + '\n'  # use the simple function to get a formatted string for this pathway
             master_output += gene.simple() + '\n'  # get formatted string for the master file
-        write_append(tmp_file_path, tmp_output, skip=True)  # write the file for the pathway
-    write_append(master_gene, master_output, skip=True)  # write the master file
+        write_append(tmp_file_path, tmp_output, write_over=True)  # write the file for the pathway
+    write_append(master_gene, master_output, write_over=True)  # write the master file
 
 def path_parse(paths):
     """
@@ -220,12 +220,12 @@ def flavonoid_predictions():
 
     # create the prediction output files for each flavonoid
     for key in data_lists:
-        save_file([key.plants], key.file_name, path_chem)
+        save_file([key.plants], key.file_name, path_chem, sep='\n')
 
         item_count = len(key.plants)
         print(key.label + ' predicted in ' + str(item_count) + ' entries. ' + 'Data saved in ..' + SEP
               + 'Chemical_Data' + SEP + key.file_name + '.')
-    write_append(path_main + SEP + 'plant-ec-nums.csv', plant_ec_output)
+    write_append(path_main + SEP + 'plant-ec-nums.csv', plant_ec_output, write_over=True)
 
 def make_plant_ec_counts():
     """
