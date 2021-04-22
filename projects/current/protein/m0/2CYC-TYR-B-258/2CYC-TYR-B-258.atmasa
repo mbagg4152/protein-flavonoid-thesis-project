@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	258	1	25.282	25.282	nan	nan	nan	nan	25.282	25.282	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	74.180	68.120	72.301
+N	TYR	B	258	2	25.282	25.282	nan	nan	nan	nan	25.282	25.282	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	74.180	68.120	72.301
+CA	TYR	B	258	3	17.682	17.682	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	17.682	17.682	nan	nan	nan	nan	nan	nan	nan	74.313	68.645	73.658
+C	TYR	B	258	4	27.795	27.795	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.795	27.795	nan	nan	nan	nan	nan	nan	nan	72.954	69.105	74.240
+O	TYR	B	258	5	29.650	29.650	nan	nan	nan	nan	29.650	29.650	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	72.790	69.181	75.467
+CB	TYR	B	258	6	32.150	nan	32.150	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.150	nan	32.150	nan	nan	nan	nan	nan	nan	75.347	69.794	73.663
+CG	TYR	B	258	7	2.386	nan	2.386	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.386	nan	2.386	nan	nan	nan	nan	nan	nan	74.809	71.152	74.071
+CD1	TYR	B	258	8	18.309	nan	18.309	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.309	nan	18.309	nan	nan	nan	nan	nan	nan	74.562	71.454	75.416
+CD2	TYR	B	258	9	25.426	nan	25.426	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.426	nan	25.426	nan	nan	nan	nan	nan	nan	74.505	72.122	73.110
+CE1	TYR	B	258	10	32.094	nan	32.094	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.094	nan	32.094	nan	nan	nan	nan	nan	nan	74.018	72.687	75.795
+CE2	TYR	B	258	11	34.306	nan	34.306	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.306	nan	34.306	nan	nan	nan	nan	nan	nan	73.960	73.361	73.479
+CZ	TYR	B	258	12	9.911	nan	9.911	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.911	nan	9.911	nan	nan	nan	nan	nan	nan	73.716	73.633	74.825
+OH	TYR	B	258	13	43.378	nan	43.378	nan	nan	nan	43.378	nan	43.378	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	73.153	74.835	75.204

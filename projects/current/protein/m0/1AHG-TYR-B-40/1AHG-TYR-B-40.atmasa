@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	40	1	21.347	21.347	nan	nan	nan	nan	21.347	21.347	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.765	25.876	14.451
+N	TYR	B	40	2	21.347	21.347	nan	nan	nan	nan	21.347	21.347	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.765	25.876	14.451
+CA	TYR	B	40	3	14.673	14.673	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	14.673	14.673	nan	nan	nan	nan	nan	nan	nan	10.778	24.827	13.464
+C	TYR	B	40	4	29.051	29.051	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.051	29.051	nan	nan	nan	nan	nan	nan	nan	11.623	25.256	12.287
+O	TYR	B	40	5	32.601	32.601	nan	nan	nan	nan	32.601	32.601	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.393	26.334	11.733
+CB	TYR	B	40	6	30.788	nan	30.788	nan	nan	nan	nan	nan	nan	nan	nan	nan	30.788	nan	30.788	nan	nan	nan	nan	nan	nan	9.380	24.529	12.921
+CG	TYR	B	40	7	2.112	nan	2.112	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.112	nan	2.112	nan	nan	nan	nan	nan	nan	9.425	23.536	11.783
+CD1	TYR	B	40	8	22.956	nan	22.956	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.956	nan	22.956	nan	nan	nan	nan	nan	nan	9.809	22.217	12.022
+CD2	TYR	B	40	9	22.391	nan	22.391	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.391	nan	22.391	nan	nan	nan	nan	nan	nan	9.075	23.902	10.484
+CE1	TYR	B	40	10	34.613	nan	34.613	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.613	nan	34.613	nan	nan	nan	nan	nan	nan	9.845	21.269	11.001
+CE2	TYR	B	40	11	34.206	nan	34.206	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.206	nan	34.206	nan	nan	nan	nan	nan	nan	9.112	22.971	9.448
+CZ	TYR	B	40	12	10.102	nan	10.102	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.102	nan	10.102	nan	nan	nan	nan	nan	nan	9.495	21.655	9.707
+OH	TYR	B	40	13	43.183	nan	43.183	nan	nan	nan	43.183	nan	43.183	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.533	20.744	8.683

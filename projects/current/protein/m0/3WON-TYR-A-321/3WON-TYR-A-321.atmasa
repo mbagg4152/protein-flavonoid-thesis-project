@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	321	1	20.844	20.844	nan	nan	nan	nan	20.844	20.844	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	53.136	11.071	41.765
+N	TYR	A	321	2	20.844	20.844	nan	nan	nan	nan	20.844	20.844	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	53.136	11.071	41.765
+CA	TYR	A	321	3	11.405	11.405	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.405	11.405	nan	nan	nan	nan	nan	nan	nan	52.383	12.109	41.083
+C	TYR	A	321	4	39.278	39.278	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	39.278	39.278	nan	nan	nan	nan	nan	nan	nan	52.767	13.547	41.597
+O	TYR	A	321	5	36.850	36.850	nan	nan	nan	nan	36.850	36.850	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	52.098	14.495	41.222
+CB	TYR	A	321	6	28.268	nan	28.268	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.268	nan	28.268	nan	nan	nan	nan	nan	nan	50.901	11.873	41.194
+CG	TYR	A	321	7	2.860	nan	2.860	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.860	nan	2.860	nan	nan	nan	nan	nan	nan	50.520	10.791	40.187
+CD1	TYR	A	321	8	20.196	nan	20.196	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.196	nan	20.196	nan	nan	nan	nan	nan	nan	50.746	9.437	40.493
+CD2	TYR	A	321	9	27.346	nan	27.346	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.346	nan	27.346	nan	nan	nan	nan	nan	nan	50.057	11.094	38.917
+CE1	TYR	A	321	10	33.765	nan	33.765	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.765	nan	33.765	nan	nan	nan	nan	nan	nan	50.473	8.437	39.556
+CE2	TYR	A	321	11	34.771	nan	34.771	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.771	nan	34.771	nan	nan	nan	nan	nan	nan	49.743	10.087	37.985
+CZ	TYR	A	321	12	10.069	nan	10.069	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.069	nan	10.069	nan	nan	nan	nan	nan	nan	50.007	8.760	38.299
+OH	TYR	A	321	13	43.835	nan	43.835	nan	nan	nan	43.835	nan	43.835	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	49.742	7.722	37.396

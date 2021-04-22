@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	F	125	1	24.213	24.213	nan	nan	nan	nan	24.213	24.213	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	50.197	-29.697	7.744
+N	TYR	F	125	2	24.213	24.213	nan	nan	nan	nan	24.213	24.213	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	50.197	-29.697	7.744
+CA	TYR	F	125	3	10.506	10.506	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.506	10.506	nan	nan	nan	nan	nan	nan	nan	51.624	-29.408	7.754
+C	TYR	F	125	4	33.167	33.167	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.167	33.167	nan	nan	nan	nan	nan	nan	nan	52.522	-30.634	7.537
+O	TYR	F	125	5	32.026	32.026	nan	nan	nan	nan	32.026	32.026	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	53.572	-30.534	6.903
+CB	TYR	F	125	6	30.459	nan	30.459	nan	nan	nan	nan	nan	nan	nan	nan	nan	30.459	nan	30.459	nan	nan	nan	nan	nan	nan	52.002	-28.698	9.057
+CG	TYR	F	125	7	2.386	nan	2.386	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.386	nan	2.386	nan	nan	nan	nan	nan	nan	53.338	-28.014	8.970
+CD1	TYR	F	125	8	22.840	nan	22.840	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.840	nan	22.840	nan	nan	nan	nan	nan	nan	53.542	-26.960	8.079
+CD2	TYR	F	125	9	23.646	nan	23.646	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.646	nan	23.646	nan	nan	nan	nan	nan	nan	54.412	-28.445	9.743
+CE1	TYR	F	125	10	33.998	nan	33.998	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.998	nan	33.998	nan	nan	nan	nan	nan	nan	54.790	-26.352	7.958
+CE2	TYR	F	125	11	33.441	nan	33.441	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.441	nan	33.441	nan	nan	nan	nan	nan	nan	55.662	-27.850	9.630
+CZ	TYR	F	125	12	9.745	nan	9.745	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.745	nan	9.745	nan	nan	nan	nan	nan	nan	55.846	-26.807	8.737
+OH	TYR	F	125	13	43.157	nan	43.157	nan	nan	nan	43.157	nan	43.157	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	57.087	-26.238	8.615

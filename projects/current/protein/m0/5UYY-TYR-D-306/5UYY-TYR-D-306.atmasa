@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	D	306	1	20.844	20.844	nan	nan	nan	nan	20.844	20.844	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.690	9.307	22.724
+N	TYR	D	306	2	20.844	20.844	nan	nan	nan	nan	20.844	20.844	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.690	9.307	22.724
+CA	TYR	D	306	3	7.283	7.283	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	7.283	7.283	nan	nan	nan	nan	nan	nan	nan	29.348	8.832	21.459
+C	TYR	D	306	4	38.796	38.796	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	38.796	38.796	nan	nan	nan	nan	nan	nan	nan	28.419	8.452	20.280
+O	TYR	D	306	5	38.130	38.130	nan	nan	nan	nan	38.130	38.130	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.874	8.522	19.149
+CB	TYR	D	306	6	30.352	nan	30.352	nan	nan	nan	nan	nan	nan	nan	nan	nan	30.352	nan	30.352	nan	nan	nan	nan	nan	nan	30.482	7.812	21.752
+CG	TYR	D	306	7	2.702	nan	2.702	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.702	nan	2.702	nan	nan	nan	nan	nan	nan	31.735	8.533	22.286
+CD1	TYR	D	306	8	25.326	nan	25.326	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.326	nan	25.326	nan	nan	nan	nan	nan	nan	32.577	9.307	21.420
+CD2	TYR	D	306	9	24.104	nan	24.104	nan	nan	nan	nan	nan	nan	nan	nan	nan	24.104	nan	24.104	nan	nan	nan	nan	nan	nan	32.044	8.484	23.694
+CE1	TYR	D	306	10	35.012	nan	35.012	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.012	nan	35.012	nan	nan	nan	nan	nan	nan	33.685	9.971	21.930
+CE2	TYR	D	306	11	34.306	nan	34.306	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.306	nan	34.306	nan	nan	nan	nan	nan	nan	33.159	9.126	24.201
+CZ	TYR	D	306	12	10.268	nan	10.268	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.268	nan	10.268	nan	nan	nan	nan	nan	nan	33.965	9.891	23.340
+OH	TYR	D	306	13	43.470	nan	43.470	nan	nan	nan	43.470	nan	43.470	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.068	10.540	23.885

@@ -1,0 +1,15 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+C1	DHC	D	701	1	6.506	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	6.506	nan	6.506	1.732	-12.853	-7.589
+C1	DHC	D	701	2	6.506	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	6.506	nan	6.506	1.732	-12.853	-7.589
+O1	DHC	D	701	3	40.304	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	40.304	40.304	nan	1.853	-11.784	-8.225
+C2	DHC	D	701	4	23.627	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.627	nan	23.627	2.734	-13.941	-7.797
+C3	DHC	D	701	5	24.573	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	24.573	nan	24.573	3.954	-13.924	-7.250
+C1'	DHC	D	701	6	5.116	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	5.116	nan	5.116	5.002	-15.010	-7.450
+C2'	DHC	D	701	7	25.127	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.127	nan	25.127	4.619	-16.417	-7.480
+C3'	DHC	D	701	8	11.246	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.246	nan	11.246	5.616	-17.464	-7.667
+C4'	DHC	D	701	9	11.238	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.238	nan	11.238	7.000	-17.127	-7.827
+C5'	DHC	D	701	10	35.819	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.819	nan	35.819	7.391	-15.747	-7.799
+C6'	DHC	D	701	11	32.605	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.605	nan	32.605	6.409	-14.696	-7.611
+O4'	DHC	D	701	12	39.990	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	39.990	39.990	nan	7.928	-18.110	-8.004
+O3'	DHC	D	701	13	39.547	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	39.547	39.547	nan	5.163	-18.746	-7.679
+O2	DHC	D	701	14	41.890	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	41.890	41.890	nan	0.780	-12.995	-6.771

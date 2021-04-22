@@ -1,6 +1,7 @@
-from plib.types import ProtStruct
 from plib.prconstants import *
 from plib.types import *
+from plib.types import ProtStruct
+import json
 import numpy as np
 import sys
 import urllib.error as url_err
@@ -17,7 +18,8 @@ try:
     from json_objects import *
     from util import *
 except ImportError:
-    sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
+    sys.path.append(
+        os.getcwd().replace(os.sep + 'protein', ''))  # allows for imports from directories at the same level
     from sharedlib.json_objects import *
     from sharedlib.util import *
 
@@ -66,3 +68,18 @@ def get_convert_cifs(url, cif_path, pdb_path):
         io.save(pdb_path)
         print('^^^SUCCESSFULLY CONVERTED CIF TO PDB')
     except TypeError: print('Problem making pdb file')
+
+def get_json_data(file_name, key='obj'):
+    """
+    This function uses the python JSON library in order to parse JSON files into usable python objects. Can return
+    lists or dictionaries, depending on the JSON file's structure.
+    """
+    data = ''
+    try:
+        with open(file_name) as jsonFile:
+            data = json.load(jsonFile)
+    except FileNotFoundError:
+        file_name = '..' + SEP + file_name
+        with open(file_name) as jsonFile:
+            data = json.load(jsonFile)
+    return data[key]

@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	D	209	1	18.938	18.938	nan	nan	nan	nan	18.938	18.938	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.758	1.683	43.793
+N	TYR	D	209	2	18.938	18.938	nan	nan	nan	nan	18.938	18.938	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.758	1.683	43.793
+CA	TYR	D	209	3	10.043	10.043	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.043	10.043	nan	nan	nan	nan	nan	nan	nan	15.971	0.526	44.191
+C	TYR	D	209	4	37.557	37.557	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.557	37.557	nan	nan	nan	nan	nan	nan	nan	16.610	-0.169	45.386
+O	TYR	D	209	5	37.588	37.588	nan	nan	nan	nan	37.588	37.588	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.227	-1.277	45.759
+CB	TYR	D	209	6	26.719	nan	26.719	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.719	nan	26.719	nan	nan	nan	nan	nan	nan	15.802	-0.439	43.017
+CG	TYR	D	209	7	2.420	nan	2.420	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.420	nan	2.420	nan	nan	nan	nan	nan	nan	14.781	0.055	42.017
+CD1	TYR	D	209	8	23.705	nan	23.705	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.705	nan	23.705	nan	nan	nan	nan	nan	nan	13.461	0.284	42.403
+CD2	TYR	D	209	9	26.232	nan	26.232	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.232	nan	26.232	nan	nan	nan	nan	nan	nan	15.136	0.332	40.700
+CE1	TYR	D	209	10	34.297	nan	34.297	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.297	nan	34.297	nan	nan	nan	nan	nan	nan	12.521	0.780	41.505
+CE2	TYR	D	209	11	34.381	nan	34.381	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.381	nan	34.381	nan	nan	nan	nan	nan	nan	14.201	0.829	39.793
+CZ	TYR	D	209	12	9.986	nan	9.986	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.986	nan	9.986	nan	nan	nan	nan	nan	nan	12.897	1.051	40.205
+OH	TYR	D	209	13	43.248	nan	43.248	nan	nan	nan	43.248	nan	43.248	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.967	1.548	39.321

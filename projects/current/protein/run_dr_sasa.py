@@ -15,6 +15,10 @@ DS_OUT_M4 = '..' + sep + '..' + sep + '..' + sep + 'm4'
 DS_OUT_M0 = '..' + sep + '..' + sep + '..' + sep + 'm0'
 DSO_REL_M4 = os.getcwd() + sep + 'm4'
 DSO_REL_M0 = os.getcwd() + sep + 'm0'
+TEST_REL_M0 = '..' + sep + '..' + sep + 'm0'
+stop_running = False
+cd = 'cd '
+TESTING = True
 sys.path.append(os.getcwd().replace(sep + 'protein', ''))  # allows for imports from directories at the same level
 from plib.prconstants import *
 
@@ -24,27 +28,69 @@ except ImportError:
     sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
     from sharedlib.json_objects import *
 
-Path(DSO_REL_M4).mkdir(parents=True, exist_ok=True)
+# Path(DSO_REL_M4).mkdir(parents=True, exist_ok=True)
 Path(DSO_REL_M0).mkdir(parents=True, exist_ok=True)
 
 def main():
+    global cd, sep
     check_install()
-    if not exists(DS_DIR) or not exists(DS_DIR_N) or not exists(BUILD_DIR) or not exists(DS_PATH):
-        print('Something went wrong in setup')
-        return
+    if os.name == 'nt': cd = 'chdir '
+    if stop_running: return
+    if TESTING:
+        for name in pdb_filenames:
+            tmp_path = DSO_REL_M0 + sep + name + sep
+            tmp_file = DS_OUT_M0 + sep + name + sep + name + '.pdb'
+            cp_cmd = 'cp local-pdb-files' + sep + 'test_m0_files' + sep + name + '.pdb' + ' m0' + sep + name + sep + name + '.pdb'
+            if not Path('m0' + sep + name).is_file(): Path(tmp_path).mkdir(parents=True, exist_ok=True)
+            if not Path('m0' + sep + name + sep + name + '.pdb').is_file():
+                print('Copying pdb to ' + tmp_path)
+                os.system(cp_cmd)
+        for name in pdb_filenames:
+            tmp_path = DSO_REL_M0 + sep + name + sep
+            tmp_file = tmp_path + sep + name + '.pdb'
+            fetch_run('x', 'x', tmp_path, 'x', tmp_file)
+    else:
+        for pid in pdb_id_list_short:
+            tst_url = PART_URL + pid + '.pdb'
+            tmp_path = DSO_REL_M4 + sep + pid
+            tmp_path2 = DSO_REL_M0 + sep + pid
+            tmp_file = tmp_path + sep + pid + '.pdb'
+            tmp_file2 = tmp_path2 + sep + pid + '.pdb'
+            Path(tmp_path).mkdir(parents=True, exist_ok=True)
+            Path(tmp_path2).mkdir(parents=True, exist_ok=True)
+            fetch_run(tst_url, tmp_path, tmp_path2, tmp_file, tmp_file2)
 
-    for pid in pdb_id_list_short:
-        tst_url = PART_URL + pid + '.pdb'
-        tmp_path = DSO_REL_M4 + sep + pid
-        tmp_path2 = DSO_REL_M0 + sep + pid
-        tmp_file = tmp_path + sep + pid + '.pdb'
-        tmp_file2 = tmp_path2 + sep + pid + '.pdb'
-        Path(tmp_path).mkdir(parents=True, exist_ok=True)
-        Path(tmp_path2).mkdir(parents=True, exist_ok=True)
-        fetch_run(tst_url, tmp_path, tmp_path2, tmp_file, tmp_file2)
+def fetch_run(url, dir_path_m4, dir_path_m0, file_path_m4, file_path_m0):
+    cmd_m0_1 = cd + dir_path_m0
+    cmd_m0_2 = cmd_m0_1 + ';' + DS_PATH + ' -m 0 -i ' + file_path_m0
+    cmd_m4_1 = cd + dir_path_m4
+    cmd_m4_2 = cmd_m4_1 + ';' + DS_PATH + ' -m 4 -i ' + file_path_m4
+
+    os.system(cmd_m0_1)
+
+    if Path(file_path_m0).is_file():
+        os.system(cmd_m0_2)
+    else:
+        try:
+            url_req.urlretrieve(url, file_path_m0)
+            print('running mode 0')
+            os.system(cmd_m0_2)
+        except (url_err.HTTPError, url_err.URLError, ValueError):
+            print('Could\'t get file from ' + url + ', will not run dr sasa in mode 0 for this pdb')
+
+    # os.system(cmd_m4_1)
+    # try:
+    #     url_req.urlretrieve(url, file_path_m4)
+    #     print('running mode 4')
+    #
+    #     os.system(cmd_m4_2)
+    # except (url_err.HTTPError, url_err.URLError): print(
+    #     'Could\'t get file from ' + url + ', will not run dr sasa in mode 4 for this pdb')
 
 def check_install():
+    global stop_running
     if not exists(DS_DIR) or not exists(DS_DIR_N) or not exists(BUILD_DIR) or not exists(DS_PATH):
+        stop_running = True
         if platform.system() != 'Linux':
             print('* This is a quick install only tested for Ubuntu (Linux). \n* Please make sure that for other '
                   'installations, that the dr_sasa executable/binary is in protein/dr_sasa/dr_sasa_n/build/\n'
@@ -81,31 +127,11 @@ def check_install():
                 print('Type the following command(s) into the terminal in order for the quick setup to work:\n' +
                       missing_str + 'Note: if you are using another linux distribution replace apt-get with the '
                                     'appropriate package manager')
+
                 return
             print('Need to download and setup dr sasa')
 
             os.system(cmd)
-
-def fetch_run(url, dir_path_m4, dir_path_m0, file_path_m4, file_path_m0):
-    cmd_m0_1 = 'cd ' + dir_path_m0
-    cmd_m0_2 = cmd_m0_1 + ';' + DS_PATH + ' -m 0 -i ' + file_path_m0
-    cmd_m4_1 = 'cd ' + dir_path_m4
-    cmd_m4_2 = cmd_m4_1 + ';' + DS_PATH + ' -m 4 -i ' + file_path_m4
-
-    os.system(cmd_m0_1)
-    try:
-        url_req.urlretrieve(url, file_path_m0)
-        print('running mode 0')
-
-        os.system(cmd_m0_2)
-    except (url_err.HTTPError, url_err.URLError): print('Could\'t get file from ' + url + ', will not run dr sasa in mode 0 for this pdb')
-    os.system(cmd_m4_1)
-    try:
-        url_req.urlretrieve(url, file_path_m4)
-        print('running mode 4')
-
-        os.system(cmd_m4_2)
-    except (url_err.HTTPError, url_err.URLError): print('Could\'t get file from ' + url + ', will not run dr sasa in mode 4 for this pdb')
 
 if __name__ == '__main__':
     main()

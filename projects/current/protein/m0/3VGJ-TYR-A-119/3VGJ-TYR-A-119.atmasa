@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	119	1	23.160	23.160	nan	nan	nan	nan	23.160	23.160	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	7.915	12.044	60.811
+N	TYR	A	119	2	23.160	23.160	nan	nan	nan	nan	23.160	23.160	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	7.915	12.044	60.811
+CA	TYR	A	119	3	15.839	15.839	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	15.839	15.839	nan	nan	nan	nan	nan	nan	nan	8.432	11.535	62.070
+C	TYR	A	119	4	26.282	26.282	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.282	26.282	nan	nan	nan	nan	nan	nan	nan	9.521	10.459	61.817
+O	TYR	A	119	5	33.462	33.462	nan	nan	nan	nan	33.462	33.462	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.514	10.398	62.532
+CB	TYR	A	119	6	31.305	nan	31.305	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.305	nan	31.305	nan	nan	nan	nan	nan	nan	7.276	11.056	62.971
+CG	TYR	A	119	7	2.153	nan	2.153	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.153	nan	2.153	nan	nan	nan	nan	nan	nan	7.568	9.828	63.812
+CD1	TYR	A	119	8	21.526	nan	21.526	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.526	nan	21.526	nan	nan	nan	nan	nan	nan	7.349	8.561	63.294
+CD2	TYR	A	119	9	24.370	nan	24.370	nan	nan	nan	nan	nan	nan	nan	nan	nan	24.370	nan	24.370	nan	nan	nan	nan	nan	nan	8.064	9.929	65.109
+CE1	TYR	A	119	10	32.726	nan	32.726	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.726	nan	32.726	nan	nan	nan	nan	nan	nan	7.601	7.431	64.029
+CE2	TYR	A	119	11	33.890	nan	33.890	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.890	nan	33.890	nan	nan	nan	nan	nan	nan	8.335	8.775	65.866
+CZ	TYR	A	119	12	9.645	nan	9.645	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.645	nan	9.645	nan	nan	nan	nan	nan	nan	8.093	7.533	65.303
+OH	TYR	A	119	13	43.111	nan	43.111	nan	nan	nan	43.111	nan	43.111	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	8.330	6.365	65.980

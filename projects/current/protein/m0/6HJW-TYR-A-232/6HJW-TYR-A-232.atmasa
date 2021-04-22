@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	232	1	22.006	22.006	nan	nan	nan	nan	22.006	22.006	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.625	20.056	9.837
+N	TYR	A	232	2	22.006	22.006	nan	nan	nan	nan	22.006	22.006	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.625	20.056	9.837
+CA	TYR	A	232	3	11.022	11.022	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.022	11.022	nan	nan	nan	nan	nan	nan	nan	9.656	20.907	9.160
+C	TYR	A	232	4	37.490	37.490	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.490	37.490	nan	nan	nan	nan	nan	nan	nan	9.801	20.872	7.645
+O	TYR	A	232	5	28.886	28.886	nan	nan	nan	nan	28.886	28.886	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	8.994	21.499	6.949
+CB	TYR	A	232	6	28.829	nan	28.829	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.829	nan	28.829	nan	nan	nan	nan	nan	nan	9.763	22.348	9.663
+CG	TYR	A	232	7	2.494	nan	2.494	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.494	nan	2.494	nan	nan	nan	nan	nan	nan	8.415	23.016	9.812
+CD1	TYR	A	232	8	26.000	nan	26.000	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.000	nan	26.000	nan	nan	nan	nan	nan	nan	7.628	22.792	10.933
+CD2	TYR	A	232	9	19.414	nan	19.414	nan	nan	nan	nan	nan	nan	nan	nan	nan	19.414	nan	19.414	nan	nan	nan	nan	nan	nan	7.920	23.853	8.821
+CE1	TYR	A	232	10	34.297	nan	34.297	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.297	nan	34.297	nan	nan	nan	nan	nan	nan	6.390	23.392	11.070
+CE2	TYR	A	232	11	34.239	nan	34.239	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.239	nan	34.239	nan	nan	nan	nan	nan	nan	6.683	24.455	8.947
+CZ	TYR	A	232	12	9.986	nan	9.986	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.986	nan	9.986	nan	nan	nan	nan	nan	nan	5.923	24.223	10.074
+OH	TYR	A	232	13	43.222	nan	43.222	nan	nan	nan	43.222	nan	43.222	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	4.692	24.824	10.205

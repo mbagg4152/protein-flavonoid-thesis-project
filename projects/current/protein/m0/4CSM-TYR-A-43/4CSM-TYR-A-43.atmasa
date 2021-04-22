@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	43	1	18.017	18.017	nan	nan	nan	nan	18.017	18.017	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	49.281	6.536	9.927
+N	TYR	A	43	2	18.017	18.017	nan	nan	nan	nan	18.017	18.017	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	49.281	6.536	9.927
+CA	TYR	A	43	3	14.067	14.067	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	14.067	14.067	nan	nan	nan	nan	nan	nan	nan	48.490	5.881	10.969
+C	TYR	A	43	4	36.393	36.393	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	36.393	36.393	nan	nan	nan	nan	nan	nan	nan	48.029	4.498	10.610
+O	TYR	A	43	5	39.227	39.227	nan	nan	nan	nan	39.227	39.227	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	47.503	3.764	11.470
+CB	TYR	A	43	6	28.349	nan	28.349	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.349	nan	28.349	nan	nan	nan	nan	nan	nan	47.273	6.748	11.291
+CG	TYR	A	43	7	2.503	nan	2.503	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.503	nan	2.503	nan	nan	nan	nan	nan	nan	47.627	8.199	11.426
+CD1	TYR	A	43	8	26.357	nan	26.357	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.357	nan	26.357	nan	nan	nan	nan	nan	nan	48.084	8.723	12.638
+CD2	TYR	A	43	9	21.277	nan	21.277	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.277	nan	21.277	nan	nan	nan	nan	nan	nan	47.570	9.044	10.311
+CE1	TYR	A	43	10	34.796	nan	34.796	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.796	nan	34.796	nan	nan	nan	nan	nan	nan	48.483	10.070	12.740
+CE2	TYR	A	43	11	33.732	nan	33.732	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.732	nan	33.732	nan	nan	nan	nan	nan	nan	47.956	10.382	10.400
+CZ	TYR	A	43	12	10.036	nan	10.036	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.036	nan	10.036	nan	nan	nan	nan	nan	nan	48.420	10.890	11.611
+OH	TYR	A	43	13	43.522	nan	43.522	nan	nan	nan	43.522	nan	43.522	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	48.849	12.207	11.666

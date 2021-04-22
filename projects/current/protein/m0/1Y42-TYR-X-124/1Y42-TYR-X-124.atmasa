@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	X	124	1	22.470	22.470	nan	nan	nan	nan	22.470	22.470	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	15.259	26.513	7.151
+N	TYR	X	124	2	22.470	22.470	nan	nan	nan	nan	22.470	22.470	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	15.259	26.513	7.151
+CA	TYR	X	124	3	13.213	13.213	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.213	13.213	nan	nan	nan	nan	nan	nan	nan	15.251	27.932	6.833
+C	TYR	X	124	4	28.070	28.070	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.070	28.070	nan	nan	nan	nan	nan	nan	nan	14.008	28.310	6.033
+O	TYR	X	124	5	35.826	35.826	nan	nan	nan	nan	35.826	35.826	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.281	29.239	6.413
+CB	TYR	X	124	6	30.931	nan	30.931	nan	nan	nan	nan	nan	nan	nan	nan	nan	30.931	nan	30.931	nan	nan	nan	nan	nan	nan	16.545	28.328	6.078
+CG	TYR	X	124	7	2.120	nan	2.120	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.120	nan	2.120	nan	nan	nan	nan	nan	nan	16.593	29.775	5.584
+CD1	TYR	X	124	8	22.798	nan	22.798	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.798	nan	22.798	nan	nan	nan	nan	nan	nan	16.719	30.832	6.457
+CD2	TYR	X	124	9	23.264	nan	23.264	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.264	nan	23.264	nan	nan	nan	nan	nan	nan	16.515	30.051	4.241
+CE1	TYR	X	124	10	33.574	nan	33.574	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.574	nan	33.574	nan	nan	nan	nan	nan	nan	16.724	32.136	6.018
+CE2	TYR	X	124	11	33.923	nan	33.923	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.923	nan	33.923	nan	nan	nan	nan	nan	nan	16.554	31.321	3.774
+CZ	TYR	X	124	12	9.886	nan	9.886	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.886	nan	9.886	nan	nan	nan	nan	nan	nan	16.666	32.382	4.675
+OH	TYR	X	124	13	43.241	nan	43.241	nan	nan	nan	43.241	nan	43.241	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.695	33.670	4.204

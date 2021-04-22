@@ -1,4 +1,5 @@
 import os
+from plib.pdb_util import *
 
 SEP = os.sep
 JKEY = 'obj'
@@ -15,6 +16,7 @@ FN_PROTEIN = P_JSON_DIR + 'protein_ids.json'
 FN_RINGS = P_JSON_DIR + 'lig_rings.json'
 FN_LIG_TESTS = P_JSON_DIR + 'test_lig_ids.json'
 FN_PUBCHEM_PDB = P_JSON_DIR + 'pubchem_pdb.json'
+FN_TESTNAMES = P_JSON_DIR + 'test_pdb_filenames.json'
 
 CHUNK_SIZE = 6
 PART_URL = "https://files.rcsb.org/view/"
@@ -50,7 +52,17 @@ formatted_out = out_dir + 'format_out_all.txt'
 formatted_out_small = out_dir + 'format_out_partial.txt'
 formatted_basic = out_dir + 'basic_info_formatted.txt'
 pdb_dir = out_dir + 'pdb_files' + SEP
-pdb_test_dir = path_cwd + SEP + 'pdb-test-files' + SEP
+pdb_test_dir = path_cwd + SEP + 'local-pdb-files' + SEP
+pdb_m0_only = pdb_test_dir + 'test_m0_files' + SEP
+
+pdb_filenames = get_json_data(FN_TESTNAMES)
+ligand_info = get_json_data(FN_LIGAND_INFO)
+ligand_codes = get_json_data(FN_LIGAND_CODES)
+pdb_id_list = get_json_data(FN_PDB_IDS, JKEY)
+pdb_id_list_short = get_json_data(FN_PDB_IDS_SHORT)
+pdb_id_single = get_json_data(FN_PDB_SINGLE)
+protein_info = get_json_data(FN_PROTEIN)
+struct_rings = get_json_data(FN_RINGS)
 
 # default values
 DS = ' '  # default string

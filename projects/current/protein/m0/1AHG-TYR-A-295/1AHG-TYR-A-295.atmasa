@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	295	1	19.790	19.790	nan	nan	nan	nan	19.790	19.790	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	3.505	39.073	28.504
+N	TYR	A	295	2	19.790	19.790	nan	nan	nan	nan	19.790	19.790	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	3.505	39.073	28.504
+CA	TYR	A	295	3	16.934	16.934	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.934	16.934	nan	nan	nan	nan	nan	nan	nan	3.254	38.523	27.193
+C	TYR	A	295	4	31.703	31.703	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.703	31.703	nan	nan	nan	nan	nan	nan	nan	4.481	37.982	26.457
+O	TYR	A	295	5	32.163	32.163	nan	nan	nan	nan	32.163	32.163	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	4.348	37.674	25.283
+CB	TYR	A	295	6	34.207	nan	34.207	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.207	nan	34.207	nan	nan	nan	nan	nan	nan	2.449	39.496	26.295
+CG	TYR	A	295	7	2.486	nan	2.486	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.486	nan	2.486	nan	nan	nan	nan	nan	nan	3.217	40.788	26.197
+CD1	TYR	A	295	8	13.162	nan	13.162	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.162	nan	13.162	nan	nan	nan	nan	nan	nan	4.449	40.817	25.544
+CD2	TYR	A	295	9	24.603	nan	24.603	nan	nan	nan	nan	nan	nan	nan	nan	nan	24.603	nan	24.603	nan	nan	nan	nan	nan	nan	2.759	41.960	26.804
+CE1	TYR	A	295	10	34.439	nan	34.439	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.439	nan	34.439	nan	nan	nan	nan	nan	nan	5.228	41.967	25.482
+CE2	TYR	A	295	11	34.672	nan	34.672	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.672	nan	34.672	nan	nan	nan	nan	nan	nan	3.504	43.138	26.733
+CZ	TYR	A	295	12	10.119	nan	10.119	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.119	nan	10.119	nan	nan	nan	nan	nan	nan	4.746	43.130	26.084
+OH	TYR	A	295	13	43.392	nan	43.392	nan	nan	nan	43.392	nan	43.392	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	5.518	44.278	25.997

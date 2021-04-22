@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	335	1	22.091	22.091	nan	nan	nan	nan	22.091	22.091	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	45.853	30.738	36.617
+N	TYR	A	335	2	22.091	22.091	nan	nan	nan	nan	22.091	22.091	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	45.853	30.738	36.617
+CA	TYR	A	335	3	9.153	9.153	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.153	9.153	nan	nan	nan	nan	nan	nan	nan	44.681	31.122	35.794
+C	TYR	A	335	4	35.478	35.478	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.478	35.478	nan	nan	nan	nan	nan	nan	nan	43.592	31.790	36.605
+O	TYR	A	335	5	41.244	41.244	nan	nan	nan	nan	41.244	41.244	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	43.048	32.802	36.160
+CB	TYR	A	335	6	29.364	nan	29.364	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.364	nan	29.364	nan	nan	nan	nan	nan	nan	44.197	29.906	34.982
+CG	TYR	A	335	7	3.667	nan	3.667	nan	nan	nan	nan	nan	nan	nan	nan	nan	3.667	nan	3.667	nan	nan	nan	nan	nan	nan	45.079	29.459	33.848
+CD1	TYR	A	335	8	17.610	nan	17.610	nan	nan	nan	nan	nan	nan	nan	nan	nan	17.610	nan	17.610	nan	nan	nan	nan	nan	nan	46.235	30.105	33.499
+CD2	TYR	A	335	9	28.685	nan	28.685	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.685	nan	28.685	nan	nan	nan	nan	nan	nan	44.737	28.363	33.110
+CE1	TYR	A	335	10	34.231	nan	34.231	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.231	nan	34.231	nan	nan	nan	nan	nan	nan	47.037	29.657	32.456
+CE2	TYR	A	335	11	33.607	nan	33.607	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.607	nan	33.607	nan	nan	nan	nan	nan	nan	45.487	27.947	32.081
+CZ	TYR	A	335	12	9.886	nan	9.886	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.886	nan	9.886	nan	nan	nan	nan	nan	nan	46.635	28.613	31.731
+OH	TYR	A	335	13	43.326	nan	43.326	nan	nan	nan	43.326	nan	43.326	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	47.406	28.149	30.684

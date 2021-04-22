@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	356	1	23.570	23.570	nan	nan	nan	nan	23.570	23.570	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	19.841	60.326	66.269
+N	TYR	B	356	2	23.570	23.570	nan	nan	nan	nan	23.570	23.570	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	19.841	60.326	66.269
+CA	TYR	B	356	3	9.429	9.429	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.429	9.429	nan	nan	nan	nan	nan	nan	nan	19.658	60.564	64.831
+C	TYR	B	356	4	35.752	35.752	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.752	35.752	nan	nan	nan	nan	nan	nan	nan	19.416	59.235	64.081
+O	TYR	B	356	5	39.801	39.801	nan	nan	nan	nan	39.801	39.801	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.725	59.232	63.089
+CB	TYR	B	356	6	27.351	nan	27.351	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.351	nan	27.351	nan	nan	nan	nan	nan	nan	20.829	61.341	64.212
+CG	TYR	B	356	7	2.262	nan	2.262	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.262	nan	2.262	nan	nan	nan	nan	nan	nan	20.832	62.819	64.468
+CD1	TYR	B	356	8	24.727	nan	24.727	nan	nan	nan	nan	nan	nan	nan	nan	nan	24.727	nan	24.727	nan	nan	nan	nan	nan	nan	19.864	63.634	63.914
+CD2	TYR	B	356	9	26.440	nan	26.440	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.440	nan	26.440	nan	nan	nan	nan	nan	nan	21.818	63.423	65.234
+CE1	TYR	B	356	10	33.882	nan	33.882	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.882	nan	33.882	nan	nan	nan	nan	nan	nan	19.847	65.002	64.140
+CE2	TYR	B	356	11	34.505	nan	34.505	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.505	nan	34.505	nan	nan	nan	nan	nan	nan	21.829	64.808	65.420
+CZ	TYR	B	356	12	9.853	nan	9.853	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.853	nan	9.853	nan	nan	nan	nan	nan	nan	20.829	65.579	64.874
+OH	TYR	B	356	13	43.587	nan	43.587	nan	nan	nan	43.587	nan	43.587	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.799	66.956	65.078

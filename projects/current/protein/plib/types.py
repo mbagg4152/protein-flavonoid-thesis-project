@@ -1,9 +1,10 @@
-import re
 from itertools import combinations
 from math import sqrt
 from plib.prconstants import *
-import sys
+from plib.prconstants import *
 import inspect
+import re
+import sys
 
 try:
     from scipy.optimize import leastsq
@@ -19,6 +20,13 @@ except ImportError:
     sys.path.append(os.getcwd().replace(os.sep + 'protein', ''))
     from sharedlib.util import *
 
+# default values
+DS = ' '  # default string
+DF = 0.0  # default float
+DI = 0  # default int
+DL = []  # default list
+NS = 'NONE'
+
 class Equation:
     def __init__(self, a, b, c, d):
         self.a = a
@@ -26,7 +34,8 @@ class Equation:
         self.c = c
         self.d = d
 
-    def func_form(self): return 'z = {:6.3f}x + {:6.3f}y + {:6.3f}'.format(self.a / -self.c, self.b / -self.c, self.d / -self.c)
+    def func_form(self): return 'z = {:6.3f}x + {:6.3f}y + {:6.3f}'.format(self.a / -self.c, self.b / -self.c,
+                                                                           self.d / -self.c)
 
     def func_form_tup(self): return self.a / -self.c, self.b / -self.c, self.d / -self.c
 
@@ -35,7 +44,8 @@ class Equation:
     def string(self): return '{:6.3f}x + {:6.3f}y + {:6.3f}z + {:6.3f} = 0'.format(self.a, self.b, self.c, self.d)
 
 class AtomRec:
-    def __init__(self, pdb_id=DS, label=DS, sn=DS, atom=DS, alt_loc=DS, lig_code=DS, chain=DS, seq=DS, icode=DS, x=DF, y=DF, z=DF, occp=DS,
+    def __init__(self, pdb_id=DS, label=DS, sn=DS, atom=DS, alt_loc=DS, lig_code=DS, chain=DS, seq=DS, icode=DS, x=DF,
+                 y=DF, z=DF, occp=DS,
                  temp=DS, elem=DS, charge=DS):
         self.alt_loc = alt_loc
         self.atom = atom
@@ -62,7 +72,8 @@ class AtomRec:
 
     def simple(self): return '{}=({},{},{})'.format(self.atom, self.x, self.y, self.z)
 
-    def show(self): print('{}: {} {} SEQ_{} CHAIN_{}'.format(self.pdb_id, self.atom, self.lig_code, self.seq, self.chain))
+    def show(self): print(
+        '{}: {} {} SEQ_{} CHAIN_{}'.format(self.pdb_id, self.atom, self.lig_code, self.seq, self.chain))
 
 class Ring:
     def __init__(self, atoms: [AtomRec], eqn=None, ligand=DS, chain=DS, seq=DS, ring_type=DS):
@@ -114,7 +125,8 @@ class Ring:
         return Atom()
 
 class ProtStruct:
-    def __init__(self, pdb_id=NS, group=NS, title=NS, ec_nums=DL, records: [AtomRec] = DL, org_name=NS, org_sci=NS, org_taxid=NS, ex_sys=NS,
+    def __init__(self, pdb_id=NS, group=NS, title=NS, ec_nums=DL, records: [AtomRec] = DL, org_name=NS, org_sci=NS,
+                 org_taxid=NS, ex_sys=NS,
                  ex_sys_taxid=NS, organ=NS, ft=NS, ec_str=NS, atoms: [AtomRec] = DL, rings: [Ring] = DL, ligands=DL):
         self.ec_nums = ec_nums
         self.ec_str = ec_str

@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	60	1	21.409	21.409	nan	nan	nan	nan	21.409	21.409	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.630	0.777	48.336
+N	TYR	A	60	2	21.409	21.409	nan	nan	nan	nan	21.409	21.409	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.630	0.777	48.336
+CA	TYR	A	60	3	17.647	17.647	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	17.647	17.647	nan	nan	nan	nan	nan	nan	nan	17.432	1.339	48.955
+C	TYR	A	60	4	31.354	31.354	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.354	31.354	nan	nan	nan	nan	nan	nan	nan	16.644	0.382	49.838
+O	TYR	A	60	5	29.820	29.820	nan	nan	nan	nan	29.820	29.820	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.731	-0.837	49.690
+CB	TYR	A	60	6	33.041	nan	33.041	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.041	nan	33.041	nan	nan	nan	nan	nan	nan	16.519	1.995	47.900
+CG	TYR	A	60	7	1.979	nan	1.979	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.979	nan	1.979	nan	nan	nan	nan	nan	nan	15.338	1.166	47.433
+CD1	TYR	A	60	8	16.346	nan	16.346	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.346	nan	16.346	nan	nan	nan	nan	nan	nan	15.516	-0.077	46.840
+CD2	TYR	A	60	9	26.548	nan	26.548	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.548	nan	26.548	nan	nan	nan	nan	nan	nan	14.039	1.650	47.556
+CE1	TYR	A	60	10	32.643	nan	32.643	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.643	nan	32.643	nan	nan	nan	nan	nan	nan	14.425	-0.827	46.407
+CE2	TYR	A	60	11	34.090	nan	34.090	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.090	nan	34.090	nan	nan	nan	nan	nan	nan	12.948	0.912	47.120
+CZ	TYR	A	60	12	9.944	nan	9.944	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.944	nan	9.944	nan	nan	nan	nan	nan	nan	13.146	-0.320	46.542
+OH	TYR	A	60	13	43.320	nan	43.320	nan	nan	nan	43.320	nan	43.320	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	12.060	-1.048	46.108

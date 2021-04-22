@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	169	1	21.525	21.525	nan	nan	nan	nan	21.525	21.525	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.181	4.060	10.545
+N	TYR	B	169	2	21.525	21.525	nan	nan	nan	nan	21.525	21.525	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.181	4.060	10.545
+CA	TYR	B	169	3	12.296	12.296	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	12.296	12.296	nan	nan	nan	nan	nan	nan	nan	32.561	4.269	9.156
+C	TYR	B	169	4	28.510	28.510	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.510	28.510	nan	nan	nan	nan	nan	nan	nan	32.386	2.977	8.352
+O	TYR	B	169	5	34.775	34.775	nan	nan	nan	nan	34.775	34.775	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.685	3.023	7.293
+CB	TYR	B	169	6	32.969	nan	32.969	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.969	nan	32.969	nan	nan	nan	nan	nan	nan	33.990	4.875	9.077
+CG	TYR	B	169	7	2.569	nan	2.569	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.569	nan	2.569	nan	nan	nan	nan	nan	nan	34.330	5.193	7.624
+CD1	TYR	B	169	8	27.563	nan	27.563	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.563	nan	27.563	nan	nan	nan	nan	nan	nan	34.214	6.478	7.119
+CD2	TYR	B	169	9	16.920	nan	16.920	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.920	nan	16.920	nan	nan	nan	nan	nan	nan	34.706	4.167	6.725
+CE1	TYR	B	169	10	33.699	nan	33.699	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.699	nan	33.699	nan	nan	nan	nan	nan	nan	34.500	6.734	5.799
+CE2	TYR	B	169	11	33.258	nan	33.258	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.258	nan	33.258	nan	nan	nan	nan	nan	nan	35.027	4.432	5.394
+CZ	TYR	B	169	12	10.077	nan	10.077	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.077	nan	10.077	nan	nan	nan	nan	nan	nan	34.927	5.746	4.940
+OH	TYR	B	169	13	43.032	nan	43.032	nan	nan	nan	43.032	nan	43.032	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.261	6.021	3.650

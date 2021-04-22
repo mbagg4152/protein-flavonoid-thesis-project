@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	299	1	15.236	15.236	nan	nan	nan	nan	15.236	15.236	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.838	-11.136	2.028
+N	TYR	B	299	2	15.236	15.236	nan	nan	nan	nan	15.236	15.236	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.838	-11.136	2.028
+CA	TYR	B	299	3	16.169	16.169	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.169	16.169	nan	nan	nan	nan	nan	nan	nan	3.986	-10.245	1.985
+C	TYR	B	299	4	28.535	28.535	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.535	28.535	nan	nan	nan	nan	nan	nan	nan	4.546	-10.246	0.576
+O	TYR	B	299	5	33.580	33.580	nan	nan	nan	nan	33.580	33.580	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	4.863	-9.221	0.044
+CB	TYR	B	299	6	28.883	nan	28.883	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.883	nan	28.883	nan	nan	nan	nan	nan	nan	5.030	-10.714	2.978
+CG	TYR	B	299	7	2.661	nan	2.661	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.661	nan	2.661	nan	nan	nan	nan	nan	nan	6.322	-9.892	3.110
+CD1	TYR	B	299	8	28.860	nan	28.860	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.860	nan	28.860	nan	nan	nan	nan	nan	nan	6.600	-9.219	4.296
+CD2	TYR	B	299	9	16.438	nan	16.438	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.438	nan	16.438	nan	nan	nan	nan	nan	nan	7.282	-9.829	2.079
+CE1	TYR	B	299	10	33.657	nan	33.657	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.657	nan	33.657	nan	nan	nan	nan	nan	nan	7.789	-8.492	4.473
+CE2	TYR	B	299	11	35.145	nan	35.145	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.145	nan	35.145	nan	nan	nan	nan	nan	nan	8.478	-9.098	2.246
+CZ	TYR	B	299	12	10.127	nan	10.127	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.127	nan	10.127	nan	nan	nan	nan	nan	nan	8.730	-8.444	3.476
+OH	TYR	B	299	13	43.946	nan	43.946	nan	nan	nan	43.946	nan	43.946	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.912	-7.732	3.741
