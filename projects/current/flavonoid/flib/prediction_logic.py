@@ -2,13 +2,13 @@ from flib.fconstants import *
 
 def flav_check(label, ec_list):
     # determine which function to call based on the label passed in using the label function pairs
-    options = {AGI: agi, APIF: apif, AZEL: azel, BUN: bun, BUTN: butn, CHSN: chsn, DDZN: ddzn, DEC: dec, DF74: df74,
-               DFV: dfv, DHGN: dhgn, DHKM: dhkm, DHMF: dhmf, DHMY: dhmy, DHQU: dhqu, DLM: dlm, EC: ec, EGT: egt,
-               ERCH: erch, ERD: erd, EZEL: ezel, FSTN: fstn, G50: g50, GBZL: gbzl, GC: gc, GEN: gen, GGT: ggt,
-               GLGN: glgn, HCC: hcc, HDZ6: hdz6, HESP: hesp, HWB: hwb, KMP: kmp, KXN: kxn, LDLM: ldlm, LHWB: lhwb,
-               LPLR: lplr, LU2: lu2, LUTF: lutf, MYC: myc, MYF: myf, NACH: nach, NAR: nar, PBAN: pban, PCCH: pcch,
-               PCEM: pcem, PLRG: plrg, QUE: que, SOA: soa, T2674: t2674, T274: t274, T674: t674, V1G: v1g}
-    try: res = options[label](ec_list)
+    # options = {AGI: agi, APIF: apif, AZEL: azel, BUN: bun, BUTN: butn, CHSN: chsn, DAID: daid, DEC: dec, DF74: df74,
+    #            DFV: dfv, DGEN: dgen, DKAM: dkam, DTRI: dtri, DMYR: dmyr, DQUE: dque, DLM: dlm, EC: ec, EGT: egt,
+    #            ERDC: erdc, ERD: erd, EZEL: ezel, FSTN: fstn, G50: g50, GBAN: gban, GC: gc, GEN: gen, GGT: ggt,
+    #            GALN: galn, HCC: hcc, HDAI: hdai, HESP: hesp, HWB: hwb, KMP: kmp, KXN: kxn, LDEL: ldel, LCYN: lcyn,
+    #            LPEL: lpel, LU2: lu2, LUTF: lutf, MYC: myc, MYF: myf, NARC: narc, NAR: nar, PBAN: pban, PICH: pich,
+    #            PINO: pino, PELR: pelr, QUE: que, SOA: soa, TET2: tet2, TISO: tiso, TNON: tnon, V1G: v1g}
+    try: res = label(ec_list)
     except KeyError: res = False
     return res
 
@@ -34,25 +34,25 @@ def hc4(e): return tca(e) and (E03 in e)  # p-coumaric acid
 
 def nca(e): return tca(e) and (E04 in e)  # cinnamoyl-coa
 
-def pcch(e): return nca(e) and (E09 in e)  # pinocembrin chalcone
+def pich(e): return nca(e) and (E09 in e)  # pinocembrin chalcone
 
-def pcem(e): return pcch(e) and (E10 in e)  # pinocembrin
+def pino(e): return pich(e) and (E10 in e)  # pinocembrin
 
-def chsn(e): return pcem(e) and (E11 in e)  # chrysin
+def chsn(e): return pino(e) and (E11 in e)  # chrysin
 
-def pban(e): return pcem(e) and (E15 in e)  # pinobanksin
+def pban(e): return pino(e) and (E15 in e)  # pinobanksin
 
-def glgn(e): return pban(e) and (E16 in e)  # galangin
+def galn(e): return pban(e) and (E16 in e)  # galangin
 
 def wca(e): return (nca(e) and (E03 in e)) or (hc4(e) and (E04 in e))  # p-coumaroyl-coa
 
 def g50(e): return wca(e) and (and_in(e, E24, E09))  # phloretin
 
-def nach(e): return wca(e) and (E09 in e)  # naringenin chalcone
+def narc(e): return wca(e) and (E09 in e)  # naringenin chalcone
 
-def nar(e): return nach(e) and (E10 in e)  # naringenin
+def nar(e): return narc(e) and (E10 in e)  # naringenin
 
-def dhgn(e): return nar(e) and (E21 in e)  # 2-Hydroxy-2,3-dihydrogenistein
+def dgen(e): return nar(e) and (E21 in e)  # 2-Hydroxy-2,3-dihydrogenistein
 
 def hesp(e): return nar(e)  # hesperetin
 
@@ -64,49 +64,49 @@ def lu2(e): return agi(e) and (or_in(e, E13, E14))  # luteolin
 
 def fca(e): return wca(e) and (and_in(e, E06, E07) or (E08 in e))  # caffeoyl-coa
 
-def erch(e): return (nar(e) and or_in(e, E13, E14)) or (fca(e) and (E09 in e))  # eriodictyol chalcone
+def erdc(e): return (nar(e) and or_in(e, E13, E14)) or (fca(e) and (E09 in e))  # eriodictyol chalcone
 
-def erd(e): return erch(e)  # eriodictyol. same as erch for now, one of the direct steps on map
+def erd(e): return erdc(e)  # eriodictyol. same as erch for now, one of the direct steps on map
 
 def lutf(e): return erd(e) and (or_in(e, E17_1, E17_FULL, E17_2))  # luteoforol
 
-def dhmf(e): return erd(e) and (E13 in e)  # dihydrotricetin
+def dtri(e): return erd(e) and (E13 in e)  # dihydrotricetin
 
-def myf(e): return lutf(e) and (E13 in e) or (dhmf(e) and (E11 in e))  # tricetin
+def myf(e): return lutf(e) and (E13 in e) or (dtri(e) and (E11 in e))  # tricetin
 
-def dhkm(e): return nar(e) and (E15 in e)  # dihydrokaempferol
+def dkam(e): return nar(e) and (E15 in e)  # dihydrokaempferol
 
-def lplr(e): return dhkm(e) and (E17_1 in e)  # leucopelargonidin
+def lpel(e): return dkam(e) and (E17_1 in e)  # leucopelargonidin
 
-def plrg(e): return lplr(e) and (E18 in e)  # pelargonidin
+def pelr(e): return lpel(e) and (E18 in e)  # pelargonidin
 
-def ezel(e): return plrg(e) and (E19 in e)  # epiafzelechin
+def ezel(e): return pelr(e) and (E19 in e)  # epiafzelechin
 
-def azel(e): return lplr(e) and (E20 in e)  # afzelechin
+def azel(e): return lpel(e) and (E20 in e)  # afzelechin
 
-def kmp(e): return dhkm(e) and (E16 in e)  # kaempferol
+def kmp(e): return dkam(e) and (E16 in e)  # kaempferol
 
-def dhqu(e): return (dhkm(e) and or_in(e, E13, E14)) or (erd(e) and (E15 in e))  # dihydroquercetin
+def dque(e): return (dkam(e) and or_in(e, E13, E14)) or (erd(e) and (E15 in e))  # dihydroquercetin
 
-def lhwb(e): return dhqu(e) and or_in(e, E17_1, E17_FULL)  # leucocyanidin
+def lcyn(e): return dque(e) and or_in(e, E17_1, E17_FULL)  # leucocyanidin
 
-def que(e): return (kmp(e) and or_in(e, E13, E14)) or (dhqu(e) and (E16 in e))  # quercetin
+def que(e): return (kmp(e) and or_in(e, E13, E14)) or (dque(e) and (E16 in e))  # quercetin
 
-def kxn(e): return lhwb(e) and (E20 in e)  # catechin
+def kxn(e): return lcyn(e) and (E20 in e)  # catechin
 
-def hwb(e): return lhwb(e) and (E18 in e)  # cyanidin
+def hwb(e): return lcyn(e) and (E18 in e)  # cyanidin
 
 def ec(e): return hwb(e) and (E19 in e)  # epicatechin
 
-def dhmy(e): return (dhqu(e) and (E13 in e)) or (erd(e) and and_in(e, E13, E15))  # dihydromyricetin
+def dmyr(e): return (dque(e) and (E13 in e)) or (erd(e) and and_in(e, E13, E15))  # dihydromyricetin
 
-def myc(e): return (dhmy(e) and (E16 in e)) or (que(e) and (E13 in e))  # myricetin
+def myc(e): return (dmyr(e) and (E16 in e)) or (que(e) and (E13 in e))  # myricetin
 
-def ldlm(e): return dhmy(e) and or_in(e, E17_1, E17_FULL)  # leucodelphinidin
+def ldel(e): return dmyr(e) and or_in(e, E17_1, E17_FULL)  # leucodelphinidin
 
-def dlm(e): return ldlm(e) and (E18 in e)  # delphinidin
+def dlm(e): return ldel(e) and (E18 in e)  # delphinidin
 
-def gc(e): return ldlm(e) and (E20 in e)  # gallocatechin
+def gc(e): return ldel(e) and (E20 in e)  # gallocatechin
 
 def egt(e): return dlm(e) and (E19 in e)  # epigallocatechin
 
@@ -120,26 +120,26 @@ def hcc(e): return bun(e)  # isoliquiritigenin
 
 def dfv(e): return hcc(e) and (E10 in e)  # liquiritigenin
 
-def gbzl(e): return dfv(e) and (E15 in e)  # garbanzol
+def gban(e): return dfv(e) and (E15 in e)  # garbanzol
 
-def fstn(e): return (gbzl(e) and (E14 in e)) or (butn(e) and (E15 in e))  # dihydrofisetin
+def fstn(e): return (gban(e) and (E14 in e)) or (butn(e) and (E15 in e))  # dihydrofisetin
 
 def df74(e): return dfv(e) and (or_in(e, E11, E12))  # 7,4'-dihydroxyflavone
 
-def t274(e): return dfv(e) and (E21 in e)  # 2,7,4'-Trihydroxyisoflavanone
+def tiso(e): return dfv(e) and (E21 in e)  # 2,7,4'-Trihydroxyisoflavanone
 
-def ddzn(e): return t274(e) and (E22 in e)  # daidzein
+def daid(e): return tiso(e) and (E22 in e)  # daidzein
 
-def t674(e): return dfv(e) and (E08 in e)  # 6,7,4'-Trihydroxyflavanone
+def tnon(e): return dfv(e) and (E08 in e)  # 6,7,4'-Trihydroxyflavanone
 
-def t2674(e): return t674(e) and (E21 in e)  # 2,6,7,4'-Tetrahydroxyisoflavanone
+def tet2(e): return tnon(e) and (E21 in e)  # 2,6,7,4'-Tetrahydroxyisoflavanone
 
-def hdz6(e): return t2674(e)  # 6-Hydroxydaidzein
+def hdai(e): return tet2(e)  # 6-Hydroxydaidzein
 
-def ggt(e): return GGT in e  # Glycosaminoglycan galactosyltransferase
+def ggt(e): return E_GGT in e  # Glycosaminoglycan galactosyltransferase
 
-def dec(e): return DEC in e  # Deleted entry
+def dec(e): return E_DEC in e  # Deleted entry
 
-def soa(e): return SOA in e  # Serine O-acetyltransferase
+def soa(e): return E_SOA in e  # Serine O-acetyltransferase
 
-def v1g(e): return V1G in e  # vanillate 1-glucosyltransferase
+def v1g(e): return E_V1G in e  # vanillate 1-glucosyltransferase

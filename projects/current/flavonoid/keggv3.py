@@ -1,6 +1,6 @@
 from flib.fconstants import *
 from flib.data_types import *
-from flib.prediction_logic import *
+import flib.prediction_logic as pl
 from urllib import request
 from urllib.error import HTTPError, URLError
 import datetime
@@ -204,28 +204,43 @@ def flavonoid_predictions():
     This is the function that goes through each plant, looks at the list of EC numbers then applies a function in order
     to determine whether or not the plant has the required EC numbers needed to synthesize each compound.
     """
-    plant_ec_output = ''
 
     global list_all_plants
+    output_list = ''  # will have list of plants for all flavs, to be written in one file
+    output_yn = ''  # will have a Y/N depending on whether or not a plant is predicted
+    plant_ec_output = ''
+    plant_names = 'Name\n'
+
     for plant in list_all_plants:
         unique_nums = []
         plant_ec_output += '\n' + plant.name + ', '
         for num in plant.ec_nums:
             if num not in unique_nums: unique_nums.append(num)
         for chem_data in data_lists:
-            if flav_check(chem_data.label, unique_nums):  # passes check, has all of the flavonoids
+            if pl.flav_check(getattr(pl, chem_data.code.lower()), unique_nums):
                 chem_data.plants.append(plant.name)  # add plant to flavonoids list
         if unique_nums:
             for num in unique_nums: plant_ec_output += num + ', '
 
+    for plant in list_all_plants: plant_names = plant_names + plant.name + '\n'
+    write_append(path_chem + SEP + '_all-plant-names.csv', plant_names, write_over=True)
+
+    output_yn = plant_names.replace('\n', '\t')
     # create the prediction output files for each flavonoid
     for key in data_lists:
         save_file([key.plants], key.file_name, path_chem, sep='\n')
+        output_list = output_list + '\n' + key.code
+        output_yn = output_yn + '\n' + key.code
+        for plant in key.plants: output_list = output_list + '\t' + plant
 
+        for item in list_all_plants:
+            if item.name in key.plants:  output_yn = output_yn + '\tY'
+            else: output_yn = output_yn + '\tN'
         item_count = len(key.plants)
-        print(key.label + ' predicted in ' + str(item_count) + ' entries. ' + 'Data saved in ..' + SEP
-              + 'Chemical_Data' + SEP + key.file_name + '.')
-    write_append(path_main + SEP + 'plant-ec-nums.csv', plant_ec_output, write_over=True)
+        print(key.label + ' predicted in ' + str(item_count) + ' entries.')
+    write_append(path_chem + SEP + '_plant-ec-nums.csv', plant_ec_output, write_over=True)
+    write_append(path_chem + SEP + '_predictions_list.csv', output_list, write_over=True)
+    write_append(path_chem + SEP + '_predictions_yn.csv', output_yn, write_over=True)
 
 def make_plant_ec_counts():
     """
