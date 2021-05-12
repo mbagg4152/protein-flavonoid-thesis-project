@@ -18,7 +18,8 @@ URL_DBGET = 'https://www.kegg.jp/dbget-bin/www_bget?-f+-n+n+'
 DIR_CHEM = SEP + 'Chemical_Data'
 DIR_FASTA = SEP + 'FASTA_Data'
 DIR_GENE = SEP + 'Gene_Data'
-DIR_RAW = DIR_GENE + SEP + 'Raw_Gene'
+DIR_RGENE = DIR_GENE + SEP + 'Raw_Gene'
+DIR_RFASTA = DIR_FASTA + SEP + 'Raw_FASTA'
 
 # pathways for the json data  (and the name of the json object used in all files)
 JSON_DIR = '..' + SEP + 'json_data' + SEP

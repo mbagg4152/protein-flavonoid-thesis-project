@@ -38,6 +38,7 @@ lock_ec = threading.Lock()
 lock_gene = threading.Lock()
 lock_kegg = threading.Lock()
 lock_plant = threading.Lock()
+lock_dbget = threading.Lock()
 
 # These will hold the file path values for the programs outputs and current and project directory.
 path_chem = ''
@@ -46,6 +47,7 @@ path_fasta = ''
 path_gene = ''
 path_main = ''
 path_raw_gene = ''
+path_raw_fasta = ''
 
 thread_lim = 5  # The max number of processor threads to be used by program.
 
@@ -59,7 +61,7 @@ def main():
     get_parse_pathway_genes()
     flavonoid_predictions()
     make_plant_ec_counts()
-    # build_nt_fasta_by_ec()
+    build_nt_fasta_by_ec()
 
     runtime = datetime.datetime.now() - init_time
     print('\nRun time: ' + str(runtime))
@@ -83,6 +85,7 @@ def setup():
     global path_raw_gene
     global plant_objects
     global plant_pathways
+    global path_raw_fasta
 
     # Check if user supplied directory name as a commandline argument. if not, default to 'data'
     opt_dir_name = ''
@@ -98,7 +101,8 @@ def setup():
     path_chem = path_main + DIR_CHEM
     path_fasta = path_main + DIR_FASTA
     path_gene = path_main + DIR_GENE
-    path_raw_gene = path_main + DIR_RAW
+    path_raw_gene = path_main + DIR_RGENE
+    path_raw_fasta = path_main + DIR_RFASTA
 
     #  Initialize the output directories if they don't exist
     init_dir(path_main)
@@ -106,6 +110,7 @@ def setup():
     init_dir(path_fasta)
     init_dir(path_chem)
     init_dir(path_raw_gene)
+    init_dir(path_raw_fasta)
 
     plant_pathways = [i + j for i in plant_list for j in path_map_list]  # Combines plant and pathway codes.
 
@@ -190,10 +195,10 @@ def path_parse(paths):
             for key in gene_entry:
                 tmp_entry = gene_entry[key]
                 try:
-                    ec_num = re.findall(RE_EC, tmp_entry)  # Get all EC nums from entry using regular expressions
-                    for i in range(0, len(ec_num)):  # Remove unwanted characters and format each EC num.
-                        item = multi_replace(ec_num[i], [('[', ''), (']', ''), (':', ''), (' ', '')])
-                        ec_num[i] = 'EC:' + item
+                    ec_nums = re.findall(RE_EC, tmp_entry)  # Get all EC nums from entry using regular expressions
+                    for i in range(0, len(ec_nums)):  # Remove unwanted characters and format each EC num.
+                        item = multi_replace(ec_nums[i], [('[', ''), (']', ''), (':', ''), (' ', '')])
+                        ec_nums[i] = 'EC:' + item
 
                     # Find and process the orthology ID.
                     orthology = multi_replace(quick_fetch(RE_KO, tmp_entry), [('[', ''), (']', '')])
@@ -202,26 +207,30 @@ def path_parse(paths):
                     name = re.sub(RE_KO, '', (re.sub(RE_EC, '', tmp_entry)))
 
                     # Call Gene constructor and pass in the parsed values.
-                    tmp_gene = Gene(gene_id=key, plant=plant_name, ec_nums=ec_num, path=path,
+                    tmp_gene = Gene(gene_id=key, plant=plant_name, ec_nums=ec_nums, path=path,
                                     ortho=orthology, compound=name, plant_code=plant_code)
                     with lock_gene:
-                        for gene_path in pathgenes:
-                            if gene_path.path == path: gene_path.genes.append(
-                                tmp_gene)  # add to list of genes for path
+                        for pathgene in pathgenes:  # Update list of genes for current path.
+                            if pathgene.path == path: pathgene.genes.append(tmp_gene)
+
                     with lock_plant:
                         for index, plant in enumerate(plant_objects):
                             if plant.name == tmp_gene.plant:
                                 tmp_plant = plant
-                                # add to list of plants genes if not already present
-                                if not tmp_gene.is_in(tmp_plant.genes): tmp_plant.genes.append(tmp_gene)
-                                # add to list of all genes if not already present
-                                if not tmp_gene.is_in(all_genes): all_genes.append(tmp_gene)
-                                tmp_plant.ec_nums.extend(
-                                    ec_num)  # add to the plants list of ec numbers (dupes okay)
-                                plant_objects[
-                                    index] = plant  # update the list of plants with modified plant object
+
+                                if not tmp_gene.is_in(tmp_plant.genes):  # Add to list of plant genes if not present.
+                                    tmp_plant.genes.append(tmp_gene)
+
+                                if not tmp_gene.is_in(all_genes):  # Add to list of all genes if not present.
+                                    all_genes.append(tmp_gene)
+
+                                # Update the plant's EC nums. Dupes preferred (for the master count matrix).
+                                tmp_plant.ec_nums.extend(ec_nums)
+
+                                # Update the plant list with the new/additional info for current plant.
+                                plant_objects[index] = plant
                 except IndexError:
-                    pass  # couldn't find items using regular expression findall
+                    pass  # There was nothing found using regular expressions.
 
 
 def flavonoid_predictions():
@@ -231,43 +240,44 @@ def flavonoid_predictions():
     """
 
     global plant_objects
-    output_list = ''  # will have list of plants for all flavs, to be written in one file
-    output_yn = ''  # will have a Y/N depending on whether or not a plant is predicted
-    plant_ec_output = ''
-    plant_names = 'Name\n'
+    output_list = ''  # Master list of all flavonoids and predicted plants.
+    output_yn = ''  # Master list of all flavonoids and a Y/N indicating whether or not a plant is predicted.
+    plant_ec_output = ''  # For outputting each plant and their EC numbers from their gene entries.
+    plant_names = 'Name\n'  # Each plant's name, used in the first line of the Y/N output.
 
     for plant in plant_objects:
         unique_nums = []
-        plant_ec_output += '\n' + plant.name + ', '
-        for num in plant.ec_nums:
-            if num not in unique_nums: unique_nums.append(num)
-        for chem_data in flav_data_lists:
+        plant_ec_output += '\n' + plant.name + '\t'
+        plant_names = plant_names + plant.name + '\n'
+        for num in plant.ec_nums:  # Go through the plant's EC nums and add each EC number to the output once.
+            if num not in unique_nums:
+                plant_ec_output += num + '\t'  # Add EC number to the output
+                unique_nums.append(num)  # Add EC number to the list so that it is not added to output again.
+
+        for chem_data in flav_data_lists:  # Make the call to the prediction functions.
             if predict.flav_check(getattr(predict, chem_data.code.lower()), unique_nums):
-                chem_data.plants.append(plant.name)  # add plant to flavonoids list
-        if unique_nums:
-            for num in unique_nums: plant_ec_output += num + ', '
+                chem_data.plants.append(plant.name)  # Add the name of the plant, if predicted.
 
-    for plant in plant_objects: plant_names = plant_names + plant.name + '\n'
-    write_append(path_chem + SEP + '_all-plant-names.csv', plant_names, write_over=True)
-
+    # Create the formatted strings for the output prediction file.
     output_yn = plant_names.replace('\n', '\t')
-    # create the prediction output files for each flavonoid
     for key in flav_data_lists:
         save_file([key.plants], key.file_name, path_chem, sep='\n')
-        output_list = output_list + '\n' + key.code
-        output_yn = output_yn + '\n' + key.code
-        for plant in key.plants: output_list = output_list + '\t' + plant
 
+        output_list = output_list + '\n' + key.code
+        for plant in key.plants:
+            output_list = output_list + '\t' + plant
+
+        output_yn = output_yn + '\n' + key.code
         for item in plant_objects:
             if item.name in key.plants:
                 output_yn = output_yn + '\tY'
             else:
                 output_yn = output_yn + '\tN'
         item_count = len(key.plants)
-        print(key.label + ' predicted in ' + str(item_count) + ' entries.')
-    write_append(path_chem + SEP + '_plant-ec-nums.csv', plant_ec_output, write_over=True)
-    write_append(path_chem + SEP + '_predictions_list.csv', output_list, write_over=True)
-    write_append(path_chem + SEP + '_predictions_yn.csv', output_yn, write_over=True)
+        print(key.label + ' predicted in ' + str(item_count) + ' organisms.')
+    write_append(path_chem + SEP + '_plant-ec-nums.tsv', plant_ec_output, write_over=True)
+    write_append(path_chem + SEP + '_predictions_list.tsv', output_list, write_over=True)
+    write_append(path_chem + SEP + '_predictions_yn.tsv', output_yn, write_over=True)
 
 
 def make_plant_ec_counts():
@@ -277,15 +287,17 @@ def make_plant_ec_counts():
     counter and display it at the end next to the appropriate EC number.
     """
     global plant_objects
-    for plant in plant_objects: fill_count_matrix(plant)  # update the matrix using each plant
+    for plant in plant_objects:
+        fill_count_matrix(plant)  # Update the master matrix using the information from each plant.
 
-    out = ''
+    out = ''  # Output string for the master EC count matrix.
     for plant in plant_matrix:
-        out += plant.name + ': '  # create beginning of line for current plant
+        out += plant.name + ':\t'
         for count in plant.ec_counts:
-            out += '[' + str(count.number) + ' count: ' + str(count.count) + '] '  # add the EC numbers and counts
+            out += str(count.number) + ' (' + str(count.count) + ')\t'  # Update with EC num & its occurrence.
         out += '\n'
-    write_append(path_main + SEP + 'MasterCount.csv', out)  # write string to the output file
+
+    write_append(path_main + SEP + 'MasterECCountMatrix.tsv', out, write_over=True)
 
 
 def fill_count_matrix(plant):
@@ -294,15 +306,16 @@ def fill_count_matrix(plant):
     """
     global plant_objects
     tmp_plant = plant
+
     for num in tmp_plant.ec_nums:
         if tmp_plant.has_ec_count(num):
-            tmp_plant.incr_ec_count(num)  # increment count if number is already present
-        else:
-            # create new count object for current EC number
+            tmp_plant.incr_ec_count(num)  # Increment EC number's count.
+        else:  # Need to create count object for current EC number.
             tmp_count = EcCounts(number=num, count=1)
             plant.ec_counts.append(tmp_count)
-    with lock_plant:
-        plant_matrix.append(tmp_plant)  # update count matrix
+
+    with lock_plant:  # Update the count matrix.
+        plant_matrix.append(tmp_plant)
 
 
 def build_nt_fasta_by_ec():
@@ -311,15 +324,16 @@ def build_nt_fasta_by_ec():
     FASTA/DNA sequence for each of the gene entries that were found. As before, the program parses the list after
     all threads are done and then created a FASTA file for each EC number and created the Master FASTA file.
     """
-    sub_lists = list_partition(all_genes, thread_lim)
-    threads = []
+    sub_lists = list_partition(all_genes, thread_lim)  # Chunk up the list of all plant genes.
+    threads = []  # For keeping track of each thread.
     print('getting data for ' + str(len(all_genes)) + ' genes')
-    for sub_list in sub_lists:
-        thread = threading.Thread(target=build_fasta, args=(sub_list,))  # create the thread
-        thread.start()  # start thread execution
-        threads.append(thread)  # append it to the list of threads
 
-    for thread in threads: thread.join()  # wait for all of the threads to be done before moving on
+    for sub_list in sub_lists:  # Make a new thread for each sub-list to be passed to build_fasta().
+        thread = threading.Thread(target=build_fasta, args=(sub_list,))
+        thread.start()
+        threads.append(thread)
+
+    for thread in threads: thread.join()  # Don't continue until all threads are done executing.
 
     print('Starting to gather data for FASTA files...')
     master_fasta = path_main + SEP + 'MasterFASTA.csv'
@@ -330,8 +344,8 @@ def build_nt_fasta_by_ec():
         for entry in item.ec_entries:
             tmp_output += entry.simple() + '\n'  # add to string to be printed into specific EC file
             master_output += entry.simple() + '\n'  # add to string to be printed into master FASTA
-        write_append(tmp_file_path, tmp_output)  # write the file for current EC number
-    write_append(master_fasta, master_output)  # write the master FASTA file
+        write_append(tmp_file_path, tmp_output, write_over=True)  # write the file for current EC number
+    write_append(master_fasta, master_output, write_over=True)  # write the master FASTA file
     print('Done making the FASTA files.')
 
 
@@ -347,20 +361,30 @@ def build_fasta(genes):
         # using the plant code and gene id create a string formatted as code:gene
         combined = gene.plant_code.strip() + ':' + gene.gene_id.replace('(RAP-DB) ', '').strip()
         db_url = URL_DBGET + combined  # append code-gene string to the end of the dbget incomplete URL
-        try:
-            # read the html from the dbget url
-            with request.urlopen(db_url) as db_site:
-                url_data = db_site.read().decode('utf-8')
-        except HTTPError or URLError as url_http_err:  # error getting html data
-            print('Something went wrong with error ' + url_http_err)
-            continue
+        url_data = ''
+        with lock_dbget:
+            try:  # Look for local raw fasta file which saves time by not having to download from dbget.
+                with open(path_raw_fasta + SEP + gene.plant_code + gene.gene_id + '.txt', 'r') as tmp_read:
+                    url_data = tmp_read.read()
+                    tmp_read.close()
+            except FileNotFoundError:  # No local raw fasta data file found so the data must be downloaded.
+                try:
+                    # read the html from the dbget url
+                    with request.urlopen(db_url) as db_site:
+                        url_data = db_site.read().decode('utf-8')
+                    with open(path_raw_fasta + SEP + gene.plant_code + gene.gene_id + '.txt', 'w') as tmp_get:
+                        tmp_get.write(url_data)
+                        tmp_get.close()
+                except (HTTPError, URLError) as url_http_err:
+                    print('Something went wrong with error ' + url_http_err)
+                    continue
 
         # get the header of the FASTA entry using regular expressions, &gt; is the HTML representation of >
         fasta_header = ''.join(re.findall(RE_NT_HEAD, url_data)).replace('&gt;', '>') + \
                        ' {' + plant_dict[gene.plant_code.strip()] + '}'
         fasta_body = ''.join(re.findall(RE_NT_SEQ, url_data))  # get the DNA sequence body using regular expressions
         full_fasta_entry = fasta_header + '\n' + fasta_body  # create FASTA entry string
-        # create new entry object
+
         tmp_entry = FastaEcEntry(gene=gene.gene_id, plant=plant_dict.get(gene.plant_code), dna=full_fasta_entry)
         with lock_ec:
             for g in gene.ec_nums:
