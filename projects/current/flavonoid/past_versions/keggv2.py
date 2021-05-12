@@ -33,10 +33,10 @@ Global Variables used throughout the program
 init_time = datetime.datetime.now()
 kegg = KEGG()
 list_all_genes = []
-list_all_plants = []
-list_fasta_ec = []
-list_genes_by_path = []
-list_plant_paths = []
+plant_objects = []
+ec_collections = []
+pathgenes = []
+plant_pathways = []
 list_all_plant_matrix = []
 
 lock_access_ec = threading.Lock()  # will allow only one thread to access the list of ec numbers at any time
@@ -75,7 +75,7 @@ def init_setup():
     can be found in the JSON files. After making the list, it creates a list of plant objects that will be used
     throughout the program.
     """
-    global path_cwd, path_main, path_chem, path_fasta, path_gene, list_plant_paths, list_all_plants
+    global path_cwd, path_main, path_chem, path_fasta, path_gene, plant_pathways, plant_objects
     decision = ''
     if len(sys.argv) > 1:  # if length of args is greater than one that means user supplied arg other than program name
         decision = sys.argv[1]  # read in the desired output directory as a commandline argument
@@ -103,7 +103,7 @@ def get_parse_pathway_genes():
     be looped through in order to create both the gene data output files for each pathway and for the master file
     that contains all of the gene information.
     """
-    global list_plant_paths, list_all_plants, thread_lim, path_gene
+    global plant_pathways, plant_objects, thread_lim, path_gene
     sub_lists = list_partition(list_plant_paths, thread_lim)  # split the list into parts
     threads = []  # will hold the created threads
 
@@ -115,7 +115,7 @@ def get_parse_pathway_genes():
 
     master_output = ''
     master_gene = path_main + SEP + 'MasterList.csv'
-    for item in list_genes_by_path:
+    for item in pathgenes:
         tmp_file_path = path_gene + SEP + item.path + CSV
         tmp_output = ''  # will hold output from this gene
         for gene in item.genes:
@@ -131,7 +131,7 @@ def path_parse(paths):
     saved by updating the plant objects.
     """
     for path in paths:
-        global list_all_plants, list_genes_by_path
+        global plant_objects, pathgenes
         print(path)
         with lock_kegg_get:
             raw = kegg.get(path)  # get KEGG entry for pathway
@@ -182,7 +182,7 @@ def flavonoid_predictions():
     """
     plant_ec_output = ''
 
-    global list_all_plants
+    global plant_objects
     for plant in list_all_plants:
         unique_nums = []
         plant_ec_output += '\n' + plant.name + ', '
@@ -209,7 +209,7 @@ def make_plant_ec_counts():
     function on multiple threads. For each gene entry containing a specific EC number, the program will increase the
     counter and display it at the end next to the appropriate EC number.
     """
-    global list_all_plants
+    global plant_objects
     for plant in list_all_plants: fill_count_matrix(plant)  # update the matrix using each plant
 
     out = ''
@@ -224,7 +224,7 @@ def fill_count_matrix(plant):
     """
     This function builds the ec counts for each list.
     """
-    global list_all_plants
+    global plant_objects
     tmp_plant = plant
     for num in tmp_plant.ec_nums:
         if tmp_plant.has_ec_count(num): tmp_plant.incr_ec_count(num)  # increment count if number is already present
@@ -253,7 +253,7 @@ def build_nt_fasta_by_ec():
     print('Starting to gather data for FASTA files...')
     master_fasta = path_main + SEP + 'MasterFASTA.csv'
     master_output = ''
-    for item in list_fasta_ec:
+    for item in ec_collections:
         tmp_file_path = path_fasta + SEP + item.ec_name.replace('.', '-').replace(':', '') + CSV
         tmp_output = ''
         for entry in item.ec_entries:
@@ -270,7 +270,7 @@ def build_fasta(genes):
     the web page. After parsing, the FASTA sequences are added to EcFastaCollection objects in order to maintain
     proper association when writing all of the sequences out to files.
     """
-    global list_fasta_ec
+    global ec_collections
     for gene in genes:
         # using the plant code and gene id create a string formatted as code:gene
         combined = gene.plant_code.strip() + ':' + gene.gene_id.replace('(RAP-DB) ', '').strip()

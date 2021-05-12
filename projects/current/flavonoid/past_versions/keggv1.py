@@ -349,14 +349,14 @@ def finish_up():
     for entry in master_ec_list:
         if len(entry) > 0:
             # tmp_entry = Species(entry[0], 0, [])
-            for chem_data in data_lists:
+            for chem_data in flav_data_lists:
                 if flav_check(chem_data.label, entry):
                     chem_data.plants.append([entry[0]])
                     # tmp_entry.flavonoids.append(chem_data.label)
                     # tmp_entry.count += 1
             # plant_flavs.append(tmp_entry)
 
-    for key in data_lists:
+    for key in flav_data_lists:
         save_file(key.plants, key.file_name, chem_path)
         item_count = len(key.plants)
         print(key.label + ' predicted in ' + str(item_count) + ' entries. ' +

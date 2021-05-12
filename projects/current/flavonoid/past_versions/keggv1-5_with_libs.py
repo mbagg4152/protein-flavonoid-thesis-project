@@ -63,10 +63,10 @@ init_time = datetime.datetime.now()
 kegg = KEGG()
 
 list_all_genes = []  # will hold a list of all gene objects
-list_all_plants = []  # will hold a list of all plant objects
-list_fasta_ec = []  # will hold a list of the objects listing FASTA by EC number
-list_genes_by_path = []  # will hold a list of objects which are collections of genes for each plant pathway
-list_plant_paths = []  # will hold a list of all plant pathways
+plant_objects = []  # will hold a list of all plant objects
+ec_collections = []  # will hold a list of the objects listing FASTA by EC number
+pathgenes = []  # will hold a list of objects which are collections of genes for each plant pathway
+plant_pathways = []  # will hold a list of all plant pathways
 list_all_plant_matrix = []  # will hold the list after calculating the count for each EC for each plant
 
 lock_access_ec = threading.Lock()  # will allow only one thread to access the list of ec numbers at any time
@@ -120,7 +120,7 @@ def init_setup():
     pathway and plant codes based on the KEGG codes that can be found in the JSON files. After making the list, it
     creates a list of plant objects that will be used throughout the program.
     """
-    global path_cwd, path_main, path_chem, path_fasta, path_gene, list_plant_paths, list_all_plants, plant_full_list, \
+    global path_cwd, path_main, path_chem, path_fasta, path_gene, plant_pathways, plant_objects, plant_full_list, \
         test_med, test_short, test_single, plant_list, plant_dict_reg, plant_dict_common, plant_dict, path_map_list, \
         path_map_dict, data_lists
     decision = ''
@@ -169,7 +169,7 @@ def run_path_parse():
     be looped through in order to create both the gene data output files for each pathway and for the master file
     that contains all of the gene information.
     """
-    global list_plant_paths, list_all_plants, thread_lim, path_gene
+    global plant_pathways, plant_objects, thread_lim, path_gene
     sub_lists = list_partition(list_plant_paths, thread_lim)  # split the list into parts
     threads = []  # will hold the created threads
 
@@ -181,7 +181,7 @@ def run_path_parse():
 
     master_output = ''
     master_gene = path_main + SEP + 'MasterList.csv'
-    for item in list_genes_by_path:
+    for item in pathgenes:
         tmp_file_path = path_gene + SEP + item.path + CSV
         tmp_output = ''  # will hold output from this gene
         for gene in item.genes:
@@ -197,7 +197,7 @@ def path_parse(paths):
     saved by updating the plant objects.
     """
     for path in paths:
-        global list_all_plants, list_genes_by_path
+        global plant_objects, pathgenes
         print(path)
         with lock_kegg_get:
             raw = kegg.get(path)  # get KEGG entry for pathway
@@ -245,7 +245,7 @@ def prediction():
     This is the function that goes through each plant, looks at the list of EC numbers then applies a function in order
     to determine whether or not the plant has the required EC numbers needed to synthesize each compound.
     """
-    global list_all_plants
+    global plant_objects
     for plant in list_all_plants:
         for chem_data in data_lists:
             if flav_check(chem_data.label, plant.ec_nums):  # passes check, has all of the flavonoids
@@ -264,7 +264,7 @@ def run_fill_matrix():
     function on multiple threads. For each gene entry containing a specific EC number, the program will increase the
     counter and display it at the end next to the appropriate EC number.
     """
-    global list_all_plants
+    global plant_objects
     for plant in list_all_plants: fill_count_matrix(plant)  # update the matrix using each plant
 
     out = ''
@@ -279,7 +279,7 @@ def fill_count_matrix(plant):
     """
     This function builds the ec counts for each list.
     """
-    global list_all_plants
+    global plant_objects
     tmp_plant = plant
     for num in tmp_plant.ec_nums:
         if tmp_plant.has_ec_count(num): tmp_plant.incr_ec_count(num)  # increment count if number is already present
@@ -309,7 +309,7 @@ def run_build_fasta():
     print('Starting to gather data for FASTA files...')
     master_fasta = path_main + SEP + 'MasterFASTA.csv'
     master_output = ''
-    for item in list_fasta_ec:
+    for item in ec_collections:
         tmp_file_path = path_fasta + SEP + item.ec_name.replace('.', '-').replace(':', '') + CSV
         tmp_output = ''
         for entry in item.ec_entries:
@@ -326,7 +326,7 @@ def build_fasta(genes):
     the web page. After parsing, the FASTA sequences are added to EcFastaCollection objects in order to maintain
     proper association when writing all of the sequences out to files.
     """
-    global list_fasta_ec
+    global ec_collections
     for gene in genes:
         # using the plant code and gene id create a string formatted as code:gene
         combined = gene.plant_code.strip() + ':' + gene.gene_id.replace('(RAP-DB) ', '').strip()

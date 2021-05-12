@@ -27,17 +27,17 @@ kegg = KEGG()  # used to access KEGG's functions from bioservices
 
 # The lists are used for processing/accessing data as well as making output files.
 all_genes = []
-list_all_plant_matrix = []
-list_all_plants = []
-list_fasta_ec = []
-list_genes_by_path = []
-list_plant_paths = []
+ec_collections = []
+pathgenes = []
+plant_matrix = []
+plant_objects = []
+plant_pathways = []
 
 # The locks are used to protect the values of the global variables when using multithreading.
-lock_access_ec = threading.Lock()
-lock_access_plant = threading.Lock()
-lock_add_gene = threading.Lock()
-lock_kegg_get = threading.Lock()
+lock_ec = threading.Lock()
+lock_gene = threading.Lock()
+lock_kegg = threading.Lock()
+lock_plant = threading.Lock()
 
 # These will hold the file path values for the programs outputs and current and project directory.
 path_chem = ''
@@ -75,14 +75,14 @@ def setup():
     """
 
     # Make sure global values can be used and updated
-    global list_all_plants
-    global list_plant_paths
     global path_chem
     global path_cwd
     global path_fasta
     global path_gene
     global path_main
     global path_raw_gene
+    global plant_objects
+    global plant_pathways
 
     # Check if user supplied directory name as a commandline argument. if not, default to 'data'
     opt_dir_name = ''
@@ -107,13 +107,13 @@ def setup():
     init_dir(path_chem)
     init_dir(path_raw_gene)
 
-    list_plant_paths = [i + j for i in plant_list for j in path_map_list]  # Combines plant and pathway codes.
+    plant_pathways = [i + j for i in plant_list for j in path_map_list]  # Combines plant and pathway codes.
 
     # Go through the list of plants and create a Plant object which will store related predictions.
     for key in plant_dict:
         tmp_plant = Plant(code=key, name=plant_dict[key])  # Call constructor to make new plant.
-        if not tmp_plant.is_in(list_all_plants):  # Add to list if not present. Prevents duplicates.
-            list_all_plants.append(tmp_plant)
+        if not tmp_plant.is_in(plant_objects):  # Add to list if not present. Prevents duplicates.
+            plant_objects.append(tmp_plant)
 
 
 def get_parse_pathway_genes():
@@ -123,31 +123,31 @@ def get_parse_pathway_genes():
     be looped through in order to create both the gene data output files for each pathway and for the master file
     that contains all of the gene information.
     """
-    global list_all_plants
-    global list_plant_paths
     global path_gene
+    global plant_objects
+    global plant_pathways
     global thread_lim
 
-    sub_lists = list_partition(list_plant_paths, thread_lim)  # Chunk up the list of plant-pathway codes.
+    sub_lists = list_partition(plant_pathways, thread_lim)  # Chunk up the list of plant-pathway codes.
     threads = []  # Will be used to keep track of and kill off threads.
 
     # A thread is made for each sub-list which then passes each sub-list as a parameter to the pathway parser.
     for sub_list in sub_lists:
         thread = threading.Thread(target=path_parse, args=(sub_list,))
         thread.start()
-        threads.append(thread)  # add new thread to list of threads
-    for thread in threads: thread.join()  # wait for all of the threads to finish running
+        threads.append(thread)
+    for thread in threads: thread.join()  # Wait for each thread to die before continuing.
 
-    master_output = ''
-    master_gene = path_main + SEP + 'MasterList.csv'
-    for item in list_genes_by_path:
-        tmp_file_path = path_gene + SEP + item.path + CSV
-        tmp_output = ''  # will hold output from this gene
+    master_output = ''  # Information for the master file which holds all gathered gene data.
+    for item in pathgenes:
+        tmp_file = path_gene + SEP + item.path + '.csv'
+        tmp_output = ''  # Data for current gene's output file.
         for gene in item.genes:
-            tmp_output += gene.simple() + '\n'  # use the simple function to get a formatted string for this pathway
-            master_output += gene.simple() + '\n'  # get formatted string for the master file
-        write_append(tmp_file_path, tmp_output, write_over=True)  # write the file for the pathway
-    write_append(master_gene, master_output, write_over=True)  # write the master file
+            # Get the formatted string of gene information for the current and master files.
+            tmp_output += gene.simple() + '\n'
+            master_output += gene.simple() + '\n'
+        write_append(tmp_file, tmp_output, write_over=True)
+    write_append(path_main + SEP + 'MasterList.csv', master_output, write_over=True)
 
 
 def path_parse(paths):
@@ -157,70 +157,71 @@ def path_parse(paths):
     saved by updating the plant objects.
     """
     for path in paths:
-        global list_all_plants, list_genes_by_path
-        print(path)
-        no_data = False
-        with lock_kegg_get:
+        global pathgenes
+        global plant_objects
+
+        print(path)  # Not necessary, but is nice for a gauge of progress.
+
+        with lock_kegg:
             raw = ''
-            try:
+            try:  # Look for local raw gene file which saves time by preventing the call to kegg.get().
                 with open(path_raw_gene + SEP + path + '.csv', 'r') as tmp_read:
                     raw = tmp_read.read()
                     tmp_read.close()
-            except FileNotFoundError:
-                raw = kegg.get(path)  # get KEGG entry for pathway
+            except FileNotFoundError:  # No local raw gene data file found so the data must be downloaded.
+                raw = kegg.get(path)
                 with open(path_raw_gene + SEP + path + '.csv', 'w') as tmp_get:
                     try:
                         tmp_get.write(raw)
-                    except TypeError:
-                        no_data = True
+                    except TypeError:  # Error should only ever occur for plant-pathway codes that don't exist.
+                        pass
                     tmp_get.close()
 
-            gene_entry = kegg.parse(raw)  # parse kegg entry into dictionary for easier access
-            entry_dict = gene_entry.get(GKY)  # get the data for the dictionary key GENE
+            gene_entry = {}
+            if len(raw) > 0:  # Don't bother parsing the empty entries.
+                kegg_entry = kegg.parse(raw)  # Parses kegg entry into dictionary.
+                gene_entry = kegg_entry.get(GKY)  # Get the data from the dictionary with key `GENE`.
 
-        if not no_data:
-            if entry_dict is not None:
-                plant_code = ''.join(re.split(RE_ALPH, path))  # get only the letters from the path
-                plant_name = plant_dict.get(plant_code)  # get the plant name by accessing the plant dictionary
-                with lock_add_gene:
-                    list_genes_by_path.append(PathGene(path=path))  # add new path to the list
-                for key in entry_dict:
-                    try:
-                        # find EC number in the entry using regular expressions then remove square brackets
-                        ec_num = re.findall(RE_EC, entry_dict[key])
+        if len(raw) > 0:  # Again, if the entry is empty, don't bother trying to parse it.
+            plant_code = ''.join(re.split(RE_ALPH, path))  # Plant part of the code is alpha-only.
+            plant_name = plant_dict.get(plant_code)
+            with lock_gene:
+                pathgenes.append(PathGene(path=path))  # Call PathGene constructor then add to list.
+            for key in gene_entry:
+                tmp_entry = gene_entry[key]
+                try:
+                    ec_num = re.findall(RE_EC, tmp_entry)  # Get all EC nums from entry using regular expressions
+                    for i in range(0, len(ec_num)):  # Remove unwanted characters and format each EC num.
+                        item = multi_replace(ec_num[i], [('[', ''), (']', ''), (':', ''), (' ', '')])
+                        ec_num[i] = 'EC:' + item
 
-                        in_count = 0
-                        for i in range(0, len(ec_num)):
-                            item = ec_num[i].replace('[', '').replace(']', '').replace(':', '').replace(' ', '')
-                            ec_num[i] = 'EC:' + item
+                    # Find and process the orthology ID.
+                    orthology = multi_replace(quick_fetch(RE_KO, tmp_entry), [('[', ''), (']', '')])
 
-                        # get the orthology ID using regular expressions then remove square brackets
-                        orthology = mult_replace(quick_fetch(RE_KO, entry_dict[key]), [('[', ''), (']', '')])
+                    # Remove EC & KO in order to get compound name.
+                    name = re.sub(RE_KO, '', (re.sub(RE_EC, '', tmp_entry)))
 
-                        # remove the EC & KO using regular expressions in order to get the compound name
-                        name = re.sub(RE_KO, '', (re.sub(RE_EC, '', entry_dict[key])))
-
-                        # create new gene object using the information from kegg
-                        tmp_gene = Gene(gene_id=key, plant=plant_name, ec_nums=ec_num, ortho=orthology,
-                                        compound=name, path=path, plant_code=plant_code)
-                        with lock_add_gene:
-                            for gene_path in list_genes_by_path:
-                                if gene_path.path == path: gene_path.genes.append(
-                                    tmp_gene)  # add to list of genes for path
-                        with lock_access_plant:
-                            for index, plant in enumerate(list_all_plants):
-                                if plant.name == tmp_gene.plant:
-                                    tmp_plant = plant
-                                    # add to list of plants genes if not already present
-                                    if not tmp_gene.is_in(tmp_plant.genes): tmp_plant.genes.append(tmp_gene)
-                                    # add to list of all genes if not already present
-                                    if not tmp_gene.is_in(all_genes): all_genes.append(tmp_gene)
-                                    tmp_plant.ec_nums.extend(
-                                        ec_num)  # add to the plants list of ec numbers (dupes okay)
-                                    list_all_plants[
-                                        index] = plant  # update the list of plants with modified plant object
-                    except IndexError:
-                        pass  # couldn't find items using regular expression findall
+                    # Call Gene constructor and pass in the parsed values.
+                    tmp_gene = Gene(gene_id=key, plant=plant_name, ec_nums=ec_num, path=path,
+                                    ortho=orthology, compound=name, plant_code=plant_code)
+                    with lock_gene:
+                        for gene_path in pathgenes:
+                            if gene_path.path == path: gene_path.genes.append(
+                                tmp_gene)  # add to list of genes for path
+                    with lock_plant:
+                        for index, plant in enumerate(plant_objects):
+                            if plant.name == tmp_gene.plant:
+                                tmp_plant = plant
+                                # add to list of plants genes if not already present
+                                if not tmp_gene.is_in(tmp_plant.genes): tmp_plant.genes.append(tmp_gene)
+                                # add to list of all genes if not already present
+                                if not tmp_gene.is_in(all_genes): all_genes.append(tmp_gene)
+                                tmp_plant.ec_nums.extend(
+                                    ec_num)  # add to the plants list of ec numbers (dupes okay)
+                                plant_objects[
+                                    index] = plant  # update the list of plants with modified plant object
+                except IndexError:
+                    pass  # couldn't find items using regular expression findall
 
 
 def flavonoid_predictions():
@@ -229,35 +230,35 @@ def flavonoid_predictions():
     to determine whether or not the plant has the required EC numbers needed to synthesize each compound.
     """
 
-    global list_all_plants
+    global plant_objects
     output_list = ''  # will have list of plants for all flavs, to be written in one file
     output_yn = ''  # will have a Y/N depending on whether or not a plant is predicted
     plant_ec_output = ''
     plant_names = 'Name\n'
 
-    for plant in list_all_plants:
+    for plant in plant_objects:
         unique_nums = []
         plant_ec_output += '\n' + plant.name + ', '
         for num in plant.ec_nums:
             if num not in unique_nums: unique_nums.append(num)
-        for chem_data in data_lists:
+        for chem_data in flav_data_lists:
             if predict.flav_check(getattr(predict, chem_data.code.lower()), unique_nums):
                 chem_data.plants.append(plant.name)  # add plant to flavonoids list
         if unique_nums:
             for num in unique_nums: plant_ec_output += num + ', '
 
-    for plant in list_all_plants: plant_names = plant_names + plant.name + '\n'
+    for plant in plant_objects: plant_names = plant_names + plant.name + '\n'
     write_append(path_chem + SEP + '_all-plant-names.csv', plant_names, write_over=True)
 
     output_yn = plant_names.replace('\n', '\t')
     # create the prediction output files for each flavonoid
-    for key in data_lists:
+    for key in flav_data_lists:
         save_file([key.plants], key.file_name, path_chem, sep='\n')
         output_list = output_list + '\n' + key.code
         output_yn = output_yn + '\n' + key.code
         for plant in key.plants: output_list = output_list + '\t' + plant
 
-        for item in list_all_plants:
+        for item in plant_objects:
             if item.name in key.plants:
                 output_yn = output_yn + '\tY'
             else:
@@ -275,11 +276,11 @@ def make_plant_ec_counts():
     function on multiple threads. For each gene entry containing a specific EC number, the program will increase the
     counter and display it at the end next to the appropriate EC number.
     """
-    global list_all_plants
-    for plant in list_all_plants: fill_count_matrix(plant)  # update the matrix using each plant
+    global plant_objects
+    for plant in plant_objects: fill_count_matrix(plant)  # update the matrix using each plant
 
     out = ''
-    for plant in list_all_plant_matrix:
+    for plant in plant_matrix:
         out += plant.name + ': '  # create beginning of line for current plant
         for count in plant.ec_counts:
             out += '[' + str(count.number) + ' count: ' + str(count.count) + '] '  # add the EC numbers and counts
@@ -291,7 +292,7 @@ def fill_count_matrix(plant):
     """
     This function builds the ec counts for each list.
     """
-    global list_all_plants
+    global plant_objects
     tmp_plant = plant
     for num in tmp_plant.ec_nums:
         if tmp_plant.has_ec_count(num):
@@ -300,8 +301,8 @@ def fill_count_matrix(plant):
             # create new count object for current EC number
             tmp_count = EcCounts(number=num, count=1)
             plant.ec_counts.append(tmp_count)
-    with lock_access_plant:
-        list_all_plant_matrix.append(tmp_plant)  # update count matrix
+    with lock_plant:
+        plant_matrix.append(tmp_plant)  # update count matrix
 
 
 def build_nt_fasta_by_ec():
@@ -323,7 +324,7 @@ def build_nt_fasta_by_ec():
     print('Starting to gather data for FASTA files...')
     master_fasta = path_main + SEP + 'MasterFASTA.csv'
     master_output = ''
-    for item in list_fasta_ec:
+    for item in ec_collections:
         tmp_file_path = path_fasta + SEP + item.ec_name.replace('.', '-').replace(':', '') + CSV
         tmp_output = ''
         for entry in item.ec_entries:
@@ -341,7 +342,7 @@ def build_fasta(genes):
     the web page. After parsing, the FASTA sequences are added to EcFastaCollection objects in order to maintain
     proper association when writing all of the sequences out to files.
     """
-    global list_fasta_ec
+    global ec_collections
     for gene in genes:
         # using the plant code and gene id create a string formatted as code:gene
         combined = gene.plant_code.strip() + ':' + gene.gene_id.replace('(RAP-DB) ', '').strip()
@@ -361,10 +362,10 @@ def build_fasta(genes):
         full_fasta_entry = fasta_header + '\n' + fasta_body  # create FASTA entry string
         # create new entry object
         tmp_entry = FastaEcEntry(gene=gene.gene_id, plant=plant_dict.get(gene.plant_code), dna=full_fasta_entry)
-        with lock_access_ec:
+        with lock_ec:
             for g in gene.ec_nums:
                 tmp_ec = EcFastaCollection(ec_num=g, ec_entries=[tmp_entry])
-                list_fasta_ec.append(tmp_ec)
+                ec_collections.append(tmp_ec)
 
 
 if __name__ == '__main__':

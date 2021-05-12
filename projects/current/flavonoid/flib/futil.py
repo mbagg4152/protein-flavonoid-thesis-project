@@ -148,7 +148,7 @@ def quick_fetch(pattern, line):
         out = ''
     return out
 
-def mult_replace(line, pairs):
+def multi_replace(line, pairs):
     """
     This function makes multiple string replacements.
     """
