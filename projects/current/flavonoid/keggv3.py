@@ -26,7 +26,7 @@ init_time = datetime.datetime.now()  # get time of program execution
 kegg = KEGG()  # used to access KEGG's functions from bioservices
 
 # The lists are used for processing/accessing data as well as making output files.
-list_all_genes = []
+all_genes = []
 list_all_plant_matrix = []
 list_all_plants = []
 list_fasta_ec = []
@@ -55,18 +55,17 @@ def main():
     This is the main function of the file which calls specific functions in order when running and displays the total
     run time at the end of the code execution.
     """
-    init_setup()
+    setup()
     get_parse_pathway_genes()
     flavonoid_predictions()
     make_plant_ec_counts()
     # build_nt_fasta_by_ec()
 
-    end_time = datetime.datetime.now()
-    total_time = end_time - init_time
-    print('\nRun time: ' + str(total_time))
+    runtime = datetime.datetime.now() - init_time
+    print('\nRun time: ' + str(runtime))
 
 
-def init_setup():
+def setup():
     """
     This is the initial setup function for the program. If the user supplies a directory name in the command line args,
     then that name will be used when outputting the data. If no name is supplied, then the data is outputted to the
@@ -74,17 +73,26 @@ def init_setup():
     can be found in the JSON files. After making the list, it creates a list of plant objects that will be used
     throughout the program.
     """
-    global path_cwd, path_main, path_chem, path_fasta, path_gene, list_plant_paths, list_all_plants, path_raw_gene
 
-    # check if user supplied directory name as a commandline argument. if not, default to 'data'
+    # Make sure global values can be used and updated
+    global list_all_plants
+    global list_plant_paths
+    global path_chem
+    global path_cwd
+    global path_fasta
+    global path_gene
+    global path_main
+    global path_raw_gene
+
+    # Check if user supplied directory name as a commandline argument. if not, default to 'data'
     opt_dir_name = ''
-    if len(sys.argv) > 1:  # alternate directory name supplied
-        opt_dir_name = sys.argv[1]  # get directory name
+    if len(sys.argv) > 1:  # Alternate directory name supplied by user
+        opt_dir_name = sys.argv[1]  # Get directory name
     else:
         print('No directory name supplied, defaulting to `data`. Supply name using `python3 keggv2.py dir_name`')
         opt_dir_name = 'data'
 
-    # update the global path values based on user decision
+    # Update the global path values based on user decision
     path_cwd = os.getcwd() + SEP
     path_main = path_cwd + opt_dir_name
     path_chem = path_main + DIR_CHEM
@@ -92,18 +100,20 @@ def init_setup():
     path_gene = path_main + DIR_GENE
     path_raw_gene = path_main + DIR_RAW
 
-    # (futil.py) initialize directories if they don't exist
+    #  Initialize the output directories if they don't exist
     init_dir(path_main)
     init_dir(path_gene)
     init_dir(path_fasta)
     init_dir(path_chem)
     init_dir(path_raw_gene)
 
-    list_plant_paths = [i + j for i in plant_list for j in path_map_list]  # make plant and path combination list
+    list_plant_paths = [i + j for i in plant_list for j in path_map_list]  # Combines plant and pathway codes.
 
-    for key in plant_dict:  # build list of plant objects
-        tmp_plant = Plant(code=key, name=plant_dict[key])  # object made for current plant
-        if not tmp_plant.is_in(list_all_plants): list_all_plants.append(tmp_plant)  # add if not already present in list
+    # Go through the list of plants and create a Plant object which will store related predictions.
+    for key in plant_dict:
+        tmp_plant = Plant(code=key, name=plant_dict[key])  # Call constructor to make new plant.
+        if not tmp_plant.is_in(list_all_plants):  # Add to list if not present. Prevents duplicates.
+            list_all_plants.append(tmp_plant)
 
 
 def get_parse_pathway_genes():
@@ -113,13 +123,18 @@ def get_parse_pathway_genes():
     be looped through in order to create both the gene data output files for each pathway and for the master file
     that contains all of the gene information.
     """
-    global list_plant_paths, list_all_plants, thread_lim, path_gene
-    sub_lists = list_partition(list_plant_paths, thread_lim)  # split the list into parts
-    threads = []  # will hold the created threads
+    global list_all_plants
+    global list_plant_paths
+    global path_gene
+    global thread_lim
 
+    sub_lists = list_partition(list_plant_paths, thread_lim)  # Chunk up the list of plant-pathway codes.
+    threads = []  # Will be used to keep track of and kill off threads.
+
+    # A thread is made for each sub-list which then passes each sub-list as a parameter to the pathway parser.
     for sub_list in sub_lists:
-        thread = threading.Thread(target=path_parse, args=(sub_list,))  # create thread & pass the sublist to path_parse
-        thread.start()  # start running the thread
+        thread = threading.Thread(target=path_parse, args=(sub_list,))
+        thread.start()
         threads.append(thread)  # add new thread to list of threads
     for thread in threads: thread.join()  # wait for all of the threads to finish running
 
@@ -199,7 +214,7 @@ def path_parse(paths):
                                     # add to list of plants genes if not already present
                                     if not tmp_gene.is_in(tmp_plant.genes): tmp_plant.genes.append(tmp_gene)
                                     # add to list of all genes if not already present
-                                    if not tmp_gene.is_in(list_all_genes): list_all_genes.append(tmp_gene)
+                                    if not tmp_gene.is_in(all_genes): all_genes.append(tmp_gene)
                                     tmp_plant.ec_nums.extend(
                                         ec_num)  # add to the plants list of ec numbers (dupes okay)
                                     list_all_plants[
@@ -295,9 +310,9 @@ def build_nt_fasta_by_ec():
     FASTA/DNA sequence for each of the gene entries that were found. As before, the program parses the list after
     all threads are done and then created a FASTA file for each EC number and created the Master FASTA file.
     """
-    sub_lists = list_partition(list_all_genes, thread_lim)
+    sub_lists = list_partition(all_genes, thread_lim)
     threads = []
-    print('getting data for ' + str(len(list_all_genes)) + ' genes')
+    print('getting data for ' + str(len(all_genes)) + ' genes')
     for sub_list in sub_lists:
         thread = threading.Thread(target=build_fasta, args=(sub_list,))  # create the thread
         thread.start()  # start thread execution
