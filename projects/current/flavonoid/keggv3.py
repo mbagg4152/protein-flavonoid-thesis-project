@@ -183,7 +183,7 @@ def path_parse(paths):
                     tmp_get.close()
 
             gene_entry = {}
-            if raw:  # Don't bother parsing the empty entries.
+            if isinstance(raw, str):  # Don't bother parsing the empty entries.
                 kegg_entry = kegg.parse(raw)  # Parses kegg entry into dictionary.
                 gene_entry = kegg_entry.get(GKY)  # Get the data from the dictionary with key `GENE`.
 
