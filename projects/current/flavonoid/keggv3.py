@@ -1,6 +1,6 @@
 from flib.fconstants import *
 from flib.data_types import *
-import flib.prediction_logic as pl
+import flib.prediction_logic as predict
 from urllib import request
 from urllib.error import HTTPError, URLError
 import datetime
@@ -19,39 +19,36 @@ except ImportError as e:
     print(e)
     exit(1)
 
-"""
-Global Variables used throughout the program
-- init_time records the time the program starts
-- kegg is the variable used to access the KEGG functions
-- the lists are used when processing and accessing data and are also used in making the files
-- The locks are to be used in the sections of code that use multithreading. Global variables are much easier
-  to use when using multithreading but they also need protection. Specific variables must only be accessed
-  one at a time or else unforeseen issues may show up.
-- The path variables will hold the paths for the output directories based on the command line args (or lack 
-  thereof) and where the program is being run.
-"""
+####################
+# Global Variables #
+####################
+init_time = datetime.datetime.now()  # get time of program execution
+kegg = KEGG()  # used to access KEGG's functions from bioservices
 
-init_time = datetime.datetime.now()
-kegg = KEGG()
+# The lists are used for processing/accessing data as well as making output files.
 list_all_genes = []
+list_all_plant_matrix = []
 list_all_plants = []
 list_fasta_ec = []
 list_genes_by_path = []
 list_plant_paths = []
-list_all_plant_matrix = []
 
-lock_access_ec = threading.Lock()  # will allow only one thread to access the list of ec numbers at any time
-lock_access_plant = threading.Lock()  # will allow only one thread to access the list of plants at any time
-lock_add_gene = threading.Lock()  # will allow only one thread to access the list of genes at any time
-lock_kegg_get = threading.Lock()  # will allow only one thread to get an entry from KEGG at any time
+# The locks are used to protect the values of the global variables when using multithreading.
+lock_access_ec = threading.Lock()
+lock_access_plant = threading.Lock()
+lock_add_gene = threading.Lock()
+lock_kegg_get = threading.Lock()
 
-path_chem = ' '  # will hold path of directory that contains the prediction output
-path_cwd = ' '  # current working directory at initial runtime
-path_fasta = ' '  # will hold path of directory that contains the fasta output
-path_gene = ' '  # will hold path of directory that contains the gene data output
-path_main = ' '  # will hold path of parent directory of program
+# These will hold the file path values for the programs outputs and current and project directory.
+path_chem = ''
+path_cwd = ''
+path_fasta = ''
+path_gene = ''
+path_main = ''
 path_raw_gene = ''
-thread_lim = 5  # max number of threads to be used in accessing data
+
+thread_lim = 5  # The max number of processor threads to be used by program.
+
 
 def main():
     """
@@ -68,6 +65,7 @@ def main():
     total_time = end_time - init_time
     print('\nRun time: ' + str(total_time))
 
+
 def init_setup():
     """
     This is the initial setup function for the program. If the user supplies a directory name in the command line args,
@@ -77,19 +75,25 @@ def init_setup():
     throughout the program.
     """
     global path_cwd, path_main, path_chem, path_fasta, path_gene, list_plant_paths, list_all_plants, path_raw_gene
-    decision = ''
-    if len(sys.argv) > 1:  # if length of args is greater than one that means user supplied arg other than program name
-        decision = sys.argv[1]  # read in the desired output directory as a commandline argument
+
+    # check if user supplied directory name as a commandline argument. if not, default to 'data'
+    opt_dir_name = ''
+    if len(sys.argv) > 1:  # alternate directory name supplied
+        opt_dir_name = sys.argv[1]  # get directory name
     else:
-        print("No directory name supplied, defaulting to 'data'. Supply name using 'python3 keggv2.py dir_name'")
-        decision = 'data'
-    path_cwd = os.getcwd() + SEP  # get directory where program is being run
-    path_main = path_cwd + decision  # make the main/data dir path
-    path_chem = path_main + DIR_CHEM  # make the chem data path for prediction output
-    path_fasta = path_main + DIR_FASTA  # make the fasta data path for the fetched fasta data
-    path_gene = path_main + DIR_GENE  # make the gene data path for the fetched gene data
+        print('No directory name supplied, defaulting to `data`. Supply name using `python3 keggv2.py dir_name`')
+        opt_dir_name = 'data'
+
+    # update the global path values based on user decision
+    path_cwd = os.getcwd() + SEP
+    path_main = path_cwd + opt_dir_name
+    path_chem = path_main + DIR_CHEM
+    path_fasta = path_main + DIR_FASTA
+    path_gene = path_main + DIR_GENE
     path_raw_gene = path_main + DIR_RAW
-    init_dir(path_main)  # (futil.py) initialize directories if they don't exist
+
+    # (futil.py) initialize directories if they don't exist
+    init_dir(path_main)
     init_dir(path_gene)
     init_dir(path_fasta)
     init_dir(path_chem)
@@ -100,6 +104,7 @@ def init_setup():
     for key in plant_dict:  # build list of plant objects
         tmp_plant = Plant(code=key, name=plant_dict[key])  # object made for current plant
         if not tmp_plant.is_in(list_all_plants): list_all_plants.append(tmp_plant)  # add if not already present in list
+
 
 def get_parse_pathway_genes():
     """
@@ -129,6 +134,7 @@ def get_parse_pathway_genes():
         write_append(tmp_file_path, tmp_output, write_over=True)  # write the file for the pathway
     write_append(master_gene, master_output, write_over=True)  # write the master file
 
+
 def path_parse(paths):
     """
     Given a pathway for a specific plant, the program then passes it to KEGG where it retrieves the appropriate entry.
@@ -148,8 +154,10 @@ def path_parse(paths):
             except FileNotFoundError:
                 raw = kegg.get(path)  # get KEGG entry for pathway
                 with open(path_raw_gene + SEP + path + '.csv', 'w') as tmp_get:
-                    try: tmp_get.write(raw)
-                    except TypeError: no_data = True
+                    try:
+                        tmp_get.write(raw)
+                    except TypeError:
+                        no_data = True
                     tmp_get.close()
 
             gene_entry = kegg.parse(raw)  # parse kegg entry into dictionary for easier access
@@ -199,6 +207,7 @@ def path_parse(paths):
                     except IndexError:
                         pass  # couldn't find items using regular expression findall
 
+
 def flavonoid_predictions():
     """
     This is the function that goes through each plant, looks at the list of EC numbers then applies a function in order
@@ -217,7 +226,7 @@ def flavonoid_predictions():
         for num in plant.ec_nums:
             if num not in unique_nums: unique_nums.append(num)
         for chem_data in data_lists:
-            if pl.flav_check(getattr(pl, chem_data.code.lower()), unique_nums):
+            if predict.flav_check(getattr(predict, chem_data.code.lower()), unique_nums):
                 chem_data.plants.append(plant.name)  # add plant to flavonoids list
         if unique_nums:
             for num in unique_nums: plant_ec_output += num + ', '
@@ -234,13 +243,16 @@ def flavonoid_predictions():
         for plant in key.plants: output_list = output_list + '\t' + plant
 
         for item in list_all_plants:
-            if item.name in key.plants:  output_yn = output_yn + '\tY'
-            else: output_yn = output_yn + '\tN'
+            if item.name in key.plants:
+                output_yn = output_yn + '\tY'
+            else:
+                output_yn = output_yn + '\tN'
         item_count = len(key.plants)
         print(key.label + ' predicted in ' + str(item_count) + ' entries.')
     write_append(path_chem + SEP + '_plant-ec-nums.csv', plant_ec_output, write_over=True)
     write_append(path_chem + SEP + '_predictions_list.csv', output_list, write_over=True)
     write_append(path_chem + SEP + '_predictions_yn.csv', output_yn, write_over=True)
+
 
 def make_plant_ec_counts():
     """
@@ -259,6 +271,7 @@ def make_plant_ec_counts():
         out += '\n'
     write_append(path_main + SEP + 'MasterCount.csv', out)  # write string to the output file
 
+
 def fill_count_matrix(plant):
     """
     This function builds the ec counts for each list.
@@ -274,6 +287,7 @@ def fill_count_matrix(plant):
             plant.ec_counts.append(tmp_count)
     with lock_access_plant:
         list_all_plant_matrix.append(tmp_plant)  # update count matrix
+
 
 def build_nt_fasta_by_ec():
     """
@@ -303,6 +317,7 @@ def build_nt_fasta_by_ec():
         write_append(tmp_file_path, tmp_output)  # write the file for current EC number
     write_append(master_fasta, master_output)  # write the master FASTA file
     print('Done making the FASTA files.')
+
 
 def build_fasta(genes):
     """
@@ -335,6 +350,7 @@ def build_fasta(genes):
             for g in gene.ec_nums:
                 tmp_ec = EcFastaCollection(ec_num=g, ec_entries=[tmp_entry])
                 list_fasta_ec.append(tmp_ec)
+
 
 if __name__ == '__main__':
     main()

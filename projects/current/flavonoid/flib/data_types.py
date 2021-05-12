@@ -1,5 +1,6 @@
 from flib.fconstants import *
 
+
 class Flav:
     """
     This class holds the data for each flavonoid. The objects are initialized with their file name and label and only
@@ -31,6 +32,7 @@ class Flav:
         for item in items:
             if self == item: return True
         return False
+
 
 class Plant:
     """
@@ -88,6 +90,7 @@ class Plant:
             if ec.number == ec_number:
                 ec.count += 1
 
+
 class PathGene:
     """
     This object is used to hold Gene objects in a way such that they are sorted by the pathway from which they were
@@ -115,6 +118,7 @@ class PathGene:
         for item in items:
             if self == item: return True
         return False
+
 
 class Gene:
     """
@@ -162,6 +166,7 @@ class Gene:
     def no_plant(self):
         return self.gene_id + ', ' + self.compound + ', ' + self.ec_nums + ', ' + self.ortho
 
+
 class EcFastaCollection:
     """
     This object is used to hold the associated FASTA entries for any given EC number.
@@ -189,6 +194,7 @@ class EcFastaCollection:
             if self == item: return True
         return False
 
+
 class EcCounts:
     """
     This object is a property of the Plant object and is used to hold each EC number and the number of times it occurs
@@ -205,6 +211,7 @@ class EcCounts:
     def __init__(self, number=None, count=None):
         self.number = number if number is not None else ' '
         self.count = count if number is not None else 0
+
 
 class FastaEcEntry:
     """
@@ -240,21 +247,5 @@ class FastaEcEntry:
     def simple(self):
         return self.dna_seq
 
-# data_lists = [Flav(AGI, [], CSV_AGI), Flav(APIF, [], CSV_APIF), Flav(AZEL, [], CSV_AZEL), Flav(BUN, [], CSV_BUN),
-#               Flav(BUTN, [], CSV_BUTN), Flav(CHSN, [], CSV_CHSN), Flav(DAID, [], CSV_DAID), Flav(DF74, [], CSV_DF74),
-#               Flav(DFV, [], CSV_DFV), Flav(DGEN, [], CSV_DGEN), Flav(DKAM, [], CSV_DKAM), Flav(DLM, [], CSV_DLM),
-#               Flav(DMYR, [], CSV_DMYR), Flav(DQUE, [], CSV_DQUE), Flav(DTRI, [], CSV_DTRI), Flav(EC, [], CSV_EC),
-#               Flav(EGT, [], CSV_EGT), Flav(ERD, [], CSV_ERD), Flav(ERDC, [], CSV_ERDC), Flav(EZEL, [], CSV_EZEL),
-#               Flav(FSTN, [], CSV_FSTN), Flav(G50, [], CSV_G50), Flav(GALN, [], CSV_GALN), Flav(GBAN, [], CSV_GBAN),
-#               Flav(GC, [], CSV_GC), Flav(GEN, [], CSV_GEN), Flav(HCC, [], CSV_HCC), Flav(HDAI, [], CSV_HDAI),
-#               Flav(HESP, [], CSV_HESP), Flav(HWB, [], CSV_HWB), Flav(KMP, [], CSV_KMP), Flav(KXN, [], CSV_KXN),
-#               Flav(LCYN, [], CSV_LCYN), Flav(LDEL, [], CSV_LDEL), Flav(LPEL, [], CSV_LPEL), Flav(LU2, [], CSV_LU2),
-#               Flav(LUTF, [], CSV_LUTF), Flav(MYC, [], CSV_MYC), Flav(MYF, [], CSV_MYF), Flav(NAR, [], CSV_NAR),
-#               Flav(NARC, [], CSV_NARC), Flav(PBAN, [], CSV_PBAN), Flav(PELR, [], CSV_PELR), Flav(PICH, [], CSV_PICH),
-#               Flav(PINO, [], CSV_PINO), Flav(QUE, [], CSV_QUE), Flav(TET2, [], CSV_TET2), Flav(TISO, [], CSV_TISO),
-#               Flav(TNON, [], CSV_TNON)]
-data_lists = []
-for k in flav_names_info:
-    info = flav_names_info.get(k)
-    tmp_flav = Flav(k, [], info.get('file'), info.get('code'))
-    data_lists.append(tmp_flav)
+
+

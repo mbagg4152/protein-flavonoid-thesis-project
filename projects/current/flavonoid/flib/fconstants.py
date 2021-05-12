@@ -1,6 +1,7 @@
 import os
 import sys
 from flib.futil import *
+from flib.data_types import Flav
 
 SEP = os.sep  # get the right slash. / for linux & mac, \ for windows
 
@@ -52,6 +53,12 @@ test_single = get_json_data(JSON_TST_SINGLE, JKEY)  # testing list of plant code
 
 plant_dict = plant_dict_reg  # variable exists for ease of value change when testing
 plant_list = plant_full_list  # variable exists for ease of value change when testing
+
+data_lists = []
+for k in flav_names_info:
+    info = flav_names_info.get(k)
+    tmp_flav = Flav(k, [], info.get('file'), info.get('code'))
+    data_lists.append(tmp_flav)
 
 # keys for accessing dictionaries
 EKY = 'EC'
