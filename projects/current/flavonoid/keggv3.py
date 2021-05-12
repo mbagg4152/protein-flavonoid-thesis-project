@@ -183,11 +183,11 @@ def path_parse(paths):
                     tmp_get.close()
 
             gene_entry = {}
-            if len(raw) > 0:  # Don't bother parsing the empty entries.
+            if len(str(raw)) > 0:  # Don't bother parsing the empty entries.
                 kegg_entry = kegg.parse(raw)  # Parses kegg entry into dictionary.
                 gene_entry = kegg_entry.get(GKY)  # Get the data from the dictionary with key `GENE`.
 
-        if len(raw) > 0:  # Again, if the entry is empty, don't bother trying to parse it.
+        if len(str(raw)) > 0:  # Again, if the entry is empty, don't bother trying to parse it.
             plant_code = ''.join(re.split(RE_ALPH, path))  # Plant part of the code is alpha-only.
             plant_name = plant_dict.get(plant_code)
             with lock_gene:
