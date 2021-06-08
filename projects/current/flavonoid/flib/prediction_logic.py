@@ -15,7 +15,7 @@ def or_in(items, *args):
     found = 0
     for a in args:
         if a in items: found += 1
-    return found  # non-zero values are treated as true
+    return found  # positive non-zero values are treated as true
 
 
 # returns true only if all args are in the list
