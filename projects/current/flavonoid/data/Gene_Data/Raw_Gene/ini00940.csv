@@ -1,0 +1,429 @@
+ENTRY       ini00940                    Pathway
+NAME        Phenylpropanoid biosynthesis - Ipomoea nil (Japanese morning glory)
+DESCRIPTION Phenylpropanoids are a group of plant secondary metabolites derived from phenylalanine and having a wide variety of functions both as structural and signaling molecules. Phenylalanine is first converted to cinnamic acid by deamination. It is followed by hydroxylation and frequent methylation to generate coumaric acid and other acids with a phenylpropane (C6-C3) unit. Reduction of the CoA-activated carboxyl groups of these acids results in the corresponding aldehydes and alcohols. The alcohols are called monolignols, the starting compounds for biosynthesis of lignin.
+CLASS       Metabolism; Biosynthesis of other secondary metabolites
+PATHWAY_MAP ini00940  Phenylpropanoid biosynthesis
+MODULE      ini_M00039  Monolignol biosynthesis, phenylalanine/tyrosine => monolignol [PATH:ini00940]
+            ini_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:ini00940]
+DBLINKS     GO: 0009699
+ORGANISM    Ipomoea nil (Japanese morning glory) [GN:ini]
+GENE        109187876  phenylalanine ammonia-lyase G4-like [KO:K10775] [EC:4.3.1.24]
+            109148785  phenylalanine ammonia-lyase-like [KO:K10775] [EC:4.3.1.24]
+            109148795  phenylalanine ammonia-lyase-like [KO:K10775] [EC:4.3.1.24]
+            109148804  phenylalanine ammonia-lyase-like [KO:K10775] [EC:4.3.1.24]
+            109148811  phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            109181625  phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            109192698  phenylalanine ammonia-lyase-like [KO:K10775] [EC:4.3.1.24]
+            109146796  cytochrome P450 CYP73A100-like [KO:K00487] [EC:1.14.14.91]
+            109156362  trans-cinnamate 4-monooxygenase-like [KO:K00487] [EC:1.14.14.91]
+            109162834  trans-cinnamate 4-monooxygenase [KO:K00487] [EC:1.14.14.91]
+            109193332  4-coumarate--CoA ligase 2 [KO:K01904] [EC:6.2.1.12]
+            109189203  4-coumarate--CoA ligase-like 1 [KO:K01904] [EC:6.2.1.12]
+            109183073  4-coumarate--CoA ligase 2 [KO:K01904] [EC:6.2.1.12]
+            109183355  4-coumarate--CoA ligase-like 7 [KO:K01904] [EC:6.2.1.12]
+            109192779  4-coumarate--CoA ligase-like 7 [KO:K01904] [EC:6.2.1.12]
+            109149529  4-coumarate--CoA ligase-like 6 [KO:K01904] [EC:6.2.1.12]
+            109163099  4-coumarate--CoA ligase 2-like [KO:K01904] [EC:6.2.1.12]
+            109185149  4-coumarate--CoA ligase-like 6 [KO:K01904] [EC:6.2.1.12]
+            109192439  4-coumarate--CoA ligase-like 9 [KO:K01904] [EC:6.2.1.12]
+            109158393  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109192264  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109178924  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109178957  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109166319  shikimate O-hydroxycinnamoyltransferase-like [KO:K13065] [EC:2.3.1.133]
+            109178351  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109178366  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109175104  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109175106  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109175108  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109175109  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109157296  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109156083  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109182989  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            109182990  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            109182991  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            109182992  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            109152224  salutaridinol 7-O-acetyltransferase-like [KO:K13065] [EC:2.3.1.133]
+            109152226  salutaridinol 7-O-acetyltransferase-like [KO:K13065] [EC:2.3.1.133]
+            109162686  salutaridinol 7-O-acetyltransferase-like [KO:K13065] [EC:2.3.1.133]
+            109176727  agmatine coumaroyltransferase-2-like [KO:K13065] [EC:2.3.1.133]
+            109176730  agmatine coumaroyltransferase-2-like [KO:K13065] [EC:2.3.1.133]
+            109176761  agmatine coumaroyltransferase-2-like [KO:K13065] [EC:2.3.1.133]
+            109187420  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109152318  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109152319  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109152320  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109155017  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            109155056  salutaridinol 7-O-acetyltransferase-like [KO:K13065] [EC:2.3.1.133]
+            109166957  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109166961  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109150715  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            109179667  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            109155300  shikimate O-hydroxycinnamoyltransferase [KO:K13065] [EC:2.3.1.133]
+            109167144  acetyl-CoA-benzylalcohol acetyltransferase-like [KO:K13065] [EC:2.3.1.133]
+            109173156  shikimate O-hydroxycinnamoyltransferase-like [KO:K13065] [EC:2.3.1.133]
+            109181086  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            109159148  cytochrome P450 98A3 [KO:K09754] [EC:1.14.14.96]
+            109164018  caffeoylshikimate esterase [KO:K18368] [EC:3.1.1.-]
+            109189036  caffeoylshikimate esterase-like [KO:K18368] [EC:3.1.1.-]
+            109179685  caffeoylshikimate esterase-like [KO:K18368] [EC:3.1.1.-]
+            109152698  caffeoylshikimate esterase-like [KO:K18368] [EC:3.1.1.-]
+            109186987  caffeoylshikimate esterase-like [KO:K18368] [EC:3.1.1.-]
+            109168572  caffeoylshikimate esterase-like [KO:K18368] [EC:3.1.1.-]
+            109182572  caffeoylshikimate esterase-like [KO:K18368] [EC:3.1.1.-]
+            109177877  caffeoylshikimate esterase [KO:K18368] [EC:3.1.1.-]
+            109161153  caffeoylshikimate esterase [KO:K18368] [EC:3.1.1.-]
+            109172722  probable caffeoyl-CoA O-methyltransferase At4g26220 [KO:K00588] [EC:2.1.1.104]
+            109193122  In04; probable caffeoyl-CoA O-methyltransferase At4g26220 [KO:K00588] [EC:2.1.1.104]
+            109193141  probable caffeoyl-CoA O-methyltransferase At4g26220 [KO:K00588] [EC:2.1.1.104]
+            109162046  caffeoyl-CoA O-methyltransferase 5 [KO:K00588] [EC:2.1.1.104]
+            109177856  caffeoyl-CoA O-methyltransferase-like [KO:K00588] [EC:2.1.1.104]
+            109189033  caffeoyl-CoA O-methyltransferase [KO:K00588] [EC:2.1.1.104]
+            109177504  caffeoyl-CoA O-methyltransferase-like [KO:K00588] [EC:2.1.1.104]
+            109164697  cinnamoyl-CoA reductase 1-like [KO:K09753] [EC:1.2.1.44]
+            109164749  cinnamoyl-CoA reductase 1-like [KO:K09753] [EC:1.2.1.44]
+            109191772  cinnamoyl-CoA reductase 1-like [KO:K09753] [EC:1.2.1.44]
+            109162983  cinnamoyl-CoA reductase 1-like [KO:K09753] [EC:1.2.1.44]
+            109147675  aldehyde dehydrogenase family 2 member C4-like [KO:K12355] [EC:1.2.1.68]
+            109148250  aldehyde dehydrogenase family 2 member C4-like [KO:K12355] [EC:1.2.1.68]
+            109176903  aldehyde dehydrogenase family 2 member C4-like [KO:K12355] [EC:1.2.1.68]
+            109186419  aldehyde dehydrogenase family 2 member C4-like [KO:K12355] [EC:1.2.1.68]
+            109167744  cytochrome P450 84A1-like [KO:K09755] [EC:1.14.-.-]
+            109172706  cytochrome P450 84A1-like [KO:K09755] [EC:1.14.-.-]
+            109194027  caffeic acid 3-O-methyltransferase [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            109165820  caffeic acid 3-O-methyltransferase-like [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            109165828  caffeic acid 3-O-methyltransferase-like [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            109150685  caffeic acid 3-O-methyltransferase-like [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            109169365  caffeic acid 3-O-methyltransferase-like [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            109169372  caffeic acid 3-O-methyltransferase-like [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            109169378  caffeic acid 3-O-methyltransferase-like [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            109169387  caffeic acid 3-O-methyltransferase-like [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            109165174  probable cinnamyl alcohol dehydrogenase 1 [KO:K00083] [EC:1.1.1.195]
+            109192734  probable cinnamyl alcohol dehydrogenase 1 [KO:K00083] [EC:1.1.1.195]
+            109147298  probable cinnamyl alcohol dehydrogenase 6 [KO:K00083] [EC:1.1.1.195]
+            109179955  probable cinnamyl alcohol dehydrogenase 1 [KO:K00083] [EC:1.1.1.195]
+            109192735  probable cinnamyl alcohol dehydrogenase 1 [KO:K00083] [EC:1.1.1.195]
+            109172550  probable mannitol dehydrogenase 1 [KO:K00083] [EC:1.1.1.195]
+            109155723  berberine bridge enzyme-like 15 [KO:K22395] [EC:1.1.1.195]
+            109181389  berberine bridge enzyme-like 13 [KO:K22395] [EC:1.1.1.195]
+            109164790  berberine bridge enzyme-like 15 [KO:K22395] [EC:1.1.1.195]
+            109165522  berberine bridge enzyme-like 15 [KO:K22395] [EC:1.1.1.195]
+            109165523  berberine bridge enzyme-like 13 [KO:K22395] [EC:1.1.1.195]
+            109165524  berberine bridge enzyme-like 15 [KO:K22395] [EC:1.1.1.195]
+            109163541  probable 1-Cys peroxiredoxin [KO:K11188] [EC:1.11.1.7 1.11.1.27 3.1.1.-]
+            109171514  probable 1-Cys peroxiredoxin [KO:K11188] [EC:1.11.1.7 1.11.1.27 3.1.1.-]
+            109172807  1-Cys peroxiredoxin A-like [KO:K11188] [EC:1.11.1.7 1.11.1.27 3.1.1.-]
+            109187601  1-Cys peroxiredoxin A [KO:K11188] [EC:1.11.1.7 1.11.1.27 3.1.1.-]
+            109177595  peroxidase 17-like [KO:K00430] [EC:1.11.1.7]
+            109177612  peroxidase 49-like [KO:K00430] [EC:1.11.1.7]
+            109177969  peroxidase 51-like [KO:K00430] [EC:1.11.1.7]
+            109164675  peroxidase 19 [KO:K00430] [EC:1.11.1.7]
+            109165825  peroxidase 10 [KO:K00430] [EC:1.11.1.7]
+            109189526  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109151409  peroxidase 66-like [KO:K00430] [EC:1.11.1.7]
+            109165456  peroxidase 43 [KO:K00430] [EC:1.11.1.7]
+            109159327  cationic peroxidase 1-like [KO:K00430] [EC:1.11.1.7]
+            109167262  neutral peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109167585  peroxidase 72 [KO:K00430] [EC:1.11.1.7]
+            109164069  cationic peroxidase 1-like [KO:K00430] [EC:1.11.1.7]
+            109171864  peroxidase 57-like [KO:K00430] [EC:1.11.1.7]
+            109182243  cationic peroxidase 1-like [KO:K00430] [EC:1.11.1.7]
+            109182244  peroxidase 2-like [KO:K00430] [EC:1.11.1.7]
+            109182245  peroxidase P7-like [KO:K00430] [EC:1.11.1.7]
+            109182246  peroxidase 2-like [KO:K00430] [EC:1.11.1.7]
+            109182247  peroxidase 2-like [KO:K00430] [EC:1.11.1.7]
+            109164766  peroxidase 27-like [KO:K00430] [EC:1.11.1.7]
+            109171949  peroxidase 46 [KO:K00430] [EC:1.11.1.7]
+            109175870  peroxidase 40 [KO:K00430] [EC:1.11.1.7]
+            109175032  peroxidase 5-like [KO:K00430] [EC:1.11.1.7]
+            109188573  peroxidase 15-like [KO:K00430] [EC:1.11.1.7]
+            109189009  peroxidase 47-like [KO:K00430] [EC:1.11.1.7]
+            109182362  peroxidase 15-like [KO:K00430] [EC:1.11.1.7]
+            109182363  peroxidase 15 [KO:K00430] [EC:1.11.1.7]
+            109182364  peroxidase 15-like [KO:K00430] [EC:1.11.1.7]
+            109186574  peroxidase 5-like [KO:K00430] [EC:1.11.1.7]
+            109189599  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109189600  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109148742  peroxidase 64-like [KO:K00430] [EC:1.11.1.7]
+            109162759  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109162769  peroxidase 15-like [KO:K00430] [EC:1.11.1.7]
+            109165501  cationic peroxidase 2-like [KO:K00430] [EC:1.11.1.7]
+            109154050  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109154051  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109154053  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109154054  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109154056  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109154057  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109154058  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109154059  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109158223  peroxidase 55 [KO:K00430] [EC:1.11.1.7]
+            109164820  neutral peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109167288  peroxidase 42 [KO:K00430] [EC:1.11.1.7]
+            109175522  peroxidase 3-like [KO:K00430] [EC:1.11.1.7]
+            109184706  peroxidase 66-like [KO:K00430] [EC:1.11.1.7]
+            109149310  peroxidase 64 [KO:K00430] [EC:1.11.1.7]
+            109156394  peroxidase 4-like [KO:K00430] [EC:1.11.1.7]
+            109182490  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109182491  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109189089  peroxidase 10-like [KO:K00430] [EC:1.11.1.7]
+            109146978  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109146981  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109177768  peroxidase 72-like [KO:K00430] [EC:1.11.1.7]
+            109179144  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109185751  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109185780  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109188233  peroxidase 27-like [KO:K00430] [EC:1.11.1.7]
+            109188234  peroxidase 3-like [KO:K00430] [EC:1.11.1.7]
+            109160854  peroxidase 11-like [KO:K00430] [EC:1.11.1.7]
+            109193773  peroxidase P7 [KO:K00430] [EC:1.11.1.7]
+            109148852  peroxidase N-like [KO:K00430] [EC:1.11.1.7]
+            109183491  peroxidase 44-like [KO:K00430] [EC:1.11.1.7]
+            109186287  peroxidase 25 [KO:K00430] [EC:1.11.1.7]
+            109147885  peroxidase 5-like [KO:K00430] [EC:1.11.1.7]
+            109150710  peroxidase 15-like [KO:K00430] [EC:1.11.1.7]
+            109152497  probable peroxidase 61 [KO:K00430] [EC:1.11.1.7]
+            109167040  neutral peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109181359  peroxidase P7-like [KO:K00430] [EC:1.11.1.7]
+            109181368  peroxidase 2-like [KO:K00430] [EC:1.11.1.7]
+            109177807  peroxidase 64-like [KO:K00430] [EC:1.11.1.7]
+            109179158  peroxidase P7-like [KO:K00430] [EC:1.11.1.7]
+            109179186  peroxidase P7-like [KO:K00430] [EC:1.11.1.7]
+            109179187  peroxidase P7-like [KO:K00430] [EC:1.11.1.7]
+            109179191  peroxidase P7-like [KO:K00430] [EC:1.11.1.7]
+            109185829  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109185830  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109163395  peroxidase 3-like [KO:K00430] [EC:1.11.1.7]
+            109163425  peroxidase 27-like [KO:K00430] [EC:1.11.1.7]
+            109163429  peroxidase 2-like [KO:K00430] [EC:1.11.1.7]
+            109166181  peroxidase 6-like [KO:K00430] [EC:1.11.1.7]
+            109192506  putative Peroxidase 48 [KO:K00430] [EC:1.11.1.7]
+            109149069  peroxidase 5-like [KO:K00430] [EC:1.11.1.7]
+            109149070  peroxidase 5-like [KO:K00430] [EC:1.11.1.7]
+            109149071  peroxidase 5-like [KO:K00430] [EC:1.11.1.7]
+            109180929  cationic peroxidase 1-like [KO:K00430] [EC:1.11.1.7]
+            109183553  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109183554  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109183555  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109191688  peroxidase 16-like [KO:K00430] [EC:1.11.1.7]
+            109146585  peroxidase 47-like [KO:K00430] [EC:1.11.1.7]
+            109146637  peroxidase 11-like [KO:K00430] [EC:1.11.1.7]
+            109159194  cationic peroxidase 1-like [KO:K00430] [EC:1.11.1.7]
+            109159195  cationic peroxidase 1-like [KO:K00430] [EC:1.11.1.7]
+            109159196  peroxidase P7-like [KO:K00430] [EC:1.11.1.7]
+            109160516  cationic peroxidase 1-like [KO:K00430] [EC:1.11.1.7]
+            109160536  peroxidase 70-like [KO:K00430] [EC:1.11.1.7]
+            109164612  peroxidase 7 [KO:K00430] [EC:1.11.1.7]
+            109176115  peroxidase 29 [KO:K00430] [EC:1.11.1.7]
+            109180538  peroxidase 31-like [KO:K00430] [EC:1.11.1.7]
+            109185889  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109185917  peroxidase 21 [KO:K00430] [EC:1.11.1.7]
+            109148628  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109148630  lignin-forming anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109192642  peroxidase 7-like [KO:K00430] [EC:1.11.1.7]
+            109149153  peroxidase 9 [KO:K00430] [EC:1.11.1.7]
+            109181003  peroxidase 4-like [KO:K00430] [EC:1.11.1.7]
+            109181028  cationic peroxidase 1-like [KO:K00430] [EC:1.11.1.7]
+            109181029  cationic peroxidase 1-like [KO:K00430] [EC:1.11.1.7]
+            109165364  anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109165365  anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109165366  anionic peroxidase-like [KO:K00430] [EC:1.11.1.7]
+            109165367  anionic peroxidase [KO:K00430] [EC:1.11.1.7]
+            109165368  neutral peroxidase [KO:K00430] [EC:1.11.1.7]
+            109172656  peroxidase 17-like [KO:K00430] [EC:1.11.1.7]
+            109150841  peroxidase 41-like [KO:K00430] [EC:1.11.1.7]
+            109151132  anthocyanidin 3-O-glucosyltransferase 5-like [KO:K12356] [EC:2.4.1.111]
+            109151067  anthocyanidin 3-O-glucosyltransferase 5-like [KO:K12356] [EC:2.4.1.111]
+            109151384  anthocyanidin 3-O-glucosyltransferase 5-like [KO:K12356] [EC:2.4.1.111]
+            109151205  anthocyanidin 3-O-glucosyltransferase 5-like [KO:K12356] [EC:2.4.1.111]
+            109151207  anthocyanidin 3-O-glucosyltransferase 5-like [KO:K12356] [EC:2.4.1.111]
+            109151208  anthocyanidin 3-O-glucosyltransferase 5-like [KO:K12356] [EC:2.4.1.111]
+            109191292  beta-glucosidase 10-like [KO:K01188] [EC:3.2.1.21]
+            109161886  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109181906  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109159477  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109192820  probable beta-glucosidase F [KO:K05349] [EC:3.2.1.21]
+            109191619  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109191638  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109191641  lysosomal beta glucosidase-like [KO:K05349] [EC:3.2.1.21]
+            109173850  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109181662  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109191663  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109191669  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109181392  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109173889  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109163575  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109193047  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109193075  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109193076  beta-glucosidase BoGH3B-like [KO:K05349] [EC:3.2.1.21]
+            109163158  beta-glucosidase 44-like [KO:K05350] [EC:3.2.1.21]
+            109163160  beta-glucosidase 44-like [KO:K05350] [EC:3.2.1.21]
+            109175775  beta-glucosidase 1-like [KO:K05350] [EC:3.2.1.21]
+            109164899  beta-glucosidase 46-like [KO:K05350] [EC:3.2.1.21]
+            109150199  beta-glucosidase 44-like [KO:K05350] [EC:3.2.1.21]
+            109167266  beta-glucosidase 46-like [KO:K05350] [EC:3.2.1.21]
+            109150703  beta-glucosidase 1-like [KO:K05350] [EC:3.2.1.21]
+            109178354  beta-glucosidase 18-like [KO:K05350] [EC:3.2.1.21]
+            109167928  beta-glucosidase 46-like [KO:K05350] [EC:3.2.1.21]
+            109167931  beta-glucosidase 46-like [KO:K05350] [EC:3.2.1.21]
+            109171382  beta-glucosidase 46-like [KO:K05350] [EC:3.2.1.21]
+            109171383  beta-glucosidase 46-like [KO:K05350] [EC:3.2.1.21]
+            109160283  feruloyl CoA ortho-hydroxylase 1-like [KO:K23378] [EC:1.14.11.61 1.14.11.62]
+            109160284  feruloyl CoA ortho-hydroxylase 1-like [KO:K23378] [EC:1.14.11.61 1.14.11.62]
+            109160285  feruloyl CoA ortho-hydroxylase 1-like [KO:K23378] [EC:1.14.11.61 1.14.11.62]
+            109160336  feruloyl CoA ortho-hydroxylase 1-like [KO:K23378] [EC:1.14.11.61 1.14.11.62]
+            109160335  feruloyl CoA ortho-hydroxylase 1-like [KO:K23378] [EC:1.14.11.61 1.14.11.62]
+            109159769  feruloyl CoA ortho-hydroxylase 1-like [KO:K06892] [EC:1.14.11.61]
+            109192759  feruloyl CoA ortho-hydroxylase 1-like [KO:K06892] [EC:1.14.11.61]
+            109152302  feruloyl CoA ortho-hydroxylase 2-like [KO:K06892] [EC:1.14.11.61]
+            109152304  feruloyl CoA ortho-hydroxylase 2-like [KO:K06892] [EC:1.14.11.61]
+            109152305  feruloyl CoA ortho-hydroxylase 2-like [KO:K06892] [EC:1.14.11.61]
+            109152306  feruloyl CoA ortho-hydroxylase 1-like [KO:K06892] [EC:1.14.11.61]
+            109192940  feruloyl CoA ortho-hydroxylase 1-like [KO:K06892] [EC:1.14.11.61]
+            109152436  feruloyl CoA ortho-hydroxylase 1-like [KO:K06892] [EC:1.14.11.61]
+            109152437  feruloyl CoA ortho-hydroxylase 1-like [KO:K06892] [EC:1.14.11.61]
+            109162104  scopoletin glucosyltransferase-like [KO:K23260] [EC:2.4.1.128]
+            109184284  scopoletin glucosyltransferase-like [KO:K23260] [EC:2.4.1.128]
+            109161270  scopoletin glucosyltransferase-like [KO:K23260] [EC:2.4.1.128]
+            109161374  scopoletin glucosyltransferase-like [KO:K23260] [EC:2.4.1.128]
+            109161375  scopoletin glucosyltransferase-like [KO:K23260] [EC:2.4.1.128]
+            109161376  scopoletin glucosyltransferase-like [KO:K23260] [EC:2.4.1.128]
+            109161575  scopoletin glucosyltransferase-like [KO:K23260] [EC:2.4.1.128]
+COMPOUND    C00079  L-Phenylalanine
+            C00082  L-Tyrosine
+            C00223  p-Coumaroyl-CoA
+            C00315  Spermidine
+            C00323  Caffeoyl-CoA
+            C00406  Feruloyl-CoA
+            C00411  Sinapoyl-CoA
+            C00423  trans-Cinnamate
+            C00482  Sinapate
+            C00540  Cinnamoyl-CoA
+            C00590  Coniferyl alcohol
+            C00761  Coniferin
+            C00811  4-Coumarate
+            C00852  Chlorogenate
+            C00903  Cinnamaldehyde
+            C00933  Sinapine
+            C01175  1-O-Sinapoyl-beta-D-glucose
+            C01197  Caffeate
+            C01494  Ferulate
+            C01527  Scopolin
+            C01533  Syringin
+            C01752  Scopoletin
+            C01772  trans-2-Hydroxycinnamate
+            C02325  Sinapyl alcohol
+            C02646  4-Coumaryl alcohol
+            C02666  Coniferyl aldehyde
+            C02887  Sinapoyl malate
+            C02947  4-Coumaroylshikimate
+            C04366  3-(2-Carboxyethenyl)-cis,cis-muconate
+            C05158  trans-beta-D-Glucosyl-2-hydroxycinnamate
+            C05608  4-Hydroxycinnamyl aldehyde
+            C05610  Sinapoyl aldehyde
+            C05619  5-Hydroxyferulic acid methyl ester
+            C05627  4-Hydroxystyrene
+            C05838  cis-2-Hydroxycinnamate
+            C05839  cis-beta-D-Glucosyl-2-hydroxycinnamate
+            C05851  Coumarin
+            C05855  4-Hydroxycinnamyl alcohol 4-D-glucoside
+            C06224  3,4-Dihydroxystyrene
+            C09315  Umbelliferone
+            C10428  Anethole
+            C10434  5-O-Caffeoylshikimic acid
+            C10452  Estragole
+            C10453  Eugenol
+            C10454  Methyleugenol
+            C10469  Isoeugenol
+            C10478  Methylisoeugenol
+            C10945  Caffeic aldehyde
+            C12203  5-Hydroxyferuloyl-CoA
+            C12204  5-Hydroxyconiferaldehyde
+            C12205  5-Hydroxyconiferyl alcohol
+            C12206  Caffeyl alcohol
+            C12208  p-Coumaroyl quinic acid
+            C15804  p-Hydroxyphenyl lignin
+            C15805  Guaiacyl lignin
+            C15806  Syringyl lignin
+            C15807  5-Hydroxy-guaiacyl lignin
+            C16930  Chavicol
+            C18069  N1,N5,N10-Tricoumaroyl spermidine
+            C18070  N1,N5,N10-Tricaffeoyl spermidine
+            C18071  N1,N5,N10-Triferuloyl spermidine
+            C18072  N1,N5,N10-Tri(hydroxyferuloyl) spermidine
+            C18073  N1,N5-Di(hydroxyferuloyl)-N10-sinapoyl spermidine
+            C20225  Coniferyl acetate
+            C20464  Isochavicol
+            C20465  Coumaryl acetate
+            C21459  6-Hydroxyferuloyl-CoA
+            C22070  2,4-Dihydroxycinnamoyl-CoA
+REFERENCE   PMID:14729911
+  AUTHORS   Nair RB, Bastress KL, Ruegger MO, Denault JW, Chapple C.
+  TITLE     The Arabidopsis thaliana REDUCED EPIDERMAL FLUORESCENCE1 gene encodes an aldehyde dehydrogenase involved in ferulic acid and sinapic acid biosynthesis.
+  JOURNAL   Plant Cell 16:544-54 (2004)
+            DOI:10.1105/tpc.017509
+REFERENCE   PMID:14551235
+  AUTHORS   Baucher M, Halpin C, Petit-Conil M, Boerjan W.
+  TITLE     Lignin: genetic engineering and impact on pulping.
+  JOURNAL   Crit Rev Biochem Mol Biol 38:305-50 (2003)
+            DOI:10.1080/10409230391036757
+REFERENCE   PMID:15878986
+  AUTHORS   Rogers LA, Dubos C, Cullis IF, Surman C, Poole M, Willment J, Mansfield SD, Campbell MM.
+  TITLE     Light, the circadian clock, and sugar perception in the control of lignin biosynthesis.
+  JOURNAL   J Exp Bot 56:1651-63 (2005)
+            DOI:10.1093/jxb/eri162
+REFERENCE   PMID:12242395
+  AUTHORS   Whetten R, Sederoff R.
+  TITLE     Lignin Biosynthesis.
+  JOURNAL   Plant Cell 7:1001-1013 (1995)
+            DOI:10.1105/tpc.7.7.1001
+REFERENCE   PMID:8972602
+  AUTHORS   Lorenzen M, Racicot V, Strack D, Chapple C.
+  TITLE     Sinapic acid ester metabolism in wild type and a sinapoylglucose-accumulating mutant of arabidopsis.
+  JOURNAL   Plant Physiol 112:1625-30 (1996)
+            DOI:10.1104/pp.112.4.1625
+REFERENCE   PMID:1477555
+  AUTHORS   Chapple CC, Vogt T, Ellis BE, Somerville CR.
+  TITLE     An Arabidopsis mutant defective in the general phenylpropanoid pathway.
+  JOURNAL   Plant Cell 4:1413-24 (1992)
+            DOI:10.1105/tpc.4.11.1413
+REFERENCE   PMID:14612585
+  AUTHORS   Raes J, Rohde A, Christensen JH, Van de Peer Y, Boerjan W.
+  TITLE     Genome-wide characterization of the lignification toolbox in Arabidopsis.
+  JOURNAL   Plant Physiol 133:1051-71 (2003)
+            DOI:10.1104/pp.103.026484
+REFERENCE   PMID:14568076
+  AUTHORS   Costa MA, Collins RE, Anterola AM, Cochrane FC, Davin LB, Lewis NG.
+  TITLE     An in silico assessment of gene function and organization of the phenylpropanoid pathway metabolic networks in Arabidopsis thaliana and limitations thereof.
+  JOURNAL   Phytochemistry 64:1097-112 (2003)
+            DOI:10.1016/S0031-9422(03)00517-X
+REFERENCE   PMID:10934215
+  AUTHORS   Meyermans H, Morreel K, Lapierre C, Pollet B, De Bruyn A, Busson R, Herdewijn P, Devreese B, Van Beeumen J, Marita JM, Ralph J, Chen C, Burggraeve B, Van Montagu M, Messens E, Boerjan W.
+  TITLE     Modifications in lignin and accumulation of phenolic glucosides in poplar xylem upon down-regulation of caffeoyl-coenzyme A O-methyltransferase, an enzyme involved in lignin biosynthesis.
+  JOURNAL   J Biol Chem 275:36899-909 (2000)
+            DOI:10.1074/jbc.M006915200
+REFERENCE   PMID:16027976
+  AUTHORS   Gachon CM, Langlois-Meurinne M, Henry Y, Saindrenan P.
+  TITLE     Transcriptional co-regulation of secondary metabolism enzymes in Arabidopsis: functional and evolutionary implications.
+  JOURNAL   Plant Mol Biol 58:229-45 (2005)
+            DOI:10.1007/s11103-005-5346-5
+REFERENCE   PMID:10692459
+  AUTHORS   Li L, Popko JL, Umezawa T, Chiang VL.
+  TITLE     5-hydroxyconiferyl aldehyde modulates enzymatic methylation for syringyl monolignol formation, a new view of monolignol biosynthesis in angiosperms.
+  JOURNAL   J Biol Chem 275:6537-45 (2000)
+            DOI:10.1074/jbc.275.9.6537
+REFERENCE   PMID:12009990
+  AUTHORS   Yamauchi K, Yasuda S, Fukushima K.
+  TITLE     Evidence for the biosynthetic pathway from sinapic acid to syringyl lignin using labeled sinapic acid with stable isotope at both methoxy groups in Robinia pseudoacacia and Nerium indicum.
+  JOURNAL   J Agric Food Chem 50:3222-7 (2002)
+            DOI:10.1021/jf011565x
+REFERENCE   PMID:12084820
+  AUTHORS   Eckardt NA.
+  TITLE     Probing the mysteries of lignin biosynthesis: the crystal structure of caffeic acid/5-hydroxyferulic acid 3/5-O-methyltransferase provides new insights.
+  JOURNAL   Plant Cell 14:1185-9 (2002)
+            DOI:10.1105/tpc.140610
+REL_PATHWAY ini00130  Ubiquinone and other terpenoid-quinone biosynthesis
+            ini00400  Phenylalanine, tyrosine and tryptophan biosynthesis
+            ini00941  Flavonoid biosynthesis
+            ini00945  Stilbenoid, diarylheptanoid and gingerol biosynthesis
+KO_PATHWAY  ko00940
+///

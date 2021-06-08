@@ -1,0 +1,120 @@
+ENTRY       psom00944                   Pathway
+NAME        Flavone and flavonol biosynthesis - Papaver somniferum (opium poppy)
+DESCRIPTION Flavones and flavonols (3-hydroxyflavones) are common flavonoids in the plant kingdom. They are synthesized as part of the flavonoid modification pathways in aglycone and glucoside forms.
+CLASS       Metabolism; Biosynthesis of other secondary metabolites
+PATHWAY_MAP psom00944  Flavone and flavonol biosynthesis
+ORGANISM    Papaver somniferum (opium poppy) [GN:psom]
+GENE        113323649  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
+            113275817  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
+            113314103  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
+            113295445  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            113326650  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            113288957  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            113334032  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            113335794  UDP-glycosyltransferase 79B8-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            113291038  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            113291047  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            113290796  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            113339713  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            113296668  anthocyanidin 3-O-glucosyltransferase-like [KO:K22772] [EC:2.4.1.159]
+            113300584  anthocyanidin 3-O-glucosyltransferase-like [KO:K22772] [EC:2.4.1.159]
+            113279697  anthocyanidin 3-O-glucosyltransferase-like [KO:K22772] [EC:2.4.1.159]
+COMPOUND    C00389  Quercetin
+            C00616  Quercetin 3-sulfate
+            C01155  Quercetin 3,3'-bissulfate
+            C01156  Quercetin 3,4'-bissulfate
+            C01265  3,7-Di-O-methylquercetin
+            C01460  Vitexin
+            C01470  Acacetin
+            C01477  Apigenin
+            C01514  Luteolin
+            C01714  Isovitexin
+            C01750  Quercitrin
+            C03515  Luteolin 7-O-glucuronide
+            C03897  Quercetin 3,3',7-trissulfate
+            C03898  Quercetin 3,4',7-trissulfate
+            C03951  Luteolin 7-O-beta-D-glucoside
+            C04024  Vitexin 2''-O-beta-D-glucoside
+            C04199  Isovitexin 2''-O-beta-D-glucoside
+            C04293  Chrysoeriol
+            C04443  3-O-Methylquercetin
+            C04444  3,7,4'-Tri-O-methylquercetin
+            C04608  Apigenin 7-O-beta-D-glucoside
+            C04858  Apigenin 7-O-[beta-D-apiosyl-(1->2)-beta-D-glucoside]
+            C04900  Luteolin 7-O-[beta-D-glucuronosyl-(1->2)-beta-D-glucuronide]-4'-O-beta-D-glucuronide
+            C05622  Malonylapiin
+            C05623  Quercetin 3-O-glucoside
+            C05625  Rutin
+            C05903  Kaempferol
+            C10098  Kaempferide
+            C10107  Myricetin
+            C10175  Quercetin 3-(2G-xylosylrutinoside)
+            C11620  Syringetin
+            C12249  Kaempferol 3-O-glucoside
+            C12626  Kaempferol-3-O-galactoside
+            C12627  Apigenin 7-O-neohesperidoside
+            C12628  Vitexin 2''-O-beta-L-rhamnoside
+            C12629  Isoswertisin 2''-rhamnoside
+            C12630  Scolymoside
+            C12632  Luteolin 7-O-[beta-D-glucuronosyl-(1->2)-beta-D-glucuronide]
+            C12633  Laricitrin
+            C12634  Kaempferol 3-O-beta-D-glucosyl-(1->2)-beta-D-glucoside
+            C12635  Kaempferol 3-sophorotrioside
+            C12636  Kaempferol 3-O-[6-(4-coumaroyl)-beta-D-glucosyl-(1->2)-beta-D-glucosyl-(1->2)-beta-D-glucoside]
+            C12637  Quercetin 3-O-[beta-D-xylosyl-(1->2)-beta-D-glucoside]
+            C12638  Quercetin 3-O-(6-O-malonyl-beta-D-glucoside)
+            C12667  Quercetin 3-O-beta-D-glucosyl-(1->2)-beta-D-glucoside
+            C12668  Quercetin 3-O-beta-D-glucosyl-(1->2)-beta-D-glucosyl-(1->2)-beta-D-glucoside
+            C16490  Kaempferol 3-O-beta-D-glucosylgalactoside
+            C16911  Afzelin
+            C19796  Quercetin 3-O-rhamnoside 7-O-glucoside
+            C21833  Kaempferol-3-O-rutinoside
+            C21854  Kaempferol 3-O-rhamnoside-7-O-glucoside
+REFERENCE   PMID:3994393
+  AUTHORS   De Luca V, Ibrahim RK
+  TITLE     Enzymatic synthesis of polymethylated flavonols in Chrysosplenium americanum. I. Partial purification and some properties of S-adenosyl-L-methionine:flavonol 3-, 6-, 7-, and 4'-O-methyltransferases.
+  JOURNAL   Arch Biochem Biophys 238:596-605 (1985)
+            DOI:10.1016/0003-9861(85)90205-X
+REFERENCE   PMID:6462109
+  AUTHORS   Jourdan PS, Mansell RL
+  TITLE     Isolation and partial characterization of three glucosyl transferases involved in the biosynthesis of flavonol triglucosides in Pisum sativum L.
+  JOURNAL   Arch Biochem Biophys 213:434-43 (1982)
+            DOI:10.1016/0003-9861(82)90569-0
+REFERENCE   PMID:10567367
+  AUTHORS   Miller KD, Guyon V, Evans JN, Shuttleworth WA, Taylor LP
+  TITLE     Purification, cloning, and heterologous expression of a catalytically efficient flavonol 3-O-galactosyltransferase expressed in the male gametophyte of Petunia hybrida.
+  JOURNAL   J Biol Chem 274:34011-9 (1999)
+            DOI:10.1074/jbc.274.48.34011
+REFERENCE   PMID:12482447
+  AUTHORS   Cacace S, Schroder G, Wehinger E, Strack D, Schmidt J, Schroder J
+  TITLE     A flavonol O-methyltransferase from Catharanthus roseus performing two sequential methylations.
+  JOURNAL   Phytochemistry 62:127-37 (2003)
+            DOI:10.1016/S0031-9422(02)00483-1
+REFERENCE   PMID:15807784
+  AUTHORS   Tohge T, Nishiyama Y, Hirai MY, Yano M, Nakajima J, Awazuhara M, Inoue E, Takahashi H, Goodenowe DB, Kitayama M, Noji M, Yamazaki M, Saito K
+  TITLE     Functional genomics by integrated analysis of metabolome and transcriptome of Arabidopsis plants over-expressing an MYB transcription factor.
+  JOURNAL   Plant J 42:218-35 (2005)
+            DOI:10.1111/j.1365-313X.2005.02371.x
+REFERENCE   PMID:17277900
+  AUTHORS   Kubo H, Nawa N, Lupsea SA
+  TITLE     Anthocyaninless1 gene of Arabidopsis thaliana encodes a UDP-glucose:flavonoid-3-O-glucosyltransferase.
+  JOURNAL   J Plant Res 120:445-9 (2007)
+            DOI:10.1007/s10265-006-0067-7
+REFERENCE   PMID:24241851
+  AUTHORS   Knogge W, Weissenbock G
+  TITLE     Tissue-distribution of secondary phenolic biosynthesis in developing primary leaves of Avena sativa L.
+  JOURNAL   Planta 167:196-205 (1986)
+            DOI:10.1007/BF00391415
+REFERENCE   PMID:24177970
+  AUTHORS   Anhalt S, Weissenbock G
+  TITLE     Subcellular localization of luteolin glucuronides and related enzymes in rye mesophyll.
+  JOURNAL   Planta 187:83-8 (1992)
+            DOI:10.1007/BF00201627
+REFERENCE   
+  AUTHORS   Suzuki H, Nakayama T, Nagae S, Yamaguchi M, Iwashita T, Fukui Y, Nishino T.
+  TITLE     cDNA cloning and functional characterization of flavonol 3-O-glucoside-6"-O-malonyltransferases from flowers of Verbena hybrida and Lamium purpureum.
+  JOURNAL   J Mol Catal B 28:87-93 (2004)
+            DOI:10.1016/j.molcatb.2004.01.005
+REL_PATHWAY psom00941  Flavonoid biosynthesis
+KO_PATHWAY  ko00944
+///
