@@ -12,10 +12,9 @@ def flav_check(label, ec_list):
 
 # returns true if at least 1 arg is in the list
 def or_in(items, *args):
-    found = 0
     for a in args:
-        if a in items: found += 1
-    return found  # non-zero values are treated as true
+        if a in items: return True
+    return False
 
 
 # returns true only if all args are in the list
