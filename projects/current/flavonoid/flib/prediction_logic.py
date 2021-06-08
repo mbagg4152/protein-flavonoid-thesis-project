@@ -17,7 +17,6 @@ def or_in(items, *args):
     return False
 
 
-
 # returns true only if all args are in the list
 def and_in(items, *args):
     for a in args:

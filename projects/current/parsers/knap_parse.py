@@ -16,10 +16,14 @@ PLANT_PARSE = True
 
 
 def main():
-    try: os.mkdir(new_dir_plants)
-    except FileExistsError: pass
-    try: os.mkdir(comp_dir)
-    except FileExistsError: pass
+    try:
+        os.mkdir(new_dir_plants)
+    except FileExistsError:
+        pass
+    try:
+        os.mkdir(comp_dir)
+    except FileExistsError:
+        pass
     for key in flav_dict:
         tmp_name = flav_dict[key]
         tmp_url = URL_KNAP_CHEM + key.strip()
@@ -33,7 +37,7 @@ def main():
     for key in flav_orgs:
         if len(flav_orgs[key]) > 0:
             for item in flav_orgs[key]:
-                ks_str += item + ',' + key + '\n'
+                ks_str += item + '\t' + key + '\n'
 
     for key in plant_dict:
         tmp_val = plant_dict[key]
@@ -46,19 +50,19 @@ def main():
     ks_file.write(ks_str)  # write the formatted string to the file
     ks_file.close()
 
-    # ks_file = open(ks_plants_csv, 'w')  # make file for outputting the knapsack data
-    # ks_str = ''
-    #
-    # for key in plant_flavs:
-    #     if len(plant_flavs[key]) > 0:  # at least one entry was found for the plant
-    #         for item in plant_flavs[key]:
-    #             # add to the output string such that the data is written in CSV format
-    #             ks_str += key + ',' + item[0] + ',\"' + item[1] + '\"\n'
-    #     else:
-    #         ks_str += key + '\n'
-    #
-    # ks_file.write(ks_str)  # write the formatted string to the file
-    # ks_file.close()
+    ks_file = open(ks_plants_csv, 'w')  # make file for outputting the knapsack data
+    ks_str = ''
+
+    for key in plant_flavs:
+        if len(plant_flavs[key]) > 0:  # at least one entry was found for the plant
+            for item in plant_flavs[key]:
+                # add to the output string such that the data is written in CSV format
+                ks_str += key + '\t' + item[0] + '\t\"' + item[1] + '\"\n'
+        else:
+            ks_str += key + '\n'
+
+    ks_file.write(ks_str)  # write the formatted string to the file
+    ks_file.close()
 
 
 def get_knap_file(name, url):
@@ -81,6 +85,7 @@ def parse_chem_file(file_name, chem_name):
 
 
 def parse_plant_file(file_name, plant_name):
+    # print(plant_name)
     file = open(file_name, 'r')
     lines = file.readlines()  # each metabolite line begins with this HTML tag
     plant_flavs[plant_name] = []
@@ -94,47 +99,51 @@ def parse_plant_file(file_name, plant_name):
         tmp_has_cas = re.findall(RE_HAS_CAS, line)
         tmp_no_cas = re.findall(RE_NO_CAS, line)
         tmp_list = []
-        if len(tmp_no_cas) > 0:
-            tmp_id = tmp_no_cas[0][0]
-            tmp_name = tmp_no_cas[0][1]
-        elif len(tmp_has_cas) > 0:
+
+        if len(tmp_has_cas) > 0:
             tmp_id = tmp_has_cas[0][0]
             tmp_name = tmp_has_cas[0][2]
+        elif len(tmp_no_cas) > 0:
+            tmp_id = tmp_no_cas[0][0]
+            tmp_name = tmp_no_cas[0][1]
         else:
             continue
         tmp_list.append(tmp_id)
         tmp_list.append(tmp_name)
         for key in flav_list:
-            tmp_cleaned = tmp_name.replace('(', '').replace(')', '').replace('+', '').replace('-', '')
+            tmp_cleaned = tmp_name.replace('(+)', '').replace('(-)', '')
+            tmp_cleaned_nf = tmp_name.replace('(', '').replace(')', '').replace('+', '').replace('-', '')
             tmp_list[1] = tmp_cleaned
-            if key.upper().strip() in tmp_cleaned.upper().strip():
+            # print()
+            if key.upper().strip() in tmp_cleaned_nf.upper().strip():
+                # print('matched')
                 flav_match += 1
                 plant_flavs[plant_name].append(tmp_list)
                 continue
 
-        if flav_match == 0:
-            for key in flav_synonyms:
-                for flav in flav_synonyms[key]:
-                    if flav.upper().strip() == tmp_name.upper().strip():
-                        syn_match += 1
-                        tmp_list[1] = '{' + key + ' ALT NAME} ' + tmp_name
-                        plant_flavs[plant_name].append(tmp_list)
-                    elif flav in tmp_name:
-                        tmp_list[1] = '{' + key + ' REL} ' + tmp_name
-                        plant_flavs[plant_name].append(tmp_list)
-
-            # if syn_match == 0:
-            #     for key in flav_relatives:
-            #         for flav in flav_relatives[key]:
-            #             if flav.upper().strip() in tmp_name.upper().strip():
-            #                 rel_match += 1
-            #                 tmp_list[1] = '{' + key + ' REL} ' + tmp_name
-            #                 plant_flavs[plant_name].append(tmp_list)
-            #     if rel_match == 0:
-            #         for flav in flav_list:
-            #             if flav.upper().strip() in tmp_name.upper().strip():
-            #                 tmp_list[1] = '{' + flav + ' IN NAME} ' + tmp_name
-            #                 plant_flavs[plant_name].append(tmp_list)
+        # if flav_match == 0:
+        #     for key in flav_synonyms:
+        #         for flav in flav_synonyms[key]:
+        #             if flav.upper().strip() == tmp_name.upper().strip():
+        #                 syn_match += 1
+        #                 tmp_list[1] = '{' + key + ' ALT NAME} ' + tmp_name
+        #                 plant_flavs[plant_name].append(tmp_list)
+        #             elif flav in tmp_name:
+        #                 tmp_list[1] = '{' + key + ' REL} ' + tmp_name
+        #                 plant_flavs[plant_name].append(tmp_list)
+        #
+        #     if syn_match == 0:
+        #         for key in flav_relatives:
+        #             for flav in flav_relatives[key]:
+        #                 if flav.upper().strip() in tmp_name.upper().strip():
+        #                     rel_match += 1
+        #                     tmp_list[1] = '{' + key + ' REL} ' + tmp_name
+        #                     plant_flavs[plant_name].append(tmp_list)
+        #         if rel_match == 0:
+        #             for flav in flav_list:
+        #                 if flav.upper().strip() in tmp_name.upper().strip():
+        #                     tmp_list[1] = '{' + flav + ' IN NAME} ' + tmp_name
+        #                     plant_flavs[plant_name].append(tmp_list)
 
     file.close()
 

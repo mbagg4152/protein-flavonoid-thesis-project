@@ -47,8 +47,8 @@ RE_CHIRAL = r'<tr.id=.c[a-z]+C.+A.+t.>\s*<th>C[a-z]+\sAt.+Co.+t</th>\s*<td>(\d+)
 RE_COMP_ID = r'(NPC\S*)'
 RE_COMP_NAME = r'NPC\S*\s*([^\t\r\n]*)'
 RE_FORMULA = r'.*<tr id=.ch.*F.*a.>\s*<th>F.*a</th>\s*<td>(.*)</td>\s*</tr>\s*<tr id=.ch.*Mo.*W.*t\">'
-RE_HAS_CAS = r'<tr><td class="d1"><a href=information\.php\?word=C[0-9]* target="_blank">(C[0-9]*)<\/a><\/td><td ' \
-             r'class="d1">([0-9]*-[0-9]*-[0-9]*)<\/td><td class="d1">([^<]*)<\/td><td class="d1"> '
+RE_HAS_CAS = r'<tr><td.class=.d1.><a.href=information\.php\?word=C[0-9]+.target=._blank.>(C[' \
+             r'0-9]+)<.a><.td><td.class=.d1.>([0-9]+-[0-9]+-[0-9]+)<\/td><td.class=.d1.>([^<]*)<.td><td.class=.d1.>'
 RE_INCHI = r"<tr id=\"chemicalInChI\"><th>InChI<\/th><td style=\"word-wrap: break-word\">(InChI=.*)</td></tr><tr " \
            r"id=\"chemicalInChIKey\"> "
 RE_INCHI_KEY = r"<th>InChIKey<\/th><td>(.*)</td></tr></table></div><div class=\"col-md-4"
@@ -59,8 +59,7 @@ RE_KNAP_NAME = r'<th class=\"inf\">Name</th>\s*<td colspan=\"4\" class=\"inf\">(
 RE_KNAP_ORG = r'.*</td><td class=\"?org2\"?>([a-zA-Z0-9!@#$&()\\-`.+,/\"\s]*)'
 RE_NAME_LONG = r'id=.ch[a-z]+I[a-z]+s.>\s*<th>Id.+rs</th>\s*<td.s.+=.word.+word.>(.*)</td></tr><tr.id=.ch[a-z]+Formula'
 RE_NAME_REG = r'</ul>\s*</div>\s*<h1.id=.m.+eId.>.{3}</h1>\s*<h4 id=.m.+e.>\s*([^><!/].*)</h4>.*<div.class=.form-group'
-RE_NO_CAS = r'<tr><td class="d1"><a h.*n\.php\?word=C[0-9]* target="_blank">(C[0-9]*)<\/a><\/td><td ' \
-            r'class="d1"><\/td><td class="d1">([^<]*)<\/td><td class="d1"> '
+RE_NO_CAS = r'<tr><td class=.d1.><a.h.*n\.php\?word=C[0-9]* target="_blank">(C[0-9]*)<\/a><\/td><td class="d1"><\/td><td class="d1">([^<]*)<\/td><td class="d1">'
 RE_NUM_KNAP_RESULTS = r'Number of matched data :([0-9]*).*<br>'
 RE_ORG_COMP_ID = r'-(NPC\S*)'
 RE_ORG_ID = r'(NPO\S*)'
