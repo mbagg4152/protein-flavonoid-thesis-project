@@ -1,13 +1,6 @@
 from flib.fconstants import *
 
-def flav_check(label, ec_list):
-    # determine which function to call based on the label passed in using the label function pairs
-    # options = {AGI: agi, APIF: apif, AZEL: azel, BUN: bun, BUTN: butn, CHSN: chsn, DAID: daid, DEC: dec, DF74: df74,
-    #            DFV: dfv, DGEN: dgen, DKAM: dkam, DTRI: dtri, DMYR: dmyr, DQUE: dque, DLM: dlm, EC: ec, EGT: egt,
-    #            ERDC: erdc, ERD: erd, EZEL: ezel, FSTN: fstn, G50: g50, GBAN: gban, GC: gc, GEN: gen, GGT: ggt,
-    #            GALN: galn, HCC: hcc, HDAI: hdai, HESP: hesp, HWB: hwb, KMP: kmp, KXN: kxn, LDEL: ldel, LCYN: lcyn,
-    #            LPEL: lpel, LU2: lu2, LUTF: lutf, MYC: myc, MYF: myf, NARC: narc, NAR: nar, PBAN: pban, PICH: pich,
-    #            PINO: pino, PELR: pelr, QUE: que, SOA: soa, TET2: tet2, TISO: tiso, TNON: tnon, V1G: v1g}
+def flav_check(label, ec_list): # take the label, which is the same as the respective function name and then call the function.
     try: res = label(ec_list)
     except KeyError: res = False
     return res
