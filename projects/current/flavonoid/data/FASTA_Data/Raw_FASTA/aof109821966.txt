@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05243: 109821966</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620856808">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620856808">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aof:109821966 -->&gt;aof:109821966 K12930 anthocyanidin 3-O-glucosyltransferase [EC:2.4.1.115] | (RefSeq) anthocyanidin 3-O-glucosyltransferase 7-like (N)
+accgccatcgtcctgaacaccttcaccggccttaacccggacattgacgccgaactcgcc
+tccctcttcaggaaccatctccccatcggccccttcaacctcctcaacaacgacactatg
+gtcaactacaacaacggcgactacgaatgcctatcctggctcaaccgccacggccctgcc
+actgtcacctacatcagcttcggcacgacgatggcacctggacggtccgacctagaggag
+ctcgcccacggcctagaagccgccggcgttccgttcttgtggtcgttgagaggtaaggca
+agggatgggctcccctcagggtttctcgacaggactaaggggagggggctcaccgtggcg
+tgggccccacaggttagggtgctggcccacgcggcggtgggggcgttcttgacgcattgc
+gggtggaactcagtaatggagggcatcaccaacgccgtgccgatggtgtgcaggccgttc
+ttcggggaacaaaaggcgaacgcgagaatggtggccgaggggtggaggataggggtggcg
+atcgacagtgagggcgtggcgatgagggagaaggttgttaatgctctgaaaatggttttg
+agggaggaggaaggcaggagaatgagggagaggttaggagagattaagaagcaagcggag
+aaggcggttggagacggcgggagttcaagggagaattttagaagagttttgaaggtaata
+tgcggcggtctagatggctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aof:109821966+nt">BLAST</a>
+</body>
+</html>

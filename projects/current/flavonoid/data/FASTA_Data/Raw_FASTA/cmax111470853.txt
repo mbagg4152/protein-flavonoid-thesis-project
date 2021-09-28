@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05246: 111470853</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620859529">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620859529">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cmax:111470853 -->&gt;cmax:111470853 K11188 peroxiredoxin 6 [EC:1.11.1.7 1.11.1.27 3.1.1.-] | (RefSeq) 1-Cys peroxiredoxin A isoform X1 (N)
+atgccaggccttaccatcggcgatacagtgcccaacattcaagctgatagcacccatgga
+aagatcagtttatatgactacatcgacggcagctgggccatcatcttctctcacccaggt
+gatttcactccagtttgtactacggagctggggatgatcgctgctcaggcagaggagttt
+gctcaacgaggtgtgaagctcataggattgtcttgtgatgatgttcaatctcataccgat
+tggatcaaggatatcgaagcctacaataatggaaagaaggtgacatatccaatactggcg
+gatccaaagggggagttgatcaaggaactgaacatggtggacccggacgagaaggactca
+tcaggcagggcagtgccatcgagagcattgcacatcatcggtccagacaagaaggtgaag
+ctgagcttcctgtacccagcaagtacagggaggaacatggaggaagtgatgagggttttg
+gagtcattgcagaaggctgcaaagcacaaggtttgcactccagttaactggaagccaggc
+gaggcctgcgtgattccgcccaatgtaactaatgatcaggccaagcaaatgttccctcaa
+ggctttgaaactcttgatcttccttccaagaagggatacttgcgttttgctgctgtctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cmax:111470853+nt">BLAST</a>
+</body>
+</html>

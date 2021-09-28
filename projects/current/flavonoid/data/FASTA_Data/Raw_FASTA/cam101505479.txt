@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02819: 101505479</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620859218">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620859218">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cam:101505479 -->&gt;cam:101505479 K22794 flavonol-3-O-glucoside/galactoside glucosyltransferase [EC:2.4.1.239 2.4.1.-] | (RefSeq) UGT79B24; anthocyanidin 3-O-glucoside 2''-O-glucosyltransferase (N)
+atggaagctcctcctttgcacttagctatgtttccatggtttgctatgggacatttcaca
+ccatttcttcacctctctaacaaattagcacaaagaggacacaaaatctcattcttcatt
+cccaaaaaaacactcaacaagttacagcatctaaaccttcatccacatcttataacattt
+ttcactatcaatgttcctcatgttgatggtcttccttatggtgctgaaacaacttcagat
+gtccccttttctttattccctcttattgctacagccatggatcaaactgacaaagaaatt
+gaacttcttctaaaggaactaaaaccacaaatagttttctttgattttcaatattggctc
+ccaaacttgactaaaaaacttggcatcaaaagtgttcaatacatgataataaatccaatg
+acaacagcttaccttggaactggaccaagacaaagccaaggaagagagttaactgaagct
+gatctcatgaaaccaccgtcaggcttccctggttcatgcatcaagtttcattcatacgaa
+cttcgatacctagcttcaatagggaatgttgtatttggaagtggtgttttgttaatgtat
+cgtttggacacaggtacaagtttggcagatgcaattggttacaaaggatgcaaagaaatt
+gatggaccatatgttgaatatcttagaactatttatggaaagcctgttctgctttcaggt
+cctcttttaccagagccaaccttatctagtttagaggaaaaatgggtatcatggcttaag
+ggattcaaacttggttctgtggtttattgtgcatatggaagtgaaagtgcattagaacat
+aatcaattcaaagagttgttgcttggtcttgagttaacaggttttccatttcttgtggct
+cttaagcctccaattggatttgagtctattgaagaggctctcccacaagggttcaatgaa
+agagtcaaaggaagagggattatttatggaggttgggtgcagcaacaattgattttagaa
+cattcatctgttgggtgttttataacacattgtggagctgcttctataactgagggactc
+gttaatatgtgtcaattggtgttgttgcctcatgtcggtagtgatcatataatgaatgca
+agaatgatgagtgcaaagttgaaagttggtgtggaagttgagaaaggtgaagaagatgga
+ttgtttacaaaagaaagtgtgtgtaaggctgtgaatactgtcatggatgaagagaatgag
+gttggaagagaagttagagcaaatcatgccaaactgagaaacatccttcttagcaacaat
+ttaaaatcttcatgtgttgatagtttctgtcaagaactttatgatttggtctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cam:101505479+nt">BLAST</a>
+</body>
+</html>

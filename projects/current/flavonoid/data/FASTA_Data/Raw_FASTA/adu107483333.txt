@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04300: 107483333</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838019">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838019">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- adu:107483333 -->&gt;adu:107483333 K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) stilbene synthase 3 (N)
+atggtgtctgcgagtgacatccgcaaggttcaaagagcagaaggccctgcaaccgtatta
+gcgattggcacagcaaatccaccaaactgtgttgatcagagcacatatgcagattactat
+tttagagtaaccaatagcgagcacatgaccgacctcaagaaaaaatttcagcgcatttgt
+gagagaacacagatcaagaacagacatatgtatttaacagaagaaatactcaaggagaat
+cctaacatgtgcgcatacaaagcaccgtccttggatgcaagggaagacatgatgattagg
+gaggtaccaagggttggaaaagaggctgcaaccaaggccatcaaggaatggggtcagcca
+atgtctaagatcacacatttgatcttctgcaccaccagcggcgttgcgttgcctggcgtt
+gattacgaactcatcgtactcttagggctcgacccatgtgtcaagaggtacatgatgtac
+caccaaggctgcttcgctggcggcactgtccttcgtttggctaaggacttggctgaaaac
+aacaaggatgctcgtgtgcttattgtttgttctgaaaatacttcagtcacttttcgtggt
+cctagtgagacagacatggatagtcttgtagggcaagcattgtttgccgatggagctgct
+gcgattatcattggttctgatcctgttccagaggttgagaatcctctctttgagattgtt
+tcaactgatcaacaacttgtccctaacagccatggagccatcggtggtctccttcgtgaa
+gttggacttaccttctatcttaacaagagtgttccggatattatttcacaaaacatcaat
+gatgcactcactaaagcttttgatccactaggtatatctgattataactcaatattttgg
+attgcacatcctggtggacgtgcaattttggaccaagttgaagagaaggtgaacttgaaa
+ccagagaagatgaaagccactagagatgtgcttagcaattatggtaacatgtcaagtgca
+tgtgtgttcttcattatggatttgatgagaaagaagtcacttgaagcaggacttaaaacc
+accggagaaggacttgattggggtgtgcttttcggttttggtcctggtctcactattgaa
+actgttgttctccgcagtgtggccatatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=adu:107483333+nt">BLAST</a>
+</body>
+</html>

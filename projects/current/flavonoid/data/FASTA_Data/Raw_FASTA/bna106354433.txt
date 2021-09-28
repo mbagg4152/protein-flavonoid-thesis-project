@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04128: 106354433</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854760">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854760">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- bna:106354433 -->&gt;bna:106354433 K10757 flavonol 3-O-glucosyltransferase [EC:2.4.1.91] | (RefSeq) UDP-glycosyltransferase 78D2-like (N)
+atggccaacaccgaccagccaaccacagactcccacgtagccgtcctcgctttccccttc
+ggcactcacgccgctcctctcctctccgtcacgcgccgtctcgcctccgcctctccctcc
+acactcttctccttcttcaacaccgtccaatccaactcctcgttattcccctcagatctc
+ccatcgaacatccgagtccacgacgtcgctgacggcgtcccggagggatacgtgttctcc
+gggagaccacaggaggcgatcgagctgtttctcgtagcggcgctggagagtttccgggaa
+gcgatcgcgtcggcggagaatgacgccggtaagaaagtgacgtgcatgttgacggatgcg
+ttcttctggttcgcgtcggatatggcggcggagatgaaggcgtcatgggttgcgttttgg
+acagccggaccaaactcgctgtctgttcatctctacacagatctcatcagacaatccgta
+cgtgtgaatgatgggtgtatggaggagacactagggtttatctctggaatggagatgatc
+agagtcaaagacacaccggaaggagttgtgtttgggaacttagactctgttttttcagac
+acgttgcataaaatgggtcttgctttacctcgtgccgatgcggttttcatcaattcattt
+gaagagctagataatacactgacgaataacctcaagtcggagttcaaacgttatctgaat
+attggtcctctcgcgttgttatcatctacatctcaagcggatgcactagtggaagatcct
+cacggctgtctggcttggatcaagaagcagaggactggttctgtagcgtacattagcttt
+ggtacagtcatgacaccgcctcccggagagcttgtggcgatagcggaagggttggagtcg
+agcaaagtgccgtttgtttggtcgcttaaggagaagaacatggttcagttaccaaaaggg
+tttctggaacggacaagagagcaagggatagtggttccatgggctccacaagttgagctg
+ttgaaacacgaagcaacgggtgtgtttgtgacgcattgtggatggaactccgtgttggag
+agtgtttccggaggtgtgccgatgatttgcaggccgttctttggggatcagagactgaac
+ggatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=bna:106354433+nt">BLAST</a>
+</body>
+</html>

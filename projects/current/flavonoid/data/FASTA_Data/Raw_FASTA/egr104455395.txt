@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03547: 104455395</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847782">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847782">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- egr:104455395 -->&gt;egr:104455395 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) acetyl-CoA-benzylalcohol acetyltransferase (N)
+atgaaggtggaaatacagtggaagaagctggtcaagccgtcagtgccgacaccgagcgac
+cagcgaaaatggaagctaacgtcaatagatgagcttcagatgccaaattatgtgggcgtt
+atcttctactatagagatgatgctgggaaccccagagtcgatatatctcaaaggcttcac
+caaatggaggagtcactttccaaaactctaaccctcttttatcctatggcagggagatac
+atcgaggacgactatggttgttttatcgattgtaacgaccttggagtggagttcgtccat
+gccaaagtggatggccaaattgatcagcttctccatagagaccccgacatggatttgctc
+gaatatttgtcgcaattcccgaacaattcagtaggcaatccactagtggtgattcaagtg
+aatacgttcgagtgcggcggaatagcaattggcttgcgctctacacacaggatcagcgac
+gtgtgcaccatagccatattcattaattcgtgggccaccgcttgccgaggtaacgtagat
+gttacagtctgtccaagtttcgagttgtcgtctctattcccaatgaaagtgtcggccgtt
+gcgaattggcctccgccacggagtactggcagcaaggaattcacggtgtctaggttcagg
+ttcagcggtgatgctatatcgaagctgagagccctagcaagggatgatgcaaaggattca
+atggccaacaacttccagccttcgagggtggaggttgtttcggcactaataagtaaggct
+ctcgtcaagattgatcgatgtggacagggcgaagaaaggcctatcgcagtttatatgacg
+tttaacttgcgcgataaagtcaaactaaagatacccgcaaattcttgtggcaatttcttc
+agcgtgatttctgggcgctccgatcaacccgcggccagcaaaaggaatccggagttcaat
+gagatggtgaatataatccacaatataatatcggacgctaaaacgaaatatgcaacaata
+gtaaacaagcaggagttctgctcgacggtggggaattctatagccgaatttgtcaaagtc
+gcgtcctcaaacgaagtgcatacgatattttttagtagctggtgccgtttcgggctattt
+gagattgacttcgggtggggaagtccggttcccgtcagcaacatatcattgaatctcaga
+tcggcctttcttatcgacgatgaagagggcaaaggaattgatgcatggacaaccaccact
+ggagatgagatgattcttcttaaacaagatccggatatactggcattcacttccaagttg
+gaggtggagaggttgcacgaatatgtaatctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=egr:104455395+nt">BLAST</a>
+</body>
+</html>

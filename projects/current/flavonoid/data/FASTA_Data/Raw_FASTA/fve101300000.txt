@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02666: 101300000</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844279">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844279">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- fve:101300000 -->&gt;fve:101300000 K12930 anthocyanidin 3-O-glucosyltransferase [EC:2.4.1.115] | (RefSeq) anthocyanidin 3-O-glucosyltransferase 2 (N)
+atggcaccagtatcaaaccaggtgggtggtcatgtggcggtgctagcctttcccttctcc
+actcacgccgccccgctgttgaacattgtgtgccgcctcgccaccgccgcgccaagcact
+ctgttctctttcttcaacaccaagcaatccaacagctcaatcctagcaggcaacacgtcc
+gtactgcgttacagtaacgtaagtgtgtgtgaggtggcggatggtgtgccggaggggtat
+gttttcgtgggtaagccacaggaggacatagagttgttcatgaaggctgccccggacaac
+ttcaggaggtgcttagaggcgtcggtggcggagtccgggagggaggtcagctgcttggtc
+actgacgccttcttttggttcggtgctcatatggcggatgacatgggaggagtgccgtgg
+gtgccgttctggaccgccggaccggcttcactctcggctcatgtacacactgatctcatc
+aggaacacaactggtgggggtggtcacgatgagaaggaaaccatcactgtcattgcagga
+atgtcgaaagtgagacctcaggatctgccagagggaatcatcttcggaaacttggagtcg
+ctcttttcacgtatgcttcaccagatgggacagatgctaccacttgcaaccgcagttttc
+atcaactccttcgaagaactagatcctgtgatcacaaatgatttgaagtccaaattcaag
+aggttcctcaacgtgggaccattggacctactagaaccaccagcaagtgcagccaccacc
+acaccgcagacggcggaagctgttgccggagatggctgcttatcgtggcttgacaaacag
+aaggcggcgtccgtggtctatgtgagttttggatcagtaacaagaccatcgccggaagag
+cttatggcgctagctgaggctctggaggctagtagggttccattcttgtggtcacttcgg
+gacaacttaaagaacccacagctagatgagttcctaagcaaaggaaagttgaacggaatg
+gtggtgccttgggcgccacaaccacaggtcctggcgcatggttcagttggagcctttgta
+acacattgcggttggaactcggtgcttgagagcgtagcaggtggagtgcctttgatttgc
+aggcctttcttcggcgatcagaaacttaacgcgaggatggtagaggatgtgtggaagatt
+ggtctcaggttggagggtggggttttcaccaagaatggcatgcttaagagtttggacatg
+ctattatcacaagacgagggggccaaaatgaaaaacaagatcaacacactaaaacaactc
+gcacaacaggccgtagaaccaaaagggagctccactaggaactttgagtcattgttggaa
+atgaccacaaccaattaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=fve:101300000+nt">BLAST</a>
+</body>
+</html>

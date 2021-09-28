@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 100127365</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844508">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844508">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:100127365 -->&gt;gmx:100127365 K13264 isoflavone 7-O-glucoside-6''-O-malonyltransferase [EC:2.3.1.115] | (RefSeq) AT133; malonyl-CoA:isoflavone 7-O-glucoside-6''-O-malonyltransferase (N)
+atggcagagtcaccaaccttcaaagtccatgaagtctgctccatttcgccgccacaagaa
+accccaccaacaactcttcccttcaccctcttcgacgtcctatggcttcggttcccccca
+gtggagcgtctcttcttctattccttcccaaacccaacaacaacatcatttttcgacacc
+accgttctcccaaatctcaaacactccctctccctcactctccaccacttccctcctctc
+gccggcaccatcacatggcccaatcactcacccctccctctcataacctacactcccggc
+aacaccatccccttcacaatcgcccaatccaacgcagatttcaacaccctctcttcaaac
+ctctctcaagtcaaccaccacctccaaaacctaataccccacttaaccatttcccatgaa
+gaagcttccgtgttagcacttcaactcaccctcttccccaaccaaggcttttcgattgga
+atcacaacccaccacgctgcacttgatggaaagtcttcgactttgttcatcaaatcgtgg
+gcgcatttttgttctcagcttaatacctccccagaagaaccgttatcactaccaaagcat
+ctaataccctcgtttgatagatctgttataagagacactttggggatcggtgagatttac
+gcgaactcatggatgaacttcggtggagccaccaatgaccgaagcttgaatgtgtgggat
+tccctcggtggaagtcaaaccgatttggttaaagggttgttcgagttgacaccgttggat
+atcaagaagctgaagaaattagcggagtctaaggttgttgtcggagacaacaagaagaag
+attagggtgacatcgttcacggtcacgtgcgcttacttgttgtcatgcgcggtgaaagcg
+gagcaacccaactgcgaaagagtgccttttattttcagcgtggactgtagggcgcgtttg
+gatccaccaattccgggaacgtactttgggaacagcgtcgtgtctttgttggtgatagca
+aagcgagaagagctattgggggaagaagcgttttttaaaagcgttttagggataagcgaa
+gagttgaacaggatagagggtgacgtgttgaacggtgcggacaggtggatgccgaagatt
+caatcggtgatgtcggagaggccgaggttgttctctgttgcggggtctccgaggtttgag
+gtttacgatgttgactttgggtggggaaggcctaagaaagtggatgttacttccgttgat
+aaaacgggtgcgttttcactttcggagactagggatcacagtggaggcattcaaattggg
+ttggcgttgaccaagagtcaaatggaggcgttttctacggtttttgctcaagggcttgag
+tccttggaataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:100127365+nt">BLAST</a>
+</body>
+</html>

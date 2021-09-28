@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05242: 111308706</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847452">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847452">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- dzi:111308706 -->&gt;dzi:111308706 K22794 flavonol-3-O-glucoside/galactoside glucosyltransferase [EC:2.4.1.239 2.4.1.-] | (RefSeq) UDP-glycosyltransferase 79B30-like (N)
+atggcacacaaaacctttcacattgcgatgtatccatggtttgcccttggccatattact
+gcatttgttcacattgccaacaaactagcggagagaggccatagaatttccttcttcttg
+ccagccaaaacacagcgtaaggttgaggcttttaatctccacccggatctcataaccttc
+attccaatcaccgttccacatgttgaaggcctgcctctcggcgctgaaacaacaaatgac
+gttccttttcctttgcaccctctcattatgaccgccatggacctcacggaacctgagatt
+gaagcttccctccgtgaactcaaaccccatttcgttttctatgatttcacttgctggttg
+ccagccttgactcgcaggctaggcatcaagtccgtgctttattgtatcattagctccgta
+actgttggatatcttctgagtccagaaagaaagactcttgagaaaggtttgactgggcct
+gatctcctggaacctccagaaggtttcccttcttcaagtatcaagctacgcgcccatgaa
+gctcgaggattagctgcggtaacaactatggattatggaagtggtatttcgtttgtggag
+cgccagctaaggtctttaagtgactgcgatgcaattggtttcaagacatgcagggagatt
+gaaggaccttattgtgaatatattggaaaccagttcgaaaagccagtgattttcgcaggt
+ccagtagtgccagagccaccaaaaatagcgttagaagaacgatgggaaaagctattaatc
+aactttcaagctaagaccctgatcttctgtgcctttgggagtgagtgtgttctcaaaaag
+gatcagttccaggaattggttttaggccttgagcttacaggtttaccattcttggttgcc
+ctgaaaccaccaataggagctgaaacaattgagtcagccttgccagaaggattccaaggg
+agagtggaaggaagaggattggttcatggaggttgggtgccgcaacaactgatcctgatg
+catccttccgtggggtgtttcgtgactcactgcgggtctggctctttggcagaggctatg
+gtgaatgattgtcaattggtgctgttacctaatgttggagatcaaataattaatgcaaga
+ttgatggctggagacttgagaattggagtagaagttgagaaaggtgaagaagatgggcta
+tttacaaagtatgatgtttgcaaggcagtgaaggctgtaatggatgataatagtgaggtg
+gggaaagaggtaagggccaaccatgctaaatggaaggagttccttttaggaccagggctt
+gaaaaccattacatggatggttttgttgagcagctgcatgcgctggtttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=dzi:111308706+nt">BLAST</a>
+</body>
+</html>

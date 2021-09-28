@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03449: 103847221</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844474">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844474">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- brp:103847221 -->&gt;brp:103847221 K09756 serine carboxypeptidase-like 19 [EC:3.4.16.- 2.3.1.91] | (RefSeq) LOW QUALITY PROTEIN: serine carboxypeptidase-like 19 (N)
+atgagaaatcttcatttcctcatcttatttctgttgagcatctcgacatccatacattat
+gttgttgttacttctttgcatgtgaagtatcttcctggttttgaaggtcctcttcctttt
+gcgctcgagacagggtatgtgagtgttggtgaatttgaggatgttgagctcttttactac
+tttgtgaaatcagagagaaatccacaaaaagatcctctcatgatttggctcactggtggg
+cctggatgcagctccatttgtggactactcttcgcaaacggtcctttagctttcaaagga
+gatgtatataatgggacactgcctcctctggagctaacatctttttcttggacaaaggtg
+gctaacattttatatttggaatctcctgctggctctggatattcttatgccaaaactccg
+cgtggtgcggagacgagcgacaccaaacaaattcatcaaatcgatcaatttcttagaaga
+tggttggtggatcaccctgagtttatatcgaatccattttacgttggtggagattcatat
+tccgggcacattgttcccggagttgtgcaacagatttcacttggaaatgagaagggtctc
+acaccattcataagtattcagggatatgttcttggaaaccctataacaaatctaaacctt
+gaatctaattataaagttccatttgctcatcggatgggacttatttcagatgagctcttt
+gagtcgcttgaaaaaagttgcggaggaatacacattaatctagatccgagtaatgcaaaa
+tgcttaaatgatcttcaagcttacgataattgtatctcggagatatatgtagagcagatt
+ttgttaccaaactgcccagtagattacgtcttaggagacataccacaaaccttacgaaac
+atcaaaactggtagaaggcgagaactgaaagagttttcaggaaacgatacaccatcattg
+cctcctcctagctgctttacttataggtattttctgtctgctatttgggcaaacgatcaa
+aatgtacgcaaagctctaggcgtcaagatggagttaggaaaatggaaccgatgcaacatc
+caaaacattccatatacatttgatattgacaatgccgttccatatcacgtgaacaatagt
+cgtaaagggttccgctccctcatctacagtggtgatcatgacatgatggcaccttcctct
+tcaacggaagcatggatcagaagtctcaactattccattgttgatgactggagaccttgg
+atgatgagtagctatcaagtcgctggatatacaaggacttacgctaataagatgacattt
+gcaaccatcaagggaggaggacacaccgctgagttanntccagaccaatgctcacttatg
+tttaaaaaatggattgatggagaacctctctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=brp:103847221+nt">BLAST</a>
+</body>
+</html>

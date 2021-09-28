@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05243: 109850162</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620856478">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620856478">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aof:109850162 -->&gt;aof:109850162 K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) LOW QUALITY PROTEIN: octaketide synthase 3-like (N)
+atggctgcaacgtcaaatatggagaacgtcgaaaacatccgccaggcacaaagagctgac
+gggatggcaaccatcatggccatcggaactgctagacctcccaatatcatcatgcaagat
+gatttcgctgacttctactttcgggtcaccaacaatgagcataaagttgagctgaagaag
+aagtttgctaacatttgcaaaaaatcaatgataaacaagcgatacttttaccacaacgag
+gagttcttgaagaagtatccaaacatatgctcattcagcgaaccatcactcaacgaccgg
+caggacatttgcgtgcctgaggtaccaaagctggggaaagaagcggcactcgaagccctt
+aaggaatgggggagggacaagtccctgatcacccacctagttatgtgcacttcctgcggg
+gtcgacatgccaggcgctgacttcaggctagccaagctcctcnngaacgtcaaccgctac
+atggtctacatgcagggctgctacgctggaggcacggtgcttcgctacgccaaggacctc
+gctgaaaacaacaggggcgcgcgtgtgcttatcgtgtgttcagagctgaccataataggg
+ttccgcggtcccaatgagaacgctattgacagcggcataggaaactcattgtttggtgat
+ggggcggcggcgttaattgtcggttcggatcctgtcataggcattgagaagccgatattt
+gagatcgtgtctgtcaagcaaaggattattccggacagtgaagaggtgatccacctacat
+ctgagagaggaaggcttaactttccacctgaccaaggacagtccagacatgatagcgaac
+aatatcgagcagtgccttgctgatgcattcgcgccggtggggttgccctccgactggaac
+tccctgttctggattccgcaccctggtggtcgggcgatactcgacagagtggaggagaag
+ctgaaccttcgtcctgaaaagtttggagcaactcgacgagttctgtgggactatgggaac
+atgatcagtgcatgtgttctctatatactagatgagatgaggaagagttctttagccgag
+gggctggcgacgaccggagaggggttcgaatggggcgtgctgctaggttttgggcctggc
+atgactgttgagactattgttcttcacagtgttcctataattatagacaaggaggcggat
+tcagttcagaagtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aof:109850162+nt">BLAST</a>
+</body>
+</html>

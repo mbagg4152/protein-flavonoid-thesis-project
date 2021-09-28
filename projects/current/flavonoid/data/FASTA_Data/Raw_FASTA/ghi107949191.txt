@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04793: 107949191</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620851702">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620851702">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ghi:107949191 -->&gt;ghi:107949191 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase N1-like (N)
+atggagatgaattgtttcaaccatagagtcttcttacttaccctattgctacccatagtt
+gtcatcttagtggaaggccaaggcactcgagttgggttctactcgacctcatgccctaaa
+gtcgagtcaatcgtaagctcaacggtccaatctcatttcaagtcggatccaactattgct
+ccggggttgcttcgcatgcacttccatgactgctttgtacaaggatgtgatggttccata
+ctgatcgatgggcctaatgccgagaaaactgcaccaccgaaccaattgttgagaggatac
+gaagttatcgatgatgccaagactcaacttgaatctgtatgtcccggagttgtttcgtgt
+gccgatattctagcccttgctgctcgcgattccgtagttctgaccagtggagcgagttgg
+gcagtgcctatcggacgtcgagacagaacagtatcacaatcatctgatgctaacaatttg
+ccgggcttccgtgataccgtagatgtgcaaaagaaaaaatttgcagacaagggtctcaac
+actcaagatcttgtcacccttgttggtaaacattttattacacaaagtttggtttattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ghi:107949191+nt">BLAST</a>
+</body>
+</html>

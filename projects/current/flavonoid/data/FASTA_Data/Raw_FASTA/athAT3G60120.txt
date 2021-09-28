@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head>
+<title>KEGG T00041: AT3G60120</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620843520">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620843520">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ath:AT3G60120 -->&gt;ath:AT3G60120 K01188 beta-glucosidase [EC:3.2.1.21] | (RefSeq) BGLU27; beta glucosidase 27 (N)
+atgacgcaaaggaagaatatgtactcgaagaaaaactcgttcggccgatcagatttccca
+gagggtttccttttcggtacagcttcatcggcttaccaatatgaaggagccagaaacgaa
+gctcctcgaggagagagtgtttgggacacatttgttcgcaaatatccagagagaaattgc
+tactctaatgcggaccaagcaatcgagttctataaccattacaaggacgatatccagaga
+atgaaggatattaacatggatgctttcagattctctatctcttggcctaggatttttcct
+cttggaaagaaaagcaaaggagtgaacaaagaaggaatacaattctataacgatctcatc
+gatgaactcctcgctaacggaataacacctctcgccactttatttcactgggatactcct
+caagcacttgaagatgaatacagtggatttttaagcgaagaagctgttgatgacttcaag
+gattttgcggccttatgttttgaggagtttggcgaccgtgtaaaattgtgggtcacacta
+aacgaaccatgggtgtacagtattggtggctatgacacgggaagaaaagcccccggacgt
+gcctccaaatacatgaacgaagcagccgtggcaggagaatctggtctcgaggtttacact
+gttagtcacaatctacttctggctcacgccgaagctgttgaggtcttcaggaacaatccc
+aaatgtaaagatggcaagatcggtatcgctcattgtcccgtatggttcgagccttatgac
+tcgaactgccctaaagacatagaagcatgcgaacgagctatggagtttatgtttggatgg
+cacatggatcctacggtgtatggagattaccctgcagtcatgaaaaaatcgatcggaaaa
+agattaccatcatttaccgcagcacaatccaagaagcttagaggatcttttgatttcgtt
+ggggtgaattattacagtgctttctacgtcaaaaatattgatgaagtgaatcatgacaag
+cccaattggagatcagacgcacgcatcgaatggagaaaagaaaacaacgcagggcaaaca
+ttaggtgtaagaggtggttcggaatgggactttctatatccacaaggccttagaaagttt
+ctaaattatgccaagaataaatatgaaagcccgaaatttatgattaccgaaaacggacac
+tgtgatatagattatgagaaaaagcctaaactttctaacttgatggatctccaaaggaca
+gagtaccacaagaaacatctccaaagcatccaacaagccatccaggaggatggggttgta
+gttgaaggatactttgcgtggtcattactagacaattgtgaatggaacgccggttatgga
+gttcgatatggactattctacgtcgattataacaatggactaaaacgtttcccgaaaatg
+tcggcgatgtggttcaaagaattcttgaagagagaagaagaaattgaagattcagaagaa
+gaagagtacgtgttgaagtcaacaatgaacaagaagagattcttattagcaactggttca
+tcagcttcatgctttattcctaagatgtctgaatcttctaaagccctcgaactattattc
+tag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ath:AT3G60120+nt">BLAST</a>
+</body>
+</html>

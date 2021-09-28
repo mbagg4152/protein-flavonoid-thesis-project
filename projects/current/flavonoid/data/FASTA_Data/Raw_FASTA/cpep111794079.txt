@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05351: 111794079</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841022">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841022">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cpep:111794079 -->&gt;cpep:111794079 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atggccgtcgatatcgaagttgtttcaaaagaaacggtcaaaccctcttccccaacgccg
+gacaaccaccgccgttacggtttatccttcctcgaccaagtcaccgtcgatgtctacaac
+ccaatgatctatttctactccgctggctctgccaccgccgccgaaatctccgaccattta
+aaaaaatccctctccaccgtgttgtcccattactacccactcgctggcagagtcaactac
+gacgagttgtttatcgactgtaatgatgctggcgtccccttcatcgaaaccagagtcaac
+tgccgactctccgatgtaatgaacacggcgtttcctactgaactaaacaaactccttccg
+tttgaattggatgctcttgatgatgtttcaatgggggttcaattgaatgtgtttgaatgc
+ggcggtgttgctgtcgggatttgtatttctcataagatcagcgatgctctgtcgtttttt
+attgtcgttaatgggtgggcggcggtttcccggggggaaaaagaggcgctggaaactcat
+ttatcagcatcggagctgtttccgccgagtaaaacaccgatttacaacacgaggacaagt
+attttcagacagagagtggcgaaacggtaccaaattgattcagcgagtatcgaaaccatt
+cgagctcaatatgcagagtacttcgccatggaaaaccagaggcgaccttcaagagttgag
+gctttgtccgccttcctctacggccgttttatcgccgccattaaaggcgcttctaacagc
+aatccggcgaacggaagctcggaatcggagaagaagatattcttagtctgccacgccgtg
+aacatccgatcaagactggacccaccagttccggattacgcattcggaaactattacaga
+gccacattcgcagttccgtcggagacgattttaaacgacgattattgctacgatttagtg
+aaactagcgagagaagaaatcgccaaaatcgacaaatcgtatttggaaaggcttcaagaa
+agcagtaagttcttggaggcgatgaagaaggcggcggcgcaattctccaccggcgagctg
+atttcctgctcgttcactagcctgtgccggatgccgatttacgacgctgacttcgggtgg
+ggaaaaccggcgtggatcagctcgccggcgttaatgttcaagaacctgtttgtgttgatc
+gataagaaagacggcgatggagttgacgtttatgttcatctcaagccggagaacatggag
+attcttgaagccgatgagaagttcctcaagtatgccaaattgccttctaattaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cpep:111794079+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05044: 104788281</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620845273">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620845273">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csat:104788281 -->&gt;csat:104788281 K01188 beta-glucosidase [EC:3.2.1.21] | (RefSeq) beta-glucosidase 16-like isoform X1 (N)
+atgggaagtaaatttatcagtttactgttgctcattaccttggcctgcattggagtttcc
+gctaagaaacattcctcaaggcctatattaagcagaaatgatttccctgaagatttcatt
+tttggatctgcaacttctgcttatcagtgtgaaggtgctgctcatgaagatggtagaggt
+ccaagtatatgggactccttctctgaaaatttcccagataagatattggatggtagtaat
+gggtccattgcggatgattcgtacaacctttacaaggaagatgtgagtttgctgcaagaa
+attggctttgatgcttaccggttctcgatctcatggtcacggattttgcctcgtgggact
+ctaaagggaggaatcaaccaggctggaattgattattacaacaacttgattaatcaactt
+ctttctaaaggtgtgaagccatatgtcacactctttcactgggatttaccccagacactt
+gaagatgcttacggtggcttcctaggagctgagattgtggatgatttccgagactatgca
+gatctttgtttccagaagtttggagatagagtgaagcagtggatgacactgaacgagcca
+tatacagtggtacatgaaggttatataactggtgaaaaggcacctgggagatgttccaat
+ttcactaatcctgattgcaccgggggagatgcagccaccgagccttacattgttggccat
+aacctcctcctctctcatggagctgccgtcaaagtctacagagaaaagtaccaggcaact
+cagaaaggtgaaatcggtatagcaataaacacagtgtggcactacccttactcagactca
+tatgctgatcagttagctgcgactcgagccacggccttcacattcgactacttcatggag
+ccaattgtatacggtagataccctatcgaaatggtcagccacgttaaagacggtcgtctt
+cctacattcacaccagaagagtccgaaatgctcaaaggatcatacgattttataggactt
+aactattactcatctctttacgcacaagatgtgccgtgtgcgactgaaaacatcaccatg
+accaccgatgcttgcgtcaacgtcgtaggtcagcgaaatggcgtgcctatcggaccaacg
+gctgggtcggattggcttttcatttttcccgagggtattcgtaatctcctactacatgca
+aaatccaaatacaatgatcccatcttgtacattacagaaaacggagtggatgaaagaaat
+actggcgaaatatttcttgacgacgatttgagaattgattactacgctcatcatcttaag
+atggttagcgatgctatctcgatcggggtgaatgtgaaaggatatttcgcgtggtcgttg
+atggataattttgaatggtcggaaggatacacggtccggttcggactagtatttgttgac
+tttgaagatggacgtaagaggtatccgaagaaatcagcgaagtggtttaggaaattgttg
+aagggagagcgtaatgggacgaagcagcaggtggctagtatttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csat:104788281+nt">BLAST</a>
+</body>
+</html>

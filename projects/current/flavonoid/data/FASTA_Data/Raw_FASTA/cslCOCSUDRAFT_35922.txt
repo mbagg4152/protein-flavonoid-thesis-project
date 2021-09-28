@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02914: COCSUDRAFT_35922</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620848833">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620848833">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csl:COCSUDRAFT_35922 -->&gt;csl:COCSUDRAFT_35922 K11188 peroxiredoxin 6 [EC:1.11.1.7 1.11.1.27 3.1.1.-] | (RefSeq) thioredoxin-like protein (N)
+atggtcttactgacggagatcgtgcccgatttcgaggcggataccagctcgggacgcatc
+aagttccacgagtacatcgatggatcatgggccatccttttcagccaccctgcggactac
+acgcctgtttgcaccaccgagctgggtgaggttggcaagctccaaggagagtttgaaaaa
+cgtggcgtgaagctgctggcgctaagctgcaatgatgtggcatcccacaaggggtggatc
+aaggacatcgaggcatacaccccaaacagcattgtcaactaccccataatcgccgacccc
+aacagggacatcgccacactgtatgggatgcttgaccccgatgagaaggacaaggccggc
+atccctctgacggcgcgcgccgttttcatcgtgggccccgacaagcgcctgaagctgtcc
+atcctctaccccgccaccaccggccgtaacttctccgagatcctgcgcgtgatcgattcg
+ctgcagctgacggcgaatcactcggtggcgacgcccgtcaattggacccacggcaacaag
+gtcatggtcgtgcccacgctctccgacgagcaggccaccgccaagttccccaagggattt
+gagaaggcctcgctgccgtcaggaaagggctacattcgcacgactgcccagcccaacctg
+ccctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csl:COCSUDRAFT_35922+nt">BLAST</a>
+</body>
+</html>

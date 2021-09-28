@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 100817081</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620843183">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620843183">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:100817081 -->&gt;gmx:100817081 K08695 anthocyanidin reductase [EC:1.3.1.77] | (RefSeq) ANR2; anthocyanidin reductase 2 (N)
+atggccaatatcaagcaaatcggaaagaagcaggcttgtgtgatcggtggcagtggattt
+attgcttctttgttgatcaagcagttgcttcagaagggttatgctgttaataccactgtt
+agagatttaggtagtatcaataaaatagctcaccttttggtactgaaaaatctgggcgaa
+ttgaaaatatttagagcagatttgacagttgaaggagattttgaagcccctatatcaggc
+tgtgaacttgtattccaatttgctacacctatgaactttggttctgaagatcctgagaat
+gacatgatcaagccagcaatcagcggcgtattgaatgtgctgaaaacatgtgctcaaacg
+aaagaagtcaaacgagtcatcttgacatcttcaactgatgctgtaactattaaccaactc
+aatggaaaaggtcatgttatggatgaaagcaattggactgatgtggagtacttgaccact
+gcaaagccacatggatggggatatcctgcctccaaaacactagcagagaaggctgcatgg
+aaatttgctgaagaaaatcacattgatctcatcactgtgataccttccctcactgctggt
+ccttctatcactgcagacatcccattcagtgttgtgttggctgcgtccctaatgaaaggg
+aatgatttctacattaagtctttgagagagatgcaattgctgtcaggttcaatatctatc
+actcatgttgaggatatttgccgagcacatatatttgtggcagagaaagaatcagcttct
+ggtcgatacattgtctgtgctcacaatactagtgttcctgagcttgcaaagtttcttagc
+gaaagataccctcgatatgaaattccaactgaattccatgatatcccctccaaggcaaag
+ttagtcatctcttcagagaagcttatcaaagaagggttcagtttcaagtatggcattgaa
+gaaattattaaccagagtgtggagtacttaaggagtgagggggccctgctcaactaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:100817081+nt">BLAST</a>
+</body>
+</html>

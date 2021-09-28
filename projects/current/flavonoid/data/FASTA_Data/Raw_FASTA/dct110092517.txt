@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05027: 110092517</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620837822">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620837822">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- dct:110092517 -->&gt;dct:110092517 K00588 caffeoyl-CoA O-methyltransferase [EC:2.1.1.104] | (RefSeq) norbelladine 4'-O-methyltransferase-like (N)
+atgaaaagatgcatcagatcggtgatgagtgtgccccctgaggaaggccaaatcctctct
+atgctgctcaaggttataaatgcaaggaaaactatagagattggggttttcaccggctac
+tcccttctctctacggctttggcattgccaaatgatggcaagataactgctatagatgtt
+gataggtcaaactacaagattggtctgccgtttatacagaaggctggtgttgagggtaag
+atcaagttcattgaatcagaagctcttccagttctcgacaaattcgttcaagagatgaat
+gaagatgaaatgtttgattttgcatttgtggatgctgacaaagagaactacagcaattat
+catgaaaggttgctcaagattgtcaaaattggtggcctgatactgtatgacaacaccctc
+tggttcggcagcgttgcgacgccaatgaatccagatatgcccaaatatttcaacgaggac
+cgcgagagcattataaagttcaacaaagaactagctgccgatccaaggatcgaattgtgt
+caggtttgcattggcgatggactcaccatttgtaggcgggttgcttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=dct:110092517+nt">BLAST</a>
+</body>
+</html>

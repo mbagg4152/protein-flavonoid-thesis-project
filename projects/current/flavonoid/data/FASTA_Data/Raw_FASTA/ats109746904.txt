@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04345: 109746904</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849013">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849013">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ats:109746904 -->&gt;ats:109746904 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) tryptamine benzoyltransferase 1-like (N)
+atggagacgaccggtagcaagatgctgaagccggtgtactcggcgccgcacccgctcgca
+ggcgagatggtcccgctgacactcttcgaccgcgccgccatggacatctttgtctccctc
+atcctcgtgtaccccgcgccgactccgtccaacggggcgctcgtggagggcctgcgcagg
+gctgtcgccccgtaccctcacctggccggacggctcgccgtcgaccactcaggccggcgt
+tccatccacctcaacaaccacggcgtgcttgtcctggacgccgaggtccctgtcgatatg
+acgagcgtggtcgccgatggctgctttaccgccgccaccgagggcctgtaccctgcactg
+ccaccgccggaggagaacgtcggggcggcgctgctgcagatcaagctgaaccggtacaag
+tgcggcggcctcgtgatcggcatcatccaccaccaccacgcagccgatggccgctccttc
+agcaacttcctcaccacgtgggccagcgcagttcgccaagccagcgaattcaccgccccg
+tcgccttccctcgaccgcgcggcgaccgccgtgcctcggagcgtgccgacgccggcgttc
+gaccaccggtgcaccgagttcagcggagaagaagacggctgccgtagctcctcctactcc
+caccccacgtgcaagatcaagaatctcacgttgcgcttcacggcccagttcgtcacagag
+ctcaaggcccgcgtcggcaccccatgcagcacgttccagtgccttctcgcgcacgtgtgg
+aagaagatcacggcggcgcgcggcctgaagcccgacgagttcacgcaggtcagggtggcc
+gtggactgccggggcagggccaaccgtgccgtcccgccggacttcttcgggaacatggtg
+ctgtgggcattcccgaggctccaagtccgggacgtcctgggctggacctacggcagcgtg
+gtaggcgccatccgcgacgccattgggcgtgtcgatgccgcgtacatccagtcgttcgtg
+gacttcgggagcgtggcggacgcgaactgggcggagctcgcggcgacggcgccaacctcc
+ggcgcgatgctctgtccggacctggaggtggacagcagtctgggtttcaggttccaccag
+attgacctcggcagtgggccgccatccgcgttcctcatgccggacttgcccgtcgagggg
+ctcatgacatttgtgccgtcgtgctcagccgagggcagcgtcgacgtccacatggccgtc
+gccgaggatcacgtcgcggcgcttgagcatatatgctactccttggacgaaagagctaaa
+ccgaagttgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ats:109746904+nt">BLAST</a>
+</body>
+</html>

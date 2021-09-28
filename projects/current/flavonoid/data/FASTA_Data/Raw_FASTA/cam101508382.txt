@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02819: 101508382</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620857961">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620857961">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cam:101508382 -->&gt;cam:101508382 K13266 pterocarpan reductase [EC:1.23.1.-] | (RefSeq) isoflavone reductase-like protein (N)
+atggttgtagaagtgagtactaagattcttgtgattggaggaatcggttacgtgggaaag
+ttcatagtcgaagcaagtgttaaagctggtcatcctacttttgctctcgtacgagaatca
+actctttctaatccacttaagtcatccatcgttcaaaatttcaacacactaggcgtcaat
+gtaattttgggagatatatatgatcaccagagtttggtcaagatcataaaagaagtagac
+gtcgtaatttcaaccgtgagcttcatgcaattatttgatcaatataagatcattgacgct
+atcaaagaagcgggaaatattaagaggttcttcccttcggaatttggaaatgatgtggac
+cgaacacatatagtaaatgaaggaaaagttatgtttgataataaggtcaaaattcgcaga
+atgattgaagctgaaggaattccctatacttatgttgtggctaattttctcaatcgacac
+tttctatcaaaccttatgggcattgcttctccatcagatccagttattatccttggagat
+ggaaatatcaaatctacttttaataccgaagagagtgttgcggctttcactataaaaacc
+attgatgatccaaggaccttgaacaaaactctctttattagacctcatgcgaacaccttg
+tcatataatgatttgatatctctttgggagaagaagaatagtaagactcttaaaaggatc
+tatgttttagaggagccagtattgaagttgattcaagagtcaccatatcctctaaatatg
+ggcctatcaatttgtctgactacatttgtgaaaggagatcacactaactatgaaattgaa
+ccctcctttggatttgaagcttcagagctttatcctgatgtcaaatacactactgtggaa
+gactacattcaggaaaatcatgattgttccccattttatttaaacaatttaatctccatt
+aagaatgtacaacatttccatacatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cam:101508382+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02163: Os06t0165800-01</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847649">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847649">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- dosa:Os06t0165800-01 -->&gt;dosa:Os06t0165800-01 K00588 caffeoyl-CoA O-methyltransferase [EC:2.1.1.104] | (RAP-DB) Os06g0165800; Similar to Caffeoyl-CoA 3-O-methyltransferase (Fragment). (N)
+atggccgaggcggcgtcggcggcggcggcggcgacgacggagcaggcgaatgggagcagc
+ggcggcgagcagaagacgcggcactcggaggtcggccacaagagcctcctcaagagcgac
+gatctctaccagtacatcctggagacgagcgtgtacccgcgcgagcacgagtgcatgaag
+gagctccgcgaggtcaccgccaaccacccatggaacctgatgacgacgtcggcggacgag
+gggcaattcctgaacctgctgctgaagctcatcggcgccaagaagaccatggagatcggc
+gtctacaccggctactccctcctcgccaccgccctcgccatccccgacgacggcacgatc
+ttggcgatggacatcaaccgggagaactacgagctggggctcccgtcgatcgagaaggcg
+ggagtggcgcacaagatcgacttccgggagggacccgcgctgccggtgctggaccagctg
+gtggaggaggagggcaaccatgggtcgttcgacttcgtgttcgtcgacgccgacaaggac
+aactacctcaactaccacgagcggctgatgaagctggtcaaggtcggcggcctcgtcggc
+tacgacaacacgctctggaacggctccgtcgtgctccccgccgacgcccccatgcgcaag
+tacatccgctactaccgcgacttcgtgctcgagctcaacaaggccctcgccgccgaccac
+cgcgtcgagatctgccagctccccgtcggcgacggcatcaccctctgccgccgcgtcaag
+tga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=dosa:Os06t0165800-01+nt">BLAST</a>
+</body>
+</html>
