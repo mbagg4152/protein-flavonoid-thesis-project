@@ -4,6 +4,7 @@ DESCRIPTION Flavonoids are a major class of plant secondary metabolites that ser
 CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP ccaj00941  Flavonoid biosynthesis
 MODULE      ccaj_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:ccaj00941]
+            ccaj_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:ccaj00941]
 DBLINKS     GO: 0009813
 ORGANISM    Cajanus cajan (pigeon pea) [GN:ccaj]
 GENE        109798137  chalcone synthase-like [KO:K00660] [EC:2.3.1.74]
@@ -29,6 +30,11 @@ GENE        109798137  chalcone synthase-like [KO:K00660] [EC:2.3.1.74]
             109814569  trans-cinnamate 4-monooxygenase [KO:K00487] [EC:1.14.14.91]
             109806951  trans-cinnamate 4-monooxygenase-like [KO:K00487] [EC:1.14.14.91]
             109814356  NAD(P)H-dependent 6'-deoxychalcone synthase [KO:K08243]
+            109793514  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            109793819  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            109802445  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            109790616  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            109811205  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
             109798920  licodione synthase-like [KO:K23179] [EC:1.14.19.76]
             109807203  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
             109808745  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]

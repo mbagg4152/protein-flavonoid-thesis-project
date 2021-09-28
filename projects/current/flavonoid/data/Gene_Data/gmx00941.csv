@@ -1,22 +1,4 @@
 Glycine max, 106799718, CHS5; chalcone synthase 5  [EC], ['EC:2.3.1.74'], KO:K00660
-<<<<<<< Updated upstream
-Glycine max, 100779649, chalcone synthase CHS4  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100785554, chalcone synthase 6  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100788048, chalcone synthase 6  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 732575, GMACHS1; chalcone synthase 1  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100782897, CHS7; chalcone synthase 7  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100789075, chalcone synthase 3  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100790997, CHS9; chalcone synthase 1  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100792581, chalcone synthase 5-like  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100809433, CHS6; chalcone synthase 6  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100791524, CHS3; chalcone synthase 3  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100794652, chalcone synthase-like  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100170701, CHS8; chalcone synthase  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 100775264, chalcone synthase J  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 106794283, chalcone synthase 3  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 102663074, LOW QUALITY PROTEIN: chalcone synthase 3  [EC], ['EC:2.3.1.74'], KO:K00660
-Glycine max, 111828534, CHS2; chalcone synthase 2  [EC], ['EC:2.3.1.74'], KO:K00660
-=======
 Glycine max, 100779649, CHS4A; chalcone synthase 4a  [EC], ['EC:2.3.1.74'], KO:K00660
 Glycine max, 100785554, CHS11; chalcone synthase 11  [EC], ['EC:2.3.1.74'], KO:K00660
 Glycine max, 100788048, CHS10; chalcone synthase 10  [EC], ['EC:2.3.1.74'], KO:K00660
@@ -32,18 +14,12 @@ Glycine max, 100170701, CHS8; chalcone synthase  [EC], ['EC:2.3.1.74'], KO:K0066
 Glycine max, 100775264, CHS13; chalcone synthase 13  [EC], ['EC:2.3.1.74'], KO:K00660
 Glycine max, 106794283, CHS3B; chalcone synthase 3-like  [EC], ['EC:2.3.1.74'], KO:K00660
 Glycine max, 102663074, LOW QUALITY PROTEIN: chalcone synthase 3  [EC], ['EC:2.3.1.74'], KO:K00660
->>>>>>> Stashed changes
 Glycine max, 547602, CHI1A; chalcone--flavonone isomerase 1A  [EC], ['EC:5.5.1.6'], KO:K01859
 Glycine max, 732546, CHI2-A; chalcone--flavonone isomerase 2-A  [EC], ['EC:5.5.1.6'], KO:K01859
 Glycine max, 732545, CHI1B1; chalcone--flavonone isomerase 1B-1  [EC], ['EC:5.5.1.6'], KO:K01859
 Glycine max, 100037455, CHI1B2; chalcone--flavonone isomerase 1B-2  [EC], ['EC:5.5.1.6'], KO:K01859
-<<<<<<< Updated upstream
-Glycine max, 732547, GMCHI4A; chalcone isomerase 4-like  [EC], ['EC:5.5.1.6'], KO:K01859
-Glycine max, 778027, GMCHI4B; chalcone isomerase 4B  [EC], ['EC:5.5.1.6'], KO:K01859
-=======
 Glycine max, 732547, CHI4A; chalcone isomerase 4A  [EC], ['EC:5.5.1.6'], KO:K01859
 Glycine max, 778027, CHI4B; chalcone isomerase 4B  [EC], ['EC:5.5.1.6'], KO:K01859
->>>>>>> Stashed changes
 Glycine max, 100780057, naringenin,2-oxoglutarate 3-dioxygenase  [EC], ['EC:1.14.11.9'], KO:K00475
 Glycine max, 100818312, naringenin,2-oxoglutarate 3-dioxygenase  [EC], ['EC:1.14.11.9'], KO:K00475
 Glycine max, 732548, F3H; flavanone 3-hydroxylase  [EC], ['EC:1.14.11.9'], KO:K00475
@@ -54,19 +30,14 @@ Glycine max, 778157, FLS1; flavonol synthase  [EC], ['EC:1.14.20.6'], KO:K05278
 Glycine max, 100810937, uncharacterized protein LOC100810937  [EC], ['EC:1.14.20.6'], KO:K05278
 Glycine max, 100499623, C4H; trans-cinnamate 4-monooxygenase  [EC], ['EC:1.14.14.91'], KO:K00487
 Glycine max, 100818985, trans-cinnamate 4-monooxygenase  [EC], ['EC:1.14.14.91'], KO:K00487
-<<<<<<< Updated upstream
-Glycine max, 100812188, cytochrome P450 CYP73A100  [EC], ['EC:1.14.14.91'], KO:K00487
-Glycine max, 547911, GMCHR; NAD(P)H-dependent 6'-deoxychalcone synthase , [], KO:K08243
-Glycine max, 100800931, NAD(P)H-dependent 6'-deoxychalcone synthase , [], KO:K08243
-Glycine max, 100783503, FNSII-1; licodione synthase-like  [EC], ['EC:1.14.19.76'], KO:K23179
-Glycine max, 100784036, FNSII-2; licodione synthase-like  [EC], ['EC:1.14.19.76'], KO:K23179
-=======
 Glycine max, 100812188, C4H1; cinnamate 4-hydroxylase  [EC], ['EC:1.14.14.91'], KO:K00487
 Glycine max, 547911, CHR1; chalcone reductase CHR1 , [], KO:K08243
 Glycine max, 100800931, CHR6; chalcone reductase CHR6 , [], KO:K08243
+Glycine max, 100820161, CHR5; chalcone reductase CHR5 , [], KO:K08243
+Glycine max, 100790074, CHR4; chalcone reductase CHR4 , [], KO:K08243
+Glycine max, 100788544, NAD(P)H-dependent 6'-deoxychalcone synthase , [], KO:K08243
 Glycine max, 100783503, FNSII-1; cytochrome P450 93B16  [EC], ['EC:1.14.19.76'], KO:K23179
 Glycine max, 100784036, FNSII-2; flavone synthase II  [EC], ['EC:1.14.19.76'], KO:K23179
->>>>>>> Stashed changes
 Glycine max, 547475, SF3'H1; flavonoid 3'-hydroxylase  [EC], ['EC:1.14.14.82'], KO:K05280
 Glycine max, 100777999, flavonoid 3'-monooxygenase  [EC], ['EC:1.14.14.82'], KO:K05280
 Glycine max, 100778531, flavonoid 3'-monooxygenase  [EC], ['EC:1.14.14.82'], KO:K05280
@@ -74,11 +45,7 @@ Glycine max, 100779588, flavonoid 3'-monooxygenase  [EC], ['EC:1.14.14.82'], KO:
 Glycine max, 100807293, flavonoid 3'-monooxygenase  [EC], ['EC:1.14.14.82'], KO:K05280
 Glycine max, 548087, DFR1; dihydroflavonol-4-reductase DFR1  [EC], ['EC:1.1.1.219', 'EC:1.1.1.234'], KO:K13082
 Glycine max, 732626, DFR2; dihydroflavonol-4-reductase  [EC], ['EC:1.1.1.219', 'EC:1.1.1.234'], KO:K13082
-<<<<<<< Updated upstream
-Glycine max, 100778253, uncharacterized protein LOC100778253  [EC], ['EC:1.1.1.219', 'EC:1.1.1.234'], KO:K13082
-=======
 Glycine max, 100778253, bifunctional dihydroflavonol 4-reductase/flavanone 4-reductase-like  [EC], ['EC:1.1.1.219', 'EC:1.1.1.234'], KO:K13082
->>>>>>> Stashed changes
 Glycine max, 547705, W1; flavonoid 3', 5'-hydroxylase  [EC], ['EC:1.14.14.81'], KO:K13083
 Glycine max, 547615, ANS2; anthocyanidin synthase  [EC], ['EC:1.14.20.4'], KO:K05277
 Glycine max, 100801148, ANS3; leucoanthocyanidin dioxygenase  [EC], ['EC:1.14.20.4'], KO:K05277
@@ -87,11 +54,7 @@ Glycine max, 100817081, ANR2; anthocyanidin reductase 2  [EC], ['EC:1.3.1.77'], 
 Glycine max, 100786879, LAR1; leucoanthocyanidin reductase  [EC], ['EC:1.17.1.3'], KO:K13081
 Glycine max, 100795100, leucoanthocyanidin reductase  [EC], ['EC:1.17.1.3'], KO:K13081
 Glycine max, 100776621, SOMT-2; flavonoid 4'-O-methyltransferase-like  [EC], ['EC:2.1.1.231'], KO:K23053
-<<<<<<< Updated upstream
-Glycine max, 100787088, UDP-glycosyltransferase 88F4 isoform X2  [EC], ['EC:2.4.1.357'], KO:K22845
-=======
 Glycine max, 100787088, IF7GT6; isoflavone 7-O-glucosyltransferase UGT6  [EC], ['EC:2.4.1.357'], KO:K22845
->>>>>>> Stashed changes
 Glycine max, 100806561, shikimate O-hydroxycinnamoyltransferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100820075, shikimate O-hydroxycinnamoyltransferase isoform X3  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100499712, omega-hydroxypalmitate O-feruloyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
@@ -99,19 +62,11 @@ Glycine max, 100777157, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.
 Glycine max, 100777680, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100779280, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100779814, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
-<<<<<<< Updated upstream
-Glycine max, 100792323, vinorine synthase  [EC], ['EC:2.3.1.133'], KO:K13065
-Glycine max, 100814459, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
-Glycine max, 100804886, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
-Glycine max, 100805962, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
-Glycine max, 100801695, vinorine synthase  [EC], ['EC:2.3.1.133'], KO:K13065
-=======
 Glycine max, 100792323, stemmadenine O-acetyltransferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100814459, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100804886, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100805962, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100801695, stemmadenine O-acetyltransferase  [EC], ['EC:2.3.1.133'], KO:K13065
->>>>>>> Stashed changes
 Glycine max, 100801923, shikimate O-hydroxycinnamoyltransferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100787038, spermidine hydroxycinnamoyl transferase isoform X2  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100802888, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
@@ -129,15 +84,9 @@ Glycine max, 100788434, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.
 Glycine max, 100789491, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 102668997, vinorine synthase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 100802808, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
-<<<<<<< Updated upstream
-Glycine max, 100778266, spermidine hydroxycinnamoyl transferase-like  [EC], ['EC:2.3.1.133'], KO:K13065
-Glycine max, 102663900, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
-Glycine max, 102670206, vinorine synthase  [EC], ['EC:2.3.1.133'], KO:K13065
-=======
 Glycine max, 100778266, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 102663900, spermidine hydroxycinnamoyl transferase  [EC], ['EC:2.3.1.133'], KO:K13065
 Glycine max, 102670206, stemmadenine O-acetyltransferase isoform X1  [EC], ['EC:2.3.1.133'], KO:K13065
->>>>>>> Stashed changes
 Glycine max, 100811080, cytochrome P450 98A2  [EC], ['EC:1.14.14.96'], KO:K09754
 Glycine max, 606506, CYP98A2; cytochrome P450 98A2  [EC], ['EC:1.14.14.96'], KO:K09754
 Glycine max, 100500657, putative caffeoyl-CoA 3-O-methyltransferase  [EC], ['EC:2.1.1.104'], KO:K00588
@@ -147,14 +96,7 @@ Glycine max, 100780516, probable caffeoyl-CoA O-methyltransferase At4g26220  [EC
 Glycine max, 100792717, OMT5; anthocyanin 3'-O-methyltransferase  [EC], ['EC:2.1.1.104'], KO:K00588
 Glycine max, 100800911, probable caffeoyl-CoA O-methyltransferase At4g26220  [EC], ['EC:2.1.1.104'], KO:K00588
 Glycine max, 100795229, probable caffeoyl-CoA O-methyltransferase At4g26220  [EC], ['EC:2.1.1.104'], KO:K00588
-<<<<<<< Updated upstream
-Glycine max, 100813350, flavonoid 3',5'-methyltransferase  [EC], ['EC:2.1.1.104'], KO:K00588
-Glycine max, 100305498, SOMT-9; O-methyltransferase SOMT-9 isoform 1  [EC], ['EC:2.1.1.104'], KO:K00588
-Glycine max, 100799303, S-adenosyl-L-methionine-dependent methyltransferases superfamily protein  [EC], ['EC:2.1.1.104'], KO:K00588
-Glycine max, 100795858, caffeoyl-CoA O-methyltransferase 5 isoform X1  [EC], ['EC:2.1.1.104'], KO:K00588
-=======
 Glycine max, 100813350, flavonoid 3',5'-methyltransferase isoform X2  [EC], ['EC:2.1.1.104'], KO:K00588
 Glycine max, 100305498, SOMT-9; O-methyltransferase SOMT-9 isoform 1  [EC], ['EC:2.1.1.104'], KO:K00588
 Glycine max, 100799303, S-adenosyl-L-methionine-dependent methyltransferases superfamily protein  [EC], ['EC:2.1.1.104'], KO:K00588
 Glycine max, 100795858, caffeoyl-CoA O-methyltransferase 5  [EC], ['EC:2.1.1.104'], KO:K00588
->>>>>>> Stashed changes

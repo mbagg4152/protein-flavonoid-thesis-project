@@ -5,6 +5,7 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP pvu00941  Flavonoid biosynthesis
 MODULE      pvu_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:pvu00941]
             pvu_M00138  Flavonoid biosynthesis, naringenin => pelargonidin [PATH:pvu00941]
+            pvu_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:pvu00941]
 DBLINKS     GO: 0009813
 ORGANISM    Phaseolus vulgaris (common bean) [GN:pvu]
 GENE        PHAVU_009G131000g  hypothetical protein [KO:K00660] [EC:2.3.1.74]
@@ -30,6 +31,9 @@ GENE        PHAVU_009G131000g  hypothetical protein [KO:K00660] [EC:2.3.1.74]
             PHAVU_007G026000g  hypothetical protein [KO:K00487] [EC:1.14.14.91]
             PHAVU_008G287200g  hypothetical protein [KO:K08243]
             PHAVU_008G287300g  hypothetical protein [KO:K08243]
+            PHAVU_007G253700g  hypothetical protein [KO:K08243]
+            PHAVU_008G015800g  hypothetical protein [KO:K08243]
+            PHAVU_009G207800g  hypothetical protein [KO:K08243]
             PHAVU_011G068100g  hypothetical protein [KO:K23179] [EC:1.14.19.76]
             PHAVU_003G1855001  hypothetical protein [KO:K05280] [EC:1.14.14.82]
             PHAVU_009G192400g  hypothetical protein [KO:K05280] [EC:1.14.14.82]

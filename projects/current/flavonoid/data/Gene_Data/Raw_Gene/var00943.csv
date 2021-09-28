@@ -3,6 +3,8 @@ NAME        Isoflavonoid biosynthesis - Vigna angularis (adzuki bean)
 DESCRIPTION Isoflavonoids are biologically active compounds, such as phytoestrogens, produced by pea family plants. While flavonoids (in the narrow sense) have the 2-phenylchromen-4-one backbone, isoflavonoids have the 3-phenylchromen-4-one backbone with no hydroxyl group substitution at position 2. Isoflavonoids are derived from the flavonoid biosynthesis pathway via liquiritigenin or naringenin.
 CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP var00943  Isoflavonoid biosynthesis
+MODULE      var_M00941  Isoflavone biosynthesis, liquiritigenin => daidzein / naringenin => genistein [PATH:var00943]
+            var_M00942  Pterocarpan biosynthesis, daidzein => medicarpin [PATH:var00943]
 DBLINKS     GO: 0009717
 ORGANISM    Vigna angularis (adzuki bean) [GN:var]
 GENE        108332082  2-hydroxyisoflavanone synthase [KO:K13257] [EC:1.14.14.87]
@@ -29,7 +31,11 @@ GENE        108332082  2-hydroxyisoflavanone synthase [KO:K13257] [EC:1.14.14.87
             108323040  isoflavone 7-O-methyltransferase-like [KO:K13262] [EC:2.1.1.150]
             108344857  isoflavone 7-O-glucosyltransferase 1-like [KO:K13263] [EC:2.4.1.170]
             108344639  AdGt-5; isoflavone 7-O-glucosyltransferase 1-like [KO:K13263] [EC:2.4.1.170]
+            108335125  isoflavone reductase-like [KO:K05281] [EC:1.3.1.45]
+            108335124  isoflavone reductase-like [KO:K05281] [EC:1.3.1.45]
             108328041  vestitone reductase-like [KO:K13265] [EC:1.1.1.348]
+            108328428  dirigent protein 2-like [KO:K25075] [EC:4.2.1.139]
+            108328436  dirigent protein 2-like [KO:K25075] [EC:4.2.1.139]
             108339549  isoflavone reductase homolog [KO:K13266] [EC:1.23.1.-]
             108342480  cytochrome P450 71D9-like [KO:K13267] [EC:1.14.13.-]
             108323455  licodione synthase-like [KO:K23179] [EC:1.14.19.76]

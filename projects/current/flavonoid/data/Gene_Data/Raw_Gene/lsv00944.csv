@@ -4,9 +4,9 @@ DESCRIPTION Flavones and flavonols (3-hydroxyflavones) are common flavonoids in 
 CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP lsv00944  Flavone and flavonol biosynthesis
 ORGANISM    Lactuca sativa (garden lettuce) [GN:lsv]
-GENE        111908262  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
-            111891078  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
-            111885539  UDP-glycosyltransferase 79A2-like [KO:K22772] [EC:2.4.1.159]
+GENE        111891078  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]
+            111908262  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]
+            111885539  UDP-glycosyltransferase 79A2 [KO:K22772] [EC:2.4.1.159]
 COMPOUND    C00389  Quercetin
             C00616  Quercetin 3-sulfate
             C01155  Quercetin 3,3'-bissulfate

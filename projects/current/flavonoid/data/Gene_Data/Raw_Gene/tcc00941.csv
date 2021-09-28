@@ -5,6 +5,7 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP tcc00941  Flavonoid biosynthesis
 MODULE      tcc_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:tcc00941]
             tcc_M00138  Flavonoid biosynthesis, naringenin => pelargonidin [PATH:tcc00941]
+            tcc_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:tcc00941]
 DBLINKS     GO: 0009813
 ORGANISM    Theobroma cacao (cacao) [GN:tcc]
 GENE        18598875  chalcone synthase [KO:K00660] [EC:2.3.1.74]
@@ -21,6 +22,7 @@ GENE        18598875  chalcone synthase [KO:K00660] [EC:2.3.1.74]
             18589488  cytochrome P450 CYP73A100 [KO:K00487] [EC:1.14.14.91]
             18591096  trans-cinnamate 4-monooxygenase [KO:K00487] [EC:1.14.14.91]
             18587499  trans-cinnamate 4-monooxygenase [KO:K00487] [EC:1.14.14.91]
+            18609567  non-functional NADPH-dependent codeinone reductase 2 [KO:K08243]
             18593084  licodione synthase [KO:K23179] [EC:1.14.19.76]
             18593008  licodione synthase [KO:K23179] [EC:1.14.19.76]
             18604820  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]

@@ -6,7 +6,7 @@ PATHWAY_MAP jcu00944  Flavone and flavonol biosynthesis
 ORGANISM    Jatropha curcas [GN:jcu]
 GENE        105628967  flavonoid 3',5'-hydroxylase 2 [KO:K13083] [EC:1.14.14.81]
             105640611  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]
-            105650147  UDP-glycosyltransferase 79B30 [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            105650147  cyanidin 3-O-galactoside 2''-O-xylosyltransferase FGGT1 [KO:K22794] [EC:2.4.1.239 2.4.1.-]
 COMPOUND    C00389  Quercetin
             C00616  Quercetin 3-sulfate
             C01155  Quercetin 3,3'-bissulfate

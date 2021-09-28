@@ -3,10 +3,14 @@ NAME        Isoflavonoid biosynthesis - Arachis ipaensis
 DESCRIPTION Isoflavonoids are biologically active compounds, such as phytoestrogens, produced by pea family plants. While flavonoids (in the narrow sense) have the 2-phenylchromen-4-one backbone, isoflavonoids have the 3-phenylchromen-4-one backbone with no hydroxyl group substitution at position 2. Isoflavonoids are derived from the flavonoid biosynthesis pathway via liquiritigenin or naringenin.
 CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP aip00943  Isoflavonoid biosynthesis
+MODULE      aip_M00941  Isoflavone biosynthesis, liquiritigenin => daidzein / naringenin => genistein [PATH:aip00943]
+            aip_M00942  Pterocarpan biosynthesis, daidzein => medicarpin [PATH:aip00943]
 DBLINKS     GO: 0009717
 ORGANISM    Arachis ipaensis [GN:aip]
 GENE        107631190  2-hydroxyisoflavanone synthase [KO:K13257] [EC:1.14.14.87]
+            107617879  2-hydroxyisoflavanone dehydratase [KO:K13258] [EC:4.2.1.105]
             107631191  isoflavone 4'-O-methyltransferase [KO:K13259] [EC:2.1.1.212 2.1.1.46]
+            107631471  isoflavone 3'-hydroxylase [KO:K22932] [EC:1.14.14.88]
             107639094  isoflavone 3'-hydroxylase [KO:K22932] [EC:1.14.14.88]
             107634717  isoflavone 3'-hydroxylase [KO:K22932] [EC:1.14.14.88]
             107632124  isoflavone 2'-hydroxylase [KO:K13260] [EC:1.14.14.90 1.14.14.89]
@@ -15,6 +19,7 @@ GENE        107631190  2-hydroxyisoflavanone synthase [KO:K13257] [EC:1.14.14.87
             107639093  isoflavone 2'-hydroxylase [KO:K13260] [EC:1.14.14.90 1.14.14.89]
             107627314  cytochrome P450 81E8 [KO:K13260] [EC:1.14.14.90 1.14.14.89]
             107642736  cytochrome P450 81E8 [KO:K13260] [EC:1.14.14.90 1.14.14.89]
+            107638257  isoflavone 2'-hydroxylase-like [KO:K13260] [EC:1.14.14.90 1.14.14.89]
             107638166  isoflavone-7-O-methyltransferase 6-like [KO:K13262] [EC:2.1.1.150]
             107635490  isoflavone-7-O-methyltransferase 9 isoform X1 [KO:K13262] [EC:2.1.1.150]
             107638164  isoflavone-7-O-methyltransferase 9-like [KO:K13262] [EC:2.1.1.150]
@@ -27,7 +32,10 @@ GENE        107631190  2-hydroxyisoflavanone synthase [KO:K13257] [EC:1.14.14.87
             107638167  isoflavone 7-O-methyltransferase-like [KO:K13262] [EC:2.1.1.150]
             107638188  isoflavone 7-O-methyltransferase [KO:K13262] [EC:2.1.1.150]
             107644738  isoflavone-7-O-methyltransferase 9 [KO:K13262] [EC:2.1.1.150]
+            107642895  isoflavone reductase [KO:K05281] [EC:1.3.1.45]
             107624299  vestitone reductase [KO:K13265] [EC:1.1.1.348]
+            107638006  vestitone reductase-like [KO:K13265] [EC:1.1.1.348]
+            107645384  dirigent protein 1 [KO:K25075] [EC:4.2.1.139]
             107618623  cytochrome P450 71D9 [KO:K13267] [EC:1.14.13.-]
             107634112  licodione synthase-like [KO:K23179] [EC:1.14.19.76]
 COMPOUND    C00509  Naringenin

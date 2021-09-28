@@ -4,6 +4,7 @@ DESCRIPTION Flavonoids are a major class of plant secondary metabolites that ser
 CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP smo00941  Flavonoid biosynthesis
 MODULE      smo_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:smo00941]
+            smo_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:smo00941]
 DBLINKS     GO: 0009813
 ORGANISM    Selaginella moellendorffii [GN:smo]
 GENE        SELMODRAFT_270496  hypothetical protein [KO:K00660] [EC:2.3.1.74]

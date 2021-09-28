@@ -54,6 +54,10 @@ Ipomoea nil, 109155300, shikimate O-hydroxycinnamoyltransferase  [EC], ['EC:2.3.
 Ipomoea nil, 109167144, acetyl-CoA-benzylalcohol acetyltransferase-like  [EC], ['EC:2.3.1.133'], KO:K13065
 Ipomoea nil, 109173156, shikimate O-hydroxycinnamoyltransferase-like  [EC], ['EC:2.3.1.133'], KO:K13065
 Ipomoea nil, 109181086, spermidine hydroxycinnamoyl transferase-like  [EC], ['EC:2.3.1.133'], KO:K13065
+Ipomoea nil, 109155697, vinorine synthase-like  [EC], ['EC:2.3.1.133'], KO:K13065
+Ipomoea nil, 109156081, vinorine synthase-like  [EC], ['EC:2.3.1.133'], KO:K13065
+Ipomoea nil, 109156082, vinorine synthase-like  [EC], ['EC:2.3.1.133'], KO:K13065
+Ipomoea nil, 109190503, vinorine synthase-like  [EC], ['EC:2.3.1.133'], KO:K13065
 Ipomoea nil, 109159148, cytochrome P450 98A3  [EC], ['EC:1.14.14.96'], KO:K09754
 Ipomoea nil, 109164018, caffeoylshikimate esterase  [EC], ['EC:3.1.1.-'], KO:K18368
 Ipomoea nil, 109189036, caffeoylshikimate esterase-like  [EC], ['EC:3.1.1.-'], KO:K18368
@@ -64,6 +68,7 @@ Ipomoea nil, 109168572, caffeoylshikimate esterase-like  [EC], ['EC:3.1.1.-'], K
 Ipomoea nil, 109182572, caffeoylshikimate esterase-like  [EC], ['EC:3.1.1.-'], KO:K18368
 Ipomoea nil, 109177877, caffeoylshikimate esterase  [EC], ['EC:3.1.1.-'], KO:K18368
 Ipomoea nil, 109161153, caffeoylshikimate esterase  [EC], ['EC:3.1.1.-'], KO:K18368
+Ipomoea nil, 109148100, caffeoylshikimate esterase-like  [EC], ['EC:3.1.1.-'], KO:K18368
 Ipomoea nil, 109172722, probable caffeoyl-CoA O-methyltransferase At4g26220  [EC], ['EC:2.1.1.104'], KO:K00588
 Ipomoea nil, 109193122, In04; probable caffeoyl-CoA O-methyltransferase At4g26220  [EC], ['EC:2.1.1.104'], KO:K00588
 Ipomoea nil, 109193141, probable caffeoyl-CoA O-methyltransferase At4g26220  [EC], ['EC:2.1.1.104'], KO:K00588
@@ -81,6 +86,7 @@ Ipomoea nil, 109176903, aldehyde dehydrogenase family 2 member C4-like  [EC], ['
 Ipomoea nil, 109186419, aldehyde dehydrogenase family 2 member C4-like  [EC], ['EC:1.2.1.68'], KO:K12355
 Ipomoea nil, 109167744, cytochrome P450 84A1-like  [EC], ['EC:1.14.-.-'], KO:K09755
 Ipomoea nil, 109172706, cytochrome P450 84A1-like  [EC], ['EC:1.14.-.-'], KO:K09755
+Ipomoea nil, 109167743, cytochrome P450 84A1-like  [EC], ['EC:1.14.-.-'], KO:K09755
 Ipomoea nil, 109194027, caffeic acid 3-O-methyltransferase  [EC], ['EC:2.1.1.68', 'EC:2.1.1.4'], KO:K13066
 Ipomoea nil, 109165820, caffeic acid 3-O-methyltransferase-like  [EC], ['EC:2.1.1.68', 'EC:2.1.1.4'], KO:K13066
 Ipomoea nil, 109165828, caffeic acid 3-O-methyltransferase-like  [EC], ['EC:2.1.1.68', 'EC:2.1.1.4'], KO:K13066
@@ -95,6 +101,10 @@ Ipomoea nil, 109147298, probable cinnamyl alcohol dehydrogenase 6  [EC], ['EC:1.
 Ipomoea nil, 109179955, probable cinnamyl alcohol dehydrogenase 1  [EC], ['EC:1.1.1.195'], KO:K00083
 Ipomoea nil, 109192735, probable cinnamyl alcohol dehydrogenase 1  [EC], ['EC:1.1.1.195'], KO:K00083
 Ipomoea nil, 109172550, probable mannitol dehydrogenase 1  [EC], ['EC:1.1.1.195'], KO:K00083
+Ipomoea nil, 109156896, probable cinnamyl alcohol dehydrogenase 6  [EC], ['EC:1.1.1.195'], KO:K00083
+Ipomoea nil, 109164565, probable cinnamyl alcohol dehydrogenase 6  [EC], ['EC:1.1.1.195'], KO:K00083
+Ipomoea nil, 109164566, probable cinnamyl alcohol dehydrogenase 6  [EC], ['EC:1.1.1.195'], KO:K00083
+Ipomoea nil, 109183472, probable cinnamyl alcohol dehydrogenase 6  [EC], ['EC:1.1.1.195'], KO:K00083
 Ipomoea nil, 109155723, berberine bridge enzyme-like 15  [EC], ['EC:1.1.1.195'], KO:K22395
 Ipomoea nil, 109181389, berberine bridge enzyme-like 13  [EC], ['EC:1.1.1.195'], KO:K22395
 Ipomoea nil, 109164790, berberine bridge enzyme-like 15  [EC], ['EC:1.1.1.195'], KO:K22395
@@ -229,6 +239,11 @@ Ipomoea nil, 109151205, anthocyanidin 3-O-glucosyltransferase 5-like  [EC], ['EC
 Ipomoea nil, 109151207, anthocyanidin 3-O-glucosyltransferase 5-like  [EC], ['EC:2.4.1.111'], KO:K12356
 Ipomoea nil, 109151208, anthocyanidin 3-O-glucosyltransferase 5-like  [EC], ['EC:2.4.1.111'], KO:K12356
 Ipomoea nil, 109191292, beta-glucosidase 10-like  [EC], ['EC:3.2.1.21'], KO:K01188
+Ipomoea nil, 109161702, beta-glucosidase 6-like  [EC], ['EC:3.2.1.21'], KO:K01188
+Ipomoea nil, 109162115, beta-glucosidase 40-like  [EC], ['EC:3.2.1.21'], KO:K01188
+Ipomoea nil, 109162116, beta-glucosidase 40-like  [EC], ['EC:3.2.1.21'], KO:K01188
+Ipomoea nil, 109162117, beta-glucosidase 40-like  [EC], ['EC:3.2.1.21'], KO:K01188
+Ipomoea nil, 109188042, putative beta-glucosidase 41  [EC], ['EC:3.2.1.21'], KO:K01188
 Ipomoea nil, 109161886, beta-glucosidase BoGH3B-like  [EC], ['EC:3.2.1.21'], KO:K05349
 Ipomoea nil, 109181906, beta-glucosidase BoGH3B-like  [EC], ['EC:3.2.1.21'], KO:K05349
 Ipomoea nil, 109159477, beta-glucosidase BoGH3B-like  [EC], ['EC:3.2.1.21'], KO:K05349

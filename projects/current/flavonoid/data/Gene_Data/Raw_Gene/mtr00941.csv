@@ -5,6 +5,7 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP mtr00941  Flavonoid biosynthesis
 MODULE      mtr_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:mtr00941]
             mtr_M00138  Flavonoid biosynthesis, naringenin => pelargonidin [PATH:mtr00941]
+            mtr_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:mtr00941]
 DBLINKS     GO: 0009813
 ORGANISM    Medicago truncatula (barrel medic) [GN:mtr]
 GENE        MTR_3g088675  chalcone and stilbene synthase family protein [KO:K00660] [EC:2.3.1.74]
@@ -51,6 +52,8 @@ GENE        MTR_3g088675  chalcone and stilbene synthase family protein [KO:K006
             MTR_5g097900  aldo/keto reductase family oxidoreductase [KO:K08243]
             MTR_5g097910  aldo/keto reductase family oxidoreductase [KO:K08243]
             MTR_5g097940  aldo/keto reductase family oxidoreductase [KO:K08243]
+            MTR_3g083130  aldo/keto reductase family oxidoreductase [KO:K08243]
+            MTR_0374s0050  aldo/keto reductase family oxidoreductase [KO:K08243]
             MTR_4g062510  cytochrome P450 family flavone synthase [KO:K23179] [EC:1.14.19.76]
             MTR_4g062500  cytochrome P450 family flavone synthase [KO:K23179] [EC:1.14.19.76]
             MTR_1g107295  cytochrome P450 family flavone synthase [KO:K23179] [EC:1.14.19.76]

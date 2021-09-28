@@ -3,6 +3,8 @@ NAME        Isoflavonoid biosynthesis - Vigna unguiculata (cowpea)
 DESCRIPTION Isoflavonoids are biologically active compounds, such as phytoestrogens, produced by pea family plants. While flavonoids (in the narrow sense) have the 2-phenylchromen-4-one backbone, isoflavonoids have the 3-phenylchromen-4-one backbone with no hydroxyl group substitution at position 2. Isoflavonoids are derived from the flavonoid biosynthesis pathway via liquiritigenin or naringenin.
 CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP vun00943  Isoflavonoid biosynthesis
+MODULE      vun_M00941  Isoflavone biosynthesis, liquiritigenin => daidzein / naringenin => genistein [PATH:vun00943]
+            vun_M00942  Pterocarpan biosynthesis, daidzein => medicarpin [PATH:vun00943]
 DBLINKS     GO: 0009717
 ORGANISM    Vigna unguiculata (cowpea) [GN:vun]
 GENE        114177979  2-hydroxyisoflavanone synthase [KO:K13257] [EC:1.14.14.87]
@@ -10,6 +12,7 @@ GENE        114177979  2-hydroxyisoflavanone synthase [KO:K13257] [EC:1.14.14.87
             114177618  2-hydroxyisoflavanone synthase-like [KO:K13257] [EC:1.14.14.87]
             114177620  2-hydroxyisoflavanone synthase-like [KO:K13257] [EC:1.14.14.87]
             114166941  2-hydroxyisoflavanone dehydratase-like [KO:K13258] [EC:4.2.1.105]
+            114190838  2-hydroxyisoflavanone dehydratase-like [KO:K13258] [EC:4.2.1.105]
             114175643  isoflavone 4'-O-methyltransferase-like [KO:K13259] [EC:2.1.1.212 2.1.1.46]
             114176660  isoflavone 3'-hydroxylase-like [KO:K22932] [EC:1.14.14.88]
             114174265  cytochrome P450 81E8-like [KO:K13260] [EC:1.14.14.90 1.14.14.89]
@@ -36,8 +39,13 @@ GENE        114177979  2-hydroxyisoflavanone synthase [KO:K13257] [EC:1.14.14.87
             114183378  flavonoid 4'-O-methyltransferase-like [KO:K13262] [EC:2.1.1.150]
             114181375  isoflavone 7-O-glucosyltransferase 1-like isoform X1 [KO:K13263] [EC:2.4.1.170]
             114181452  UDP-glycosyltransferase 2-like [KO:K13263] [EC:2.4.1.170]
+            114173087  isoflavone reductase-like [KO:K05281] [EC:1.3.1.45]
+            114168785  isoflavone reductase-like [KO:K05281] [EC:1.3.1.45]
+            114172980  isoflavone reductase-like [KO:K05281] [EC:1.3.1.45]
             114183399  vestitone reductase-like [KO:K13265] [EC:1.1.1.348]
             114184905  vestitone reductase-like [KO:K13265] [EC:1.1.1.348]
+            114193911  dirigent protein 2-like [KO:K25075] [EC:4.2.1.139]
+            114178337  dirigent protein 2-like [KO:K25075] [EC:4.2.1.139]
             114168306  isoflavone reductase homolog PCBER-like [KO:K13266] [EC:1.23.1.-]
             114168838  isoflavone reductase homolog PCBER-like [KO:K13266] [EC:1.23.1.-]
             114187165  cytochrome P450 71D9-like [KO:K13267] [EC:1.14.13.-]

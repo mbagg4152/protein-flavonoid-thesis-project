@@ -5,12 +5,13 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP ghi00943  Isoflavonoid biosynthesis
 DBLINKS     GO: 0009717
 ORGANISM    Gossypium hirsutum (upland cotton) [GN:ghi]
-GENE        107936806  cytochrome P450 81D11-like [KO:K13260] [EC:1.14.14.90 1.14.14.89]
-            107945765  cytochrome P450 81D1-like [KO:K13260] [EC:1.14.14.90 1.14.14.89]
-            107916731  cytochrome P450 81D1-like [KO:K13260] [EC:1.14.14.90 1.14.14.89]
-            107953970  cytochrome P450 81D11-like [KO:K13260] [EC:1.14.14.90 1.14.14.89]
-            107935199  LOW QUALITY PROTEIN: licodione synthase-like [KO:K23179] [EC:1.14.19.76]
-            107919519  licodione synthase-like [KO:K23179] [EC:1.14.19.76]
+GENE        107936806  cytochrome P450 81Q32 [KO:K13260] [EC:1.14.14.90 1.14.14.89]
+            107945765  cytochrome P450 81Q32-like [KO:K13260] [EC:1.14.14.90 1.14.14.89]
+            107916731  cytochrome P450 81Q32-like [KO:K13260] [EC:1.14.14.90 1.14.14.89]
+            107953970  cytochrome P450 81Q32-like [KO:K13260] [EC:1.14.14.90 1.14.14.89]
+            107953971  cytochrome P450 81Q32-like [KO:K13260] [EC:1.14.14.90 1.14.14.89]
+            107919519  cytochrome P450 93B16 [KO:K23179] [EC:1.14.19.76]
+            107895096  cytochrome P450 93B16-like [KO:K23179] [EC:1.14.19.76]
 COMPOUND    C00509  Naringenin
             C00786  (-)-Vestitone
             C00814  Biochanin A

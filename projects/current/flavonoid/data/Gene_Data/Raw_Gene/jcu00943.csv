@@ -5,12 +5,9 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP jcu00943  Isoflavonoid biosynthesis
 DBLINKS     GO: 0009717
 ORGANISM    Jatropha curcas [GN:jcu]
-GENE        105639784  isoflavone 3'-hydroxylase [KO:K13260] [EC:1.14.14.90 1.14.14.89]
-            105639782  cytochrome P450 81E8 [KO:K13260] [EC:1.14.14.90 1.14.14.89]
-            105639783  cytochrome P450 81D1 [KO:K13260] [EC:1.14.14.90 1.14.14.89]
-            105639785  cytochrome P450 81E8 [KO:K13260] [EC:1.14.14.90 1.14.14.89]
-            105628352  licodione synthase [KO:K23179] [EC:1.14.19.76]
-            105628201  licodione synthase [KO:K23179] [EC:1.14.19.76]
+GENE        105639782  cytochrome P450 81Q32 [KO:K13260] [EC:1.14.14.90 1.14.14.89]
+            105639783  cytochrome P450 81Q32 [KO:K13260] [EC:1.14.14.90 1.14.14.89]
+            105639785  cytochrome P450 81Q32 [KO:K13260] [EC:1.14.14.90 1.14.14.89]
 COMPOUND    C00509  Naringenin
             C00786  (-)-Vestitone
             C00814  Biochanin A

@@ -7,8 +7,7 @@ MODULE      aof_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PAT
             aof_M00138  Flavonoid biosynthesis, naringenin => pelargonidin [PATH:aof00941]
 DBLINKS     GO: 0009813
 ORGANISM    Asparagus officinalis (garden asparagus) [GN:aof]
-GENE        109833799  octaketide synthase 3-like [KO:K00660] [EC:2.3.1.74]
-            109823892  LOW QUALITY PROTEIN: chalcone synthase 1-like [KO:K00660] [EC:2.3.1.74]
+GENE        109823892  LOW QUALITY PROTEIN: chalcone synthase 1-like [KO:K00660] [EC:2.3.1.74]
             109850162  LOW QUALITY PROTEIN: octaketide synthase 3-like [KO:K00660] [EC:2.3.1.74]
             109829834  LOW QUALITY PROTEIN: chalcone synthase 6-4-like [KO:K00660] [EC:2.3.1.74]
             109836525  LOW QUALITY PROTEIN: chalcone synthase 1B-like [KO:K00660] [EC:2.3.1.74]
@@ -40,7 +39,6 @@ GENE        109833799  octaketide synthase 3-like [KO:K00660] [EC:2.3.1.74]
             109830125  flavonoid 3',5'-methyltransferase-like [KO:K00588] [EC:2.1.1.104]
             109830127  flavonoid 3',5'-methyltransferase-like isoform X1 [KO:K00588] [EC:2.1.1.104]
             109830128  flavonoid 3',5'-methyltransferase-like [KO:K00588] [EC:2.1.1.104]
-            109830129  flavonoid 3',5'-methyltransferase-like [KO:K00588] [EC:2.1.1.104]
             109831608  caffeoyl-CoA O-methyltransferase 5-like [KO:K00588] [EC:2.1.1.104]
             109835762  LOW QUALITY PROTEIN: caffeoyl-CoA O-methyltransferase-like [KO:K00588] [EC:2.1.1.104]
 COMPOUND    C00223  p-Coumaroyl-CoA

@@ -5,8 +5,8 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP lsv00942  Anthocyanin biosynthesis
 DBLINKS     GO: 0009718
 ORGANISM    Lactuca sativa (garden lettuce) [GN:lsv]
-GENE        111884088  kaempferol 3-O-beta-D-galactosyltransferase-like [KO:K12930] [EC:2.4.1.115]
-            111894781  kaempferol 3-O-beta-D-galactosyltransferase-like [KO:K12930] [EC:2.4.1.115]
+GENE        111894781  kaempferol 3-O-beta-D-galactosyltransferase [KO:K12930] [EC:2.4.1.115]
+            111884088  anthocyanidin 3-O-galactosyltransferase F3GT1 [KO:K12930] [EC:2.4.1.115]
 COMPOUND    C05904  Pelargonidin
             C05905  Cyanidin
             C05908  Delphinidin

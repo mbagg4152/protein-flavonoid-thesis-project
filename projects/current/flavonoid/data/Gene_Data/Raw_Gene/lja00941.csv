@@ -5,6 +5,7 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP lja00941  Flavonoid biosynthesis
 MODULE      lja_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:lja00941]
             lja_M00138  Flavonoid biosynthesis, naringenin => pelargonidin [PATH:lja00941]
+            lja_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:lja00941]
 DBLINKS     GO: 0009813
 ORGANISM    Lotus japonicus [GN:lja]
 GENE        Lj1g3v0898850.1  Lj1g3v0898850.1; - [KO:K00660] [EC:2.3.1.74]
@@ -46,6 +47,9 @@ GENE        Lj1g3v0898850.1  Lj1g3v0898850.1; - [KO:K00660] [EC:2.3.1.74]
             Lj0g3v0328299.1  Lj0g3v0328299.1; - [KO:K08243]
             Lj0g3v0328269.1  Lj0g3v0328269.1; - [KO:K08243]
             Lj2g3v3339360.1  Lj2g3v3339360.1; - [KO:K08243]
+            Lj0g3v0001769.1  Lj0g3v0001769.1; - [KO:K08243]
+            Lj0g3v0001739.1  Lj0g3v0001739.1; - [KO:K08243]
+            Lj5g3v0529160.1  Lj5g3v0529160.1; - [KO:K08243]
             Lj1g3v2293820.1  Lj1g3v2293820.1; - [KO:K05280] [EC:1.14.14.82]
             Lj4g3v1708650.1  Lj4g3v1708650.1; - [KO:K05280] [EC:1.14.14.82]
             Lj4g3v2267360.1  Lj4g3v2267360.1; - [KO:K05280] [EC:1.14.14.82]

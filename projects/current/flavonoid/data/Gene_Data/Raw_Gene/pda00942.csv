@@ -5,7 +5,7 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP pda00942  Anthocyanin biosynthesis
 DBLINKS     GO: 0009718
 ORGANISM    Phoenix dactylifera (date palm) [GN:pda]
-GENE        103718397  LOW QUALITY PROTEIN: anthocyanidin 3-O-glucosyltransferase 7-like [KO:K12930] [EC:2.4.1.115]
+GENE        103718397  myricetin 3-O-rhamnosyltransferase UGT77B2-like [KO:K12930] [EC:2.4.1.115]
             103715944  anthocyanidin 3-O-glucosyltransferase 7-like [KO:K12930] [EC:2.4.1.115]
 COMPOUND    C05904  Pelargonidin
             C05905  Cyanidin

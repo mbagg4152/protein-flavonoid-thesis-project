@@ -4,6 +4,7 @@ DESCRIPTION Flavonoids are a major class of plant secondary metabolites that ser
 CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP aip00941  Flavonoid biosynthesis
 MODULE      aip_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:aip00941]
+            aip_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:aip00941]
 DBLINKS     GO: 0009813
 ORGANISM    Arachis ipaensis [GN:aip]
 GENE        107607787  chalcone synthase-like [KO:K00660] [EC:2.3.1.74]
@@ -47,6 +48,14 @@ GENE        107607787  chalcone synthase-like [KO:K00660] [EC:2.3.1.74]
             107608857  trans-cinnamate 4-monooxygenase [KO:K00487] [EC:1.14.14.91]
             107635198  trans-cinnamate 4-monooxygenase [KO:K00487] [EC:1.14.14.91]
             107609108  NAD(P)H-dependent 6'-deoxychalcone synthase [KO:K08243]
+            107609107  NAD(P)H-dependent 6'-deoxychalcone synthase isoform X1 [KO:K08243]
+            107614963  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            110262349  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            107605441  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            107608427  NAD(P)H-dependent 6'-deoxychalcone synthase isoform X1 [KO:K08243]
+            107608429  NAD(P)H-dependent 6'-deoxychalcone synthase [KO:K08243]
+            107608430  NAD(P)H-dependent 6'-deoxychalcone synthase [KO:K08243]
+            107608431  NAD(P)H-dependent 6'-deoxychalcone synthase [KO:K08243]
             107634112  licodione synthase-like [KO:K23179] [EC:1.14.19.76]
             107623580  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]
             107642984  leucoanthocyanidin dioxygenase [KO:K05277] [EC:1.14.20.4]

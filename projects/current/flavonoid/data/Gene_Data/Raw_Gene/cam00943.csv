@@ -3,11 +3,14 @@ NAME        Isoflavonoid biosynthesis - Cicer arietinum (chickpea)
 DESCRIPTION Isoflavonoids are biologically active compounds, such as phytoestrogens, produced by pea family plants. While flavonoids (in the narrow sense) have the 2-phenylchromen-4-one backbone, isoflavonoids have the 3-phenylchromen-4-one backbone with no hydroxyl group substitution at position 2. Isoflavonoids are derived from the flavonoid biosynthesis pathway via liquiritigenin or naringenin.
 CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP cam00943  Isoflavonoid biosynthesis
+MODULE      cam_M00941  Isoflavone biosynthesis, liquiritigenin => daidzein / naringenin => genistein [PATH:cam00943]
+            cam_M00942  Pterocarpan biosynthesis, daidzein => medicarpin [PATH:cam00943]
 DBLINKS     GO: 0009717
 ORGANISM    Cicer arietinum (chickpea) [GN:cam]
 GENE        101495474  cyp93C3; 2-hydroxyisoflavanone synthase [KO:K13257] [EC:1.14.14.87]
             101495803  2-hydroxyisoflavanone synthase-like [KO:K13257] [EC:1.14.14.87]
             101506056  2-hydroxyisoflavanone dehydratase-like [KO:K13258] [EC:4.2.1.105]
+            101502005  2-hydroxyisoflavanone dehydratase-like [KO:K13258] [EC:4.2.1.105]
             101495151  isoflavone 4'-O-methyltransferase [KO:K13259] [EC:2.1.1.212 2.1.1.46]
             101494823  isoflavone 4'-O-methyltransferase-like [KO:K13259] [EC:2.1.1.212 2.1.1.46]
             101494507  isoflavone 4'-O-methyltransferase-like [KO:K13259] [EC:2.1.1.212 2.1.1.46]
@@ -23,7 +26,9 @@ GENE        101495474  cyp93C3; 2-hydroxyisoflavanone synthase [KO:K13257] [EC:1
             101505606  isoflavone-7-O-methyltransferase 9 [KO:K13262] [EC:2.1.1.150]
             101510753  phenolic glucoside malonyltransferase 1-like [KO:K13264] [EC:2.3.1.115]
             101511076  phenolic glucoside malonyltransferase 1-like [KO:K13264] [EC:2.3.1.115]
+            101508729  IFR; isoflavone reductase-like [KO:K05281] [EC:1.3.1.45]
             101514431  vestitone reductase [KO:K13265] [EC:1.1.1.348]
+            101491323  dirigent protein 2-like [KO:K25075] [EC:4.2.1.139]
             101508382  isoflavone reductase-like protein [KO:K13266] [EC:1.23.1.-]
             101504626  cytochrome P450 71D9-like [KO:K13267] [EC:1.14.13.-]
             101511254  licodione synthase-like [KO:K23179] [EC:1.14.19.76]

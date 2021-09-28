@@ -5,6 +5,7 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP zju00941  Flavonoid biosynthesis
 MODULE      zju_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:zju00941]
             zju_M00138  Flavonoid biosynthesis, naringenin => pelargonidin [PATH:zju00941]
+            zju_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:zju00941]
 DBLINKS     GO: 0009813
 ORGANISM    Ziziphus jujuba (Chinese jujube) [GN:zju]
 GENE        107428003  LOW QUALITY PROTEIN: chalcone synthase [KO:K00660] [EC:2.3.1.74]
@@ -23,6 +24,7 @@ GENE        107428003  LOW QUALITY PROTEIN: chalcone synthase [KO:K00660] [EC:2.
             107406287  trans-cinnamate 4-monooxygenase-like [KO:K00487] [EC:1.14.14.91]
             107417662  cytochrome P450 CYP73A100-like [KO:K00487] [EC:1.14.14.91]
             107411586  trans-cinnamate 4-monooxygenase [KO:K00487] [EC:1.14.14.91]
+            107427754  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
             107419096  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]
             107420289  dihydroflavonol 4-reductase-like [KO:K13082] [EC:1.1.1.219 1.1.1.234]
             107420293  dihydroflavonol 4-reductase-like [KO:K13082] [EC:1.1.1.219 1.1.1.234]

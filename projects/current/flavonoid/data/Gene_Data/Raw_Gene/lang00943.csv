@@ -3,6 +3,7 @@ NAME        Isoflavonoid biosynthesis - Lupinus angustifolius (narrow-leaved blu
 DESCRIPTION Isoflavonoids are biologically active compounds, such as phytoestrogens, produced by pea family plants. While flavonoids (in the narrow sense) have the 2-phenylchromen-4-one backbone, isoflavonoids have the 3-phenylchromen-4-one backbone with no hydroxyl group substitution at position 2. Isoflavonoids are derived from the flavonoid biosynthesis pathway via liquiritigenin or naringenin.
 CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP lang00943  Isoflavonoid biosynthesis
+MODULE      lang_M00941  Isoflavone biosynthesis, liquiritigenin => daidzein / naringenin => genistein [PATH:lang00943]
 DBLINKS     GO: 0009717
 ORGANISM    Lupinus angustifolius (narrow-leaved blue lupine) [GN:lang]
 GENE        109349375  2-hydroxyisoflavanone synthase [KO:K13257] [EC:1.14.14.87]

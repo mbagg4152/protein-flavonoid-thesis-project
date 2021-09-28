@@ -5,7 +5,7 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP lsv00943  Isoflavonoid biosynthesis
 DBLINKS     GO: 0009717
 ORGANISM    Lactuca sativa (garden lettuce) [GN:lsv]
-GENE        111905568  licodione synthase-like [KO:K23179] [EC:1.14.19.76]
+GENE        111905568  cytochrome P450 93B2 [KO:K23179] [EC:1.14.19.76]
 COMPOUND    C00509  Naringenin
             C00786  (-)-Vestitone
             C00814  Biochanin A

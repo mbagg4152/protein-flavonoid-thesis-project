@@ -5,6 +5,7 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP cpap00941  Flavonoid biosynthesis
 MODULE      cpap_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:cpap00941]
             cpap_M00138  Flavonoid biosynthesis, naringenin => pelargonidin [PATH:cpap00941]
+            cpap_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:cpap00941]
 DBLINKS     GO: 0009813
 ORGANISM    Carica papaya (papaya) [GN:cpap]
 GENE        110814000  chalcone synthase 2 [KO:K00660] [EC:2.3.1.74]
@@ -15,6 +16,7 @@ GENE        110814000  chalcone synthase 2 [KO:K00660] [EC:2.3.1.74]
             110816514  flavonol synthase/flavanone 3-hydroxylase [KO:K05278] [EC:1.14.20.6]
             110823746  trans-cinnamate 4-monooxygenase [KO:K00487] [EC:1.14.14.91]
             110809815  cytochrome P450 CYP73A100-like [KO:K00487] [EC:1.14.14.91]
+            110817176  non-functional NADPH-dependent codeinone reductase 2-like [KO:K08243]
             110811144  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]
             110820638  dihydroflavonol 4-reductase [KO:K13082] [EC:1.1.1.219 1.1.1.234]
             110807940  flavonoid 3',5'-hydroxylase 2-like [KO:K13083] [EC:1.14.14.81]

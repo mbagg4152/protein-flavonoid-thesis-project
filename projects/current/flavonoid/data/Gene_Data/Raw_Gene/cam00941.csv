@@ -5,6 +5,7 @@ CLASS       Metabolism; Biosynthesis of other secondary metabolites
 PATHWAY_MAP cam00941  Flavonoid biosynthesis
 MODULE      cam_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:cam00941]
             cam_M00138  Flavonoid biosynthesis, naringenin => pelargonidin [PATH:cam00941]
+            cam_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:cam00941]
 DBLINKS     GO: 0009813
 ORGANISM    Cicer arietinum (chickpea) [GN:cam]
 GENE        101489106  chalcone synthase 1 [KO:K00660] [EC:2.3.1.74]
@@ -29,6 +30,9 @@ GENE        101489106  chalcone synthase 1 [KO:K00660] [EC:2.3.1.74]
             101498748  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
             101513992  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
             101513338  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            101493855  NAD(P)H-dependent 6'-deoxychalcone synthase [KO:K08243]
+            101500008  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            101493536  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
             101511254  licodione synthase-like [KO:K23179] [EC:1.14.19.76]
             101507543  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]
             101510693  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
