@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05868: 111994477</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838612">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838612">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- qsu:111994477 -->&gt;qsu:111994477 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atgatgatggacgttgatatcatttcaagagaaatcatcagaccatcatcaccagcaatt
+catcatctaaaacccttcaaactctctctgttggaccagttcactcctccaacctatatc
+ccacttaccctcttttaccctaagaaccatactcattcaaccaatcacctaaaaaactca
+ctctcagaaaccctaaataccttctacccattttctggaaggatgaaagacaaccttttc
+attgattattacgatgagggcattccatttactgaggcccgagtcagttgctgtctttct
+gactttcttgaacatcctaaaacggagtggttaaaccattttcttcctttctgtccactt
+tgcaaagaaccaaacccaatggaaattgccccaatagcagtacaagtgaatatatttgat
+tgtggtggaatagcaatcggtttatgcatgtcacataagatcatagatggaatcaccatg
+attgctttcctcaacaattgggcagccactgcaggcgggcctagtaacaaattagtgcat
+cctaatttttcagaggcatcatcattatcacactttcccccgcaagatatattgcctcat
+attgttgcacctataatagaaaggctttggttcaatggaagcaagagcaagacaaggaga
+tttgtgtttgatgctaaggccatagctactataaaggcgaaagcaaagagtgaacgagtg
+caaaacccaagccgaactgaatcactgtcttgtttcatttttaaacacgcaagagctgct
+tctagattaacatctggttctccaaggccatctatactgggccaagcagtaaacatccgg
+aaaaaaacaaatccacacttgtcggattattctacaggtaatctctttttgtgggcatta
+gcagtctatgattataactcaccagagtcgacagatcagatagatctgcgtggcttggtg
+gcaagcctaagagaaactatttcgaaaatcaatagtgaagtgagcattctgcaaggtcgt
+gaagatttgaaagccacgatcgagtacctaaaccagaaagctgaaatggtactattctcc
+agagaaaacccagattttttcgctttcagcagttggttgacgttcggattagatgatatc
+gattttggatggggaaaacccatttggacaggggtctatggggaagttggttcggggttt
+atgaatatcactgtacttaaaaataccatctctggcaatgggattgaggcatgggtgtcc
+ttagatgaaaaaactatggctatattggagcacaatcctgaattccttgcctttgatact
+ttaaacccaagtgttttaagccaatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=qsu:111994477+nt">BLAST</a>
+</body>
+</html>

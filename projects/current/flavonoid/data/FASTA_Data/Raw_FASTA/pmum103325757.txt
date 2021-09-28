@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03196: 103325757</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620859649">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620859649">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pmum:103325757 -->&gt;pmum:103325757 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+ccatcttctccaacccctaaacatcttcgacgccatcagttttcctttcttgatcaaata
+aatcccccaatttatacctccttggtcctcttctatgaattcaatggcaagatcccgccc
+accattaccgaaatatcaaagcaccttaagaagtccttatccgagatcttgacccttttc
+tacccactagccggccgactcagagtcgagaaccattttgtagactgcaatgaccaggga
+ataccctaccttgaaggtctagtaaaacccaactgccagctttgtgattttctcaatgat
+ccggtccctgatgacctccagaaatttgtcccctttgagccagatgatcataatgaattt
+cccctaggtgtccagctcaacatgttcgaatgtggaggcttcgccattggtctaagcgtt
+tctcacaagctcgcagatggactatctatgctcatgctcaccaaaacttgggctgccatt
+tcccgcggagaatatgataatcttgaagccaaaatagagcatccgcaatttgtttcagcc
+acactcttcccacccaaggagatgaccaggtactactcacacgccggtatcaccacgaac
+aaagtaacaaagaggttcgtgtttgatgcctctgcgatagaggatctcagagtaaaatat
+acaggcttggaaaacaatgagaaacgcccgtcacgtgttgagaccttatcggctttcata
+tggaggcgatttgtggaagctaccaagggtgatcctgatcaaaatattgatgataagaat
+aagttgcatatggtgatccagactgtgaacctgcgccccaggattgatccaccattgccg
+caaaattcatttggaaatatttgtcattttttcatgattagtagtagtggggatgatgat
+tatgatgatgaagatgaagaatcttgtcatggcatggtgaggcgggtacgagaagaaata
+agtaagattgacaaggactacgtgaaaaggctacaacagggtgatgagcacttcaaattc
+atgaaccgacttgctcaaagttctattagatctggagggaaggtagttacgtcttacttc
+agtagtttgtgcagatttcccctctatgatatggattttggttgggggagaccggcatgg
+gtgggcatacagccactacccttgaacaacctaatagttttcgtcgacaccaaagagact
+ggcggaatagaggcatacgttaccctggcggatcagcatgtcatggctaaattcgaaagt
+gactcattccttcaaagacgggtgcacaagggccggtttgatactgccgtttcaagttta
+gcgtgtcaaccagcccaatttaaccaggttgcgaaatttcactcccaagatcagtcgagt
+gtaattaagaaaccaattcaaatcaaaccattgaaactcggatcgaggctataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pmum:103325757+nt">BLAST</a>
+</body>
+</html>

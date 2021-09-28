@@ -1,0 +1,34 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04130: 107004785</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620851278">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620851278">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- spen:107004785 -->&gt;spen:107004785 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) LOW QUALITY PROTEIN: BAHD acyltransferase At5g47980-like (N)
+atggagaaaaaagtagagataacatcacaaaatttgataaaacctaaagtttgtcatttt
+gaatccttcagtttttcagctctagatcaacttgctccccttcctcactatccaattttt
+ctatactatccaaatgataataaaaaatcaaccaacatatcaacaaaatcccaacaacta
+aaaaattcattatccaaaattctatctgatttttatccatttgctggtagattaatcaat
+gaaaacacttcaataagtttcaataatcacaataatgatgattttggtgtattatttatt
+gaagcttttgcacataactataatctccaataggatattcttctctcaggcattaaaaca
+aacacttgtggacactttctcccaacacttgattcactattgcaaactcatttgttgatt
+gttcaagtcacattctttgaatgtggaggcatgattctaggttgttgggtttctcataag
+ttatccgacgctacgtctatttgtagtttcatcaataactgggcatccactgctcgagaa
+gcagcagtggatgcccagttattgatgaaactacaaatagacttattactgacccctgat
+tttaaaacaggggtcaaaatcttcccacctacccaaaaaccctatccatcaccattcact
+aacttcatttttaataaacaacaactcgtttcgaagatcttcttgtttaatggacctagc
+atcgcgaatctcaagactaaagctttatctaaggatgtacctagccctacgcgtgttgaa
+gccgcgtcagctctgatatggaaatgtgcgactgtctcatctaaaagcagctctggtttg
+ttgatcatatctccttcctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=spen:107004785+nt">BLAST</a>
+</body>
+</html>

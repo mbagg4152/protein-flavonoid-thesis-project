@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03274: 103724278</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841171">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841171">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pda:103724278 -->&gt;pda:103724278 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) LOW QUALITY PROTEIN: agmatine coumaroyltransferase-2-like (N)
+atgccaagcccaaccaaaatcctgaaggtgagcgtggagagcacgagaatcgtcaagccc
+aactatgaatgcaatcttccacccaccactcctcatgtccccctgagcgtattcgataaa
+gccacctatgacatgcacattgcaagcatctacgccttccgtgcaccagctcctcccaat
+tctgtcatgcagaatggcctcgccagggtgctctccgagtacagggagttcgccggaagg
+ctcggggaggacgccgaagggaaccctgtcatcctcctcagtgacgaaggcgtgcggttc
+gtcgaggcatcggtggattccactctggaccaggtattgcccttcaagccctcgccggca
+ctgctaagcctgcaccctgaggtgcatggcgtggcggagctcctccaggtccagctcacg
+cggtttgcatgcggctctctcgtggtggggttcacctcgcaccaccgtgtcgccgatgcc
+catgccgccggcaacttcttgatcgcatggagcctcgcgacgcggggcctcgacgtgatc
+agcctcgccgttcacgaccggggcgcgttcttcacccctcgcgtgccgcctctgctggag
+ttcgagcaccgaggggtggagttcgcacccaagaacatgttcggcgctgcaaagtccgat
+cctctcaaggacaacatagtcgttcacaaggcgcacttcacgaaggaattcctgaccaag
+ctcaagtcccgagcatcggcaggggccagcaagccttacagcacgttcgagagcctcatg
+gctcacctgtggagggtggtcaccaaggctcgtaggctccacgagtccgagaccacccac
+gtccggatctcggtggacgggcggaggaggatgaacccacgcctgcccggcgagtacttc
+ggtaacatggtgttatgggcatacccccgtgctagggtgcgggatctcgtggacagccca
+ttgcagtatgcggccgagctcatccatgacgccgtcgcgagagtgaacgacgcctatttc
+aggtcgttcatagacttcgcaagtggacgtgagaaggaggatctggcgccgacggccgac
+gcggacaagtgggtgctgtgccctaacgtggacgtggatagctggctgaggctgccctta
+tatgatctcgactttggcggaggaagtccattctatttcatgccatcattcctgcctatc
+gagggagtcatattcctcgtaccttccttcataggagatggaagcattgaggtccatgtg
+gccttattcgactacaaccaagcctccttcaaaaaaatatgttactctctagagtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pda:103724278+nt">BLAST</a>
+</body>
+</html>

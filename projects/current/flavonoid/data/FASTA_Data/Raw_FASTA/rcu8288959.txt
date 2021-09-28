@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01087: 8288959</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620852747">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620852747">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- rcu:8288959 -->&gt;rcu:8288959 K13082 bifunctional dihydroflavonol 4-reductase/flavanone 4-reductase [EC:1.1.1.219 1.1.1.234] | (RefSeq) dihydroflavonol 4-reductase (N)
+atgggatcggaagtacaaaccgtttgtgtcacgggtgcttctggcttcatcgggtcatgg
+cttgtaatgagacttcttgagcgtggttttatggttcgagccaccgtgcgcgacgctgat
+aatatgaagaaagtgaagcatttgttagaattgccaaatgctaagacccacatgacctta
+tggaaagctgaccttgcccaagaaggaagttttgatgatgcaattcgagggtgcagtggt
+gttttccatgtggctacccccatggattttgaacccaaggatcctgagaatgaagtgata
+agaccaacggtcaatggtgtattagacataatgaaggcatgtgccaaggcaaaaactgta
+cgaagaatagtatttacatcttctgcgggaactgtagacgttgaggaacacaggaaagaa
+atgtacgatgagcactgctggagtgatcttgatttcattctgacaaaaaagatgactgga
+tgggtatatttcgtctccaagtctctggcagagaaggccgcctggaagtttgctgaaaag
+aataatcttgattttattagcatcatccctactctagttgttggtccatttctcggatca
+ttttttccacctagccttattactgcacttgccccgattaccggaaatgaagctcattat
+tcgattataaagcaagggcattttgtgcatttagatgatctctgcaatgctcacatattt
+ctgtttgagcatccaaaagctgagggccgttacatttgctcctcgcatgatgccaccatt
+catgaggtcgcaaaattgcttagagaaaaatatccggagtacaatattcctgcaaagata
+aatggagttgaagaggatattaagaacttcatcttctcatccaaaaagcttacggacatg
+ggtttccagttcaagtatagcttggaagatatgttggtaggaggtgtggaatcatgtaga
+gcaaagggagtgcttcctgtccccaatgtaaaagaattagccgatggaggcaaacaaaat
+ggatgtgactattcctgcatctaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=rcu:8288959+nt">BLAST</a>
+</body>
+</html>

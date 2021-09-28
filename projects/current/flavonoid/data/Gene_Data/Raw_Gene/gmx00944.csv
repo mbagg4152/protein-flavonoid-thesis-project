@@ -12,11 +12,19 @@ GENE        100127426  IF7MaT; malonyl-CoA:isoflavone 7-O-glucoside-6''-O-malony
             100778531  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]
             100779588  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]
             100807293  flavonoid 3'-monooxygenase [KO:K05280] [EC:1.14.14.82]
+<<<<<<< Updated upstream
             100791363  anthocyanidin 3-O-glucoside 2''-O-glucosyltransferase [KO:K22794] [EC:2.4.1.239 2.4.1.-]
             100808439  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
             100820538  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
             100807403  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
             100807938  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+=======
+            100791363  cyanidin 3-O-galactoside 2''-O-xylosyltransferase FGGT1 [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            100808439  cyanidin 3-O-galactoside 2''-O-xylosyltransferase FGGT1 [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            100820538  cyanidin 3-O-galactoside 2''-O-xylosyltransferase FGGT1 [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            100807403  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+            100807938  cyanidin 3-O-galactoside 2''-O-xylosyltransferase FGGT1 [KO:K22794] [EC:2.4.1.239 2.4.1.-]
+>>>>>>> Stashed changes
             100813643  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]
             100787444  FG3; UDP-glycosyltransferase 79B30 [KO:K22794] [EC:2.4.1.239 2.4.1.-]
             100780270  UDP-glycosyltransferase 79B30-like [KO:K22794] [EC:2.4.1.239 2.4.1.-]

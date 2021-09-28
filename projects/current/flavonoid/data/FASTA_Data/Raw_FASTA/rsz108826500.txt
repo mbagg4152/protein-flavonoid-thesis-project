@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T06014: 108826500</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854357">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854357">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- rsz:108826500 -->&gt;rsz:108826500 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) spermidine hydroxycinnamoyl transferase-like (N)
+atggctcccattattttaagaaacacttacacaatagtaccggctgaaccaacatggacc
+ggtcggtttccattagccgaatgggatcaagttggcacaataactcacgttcccacagtt
+tacttctacgacaagccatctgactccttccaaggcaatgtagtcgagaccctaaaacac
+tcgttgagccgtgcgctattccatttctaccctttagctggtcgtcttcggtggctctct
+cgcggccggttagagctcgactgtaatgctgccggagcgaccctcatcgtagctgaatcc
+gaggcagagctttcggatttcaacaatatcttagggacgcctgaattcgagaaacttgtg
+ccacaagtaaactacaaatcccctatcgaaacaatccctctctttttagctcaggtcacc
+aaattcaaatgcggccgaataagcctcagcatcagagtttcacatgcagtcgtagatgga
+caaagcgcgcttcacttcatgtcggaatggggaagaatcgcgcgtggtgaaccacttaaa
+accattccatttatggaccgcaaaatcctctgggctggtgaaccgcttccaccatttgct
+tcgtctcctcagtacgaaggtaaagagtttgaagagccgcctttactgatcggtaaaacg
+aactgtgtagaagaaagagagaaggaaacggttgtggcgatgctaaagctaagcaaaata
+cagcttgagaagcttaggagtagagtgaatacaagcgaatacgctgagccggcgagaggg
+tttacaaggtacgagacggtcacgggacacgtatggaggtgcgcgtgtaaagcacgtggg
+cactcgccagagcaacccacgggtttggtaatctgtgtagatgttcgtagtagggtgcag
+ccacctctgccacgtggctactttggcaatgccactcttgatgtggtcgcagaaagcacc
+tcaggtgaactgatatcgaatgacttgggcttcgcggcgggaaaaatcagtaaagccata
+aagaatgttacaaacgaatacgtgatgaccgggatagagtatctaaaaaaccacgaggat
+ctgaaagagtttcaagatatgcatactctgggaagaaaggaaggtccattttatgggaac
+cctaatcttggacttgtgagctggttaactctgccaatgtacggtcttgattacggatgg
+ggccaagaggtctacatgggaccaggcacgaatgacctcgatgggaactccctgctattg
+ctagataaaaatgaagacggctctctaattctagccacttgtcaacaagtggctcacatg
+gaggccttcaagaaacacttttatgaagatatatag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=rsz:108826500+nt">BLAST</a>
+</body>
+</html>

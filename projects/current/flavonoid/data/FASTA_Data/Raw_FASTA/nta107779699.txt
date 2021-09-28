@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04643: 107779699</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854410">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854410">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- nta:107779699 -->&gt;nta:107779699 K01859 chalcone isomerase [EC:5.5.1.6] | (RefSeq) CHI, CHI-1, NtCHI1; chalcone--flavonone isomerase (N)
+atggagtccattaccattgagaattacgtgttcccatcaacaatggtgaatcctcctggt
+tctaccaatacttttttccttgccggcgcaggaaatagaggtttggaaattgaagggaag
+tttgtgaagttcactgcgatcggcgtctacttggaagagagtgctcttccttttctcgcc
+gctaaatggaaaagcaaaagctcagaggagttggctaattcactcgactttttcagggat
+atcgtcacaggtccctttgagaaattcacccgagtgactatgatcttgcctttgacgggt
+aagcaatactcagagaaggtggcagaaaattgtgttgcccattggaaagcaataggaacc
+tacaccgatgcagagagtcaggccattgaaaagctcctcaacattttccagaatgaaacc
+ttcccgccgggtgcctccattctttttactcaatcacctgttggggcattgacgattagc
+ttcattaaagatgattcaattactggcactggaaatgctgttatagagaacaaacaattg
+tctgaagcagtgctggaatccataattggcaaacatggagtttcccctgcagcaaagtgt
+agtatcgccgaaagagtgtcaggactattcaaaaagagctatgccgacgcgtcagttttt
+gaaaaaccaggaattgagaaatcctccgatccagtgattgaggagaaacctaccattcca
+gaaattggagtctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=nta:107779699+nt">BLAST</a>
+</body>
+</html>

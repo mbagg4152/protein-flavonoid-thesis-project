@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04643: 107797120</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620851396">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620851396">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- nta:107797120 -->&gt;nta:107797120 K22395 cinnamyl-alcohol dehydrogenase [EC:1.1.1.195] | (RefSeq) flavin-dependent oxidoreductase FOX2-like (N)
+atggcttcatcaatctttatcattctttcttcattcatagtcctattttcagcttcatgt
+gctgtttcttatacaattcaagatcaattctatcgatgcattactcttcattcggaccgt
+tcaatacctttctccacagctttcttcacccctacttccaatgctacttcattcaactct
+gtccttaaatccactgcccaaaatctaaggtgtttggcaccttctcaaccaaaaccactg
+cttattttcactgctttgagtgaatccaatgtacaagcagcagtcatttgcgcgaaagag
+ctaaagcttcagctcagagttaggagtggaggccatgattatgagggcatctcttataca
+tcagaaatgaaaagatcaatgcccttcatcttgcttgacttagctaaacttcgcgcgatc
+aaagtagacattgaggataacagtgcttgggttcaagctggcgcgacgattggtgaagtg
+tactataggattgctgaaaaaagcaagacacatggttatcctgctggcctatgcaccagc
+ttaggaataggtggtcatatcactgggggagcttatggtcctatgatgagaaaatatgga
+cttggagctgacaatgttgttgatgctcggatagttgatgctagtggcagagttcttgat
+agggaattaatgggagaagacttgttttgggcaatcagaggaggtggaggaggtagtttt
+ggtatacttttggcttggaaaattagacttgttcctgttccatcaactgtcacagttttc
+actgttccaaagacactggaaactggtgcaacaaaagtcctgaataaatggcaacatgtt
+gcaaataagattgatgaagatctcttcataagggtactgataactacagccaattcaact
+aaaaatgggaagaaaacagtgcaaacagcttaccaagcattgtttcttggcaaaactgat
+aggcttcttcatgtgatgaatcatagcttccctgaattgggattgacgcgaaaggattgt
+gtcgaaatgagctggattgaatcagtcatttatattgcaggatatccaagtagcattaag
+cctgagtttctacttcaagggaagtcattattccctccagtaaacttcaaggctaaatca
+gactttctccgcgtaccagttccagaaactggacttgaaggtatgtggaagaagtttttg
+gaagaagattcacctatgatgatatggaatccttatggaggaatgatgggaaagatatca
+gaatcttccattcctttcccacatagaaaaggagtcatatgcaagatacagtacttaact
+tcttggacagaaggagacaagaaatctgcagataaacatatcaactggatcagagggcta
+tatgagtacatgggcacttttgtatccaagtttcctagagaagcttatgtgaattataga
+gatcttgatttgggaatgaatagaaatgccaactcaaatttcttggaagctagtgtttgg
+ggtaaaaagtatttcaagaataattatgataggcttgtgcttgtgaagactaaggttgat
+cctgataactttttttggcatgaacaaagtctcccaatccttccttttaaagttggaaaa
+gaagggaaaagtttgattcactga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=nta:107797120+nt">BLAST</a>
+</body>
+</html>

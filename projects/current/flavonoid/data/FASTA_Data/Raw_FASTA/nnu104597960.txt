@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04131: 104597960</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620842728">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620842728">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- nnu:104597960 -->&gt;nnu:104597960 K05280 flavonoid 3'-monooxygenase [EC:1.14.14.82] | (RefSeq) flavonoid 3'-monooxygenase-like (N)
+atgactcctttggctcttgtagctctaacttcattcgtcgccttcttaatctatttcttc
+ctcaacttcagcaaccgataccctcgtccacttcctcccggtcctaagccatggcctatc
+atcggcaacctcccccacctcggtccggtgccccatcacactatcgccgccctggctcgt
+gtttacggccctctcctccatctacgcctgggatcggtgcacgtcgtcgtcgcagcgtcg
+gcgtctgttgcttcacagttcctgaagactcacgacgctaatttctcgagccggccgcct
+aattcgggtgcaaagcacattgcttacaactaccatgaccttgtcttcgcaccctatggt
+cctagatggcgcttgcttaggaagatctgctccgtccatctcttctccggcaaggctctg
+gatgatttccgtcacgtcagacaggaggaggtggcagtgctgacgcgggcactatctaga
+tcagggacgagtcctctgaacgtagggcagttgttgaacgtatgcactacaaatgcactg
+gcgagagtgatgttagggaggagagtgttcgaaagcgacgatggaactgggaaccggaaa
+tcggacgagttcaaggaaatggtggtggagataatggtgctggccggggtgttcaacatc
+ggcgattttgtgccttcgctggagtggttggatttgcagggcgttgctgctaagatgaag
+aagctgcacgcgagatttgatgcgttcttgaataagatcttggaggaacacaaggtcaaa
+ggtggtggatccggaaggcacacagatttgttaagcaccttgctttctctgaaggaggac
+gcagacggcgaaggaggcaaactcactgatacagaaatcaaagccttgcttttgaactta
+tttacagcaggtaccgatacctcatcaagcacggtggagtgggcgctagctgaactcatc
+agacaccctgacgtcctcgcccgagtccaacaggaactagactcggtcgtgggtaaggat
+cggctggtgacagaatccgatatcgcccagcttacatttctgcaagcggtcatgaaggaa
+acgtttcggctccacccatcaacaccgctctctctcccccgaattgctgctgaaaactgt
+gagatcaatggattcttcattccgaagggctccacccttctagtcaatgtatgggctatc
+gcccgtgatccagccgtatggcctgaacctctcaaattccggcctgagcggtttctccca
+ggcagcgagcatgcccatgtcgacgttagaggcaacgacttcgagctcatgccctttggt
+gcaggccgtcggatttgcgccgggatgagctggggcttgcgcatggttcttttcctgact
+gcaactctggttcaggcattcgattgggtgctaccagagggccaaacaccagagaacttg
+aacatggaggaggcgtatggtctgacgctgcaaagagctgttccgctattggtacacaca
+cgcccaaggttggctccacacgtctactgtgccacgtctacagctcaataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=nnu:104597960+nt">BLAST</a>
+</body>
+</html>

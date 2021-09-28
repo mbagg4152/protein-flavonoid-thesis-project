@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03093: PHAVU_007G008600g</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620839566">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620839566">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvu:PHAVU_007G008600g -->&gt;pvu:PHAVU_007G008600g K01859 chalcone isomerase [EC:5.5.1.6] | (RefSeq) hypothetical protein (N)
+atggccacagcaccaacgatcaccgacgtccaggtggaattcctccacttccctgcggtg
+gttacttcaccggccactgccaaaacctatttcctcggcggcgcaggggagagaggattg
+acgattgaggggaaattcataaagttcacggccatcggagtatacttggaggataaagcg
+gtggcgtcactcgccaccaagtggaagggtaagccatcggaagagttgatcaacactctt
+gacttctacagagatatcatttcaggaccctttgaaaagctaataagaggttcgaagatt
+ctgcaattgagtgggacagaatactcgaggaaggtgatggaaaactgcgtggcacacttg
+aagtctgttgggacatatggtgatgctgaagccaaaggcattgaagagtttgcagaagcc
+ttcaagaaagtgaattttccacctggtgcctctgttttctaccgacaatcacctgatgga
+atcttggggcttagtttctctgaagatgcaacgataccgggagaagaggctgtagttata
+gagaacaaggctgtatcagctgcagtattggagactatgatcggagaacatgctgtctcc
+cctgacttgaaacgtagtttggcttcacgattgcctgcggtattgaatggcggcattata
+gtctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvu:PHAVU_007G008600g+nt">BLAST</a>
+</body>
+</html>

@@ -1,8 +1,13 @@
 Glycine max, 606705, IFS2; 2-hydroxyisoflavanone synthase precursor  [EC], ['EC:1.14.14.87'], KO:K13257
 Glycine max, 100037450, IFS1; isoflavone synthase 1 precursor  [EC], ['EC:1.14.14.87'], KO:K13257
 Glycine max, 547489, HIDH; 2-hydroxyisoflavanone dehydratase  [EC], ['EC:4.2.1.105'], KO:K13258
+<<<<<<< Updated upstream
 Glycine max, 100807589, isoflavone 4'-O-methyltransferase  [EC], ['EC:2.1.1.212', 'EC:2.1.1.46'], KO:K13259
 Glycine max, 106795493, isoflavone 4'-O-methyltransferase  [EC], ['EC:2.1.1.212', 'EC:2.1.1.46'], KO:K13259
+=======
+Glycine max, 100807589, IOMT1; isoflavone 4'-O-methyltransferase  [EC], ['EC:2.1.1.212', 'EC:2.1.1.46'], KO:K13259
+Glycine max, 106795493, IOMT2; isoflavone 4'-O-methyltransferase  [EC], ['EC:2.1.1.212', 'EC:2.1.1.46'], KO:K13259
+>>>>>>> Stashed changes
 Glycine max, 100784120, isoflavone 3'-hydroxylase  [EC], ['EC:1.14.14.88'], KO:K22932
 Glycine max, 100784650, isoflavone 2'-hydroxylase  [EC], ['EC:1.14.14.90', 'EC:1.14.14.89'], KO:K13260
 Glycine max, 100811727, cytochrome P450 81E8  [EC], ['EC:1.14.14.90', 'EC:1.14.14.89'], KO:K13260
@@ -10,7 +15,11 @@ Glycine max, 100790507, isoflavone 2'-hydroxylase  [EC], ['EC:1.14.14.90', 'EC:1
 Glycine max, 100804509, cytochrome P450 81E8  [EC], ['EC:1.14.14.90', 'EC:1.14.14.89'], KO:K13260
 Glycine max, 100798269, isoflavone 2'-hydroxylase  [EC], ['EC:1.14.14.90', 'EC:1.14.14.89'], KO:K13260
 Glycine max, 100797371, isoflavone 2'-hydroxylase  [EC], ['EC:1.14.14.90', 'EC:1.14.14.89'], KO:K13260
+<<<<<<< Updated upstream
 Glycine max, 100812102, isoflavone 2'-hydroxylase  [EC], ['EC:1.14.14.90', 'EC:1.14.14.89'], KO:K13260
+=======
+Glycine max, 100812102, I2'H; isoflavone 2'-hydroxylase  [EC], ['EC:1.14.14.90', 'EC:1.14.14.89'], KO:K13260
+>>>>>>> Stashed changes
 Glycine max, 100807819, isoflavone 2'-hydroxylase  [EC], ['EC:1.14.14.90', 'EC:1.14.14.89'], KO:K13260
 Glycine max, 100801092, CYP81E11; isoflavone 2'-hydroxylase-like  [EC], ['EC:1.14.14.90', 'EC:1.14.14.89'], KO:K13260
 Glycine max, 100776878, CYP93A1; 3,9-dihydroxypterocarpan 6A-monooxygenase  [EC], ['EC:1.14.14.93'], KO:K13261
@@ -30,16 +39,29 @@ Glycine max, 100791825, isoflavone-7-O-methyltransferase 6  [EC], ['EC:2.1.1.150
 Glycine max, 100800912, isoflavone-7-O-methyltransferase 6  [EC], ['EC:2.1.1.150'], KO:K13262
 Glycine max, 100819957, LOW QUALITY PROTEIN: isoflavone 7-O-methyltransferase  [EC], ['EC:2.1.1.150'], KO:K13262
 Glycine max, 100101902, IF7GT; isoflavone 7-O-glucosyltransferase 1  [EC], ['EC:2.4.1.170'], KO:K13263
+<<<<<<< Updated upstream
 Glycine max, 100777343, GMUGT7; UDP-glycosyltransferase 7  [EC], ['EC:2.4.1.170'], KO:K13263
 Glycine max, 100776806, isoflavone 7-O-glucosyltransferase 1-like  [EC], ['EC:2.4.1.170'], KO:K13263
+=======
+Glycine max, 100777343, UGT7; isoflavone 7-O-glucosyltransferase UGT7  [EC], ['EC:2.4.1.170'], KO:K13263
+Glycine max, 100776806, UGT8; isoflavone 7-O-glucosyltransferase UGT8  [EC], ['EC:2.4.1.170'], KO:K13263
+>>>>>>> Stashed changes
 Glycine max, 100127426, IF7MaT; malonyl-CoA:isoflavone 7-O-glucoside-6''-O-malonyltransferase  [EC], ['EC:2.3.1.115'], KO:K13264
 Glycine max, 100127365, AT133; malonyl-CoA:isoflavone 7-O-glucoside-6''-O-malonyltransferase  [EC], ['EC:2.3.1.115'], KO:K13264
 Glycine max, 100194416, vestitone reductase  [EC], ['EC:1.1.1.348'], KO:K13265
 Glycine max, 100794209, uncharacterized protein LOC100794209  [EC], ['EC:1.1.1.348'], KO:K13265
 Glycine max, 100793687, uncharacterized protein LOC100793687  [EC], ['EC:1.1.1.348'], KO:K13265
 Glycine max, 547660, 2'-hydroxydihydrodaidzein reductase  [EC], ['EC:1.1.1.348'], KO:K13265
+<<<<<<< Updated upstream
 Glycine max, 100814284, cytochrome P450 71D9  [EC], ['EC:1.14.13.-'], KO:K13267
 Glycine max, 100813216, cytochrome P450 71D9-like  [EC], ['EC:1.14.13.-'], KO:K13267
 Glycine max, 100808331, cytochrome P450 71D9-like  [EC], ['EC:1.14.13.-'], KO:K13267
 Glycine max, 100783503, FNSII-1; licodione synthase-like  [EC], ['EC:1.14.19.76'], KO:K23179
 Glycine max, 100784036, FNSII-2; licodione synthase-like  [EC], ['EC:1.14.19.76'], KO:K23179
+=======
+Glycine max, 100814284, F6H1; flavonoid 6-hydroxylase  [EC], ['EC:1.14.13.-'], KO:K13267
+Glycine max, 100813216, F6H2; cytochrome P450 71D9-like  [EC], ['EC:1.14.13.-'], KO:K13267
+Glycine max, 100808331, F6H3; LOW QUALITY PROTEIN: cytochrome P450 71D9-like  [EC], ['EC:1.14.13.-'], KO:K13267
+Glycine max, 100783503, FNSII-1; cytochrome P450 93B16  [EC], ['EC:1.14.19.76'], KO:K23179
+Glycine max, 100784036, FNSII-2; flavone synthase II  [EC], ['EC:1.14.19.76'], KO:K23179
+>>>>>>> Stashed changes

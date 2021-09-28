@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01088: 100279982</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849770">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849770">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- zma:100279982 -->&gt;zma:100279982 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) pco076728; Spermidine hydroxycinnamoyl transferase (N)
+atggattatttgaaggtgcaggtggtagagtcatcatttgtagtgccgagcgagccgacg
+ccaacgaaggcgctctggctctcttgcttggacatggttcagtccaacaaagcccacacc
+ccaacgatccacttgtacagctccaacgatgctgcggcggctgattttttcgacctgggc
+agactcaagaaggctacggccaaagccttggtggccttctaccccctcgccggccgcctc
+gtcgacagcgacgatggtaggaaggagatcagctgcaacggcgaaggtgcactctttgtt
+gtcgctcgcgcggatggtgatctcactatcgatgaagtcaagaaattcaagccatcgcca
+gagttgaggaggctgtttattccactcatcgagccatcgtccatcataatggccatacag
+gtgactttcttgaagtgtggaggtgtggtgttaggaacagctatccaccacgccgccaca
+gacgtttcaagcgcgttccacttttttcagacatggtcggcgttctgcaagcatggtgac
+agtgctgccgtggagctcccgtgccacgaccgcaccctactccgcgcacggtccccgccc
+acagtccaccccgacgcgctctcgacattgcagcctcggctcgtcctcactgaacccgag
+gggcctcttgccatcgaaatcttcaccatttccagggaccatgtcgcctccctgaagcag
+ctctgcggtggcacgagcaccttttgcgccgtcagcgctctcatctggcagtgcgcgtgc
+gttgcacgacggatcccaccggactctcaggtgcgcgtgatgttcccggccgacgtccgc
+cgccggatgaggccgcccctcccgacccactacttcggcaacgcagtgatcaggctatac
+gccgctggcccggcaggggacattggcacggcggcgttggcatccgtcgctgcccgcatc
+aagggcgccgtcgagcggatggatgacgagctggtgcggtccgcgattgactactacgag
+atggccgagacgaacaagagacggactgggacaggcatcttaccacggacggacctgaat
+attaccagctggttgggtaggccacagcacgacgcagattttggctggggaaagccgcaa
+tccatgtcgcgggcggagtctgtccgcggcggctctatgcacttgatgaacgacgacggt
+ggtaccggcgacgtccgcgtgctcgtgtgcttggaggctgaaaatataaaggagctagga
+cggctgctttatgcaaagctctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=zma:100279982+nt">BLAST</a>
+</body>
+</html>

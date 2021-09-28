@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04135: 105167246</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620837171">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620837171">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sind:105167246 -->&gt;sind:105167246 K22395 cinnamyl-alcohol dehydrogenase [EC:1.1.1.195] | (RefSeq) berberine bridge enzyme-like 13 (N)
+atgatgccatcctcaacttctctccctcttactttcagcataattcttgtattagcttcc
+ttagccgcttcacagccaattcatgaaaaattctaccagtgcattatgctcaactccgag
+ctctccattcctttttccacagctttttgtacccctaacaatgcttcctttaattccatt
+ctccaatcttctgcacaaaacctcagatgcctgggttcttctgtgcctaagcctcagctc
+atcttcacaccattagttgaaaaccatgtccaagctgctgtaatttgcgccaatgaatta
+ggcatccagctcagattacgaagcggaggtcatgattatgaaggcctctcttacatatct
+gaaatggaagaaccattcatcatattggacctttcaaaacttcgctccgtcagcgtagat
+atgcaggatagcagcgcatgggttcaggccggtgcaacggttggtgaactttattacagg
+atttcacagaaaagcaaaactcatggctttcctgccggtctatgcaccagcttgggaatt
+ggagggcatataactggaggagcctatggcaccatgatgaggaaatatgggcttggagcc
+gataatgtgattgatgcaagaatagttgatgccagtggcaggattcttgatagggagtcc
+atgggagaagatctcttctgggctattaggggtggtggaggggctagctttgggattata
+cttgcgtggaaagtaagattggttcctgttccggcaactgtcacagttttcacagttcca
+aagaccctggaagaaggtgcgaccaagattctctacaaatggcaacaagttgctgataag
+cttgatgaagatctcttcatcagagtcatcatacaagtagtgaacggtgccaaaaaaggt
+gagagaaccgtgcaaacttcttataatgctttgtttctcggcagaatagatagactattg
+gatgtgatggaagtgagcttccctgaattgggattgacgcgaaaggattgcatcgaaatg
+agctggattgagtcggtgctctatattgctggttacccatcgaaaacgccacctgaagtt
+ttgctccaggggaagtctttattcaagaactacttcaaagccaaatcggactttgttaga
+aagcccataccggaggacgggcttgaaggtctttggaaaaggcttatggaagaagattca
+ccgttggtgatatttaatccttacggtggaatgatgagtaaaatttcggaatctgaaact
+ccttttcctcacaggaaaggtgtcatatttaaaatacaatacctaaccctttggaacgat
+gacaaaccagaatccgaggccaagcacatggactggattaggaggctgtacaattacatg
+gctgcatatgcttccatgctcccaagagaagcctacgtgaactaccgggatcttgatctg
+ggaatgaacaaaaatggctccagttttatagaggcaagtttgtggggtaccaaatatttc
+aaagacaactttataaggctagtcaaagtgaagaccaaagttgatcccgataatttcttc
+agacatgaacagagtatcccaactcttcccttgatgaatgagggaagagagaagagtacg
+ttccactga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sind:105167246+nt">BLAST</a>
+</body>
+</html>

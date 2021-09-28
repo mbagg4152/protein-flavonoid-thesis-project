@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01084: 100267962</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620842726">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620842726">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- vvi:100267962 -->&gt;vvi:100267962 K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) chalcone synthase-like (N)
+atggcctcagtggaggaaattagaagacatgcccagcggccccgcggcccggccaccatt
+ctagccattggcacagcactaccggataactgctttccccaggctgaatttcctgatttt
+ttcttttgggccaccaagagcgagcacttggctcaattgaaagaaaagttcaagctcatt
+tgcgcctccttggatgctcgtcaagatattgccaacgttgaggtaccaaaactgggaaaa
+attgcagcagtaaatgccatcggagagtggggacaacccaaatctaggatcacacatctt
+gtattctgtacaaccacgagcttacacatgcctggtgccgactatcaacttgctaagatc
+ctaggtcttgaaccaaaggttaaacaggtgatgttgtaccttcaaggttgctttggtggt
+gggactgccctcagattggctaaagatctagcagagaacaacgtaggtgcctgtgttctt
+gtagtatgttctgaaatcttaacatcgactttccgtaagccttctgagatcgaagtagac
+aatttagtaggccaatctctttttggtgatggggccgcagctctaattgtggcagatcaa
+atatttatccctgattcagagaatgcagttgaagggcatgtttgtgaaatgggccttgtt
+gttaatttggcaaaaaatgtgccaaacctaatttttgagtacatagacaaatgcatggtt
+gaagcttttggtccccttggtattaatgattggaactcattatttttcatcgttcaccca
+ggtggtccggcaattcttgatcaaattgaagcaaaactcagcttaaaaaaggaaaaactc
+gaagttagtaggcatgtgctaagggagtatggaaatattgtgagtccatgcgtgttcttt
+gtcatggatgagacgagaaaaaagtctttcaaagaagaaaaggctactacaggggaggga
+ttggagtggggtgttttgttggggtttggaccaggcttgacagtggagacgattgtgcta
+cgcagtcggtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=vvi:100267962+nt">BLAST</a>
+</body>
+</html>

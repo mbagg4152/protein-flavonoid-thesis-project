@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01088: 100273315</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620850442">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620850442">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- zma:100273315 -->&gt;zma:100273315 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) uncharacterized protein LOC100273315 isoform X1 (N)
+atgtcgttattaggacctccggcacggggagccatctgcttgctagttgtgtcgtcgtcg
+atcgtggtcctcagcacggccggtggtctcggatccgatgccactagtaggtccgccgct
+gcctatctctcagttgacgacgactacggggaggaggacgagagcggcgactcctccttc
+tccttccccgaccccgagacgagttcagcttcaaccgggctagtgttcgggttctacgac
+gacaagtgcccggacgccgaggagatggtgtcgtccatggtgcggaagctctaccacgcg
+gaccccaacgtcgcagccgcactcgtccgcctcttcttccacgactgcttcatccacggc
+tgcgacgcctcggtgctgctggaccgcgtcggcggccagagatcggagcgcgacgccggc
+ccgaaccagtcgcttcgcggcctgggcgccgtcgaggccatcaaacggggagtggagaag
+gcgtgccccgggaccgtctcctgcgcggacatcctggcgctggccgcgcgggacagcctc
+gtgctggtgggcgggcctacctacccagtgctcacgggccgccgcgacagcgcccagagc
+ttctactacgacgcggacggaggtggcatcccgccgccgaacgccacctacgccatgacg
+ctcgacgcgttcgcgcgccgcgggcagttcacggagcgtgagaccgtcgcgctcctagga
+gcccacagcatcgggaaggtgcggtgcaggttcatcgcggacaggatctacaacttcgcc
+gggaccggcgcgccggacgactccatcgacccggacatggtcggcgagatgcgcgcggcg
+tgcggcggcggcgacggcgcggcgccgatggagatggggtactacaggcagggccgggag
+gtgggcttcggcgcgcactactacgccgagctgttggagggccggggcatcctgcgcgcc
+gaccagcagctcacggcggggagcaccgtgcggtgggtgcgcgtgtacgcgtccggagcg
+cgcggcgaggagctgttccgcgacgacttcgcgcacgccatggtgaagctgtcggcgctc
+gcgccgctcacggggtcggctggccaggacctaggactagagtttgaagggaaaggaggc
+ttgatgcccttttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=zma:100273315+nt">BLAST</a>
+</body>
+</html>

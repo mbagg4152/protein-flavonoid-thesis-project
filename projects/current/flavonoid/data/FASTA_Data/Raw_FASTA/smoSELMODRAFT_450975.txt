@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01496: SELMODRAFT_450975</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854051">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854051">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- smo:SELMODRAFT_450975 -->&gt;smo:SELMODRAFT_450975 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) BAHDb9a; BAHD family acyltransferase (N)
+atggttgtgagcgtagagtccgtgtccacgatcgttccagcggtcccaacgccgcagccc
+tgcaccctctggctttgcaacttccaaatccaggtcctggccgagaactatctcaagcaa
+gtctactactacccagctgcattggatcacgtaagctctttcgattcgctggtggcgagc
+ttgaaggattcgctctcccggatcctcgtcccgtactatccgctcgcggggaggcccagg
+atcgccggcctcgaccgccccatcctcgagtgcaacgaccgcggcatcgagttcgtggtg
+gccttcgccgatgcgagcttcggcgactggggcgattccatgaagcagtgctccatcgag
+caggagctcaacccggcccagaccgcgatcaccgatccggagaacttccctcagctcaaa
+gttcaggtgaccaagttccggtgtggcgggatagctctgggcctcgtcaccacccacacc
+ctcctggacggctcctcggtcttccccttcctcaaggcctggtcgcagctccaccgggga
+ttcccaccgccaaatccaccgcccagcttcgactccagcctcctcaaggcgcgggatccg
+ccctgcgtcaccgtgccggtccgggacttcgttgccgtgacccccgccatcgccgaggag
+atgggcaaggccgcccaggacttcaagcccagttaccacgtccgggcattccacatgaac
+gagcagcagctcgcggagctcaagcacgagatcgcgtctggcccgttcgcctacggcagc
+agcccgacctccttcgaggccgtctcgggtctcgtctggaagtgcatcaccgaggcccgt
+gacttcgacgactcggtgaccaacacttacatctacgcggtgtccaccaaggtgggcaga
+aaccggtggcagccaccgatgccgagcgagtactgcggcacctcctccttcacgctctgc
+ctgccgtgcgccgtgggcgctctcaagaacaagcacgtctcccacgccgcgcggctcttc
+cacgaggatgtccgcaacgtaggccaggagaggatccagtccaccatcgactggatggag
+gagacgctgcgcaagggccatgatatcgggctcaacgtcccgccacccagcaccgggatg
+gggatctacagcgtcaacttgcactcgttcccagtgtacgagtttgagtttgggtggggg
+cgaccggcccacttctcgatggtgctggagccgtggtatggcaacggggtggtggtgtta
+cttcccacgccccagggcgggatgcgagagcgccggattgtggtgatgctgctcgaggag
+cagatgaagaggctgctgcaaagcgagctctttgcgaggtttacaaccctggactgctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=smo:SELMODRAFT_450975+nt">BLAST</a>
+</body>
+</html>

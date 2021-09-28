@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01084: 100244727</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840081">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840081">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- vvi:100244727 -->&gt;vvi:100244727 K11188 peroxiredoxin 6 [EC:1.11.1.7 1.11.1.27 3.1.1.-] | (RefSeq) 1-Cys peroxiredoxin 03 (N)
+atgccgagtctgggtctaggagacactatcccaaacctggaagtggaaaccacacatggg
+aagttcaaactccatgacttcttcggagatagcttggccataatcttctcccacccaaga
+aaatcagaattgacattatgcataagagaagcagtacaacatcctggtagcaaggtgtca
+tacccgatagtttcggatccgaagtcggatattatcctgctactcaacatggtggatcct
+gcaatagactcctacggaaacaatctcccctctcgagttctctacatcattggccctgac
+aagaagattaagctgggctttctttacccggggtccactggccgcaacgtggatgaagtg
+atgagggtgctggacgcactgcagaaggcggccaagcacaggatcgccactcccgtcaac
+tggaaaccaggtgagctggtggtcattcagccaggtgtctccgacgacgaagccaaacag
+ttgttccctcagggtttccagactgttgctcttccatccaacaagtcataccttcgcttc
+acccaactctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=vvi:100244727+nt">BLAST</a>
+</body>
+</html>
