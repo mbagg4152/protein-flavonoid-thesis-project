@@ -1,0 +1,51 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05758: 113313920</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1632834717">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1632834717">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- psom:113313920 -->&gt;psom:113313920 K05349 beta-glucosidase [EC:3.2.1.21] | (RefSeq) uncharacterized protein LOC113313920 (N)
+atgagtaacagtagttgcagtgactctgtggagccagattgtatatacaaaaaccataat
+gaacagattgaagttagggttaaacatttgctctcaaaaatgactttgaatgaaaaagca
+ggacaaatgactcaaatcgaaagaaccgtcgctacacattccgccattaaagacctctcc
+attggaagtattcttagtggtggtggaagcggaccatttgataaagcttcaccttgtgat
+tgggctgatatgattgatggtttccaaaattcagctcttcaatcacgtcttggaattcca
+attatttatgcaactgatgctgttcatggtcataataacctttttggtgccaccattttt
+cctcacaatattggccttggagctacccgtgatgctgatttggttcaaaggattggtgct
+gccactgctcttgaagttagagcaactggtgtgcattgtgcttttgctccgtgtgtagct
+gttgctagggatcctaggtggggaaggtactatgagagttttagcgaagatactgaaata
+gttcggaatatgacctctgttgttgccggattacagggattgccacctgcacggcatcct
+aatggatacccttatgtagcaggaagaaataatgttattgcatgtgccaagcacttcgtt
+ggagatggaggtactgataaggggataaatgaggggaatgccatattatccttaagcgac
+ttggaaaaaatccatatggcgccttatctggattgtctatctcaaggagtttccacagtt
+atggcgacctattctagttggaacgggagcaaactgcactcagattattatctcttaaca
+actattttgaaagagaagatgggttttcagggttttgttatttctgactgggaaggtatt
+gaccgactttctcagcctcatgggtcagactatcgatattgcatttccgaatcaatcaat
+gcaggagttgacatggtgatggttcctttcagatacgaaaagttcctcgaggacttgata
+tttctggtggaatcaggagatatacccatgtctaggattgacgatgctgttgagagaatc
+ttgagggttaaatttattgcagggctttttgaaaatccactgactgacagatcgttgcta
+gatacagtgggttccaagattcatagggaattggctcgtgaagccgttcgaaagtccctg
+gttttattaaagaacggaaaggatccaaataaaccatttcttccgttagatagaagtgcg
+agaaggattcttgtcgcaggaagtcatgctgatgatctggggtatcagtgtggcggatgg
+acaatgacttggcatggaagcagtggaaatattacaactgggacaaccatattggacgct
+attaaagaagctgtgggaagggaaacagaaattatctatcagaagtatccatcacctgac
+atatttgctgctaaagatttctcctttgcagttgttgttgttggagaagctgcatatgca
+gaggccttgggtgacaattcagttcttgagatcccttttggtggctctgatttgatcagt
+ttagtagctactagagttcccacattggtgattatgatatctggaagacccctagttctg
+gacccagggatgttggagaaggtcgatgcatttgttgctgcttggttaccaggtactgaa
+ggagctggaattgtggacgcggtatttggagaatctgagtttgtaggccttctcccggtg
+acatggtttaggagggtggatcagttgcccttgaatgccggggaccattcttatgatcct
+ctgtttcccctaggttttgggctaaagaagttcggtgtggagaggaaccaagaggcgcac
+ttccttcgagcaaaaagcagggcatag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=psom:113313920+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04300: 107494473</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1632834798">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1632834798">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- adu:107494473 -->&gt;adu:107494473 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) spermidine hydroxycinnamoyl transferase (N)
+atggtgagcattcaatctcatcacacaatcattccttccaatccaaccccaaacgaaaaa
+ctcttttccctctgcgagcaaatcaagcttcgcactcacgctcctcttctctatgcatat
+aacaaatcgactgtcaataaccatgtccttgttgccaccttcatgagctctctcagcaag
+gctttgtcaatctactacccgctggcgggtaggttgagcttaatcgacggttcgagatgg
+gagatcatttgcaacgccaaaggagcgttgctaatcgaagcggcttgcaacgggaagacc
+atgcacgatttctgtggtgacgattttgtccctaccggtttagtttcgcagctaattccc
+aacattgattatggtactcccgtttccgagacgcctcttttggcggtgcaaatcacgcgc
+tttaattgcggcggtttcaccatcggtgtcgccctgtgtcgtgccgccattgatggaaca
+gcaaccatgcgattcatgaacacgtgggctaagttagccaaaggagaatctttggatcca
+tatgatcaattcccatgctatgatccaagtttgttaaactcacgcactttgttgcgtaat
+tcgaagaaggttttgcatgatcattcagaagaattattcggaactccacctccatggtta
+ggtccattgagaaaagactccagagttgtcgttgaagttgtcaaactcacaaaagaacag
+gtcaagaaactcaaaacgaaagccgcaatcaataacgttaagactccgttttcgagtttc
+gaggtcatttcggggcttttatggaggtgtgtcaccaaagcgagataccaaggaaatggt
+gaccaaccaacaaggttgaccactttggttaattgtcgcaaccgtctgaaaccaccgctt
+cctaatgcttacgcaggaaatgcagtatttccgacggttacaacaacttgttccttctct
+tacctaatgcagaatcctctgagttctgcagtagaaaaagtgaagaaggctatagcgaag
+gtggacgatgagttcgtgagaaatgcacttgtttatattggtaatgctaaggacatggat
+ttggtgaggtataacattcactatccagcgaagagtgtgcataagggagggttcaagggt
+aacccaaacctgtttgttgtgagttggatgaatttctcgtataaggaagcaactttcggg
+ttcggggaaccagttcattttggacccgggttcatggattctgaggggaaggctttcatc
+acgaacaatgctagtggtgatggattcaatgtggctattgctttggactcatctcacatg
+gatgctttcaagaaactcttttttggcgaaattgaagaggtgtttcctatttcgaaattg
+tga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=adu:107494473+nt">BLAST</a>
+</body>
+</html>

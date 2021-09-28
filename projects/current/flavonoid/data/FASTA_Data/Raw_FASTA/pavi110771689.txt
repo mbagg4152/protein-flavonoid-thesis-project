@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05161: 110771689</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1632834827">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1632834827">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pavi:110771689 -->&gt;pavi:110771689 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atgaacgttcaagtggaagttatctccaaggagatcatcaaaccctcttctccaacccca
+aaccctcttcgccattacaagttatcttttcttgatcaactaactcccccatcgtatacc
+tctttggtctttttctatgaatttaatggcgagacccaacccgccattaatgaagtatca
+aagcaccttaagaagtccttagccaaggtcttaacccttttctatccgctagccggacga
+gtgaaaatcaatgatcattttgtggactgcaatgatgagggaattgcctaccttgaggct
+aaagtaaccaactgccggctttgtgattttctcaacaatccgctccctgatgaactcaat
+aaatttatcccatttgcgcaagatgagcatattgcaaatgaaattgccctcggtgtccag
+ctcaatatgtttgaaggaggctttgccattggtctatgcacttcccacaagcttgctgat
+tttctatgcatgctcatgttcaccaaagcttgggctgccattgcccgtgatgaagctgaa
+atacagcgtccccaatttgtttccgccacactcttcccacccaaggagatcaccggctat
+aattggggcgctggtatcgcaatgaagaaagtaacaaagaggtttgtgttcgatgccccc
+acgatagaggatctcatagcaaaatatacaggcttggaaaacaatgagaaacaaccgtcg
+cctgtcgaggccttatcggctttcatgtggaggcgatttgtgggagctaccaaggatgat
+aatgatgataagaataagttgcatagcctgatccactctgtggacttccgtccactgatt
+gatccaccgttgtctccatattcttttggaaatatttatggtaattctttgactgctccc
+ttcttaagtagtggggatgatgatgatggtgatcaagaatcttcttatggcatggtaagg
+cgggtacgagaagcaataagcaagattgacaaggacttcgtgaaaagactacaacatggt
+gatgagcagctgagtttgatcggccggcttgctcaaagtgctagcaaaggggaggtggtt
+acttcttaccacagtagtttgtgccaatttcctctctatgataatgattttggttgggga
+agacctacatgggtgagcttaccaccactgcccgtgaaggacataatagttttcctcgac
+gccaaggagcctggtggagtagaggcatacgttagccttgccaaggaagtcatgactaaa
+tttgaaagtgacacctccctccgacgaagggtgggtacgggtcgggtcggttctgcaagt
+tcgtgcttaattcatcaaccagcccgattcaatcaggttgtaacatttcacacccgaaat
+cgagcaagtgttattaagaaaccaacccaaaccaaactaatgaagcttgggtcaggttca
+gtttgttcggtttgcttctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pavi:110771689+nt">BLAST</a>
+</body>
+</html>
