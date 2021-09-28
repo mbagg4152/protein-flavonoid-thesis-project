@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05761: 110626912</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620850680">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620850680">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mesc:110626912 -->&gt;mesc:110626912 K13066 caffeic acid 3-O-methyltransferase / acetylserotonin O-methyltransferase [EC:2.1.1.68 2.1.1.4] | (RefSeq) caffeic acid 3-O-methyltransferase 1-like (N)
+atggccatgacacatgggattgatctttcatgtgaagattccgtggaaaatcttctgaag
+cttttcgacatcattgctcaagcaggtcctctcactgctgctgagatcactgctcacctt
+cctactcgcaacccagatgctccttccatgattgatcgcctgctcagactcctcgcttcc
+tactcgctgctcacttcttctcatggtcttattgaaaggcgttatggcctttcttccact
+ggtcagtttttcgttcgggacaataaacatggagtctccatggctgctttccctgctgat
+gccaaagctttaaccgaggcctggttttacctaaaggactcaattcttgaaggtgggaat
+ccatttgagagagcccatggggtacccatgtacaaatacataagttcagatcaagaatcg
+gtgaaagacttcagcaaagccatggatagcatttcctcttatatcataagcaaagttctt
+gatagctacaatggtttccagggactgaaatctctggtggatgtgggtggcggttctgga
+gttgccattaacatggttatttcaaagtacccttctatagctggcattaatttcgacttg
+cctcacgtggttaaagaagctccacctcatcttggtgtcaaacacgttggaggagatatg
+ttgtcaggtattccaagtgcagatgctattatgatgaaggacgttcttcataactggagt
+gatgaacagtgcaccaagattctcaagaattgctatgatgctttgccagagggtgggaag
+gtgattgtggtgagccatataatgccacgggcactggattcaagcattgctactaaatac
+gtatgccaattggatgtgatgatgtttctattccctggagggaagcaaaggactgaggaa
+gagttcaaggacttggccaaggctactggcttttcacggtttcaactcatttgctatgtt
+gcttatgatgcagtgggtgtcatggaattctacaaataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mesc:110626912+nt">BLAST</a>
+</body>
+</html>

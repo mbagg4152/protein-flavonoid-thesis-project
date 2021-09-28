@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05028: MNEG_3882</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838129">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838129">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mng:MNEG_3882 -->&gt;mng:MNEG_3882 K11188 peroxiredoxin 6 [EC:1.11.1.7 1.11.1.27 3.1.1.-] | (RefSeq) hypothetical protein (N)
+atgtcgtgcgccgcggccgtgccctcgggcagcgaggcttacgccaagctgtaccctgag
+aagagcagcgacggcgtgctgcgcctgggcaacgtggtgcccgacttcgaggccgactcc
+accctgggccccatcaagtggcacgactggattgacggcgagtggccggggcgggctcgc
+aagtgggcgatcctcttctcccacccggccgacttcacgcccgtctgcaccactgaaatt
+ggccgcatggccatcaagtacaagaacttcgaggccaagggcgtcaaggtggcggcgctg
+tcatgcgacaagatcgacgaccacaacacgtggctcaaggacgtcgtggcgcactgcgcc
+aacaaggtgcgctgctggcgcgccagcaacggcagtcccgccgccgcggtggccgccgcc
+gccgccgcggtggccgctgtgaccattgacttcccgatcctggcggacccaacccgcgag
+atcgccaccctgtacggcatgctggaccccgccctggaggacaagagcgagcagcagggt
+gcagcgcaggaggcagaagccgcgctgggcggcgtggttggtggggggccgcccatggtg
+ttcatcatcgggccggacaagaagctgaagctcaccgtaaactaccccgccagcgtcggc
+cgcaacatggacgagatcgagcgcgtggtggacgccctgatcctgtcgagcgacaagtcc
+atcgccacccccgccaactggcccaacaaccacgaggaggccggcatgaagggctgggtg
+ttcctgctgcccaccgtgaccaaggaggatgccgacaagttcttcccagaccataaggtg
+tgcgacgttccctccaagatcgagtacctgcgcctcaccccggtggacggcctcgacccc
+aagccagaggccaacgccaccgtcgaggccgaggcgtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mng:MNEG_3882+nt">BLAST</a>
+</body>
+</html>

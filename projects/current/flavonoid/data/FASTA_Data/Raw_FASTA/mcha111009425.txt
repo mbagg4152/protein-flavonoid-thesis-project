@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05045: 111009425</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620839405">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620839405">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mcha:111009425 -->&gt;mcha:111009425 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) BAHD acyltransferase BIA1-like (N)
+atggaggtgaaaattttgtcaagagaaactattatgccctcttccccaactccccctcac
+cttaaaaccttcgaactttcacttatcgaccaattgtctcctccactttatattcctctt
+ttatttttctaccccatcaaaaacaaacatgatctcgagacccacaaccaaaagaaagca
+atcgcaacactgaaaaattctctatcaaaaactctaactaattttttcttgttggcagga
+agaatcaccaacacgtccattcgttgtagcaacgacgaaggagctgtctttatcgaagca
+accgttaactgcaacatttccgacatcctcaaagaaccaaacaatgaggttttaacgaaa
+ctcctcccgtgttctattcaatgcactaaaccaacagaagaatatgctcagattgttgct
+caagccaacatcttcaactgtggtggaattgtgatctctctttgtttgttgcacaagctc
+atggatgggataagttttagttgttttctcaaatcttgggcatccattaataaagggtct
+ttggataattcttctcaaaatttggtatgttccaactacaaaacattctcctcgctcttt
+ccccaaacaaacttattgtcttttcatcaccaaatacacgaaggagtagacgacatatgc
+tcgagttccaaaccgaaccgttgtttgcaacggttcgtgttcggagcgaaagcaatatca
+gatctaaaagcgaaagcaaaatccactgaggttccaaatccaaccagtgttgaagcatta
+actggatttatttggaattgtgccatgaaattgaaagctacatctatgggaaatgatgat
+gattctcaaaggccatccactttgtcacatgtggtgaacttgagaaagagaatggagccg
+ccattgcctgaaatctcaatagggaacgttttgtggggtatggttgctcattattgttca
+tcaaattatgaaactcaagtggagctaagggatttagtggttttgttgagacaatcattt
+tcaaaaatcaacaatgatttcataaaagggttgatgggaaatgacggaaatagagctgtt
+ttggagttgcttggtgagataaataagtttccatctaaagttccaaattattactttttc
+acaagttggagaaatatggatttgaatgaggtcgattttggatgggggaagcctatatgg
+attggcattgcggggaattcaaatgttataaccaaggattttattcttttgttggatacc
+ccatcgggcgatggaatagaggcatggatggtactcgatcaaaagaaaatgaaactttta
+caacaaaatccacaatttctcgagtttgcatcgttgaatccgagtatctctataaaaggc
+gaggttgaagatttgaatctctaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mcha:111009425+nt">BLAST</a>
+</body>
+</html>
