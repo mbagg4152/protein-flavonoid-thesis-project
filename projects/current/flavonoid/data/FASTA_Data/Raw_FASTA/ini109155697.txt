@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04663: 109155697</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1632839624">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1632839624">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ini:109155697 -->&gt;ini:109155697 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atggtgttgaaagtggaattactttccgaagagatgatgatcaagccatcatcaccaact
+ccacctcacctcaaaaccctcaaactatcctttattgatcaaacctcgccacccattttc
+cagaattacatctttttcttcaatcatgctactgcagattcatcacaactgctgaagcaa
+tctttatcgaaggtcttgaccctgttttatcccttagctggacggatcaaaggaaacgat
+ttcattgattgtagtgatgatggcgcgctgtgggttgaagctcgcgttcatggcttcctc
+aaagatgtggttggaaatccattaatggaggaattggaaaagtttcttcccatagagact
+caaaataatggtaataatgatagtgagttattgcttggtgttcgagtaaattattttctt
+gacggcggaatagccgtcgcggtttgcgtgtcgcacaagatcggcgatggactctctctg
+atcaactttgtcaatgcatgggctgtcaccgcccgagaaggagacgccgccgccgggaaa
+atcccgccgcccaatttcgggttggtttcgtctctcttcccgccgacgacgatggacctg
+tcccagtttggattctcgccgacccttggcgttgcgagggaaaagatcgtcacccggcgc
+gtggtgttcgacaaagaaaagctggcagctctgaagaaatctgcggcggccgagtcgtcg
+agagtgggaaaccccactcgcgtggaggccctctccgcattcatgtggaagcagttcagg
+gaggctagtagaaaaaaatcccaacacggcgccgtgaagaaatcattccgggccacccag
+aatgtgaacctccgtgcgaggatgaatccgccgctcccggatgcgacgttcgggaatcta
+tggaatctcgcaaatactacaacaagcccagacgagaacgacgacctggtgtttcaactg
+agaacttccataagagaaatcaacgcggaatacgcggaagctttgcaggacgagacaggg
+caattggaacatctccgtaaaatgcatgaacgtttcagcctcgaaggggaagcagttaat
+gagttcttggaattttctagcgtgtgcaggtttccattatacgaggtagatttcggttgg
+ggaaggcctgtttgggcgtgcataacaactcttccctacaagaatttcgttatatttatg
+agcaccaaatgtggggatgggattgaagcttggattaacatgcgtgaagaagatgatgat
+atatatatgggagcagggagcttgacacccaggccaaaactatag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ini:109155697+nt">BLAST</a>
+</body>
+</html>
