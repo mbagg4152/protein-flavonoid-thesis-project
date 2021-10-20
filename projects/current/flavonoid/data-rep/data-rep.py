@@ -30,6 +30,20 @@ def main():
     tab3(df)
 
 
+def populate(lst, ml, comp, tag):
+    df = pd.DataFrame({'del': np.arange(ml)})
+    cnt = 1
+    for b in lst:
+        if isinstance(b, str): b = np.array([b])
+        if len(b.tolist()) == 0: b = [' ']
+        else: b = b.tolist() + gen_empty(ml - len(b.tolist()))
+        df[comp.lower() + '-' + tag + str(cnt) + '\n\n\n'] = b
+        cnt += 1
+    df = df.drop(columns=['del'])
+
+    return df
+
+
 def tab3(df):
     try: os.mkdir('tab3')
     except (FileExistsError, OSError) as e: pass
@@ -37,64 +51,45 @@ def tab3(df):
         kd = df.loc[df[comp] == 'kegg'][comp].index.values.tolist()
         lk = df.loc[df[comp] == 'lit-kegg'][comp].index.values.tolist()
         rk = df.loc[df[comp] == 'rel-kegg'][comp].index.values.tolist()
-        lit = df.loc[df[comp] == 'lit'][comp].index.values.tolist()
+        ld = df.loc[df[comp] == 'lit'][comp].index.values.tolist()
         rel = df.loc[df[comp] == 'rel'][comp].index.values.tolist()
 
         kegg = mod_list(kd + lk + rk)
+        ko = mod_list(kd)
 
         for i in range(len(rk)): rk[i] = rk[i] + '*'
         for i in range(len(rel)): rel[i] = rel[i] + '*'
 
-        lit = mod_list(lit + lk + rk + rel)
+        lo = mod_list(ld + rel)
+        lit = mod_list(ld + lk + rk + rel)
         both = mod_list(lk + rk)
 
+        ko = np.array_split(np.array(ko), 5)
+        lo = np.array_split(np.array(lo), 5)
+        both = np.array_split(np.array(both), 5)
         kegg = np.array_split(np.array(kegg), 5)
         lit = np.array_split(np.array(lit), 5)
-        both = np.array_split(np.array(both), 5)
-        mxlen = max(len(kegg[0]), len(kegg[1]), len(kegg[2]), len(kegg[3]), len(kegg[4]))
-        mxlen2 = max(len(lit[0]), len(lit[1]), len(lit[2]), len(lit[3]), len(lit[4]))
-        mxlen3 = max(len(both[0]), len(both[1]), len(both[2]), len(both[3]), len(both[4]))
-        comp_df = pd.DataFrame({'del': np.arange(mxlen)})
-        comp_df2 = pd.DataFrame({'del': np.arange(mxlen2)})
-        comp_df3 = pd.DataFrame({'del': np.arange(mxlen3)})
-        cnt = 1
-        for k in kegg:
-            k = k.tolist() + gen_empty(mxlen - len(k.tolist()))
-            comp_df[comp.lower() + str(cnt) + '\n\n\n'] = k
-            cnt += 1
-        comp_df = comp_df.drop(columns=['del'])
 
-        cnt = 1
-        for l in lit:
-            l = l.tolist() + gen_empty(mxlen2 - len(l.tolist()))
-            comp_df2[comp.lower() + str(cnt) + '\n\n\n'] = l
-            cnt += 1
-        comp_df2 = comp_df2.drop(columns=['del'])
+        plot_stuff(populate(ko, gml(ko), comp, 'ko'), 'tab3/' + comp.lower() + '-onlykegg' + '.png')
+        plot_stuff(populate(kegg, gml(kegg), comp, 'k'), 'tab3/' + comp.lower() + '-kegg' + '.png')
+        plot_stuff(populate(lo, gml(lo), comp, 'lo'), 'tab3/' + comp.lower() + '-onlylit' + '.png')
+        plot_stuff(populate(lit, gml(lit), comp, 'l'), 'tab3/' + comp.lower() + '-lit' + '.png')
+        plot_stuff(populate(both, gml(both), comp, 'b'), 'tab3/' + comp.lower() + '-both' + '.png')
 
-        cnt = 1
-        for b in both:
-            b = b.tolist() + gen_empty(mxlen3 - len(b.tolist()))
-            comp_df3[comp.lower() + str(cnt) + '\n\n\n'] = b
-            cnt += 1
-        comp_df3 = comp_df3.drop(columns=['del'])
 
-        print(comp_df)
+def gml(lst):
+    if len(lst) == 5: return max(len(lst[0]), len(lst[1]), len(lst[2]), len(lst[3]), len(lst[4]))
+    elif len(lst) == 4: return max(len(lst[0]), len(lst[1]), len(lst[2]), len(lst[3]))
+    elif len(lst) == 3: return max(len(lst[0]), len(lst[1]), len(lst[2]))
+    elif len(lst) == 2: return max(len(lst[0]), len(lst[1]))
+    elif len(lst) == 1: return len(lst[0])
+    else: return 1
+
+
+def plot_stuff(df, fname):
+    if len(df):
         plt.figure(figsize=(6, 6))
-        tab = plt.table(cellText=comp_df.values, colLabels=comp_df.columns, loc='center', cellLoc='left', colLoc='left',
-                        edges='open')
-        plt.axis('off')
-        tab.auto_set_font_size(False)
-        for key, cell in tab.get_celld().items():
-            if key[0] != 0 or key[1] != -1:
-                cell.set_fontsize(5)
-                cell.PAD = 0.03
-                cell.set_text_props(linespacing=1)
-                cell.set_height(0.018)
-        for col in range(len(comp_df.columns)): tab.auto_set_column_width(col)
-        plt.savefig('tab3/kegg-' + comp.lower() + '.png', bbox_inches='tight', dpi=300)
-
-        plt.figure(figsize=(6, 6))
-        tab = plt.table(cellText=comp_df2.values, colLabels=comp_df2.columns, loc='center', cellLoc='left',
+        tab = plt.table(cellText=df.values, colLabels=df.columns, loc='center', cellLoc='left',
                         colLoc='left', edges='open')
         plt.axis('off')
         tab.auto_set_font_size(False)
@@ -104,23 +99,8 @@ def tab3(df):
                 cell.PAD = 0.03
                 cell.set_text_props(linespacing=1)
                 cell.set_height(0.018)
-        for col in range(len(comp_df2.columns)): tab.auto_set_column_width(col)
-        plt.savefig('tab3/lit-' + comp.lower() + '.png', bbox_inches='tight', dpi=300)
-
-        if len(comp_df3):
-            plt.figure(figsize=(6, 6))
-            tab = plt.table(cellText=comp_df3.values, colLabels=comp_df3.columns, loc='center', cellLoc='left',
-                            colLoc='left', edges='open')
-            plt.axis('off')
-            tab.auto_set_font_size(False)
-            for key, cell in tab.get_celld().items():
-                if key[0] != 0 or key[1] != -1:
-                    cell.set_fontsize(5)
-                    cell.PAD = 0.03
-                    cell.set_text_props(linespacing=1)
-                    cell.set_height(0.018)
-            for col in range(len(comp_df3.columns)): tab.auto_set_column_width(col)
-            plt.savefig('tab3/both-' + comp.lower() + '.png', bbox_inches='tight', dpi=300)
+        for col in range(len(df.columns)): tab.auto_set_column_width(col)
+        plt.savefig(fname, bbox_inches='tight', dpi=300)
 
 
 def tab2(df):
