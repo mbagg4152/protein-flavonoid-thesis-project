@@ -40,6 +40,10 @@ def populate(lst, ml, comp, tag):
         df[comp.lower() + '-' + tag + str(cnt) + '\n\n\n'] = b
         cnt += 1
     df = df.drop(columns=['del'])
+    df.loc[len(df.index)] = ['', '', '', '', '']
+    df.loc[len(df.index)] = ['*  = Known to synthesize', names.get(comp), '', '', '']
+
+    df.loc[len(df.index)] = ['** = Known to synthesize', 'compound related to', names.get(comp), '', '']
 
     return df
 
@@ -54,15 +58,17 @@ def tab3(df):
         ld = df.loc[df[comp] == 'lit'][comp].index.values.tolist()
         rel = df.loc[df[comp] == 'rel'][comp].index.values.tolist()
 
-        kegg = mod_list(kd + lk + rk)
         ko = mod_list(kd)
 
-        for i in range(len(rk)): rk[i] = rk[i] + '*'
-        for i in range(len(rel)): rel[i] = rel[i] + '*'
+        for i in range(len(rk)): rk[i] = rk[i] + '**'
+        for i in range(len(rel)): rel[i] = rel[i] + '**'
 
         lo = mod_list(ld + rel)
         lit = mod_list(ld + lk + rk + rel)
+
         both = mod_list(lk + rk)
+        for i in range(len(lk)): lk[i] = lk[i] + '*'
+        kegg = mod_list(kd + lk + rk)
 
         ko = np.array_split(np.array(ko), 5)
         lo = np.array_split(np.array(lo), 5)
