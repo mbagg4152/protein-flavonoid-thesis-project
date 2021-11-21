@@ -41,9 +41,10 @@ def populate(lst, ml, comp, tag):
         cnt += 1
     df = df.drop(columns=['del'])
     df.loc[len(df.index)] = ['', '', '', '', '']
-    df.loc[len(df.index)] = ['*  = Known to synthesize', names.get(comp), '', '', '']
 
-    df.loc[len(df.index)] = ['** = Known to synthesize', 'compound related to', names.get(comp), '', '']
+    if (tag != 'l') and (tag != 'lo'):
+        df.loc[len(df.index)] = ['*  = Known to synthesize', names.get(comp), '', '', '']
+        df.loc[len(df.index)] = ['** = Known to synthesize', 'compound related to', names.get(comp), '', '']
 
     return df
 
@@ -57,14 +58,16 @@ def tab3(df):
         rk = df.loc[df[comp] == 'rel-kegg'][comp].index.values.tolist()
         ld = df.loc[df[comp] == 'lit'][comp].index.values.tolist()
         rel = df.loc[df[comp] == 'rel'][comp].index.values.tolist()
+        rkc = rk.copy()
 
         ko = mod_list(kd)
 
         for i in range(len(rk)): rk[i] = rk[i] + '**'
+        for i in range(len(rk)): rkc[i] = rkc[i] + '**'
         for i in range(len(rel)): rel[i] = rel[i] + '**'
 
         lo = mod_list(ld + rel)
-        lit = mod_list(ld + lk + rk + rel)
+        lit = mod_list(ld + lk)
 
         both = mod_list(lk + rk)
         for i in range(len(lk)): lk[i] = lk[i] + '*'
