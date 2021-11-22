@@ -44,7 +44,7 @@ def populate(lst, ml, comp, tag):
 
     if (tag != 'l') and (tag != 'lo'):
         df.loc[len(df.index)] = ['*  = Known to synthesize', names.get(comp), '', '', '']
-        df.loc[len(df.index)] = ['** = Known to synthesize', 'compound related to', names.get(comp), '', '']
+        df.loc[len(df.index)] = ['** = Known to synthesize', 'compound(s) similar to', names.get(comp), '', '']
 
     return df
 
@@ -79,11 +79,11 @@ def tab3(df):
         kegg = np.array_split(np.array(kegg), 5)
         lit = np.array_split(np.array(lit), 5)
 
-        plot_stuff(populate(ko, gml(ko), comp, 'ko'), 'tab3/' + comp.lower() + '-onlykegg' + '.png')
+        # plot_stuff(populate(ko, gml(ko), comp, 'ko'), 'tab3/' + comp.lower() + '-onlykegg' + '.png')
         plot_stuff(populate(kegg, gml(kegg), comp, 'k'), 'tab3/' + comp.lower() + '-kegg' + '.png')
-        plot_stuff(populate(lo, gml(lo), comp, 'lo'), 'tab3/' + comp.lower() + '-onlylit' + '.png')
+        # plot_stuff(populate(lo, gml(lo), comp, 'lo'), 'tab3/' + comp.lower() + '-onlylit' + '.png')
         plot_stuff(populate(lit, gml(lit), comp, 'l'), 'tab3/' + comp.lower() + '-lit' + '.png')
-        plot_stuff(populate(both, gml(both), comp, 'b'), 'tab3/' + comp.lower() + '-both' + '.png')
+        # plot_stuff(populate(both, gml(both), comp, 'b'), 'tab3/' + comp.lower() + '-both' + '.png')
 
 
 def gml(lst):
