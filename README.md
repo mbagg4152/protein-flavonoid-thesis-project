@@ -6,7 +6,7 @@ The original code and the version that was worked on during class mainly focused
 predict whether or not a specific plant could be capable of synthesizing selected flavonoids.  
 The new code being developed (located in `projects/mh/protein`) is being developed for the purpose of studying 
 and analyzing the interactions between proteins and flavonoids or flavonoid-like compounds.
-There is some disorder in this repository, and for that I am sorry. The files which are scarecely documented or not 
+There is some disorder in this repository, and for that I am sorry. The files which are scarcely documented or not 
 documented at all can be ignored.
 
 <!--  -->
