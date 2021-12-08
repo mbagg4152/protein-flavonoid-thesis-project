@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05244: 111401282</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620845617">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620845617">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- oeu:111401282 -->&gt;oeu:111401282 K00475 naringenin 3-dioxygenase [EC:1.14.11.9] | (RefSeq) flavanone 3-dioxygenase-like (N)
+atggccccggcaacattgacctcactcgcacaagagaaaaccctacaatcacaattcata
+cgagatgaagatgaacgcccaaaggtggcatataatcagttcagcaatgaaattccggtg
+atatcgctcgccggaattgatgatgaaggcggcaagagatcggagatatgcaaaaaaatt
+gttgaagcatgtgaggattggggtattttccaggtggttgatcatggtgttgatactaat
+cttatttctgatatgacttgtttggctcgcgagttttttgatttgccggagaaagagaag
+ctccggttcgacatgtccggtgggaagaaaggcggtttcattgtctctagtcaccttcag
+ggagaagcaatcaaggactggagggaaattgtaacatatttttcatacccgaccagggcc
+cgagactattcaaggtggcctgataaacccgaaaaatggaggcctgtgacggcggagtat
+agcgacaagttgatgaatttagggtgcaaactgcttgaagttttgtctgaggcaatgggg
+ctggaaaaggatgctctcaccaaagcttgtgttgacatggaccagaaagtggttgtgaat
+ttctatccaaaatgcccacagcccgacatcacacttgggttaaagcggcacacagatccc
+gggactattactctattgctacaggaccaggttggtgggctgcaggccaccaaggatggt
+ggcaagacatggatcaccgttcagcccgtggagggagcctttgtggtcaatcttggggac
+catggtcattatctaagcaatgggaggttcaagaatgctgatcatcaagcagtagtgaac
+tcaaactgcagcagattatcaatagcaactttccagaatccagctccaccggctatagtg
+tacccactgaagatcagggagggcgaaaaatctgtgatggaagagcccatcacgttcgca
+gaaatgtataagaggaaaatgagtaaagatcttgagcttgcaaggctgaaaaaattggct
+aaggacaaacaaattcaagaacaggaactggagaaaagtaacaagcagctgggaactgaa
+ccaaaggatcttgaggatattcttgcttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=oeu:111401282+nt">BLAST</a>
+</body>
+</html>

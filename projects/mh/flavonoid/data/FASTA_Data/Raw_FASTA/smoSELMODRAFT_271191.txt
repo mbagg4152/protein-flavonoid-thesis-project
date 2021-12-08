@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01496: SELMODRAFT_271191</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620855359">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620855359">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- smo:SELMODRAFT_271191 -->&gt;smo:SELMODRAFT_271191 K00588 caffeoyl-CoA O-methyltransferase [EC:2.1.1.104] | (RefSeq) CCoAMT1-1; hypothetical protein (N)
+atgggaggagtcgatgttgccgctgtcgtgagcagtgtggaagtgtcgagcgacaatgcc
+aacaaggccgggaagcactcgcaagtcgggcacaagagcgtcctcaagagcgacaagttg
+tatcagtacatccttgacaccagcgtctatcctcgggagccggctcctttgaaaggactg
+cgagagatgacagcccaccatccctggaatttgatgaccacttcgccggacgagggccag
+ttcctcatgttcttgctcaagatgatgaacgccaagaagacaatggagattggagtctac
+actggttactctcttctcagcacggctctggctctgccggaagatggaacggtgctagcc
+atggacatcaacaggaagaactttgagctcggctacccgtacatggtggaagccggcgtg
+gctcacaagatcgatttcagggaaggacccgccctcgcagctctggacgagatgctcaaa
+gacgaggcgaatcatggcgcattcgacttcatctttgtggatgctgacaaggacaattac
+ttgaactaccacaagaggttgatctctttggttaaagtcggaggcgtgatcggctacgat
+aacaccctgtggaacggctcagtggttgccgaagaggacgaacccatgcccaagtacgtc
+aaatactacaaggacttcgtcatcgaggtgaacaaggctctcgctgccgactcgcgtatc
+gaaatcacccaggtcccgatcagcgacgggatcacactgtgtcggcgcctcaactag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=smo:SELMODRAFT_271191+nt">BLAST</a>
+</body>
+</html>

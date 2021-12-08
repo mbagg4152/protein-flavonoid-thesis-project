@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05101: 110944427</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620839013">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620839013">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- han:110944427 -->&gt;han:110944427 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) spermidine hydroxycinnamoyl transferase-like (N)
+atggtgaatgttgggcaatgcttcgtgataacccctgcaagaccaacaccaactgcacct
+atgtgtctctccgagcttgaccaagaaaaaactgtagctccggcactcacggtctacttt
+tatcgcccttcctcggattcgatctcttttgcagcagcctctcaagtacaccgagactct
+ctgagtcaagtgttggtgcacttctaccctctcgcgggacgcttgcacttcatcgcagat
+ttcagagactttgcactcccaaatgagctgcggtctcttgtgcccgtggtcagttatgat
+gcatcggatttgcatgagctgccacttcttatggtgcaacttactgagttgagctgcggt
+gggatcagcctcggcattggagtatctaacataatggtggatggtacatgtgcttcccat
+tttatggacgaatgggctcgaatggctcgtggtgatccaataggaaaccaaccgtttctt
+gatcgtagcgtgttgctaactgcagatccaacactacctccacggttcaaacacgaaaga
+ttcgtaccaaacccactactaatcggtcagtcagatgatcacgaggagcataataaggaa
+acaaagattgtcatgctacatctaagcaaagagcaagtccagaaactgaaagatatcgcg
+aacaaaacacgaccagcatacattccacgtccatttagccaattcgaagctgtggcggga
+cacatgtggagatgtgcaactatggcacggggacaccaccctatgcaaccaacaaagtta
+tttattccagtgagtatccgaggccggatgccactaccaaagtggtattttggcaatgcg
+attatgaaacaagccgcgtgtagccactctggtgagttggtgaagcagcccttaccttac
+gcgtgtggtaagatgagagaagctgtggaaatagtaaccgaggactacgtgaagtcagcc
+ctggatgatacaaaacggcagccggatctaacccctttccgaacatctcataccatcggg
+tctacaacaggttgttttgatgggaacccaaacatggagattataagttggctgggcata
+ccctttgaaggactagattttgggtggggaaagtgtgtttatgtgggtcctgcaaccatt
+aacgttgatggctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=han:110944427+nt">BLAST</a>
+</body>
+</html>

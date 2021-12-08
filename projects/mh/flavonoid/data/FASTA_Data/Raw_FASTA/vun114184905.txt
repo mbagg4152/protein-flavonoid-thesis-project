@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T06017: 114184905</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620839480">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620839480">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- vun:114184905 -->&gt;vun:114184905 K13265 vestitone reductase [EC:1.1.1.348] | (RefSeq) vestitone reductase-like (N)
+atggaagagggaaaaggtagagtttgtgtcacaggaggcacagggttcattgcttcatgg
+atcatcaagacactccttgaacatggatattctgttaacaccaccataagatctcatcca
+ggaggcaaaagggatgttagctttctcacaaatctaccagatgcatctgaaaagctacat
+tttttcaatgctgatctgagcgacccagagagttttggtccagcagtagaagggtgtgtt
+gggattttccacactgccacaccaattgattttgcagtgaacgagccagaagaagttgta
+accaaaagggccattgagggagccctaggcattctgaaagcagctgtgaaatcaaagaca
+gtgaagagggtggtttacacttctagtgcctccactgtttccttcactgggccagagcca
+caagatgtggttgatgaaagtgcttggagtgatgtggattttcttaggagagtgaagcga
+tttggttggtcatatacagtttcaaaggtgttgactgagaaagcaatgcttgagtttgga
+gaagagaatggattggaagttgtgagtcttgtgcctccctttgtcgttggaagtttcatc
+tgtcccaagcttcctgactctgttgaaagagcactgatcttgttgtttggcaaaaaggaa
+gaaattggtgtgattcgttaccatatggttcatgtggatgatttggctagagcacatatc
+tttctgctagagcatcctaatcccaaagggagatataactgttcacccttcattgtaccc
+attgaagagattgctgaaattatttcaaccaaatatccagaatttcaaatactatctgca
+gaagaggtgaaggagataaaaggtgcaaagttgccacatttaaactcgcagaaactggtg
+gatgctggttttgagttcaagtatagtgtggaggacatgtttattgatgcaattgaatgc
+tgcaagcaaaatgcttatctttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=vun:114184905+nt">BLAST</a>
+</body>
+</html>

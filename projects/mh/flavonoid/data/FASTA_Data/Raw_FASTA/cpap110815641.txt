@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05151: 110815641</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620859426">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620859426">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cpap:110815641 -->&gt;cpap:110815641 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase-like (N)
+atgaataaccctagacatcaattccaacctatttccactacgattctccaaattaccact
+aaccaacttaccattctaaagagaatagcgaacgaacgagattacagcacgtacgagatt
+ctcactgcacacgtgtggcgttgcgcctgcacagcacgtggtttagtggatgatcaagca
+acgagattacacgtggcagtgagtggacggtcaagattgtctcctccactcccattaggg
+tatttcggcaatgccatattccatgcgagacccgtagcttttgccggtgatctccgaaga
+gaagcattgaaacaaagcgtaaagaggattcgtgaatcgataaagagagttgataatgaa
+tacatgagatcagctcttgcctatttagatcaacatcctgatattgactctctgtcaccc
+caaaaaggaaacgaaatttaccgaaatcctaaccttgcgatcacagcttggaatcggttg
+tcactcagtgagtcagattttggttggggaaagcctagatatgttggacctacgggtata
+tacagcgaaggtaaagggtatataggcaacgatccaaagaatgatggcagcttatcattg
+gctatatgcttggagaccaaccatttaaagctgttcaagaaaatcttctatgacaacatc
+aatttgggttcttcaatgtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cpap:110815641+nt">BLAST</a>
+</body>
+</html>

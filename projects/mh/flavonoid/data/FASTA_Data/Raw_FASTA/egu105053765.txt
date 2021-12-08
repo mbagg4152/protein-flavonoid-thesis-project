@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03921: 105053765</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620853494">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620853494">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- egu:105053765 -->&gt;egu:105053765 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) agmatine coumaroyltransferase-2-like (N)
+atgccaggcgaccccaaagccatgatggtgagagtggagagctcacggctcgtcaagccc
+tccgaccaagggcaccctccccccaccactctccgcgtccccttaagcatcttcgacaag
+gtcacttacgacacccacattgccgtcatctacgccttccggccgccgatcccttctaac
+tctatggtggagaagggcctctccagggtgctctccgaataccgggagtgggccggaagg
+cttggcaaagaccctgaaggtaacccctttatcctcctcaacgatgaaggcgtgcgcttc
+atcgaggcgtcggcggacaccaccctcgacaaggccatgcccttcaaaccctcagcggca
+ttactaagctttcaccccagcctccacggcgtggcagagctggtccaggtccagctgaca
+cggttcacctgtggctccctgatggtaggtttcacggcgcaccacctagtcgccgacggc
+catgccaccagcaacttcttggttgcatggggcctcgcgtcgcgcggtctcgccatcgat
+ccgctcccgttgcacgaccgtgcgtccttcttcgtccctcgcagccctccgaggctcgag
+ttcaagcacaggggagtggagttcatgaccaggaacaagttcgacaaaggtaaggataat
+cccttgaaggatgacatagttgttcacagggtgcatttcactaaggagttcctacataag
+ctcaaggcccaggcttcactggggtctaaatccaacaggccctacaccacgtttgagagc
+ttggtggctcacctttggaggctggtgacgagggcccgagggctagatggttgcgagacc
+acccacgtaaggatatcagtgaacgggcgcacgaggttgagccctcgagtgcccaatgag
+tacttcggcaacttggttctgtgggcgtttcctcgggcgaaggtggcggagctgatcggc
+aaaccattgcagttcgcggcggagctgatccacgacgaggtggcgaaggtgaacgacgga
+tattttcgatcgtttatagactttgcgagctccggcgtggtggagtcggagaatctagtg
+ccgacggcggacatggggaagtcggtgctgtgtccaaacctggaggtggatagctggctg
+aggttcccgttctatgatctggattttggtgggggggccccgccgtactacttcatgcct
+agttactttcccgtggagggcatgctgttcatcttgccatcgtcgatgggagatggcagc
+atcgatgccttcgtgcctttgttttgtcacagtgtggacgctttcaaacaagattgctac
+tccttggtctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=egu:105053765+nt">BLAST</a>
+</body>
+</html>

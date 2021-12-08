@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	435	1	21.920	21.920	nan	nan	nan	nan	21.920	21.920	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.772	45.294	49.233
+N	TYR	B	435	2	21.920	21.920	nan	nan	nan	nan	21.920	21.920	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.772	45.294	49.233
+CA	TYR	B	435	3	9.999	9.999	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.999	9.999	nan	nan	nan	nan	nan	nan	nan	20.295	46.526	49.847
+C	TYR	B	435	4	35.669	35.669	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.669	35.669	nan	nan	nan	nan	nan	nan	nan	18.805	46.455	50.089
+O	TYR	B	435	5	39.612	39.612	nan	nan	nan	nan	39.612	39.612	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.231	47.275	50.801
+CB	TYR	B	435	6	28.464	nan	28.464	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.464	nan	28.464	nan	nan	nan	nan	nan	nan	20.654	47.716	48.975
+CG	TYR	B	435	7	2.361	nan	2.361	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.361	nan	2.361	nan	nan	nan	nan	nan	nan	22.129	47.962	48.983
+CD1	TYR	B	435	8	25.143	nan	25.143	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.143	nan	25.143	nan	nan	nan	nan	nan	nan	22.888	47.812	47.840
+CD2	TYR	B	435	9	23.264	nan	23.264	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.264	nan	23.264	nan	nan	nan	nan	nan	nan	22.771	48.304	50.155
+CE1	TYR	B	435	10	34.422	nan	34.422	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.422	nan	34.422	nan	nan	nan	nan	nan	nan	24.251	48.028	47.864
+CE2	TYR	B	435	11	33.873	nan	33.873	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.873	nan	33.873	nan	nan	nan	nan	nan	nan	24.123	48.512	50.186
+CZ	TYR	B	435	12	9.944	nan	9.944	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.944	nan	9.944	nan	nan	nan	nan	nan	nan	24.858	48.379	49.043
+OH	TYR	B	435	13	43.117	nan	43.117	nan	nan	nan	43.117	nan	43.117	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.212	48.595	49.094

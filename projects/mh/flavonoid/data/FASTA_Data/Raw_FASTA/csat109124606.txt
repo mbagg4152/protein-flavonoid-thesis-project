@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05044: 109124606</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620839985">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620839985">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csat:109124606 -->&gt;csat:109124606 K11188 peroxiredoxin 6 [EC:1.11.1.7 1.11.1.27 3.1.1.-] | (RefSeq) 1-Cys peroxiredoxin PER1 (N)
+atgccagggatcacactaggagacacagtgccgaacctagaagtggagacgacacatggc
+aagttcaagcttcatgaccacttcgccgattcttggaccgtcctcttctctcatcccggg
+gatttcacgccggtatgtaccacggagctcggtgcgatggctaaatacgctcatgagttc
+gagaagagaggcgttaagctccttggtttgtcttgtgacgacgtacagtcccacaaagac
+tggatcaaagatatcgaagcctttgcgctcggaagcaaggtgaagtacccgataatcgca
+gacccgaacaaagagatcattcctcagcttaacatgattgatccaatcgagaacggaccg
+tctcgtgccctccatattgttggtcctgacagtaagattaagctgagcttcttgtatccg
+tcgaccacgggacgtaacatggatgaagtactgagggctttggactcgttgttgatggcg
+tcgaagcacaataacaagatcgccactccggttaactggaaaccgcatgaaccagttgtg
+atttcgcctgccgtgtcggacgaagaagccaaaaagatgtttcctcagggtttcaagacc
+gccgatcttccctcaaagaaaggctatctgcgtcacactgaggtctcttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csat:109124606+nt">BLAST</a>
+</body>
+</html>

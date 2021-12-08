@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05101: 110877050</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620839083">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620839083">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- han:110877050 -->&gt;han:110877050 K00588 caffeoyl-CoA O-methyltransferase [EC:2.1.1.104] | (RefSeq) probable caffeoyl-CoA O-methyltransferase At4g26220 isoform X1 (N)
+atggaatcagaaaagccaactgaaaccacaggcttactgcaaacccatgaattatacaag
+tacatcctagagactaatgtctaccctcgcgaacctgaaccgttgaaggagcttcgagct
+cttaccgcttcacatccatgggctgtcatgggcactgcaccggacgctggccagatgatc
+gggcttttgttaaagattgttggtgcgaaaaaaacaatagaagtcggggtttttactggt
+tattcgctgcttctaaccgcgttaacaattcctgatgatggcaagattgtagcaatagat
+cctgaccggaaagcgtatgagatcggtctcccggttataaaaaaagctaaggtggagcac
+aagattgactttatcgaatccaaggctttaccagttcttgataaaatgctagaaaatcct
+gataatgaaggaagtttcgactttgctttcgttgatgctgacaagataaactatattaac
+taccacgagcgaatagtgaaactattgaaggtgaacgggatcatggtgtacgacaacaca
+ctatggttcgggacggtggcaaaaccagagtcatctgttcctgattacttcaaagaggga
+agagtgagcgccatacaacttaacaaatcacttgcagcagaccctcgcattgatatctct
+acggttccattgggtgatggtctcaccatttgtagacggctatactag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=han:110877050+nt">BLAST</a>
+</body>
+</html>

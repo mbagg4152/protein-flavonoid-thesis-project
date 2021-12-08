@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05761: 110604726</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620851112">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620851112">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mesc:110604726 -->&gt;mesc:110604726 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) lignin-forming anionic peroxidase-like (N)
+atggcaattccgcttcttaacgtttcaatatctccagcaaaagctgcagtgttcgcgttt
+atggtgctgctgttttacactgcctgccaagctcaactcacctctacattttatgacaat
+gcttgtccaaatgcactcaaaactatccgaacttccatcagaaattcaattgccgcagaa
+cgaagaatggcagcttctctcattcgtctccactttcatgattgctttgttcagggttgt
+gatgcatcaatcttactcgaagagactccaactatcgagagcgaacagactgcacttccc
+aataaagattccgccagaggttttcgagtcatcgagaaagctaaatctgaagtagagaag
+atatgccctggagttgtatcttgcgcagatatcgtcgccgtggcagcaagagatgcatct
+gcatatgtgggaggtccatcttatacagtgatgcttggaagaagagactcaactactgct
+agcagaactcttgccaataatgaacttcccagttttaaagatggcctggacagacttata
+tctagctttcagcgtaaaggacttagtgcaagggatctggttgccttatcaggagctcat
+accctaggccacgctcaatgctttacattccgtgataggatatacagcaatgtttcaatt
+gatgctggatttgcaagcacccgcaagcgcacttgtccagctattggcggtgatgcaaac
+ttggctccctttgatttggtgacacctaattctttcgacaacaattacttcaagaatctc
+atacaaaagaaaggtcttcttgaatctgatcaaattcttttcagtggaggttccacagac
+agcattgtccgagaatatagcaggagtcctgcagctttcaactcagactttgctgctgcc
+atgatcaaaatgggaaatattgatattctcactggcactgctggagaaataaggaagatc
+tgcagtgctgtgaactaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mesc:110604726+nt">BLAST</a>
+</body>
+</html>

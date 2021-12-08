@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T00041: AT1G80820</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840809">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840809">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ath:AT1G80820 -->&gt;ath:AT1G80820 K09753 cinnamoyl-CoA reductase [EC:1.2.1.44] | (RefSeq) CCR2; cinnamoyl coa reductase (N)
+atgcttgtcgacgggaaactcgtctgcgtcaccggagccggcggctacattgcttcttgg
+atcgttaagttactcttagagagaggctacaccgttagaggaaccgtaaggaacccaact
+gatcccaagaacaaccatctcagagagcttcaaggagccaaggaaagactcactcttcac
+agtgcagatcttctcgactacgaagctctctgtgccacaatcgacggttgcgatggcgtt
+ttccacactgcctctccgatgaccgacgatcccgagacaatgttggagccggcggtgaac
+ggagccaagttcgtgattgacgcagcggctaaagccaaggtcaagcgcgtggttttcacg
+tcatcaattggtgcagtttacatgaaccctaaccgtgacactcaagccattgttgacgaa
+aactgctggagtgatcttgatttctgcaaaaacactaagaattggtattgctacgggaag
+atgttggcggaacaatcggcatgggagacggccaaagcaaaaggtgtggacttagtggtg
+ctaaatccggttttggttctcggaccaccgctccagtcagcgatcaacgctagtctagtc
+catattctcaagtacctcaccggctcagccaagacctacgctaacttgactcaggtctac
+gtggacgtccgtgacgtggcactaggccatgttctggtctacgaagcaccctccgcctca
+ggccgttacatcctcgccgagaccgcacttcaccgcggagaggttgttgagattctggcc
+aaattcttcccggagtatccacttcccaccaagtgttcggacgagaagaatccgagggct
+aagccatacaagtttactacccaaaagataaaagacttaggcttggaatttaaacccatc
+aagcaatctctttacgaatctgtcaagagcttgcaagagaaaggccatcttcctctacct
+caagattcgaaccaaaacgaagtcatcatcgaatcttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ath:AT1G80820+nt">BLAST</a>
+</body>
+</html>

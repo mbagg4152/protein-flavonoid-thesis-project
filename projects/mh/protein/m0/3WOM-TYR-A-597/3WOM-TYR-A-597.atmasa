@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	597	1	20.712	20.712	nan	nan	nan	nan	20.712	20.712	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	52.627	46.563	51.326
+N	TYR	A	597	2	20.712	20.712	nan	nan	nan	nan	20.712	20.712	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	52.627	46.563	51.326
+CA	TYR	A	597	3	12.055	12.055	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	12.055	12.055	nan	nan	nan	nan	nan	nan	nan	53.549	45.466	51.554
+C	TYR	A	597	4	38.554	38.554	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	38.554	38.554	nan	nan	nan	nan	nan	nan	nan	54.965	45.981	51.570
+O	TYR	A	597	5	36.178	36.178	nan	nan	nan	nan	36.178	36.178	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	55.321	46.799	50.728
+CB	TYR	A	597	6	26.995	nan	26.995	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.995	nan	26.995	nan	nan	nan	nan	nan	nan	53.356	44.479	50.420
+CG	TYR	A	597	7	2.386	nan	2.386	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.386	nan	2.386	nan	nan	nan	nan	nan	nan	52.096	43.681	50.499
+CD1	TYR	A	597	8	21.219	nan	21.219	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.219	nan	21.219	nan	nan	nan	nan	nan	nan	51.665	43.154	51.662
+CD2	TYR	A	597	9	27.629	nan	27.629	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.629	nan	27.629	nan	nan	nan	nan	nan	nan	51.306	43.516	49.382
+CE1	TYR	A	597	10	34.056	nan	34.056	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.056	nan	34.056	nan	nan	nan	nan	nan	nan	50.504	42.408	51.737
+CE2	TYR	A	597	11	34.181	nan	34.181	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.181	nan	34.181	nan	nan	nan	nan	nan	nan	50.155	42.738	49.439
+CZ	TYR	A	597	12	9.869	nan	9.869	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.869	nan	9.869	nan	nan	nan	nan	nan	nan	49.803	42.168	50.618
+OH	TYR	A	597	13	42.406	nan	42.406	nan	nan	nan	42.406	nan	42.406	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	48.644	41.491	50.691

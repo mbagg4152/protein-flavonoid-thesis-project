@@ -1,0 +1,10 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+C1	RCO	E	602	1	4.314	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	4.314	nan	4.314	18.210	-0.902	-0.723
+C1	RCO	E	602	2	4.314	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	4.314	nan	4.314	18.210	-0.902	-0.723
+C2	RCO	E	602	3	32.980	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.980	nan	32.980	18.518	0.410	-0.375
+C3	RCO	E	602	4	10.931	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.931	nan	10.931	18.570	0.793	0.969
+C4	RCO	E	602	5	35.342	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.342	nan	35.342	18.298	-0.148	1.964
+C5	RCO	E	602	6	37.132	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.132	nan	37.132	17.991	-1.463	1.623
+C6	RCO	E	602	7	35.990	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.990	nan	35.990	17.944	-1.856	0.273
+O1	RCO	E	602	8	41.779	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	41.779	41.779	nan	18.154	-1.223	-2.049
+O3	RCO	E	602	9	41.936	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	41.936	41.936	nan	18.881	2.084	1.291

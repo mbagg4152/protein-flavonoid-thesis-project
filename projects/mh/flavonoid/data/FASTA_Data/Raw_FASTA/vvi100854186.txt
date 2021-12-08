@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01084: 100854186</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620843098">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620843098">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- vvi:100854186 -->&gt;vvi:100854186 K22845 phlorizin synthase [EC:2.4.1.357] | (RefSeq) phloretin 2'-O-glucosyltransferase-like (N)
+atggatgatgcaatagtcctgtatccaggtccaggcatcggccatgtggtgtccatgata
+gagctaggcaagctcatccttcgccgttactcccacagattctccatcatcattctcctc
+tctactggtccttttgacaccccggccaccacctcttacattgaccacatctcccaaacc
+aatcctttcatctctttccaccgcttcccctatctatcggttgacacctcttcttccact
+tgcaatatcgtcgctgtcatctctgagttcttccgtctcagtgcctctaatgtcctccat
+gctctccagcaactctccaaaacttccaccgttcgggcattcatcatcgactacttttgc
+gcttcagctcttcctgttgctcgtgaccttggaattcccacttaccacttcctcaccacc
+ggtgctgctgttaatgcggctgtcctttactttccgacaattcacaaacagtatgagagc
+agcaataagagcttcaaggacatgcccactacatttttacactttcctgggttgcctccg
+ctacaagccactcgaatgcttgaaccatggctcaaccgagacgaccccgcctatgatgat
+atgctatacttctcagagcttttgccaaaatccgatggacttttgataaatactttccat
+gatcttgagccaatagccgttaagacaatcagggaggggacatgtgttcccaatgggcca
+actccgccagtttactgcatcggccctttgattgcggatactggtgaagatgaaagcaat
+attgctggtagtgtagctcgccatggttgcttgtcctggcttgacacacagccaagtcag
+agtgttgtcttcttgtgcttcgggagcaacggaacgttctcgcccgctcaggtgaaggag
+atagctaatggactggaaagaagtggcaagagattcttgtgggtggtgaagaacccacca
+tccaacgacactgagttaaagaggagagtgagagagttaatggagtatcaaacagggagg
+gagctgagagaaagaaacaagaaaatgagagagatggcttgggcatcttggaaagatagg
+ggttcatccaccactacccttgccaaattggttgatgtatggaatcaagattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=vvi:100854186+nt">BLAST</a>
+</body>
+</html>

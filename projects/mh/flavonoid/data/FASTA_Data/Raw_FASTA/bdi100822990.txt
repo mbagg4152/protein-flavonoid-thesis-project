@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01717: 100822990</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1632839750">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1632839750">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- bdi:100822990 -->&gt;bdi:100822990 K01188 beta-glucosidase [EC:3.2.1.21] | (RefSeq) beta-glucosidase 32 isoform X1 (N)
+atggcgatgctgctctactttctcctcctcctcctccgcctcactgccttgccaagagac
+tctgctgcgctcacccgccacgacttccccgacggattcatctttggagcaggcacctcg
+gcgtaccaggtggaaggggcggccgcggaagatggaagaaaacccagcatttgggacact
+ttcactcatcaaggttactcttatgacaaatctaccgcagatatttcagcagaccaatac
+catcattacaaggatgatgtaaaacttatgcatgagattggtctagacgcctacagattc
+tccattgcgtggccccggcttatcccagatggaagaggaaggatcaatccgaagggcttg
+aaatactacaacaacttaatagatgaattgatacggcatgacatacaacctcatgtcaca
+atctaccatcttgatttccctcagtccctccaggacgaatacaagggactgctcagcccc
+agattcgtagacgattacaccgcgtacgctgacgcctgtttcaagagctttggggacagg
+gtgaagcactgggtcaccgtcaatgagcccaacatcgaaactataggcagcttcgacagc
+ggcgagctgccaccacggcgctgctcctatccttttggcgtgaactgcaccggagggaac
+tccacgacggagccatacatagctgctcaccgtctcctgcttgcacatgcctcggcagtg
+tctctgtacagagacaagtaccagggaactcaaagaggacagatcggaattactctcttg
+ggctggtggcatgagcctgctaccaaggcatcgcgggatgcagctgctgcaacgaggatg
+aatgacttccacattggatggttcatgcatcctctggtgtatggggattaccctccggtc
+atgaggaggagggtgggcgcacggttgccgtacttaacagcagagcagtcgaagaacttg
+tccggatcatttgactttgtcggcttcaatcactacctcgtggttcgcgcgcaatctgac
+gagagagcctttgatcggaagcagagggactactacaatgatgcagccgctattgcaaat
+ccatttaaagacatccaagagggccatcttgagtctgctccttgggctctagggaagtta
+ctggaccacctgagactgaagtacagaaatcctccagttatgattcatgaaaacggattt
+gcagacgcccccaaaaccccaagcaagattgagtttgacgacgactacagatcagagtac
+ctgcaagattacctggaagttctctaccagtccatacggaacggatcggacgcgcggggg
+tacttcgtgtggtcttttctcgatgtgttcgagttactgttcggctacgcttcgcgattt
+ggcctgtgcggcgtcgacatgaacgccgtggagaggacgaggtacatgaggaactccgcc
+cgctggtactccagcttcctcaaaggcggcgagctgcggccggggtcgccgtcggggaaa
+gggtacggcgtcgcatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=bdi:100822990+nt">BLAST</a>
+</body>
+</html>

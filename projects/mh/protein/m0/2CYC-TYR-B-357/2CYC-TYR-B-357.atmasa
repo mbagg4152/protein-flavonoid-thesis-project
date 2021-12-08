@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	357	1	26.173	26.173	nan	nan	nan	nan	26.173	26.173	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	70.867	47.386	77.819
+N	TYR	B	357	2	26.173	26.173	nan	nan	nan	nan	26.173	26.173	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	70.867	47.386	77.819
+CA	TYR	B	357	3	13.880	13.880	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.880	13.880	nan	nan	nan	nan	nan	nan	nan	70.931	46.599	76.602
+C	TYR	B	357	4	27.637	27.637	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.637	27.637	nan	nan	nan	nan	nan	nan	nan	72.123	47.005	75.722
+O	TYR	B	357	5	32.163	32.163	nan	nan	nan	nan	32.163	32.163	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	72.862	46.147	75.239
+CB	TYR	B	357	6	32.079	nan	32.079	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.079	nan	32.079	nan	nan	nan	nan	nan	nan	69.631	46.721	75.800
+CG	TYR	B	357	7	2.727	nan	2.727	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.727	nan	2.727	nan	nan	nan	nan	nan	nan	69.691	45.948	74.502
+CD1	TYR	B	357	8	18.408	nan	18.408	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.408	nan	18.408	nan	nan	nan	nan	nan	nan	70.329	46.478	73.386
+CD2	TYR	B	357	9	26.889	nan	26.889	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.889	nan	26.889	nan	nan	nan	nan	nan	nan	69.204	44.642	74.424
+CE1	TYR	B	357	10	31.662	nan	31.662	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.662	nan	31.662	nan	nan	nan	nan	nan	nan	70.497	45.728	72.225
+CE2	TYR	B	357	11	34.347	nan	34.347	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.347	nan	34.347	nan	nan	nan	nan	nan	nan	69.363	43.876	73.261
+CZ	TYR	B	357	12	9.728	nan	9.728	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.728	nan	9.728	nan	nan	nan	nan	nan	nan	70.013	44.426	72.170
+OH	TYR	B	357	13	43.222	nan	43.222	nan	nan	nan	43.222	nan	43.222	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	70.194	43.677	71.030

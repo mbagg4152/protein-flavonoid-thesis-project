@@ -1,0 +1,33 @@
+Link for formatting of all PDB elements- http-//www.wwpdb.org/documentation/file-format-content/format33/v3.3.html
+------------------------------------------------------------------------------------------------------------------------
+column(s) 1-6, data_type: Record name, field: "HEADER"
+column(s) 11-50, data_type: Str(40), field: classification, def: Classifies the molecule(s).
+column(s) 51-59, data_type: Date, field: depDate, def: Deposition date. This is the date the coordinates were received at the PDB.
+column(s) 63-66, data_type: IDcode, field: idCode, def: This identifier is unique within the PDB.
+-----------------------------------------------------------------------------------------------------------------------
+column(s) 1-6, data_type: Record name, field: "TITLE "
+column(s) 9-10, data_type: Continuation, field: continuation, def: Allows concatenation of multiple records.
+column(s) 11-80, data_type: Str, field: title, def: Title of the experiment.
+-----------------------------------------------------------------------------------------------------------------------
+column(s) 1-6, data_type: Record name, field: "ATOM"/"HETATM"
+column(s) 7-11, data_type: Int, field: serial, def: Atom serial number.
+column(s) 13-16, data_type: Atom, field: name, def: Atom name.
+column(s) 17, data_type: Char, field: altLoc, def: Alternate location indicator.
+column(s) 18-20, data_type: Residue name, field: resName, def: Residue name.
+column(s) 22, data_type: Char, field: chainID, def: Chain identifier.
+column(s) 23-26, data_type: In, field: resSeq, def: Residue sequence number.
+column(s) 27, data_type: AChar, field: iCode, def: Code for insertion of residues.
+column(s) 31-38, data_type: Real(8.3), field: x, def: Coordinates for X in Angstroms.
+column(s) 39-46, data_type: Real(8.3), field: y, def: Coordinates for Y in Angstroms.
+column(s) 47-54, data_type: Real(8.3), field: z, def: Coordinates for Z in Angstroms.
+column(s) 55-60, data_type: Real(6.2), field: occupancy, def: Occupancy.
+column(s) 61-66, data_type: Real(6.2), field: tempFactor, def: Temperature factor.
+column(s) 77-78, data_type: LStr(2), field: element, def: Element symbol, right-justified.
+column(s) 79-80, data_type: LStr(2), field: charge, def: Charge on the atom.
+-----------------------------------------------------------------------------------------------------------------------
+column(s) 1-6 data_type: Record name, field: "SEQRES"
+column(s) 8-10 data_type: Int, field: serNum, def: Serial of SEQRES record for current chain. Starts @ 1 & resets to 1 for each chain.
+column(s) 12 data_type: Char, field: chainID, def: Chain identifier. This may be any single legal Char, including a blank which is is used if there is only one chain.
+column(s) 14-17 data_type: Int, field: numRes, def: # of residues in the chain. This value is repeated on every record.
+column(s) 20-22;24-26;28-30;32-34;36-38;40-42;44-46;48-50;52-54;56-58;60-62;64-66;68-70, data_type: Residue name, field: resName, def: Residue name.
+

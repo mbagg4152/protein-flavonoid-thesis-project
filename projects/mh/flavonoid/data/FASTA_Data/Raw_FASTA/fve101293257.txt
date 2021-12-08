@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02666: 101293257</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840769">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840769">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- fve:101293257 -->&gt;fve:101293257 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atgaagattgacgtagaagtaatctcccaagaaacagtaacaccctcatctccaacccct
+caccatctccgccatcaccagctctcctttctcgaccagttagctccacacgcctacgtc
+cctttcctctacttctactccctccccaacactcacagccacacccaaatctccacccac
+ctcaagaaatctctctccaaagccttaacacagtactaccctctagccggccgagtcaaa
+ctcaacctctttgtggagtgcaacgactttggagtccccttctatgaagctcgagtcaaa
+tccctgtcactctctgatgtcatcaccaatccctcccttcctgaactgaacaacttgttg
+cccttcaagctcgacgagctcaaagacatagctcttggagttcaactcaatctgtttcgt
+tgcggaggagttgctattgggttgtgtgcttcgcatcgagttgcagatgggttgtcatat
+ttcacgtttgttaagaactgggcatcagctgcttgtgggaatgagagtgtgagtccggat
+ttttcggcagcttcgatcttccctccaaagaatatggatgggtataatggtgttcttatt
+ccgaaaaggaatgaaatcgtgaccaaagggtttgtgtttgatgggttgaagattgaagct
+ttacgatcaaagtatgcagagggcattagattgaagaccaagaaaatcccgtctcgagtt
+gaggcattgtctgctttcttgtggaacaagtttatggctgcggcagcaaaagaagaagga
+tcaagttccagaaagttgtacgcagttgtgtatattatggatcttcgttcgagatttgac
+ccacctctgccgcagcatagctttgggaactattaccgggcagccactgcaactccaaca
+ttggttaatggggaggagagaggtggccttgtgaggcaggtgatagaggaaatagagaag
+attgacaataagtatatgaggaaatttcaagatggctataaggaacatttggatttcatg
+aggagaagaatggagagggctgcaaaaggagagctggttacgctaacgttttcaagtctg
+tgcaggtttccattgtatgaggctgattttggttgggggaagccagaatgggtgagcatg
+gcttccatgaaaatcaataaccaaattgttttcatggacaccaaattgggtgatggaata
+gagtcatattttagcttcaaggaggaagacatggccaagtttgaacttgactcggagttc
+ctccagctgatttctccaattggtctgttacaaacttatagaatacatctgtggcttaat
+aagatgtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=fve:101293257+nt">BLAST</a>
+</body>
+</html>

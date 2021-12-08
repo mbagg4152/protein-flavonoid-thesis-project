@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05151: 110808356</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620859542">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620859542">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cpap:110808356 -->&gt;cpap:110808356 K11188 peroxiredoxin 6 [EC:1.11.1.7 1.11.1.27 3.1.1.-] | (RefSeq) 1-Cys peroxiredoxin (N)
+atgccaggccttactcttggggatactgttcccaaccttcaagtcgaaaccacccatgga
+aatttcaagctgcatgactacttcggcaataactggaccatcctcttctctcatccagcc
+gatttcacgccggtgtgcaccacggagctgggcaagatagctgcttatggtccggagctt
+gaaagcaaaggagtgaagcttttgggtttgtcttgtgatcctgtccagtcgcatagcgag
+tggttcaaagatgttgaagcctatactcctgggtgcagagtcacatatccggtgattgcg
+gaccccaagagggaaatcctcgcccaactcaacatggttgagccagatctcaaagaccca
+tcaggaagcctagttccatctcgagccctccacatcgttggcccagataagaagataaag
+ctgagttttctttacccggtgagtgttgggcgcaacatggacgaggtggtgagggcggtg
+gacgcacttcagatagcaagcaagcacaaagtggcgactccggttaactggaaacggggg
+gatccggttcttatccctcccagcgtctccaacgaggaagcccagcagaggtaccctcag
+ggctaccgcactgttgacttgccctccaaacagccctacatgcgttttaccaaccttcct
+gctgcctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cpap:110808356+nt">BLAST</a>
+</body>
+</html>

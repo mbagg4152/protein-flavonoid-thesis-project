@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05044: 104780735</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841043">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841043">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csat:104780735 -->&gt;csat:104780735 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 34 (N)
+atgcatcgctcttccacttcttcttcgacttcgttcacttggacagccttaatcacattg
+ggatgtcttatgctatatgcctctttgtccgatgctcaacttacccctaccttctatgac
+aattcatgccctaacgttaccaacatcgtacgagataccattgtgaacgagttaaggtca
+gaccctcgtattgccgcgagcatccttcgtcttcacttccacgactgctttgtaaatggt
+tgtgatgcatcaatcttgttagacaacacgacatcgtttcgaacagagaaagatgcgttc
+ggaaacgcaaattcggctcggggatttcctgtgattgataaaatgaaagccgcagtggag
+agggcatgcccaagaacggtgtcatgcgcggatatgctaaccatcgcagctcaacaatca
+gtcactttggcgggaggtccttcttggagagttcctttggggagaagagacagcttacaa
+gcatttttgcaactcgctaatgcaaatcttcctggtccatcctccacacttcaagtactt
+aaagatagatttagaaatgttggcctcgaccgtccttctgatctcgttgcgctctctggt
+ggccacacatttggtaaaaatcagtgccggtttattataaacagactatacaactttagc
+aacaccggtttacccgaccctactctcaacactacttaccttcaaactcttcgtggattg
+tgtcctcgtaatggtaaccaaagtgccttggtggattttgatctgcgtacgcctacggtt
+ttcgacaacaaatactacgttaaccttggtgagcgaaaaggtcttatccagagcgaccaa
+gaattgttctccagccccaatgcaactgacactatccctttggtgagatcatatgctaat
+agcacacaaaccttcttcaatgcgtttgtggaggcgatgaataggatgggaaatatcaca
+cctctcacaggaactcaaggacaaatcagattgaattgtagggtggtgaattccaactct
+atactccaagatgtggttgaaattgttgactttgttagctctatgtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csat:104780735+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T00041: AT2G19070</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840540">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840540">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ath:AT2G19070 -->&gt;ath:AT2G19070 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) SHT; spermidine hydroxycinnamoyl transferase (N)
+atggctcccataacttttagaaaatcttacactatagtaccggccgaaccaacgtggagc
+ggtaggtttcccttagccgagtgggatcaagttggtacaattactcacattcccaccctt
+tacttttacgacaagccatctgaatctttccaaggcaatgtagtcgaaatcctaaaaacc
+tcgttgagccgtgtgctagtccatttttaccctatggctggccgtctcagatggctccct
+cggggacggttcgagctcaattgtaacgccgagggagtggaattcattgaagcggaatct
+gaggggaagctttcggatttcaaagacttctctcctacgccggaattcgagaatcttatg
+ccgcaagtaaactataaaaaccctatcgaaacgattcctctatttttagctcaggtaacc
+aaattcaaatgcggtggaataagccttagcgtcaacgtttcccacgcgatcgtagatggc
+caaagcgcgcttcacttaatatcggaatggggaagactcgcgcgcggtgaaccgttagaa
+accgttccatttctagaccggaaaatcctctgggctggtgaaccgctcccaccgtttgtg
+tcgcccccaaagttcgaccacaaagagtttgatcagccaccgtttttgatcggagaaacg
+gacaatgtagaagagagaaagaagaaaacgattgtggtgatgctaccactgagcacatct
+cagctgcagaagctacgaagtaaagccaacggaagcaaacactctgacccggcgaaaggg
+tttacaaggtacgagaccgtcaccggacacgtgtggaggtgcgcgtgtaaagcacgtggc
+cactctccggagcaaccaacggctctaggaatctgtatagatactcgtagtcggatggag
+ccacctctgccacgcggctacttcggcaatgctactcttgacgtggtcgcagcaagcacc
+tcaggtgaactgatatcgaatgaattgggtttcgcggcgagtttaatcagtaaagccata
+aagaatgtaacaaacgaatacgtgatgattgggatagagtatcttaagaaccaaaaagat
+ctgaagaagtttcaagatctacatgccttgggaagcacggaaggtccattctacggaaac
+ccaaatcttggagtggtgagctggttaactttgccaatgtacggccttgatttcggatgg
+ggcaaagagttctacacgggaccaggcacgcatgactttgacggcgactcgctgatcttg
+ccggatcaaaacgaagatggctcggtgattctcgcgacgtgtctacaggtggctcacatg
+gaggccttcaagaaacacttttatgaagatatctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ath:AT2G19070+nt">BLAST</a>
+</body>
+</html>

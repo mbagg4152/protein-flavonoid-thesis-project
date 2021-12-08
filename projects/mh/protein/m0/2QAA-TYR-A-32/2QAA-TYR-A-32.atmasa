@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	32	1	18.698	18.698	nan	nan	nan	nan	18.698	18.698	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.206	-8.780	62.410
+N	TYR	A	32	2	18.698	18.698	nan	nan	nan	nan	18.698	18.698	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.206	-8.780	62.410
+CA	TYR	A	32	3	15.198	15.198	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	15.198	15.198	nan	nan	nan	nan	nan	nan	nan	21.359	-9.605	62.707
+C	TYR	A	32	4	37.765	37.765	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.765	37.765	nan	nan	nan	nan	nan	nan	nan	21.232	-10.932	62.024
+O	TYR	A	32	5	36.589	36.589	nan	nan	nan	nan	36.589	36.589	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.226	-11.629	62.181
+CB	TYR	A	32	6	27.494	nan	27.494	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.494	nan	27.494	nan	nan	nan	nan	nan	nan	21.504	-9.839	64.207
+CG	TYR	A	32	7	2.586	nan	2.586	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.586	nan	2.586	nan	nan	nan	nan	nan	nan	21.745	-8.601	65.004
+CD1	TYR	A	32	8	20.038	nan	20.038	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.038	nan	20.038	nan	nan	nan	nan	nan	nan	20.706	-7.768	65.396
+CD2	TYR	A	32	9	27.671	nan	27.671	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.671	nan	27.671	nan	nan	nan	nan	nan	nan	23.012	-8.169	65.332
+CE1	TYR	A	32	10	34.306	nan	34.306	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.306	nan	34.306	nan	nan	nan	nan	nan	nan	20.897	-6.622	66.127
+CE2	TYR	A	32	11	33.898	nan	33.898	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.898	nan	33.898	nan	nan	nan	nan	nan	nan	23.221	-6.999	66.068
+CZ	TYR	A	32	12	9.828	nan	9.828	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.828	nan	9.828	nan	nan	nan	nan	nan	nan	22.175	-6.226	66.425
+OH	TYR	A	32	13	43.803	nan	43.803	nan	nan	nan	43.803	nan	43.803	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.396	-5.041	67.141

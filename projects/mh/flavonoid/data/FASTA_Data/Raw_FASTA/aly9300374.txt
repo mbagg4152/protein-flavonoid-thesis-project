@@ -1,0 +1,48 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01578: 9300374</title>
+<<<<<<< Updated upstream
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620835643">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620835643">
+=======
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849913">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849913">
+>>>>>>> Stashed changes
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aly:9300374 -->&gt;aly:9300374 K17193 anthocyanidin 3-O-glucoside 2'''-O-xylosyltransferase [EC:2.4.2.51] | (RefSeq) anthocyanidin 3-O-glucoside 2'''-O-xylosyltransferase (N)
+atgggtgattttggatcaaatggttcctcaagcatgaccattgttatgtatccgtggtta
+gcctttggtcacatgactccttttcttcacctatcaaacaagctcgcagagaaaggtcac
+aagattgttttcttgcttcccaagaaagcactaaaccagctcgaacctcttaatctctac
+ccaaatctcatcacttttcgcaccatctcaatccctcaggtcaaagggctccctcccggt
+gcagaaacaaactccgacgtccccttcttcttgactcatttgcttgcaattgcaatggac
+caaacccgcccagaggttgagacaattttccgtacaatcaaaccggacttggttttctat
+gattctgcccattggataccggaaattgctaaaccggtgggtgcaaaaaccgtttgcttc
+aacattgtgagcgctgcgtcaatcgcactgtctcttgtacctgcagccgagcgagaggtc
+attgatgggaaggaaatgtcaggggaggagttagctaagacgcctctaggttacccttct
+tcgaaagtcgtcttgcgtgcgcacgaagcaaaagccctaaccttcgtgtggaggaagcac
+gagggtattgcttctttctttgacgggaaagttaccgctatgagaaactctgacgcaatc
+gctataaggacttgccgtgagacagaaggcaaattctgcgattacatcagtagccagtac
+agcaaaccggtttacctaaccggaccggttctccctggatcccaacctaatcagccctcc
+ttagagcctcaatgggcagagtggctagccaaattcaaccccggttcagttgtgttctgt
+gctttcggtagccaacccgttgtagacaagatagatcagtttcaagaactctgtttaggg
+ctagaatctaccggtttcccgtttctggtggctattaagcctccttcgggtgtatcaacc
+gtcgaggaagcgttaccggaaggattcaaagagagggttcaaggacgtggcgttgtgtac
+ggcggttggattcagcaaccgttggtgttgaaccatccttcagtgggatgtttcgttagc
+cattgcgggtttgggtcgatgtgggagtctttgatgagtaattgtcagatagttctggtt
+ccacagcacggagaacagattttgaacgcgaggctgatgacagaggagatggaggtggcg
+gttgaagtggagagggaagagaatgggtggttctcgcagcggagcttggagaatgcggtg
+aagagtgtgatggaggaaggtagtgaggtcagtgataaagtgaggaagaatcatgagaag
+tggagatgtgttttgactgactctggttttgcagatggttatattgataagtttgaaaag
+aatttaattgaacttgtaaagtcatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aly:9300374+nt">BLAST</a>
+</body>
+</html>

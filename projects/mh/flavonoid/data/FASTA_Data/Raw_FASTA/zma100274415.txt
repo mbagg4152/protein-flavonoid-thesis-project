@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01088: 100274415</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620851461">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620851461">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- zma:100274415 -->&gt;zma:100274415 K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) c2; chalcone synthase C2 (N)
+atggccggcgcgaccgtgaccgtggaggaggtgaggaaggcccagcgcgccaccggcccc
+gccaccgtgctggcgatcggcaccgccacgcccgccaactgcgtgtaccaggccgactac
+ccggactactacttccggatcaccaagagcgagcacctcaccgacctcaaggagaaattc
+aagaggatgtgcgacaagtcgatgatccggaagcgttacatgcacctgacggaggagttc
+ctggcggagaacccgagcatgtgcgcgtacatggcgccgtcgctggacgcgcggcaggac
+gtggtggtggtggaggtgccgaagctggggaaggcggcggcgcagaaggcgatcaaggag
+tgggggcagccaaagtcgcggatcacgcacctggtgttctgcaccacgtccggggtggac
+atgccgggcgccgactaccagctgaccaaggcgctgggcctgcgcccctccgtgaaccgc
+ctcatgatgtaccagcaggggtgcttcgcgggcggcacggtgctgcgcgtggccaaggac
+ctcgcggagaacaaccgcggcgcgcgggtgctggtggtgtgctccgagatcacggccgtc
+acgttccgcggcccctccgagtcgcacctcgactcgctcgtgggccaggcgctgttcggc
+gacggcgcggcggccgtggtcgtgggcgccgacccggacgaccgcgtcgagcgcccgctc
+ttccagctcgtctccgccgcccagaccatcctgcccgactcggagggcgccatcgacggc
+cacctccgcgaggtggggctcaccttccacctgctcaaggacgtgcctggcctcatctcc
+aagaacatcggccgcgcgctggacgacgcgttcaagccgctcggcatctccgactggaac
+tccatcttctgggtggcgcaccccggcgggcccgccatcctcgaccaggtggaggccaag
+gtcgggctggacaaggccaggatgcgcgccacccgccacgtcctctccgagtacggcaac
+atgtccagcgcctgcgtcctcttcatcctcgacgagatgcgcaagcgctccgccgaggac
+ggacaggccaccacgggcgagggcctcgactggggcgtcctcttcggcttcggcccggga
+ctcaccgtcgagaccgtcgtgctccacagcgtccccatcaccaccggagcggccaccgcc
+tga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=zma:100274415+nt">BLAST</a>
+</body>
+</html>

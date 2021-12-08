@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05758: 113294850</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620857287">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620857287">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- psom:113294850 -->&gt;psom:113294850 K05349 beta-glucosidase [EC:3.2.1.21] | (RefSeq) uncharacterized protein LOC113294850 (N)
+atgaattcaggtggaagaaaatgggatcttatgcatgatgaaattgaagcaatgtttttt
+aaagagagagccatacttgaagccaagtaccagaagatgaagattgttccggaaatgact
+gagattattcttggtttacaaggagatgttcccgcggattctcgaaaaggagttccttat
+gttggtggaaacaacaaggttgctgcttgtgcaaagcatttcgttggtgatggtggcaca
+acaaagggtattaacgagaacaacacagtgactgactggcatggactactcagtattcat
+atgcctggttattataattcaatcatcaagggtgtatcaaccatcatggtttcgtactca
+agatggaacagcgaaaagatgcatgctaaccgtgatcttgttactaacttcctcaaagac
+actcttaatttcaggggattcgtcatttccgattggaaaggtattgacaggattacttca
+ccagcaggcaccaactatacttactccgtccattctgggattaatgccggcattgacatg
+atcatgattccaatgaaccacactgattttatccatgatctaacctacctggttgggaag
+aacgtaatccccatgagcaggattgacgatgctgtgaagagaattctgaaggtaaaattc
+atgatgggtctctttgagatccctatggctgatcactgctgcttctcgtatgctattgtt
+gttattggcgagcaaccatatgcagagacaatgggggacaaccttaacttaacaattcct
+gaacctggtttgagcactatgaagaacgtttgtggctctatcaagtgtgttgttgttgtt
+atctatggacgacctcttgtgattgaaccttatctatcatatgttgatgctctcgtagtt
+gcatggatccctggaagtgaaggtcaaggtgtataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=psom:113294850+nt">BLAST</a>
+</body>
+</html>

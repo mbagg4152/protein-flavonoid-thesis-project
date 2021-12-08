@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	256	1	20.573	20.573	nan	nan	nan	nan	20.573	20.573	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-0.806	29.133	18.878
+N	TYR	B	256	2	20.573	20.573	nan	nan	nan	nan	20.573	20.573	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-0.806	29.133	18.878
+CA	TYR	B	256	3	14.673	14.673	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	14.673	14.673	nan	nan	nan	nan	nan	nan	nan	-0.788	28.841	17.443
+C	TYR	B	256	4	38.579	38.579	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	38.579	38.579	nan	nan	nan	nan	nan	nan	nan	0.535	29.368	16.841
+O	TYR	B	256	5	35.401	35.401	nan	nan	nan	nan	35.401	35.401	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	0.587	29.812	15.712
+CB	TYR	B	256	6	22.517	nan	22.517	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.517	nan	22.517	nan	nan	nan	nan	nan	nan	-1.945	29.535	16.696
+CG	TYR	B	256	7	1.995	nan	1.995	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.995	nan	1.995	nan	nan	nan	nan	nan	nan	-3.384	29.101	16.960
+CD1	TYR	B	256	8	26.307	nan	26.307	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.307	nan	26.307	nan	nan	nan	nan	nan	nan	-3.881	27.858	16.564
+CD2	TYR	B	256	9	26.049	nan	26.049	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.049	nan	26.049	nan	nan	nan	nan	nan	nan	-4.291	30.000	17.521
+CE1	TYR	B	256	10	34.647	nan	34.647	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.647	nan	34.647	nan	nan	nan	nan	nan	nan	-5.220	27.507	16.769
+CE2	TYR	B	256	11	34.206	nan	34.206	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.206	nan	34.206	nan	nan	nan	nan	nan	nan	-5.630	29.667	17.733
+CZ	TYR	B	256	12	10.169	nan	10.169	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.169	nan	10.169	nan	nan	nan	nan	nan	nan	-6.098	28.412	17.363
+OH	TYR	B	256	13	43.352	nan	43.352	nan	nan	nan	43.352	nan	43.352	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-7.420	28.109	17.571

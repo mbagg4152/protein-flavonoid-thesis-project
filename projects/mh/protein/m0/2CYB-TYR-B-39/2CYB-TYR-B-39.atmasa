@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	39	1	18.102	18.102	nan	nan	nan	nan	18.102	18.102	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.148	9.116	46.069
+N	TYR	B	39	2	18.102	18.102	nan	nan	nan	nan	18.102	18.102	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.148	9.116	46.069
+CA	TYR	B	39	3	15.572	15.572	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	15.572	15.572	nan	nan	nan	nan	nan	nan	nan	0.060	10.062	45.805
+C	TYR	B	39	4	38.047	38.047	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	38.047	38.047	nan	nan	nan	nan	nan	nan	nan	0.204	10.727	44.435
+O	TYR	B	39	5	36.367	36.367	nan	nan	nan	nan	36.367	36.367	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.276	11.224	44.104
+CB	TYR	B	39	6	25.802	nan	25.802	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.802	nan	25.802	nan	nan	nan	nan	nan	nan	0.045	11.208	46.834
+CG	TYR	B	39	7	2.104	nan	2.104	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.104	nan	2.104	nan	nan	nan	nan	nan	nan	-0.098	10.821	48.292
+CD1	TYR	B	39	8	23.281	nan	23.281	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.281	nan	23.281	nan	nan	nan	nan	nan	nan	1.021	10.703	49.121
+CD2	TYR	B	39	9	26.839	nan	26.839	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.839	nan	26.839	nan	nan	nan	nan	nan	nan	-1.348	10.608	48.849
+CE1	TYR	B	39	10	34.547	nan	34.547	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.547	nan	34.547	nan	nan	nan	nan	nan	nan	0.889	10.383	50.482
+CE2	TYR	B	39	11	34.514	nan	34.514	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.514	nan	34.514	nan	nan	nan	nan	nan	nan	-1.496	10.288	50.207
+CZ	TYR	B	39	12	10.019	nan	10.019	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.019	nan	10.019	nan	nan	nan	nan	nan	nan	-0.372	10.176	51.012
+OH	TYR	B	39	13	43.274	nan	43.274	nan	nan	nan	43.274	nan	43.274	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-0.513	9.821	52.335

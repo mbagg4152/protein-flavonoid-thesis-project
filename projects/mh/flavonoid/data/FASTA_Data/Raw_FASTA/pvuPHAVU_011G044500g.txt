@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03093: PHAVU_011G044500g</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841829">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841829">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvu:PHAVU_011G044500g -->&gt;pvu:PHAVU_011G044500g K13266 pterocarpan reductase [EC:1.23.1.-] | (RefSeq) hypothetical protein (N)
+atggaaaaggtgggcactagcaaaattctgataattggagcaacagggtttgtgggaaag
+ttcatggtggaagcaagtgctaaggctggtcaccccacctttgccctggttcgagaatcc
+actctttctgatccatcaaaatcatccatcattcaaacattcaacaccttgggtgtcaac
+ctccttttgggagatgtacgtgatcatcagagtttggttgaggcgataaagaaggtggat
+gtggtaatatctattgtgagtcacacgcagttagatgttcaatataagatcatttctgct
+attaaggaagccggaaatgttaagaggttctttccttcagagtttggaaatgatgtggtt
+cgaactcatgctgtagacgaaggacacgagatatttgacagtaaagttcaaattcgtcga
+accattgaggctgaaggaattccttatacctatgtggtggccaactttttcactggacac
+ttcctacccacttggtcagatcttcatggcataacatcaccacttgatactgttgttatt
+cttggggatggaaacaccaaagttgttcttaatacggaagaggatgttgccacttacacc
+attagaagtgttgatgatccaagaaccttgaacaaaattctctatgtccgaccacctggt
+aacaccttgtcatacaatgaccttgtatctctctgggagaagcatcacagtgaaattctt
+aagagagtttatgtatcagaagataaagttttgaagattattaaagaatcttcattcccc
+agaaacatgggtctgtcaatttgccactctgcatatatgaagggagatcacactaactat
+gaaattaagccttcatttggagttgacgcttcaatgctatatcctgacgttaaatacacc
+actttagacgagttcttccttcataatgatgcttgcacgccattttacttgaaccagctt
+atactggttaacgatatatag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvu:PHAVU_011G044500g+nt">BLAST</a>
+</body>
+</html>

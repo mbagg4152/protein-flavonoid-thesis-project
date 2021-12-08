@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05868: 112001084</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840989">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840989">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- qsu:112001084 -->&gt;qsu:112001084 K22845 phlorizin synthase [EC:2.4.1.357] | (RefSeq) UDP-glycosyltransferase 88F3-like isoform X1 (N)
+atgcaagacacgatagtcctattcccagctccaggcatgggccacataatctcaatggtt
+gagctaggcaagctcattctccaccactaccctcataaattctccatcaccatcctcctt
+accacaggctccttccagaacaccccaagtgtcacctcttacatccaacgtatctcccaa
+tccaactcctccatctccttttactgcttaccctctgtctctgttgacacaaccccaact
+cgaagccgtgcagccatggccttcgagttcaaccgcctcagtactgcccatgtcccccat
+gcactccaacagatctcccacacatccacccttagggctcttatcattgactttttttgc
+acctcagctcttcctatagccaaacaactcaaccttcctgtttattatttctacacttct
+ggtgcttatgctctcgcttctttcttatactttcccaaaatccatgagcaaataacaaaa
+agctttaaggaccttaaaaccactgagcttctcttccccggaatgtcaccattgaaagcc
+acccacatgcctgaaccaaccctcgatcgagacgatccagcttacttggactgggtctac
+ttctgttcacagcttccaaaatcaaatgggattatagcaaacacgtttgaggacctggag
+ccaaaagccataaagaccattgctgatggtgtatgtgtccctgatgagccaactccacct
+gtttactatttaggtcctttgattgctgaagcagaagaacgagcaggtgaagatggaaat
+gaaggtggtgatgagaatgagtgtttgtcatggcttgacaggcaaccaagtagaagtgtt
+gtgttcttgtgttttggtagccggggatctttctcagtggcacaagttagagacatagct
+aatggcttggaaaggagtggacaaaggttcttgtgggtggtgaaaaagccaccacaagat
+gagaaaactaagcaaattgagcagtatacatcggagtttaatttggatagtttgttgcca
+gaggggttcttagaaagaacaatagataggggcatggtagtgaagtcatgggcaccgcaa
+gtggcagtgctaagaaaggaatccgttggcgggtttgtgacacattgtgggtggaattcg
+gtgttggaggcagtggttgccggagtgccaatggtggcgtggccactctatgctgagcag
+catctgaatagaaatgttttggtgaaggatatgaagatggctattggcgttgagcagaga
+gaggatgatgggtttgtgagaggggatgaggttgagagaagggttagagagttgatggag
+tcggaagaagggagagaactcaggaaaaggagctgggagatgagagaaagggctttggct
+gctttaggagaatttggttcgtctaccagagccctggttaagttcgttgaggcacttggg
+tag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=qsu:112001084+nt">BLAST</a>
+</body>
+</html>

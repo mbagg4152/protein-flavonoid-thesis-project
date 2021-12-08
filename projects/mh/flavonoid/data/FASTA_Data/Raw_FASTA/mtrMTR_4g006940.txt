@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01716: MTR_4g006940</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847218">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847218">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mtr:MTR_4g006940 -->&gt;mtr:MTR_4g006940 K09753 cinnamoyl-CoA reductase [EC:1.2.1.44] | (GenBank) cinnamoyl-CoA reductase-like protein (N)
+atgcctgcctatgataacacttcatcagtctccggtggcgaccaaaccgtgtgtgtcacc
+ggtgctggcgggtttatagcttcttggcttgtcaaacttctcttggaaagaggttacact
+gttagaggaaccgtccgaaacccagaggatccaaagaatggtcacttaaaagaattggaa
+ggagcaagagagaggttaactttgcataaggttgatcttcttgatcttcaatctatccaa
+tctgttgttcatggttgccatggtgtgttccacacagcctctcctgtcactgacaaccct
+gatgagatgttagagccagcagtgaatggaactaagaatgtgattatagcgtccgcggaa
+gctaaagtgcgacgtgttgttttcacttcatcgattggaacggtctatatggacccaaat
+actagtagagatgttgtcgttgatgaatcatattggagtgatttagagcattgcaagaac
+accaagaactggtattgttatgggaagacagtggctgaacaatcagcatgggatatagca
+aaagaaaatcaagttgatttggttgtggtgaacccagttgtagttcttggaccattgtta
+caaccaacaattaatgctagtacaattcacatactcaagtaccttaatggtgctgcaaaa
+acttatgtgaatgcaacacaatcttatgttcatgttaaggatgtggcattagcacatctt
+cttgtttatgagacaaattctgcttctggtagatacatatgttgtgaaactgctttgcat
+cgtggtgaggttgttgaaattttggccaagtattttcctgagtacccacttcctaccaaa
+tgttcagatgaaaagaatccaagagtgaaaccttataaattttcaaatcaaaagctgaaa
+gacttgggattggaattcacacctgtgaagcaatgtttatatgacactgttaggagtcta
+caagagaaaggacaccttcctattcctcccatgcaagaagactctgcttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mtr:MTR_4g006940+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	1150	1	18.551	18.551	nan	nan	nan	nan	18.551	18.551	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	54.265	4.555	47.425
+N	TYR	A	1150	2	18.551	18.551	nan	nan	nan	nan	18.551	18.551	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	54.265	4.555	47.425
+CA	TYR	A	1150	3	19.356	19.356	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	19.356	19.356	nan	nan	nan	nan	nan	nan	nan	55.669	4.829	47.137
+C	TYR	A	1150	4	32.726	32.726	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.726	32.726	nan	nan	nan	nan	nan	nan	nan	55.846	5.831	45.993
+O	TYR	A	1150	5	31.837	31.837	nan	nan	nan	nan	31.837	31.837	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	54.920	6.088	45.223
+CB	TYR	A	1150	6	34.937	nan	34.937	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.937	nan	34.937	nan	nan	nan	nan	nan	nan	56.389	3.533	46.799
+CG	TYR	A	1150	7	2.328	nan	2.328	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.328	nan	2.328	nan	nan	nan	nan	nan	nan	55.801	2.834	45.608
+CD1	TYR	A	1150	8	18.400	nan	18.400	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.400	nan	18.400	nan	nan	nan	nan	nan	nan	54.588	2.147	45.703
+CD2	TYR	A	1150	9	21.884	nan	21.884	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.884	nan	21.884	nan	nan	nan	nan	nan	nan	56.438	2.887	44.372
+CE1	TYR	A	1150	10	34.322	nan	34.322	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.322	nan	34.322	nan	nan	nan	nan	nan	nan	54.027	1.532	44.588
+CE2	TYR	A	1150	11	33.241	nan	33.241	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.241	nan	33.241	nan	nan	nan	nan	nan	nan	55.891	2.281	43.258
+CZ	TYR	A	1150	12	9.770	nan	9.770	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.770	nan	9.770	nan	nan	nan	nan	nan	nan	54.688	1.606	43.368
+OH	TYR	A	1150	13	43.130	nan	43.130	nan	nan	nan	43.130	nan	43.130	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	54.150	1.016	42.253

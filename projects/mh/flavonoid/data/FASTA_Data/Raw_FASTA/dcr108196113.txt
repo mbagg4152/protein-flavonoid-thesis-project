@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05350: 108196113</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620837452">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620837452">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- dcr:108196113 -->&gt;dcr:108196113 K13260 isoflavone/4'-methoxyisoflavone 2'-hydroxylase [EC:1.14.14.90 1.14.14.89] | (RefSeq) isoflavone 3'-hydroxylase-like isoform X1 (N)
+atggatccatatatgttattttatgtctccctctcattcctgctcatattctttgtttcc
+aaattattcaaaaaatcaaagcatctacctcctagtccctttccaaaactcccgataata
+ggccaccttcacctcattaaggaaccacttcacagaaccttggacagcctctccaaaacc
+atcggccctgtcttttctcttcgtttcggttctttcctagttgttgtcgtgtcttcacca
+gctgcagttgaggaatgtttcaccaaaaacgatgttgttttagccgatcgtccccgcctc
+accttgggggagaccattggctacaactggtccaccatggctggtgcctcctatggtgat
+cactggaggaacctccgtcgtctctctgctcttgaaatattttccacaagtcggctggac
+tcttttctgtcaattcgacgtgatgaggttaatcagttgctacatagattatctcaaaac
+acgcgacatgagtttggaaaagtagtgctgaaaccccatttgactgatctatcatttaac
+gtcatcatgagaatgattgcgggaaagagatactatggagaaattgtggatgatgatgag
+gaggctaagcacgtgcgggatataattgaggaggtgttgtctatggccggagcttcatat
+cctggtgatttcctgccaatattggaatggattgattacaagaattttcaaaaacgtgct
+ttattcttgtttaagaaaatggataagcttttgcgagggataattgaagagcatagaaat
+ggtgacagtaggaactctatggttgatcatttgctttctcttcagcaatcacaacctaat
+tattacagtgataacattattaaaggtctcatcacggttttgatatttgctggatcggat
+acatctggtgtcacaattgaatgggcaatgtctcttctactgaatcatccacatgtgttg
+aagaaagctagagacgagatagatattgtaattggtcaagaccgccttgttgaagagtcg
+gatctatctaagttgccgtatctccataatatcatcctggagagtttccggttattccca
+gctacacccttgttactgccacacaaggcatcagctgactgcaaggttagtggctacgat
+attccagctggcacacttgttttggttaattcctggtcaattcacagggatcccaaggtg
+tgggatgaccctacaagctttaaaccagagagatttgaaggcatagaagttgaaacacac
+aaattgatgccgtttggaatgggcaggaggtcttgcccaggaagtggactagctcatcgt
+gtggttggcttggttttagcctcgttgattcaatgctttgaatgggagcgagttagtgat
+gagctaattgatctagctgaaggaaaaggacttacgatgcctaaagccgagcctctggaa
+gctatgtgtaagactcgcaacgtcttggacacaatcaacacttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=dcr:108196113+nt">BLAST</a>
+</body>
+</html>

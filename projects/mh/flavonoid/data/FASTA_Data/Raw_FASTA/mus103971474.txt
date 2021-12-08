@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03447: 103971474</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620852802">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620852802">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mus:103971474 -->&gt;mus:103971474 K01904 4-coumarate--CoA ligase [EC:6.2.1.12] | (RefSeq) LOW QUALITY PROTEIN: 4-coumarate--CoA ligase-like 3 (N)
+atgcacaggaaccttattgctacggtggagctttttgttcggctcgaagcttcactgtat
+agtagtgagatctggaggaatgtttacctcacagccatccccatgttccatgtgtatggt
+ctttccctcttctccatggggctcctgtcgttgggatccaccattgtggtgatgagaaag
+ttcgatgtggaggaggcagttcgagctatcgatgcgtttaaggtcactcattttcctact
+gtcccaccgatattgaccaccctgataagggccaagggtgccaccggctgccgattacag
+tccctcgtgcaggtttcatgtcgagcggctccgattgccccaaaaactattcatgacttc
+ttgaaggcatttcctcatgttgatttcattcaggggtatggcttgacagaatctgctgca
+gtaggaacttgtggtttcaatacaacaaattgtaaaaggcatatttctgtgggattgcta
+gctccaaacatgcaagctaaaattattgatttagagacagggtcttgtttgcctcctggt
+acaagtggagagctgttgcttcatggatcagccattatgaaaggctacttcaatgatgat
+aatgcaacttcatcagcaatcatcgaggctacttaaatgagggatattgcatactttgat
+ggagatggatacttgtatatattggaccgtctgaaagagaccatcaaatacaaaggattt
+cagatagcaccagctgatttggaagccttgttgattgcacatcctgacatcgtggatgtt
+gcagtgacagcgaaagctttacaagttcaacaaagaaccaagagattcttaatgcatgca
+tctttcgctgcttttatcctaatattatcctatgacttctgtagggctaagaacgaagaa
+gctggggagataccagtggcatttgtagttacgaggtcaggaagcaagcgttcatccact
+gatgttatcgagtttgtggcaaagcaggtgactccctataagaaggttagagaggtggtc
+ttcgtcagctcgattccccgatcaccagcagggaagacattaagaaggaaactgcgagat
+actttagctgcttcaaggatgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mus:103971474+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04300: 107467675</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838128">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838128">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- adu:107467675 -->&gt;adu:107467675 K01859 chalcone isomerase [EC:5.5.1.6] | (RefSeq) chalcone--flavonone isomerase 1B-1 (N)
+atggtgaaggcagcatcccttgccggagtcaacgtggagttccttgaattcccgccagtg
+gtcacacctccggggaccaccaaatcatatttccttgccggcgcaggggtgagagggtta
+ccaattaatggggtattcatcacgttcacgggactcgggttatatttggaagacaaagca
+gttccatatttggcttcaaggtggaaggccaaaacccctgctcagttgttggattctctt
+catttctacagagacatcatccaaggtccgtttgagaaactgattagagggtcaaagctt
+aaaacattggatggtcctgaatatgtaaggaaggtttcagaaaattgtgtggcatacatg
+aaatccgtaggaacattcggtgatgcagaagaaaaagctattcatgaattcagacaagcc
+ttcaaggatcaaaacttcccaccaggctctactgtcttctatgaacaattccccaatgga
+acattagggctgaaattctccaaggatgacacaataccagaacataggaatgcatttatt
+gaaaacaaggcactttcagaggcagtgttggagacaatgattggggagattcctgtttcg
+cctgcttttaaagagagtttggctacaagactttctcagattctgaatgaggccaatccc
+tccattgagttctaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=adu:107467675+nt">BLAST</a>
+</body>
+</html>

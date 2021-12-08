@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	F	69	1	17.157	17.157	nan	nan	nan	nan	17.157	17.157	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-19.644	24.328	26.967
+N	TYR	F	69	2	17.157	17.157	nan	nan	nan	nan	17.157	17.157	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-19.644	24.328	26.967
+CA	TYR	F	69	3	19.721	19.721	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	19.721	19.721	nan	nan	nan	nan	nan	nan	nan	-20.834	23.677	26.427
+C	TYR	F	69	4	35.254	35.254	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.254	35.254	nan	nan	nan	nan	nan	nan	nan	-21.696	24.685	25.672
+O	TYR	F	69	5	29.598	29.598	nan	nan	nan	nan	29.598	29.598	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-21.644	25.884	25.943
+CB	TYR	F	69	6	34.750	nan	34.750	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.750	nan	34.750	nan	nan	nan	nan	nan	nan	-21.642	23.033	27.555
+CG	TYR	F	69	7	2.203	nan	2.203	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.203	nan	2.203	nan	nan	nan	nan	nan	nan	-21.787	23.930	28.761
+CD1	TYR	F	69	8	17.677	nan	17.677	nan	nan	nan	nan	nan	nan	nan	nan	nan	17.677	nan	17.677	nan	nan	nan	nan	nan	nan	-22.794	24.882	28.826
+CD2	TYR	F	69	9	21.842	nan	21.842	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.842	nan	21.842	nan	nan	nan	nan	nan	nan	-20.908	23.834	29.829
+CE1	TYR	F	69	10	33.707	nan	33.707	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.707	nan	33.707	nan	nan	nan	nan	nan	nan	-22.924	25.710	29.921
+CE2	TYR	F	69	11	34.023	nan	34.023	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.023	nan	34.023	nan	nan	nan	nan	nan	nan	-21.031	24.658	30.929
+CZ	TYR	F	69	12	9.961	nan	9.961	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.961	nan	9.961	nan	nan	nan	nan	nan	nan	-22.040	25.594	30.969
+OH	TYR	F	69	13	43.209	nan	43.209	nan	nan	nan	43.209	nan	43.209	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-22.164	26.418	32.060

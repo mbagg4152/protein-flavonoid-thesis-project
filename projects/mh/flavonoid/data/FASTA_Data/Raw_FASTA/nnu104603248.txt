@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04131: 104603248</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840107">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840107">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- nnu:104603248 -->&gt;nnu:104603248 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase-like (N)
+atgattatcagcgtgaaggagtcgactatggtgcgcccggcgcaggagacgccgcagcgg
+agcctgtggaactctaacgtggacctggtggtgccgagaatgcacacccctagcgtctac
+ttctaccggccaaccggttcgaccaatttcttcgatccgaaagtgctcaaggaagctctg
+agcaaggctcttgtgccgttctatcccatggccgggaggytgaagagggacgaagatggt
+cggattgagatcaactgtaacggcgaaggggtgttgttcgtggaagcagaaactggttcc
+gtcatcgatgatttcggcgactttgcgcctaccatggagctcaagcagcttattccggca
+gtggattactccggcgacatctcttcgtatcctctccttgtgttgcagattacacgtttc
+aaatgcggaggagtatctcttggagtagggatgcagcaccacgtggcagacggatcatcc
+gggctccatttcatcaacacatggtccgacatggcacgtggcctcgatctaaccatcccg
+cccttcatcgatcgaaccctcctacgcgcacgggacccacccactccttctttccaccac
+atcgagtaccagccagctccacccatgaaacaccctccggaaactcccaattcccaatca
+ggtcccgagagcaccaccgtcaccatgttcaagatctcccgggatcaactcaacatcctc
+aaggcaaagtccaaggacggagccaactcagtcaactacagctcctacgagatgcttgcg
+ggacacgtctggcgctgcgtctgtaaggcacgtggcctccccgatgatcaagacaccaag
+ttgtacattgccactgatggacggtccagattgcgccccccactcccgccgggttacttc
+ggaaacggcatcttcaccgccacaccgatcgccgtctccggcgatctcctatccaaaccg
+ttgacatacgccgctgggaggattcatgatgcgctggtgaggatggatgatgagtacctg
+agatcagcccttgattatcttgagttgcagcctgatctgacggttctcgtacgaggggct
+cacacattccggtgccccaatatagggatcaccagctgggttcggctgccgatacacgat
+gcggatttcggatggggccgcccgatatttatggggcccggtgggatcgcttacgagggt
+ctggcttttcttctaccgagcccggtgaatgacgggaacttgtcgttggccatctcgctg
+cagtcggatcacatgaaggtcttccaaaagattctgtacgatttttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=nnu:104603248+nt">BLAST</a>
+</body>
+</html>

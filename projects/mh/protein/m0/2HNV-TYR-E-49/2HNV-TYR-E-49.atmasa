@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	E	49	1	21.022	21.022	nan	nan	nan	nan	21.022	21.022	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	61.803	-9.562	8.010
+N	TYR	E	49	2	21.022	21.022	nan	nan	nan	nan	21.022	21.022	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	61.803	-9.562	8.010
+CA	TYR	E	49	3	10.604	10.604	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.604	10.604	nan	nan	nan	nan	nan	nan	nan	61.365	-8.425	7.209
+C	TYR	E	49	4	37.731	37.731	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.731	37.731	nan	nan	nan	nan	nan	nan	nan	61.611	-8.589	5.720
+O	TYR	E	49	5	37.725	37.725	nan	nan	nan	nan	37.725	37.725	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	61.291	-7.689	4.946
+CB	TYR	E	49	6	26.425	nan	26.425	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.425	nan	26.425	nan	nan	nan	nan	nan	nan	62.041	-7.140	7.694
+CG	TYR	E	49	7	2.278	nan	2.278	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.278	nan	2.278	nan	nan	nan	nan	nan	nan	61.581	-6.702	9.062
+CD1	TYR	E	49	8	26.066	nan	26.066	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.066	nan	26.066	nan	nan	nan	nan	nan	nan	62.466	-6.639	10.140
+CD2	TYR	E	49	9	23.788	nan	23.788	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.788	nan	23.788	nan	nan	nan	nan	nan	nan	60.246	-6.366	9.284
+CE1	TYR	E	49	10	34.755	nan	34.755	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.755	nan	34.755	nan	nan	nan	nan	nan	nan	62.023	-6.250	11.413
+CE2	TYR	E	49	11	34.214	nan	34.214	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.214	nan	34.214	nan	nan	nan	nan	nan	nan	59.794	-5.978	10.548
+CZ	TYR	E	49	12	10.044	nan	10.044	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.044	nan	10.044	nan	nan	nan	nan	nan	nan	60.684	-5.922	11.602
+OH	TYR	E	49	13	43.235	nan	43.235	nan	nan	nan	43.235	nan	43.235	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	60.215	-5.538	12.837

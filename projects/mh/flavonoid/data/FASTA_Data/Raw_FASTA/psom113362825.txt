@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05758: 113362825</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620855830">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620855830">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- psom:113362825 -->&gt;psom:113362825 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atgaacgatatgatgatgaaggttgaagtagtttcaacagaaataatcaaaccttcttgt
+ccaacaccccttcatcttaaatccttcaacttatcctatcttgatcagattgctcctcca
+tctcagattgctcttcttctttattacaataacgataataataaccagataaccagtgaa
+atagatagttcttgcacgatacttaagaaatctttggcagaagcgttaagcaaattctat
+cccttggctggtaaggtcattgacaacagatttgtagactgtaatgacgacggggtggac
+tacttcgaatccaaagtaagtaactgtcaactatctcagcttatccaacttcctaatgtg
+caagacctcgcaaagatatttcttccatttgatccgtttgcggactctgatgaaggaaat
+tcaaccaaagttttatcagtccaggttaatgtttttgaggattgtggtgggatcgtcatt
+ggtttgtgcatatcgcacaagttggccgatgcgtgttcagtcatcacttttatcaacgac
+tgggctagtatagctcgtgctattgctactgctgatcatgatcagcaaatcaaaggtcct
+cttttcgaggcacaatcattatttccactcaaagagttcttaacgggtttcaaaccaccc
+actgcaccaaggatagttgcgggagatgatgtaatagttacaaagaaatttgtgtttgga
+tcctccaaattggcagaactcaagaagaaagccaaaatagacagtgagattgacgatgtt
+catgagcagctcaactaccagccaactcgtgttcaagccctatcagctttgatatggagg
+tgcttcattgatacagatcaagccaaaaacaagggagctaatcctacggaagtttaccta
+gcactattcgcaataaatttgagggcgaggatgattcctccattgcctttaaactccttc
+ggcaacgtgacaagtgttgcactacctatggtcatgagtaaggaagtggccggtaacaag
+aaaaatgatcagcagtactacccatacttggtgggaaaagttagagactccataaagaaa
+atcgacggagactacgtaagagatctgcaaactagtaatgcgttcttagatggcatgaag
+tcgttctccgaaaatggtccaagtgcagagacactgattctaagcttcaccagttggtgt
+aggtttccaatatatgaagctaactttggttggggaaagccaatatgggtaggttcttgt
+acacttcctatgaaaaatgctgtctatttgatggatactaattcatcaggagacggaatt
+gaagcatgggtgagcttgagcaaagaagacatgaacgaattcgagcgtcacccagaactc
+gtcgcagttgtatcctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=psom:113362825+nt">BLAST</a>
+</body>
+</html>

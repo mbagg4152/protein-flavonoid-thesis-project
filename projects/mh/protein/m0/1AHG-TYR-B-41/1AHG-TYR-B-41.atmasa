@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	41	1	16.669	16.669	nan	nan	nan	nan	16.669	16.669	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	12.585	24.425	11.897
+N	TYR	B	41	2	16.669	16.669	nan	nan	nan	nan	16.669	16.669	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	12.585	24.425	11.897
+CA	TYR	B	41	3	16.080	16.080	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.080	16.080	nan	nan	nan	nan	nan	nan	nan	13.395	24.720	10.727
+C	TYR	B	41	4	37.091	37.091	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.091	37.091	nan	nan	nan	nan	nan	nan	nan	13.059	23.735	9.572
+O	TYR	B	41	5	38.352	38.352	nan	nan	nan	nan	38.352	38.352	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	12.450	22.662	9.766
+CB	TYR	B	41	6	28.099	nan	28.099	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.099	nan	28.099	nan	nan	nan	nan	nan	nan	14.913	24.708	10.986
+CG	TYR	B	41	7	2.869	nan	2.869	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.869	nan	2.869	nan	nan	nan	nan	nan	nan	15.464	25.716	11.966
+CD1	TYR	B	41	8	19.231	nan	19.231	nan	nan	nan	nan	nan	nan	nan	nan	nan	19.231	nan	19.231	nan	nan	nan	nan	nan	nan	15.049	25.754	13.300
+CD2	TYR	B	41	9	29.259	nan	29.259	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.259	nan	29.259	nan	nan	nan	nan	nan	nan	16.478	26.586	11.565
+CE1	TYR	B	41	10	34.663	nan	34.663	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.663	nan	34.663	nan	nan	nan	nan	nan	nan	15.611	26.654	14.210
+CE2	TYR	B	41	11	34.464	nan	34.464	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.464	nan	34.464	nan	nan	nan	nan	nan	nan	17.040	27.500	12.454
+CZ	TYR	B	41	12	10.119	nan	10.119	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.119	nan	10.119	nan	nan	nan	nan	nan	nan	16.609	27.529	13.781
+OH	TYR	B	41	13	43.183	nan	43.183	nan	nan	nan	43.183	nan	43.183	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	17.152	28.434	14.657

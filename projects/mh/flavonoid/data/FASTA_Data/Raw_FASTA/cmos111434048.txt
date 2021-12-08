@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05248: 111434048</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854709">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854709">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cmos:111434048 -->&gt;cmos:111434048 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atggaaaatatcagcgtcgagatcgtttcgaacgacgtaatcaagccctcttctccaacg
+cctccatccctaacttaccgggaactttcattgatcgatcaaatggcggctcccacctta
+acgcctgccattttcttctatcgcccttctaatccccaaaatcttgccgatcgatctctt
+aaagttcgccagattagggcttctctcgctcgaactctgactagcttcaaacacttggcg
+ggaaccatggcggagagattctatgtccattgcaacgacgttggagtgcaatttttggaa
+gcgaaagtcgattgccagatttcggatctcttggacaatcctgaaattggcgttttgcgc
+cgattgatgccaagtgcagaatcgagaaatggaagcgagtttctgctcgttgttcagttc
+agtagcttcatctgcggcggagtagcggtggctgtttgtctttcgcacaagctcgctgac
+ggggcttccgtcgcggcttttgtaaaagcgtgggccgcctacgccagaggaggtaacgag
+tctgttttggagcataattttgatgctgtgaaactcttcccacctagaaaaattccaggt
+ttcaagcgagaaatccagccttcaaaagagaagatctcaagtaagagactcgtgtttacc
+aaatctcacatagctgccttgaaagaactcgctaccggtgctggtggtggctccgtcgtg
+aatcctccatcgcgtgtggtggctgtttcagccttcatttggctacgcttaatggctttg
+gctcgaaggagtccagtgaaggcaaagctgtttggagcgctatatccggtgaacttgcga
+gcaaggagggacccgccgttgccggaaaattcgtttggcaatgtatcctggtttacagtg
+gcaacaacacctgtggcgatgaatgaagatctacctcttctggtggccaaagtaagaacc
+gccatacaagaaatcgactctggttttgtgaaaaacctagaagatcctgaaaagttgttg
+aatctgatgaagcaattggacaaacaacgctccaccggagagatccatctctggagcttc
+acaagtatgtgtagatttcccatttatgaagctgattttggatgggggaagcccacatgg
+gtttgcagtccaagccggcctttccgaaacgtagtagttttaatggatgcttctgatggt
+gatggcgttgaagcttgggtgaacttgaaggaagaagacatgaccatcttcgaaaaggac
+gaagagcttctttccttttgctcagaacaatgtcaagcattcaacactaagaaatggaca
+aacaaacaaaaaaaagagctccatgttttcatcaaattcggtcccgaattttgttattta
+tga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cmos:111434048+nt">BLAST</a>
+</body>
+</html>

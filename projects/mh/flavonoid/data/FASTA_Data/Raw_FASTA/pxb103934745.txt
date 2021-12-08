@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03446: 103934745</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620843555">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620843555">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pxb:103934745 -->&gt;pxb:103934745 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atgactaaattggaagtggaggttgtctcaacagagaccatcaaaccctcatctccaacc
+ccagaccacctccgccgccataaactctcctttctcgaccaaatacaacccccaatattc
+atgcccatggtcctcttcttccctaaggatcctcacacccccgaagtccccacggaacgc
+tgcacgaaaatcaaaaccgccttatcggaaaccctgaccaatttctacccgttagccggg
+cgagtcagaggcacccagtacgtcgattgcaacgacgagggtgcctactacgtggaagcc
+aaagccaactccaacatcatcgacatcatccaaaaccctaaccctatcgacttcaacaag
+ttcataccgtgtgcgctcgacgctgctagcgaactccccatatgcctacaagttacgttc
+tttgcatgcggaggcatgagcatcggtatgggcatgtcgcacaaggtcggagacgccctg
+tcatatttcatgttcctcaacagtctcgccgccactactcgcggggagcccgactacgta
+cacgcccccgagtttgtttccgacaagtacttcccccaacaggacttgtccgggtcctac
+cagcatagtagcgggatcatcaagcacaacatttccactaagcgctttgtgttcgacgct
+cccgcggtttccgctctccgagcccaatctacggacgtcgaaaacgaacaagcgaggcgg
+cctacacgtgtggaggccttatcggctttcatatggagacgatacatcgcggcctgcacc
+aggcgcgctgacgatgtcccagcaatgtataccgtgtctcatgcggtaaacctgcgcacg
+agaatggacccaccgcttccggagtatacattcgggaatgtgacccgaacaacaatctcc
+gtcccacccatacaggtggaaccgaaagaaggatcatcatctgacccttctctatattcc
+gtagtgagccacgtcagagaggctcttaaacaagttgacagagagtacataaagaaactg
+caagagggggaggcgttcttgagtttcttgaaagagcggagctcacaggtgaaacgtgga
+gatgtggtgtcgtttagcttcaccagcttgtgtaggtttccaatttacgatgctgatttt
+gggtgggggaagcctgtttatgccgggtccgcgagttttacatttaagaatttagtgagc
+ttctttgacacaacaagtgccgacggtgtggaggcttggattaacttgaagaaggaagac
+atggaaaaatttgaagctgatgaggaggttctcaagtatgtttcacccaacctgagttcg
+aagaattcagggtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pxb:103934745+nt">BLAST</a>
+</body>
+</html>

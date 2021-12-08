@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	459	1	24.693	24.693	nan	nan	nan	nan	24.693	24.693	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	38.276	10.045	33.787
+N	TYR	A	459	2	24.693	24.693	nan	nan	nan	nan	24.693	24.693	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	38.276	10.045	33.787
+CA	TYR	A	459	3	13.880	13.880	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.880	13.880	nan	nan	nan	nan	nan	nan	nan	37.862	11.455	33.736
+C	TYR	A	459	4	27.970	27.970	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.970	27.970	nan	nan	nan	nan	nan	nan	nan	37.779	11.949	32.281
+O	TYR	A	459	5	34.050	34.050	nan	nan	nan	nan	34.050	34.050	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	36.803	12.626	31.870
+CB	TYR	A	459	6	31.589	nan	31.589	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.589	nan	31.589	nan	nan	nan	nan	nan	nan	38.850	12.340	34.543
+CG	TYR	A	459	7	2.087	nan	2.087	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.087	nan	2.087	nan	nan	nan	nan	nan	nan	38.535	13.816	34.432
+CD1	TYR	A	459	8	23.780	nan	23.780	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.780	nan	23.780	nan	nan	nan	nan	nan	nan	37.534	14.380	35.172
+CD2	TYR	A	459	9	22.790	nan	22.790	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.790	nan	22.790	nan	nan	nan	nan	nan	nan	39.276	14.659	33.569
+CE1	TYR	A	459	10	33.574	nan	33.574	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.574	nan	33.574	nan	nan	nan	nan	nan	nan	37.182	15.712	35.051
+CE2	TYR	A	459	11	33.291	nan	33.291	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.291	nan	33.291	nan	nan	nan	nan	nan	nan	38.932	16.017	33.416
+CZ	TYR	A	459	12	10.061	nan	10.061	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.061	nan	10.061	nan	nan	nan	nan	nan	nan	37.921	16.558	34.193
+OH	TYR	A	459	13	43.078	nan	43.078	nan	nan	nan	43.078	nan	43.078	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.533	17.855	34.052

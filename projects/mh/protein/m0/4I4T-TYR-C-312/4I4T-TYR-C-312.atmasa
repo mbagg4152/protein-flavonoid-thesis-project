@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	C	312	1	18.443	18.443	nan	nan	nan	nan	18.443	18.443	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	8.753	23.615	16.443
+N	TYR	C	312	2	18.443	18.443	nan	nan	nan	nan	18.443	18.443	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	8.753	23.615	16.443
+CA	TYR	C	312	3	14.210	14.210	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	14.210	14.210	nan	nan	nan	nan	nan	nan	nan	9.089	24.903	15.862
+C	TYR	C	312	4	37.806	37.806	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.806	37.806	nan	nan	nan	nan	nan	nan	nan	10.259	25.567	16.566
+O	TYR	C	312	5	37.007	37.007	nan	nan	nan	nan	37.007	37.007	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.395	25.477	17.775
+CB	TYR	C	312	6	27.245	nan	27.245	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.245	nan	27.245	nan	nan	nan	nan	nan	nan	7.874	25.825	15.947
+CG	TYR	C	312	7	2.370	nan	2.370	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.370	nan	2.370	nan	nan	nan	nan	nan	nan	6.774	25.493	14.961
+CD1	TYR	C	312	8	22.433	nan	22.433	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.433	nan	22.433	nan	nan	nan	nan	nan	nan	5.755	24.590	15.280
+CD2	TYR	C	312	9	26.856	nan	26.856	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.856	nan	26.856	nan	nan	nan	nan	nan	nan	6.743	26.090	13.726
+CE1	TYR	C	312	10	34.780	nan	34.780	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.780	nan	34.780	nan	nan	nan	nan	nan	nan	4.748	24.298	14.368
+CE2	TYR	C	312	11	33.732	nan	33.732	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.732	nan	33.732	nan	nan	nan	nan	nan	nan	5.751	25.804	12.815
+CZ	TYR	C	312	12	9.977	nan	9.977	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.977	nan	9.977	nan	nan	nan	nan	nan	nan	4.764	24.907	13.130
+OH	TYR	C	312	13	43.313	nan	43.313	nan	nan	nan	43.313	nan	43.313	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	3.789	24.660	12.187

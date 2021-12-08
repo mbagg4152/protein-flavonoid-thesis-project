@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	73	1	24.655	24.655	nan	nan	nan	nan	24.655	24.655	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-1.671	27.370	88.720
+N	TYR	A	73	2	24.655	24.655	nan	nan	nan	nan	24.655	24.655	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-1.671	27.370	88.720
+CA	TYR	A	73	3	13.471	13.471	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.471	13.471	nan	nan	nan	nan	nan	nan	nan	-2.501	26.997	89.861
+C	TYR	A	73	4	29.808	29.808	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.808	29.808	nan	nan	nan	nan	nan	nan	nan	-2.233	27.909	91.049
+O	TYR	A	73	5	33.208	33.208	nan	nan	nan	nan	33.208	33.208	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-3.167	28.336	91.739
+CB	TYR	A	73	6	30.592	nan	30.592	nan	nan	nan	nan	nan	nan	nan	nan	nan	30.592	nan	30.592	nan	nan	nan	nan	nan	nan	-2.253	25.538	90.249
+CG	TYR	A	73	7	2.237	nan	2.237	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.237	nan	2.237	nan	nan	nan	nan	nan	nan	-3.210	25.030	91.306
+CD1	TYR	A	73	8	27.047	nan	27.047	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.047	nan	27.047	nan	nan	nan	nan	nan	nan	-4.379	24.371	90.949
+CD2	TYR	A	73	9	18.425	nan	18.425	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.425	nan	18.425	nan	nan	nan	nan	nan	nan	-2.952	25.218	92.660
+CE1	TYR	A	73	10	34.164	nan	34.164	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.164	nan	34.164	nan	nan	nan	nan	nan	nan	-5.263	23.913	91.907
+CE2	TYR	A	73	11	32.967	nan	32.967	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.967	nan	32.967	nan	nan	nan	nan	nan	nan	-3.832	24.764	93.626
+CZ	TYR	A	73	12	9.911	nan	9.911	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.911	nan	9.911	nan	nan	nan	nan	nan	nan	-4.985	24.110	93.243
+OH	TYR	A	73	13	43.202	nan	43.202	nan	nan	nan	43.202	nan	43.202	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-5.868	23.651	94.193

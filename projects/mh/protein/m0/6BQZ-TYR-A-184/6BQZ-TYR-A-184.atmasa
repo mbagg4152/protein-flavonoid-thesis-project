@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	184	1	23.826	23.826	nan	nan	nan	nan	23.826	23.826	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.845	63.640	9.818
+N	TYR	A	184	2	23.826	23.826	nan	nan	nan	nan	23.826	23.826	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.845	63.640	9.818
+CA	TYR	A	184	3	11.396	11.396	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.396	11.396	nan	nan	nan	nan	nan	nan	nan	1.086	64.727	10.430
+C	TYR	A	184	4	31.105	31.105	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.105	31.105	nan	nan	nan	nan	nan	nan	nan	-0.012	64.182	11.342
+O	TYR	A	184	5	29.794	29.794	nan	nan	nan	nan	29.794	29.794	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-0.298	64.767	12.399
+CB	TYR	A	184	6	33.513	nan	33.513	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.513	nan	33.513	nan	nan	nan	nan	nan	nan	0.501	65.650	9.341
+CG	TYR	A	184	7	2.311	nan	2.311	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.311	nan	2.311	nan	nan	nan	nan	nan	nan	-0.073	66.854	10.090
+CD1	TYR	A	184	8	24.677	nan	24.677	nan	nan	nan	nan	nan	nan	nan	nan	nan	24.677	nan	24.677	nan	nan	nan	nan	nan	nan	0.765	67.863	10.580
+CD2	TYR	A	184	9	20.745	nan	20.745	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.745	nan	20.745	nan	nan	nan	nan	nan	nan	-1.433	66.916	10.297
+CE1	TYR	A	184	10	34.031	nan	34.031	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.031	nan	34.031	nan	nan	nan	nan	nan	nan	0.217	68.930	11.280
+CE2	TYR	A	184	11	31.703	nan	31.703	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.703	nan	31.703	nan	nan	nan	nan	nan	nan	-1.977	67.970	10.997
+CZ	TYR	A	184	12	9.487	nan	9.487	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.487	nan	9.487	nan	nan	nan	nan	nan	nan	-1.154	68.974	11.483
+OH	TYR	A	184	13	43.502	nan	43.502	nan	nan	nan	43.502	nan	43.502	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-1.736	70.036	12.175

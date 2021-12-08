@@ -1,0 +1,46 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 100037450</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844350">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844350">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:100037450 -->&gt;gmx:100037450 K13257 2-hydroxyisoflavanone synthase [EC:1.14.14.87] | (RefSeq) IFS1; isoflavone synthase 1 precursor (N)
+atgttgctggaacttgcacttggtttgtttgtgttagctttgtttctgcacttgcgtccc
+acaccaagtgcaaaatcaaaagcacttcgccacctcccaaaccctccaagcccaaagcct
+cgtcttcccttcattggccaccttcacctcttaaaagataaacttctccactatgcactc
+atcgatctctccaaaaagcatggccccttattctctctctccttcggctccatgccaacc
+gtcgttgcctccacccctgagttgttcaagctcttcctccaaacccacgaggcaacttcc
+ttcaacacaaggttccaaacctctgccataagacgcctcacttacgacaactctgtggcc
+atggttccattcggaccttactggaagttcgtgaggaagctcatcatgaacgaccttctc
+aacgccaccaccgtcaacaagctcaggcctttgaggacccaacagatccgcaagttcctt
+agggttatggcccaaagcgcagaggcccagaagccccttgacgtcaccgaggagcttctc
+aaatggaccaacagcaccatctccatgatgatgctcggcgaggctgaggagatcagagac
+atcgctcgcgaggttcttaagatcttcggcgaatacagcctcactgacttcatctggcct
+ttgaagtatctcaaggttggaaagtatgagaagaggattgatgacatcttgaacaagttc
+gaccctgtcgttgaaagggtcatcaagaagcgccgtgagatcgtcagaaggagaaagaac
+ggagaagttgttgagggcgaggccagcggcgtcttcctcgacactttgcttgaattcgct
+gaggacgagaccatggagatcaaaattaccaaggagcaaatcaagggccttgttgtcgac
+tttttctctgcagggacagattccacagcggtggcaacagagtgggcattggcagagctc
+atcaacaatcccagggtgttgcaaaaggctcgtgaggaggtctacagtgttgtgggcaaa
+gatagactcgttgacgaagttgacactcaaaaccttccttacattagggccattgtgaag
+gagacattccgaatgcacccaccactcccagtggtcaaaagaaagtgcacagaagagtgt
+gagattaatgggtatgtgatcccagagggagcattggttcttttcaatgtttggcaagta
+ggaagggaccccaaatactgggacagaccatcagaattccgtcccgagaggttcttagaa
+actggtgctgaaggggaagcagggcctcttgatcttaggggccagcatttccaactcctc
+ccatttgggtctgggaggagaatgtgccctggtgtcaatttggctacttcaggaatggca
+acacttcttgcatctcttatccaatgctttgacctgcaagtgctgggccctcaaggacaa
+atattgaaaggtgatgatgccaaagttagcatggaagagagagctggcctcacagttcca
+agggcacatagtctcgtttgtgttccacttgcaaggatcggcgttgcatctaaactcctt
+tcttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:100037450+nt">BLAST</a>
+</body>
+</html>

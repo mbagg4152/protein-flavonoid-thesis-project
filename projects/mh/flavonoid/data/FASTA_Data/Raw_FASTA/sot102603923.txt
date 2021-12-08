@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02981: 102603923</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844213">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844213">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sot:102603923 -->&gt;sot:102603923 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atgaaaattgccaagatgtgtgaagagcttatcaaaccatcatccccaactccacatgaa
+cttagagaccacaaaatctctttcatagatgaattaataccccattcttcaattccactc
+attttgttcttcaaaaagagtgaaaacctcacacaatcacaagtatgcaaccacttaaaa
+gcttcactttcacaaactttaactcaattttaccctttggctggaagaataaagtcccaa
+tattcaattgattgcaatgatgaaggagcttactatcaagaatcacaagtggatgcttca
+cttttagacataatcaagaatccaaaatccaatgaattggtccaactcacaccttacaat
+tcaaatggcaccttatcaaattttcaacaactcttagccattcaagtcaacttattcaat
+tgtggtggtatagcacttagtatctccatttcacataagattggtgatgcttctagcctt
+tgtaaattcattatgaattggagcaatgcaagtgaaggatcaatgggggacaacaaggta
+agaaaagactctattttctcctgtttaccgtcaatttttccatcgagagggacaattgac
+aacacgttaaatgtaaacaacatgccaattcgtattgtagctgaaaaattagtagtaaaa
+agaatcgtttttactacttcaaatatagctaaaatgaaggctaagttgataaattggggt
+tacaatgagaatgcgacacgtgtagaagttgttatggctttgatatggaaatgtttcatg
+gctgcaaaagggtgtaactctgttgcaattattccagtgaatataaggcaaaggatagtt
+ccaccctttgatgaaaattcatttggtaacttttttttagtaacaagttgtatagcaaat
+gtggaaaatgaatggtgttcattggtaggaaaaataaagagtgcaattgggagaattgat
+ggtaattacgtggagaaaatacgcggagaggatggttttgagtttgtaaatagtaatttt
+aaacaagtcggaaaaattattatgagtcaaggggatgattttcgcgtgttaacaatttca
+agttggtgtaaatttccaatttatgaagcaaactttggatggggtgagtctatttctacg
+attgttgcgactcttgggataaaagataatattgttttattagattctaaagaatttcct
+ggtggaattgaagcttggattgttatggttgatcaagaaatgacactttttgaacaagac
+aaagaacttcaagattttacttcattagatgcaatttgtgatctcaattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sot:102603923+nt">BLAST</a>
+</body>
+</html>

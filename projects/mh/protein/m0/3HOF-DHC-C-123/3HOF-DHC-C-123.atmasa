@@ -1,0 +1,15 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+C1	DHC	C	123	1	6.506	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	6.506	nan	6.506	-17.739	2.470	-40.391
+C1	DHC	C	123	2	6.506	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	6.506	nan	6.506	-17.739	2.470	-40.391
+O1	DHC	C	123	3	42.373	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	42.373	42.373	nan	-17.884	1.505	-39.499
+C2	DHC	C	123	4	25.033	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.033	nan	25.033	-17.757	2.160	-41.806
+C3	DHC	C	123	5	21.111	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.111	nan	21.111	-18.963	2.349	-42.312
+C1'	DHC	C	123	6	4.979	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	4.979	nan	4.979	-19.230	2.103	-43.728
+C2'	DHC	C	123	7	23.652	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.652	nan	23.652	-18.202	2.172	-44.658
+C3'	DHC	C	123	8	11.204	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.204	nan	11.204	-18.516	1.934	-45.995
+C4'	DHC	C	123	9	11.357	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.357	nan	11.357	-19.916	1.604	-46.397
+C5'	DHC	C	123	10	35.222	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.222	nan	35.222	-20.883	1.548	-45.415
+C6'	DHC	C	123	11	30.422	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	30.422	nan	30.422	-20.536	1.802	-44.095
+O4'	DHC	C	123	12	40.271	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	40.271	40.271	nan	-20.251	1.347	-47.703
+O3'	DHC	C	123	13	39.507	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	39.507	39.507	nan	-17.543	2.000	-46.924
+O2	DHC	C	123	14	39.246	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	39.246	39.246	nan	-17.628	3.617	-40.018

@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	70	1	21.053	21.053	nan	nan	nan	nan	21.053	21.053	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.623	34.781	16.491
+N	TYR	A	70	2	21.053	21.053	nan	nan	nan	nan	21.053	21.053	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.623	34.781	16.491
+CA	TYR	A	70	3	11.744	11.744	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.744	11.744	nan	nan	nan	nan	nan	nan	nan	10.343	35.538	17.709
+C	TYR	A	70	4	37.906	37.906	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.906	37.906	nan	nan	nan	nan	nan	nan	nan	11.142	36.845	17.715
+O	TYR	A	70	5	37.157	37.157	nan	nan	nan	nan	37.157	37.157	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	12.349	36.856	17.471
+CB	TYR	A	70	6	26.612	nan	26.612	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.612	nan	26.612	nan	nan	nan	nan	nan	nan	10.656	34.722	19.016
+CG	TYR	A	70	7	2.511	nan	2.511	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.511	nan	2.511	nan	nan	nan	nan	nan	nan	9.614	33.699	19.468
+CD1	TYR	A	70	8	24.835	nan	24.835	nan	nan	nan	nan	nan	nan	nan	nan	nan	24.835	nan	24.835	nan	nan	nan	nan	nan	nan	8.345	34.111	19.883
+CD2	TYR	A	70	9	26.914	nan	26.914	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.914	nan	26.914	nan	nan	nan	nan	nan	nan	9.875	32.327	19.475
+CE1	TYR	A	70	10	34.480	nan	34.480	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.480	nan	34.480	nan	nan	nan	nan	nan	nan	7.364	33.210	20.308
+CE2	TYR	A	70	11	34.838	nan	34.838	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.838	nan	34.838	nan	nan	nan	nan	nan	nan	8.907	31.400	19.875
+CZ	TYR	A	70	12	10.152	nan	10.152	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.152	nan	10.152	nan	nan	nan	nan	nan	nan	7.661	31.849	20.324
+OH	TYR	A	70	13	43.235	nan	43.235	nan	nan	nan	43.235	nan	43.235	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	6.676	30.977	20.716

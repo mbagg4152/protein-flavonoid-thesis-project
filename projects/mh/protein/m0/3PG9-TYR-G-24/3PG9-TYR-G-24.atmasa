@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	G	24	1	21.758	21.758	nan	nan	nan	nan	21.758	21.758	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-8.751	9.504	85.303
+N	TYR	G	24	2	21.758	21.758	nan	nan	nan	nan	21.758	21.758	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-8.751	9.504	85.303
+CA	TYR	G	24	3	11.948	11.948	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.948	11.948	nan	nan	nan	nan	nan	nan	nan	-9.784	10.487	84.990
+C	TYR	G	24	4	37.058	37.058	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.058	37.058	nan	nan	nan	nan	nan	nan	nan	-11.031	10.238	85.833
+O	TYR	G	24	5	37.928	37.928	nan	nan	nan	nan	37.928	37.928	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-12.042	10.920	85.675
+CB	TYR	G	24	6	25.544	nan	25.544	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.544	nan	25.544	nan	nan	nan	nan	nan	nan	-10.157	10.431	83.508
+CG	TYR	G	24	7	2.170	nan	2.170	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.170	nan	2.170	nan	nan	nan	nan	nan	nan	-9.121	11.013	82.578
+CD1	TYR	G	24	8	25.293	nan	25.293	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.293	nan	25.293	nan	nan	nan	nan	nan	nan	-8.909	12.383	82.518
+CD2	TYR	G	24	9	24.977	nan	24.977	nan	nan	nan	nan	nan	nan	nan	nan	nan	24.977	nan	24.977	nan	nan	nan	nan	nan	nan	-8.369	10.195	81.746
+CE1	TYR	G	24	10	34.231	nan	34.231	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.231	nan	34.231	nan	nan	nan	nan	nan	nan	-7.968	12.923	81.666
+CE2	TYR	G	24	11	34.464	nan	34.464	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.464	nan	34.464	nan	nan	nan	nan	nan	nan	-7.425	10.725	80.887
+CZ	TYR	G	24	12	9.886	nan	9.886	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.886	nan	9.886	nan	nan	nan	nan	nan	nan	-7.229	12.091	80.851
+OH	TYR	G	24	13	43.209	nan	43.209	nan	nan	nan	43.209	nan	43.209	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-6.294	12.629	80.000

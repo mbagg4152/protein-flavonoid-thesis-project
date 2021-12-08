@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05101: 110886581</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838878">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838878">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- han:110886581 -->&gt;han:110886581 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase-like (N)
+atgaaaaccgatcaaaccaaaccaatgaacatcacaataaccaaatcatcaatcgttcca
+ccatcagagaccattaatggatcctctaaccacatctggacctccaatttggatctagtt
+gttggaagaattcatattctaacggtttatttctacaggcctaacggatctaacaactat
+tttgatccgaatgtgatgaaacaggcgcttgctgatgtgcttgtgccgttttatccgatg
+gctggacggttaggtagagatgagagtggcagaattgtgattaattgtaatggtgagggt
+gctttgtttgttgaggctgaatcggattcgtgtttggatgattttggtgagtttactccg
+tcgccggagtttcggagtcttactccgactgttgattattccggtgatattagttcgttt
+cctctgtttttcgcacaggtgactcattttaaatgtggaggagtcgcacttggttgtggt
+gtattccatacattatctgacggtttatcatctctccatttcataaacacatggtccgat
+gtggctcgcgggctctctgtagccatcccaccgttcattgaccgtaccctgctacgtgca
+cgcgtaccacccaccccaacacacgaccatgtcgaataccacccacctccaaccatgatc
+accacccaaaaaaccggttcactttctaaatcatccaccaccatgctaaaactcacacta
+gaccaactcaacaccctcaaagctaaagccaagagcgaaggcggggcaagttatagcaca
+tacgagaccctcgcggctcacatatggcgatgcgcgtgcaaggctagagggctcccagat
+gaccaactaaccaagctatacgtagccacagatggacggtcaagattgagtcctcacctc
+ccacgaggctaccttgggaacgtggtctttacagccaccccggttgccaaatcgggtact
+cttacatccgactcattggtaaacgctgcgaaactgattcataccacgttgaaaaaaatg
+gacgatgactatttgagatcggctattgattacctcgagacacaacctgatatatccgct
+ctaatccgtggacctagttactttgctagcccaaaccttaacataaacgcttggactaga
+ctacctgtacacgatgcggattttgggtggggtcggcccatttttatgggacccgcgacc
+atattgtacgagggaaccgtatatgttctacctagcccgaacaacgatagaagtgtgtct
+ttggcagtgtgcttagatgcaaaggaacaaccactttttgagaagtacttgtatgaattg
+taa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=han:110886581+nt">BLAST</a>
+</body>
+</html>

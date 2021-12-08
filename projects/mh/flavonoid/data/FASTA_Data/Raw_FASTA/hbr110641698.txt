@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05150: 110641698</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620843553">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620843553">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- hbr:110641698 -->&gt;hbr:110641698 K00588 caffeoyl-CoA O-methyltransferase [EC:2.1.1.104] | (RefSeq) caffeoyl-CoA O-methyltransferase-like (N)
+atggcttccaacaatgaacagcaaaatcaggcaggcaggcaccaagaagttggccacaag
+agtcttctccagagtgatgaactttaccagtacatacttgagactagtgtgtacccaaca
+gagcctgaacccatgaaggagctcagggagttaactgccaagcatccctggaacatcatg
+acttcatcagctgatgaagggcagttcttgaacatgcttttgaagcttatgaatgccaag
+aacacaatggaaattggtgtctacactggatattctctcttggcaactgctcttgctctt
+cctgatgatggaaagatcttggccatggacataaacagggaaaactatgagctgggtctg
+cctgttatccagaaagctggtgtggcacacaagattgatttcaaagaaggccctgctttg
+cctgttcttgaccaaatggttgcagaagggaagtatcatggaacttttgacttcatcttt
+gtggacgctgataaagacaattacctaaactaccacgagaggttgattgaattagtgaaa
+gttggaggagtgatcgggtacgacaacaccctatggaacgggtctgtagtggccccacct
+gatgcacccttaaggaagtatgtcaagtactacagagactttgtgatgaagctcaacaag
+gccctaccagccgatcccaggattgagatttgcatgctgccggtaggtgatgggatcact
+ctctgccgtcggatcaagtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=hbr:110641698+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05161: 110749384</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620859641">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620859641">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pavi:110749384 -->&gt;pavi:110749384 K18368 caffeoylshikimate esterase [EC:3.1.1.-] | (RefSeq) caffeoylshikimate esterase-like isoform X1 (N)
+atggatggtgaatatcaagaagtttacataaggaattcaagaggagtgcagcttttcact
+tgcagatggttgcctttttcctctccaaaagccctcgttttcctttgccatgggtatggc
+atggagtgcagcggtttcatgagagaatgtggtgtccgcctagcgaatgcggggtatgca
+gtgttcggaattgattacgaaggacatggacgctcgagaggggccagatgttacattaag
+aagtttgaaaacatagtgaatgattgcaatgaattcttcaagtccatttgtgcggaggaa
+gagtacagggacaagtgcaggttcttgtatggagaatccatgggaggggcagtagccctt
+ctgcttcacaagaaggagccgaccttttggaatggtgctgttcttgttgcacccatgtgt
+aagatatcagagaaggtcaaaccgcatccgctggttatcaatgtgttgaccagagtggag
+gagattatacccaaatggaagatagtgcctacaaaagacgtcattgactcggccttcaaa
+gatcctgtaaaacgcgaagagataaggagcaacaagctgatctaccaagacaagccaagg
+ctgaaaacagcgttggaaatgctcagaactagcatgagccttgaacacactttgcatgag
+caggtgaggctacccttctttgtgttgcatggggaggcagatacggttacagacccagaa
+gtcagcagagcactgtatgagaaagccagcagcgcagacaagaccatcaaattgtaccct
+ggaatgtggcatggcctgacatcaggagagcccgatgggaacgtcgaaattgtctttgca
+gacatcataacttggcttgagaagcacactagtgatgacaattccgtcgttgtgcaacca
+attcacacatataggaatgccattctcaagatgaacaccacagcctcaccaccccaaaca
+ataaacaagcagcatcagcagcagcagtcgcctcagcctgtgcgaacacagtcgcacagg
+agatatttctgtgggttgaagggacgcagattgcagcatcactcggcaatgtag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pavi:110749384+nt">BLAST</a>
+</body>
+</html>

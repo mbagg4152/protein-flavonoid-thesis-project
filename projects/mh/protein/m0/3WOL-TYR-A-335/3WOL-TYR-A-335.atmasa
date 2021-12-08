@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	335	1	20.844	20.844	nan	nan	nan	nan	20.844	20.844	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	15.251	30.209	36.513
+N	TYR	A	335	2	20.844	20.844	nan	nan	nan	nan	20.844	20.844	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	15.251	30.209	36.513
+CA	TYR	A	335	3	9.001	9.001	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.001	9.001	nan	nan	nan	nan	nan	nan	nan	16.436	29.846	35.713
+C	TYR	A	335	4	35.703	35.703	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.703	35.703	nan	nan	nan	nan	nan	nan	nan	17.540	29.166	36.521
+O	TYR	A	335	5	41.172	41.172	nan	nan	nan	nan	41.172	41.172	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.019	28.131	36.137
+CB	TYR	A	335	6	29.275	nan	29.275	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.275	nan	29.275	nan	nan	nan	nan	nan	nan	16.878	31.084	34.910
+CG	TYR	A	335	7	4.041	nan	4.041	nan	nan	nan	nan	nan	nan	nan	nan	nan	4.041	nan	4.041	nan	nan	nan	nan	nan	nan	16.027	31.491	33.761
+CD1	TYR	A	335	8	17.652	nan	17.652	nan	nan	nan	nan	nan	nan	nan	nan	nan	17.652	nan	17.652	nan	nan	nan	nan	nan	nan	14.833	30.840	33.432
+CD2	TYR	A	335	9	29.026	nan	29.026	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.026	nan	29.026	nan	nan	nan	nan	nan	nan	16.314	32.655	33.074
+CE1	TYR	A	335	10	34.430	nan	34.430	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.430	nan	34.430	nan	nan	nan	nan	nan	nan	14.038	31.261	32.384
+CE2	TYR	A	335	11	34.106	nan	34.106	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.106	nan	34.106	nan	nan	nan	nan	nan	nan	15.590	33.025	31.975
+CZ	TYR	A	335	12	9.952	nan	9.952	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.952	nan	9.952	nan	nan	nan	nan	nan	nan	14.422	32.351	31.664
+OH	TYR	A	335	13	42.465	nan	42.465	nan	nan	nan	42.465	nan	42.465	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.670	32.770	30.638

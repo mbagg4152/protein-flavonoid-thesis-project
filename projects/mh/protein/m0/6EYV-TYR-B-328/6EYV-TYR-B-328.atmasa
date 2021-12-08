@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	328	1	19.047	19.047	nan	nan	nan	nan	19.047	19.047	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.752	9.969	2.359
+N	TYR	B	328	2	19.047	19.047	nan	nan	nan	nan	19.047	19.047	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.752	9.969	2.359
+CA	TYR	B	328	3	14.717	14.717	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	14.717	14.717	nan	nan	nan	nan	nan	nan	nan	12.391	10.419	2.633
+C	TYR	B	328	4	28.951	28.951	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.951	28.951	nan	nan	nan	nan	nan	nan	nan	11.919	9.952	4.004
+O	TYR	B	328	5	31.954	31.954	nan	nan	nan	nan	31.954	31.954	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.196	10.677	4.697
+CB	TYR	B	328	6	30.637	nan	30.637	nan	nan	nan	nan	nan	nan	nan	nan	nan	30.637	nan	30.637	nan	nan	nan	nan	nan	nan	11.450	9.910	1.542
+CG	TYR	B	328	7	2.054	nan	2.054	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.054	nan	2.054	nan	nan	nan	nan	nan	nan	9.980	10.133	1.819
+CD1	TYR	B	328	8	25.151	nan	25.151	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.151	nan	25.151	nan	nan	nan	nan	nan	nan	9.359	11.324	1.472
+CD2	TYR	B	328	9	20.836	nan	20.836	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.836	nan	20.836	nan	nan	nan	nan	nan	nan	9.209	9.143	2.413
+CE1	TYR	B	328	10	33.707	nan	33.707	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.707	nan	33.707	nan	nan	nan	nan	nan	nan	8.013	11.526	1.717
+CE2	TYR	B	328	11	32.826	nan	32.826	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.826	nan	32.826	nan	nan	nan	nan	nan	nan	7.865	9.336	2.661
+CZ	TYR	B	328	12	9.595	nan	9.595	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.595	nan	9.595	nan	nan	nan	nan	nan	nan	7.272	10.528	2.311
+OH	TYR	B	328	13	43.248	nan	43.248	nan	nan	nan	43.248	nan	43.248	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	5.931	10.721	2.557

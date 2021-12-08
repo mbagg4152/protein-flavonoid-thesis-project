@@ -1,0 +1,223 @@
+
+<html>
+<!-- <head> -->
+<!-- NBDC Markup START -->
+<head vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+
+<title>KNApSAcK Metabolite Information - C00008818</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/cs">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="C00008818">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/info.css" media="all">
+</head><body onload="" >
+
+<div id="my_body">
+  <div id="my_header">
+      <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+      <img src="images/nap2.gif" border=0> </a></p>
+  </div>
+  <div id="my_main">
+    <div id="my_navigation">
+
+    </div>
+    <div id="my_contents">
+          <br>
+<!--	  input word = <font class="iw">C00008818</font><br><br> //-->
+     	  input word = <font class="iw">C00008818</font><br><br>
+
+<!-- <table class="d1"> -->
+<!-- NBDC Markup START -->
+	<table class="d1" vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+        <tr>
+            <th class="d1">Metabolite Information</th><th class="d3">Structural formula</th>
+        </tr>
+
+        <tr>
+            <td>
+               <table class="d3">
+                  <tr>
+                     <th class="inf">Name</th>
+                     <td colspan="4" class="inf">(-)-Epigallocatechin<br>Epigallocatechin<br>L-Epigallocatechin<br>l-Epigallocatechin</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Formula</th>
+                     <td colspan="4">C15H14O7</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Mw</th>
+                     <td colspan="4">306.0739528</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">CAS RN</th>
+                     <td colspan="4">970-74-1</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">C_ID</th>
+                     <td colspan="4" class="img2">C00008818
+<!-- 			C00008818<a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00008818" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+<!-- NBDC Markup START -->
+<!--			<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry"> //-->
+<!--			<span property="entryID">C00008818</span><a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00008818" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+                                       , <a href="/Twins/top.php?kword=C00008818&sword=50&mode=list1#res" target="_blank"><img src="images/TW.gif" border="0" class="img2"></a><br>
+<!--			</div> //-->
+<!-- NBDC Markup END -->
+                        
+		     </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChIKey</th>
+                     <td colspan="4">XMOCLSLCDHWDHP-JTFITGRYNA-N</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChICode</th>
+                     <td colspan="4">InChI=1S/C15H14O7/c16-7-3-9(17)8-5-12(20)15(22-13(8)4-7)6-1-10(18)14(21)11(19)2-6/h1-4,12,15-21H,5H2/t12-,15-/m1/s1</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">SMILES</th>
+                     <td colspan="4">c1(cc(c2c(c1)O[C@@H]([C@@H](C2)O)c1cc(c(c(c1)O)O)O)O)O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Start Substs in Alk. Biosynthesis (Prediction)</th>
+                     <td colspan="4"><a href="/CobWeb/top.php?word=&mode=met" target=_"blank"></a> </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Organism</th>
+                     <td class="or1">
+                        <table class="org">
+			 	<th class="or3">Kingdom</th>
+				<th class="or2">Family</th>
+				<th class="or1">Species</th>
+				<th class="or4">Reference</th><tr>
+<td class=org>Plantae</td><td class=org>Celastraceae</td><td class=org2>Salacia prinoides</td><td class=org><a href=information.php?mode=r&word=C00008818&key=0 title=Salacia prinoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Celastraceae</td><td class=org2>Tripterygium hypoglaucum</td><td class=org><a href=information.php?mode=r&word=C00008818&key=1 title=Tripterygium hypoglaucum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cistaceae</td><td class=org2>Cistus salviifolius</td><td class=org><a href=information.php?mode=r&word=C00008818&key=2 title=Cistus salviifolius > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Combretaceae</td><td class=org2>Combretum quadrangulare</td><td class=org><a href=information.php?mode=r&word=C00008818&key=3 title=Combretum quadrangulare > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Crassulaceae</td><td class=org2>Rhodiola sachalinensis</td><td class=org><a href=information.php?mode=r&word=C00008818&key=4 title=Rhodiola sachalinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron Cunningham's white</td><td class=org><a href=information.php?mode=r&word=C00008818&key=5 title=Rhododendron Cunningham's white > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron brachycarpum ssp.brachycarpum</td><td class=org><a href=information.php?mode=r&word=C00008818&key=6 title=Rhododendron brachycarpum ssp.brachycarpum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron catawbiense</td><td class=org><a href=information.php?mode=r&word=C00008818&key=7 title=Rhododendron catawbiense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron dichroanthum ssp.scyphocalyx</td><td class=org><a href=information.php?mode=r&word=C00008818&key=8 title=Rhododendron dichroanthum ssp.scyphocalyx > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron micranthum</td><td class=org><a href=information.php?mode=r&word=C00008818&key=9 title=Rhododendron micranthum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron oreotrephes</td><td class=org><a href=information.php?mode=r&word=C00008818&key=10 title=Rhododendron oreotrephes > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron praevernum</td><td class=org><a href=information.php?mode=r&word=C00008818&key=11 title=Rhododendron praevernum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron smirnowii</td><td class=org><a href=information.php?mode=r&word=C00008818&key=12 title=Rhododendron smirnowii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron ungernii</td><td class=org><a href=information.php?mode=r&word=C00008818&key=13 title=Rhododendron ungernii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Vaccinium vitis-idaea</td><td class=org><a href=information.php?mode=r&word=C00008818&key=14 title=Vaccinium vitis-idaea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Euphorbiaceae</td><td class=org2>Croton lechleri</td><td class=org><a href=information.php?mode=r&word=C00008818&key=15 title=Croton lechleri > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia nilotica</td><td class=org><a href=information.php?mode=r&word=C00008818&key=16 title=Acacia nilotica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Medicago truncatula</td><td class=org><a href=information.php?mode=r&word=C00008818&key=17 title=Medicago truncatula > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Stryphnodendron adstringens</td><td class=org><a href=information.php?mode=r&word=C00008818&key=18 title=Stryphnodendron adstringens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vicia faba</td><td class=org><a href=information.php?mode=r&word=C00008818&key=19 title=Vicia faba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Geraniaceae</td><td class=org2>Pelargonium sidoides</td><td class=org><a href=information.php?mode=r&word=C00008818&key=20 title=Pelargonium sidoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ginkgoaceae</td><td class=org2>Ginkgo biloba</td><td class=org><a href=information.php?mode=r&word=C00008818&key=21 title=Ginkgo biloba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lythraceae</td><td class=org2>Punica granatum</td><td class=org><a href=information.php?mode=r&word=C00008818&key=22 title=Punica granatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Malvaceae</td><td class=org2>Guazuma ulmifolia</td><td class=org><a href=information.php?mode=r&word=C00008818&key=23 title=Guazuma ulmifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Myricaceae</td><td class=org2>Myrica rubra</td><td class=org><a href=information.php?mode=r&word=C00008818&key=24 title=Myrica rubra > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Myrtaceae</td><td class=org2>Syzygium spp.</td><td class=org><a href=information.php?mode=r&word=C00008818&key=25 title=Syzygium spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Oxalidaceae</td><td class=org2>Averrhoa carambola L.</td><td class=org><a href=information.php?mode=r&word=C00008818&key=26 title=Averrhoa carambola L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Phyllanthaceae</td><td class=org2>Phyllanthus emblica</td><td class=org><a href=information.php?mode=r&word=C00008818&key=27 title=Phyllanthus emblica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Pinaceae</td><td class=org2>Pinus sibirica</td><td class=org><a href=information.php?mode=r&word=C00008818&key=28 title=Pinus sibirica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Sapindaceae</td><td class=org2>Xanthoceras sorbifolia</td><td class=org><a href=information.php?mode=r&word=C00008818&key=29 title=Xanthoceras sorbifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Taxaceae</td><td class=org2>Taxus fuana</td><td class=org><a href=information.php?mode=r&word=C00008818&key=30 title=Taxus fuana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Taxaceae</td><td class=org2>Taxus yunnanensis</td><td class=org><a href=information.php?mode=r&word=C00008818&key=31 title=Taxus yunnanensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Theaceae</td><td class=org2>Camellia sinensis</td><td class=org><a href=information.php?mode=r&word=C00008818&key=32 title=Camellia sinensis > Ref.</a></td>
+</tr>
+</table>
+		     </td>
+                  </tr>
+               </table>
+            </td>
+	    <td class=img>
+<!--		<img src="/sun/MSdata/SD/C00008818.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'"><br><br> -->
+<!-- NBDC Markup START -->
+		<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+		<img property="image" src="/sun/MSdata/SD/C00008818.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'" />
+		</div>
+<!-- NBDC Markup END -->
+		<a href="image.php?word=C00008818" title="C00008818" onclick="window.open(this.href, '_blank', 'width=500,resizable=yes, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">zoom in</a>
+
+		<br><br><br><br>
+                
+
+	    </td>
+        </tr>
+	</table>
+
+
+   </div>
+   </div>
+   <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+   </div>
+</div>
+</body>
+</html>

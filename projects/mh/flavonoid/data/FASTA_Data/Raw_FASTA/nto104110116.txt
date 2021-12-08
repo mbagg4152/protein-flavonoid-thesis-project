@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05025: 104110116</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620858263">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620858263">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- nto:104110116 -->&gt;nto:104110116 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) acetyl-CoA-benzylalcohol acetyltransferase-like (N)
+atgaggtccgtatgtctaaatttgaaggattccatgcaagttaaaatcttgtcaaaaagc
+ctcataaaaccatcatcaccaactccagaacaccttcagaattacaacttatctttcttc
+gatcaagtagctgacagagcacacatgcctcttgttcttctatatcctcataattctaac
+aactcaataaatatggaacaagagctcgaagaatccttgtccagggtcttaacccatgtt
+taccctatggctggtagattcacagaagatgaatcttcagtcctttgcctcgatcaaggt
+gtaacatatataaaagcaactgtcaattgtaagcttgttgattttctcgcacaagcacgc
+gaagaccttgatcttgcattatctttctggcctgatggcattatggacgtggatgacact
+aatatattcatcacaccactaatgattgtgcaagtcacaaaatttgaatgtggtggccta
+gctctatctactagctgtacacacattgctatagatggattcacgacttttacatttgct
+tacgaatgggccaaagtgtgcaaacttgggattccttctaaggagattaacttcacgagc
+ttcaatttgggcaatcttttccctaccagagatttatcaaaaattcttgagcctcctgtt
+gatgaaggcaaacgtatactatctaagttgattgcgaggaggtttgtttttgatgaagct
+gcaatatcaaaactcagagagcaattttccactgccattgattgtggagctttgagcttc
+aaaccctcacgagttgagatgatcacagcgctgttatggaggtcactaattcgtgcttcg
+tgtgaaagaagtgggcatttgaaacggactataatgtcctttccacttaatttgcgcggt
+aaggttacttttcctgatgttgcaaactcctttgggaattttatcattgaaattcctata
+aaatttgaacctgacgaaacaaagatggaattgcatcactttgtaaaactgatacgagac
+tcagtgcagcagacgagtagtacttgtgctaaagctactccagatgagattgtttgtttg
+gttgtcaatttatacaaggatagttatgctggattagaatggggaggagacaatgaagtt
+gagaatttcacaatctcaagtctctgcaggtttccaattcagaaagctgattttggttgg
+ggaaacccaagtttaatacattttgggtcgagacacagtcaagtgttttggttgaatgat
+acagaatgtgagactggcattgctgtgcaaatggatttgcaggaaacatacatgaacttc
+tttgaacatgaccacgatatcttagcttttgcgaagttttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=nto:104110116+nt">BLAST</a>
+</body>
+</html>

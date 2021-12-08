@@ -1,0 +1,257 @@
+ENTRY       gsj00941                    Pathway
+NAME        Flavonoid biosynthesis - Glycine soja (wild soybean)
+DESCRIPTION Flavonoids are a major class of plant secondary metabolites that serves a multitude of functions including pigments and antioxidant activity. Flavonoids are synthesized from phenylpropanoid derivatives by condensation with malonyl-CoA. For example, condensation of p-coumaroyl-CoA (C6-C3) with three malonyl-CoA (C3) molecules results in naringenin chalcone with a diphenylpropane (C6-C3-C6) unit, which is converted to naringenin with the flavone (2-phenylchromen-4-one) backbone by conjugate ring closure. These and further modifications yield a variety of structural forms including chalcones, flavanones, dihyroflavonols, and flavans, anthocyanins, flavones and flavonols, and isoflavonoids.
+CLASS       Metabolism; Biosynthesis of other secondary metabolites
+PATHWAY_MAP gsj00941  Flavonoid biosynthesis
+MODULE      gsj_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:gsj00941]
+            gsj_M00138  Flavonoid biosynthesis, naringenin => pelargonidin [PATH:gsj00941]
+            gsj_M00940  Flavanone biosynthesis, p-coumaroyl-CoA => liquiritigenin [PATH:gsj00941]
+DBLINKS     GO: 0009813
+ORGANISM    Glycine soja (wild soybean) [GN:gsj]
+GENE        114412891  chalcone synthase 5-like [KO:K00660] [EC:2.3.1.74]
+            114414190  chalcone synthase 6 [KO:K00660] [EC:2.3.1.74]
+            114421657  chalcone synthase 5-like [KO:K00660] [EC:2.3.1.74]
+            114421658  chalcone synthase 1 isoform X1 [KO:K00660] [EC:2.3.1.74]
+            114421659  chalcone synthase 1 [KO:K00660] [EC:2.3.1.74]
+            114421661  chalcone synthase 5 [KO:K00660] [EC:2.3.1.74]
+            114421662  chalcone synthase 5 [KO:K00660] [EC:2.3.1.74]
+            114421663  chalcone synthase 1-like [KO:K00660] [EC:2.3.1.74]
+            114421664  chalcone synthase 3 [KO:K00660] [EC:2.3.1.74]
+            114421665  chalcone synthase 3 [KO:K00660] [EC:2.3.1.74]
+            114425794  chalcone synthase 7 [KO:K00660] [EC:2.3.1.74]
+            114415463  chalcone synthase-like [KO:K00660] [EC:2.3.1.74]
+            114400554  chalcone synthase J-like [KO:K00660] [EC:2.3.1.74]
+            114375749  chalcone synthase [KO:K00660] [EC:2.3.1.74]
+            114388436  chalcone synthase 6-like [KO:K00660] [EC:2.3.1.74]
+            114410172  probable chalcone--flavonone isomerase 3 [KO:K01859] [EC:5.5.1.6]
+            114403003  chalcone--flavonone isomerase 2-A [KO:K01859] [EC:5.5.1.6]
+            114403004  chalcone--flavonone isomerase 1B-1 [KO:K01859] [EC:5.5.1.6]
+            114403739  chalcone--flavonone isomerase 1A [KO:K01859] [EC:5.5.1.6]
+            114415689  probable chalcone--flavonone isomerase 3 [KO:K01859] [EC:5.5.1.6]
+            114369763  chalcone--flavonone isomerase 1B-2 [KO:K01859] [EC:5.5.1.6]
+            114405690  naringenin,2-oxoglutarate 3-dioxygenase-like [KO:K00475] [EC:1.14.11.9]
+            114381549  naringenin,2-oxoglutarate 3-dioxygenase-like [KO:K00475] [EC:1.14.11.9]
+            114390422  naringenin,2-oxoglutarate 3-dioxygenase-like [KO:K00475] [EC:1.14.11.9]
+            114390424  naringenin,2-oxoglutarate 3-dioxygenase-like [KO:K00475] [EC:1.14.11.9]
+            114390425  naringenin,2-oxoglutarate 3-dioxygenase-like [KO:K00475] [EC:1.14.11.9]
+            114414096  flavonol synthase/flavanone 3-hydroxylase-like [KO:K05278] [EC:1.14.20.6]
+            114412340  flavonol synthase/flavanone 3-hydroxylase-like [KO:K05278] [EC:1.14.20.6]
+            114380973  flavonol synthase/flavanone 3-hydroxylase-like [KO:K05278] [EC:1.14.20.6]
+            114397278  trans-cinnamate 4-monooxygenase [KO:K00487] [EC:1.14.14.91]
+            114385043  trans-cinnamate 4-monooxygenase-like [KO:K00487] [EC:1.14.14.91]
+            114401755  cytochrome P450 CYP73A100-like [KO:K00487] [EC:1.14.14.91]
+            114403694  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            114385144  NAD(P)H-dependent 6'-deoxychalcone synthase [KO:K08243]
+            114397614  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            114386452  NAD(P)H-dependent 6'-deoxychalcone synthase-like [KO:K08243]
+            114379343  licodione synthase-like [KO:K23179] [EC:1.14.19.76]
+            114411811  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
+            114411812  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
+            114411813  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
+            114416612  flavonoid 3'-monooxygenase-like [KO:K05280] [EC:1.14.14.82]
+            114392946  flavonoid 3'-monooxygenase-like isoform X1 [KO:K05280] [EC:1.14.14.82]
+            114391094  dihydroflavonol 4-reductase-like [KO:K13082] [EC:1.1.1.219 1.1.1.234]
+            114384244  dihydroflavonol 4-reductase [KO:K13082] [EC:1.1.1.219 1.1.1.234]
+            114392892  dihydroflavonol 4-reductase-like [KO:K13082] [EC:1.1.1.219 1.1.1.234]
+            114381448  flavonoid 3',5'-hydroxylase 2-like [KO:K13083] [EC:1.14.14.81]
+            114424222  leucoanthocyanidin dioxygenase-like [KO:K05277] [EC:1.14.20.4]
+            114374275  leucoanthocyanidin dioxygenase-like [KO:K05277] [EC:1.14.20.4]
+            114421336  anthocyanidin reductase ((2S)-flavan-3-ol-forming)-like [KO:K08695] [EC:1.3.1.77]
+            114422060  anthocyanidin reductase ((2S)-flavan-3-ol-forming)-like [KO:K08695] [EC:1.3.1.77]
+            114402606  leucoanthocyanidin reductase-like isoform X1 [KO:K13081] [EC:1.17.1.3]
+            114370702  leucoanthocyanidin reductase-like [KO:K13081] [EC:1.17.1.3]
+            114422719  flavonoid 4'-O-methyltransferase [KO:K23053] [EC:2.1.1.231]
+            114417443  UDP-glycosyltransferase 88F4-like isoform X1 [KO:K22845] [EC:2.4.1.357]
+            114418036  shikimate O-hydroxycinnamoyltransferase-like isoform X1 [KO:K13065] [EC:2.3.1.133]
+            114402773  spermidine hydroxycinnamoyl transferase-like isoform X1 [KO:K13065] [EC:2.3.1.133]
+            114419201  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            114395489  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114395584  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114399545  omega-hydroxypalmitate O-feruloyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114405903  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            114423373  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114423374  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114423379  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114423382  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114422510  shikimate O-hydroxycinnamoyltransferase-like isoform X1 [KO:K13065] [EC:2.3.1.133]
+            114386478  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114369859  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114383273  omega-hydroxypalmitate O-feruloyl transferase-like isoform X1 [KO:K13065] [EC:2.3.1.133]
+            114395123  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114387639  shikimate O-hydroxycinnamoyltransferase-like [KO:K13065] [EC:2.3.1.133]
+            114375353  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            114389049  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114369295  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114376619  shikimate O-hydroxycinnamoyltransferase-like [KO:K13065] [EC:2.3.1.133]
+            114389679  omega-hydroxypalmitate O-feruloyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114390233  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114390368  fatty alcohol:caffeoyl-CoA acyltransferase-like [KO:K13065] [EC:2.3.1.133]
+            114375578  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114375583  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114390980  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114369488  vinorine synthase-like [KO:K13065] [EC:2.3.1.133]
+            114391921  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114393241  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114394635  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114394743  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114394917  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114395032  spermidine hydroxycinnamoyl transferase-like [KO:K13065] [EC:2.3.1.133]
+            114406591  cytochrome P450 98A2-like [KO:K09754] [EC:1.14.14.96]
+            114399785  cytochrome P450 98A2 [KO:K09754] [EC:1.14.14.96]
+            114421606  probable caffeoyl-CoA O-methyltransferase At4g26220 [KO:K00588] [EC:2.1.1.104]
+            114421811  caffeoyl-CoA O-methyltransferase 5-like [KO:K00588] [EC:2.1.1.104]
+            114413517  probable caffeoyl-CoA O-methyltransferase At4g26220 [KO:K00588] [EC:2.1.1.104]
+            114421125  probable caffeoyl-CoA O-methyltransferase At4g26220 [KO:K00588] [EC:2.1.1.104]
+            114411406  probable caffeoyl-CoA O-methyltransferase At4g26220 [KO:K00588] [EC:2.1.1.104]
+            114419712  caffeoyl-CoA O-methyltransferase [KO:K00588] [EC:2.1.1.104]
+            114412825  flavonoid 3',5'-methyltransferase-like isoform X1 [KO:K00588] [EC:2.1.1.104]
+            114407365  probable caffeoyl-CoA O-methyltransferase At4g26220 [KO:K00588] [EC:2.1.1.104]
+            114423381  flavonoid 3',5'-methyltransferase-like isoform X1 [KO:K00588] [EC:2.1.1.104]
+            114393116  caffeoyl-CoA O-methyltransferase 1-like isoform X1 [KO:K00588] [EC:2.1.1.104]
+            114374935  caffeoyl-CoA O-methyltransferase 5-like [KO:K00588] [EC:2.1.1.104]
+            114386181  caffeoyl-CoA O-methyltransferase-like [KO:K00588] [EC:2.1.1.104]
+COMPOUND    C00223  p-Coumaroyl-CoA
+            C00323  Caffeoyl-CoA
+            C00389  Quercetin
+            C00406  Feruloyl-CoA
+            C00509  Naringenin
+            C00540  Cinnamoyl-CoA
+            C00774  Phloretin
+            C00852  Chlorogenate
+            C00974  Dihydrokaempferol
+            C01378  Fustin
+            C01460  Vitexin
+            C01477  Apigenin
+            C01514  Luteolin
+            C01604  Phlorizin
+            C01617  Taxifolin
+            C01709  Hesperetin
+            C02906  Dihydromyricetin
+            C02947  4-Coumaroylshikimate
+            C03648  cis-3,4-Leucopelargonidin
+            C05334  Isosakuranetin
+            C05631  Eriodictyol
+            C05903  Kaempferol
+            C05904  Pelargonidin
+            C05905  Cyanidin
+            C05906  Leucocyanidin
+            C05907  Luteoforol
+            C05908  Delphinidin
+            C05909  Leucodelphinidin
+            C05911  Pentahydroxyflavanone
+            C06561  Naringenin chalcone
+            C06562  (+)-Catechin
+            C08578  Butein
+            C08650  Isoliquiritigenin
+            C09099  Naringenin 7-O-beta-D-glucoside
+            C09320  Afzelechin
+            C09614  Butin
+            C09727  (-)-Epicatechin
+            C09736  Fisetinidol-4beta-ol
+            C09751  Garbanzol
+            C09756  Homoeriodictyol
+            C09762  Liquiritigenin
+            C09789  Naringin
+            C09806  Neohesperidin
+            C09826  Pinobanksin
+            C09827  Pinocembrin
+            C09833  Sakuranetin
+            C10028  Chrysin
+            C10044  Galangin
+            C10107  Myricetin
+            C10192  Tricetin
+            C10434  5-O-Caffeoylshikimic acid
+            C12123  7,4'-Dihydroxyflavone
+            C12124  Apiforol
+            C12127  (+)-Gallocatechin
+            C12128  (-)-Epiafzelechin
+            C12136  (-)-Epigallocatechin
+            C12208  p-Coumaroyl quinic acid
+            C15525  Eriodictyol chalcone
+            C16404  Pinocembrin chalcone
+            C16405  Homoeriodictyol chalcone
+            C16406  Phlorizin chalcone
+            C16407  2',4,4',6'-Tetrahydroxychalcone 4'-O-glucoside
+            C16408  2',3,4,4',6'-Peptahydroxychalcone 4'-O-glucoside
+            C16409  Aureusidin 6-O-glucoside
+            C16410  Bracteatin 6-O-glucoside
+            C16415  5-Deoxyleucopelargonidin
+            C16416  Desmethylxanthohumol
+            C16417  Xanthohumol
+            C16418  Pinobanksin 3-O-acetate
+            C16419  Pinostrobin
+            C16422  Hesperetin 7-O-glucoside
+            C16492  8-C-Glucosylnaringenin
+            C21913  Dihydro-4-coumaroyl-CoA
+            C22048  4-O-Methylxanthohumol
+REFERENCE   PMID:16945088
+  AUTHORS   Tsai CJ, Harding SA, Tschaplinski TJ, Lindroth RL, Yuan Y.
+  TITLE     Genome-wide analysis of the structural genes regulating defense phenylpropanoid metabolism in Populus.
+  JOURNAL   New Phytol 172:47-62 (2006)
+            DOI:10.1111/j.1469-8137.2006.01798.x
+REFERENCE   PMID:16367960
+  AUTHORS   Ono E, Hatayama M, Isono Y, Sato T, Watanabe R, Yonekura-Sakakibara K, Fukuchi-Mizutani M, Tanaka Y, Kusumi T, Nishino T, Nakayama T.
+  TITLE     Localization of a flavonoid biosynthetic polyphenol oxidase in vacuoles.
+  JOURNAL   Plant J 45:133-43 (2006)
+            DOI:10.1111/j.1365-313X.2005.02625.x
+REFERENCE   PMID:16774647
+  AUTHORS   Morreel K, Goeminne G, Storme V, Sterck L, Ralph J, Coppieters W, Breyne P, Steenackers M, Georges M, Messens E, Boerjan W.
+  TITLE     Genetical metabolomics of flavonoid biosynthesis in Populus: a case study.
+  JOURNAL   Plant J 47:224-37 (2006)
+            DOI:10.1111/j.1365-313X.2006.02786.x
+REFERENCE   PMID:16832053
+  AUTHORS   Ono E, Fukuchi-Mizutani M, Nakamura N, Fukui Y, Yonekura-Sakakibara K, Yamaguchi M, Nakayama T, Tanaka T, Kusumi T, Tanaka Y.
+  TITLE     Yellow flowers generated by expression of the aurone biosynthetic pathway.
+  JOURNAL   Proc Natl Acad Sci U S A 103:11075-80 (2006)
+            DOI:10.1073/pnas.0604246103
+REFERENCE   
+  AUTHORS   Halbwirth H, Martens S, Wienand U, Forkmann G, Stich K.
+  TITLE     Synthesis of (14C)-labeled 5-deoxyflavonoids and their application in the study of dihydroflavonol/leucoanthocyanidin interconversion by dihydroflavonol 4-reductase.
+  JOURNAL   Plant Sci 170:587-595 (2006)
+            DOI:10.1016/j.plantsci.2005.10.013
+REFERENCE   PMID:15231405
+  AUTHORS   Stevens JF, Page JE.
+  TITLE     Xanthohumol and related prenylflavonoids from hops and beer: to your good health!
+  JOURNAL   Phytochemistry 65:1317-30 (2004)
+            DOI:10.1016/j.phytochem.2004.04.025
+REFERENCE   
+  AUTHORS   Ogata J, Itoh Y, Ishida M, Yoshida H, Ozeki Y
+  TITLE     Cloning and heterologous expression of cDNAs encoding flavonoid glucosyltransferases from Dianthus caryophyllus.
+  JOURNAL   Plant Biotechnol 21:367-375 (2004)
+            DOI:10.5511/plantbiotechnology.21.367
+REFERENCE   PMID:12828368
+  AUTHORS   Springob K, Nakajima J, Yamazaki M, Saito K.
+  TITLE     Recent advances in the biosynthesis and accumulation of anthocyanins.
+  JOURNAL   Nat Prod Rep 20:288-303 (2003)
+            DOI:10.1039/b109542k
+REFERENCE   PMID:12644647
+  AUTHORS   Shimada N, Aoki T, Sato S, Nakamura Y, Tabata S, Ayabe S.
+  TITLE     A cluster of genes encodes the two types of chalcone isomerase involved in the biosynthesis of general flavonoids and legume-specific 5-deoxy(iso)flavonoids in Lotus japonicus.
+  JOURNAL   Plant Physiol 131:941-51 (2003)
+            DOI:10.1104/pp.004820
+REFERENCE   
+  AUTHORS   Halbwirth H, Martens S, Wienand U, Forkmann G, Stich K.
+  TITLE     Biochemical formation of anthocyanins in silk tissue of Zea mays.
+  JOURNAL   Plant Sci 164:489-495 (2003)
+            DOI:10.1016/S0168-9452(02)00433-8
+REFERENCE   
+  AUTHORS   Martens S, Knott J, Seitz CA, Janvari L, Yu SN, Forkmann G.
+  TITLE     Impact of biochemical pre-studies on specific metabolic engineering strategies of flavonoid biosynthesis in plant tissues.
+  JOURNAL   Biochem Eng J 14:227-235 (2003)
+            DOI:10.1016/S1369-703X(02)00224-3
+REFERENCE   PMID:11073455
+  AUTHORS   Nakayama T, Yonekura-Sakakibara K, Sato T, Kikuchi S, Fukui Y, Fukuchi-Mizutani M, Ueda T, Nakao M, Tanaka Y, Kusumi T, Nishino T.
+  TITLE     Aureusidin synthase: a polyphenol oxidase homolog responsible for flower coloration.
+  JOURNAL   Science 290:1163-6 (2000)
+            DOI:10.1126/science.290.5494.1163
+REFERENCE   PMID:16667183
+  AUTHORS   Lewinsohn E, Britsch L, Mazur Y, Gressel J
+  TITLE     Flavanone Glycoside Biosynthesis in Citrus: Chalcone Synthase, UDP-Glucose:Flavanone-7-O-Glucosyl-Transferase and -Rhamnosyl-Transferase Activities in Cell-Free Extracts.
+  JOURNAL   Plant Physiol 91:1323-8 (1989)
+            DOI:10.1104/pp.91.4.1323
+REL_PATHWAY gsj00940  Phenylpropanoid biosynthesis
+            gsj00942  Anthocyanin biosynthesis
+            gsj00943  Isoflavonoid biosynthesis
+            gsj00944  Flavone and flavonol biosynthesis
+KO_PATHWAY  ko00941
+///

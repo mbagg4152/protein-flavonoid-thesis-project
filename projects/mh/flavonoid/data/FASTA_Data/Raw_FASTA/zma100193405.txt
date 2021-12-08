@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01088: 100193405</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849842">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849842">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- zma:100193405 -->&gt;zma:100193405 K18368 caffeoylshikimate esterase [EC:3.1.1.-] | (RefSeq) uncharacterized protein LOC100193405 (N)
+atgatggacgtggagtaccacgaggagtacgtgaggaacgcgaggggcgtgcagctcttc
+acctgcgtctggctgccggcgccgtcctccgcgcccaccaaagcgctcgtcttcctctgc
+catggctacgggatggagtgcagcgacttcatgagagcatgtgggatgaagctggccaca
+gcagggtatggcgtgtttggtatcgattatgagggccacggcaagtccatgggtgccagg
+tgctacatccacaagtttgagagcctcgtggccgactgcgacatgttcttcaagtccatc
+tgtgacatggagggatacaggaacaagagccggtttctatacggcgagtccatgggcgga
+gccgtggctctactgctgcacaggaaggatccgaccttctgggacggtgcagttcttgtg
+gcgccaatgtgcaagatatcggagaaagtgaagccgcacccggtggtggtcaccctgcta
+actcaggtggaggagatcatccccaagtggaagatcgtccccaccaaggacgtcatcgac
+tccgcattcaaggaccccgtcaagcgcgagaagatcaggaagaacacgctcatctaccag
+gacaagccccggctgaagacggcgctggagcttctcaggaccagcatggatgtggaagac
+agtctgtcagaggtgaggatgccgttcctcgtcctgcacggcgaggccgacgcggtgacc
+gaccccgaggtcagccgcgccctctacgagcgcgcggccagcgccgacaagaccatgaag
+ctctacccggggatgtggcacggcctcaccgccggcgagcctgacgacaacgtggagctg
+gtgttctccgacatcgtctcgtggctcgacaagcgcagtcgccactgggaacccgacgag
+cgggtgagaagggctccgccggagcctgagaacaagcgccgcgtcaccagcagcagcagt
+caacggcccggcagcttcctctgcggactaggctgccgctgccggcaacaccagcaacag
+tgtagtaggatgtag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=zma:100193405+nt">BLAST</a>
+</body>
+</html>

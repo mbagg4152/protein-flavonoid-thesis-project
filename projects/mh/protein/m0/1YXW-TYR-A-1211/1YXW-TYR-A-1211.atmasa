@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	1211	1	23.338	23.338	nan	nan	nan	nan	23.338	23.338	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	47.757	3.854	59.684
+N	TYR	A	1211	2	23.338	23.338	nan	nan	nan	nan	23.338	23.338	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	47.757	3.854	59.684
+CA	TYR	A	1211	3	14.806	14.806	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	14.806	14.806	nan	nan	nan	nan	nan	nan	nan	48.695	2.852	60.144
+C	TYR	A	1211	4	30.839	30.839	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	30.839	30.839	nan	nan	nan	nan	nan	nan	nan	48.001	1.929	61.147
+O	TYR	A	1211	5	32.562	32.562	nan	nan	nan	nan	32.562	32.562	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	47.520	2.373	62.188
+CB	TYR	A	1211	6	29.568	nan	29.568	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.568	nan	29.568	nan	nan	nan	nan	nan	nan	49.891	3.531	60.807
+CG	TYR	A	1211	7	2.137	nan	2.137	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.137	nan	2.137	nan	nan	nan	nan	nan	nan	50.857	2.571	61.450
+CD1	TYR	A	1211	8	23.206	nan	23.206	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.206	nan	23.206	nan	nan	nan	nan	nan	nan	51.572	1.652	60.679
+CD2	TYR	A	1211	9	22.566	nan	22.566	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.566	nan	22.566	nan	nan	nan	nan	nan	nan	51.065	2.581	62.833
+CE1	TYR	A	1211	10	34.389	nan	34.389	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.389	nan	34.389	nan	nan	nan	nan	nan	nan	52.471	0.769	61.266
+CE2	TYR	A	1211	11	34.381	nan	34.381	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.381	nan	34.381	nan	nan	nan	nan	nan	nan	51.962	1.702	63.432
+CZ	TYR	A	1211	12	10.027	nan	10.027	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.027	nan	10.027	nan	nan	nan	nan	nan	nan	52.660	0.801	62.643
+OH	TYR	A	1211	13	43.157	nan	43.157	nan	nan	nan	43.157	nan	43.157	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	53.551	-0.065	63.225

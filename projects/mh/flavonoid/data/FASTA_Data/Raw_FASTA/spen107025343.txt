@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04130: 107025343</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620853098">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620853098">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- spen:107025343 -->&gt;spen:107025343 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 3-like (N)
+atgtctaaatttggtgatttgggtaattttctagtgttgtatatactactaggaatagtt
+ggttctagctatggtcagttgcagctcaacttctatgcaaagagctgtccgcaagcagaa
+aagataattcaagattatgtgtataagcaaatcccaaaggctccgtctcttgcacctgcg
+ttgctcagaatgcatttccacgattgctttgtcaggggttgtgatggttctgtactcctg
+aatttcacttcgcgcactaaaaaccagactgaaaaagtggctgttcctaatcaaacgctg
+agaggcttctcatttatcgatggtgtgaagaaagcattggaagctgaatgccctggagtt
+gtgtcatgtgcggatattgttgccttggttgctagagactctgttgtagtcacaggaggc
+ccttactggaaggttccaactggtagaagagatggaagaatatcaaacgcctcggaagcc
+ttggcaaacatccctcctccgacaagtaacttttccagtctccagacgtcttttgccagc
+aagggtcttgacctaaaagacttggtactattgtctggtgcacataccattggagtctct
+cactgtccgtcattttcatcacgtttatacaattttactggagtttggggcaaaaaagat
+ccatctctagacagcgaatatgcagctaatctaaagatgaagaaatgcaaatccatcaat
+gacaacaccacaattgtcgaaatggatcctggaagctccagtaaatttgatcttagctac
+ttccagcttgtgctcaagagaagagggctattccaatctgatgcagccttgacaacaagt
+gcgacaacaaagtcattcatcaaccagctagttcaaggatcactcaaacaattctatgcc
+gaatttggtgtagcaatggagaaaatgggaaagattgaagtcaagaccggctctgttggt
+gagattaggaagcactgtgcagctgtgaatagttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=spen:107025343+nt">BLAST</a>
+</body>
+</html>
