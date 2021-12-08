@@ -4,8 +4,10 @@ in the context of a thesis project and a research assistant position. The initia
 additional flavonoids to the code.    
 The original code and the version that was worked on during class mainly focused on utilizing KEGG data in order to 
 predict whether or not a specific plant could be capable of synthesizing selected flavonoids.  
-The new code being developed (located in `projects/current/protein`) is being developed for the purpose of studying 
+The new code being developed (located in `projects/mh/protein`) is being developed for the purpose of studying 
 and analyzing the interactions between proteins and flavonoids or flavonoid-like compounds.
+There is some disorder in this repository, and for that I am sorry. The files which are scarecely documented or not 
+documented at all can be ignored.
 
 <!--  -->
 ---
@@ -42,8 +44,8 @@ JW started the code to get information from KEGG about the species we were inter
 ## Project Structure
 - `pfpy` main folder  
 - `pfpy/projects/original:` contains the code from when Jordan Wilson was developing.
-- `pfpy/projects/current:` current code.
-- `pfpy/projects/current/flavonoid:` code (and related files) for flavonoid prediction.
+- `pfpy/projects/mh:` mh code.
+- `pfpy/projects/mh/flavonoid:` code (and related files) for flavonoid prediction.
 	- `/fjson:` JSON files required by flavonoid project.
 	- `/flib:` library files used only in flavonoid project.
 	- `/data:` output data folder.
@@ -52,17 +54,17 @@ JW started the code to get information from KEGG about the species we were inter
 		- `/Gene_Data:` contains the data pulled from KEGG for each plant pathway.      
 
 
-- `pfpy/projects/current/protein:` code for the protein-flavonoid interaction project.
+- `pfpy/projects/mh/protein:` code for the protein-flavonoid interaction project.
 	- `/images:`output directory for the images of the protein rings as planes.
 	- `/pdb-test-files:`specific PDB files of interest to be tested.
 	- `/plib:` contains library files used in the protein project.
 	- `/prjson:` contains the JSON files needed for the protein project.
 
-- `pfpy/projects/current/parsers:` contains code used for parsing data while conducting research.
+- `pfpy/projects/mh/parsers:` contains code used for parsing data while conducting research.
 	- `/pajson:` contains the JSON files needed in the parsing process.
 
-- `pfpy/projects/current/sharedlib` contains the library/helper code and other assorted test code files.  
-- `pfpy/projects/current/misc_output` contains output from testing programs not used by kegg-prog.py    
+- `pfpy/projects/mh/sharedlib` contains the library/helper code and other assorted test code files.  
+- `pfpy/projects/mh/misc_output` contains output from testing programs not used by kegg-prog.py    
 
 <!--  -->
 ---
