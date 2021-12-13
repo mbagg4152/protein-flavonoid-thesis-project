@@ -1,7 +1,11 @@
-import os
-import sys
+# custom project library imports
 from flib.futil import *
 from flib.data_types import Flav
+
+# other imports
+import os
+import sys
+
 
 SEP = os.sep  # get the right slash. / for linux & mac, \ for windows
 
@@ -70,6 +74,7 @@ PKY = 'PLANT'
 
 README = SEP + 'ReadMe.txt'
 
+# EC numbers
 E01 = 'EC:4.3.1.24'
 E02 = 'EC:4.3.1.25'
 E03 = 'EC:1.14.14.91'

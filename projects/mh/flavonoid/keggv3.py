@@ -1,6 +1,9 @@
+# custom project library imports
 from flib.fconstants import *
 from flib.data_types import *
 import flib.prediction_logic as predict
+
+# other library imports
 from urllib import request
 from urllib.error import HTTPError, URLError
 import datetime

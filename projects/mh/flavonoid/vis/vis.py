@@ -82,9 +82,10 @@ def name_wrap(lst):
             wrd = lst[idx].split()
             sp = ''
             for i in range((2 * len(str(num))) + 3): sp += ' '
-            lst[idx] = str(num) + '. ' + wrd[0] + ' ' + wrd[1] + '\n' + sp + \
-                       ' '.join([x.lower() for x in wrd[2:]])
-        else: lst[idx] = str(num) + '. ' + lst[idx] + '\n'
+            # lst[idx] = str(num) + '. ' + wrd[0] + ' ' + wrd[1] + '\n' + sp + \
+            #            ' '.join([x.lower() for x in wrd[2:]])
+            lst[idx] = str(num) + '. ' + wrd[0] + ' ' + wrd[1]
+        else: lst[idx] = str(num) + '. ' + lst[idx]
         num += 1
     return lst
 
@@ -110,19 +111,24 @@ def output_table(df, fname):
         vals = [0] * row_cnt
         for key, cell in tab.get_celld().items():
             if len(cell._text.get_text().split()) > 3: vals[key[0]] += 1
+            cell.set_fontsize(6)
+            cell.set_text_props(linespacing=1, ha='left', wrap=False)
+            cell.set_height(0.03)
+            cell.PAD = 0.085
+            cell.set_linewidth(0)
 
-        tcells = tab.get_celld()
-        for i in range(0, len(vals)):
-            for j in range(0, len(df.head())):
-                tcells[(i, j)].set_fontsize(6)
-                if vals[i]:
-                    tcells[(i, j)].set_height(0.048)
-                else:
-                    tcells[(i, j)].set_height(0.048)
-                tcells[(i, j)].set_text_props(linespacing=1, ha='left', wrap=False)
-
-                tcells[(i, j)].PAD = 0.085
-                tcells[(i, j)].set_linewidth(0)
+        # tcells = tab.get_celld()
+        # for i in range(0, len(vals)):
+        #     for j in range(0, len(df.head())):
+        #         tcells[(i, j)].set_fontsize(6)
+        #         # if vals[i]:
+        #         #     tcells[(i, j)].set_height(0.048)
+        #         # else:
+        #         #     tcells[(i, j)].set_height(0.048)
+        #         tcells[(i, j)].set_text_props(linespacing=1, ha='left', wrap=False)
+        #         tcells[(i, j)].set_height(0.03)
+        #         tcells[(i, j)].PAD = 0.085
+        #         tcells[(i, j)].set_linewidth(0)
 
         for col in range(len(df.columns)): tab.auto_set_column_width(col)
         plt.savefig(fname, bbox_inches='tight', dpi=400, format='png', pad_inches=0)
