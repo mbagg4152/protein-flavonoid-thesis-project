@@ -1,5 +1,5 @@
 {
-	"file": "https://raw.githubusercontent.com/mbagg4152/pfpy/master/projects/mh/flavonoid/vis/dbtest/ugh.csv",
+	"file": "https://raw.githubusercontent.com/mbagg4152/pfpy/master/projects/mh/flavonoid/vis/dbtest/db.csv",
 	"name": "Database Things3",
 	"header": 0,
 	"separator": ",",
@@ -8,7 +8,7 @@
 		{ "type": "id", "index": 0, "name": "Name" }
 	],
 	"sets": [
-		{ "format": "binary", "start": 1, "end": 105}
+		{ "format": "binary", "start": 1, "end": 7}
 	],
     "author": "A",
     "description": "D",
