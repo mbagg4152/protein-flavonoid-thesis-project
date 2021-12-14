@@ -14,7 +14,7 @@ def main():
     df = pd.DataFrame({dbn[0]: gcv(0), dbn[1]: gcv(1), dbn[2]: gcv(2), dbn[3]: gcv(3),
                        dbn[4]: gcv(4), dbn[5]: gcv(5), dbn[6]: gcv(6),
                        'count': [1] * len(raw_df.index)}, index=raw_df.index)
-
+    print(df)
     grouped = df.groupby(dbn).count().sort_values('count')
     grouped.to_csv(path_or_buf='db/grouped.csv')
 

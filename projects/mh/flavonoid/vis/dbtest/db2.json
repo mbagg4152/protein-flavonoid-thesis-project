@@ -1,5 +1,5 @@
 {
-	"file": "data/dbtest/db.csv",
+	"file": "https://raw.githubusercontent.com/mbagg4152/pfpy/master/projects/mh/flavonoid/vis/dbtest/db.csv",
 	"name": "Database Things",
 	"header": 0,
 	"separator": ",",
@@ -10,7 +10,7 @@
 	"sets": [
 		{ "format": "binary", "start": 1, "end": 105}
 	],
-    "author": "UN Comtrade",
-    "description": "International Trade Statistics on Exports and Imports by Countries for the Year 2010",
-    "source": "http://comtrade.un.org/"
+    "author": "ugh",
+    "description": "ugh",
+    "source": "http://"
 }
