@@ -1,0 +1,16 @@
+{
+	"file": "data/dbtest/db.csv",
+	"name": "Database Things",
+	"header": 0,
+	"separator": ",",
+	"skip": 0,
+	"meta": [
+		{ "type": "id", "index": 0, "name": "Name" },
+	],
+	"sets": [
+		{ "format": "binary", "start": 1, "end": 105}
+	],
+    "author": "UN Comtrade",
+    "description": "International Trade Statistics on Exports and Imports by Countries for the Year 2010",
+    "source": "http://comtrade.un.org/"
+}
