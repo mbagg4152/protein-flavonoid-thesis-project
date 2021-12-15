@@ -64,8 +64,8 @@ def main():
    setup()
    get_parse_pathway_genes()
    flavonoid_predictions()
-   make_plant_ec_counts()
-   build_nt_fasta_by_ec()
+   # make_plant_ec_counts()
+   # build_nt_fasta_by_ec()
    
    runtime = datetime.datetime.now() - init_time
    print('\nRun time: ' + str(runtime))
@@ -122,15 +122,13 @@ def setup():
    # Combines plant and pathway codes.
    plant_pathways = [i + j for i in plant_list for j in path_map_list]
    
-   # Go through the list of plants and create a Plant object which will store
-   # related predictions.
+   # Go through the list of plants and create a Plant object
+   # which will store related predictions.
    for key in plant_dict:
       # Call constructor to make new plant.
       tmp_plant = Plant(code=key, name=plant_dict[key])
-      
       # Add to list if not present. Prevents duplicates.
-      if not tmp_plant.is_in(plant_objects):
-         plant_objects.append(tmp_plant)
+      if not tmp_plant.is_in(plant_objects): plant_objects.append(tmp_plant)
 
 
 def get_parse_pathway_genes():
@@ -150,8 +148,8 @@ def get_parse_pathway_genes():
    sub_lists = list_partition(plant_pathways, thread_lim)
    threads = []  # Will be used to keep track of and kill off threads.
    
-   # A thread is made for each sub-list which then passes each sub-list as a parameter
-   # to the pathway parser.
+   # A thread is made for each sub-list which then passes each sub-list
+   # as a parameter to the pathway parser.
    for sub_list in sub_lists:
       thread = threading.Thread(target=path_parse, args=(sub_list,))
       thread.start()
