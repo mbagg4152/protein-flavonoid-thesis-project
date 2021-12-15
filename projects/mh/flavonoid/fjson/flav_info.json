@@ -1,9 +1,21 @@
 {
   "obj": {
-    "2,6,7,4'-Tetrahydroxyisoflavanone": {"code": "TET2", "file": "TET2_2-6-7-4-tetrahydroxyisoflavanone.csv"},
-    "2,7,4'-Trihydroxyisoflavanone": {"code": "TISO", "file": "TISO_2-7-4-trihydroxyisoflavanone.csv"},
-    "2-Hydroxy-2,3-dihydrogenistein": {"code": "DGEN", "file": "DGEN_2-hydroxy-2-3-dihydrogenistein.csv"},
-    "6,7,4'-Trihydroxyflavanone": {"code": "TNON", "file": "TNON_6-7-4-trihydroxyflavanone.csv"},
+    "2,6,7,4'-Tetrahydroxyisoflavanone": {
+      "code": "TET2",
+      "file": "TET2_2-6-7-4-tetrahydroxyisoflavanone.csv"
+    },
+    "2,7,4'-Trihydroxyisoflavanone": {
+      "code": "TISO",
+      "file": "TISO_2-7-4-trihydroxyisoflavanone.csv"
+    },
+    "2-Hydroxy-2,3-dihydrogenistein": {
+      "code": "DGEN",
+      "file": "DGEN_2-hydroxy-2-3-dihydrogenistein.csv"
+    },
+    "6,7,4'-Trihydroxyflavanone": {
+      "code": "TNON",
+      "file": "TNON_6-7-4-trihydroxyflavanone.csv"
+    },
     "6-Hydroxydaidzein": {"code": "HDAI", "file": "HDAI_6-hydroxydaidzein.csv"},
     "7,4'-Dihydroxyflavone": {"code": "DF74", "file": "DF74_7-4-dihydroxyflavone.csv"},
     "Afzelechin": {"code": "AZEL", "file": "AZEL_afzelechin.csv"},
@@ -22,7 +34,10 @@
     "Dihydroquercetin": {"code": "DQUE", "file": "DQUE_dihydroquercetin.csv"},
     "Dihydrotricetin": {"code": "DTRI", "file": "DTRI_dihydrotricetin.csv"},
     "Enzyme Deleted entry": {"code": "DEC", "file": "EC_2-3-1-70.csv"},
-    "Enzyme Glycosaminoglycan galactosyltransferase": {"code": "GGT", "file": "EC_2-4-1-74.csv"},
+    "Enzyme Glycosaminoglycan galactosyltransferase": {
+      "code": "GGT",
+      "file": "EC_2-4-1-74.csv"
+    },
     "Enzyme Serine O-acetyltransferase": {"code": "SOA", "file": "EC_2-3-1-30.csv"},
     "Enzyme Vanillate 1-glucosyltransferase": {"code": "V1G", "file": "EC_2-4-1-136.csv"},
     "Epiafzelechin": {"code": "EZEL", "file": "EZEL_epiafzelechin.csv"},

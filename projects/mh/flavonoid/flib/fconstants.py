@@ -6,7 +6,6 @@ from flib.data_types import Flav
 import os
 import sys
 
-
 SEP = os.sep  # get the right slash. / for linux & mac, \ for windows
 
 # misc strings
@@ -16,6 +15,7 @@ JKEY = 'obj'
 NIX = ''
 NL = '\n'
 SP = ' '
+TF = '.txt'
 URL_DBGET = 'https://www.kegg.jp/dbget-bin/www_bget?-f+-n+n+'
 
 # output directories
@@ -49,7 +49,7 @@ flav_relatives = get_json_data(JSON_FLAV_REL)  # relatives of FOI
 flav_synonyms = get_json_data(JSON_FLAV_SYN)  # synonyms for FOI
 path_map_dict = get_json_data(JSON_PATH_DICT, JKEY)  # pathway names and codes
 path_map_list = get_json_data(JSON_PATH_LIST, JKEY)  # pathway codes
-plant_dict_common = get_json_data(JSON_PLANT_DICT_COMMON, JKEY)  # contains plants common and scientific names
+plant_dict_common = get_json_data(JSON_PLANT_DICT_COMMON, JKEY)  # common & sci. names
 plant_dict_reg = get_json_data(JSON_PLANT_DICT, JKEY)  # scientific names and plant codes
 plant_full_list = get_json_data(JSON_PLANT_LIST, JKEY)  # full list of plant codes
 test_med = get_json_data(JSON_TST_MED, JKEY)  # testing list of plant codes
@@ -61,9 +61,9 @@ plant_list = plant_full_list  # variable exists for ease of value change when te
 
 flav_data_lists = []
 for k in flav_names_info:
-    info = flav_names_info.get(k)
-    tmp_flav = Flav(k, [], info.get('file'), info.get('code'))
-    flav_data_lists.append(tmp_flav)
+   info = flav_names_info.get(k)
+   tmp_flav = Flav(k, [], info.get('file'), info.get('code'))
+   flav_data_lists.append(tmp_flav)
 
 # keys for accessing dictionaries
 EKY = 'EC'
