@@ -94,8 +94,8 @@ def parse_plant_file(file_name, plant_name):
         flav_match = 0
         syn_match = 0
         rel_match = 0
-        # some entries don't have a CAS ID. if nothing is found using regular expression testing, then the
-        # flavonoid name will follow right after the knapsack ID
+        # some entries don't have a CAS ID. if nothing is found using regular expression
+        # testing, then the flavonoid name will follow right after the knapsack ID
         tmp_has_cas = re.findall(RE_HAS_CAS, line)
         tmp_no_cas = re.findall(RE_NO_CAS, line)
         tmp_list = []
@@ -112,7 +112,8 @@ def parse_plant_file(file_name, plant_name):
         tmp_list.append(tmp_name)
         for key in flav_list:
             tmp_cleaned = tmp_name.replace('(+)', '').replace('(-)', '')
-            tmp_cleaned_nf = tmp_name.replace('(', '').replace(')', '').replace('+', '').replace('-', '')
+            tmp_cleaned_nf = tmp_name.replace('(', '').replace(')', '').replace('+', '').\
+                replace('-', '')
             tmp_list[1] = tmp_cleaned
             # print()
             if key.upper().strip() in tmp_cleaned_nf.upper().strip():

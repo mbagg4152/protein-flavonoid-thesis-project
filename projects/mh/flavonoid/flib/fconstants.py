@@ -61,9 +61,9 @@ plant_list = plant_full_list  # variable exists for ease of value change when te
 
 flav_data_lists = []
 for k in flav_names_info:
-   info = flav_names_info.get(k)
-   tmp_flav = Flav(k, [], info.get('file'), info.get('code'))
-   flav_data_lists.append(tmp_flav)
+    info = flav_names_info.get(k)
+    tmp_flav = Flav(k, [], info.get('file'), info.get('code'))
+    flav_data_lists.append(tmp_flav)
 
 # keys for accessing dictionaries
 EKY = 'EC'
@@ -105,3 +105,7 @@ E_DEC = 'EC:2.3.1.70'
 E_GGT = 'EC:2.4.1.74'
 E_SOA = 'EC:2.3.1.30'
 E_V1G = 'EC:2.4.1.136'
+
+def gfo(lbl, lst):
+    for item in lst:
+        if lbl == item.code: return item
