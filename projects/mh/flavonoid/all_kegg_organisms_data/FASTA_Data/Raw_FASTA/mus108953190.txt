@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03447: 108953190</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620853043">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620853043">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mus:108953190 -->&gt;mus:108953190 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase-like (N)
+atggagaccattgaatcaggtatggtggttccggccgaggagaccccgacacacagcatc
+tggctctccaacctggacctactggtggctcgctcccacacccccaccgtctacttctac
+ccccccagcgccgcccgaccgatcggaggcttctccttcgccgtagaagcgctgaaggcg
+gcgctggccaaggttctggtgccgttctaccccctggccggccggctcgggctggaccta
+gccggcagggtcgagatccagtgcaccggggagggcgccctcttcatggtcgcccggtcc
+gcctccgccatggacgacgtccttgacgacttcgctccttcggatacgataaggcagatg
+ctggtgccatccgtggagtccggcaacgctccttgcccccttgtcatggttcagatgatc
+ctcttcaagtgcggtggcgtgtgcttgggcgtagcagtgcatcacactgccgccgacggg
+ctcggcgcgcttcacttcgtcaattcatggtccgacatcgcccgaggcatcaacgtctct
+gcccctccctccctcgaccgaaccctcctccgtgcccggtcaccgccgaccgtcctcttc
+gaccacgtcgagtacattcaaaagtcagcagccaagccgtccaccggcaaggcccctttc
+gataccgccattcttaagctatcgaaagaacagctacatctcctcaagggcagcggaggc
+ggaaagaaaggtctctccaccttcaaagcagtgacggctcacgtatggcggtcagcatgc
+aaagcgcgcaagctcgggggcgaccaagagacgaggctctacatgacggctgacgcacgt
+acccgcgtcaagccgccgcttcccgcaggctttgtgggcaatggcatctttagaacatcg
+gcggttgcaaaagtcggggagatcctgtccaattcgctggagttcggggccgacaagatc
+aacgacgcaactgttcgactaaatgacgactacataaggtcgctgatagactacttggag
+ctgcaacgagacgtgagaggcctgcagaagggctcatgggtgattcccggcaccgatctc
+tgggtgatcagctggctggggctgcctatatatgaggctgacttcgggtgggggaagccg
+gcgatcatggtgcgcgcgacgctgcagttcagtggattggtgtacatcatgcacgactcc
+ggcgtggagggggggctgtcgctggcggtggccatggagccggagaacatgccgctgttc
+aagcaagtattctacgaggaacttgaggctctgaagcaatcttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mus:108953190+nt">BLAST</a>
+</body>
+</html>

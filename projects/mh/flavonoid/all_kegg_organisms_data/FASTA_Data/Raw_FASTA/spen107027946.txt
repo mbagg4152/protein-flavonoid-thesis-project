@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04130: 107027946</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854607">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854607">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- spen:107027946 -->&gt;spen:107027946 K05277 anthocyanidin synthase [EC:1.14.20.4] | (RefSeq) leucoanthocyanidin dioxygenase (N)
+atggtgagtgaagtggtttcaattccgtcgagagttgaaagcttggctaaaagtggaatc
+caagtcattcctaaagagtatgtgaggccacaagaagagctgaatggtataggaaacatc
+tttgaggaagagaagaaagatgaaggacctcaagtaccgacgattaatctaaaagaaatt
+gactcagaggacaaggaaattcgcgaaaaatgccaccaggagttgaagaaagcagcggtg
+gagtggggtgttatgcacctcgttaaccatgggatatcggatgagctaattgaacgtgtc
+aaggttgctggaggtaccttttttgatctacctgttgaagagaaggagaagtatgctaat
+gatcaagcttctggtaatgtccaaggctatggcagcaagctagcaaatagtgcttgtggt
+cagcttgagtgggaggattacttctttcattgtgttttccccgaggacaagcgcgatttg
+gccatctggcctaaaacccctgctgactacattccagcaacaagtgaatatgccaagcag
+atcaggaacctagcaacaaagatttttgcagtgctttcgattgggttgggattggaagaa
+ggaagactagagaaggaagttggaggcatggaagacttgctgcttcaaatgaagattaac
+tactatcccaaatgtccccaaccagaactagcacttggtgtcgaggctcatactgatgtg
+agtgcactgacgttcatcctccacaatatggtgcctggcttgcaactcttttatgaagag
+aagtgggtaactgcaaagtgtgtgcctaattccataattatgcacattggggatacaatt
+gaaatcctaagcaacggaaagtacaagagcattcttcacagaggggttgtgaacaaagag
+aaagtaaggatttcatgggctattttctgtgagcctccaaaggacaagattatgcttaag
+cccctacctgagactgtcaccgcggctgagccatctcaattcccacctcgcacctttgca
+caacatatggcacacaagcttttcaagaaggataataacgatgctgctgttgaacaaaaa
+gtattcacgaaggatgatcaggattctgctgctgtacataaagcctccgaaaaggatgaa
+cgtgatattgttgctgagcacatagtcgtcaaggaagacaaacaggattttgctgctgaa
+cagaaagccttcaagaaggttgatcaggatattgttgctgagcgcaaagttctcaaggag
+gacgagcaggatgcagttgctgagctcaaagttttcaagaaggatgatcaggatgttgtt
+actgagcataaagtcctcaaggatgttcctgctgaagaatctgaatag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=spen:107027946+nt">BLAST</a>
+</body>
+</html>

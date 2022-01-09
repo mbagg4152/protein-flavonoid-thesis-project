@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02982: CICLE_v10030093mg</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620857818">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620857818">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cic:CICLE_v10030093mg -->&gt;cic:CICLE_v10030093mg K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) hypothetical protein (N)
+atgacgacagtgaaaagtaatcaaggaccaacagcaacgatactggccattggcacatca
+actcctcctaactgtttctaccaagctgattatcctgatttctactttcgagtcaccaat
+agcgaccacaagaccgagctgaaagagaaattcaagcgcatatgcgagagacaatctatt
+aaaaaacgatactttcatcttactgaagagattctaaaagaaaatccgaatatgtgctgc
+tacgaggccccgtctttggatgctcgacaagctatgctgattgatgaggtaccaaagctt
+gggaaggaagccgcactgaaggccatcaaagagtggggacagcccgtctcaaagatcact
+caccttatatttagtgccttctatggcgttgacatgcctggtgcggacgtccgtctgatg
+aggcttctcggcctcaaaccgtccgttaacaggctcatgatttatacccaaggctgttac
+atgggcgggacagtcatccgccttgccaaggatattgcagagaacaatcctggagctcgt
+gttcttgtagtatgttctgatatcagggttttggactttcatgaaccatccgaaacccac
+ttggacgtcttggttgtgcaagcggttttcggtgatggagctggcgctgcaattattggt
+gcagattctgatatctccaatcacgaacgtccactattccagatcttgtcttgcacacag
+acgactgtccctgacactgaaaattatatctcgggccaattgaaagaaatgggcacgggc
+acgtattgtcatttatcaagagacgtgcctgtggcaattgggaattatgtagacaagtgt
+ttatcaaatgcaatgagtccgattggaattagtgattggaactcgttgttttacgttgtc
+cacccaggcggtgatggccttctagaccaagttgaaaaaaccctcggactgcgaaaggaa
+aaactttgggcaagtcggtatgtgctgagggagtatggaaatatgggggcgccgtcagtg
+ttcttcattcttgatgaggtgaggaagaagagtatcgaggaaatgaaagccacgacgggt
+gagggattggagtgcggtgttttgtttggattcggaccagggctgacggtggaaactgtt
+gtgttgcagagtgtctctacaaatttcaccaactactga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cic:CICLE_v10030093mg+nt">BLAST</a>
+</body>
+</html>

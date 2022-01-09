@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01717: 100821527</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620858732">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620858732">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- bdi:100821527 -->&gt;bdi:100821527 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) hydroxycinnamoyltransferase 2 (N)
+atgaagatcacggtgcgggggtcgacggtggtgcggccggcggaggagacgccgcggatg
+cggctgtggaacgctaacccggacctggtggtgccgcggttccacacgcccagcgtctac
+ttctaccggcgcgacgcggcggttgaggtcgggtgctacttcgacgcggagaggatgcgg
+cgggcgctggcggaggcgctggtgcccttctaccccatggcggggcggctggcccgtgac
+gaggacgggcgcgtggagatcgactgcaacgcggaaggggtgctcttcgtggaggccgac
+gcgcccgacggcaccgtcgacgactacggcgacttcgcccccacgatggagctcaagcga
+ctcatccccgccatcgacttcaccggcggcatctcctcctacccgctcctcgtggtccag
+gtgacacactttaagtgcgggggcgtggccctgggcatcggcatgcagcaccacgtcgcc
+gacggcttctcgggcctccacttcatcaactcgtgggccgacctgtgccgcggcgtcccg
+atcgccgtcatgccgttcatcgaccgcaccctgctccgggcccacgacccgccgaccccg
+gcccacccgcacatcgagtaccagcccgcgcccgccatgctggactcggagccgccgcag
+gccatcctcgcgggcgccaagccggaccaaccccccgcggccgtggacatcttcaagctc
+tcccgctccgacctgggccgcctccgcgcccagctccccacgggggaaggcgcgccccgg
+ttcagcacctacgcggtgctcggcgcgcacgtgtggcgttgcgcgtcgctggcccgcggg
+ctggcgcccgagcagccgacgaagctgtactgcgccacggacgggcgccagcggctgctg
+ccgccgctcccggagggttacttcggcaacgtcatcttcacggccacgccgctcgccgag
+gccggcaaggtgatcgcctcgctggcggacggcgcgaacacgatccaggccgcgctggag
+aggatggacaacgagtactgccgctcggcgctggactacctggagctgcagccggacctg
+tcggcgctggtccggggcgcgcacacgttccggtgccccaacctcgggctcaccagctgg
+gtgcgcctgcccatccacgaagccgacttcggctggggccgccctgtcttcatgggcccc
+ggcggcatcgcctacgagggcctcgccttcgtgctccccagcgccagccgcgacggcagc
+ctgtccgtggccatctcgctgcaggccgagcacatggagaagttccggaagatgatcttc
+gacttctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=bdi:100821527+nt">BLAST</a>
+</body>
+</html>

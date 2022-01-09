@@ -125,6 +125,7 @@ def setup():
     for key in plant_dict:
         # Call constructor to make new plant.
         tmp_plant = Plant(code=key, name=plant_dict[key])
+        
         # Add to list if not present. Prevents duplicates.
         if not tmp_plant.is_in(plant_objects): plant_objects.append(tmp_plant)
 
@@ -158,11 +159,13 @@ def get_parse_pathway_genes():
     for item in pathgenes:
         tmp_file = path_gene + SEP + item.path + '.csv'
         tmp_output = ''  # Data for current gene's output file.
+        
         for gene in item.genes:
             # Get the formatted string of gene information for the current and master files.
             tmp_output += gene.simple() + '\n'
             master_output += gene.simple() + '\n'
-        write_append(tmp_file, tmp_output, write_over=True)
+        
+        write_append(tmp_file, tmp_output, write_over=True)  # write genes for pathway
     write_append(path_main + SEP + 'MasterList.csv', master_output, write_over=True)
 
 def path_parse(paths):
@@ -189,13 +192,23 @@ def path_parse(paths):
             
             # No local raw gene data file found so the data must be downloaded.
             except FileNotFoundError:
-                raw = kegg.get(path)
-                with open(path_raw_gene + SEP + path + '.csv', 'w') as tmp_get:
-                    try: tmp_get.write(raw)
-                    
-                    # Error should only ever occur for plant-pathway codes that don't exist.
-                    except TypeError: pass
-                    tmp_get.close()
+                # only look to download file if it is not on the list of known combinations that
+                # yield no data. code handles grabbing empty files to accommodate for
+                # project upscale and/or KEGG adding new data
+                if path not in no_data_names:
+                    raw = kegg.get(path)
+                    bad = False  # flag for deleting empty files
+                    with open(path_raw_gene + SEP + path + '.csv', 'w') as tmp_get:
+                        try: tmp_get.write(raw)
+                        
+                        # Error should only ever occur for plant-pathway codes that don't exist.
+                        except TypeError:
+                            print('no kegg data for: ' + path)
+                            bad = True
+                            write_append(NO_GENE_DAT, '\n' + path, write_over=False)
+                            no_data_names.append(path)
+                        tmp_get.close()
+                    if bad: os.remove(path_raw_gene + SEP + path + '.csv')
             
             gene_entry = {}
             if isinstance(raw, str):
@@ -234,6 +247,7 @@ def path_parse(paths):
                     tmp_gene = Gene(gene_id=key, plant=plant_name, ec_nums=ec_nums,
                                     path=path, ortho=orthology, compound=name,
                                     plant_code=plant_code)
+                    
                     with lock_gene:
                         for pathgene in pathgenes:  # Update list of genes for current path.
                             if pathgene.path == path: pathgene.genes.append(tmp_gene)
@@ -288,10 +302,8 @@ def flavonoid_predictions():
         
         for chem_data in flav_data_lists:  # Make the call to the prediction functions.
             if predict.flav_check(getattr(predict, chem_data.code.lower()), unique_nums):
-                chem_data.plants.append(
-                    plant.name)  # Add the name of the plant, if predicted.
-    
-    get_intersections(flav_data_lists)
+                # Add the name of the plant, if predicted.
+                chem_data.plants.append(plant.name)
     
     # Create the formatted strings for the output prediction file.
     output_yn = plant_names.replace('\n', '\t')
@@ -300,45 +312,19 @@ def flavonoid_predictions():
         
         output_list = output_list + '\n' + key.code
         
-        for plant in key.plants:
-            output_list = output_list + '\t' + plant
+        for plant in key.plants: output_list = output_list + '\t' + plant
         
         output_yn = output_yn + '\n' + key.code
         
         for item in plant_objects:
-            if item.name in key.plants:
-                output_yn = output_yn + '\tY'
-            else:
-                output_yn = output_yn + '\tN'
+            if item.name in key.plants: output_yn = output_yn + '\tY'
+            else: output_yn = output_yn + '\tN'
         
         item_count = len(key.plants)
         print(key.label + ' predicted in ' + str(item_count) + ' organisms.')
     write_append(path_chem + SEP + '_plant-ec-nums.tsv', plant_ec_output, write_over=True)
     write_append(path_chem + SEP + '_predictions_list.tsv', output_list, write_over=True)
     write_append(path_chem + SEP + '_predictions_yn.tsv', output_yn, write_over=True)
-
-def get_intersections(fdat):
-    """
-    simple piece of code to find the intersections between specific flavonoids. it probably will
-    be of little to no importance aside from my thesis.
-    """
-    agi_lu2 = set(gfo('AGI', fdat).plants).intersection(set(gfo('LU2', fdat).plants))
-    write_append(path_chem + SEP + '__agi_lu2.csv', '\n'.join(agi_lu2), write_over=True)
-    
-    bun_hcc = set(gfo('BUN', fdat).plants).intersection(set(gfo('HCC', fdat).plants))
-    write_append(path_chem + SEP + '__bun_hcc.csv', '\n'.join(bun_hcc), write_over=True)
-    
-    erd_nar = set(gfo('ERD', fdat).plants).intersection(set(gfo('NAR', fdat).plants))
-    write_append(path_chem + SEP + '__erd_nar.csv', '\n'.join(erd_nar), write_over=True)
-    
-    kmp_myc_que = set(gfo('KMP', fdat).plants).intersection(set(gfo('MYC', fdat).plants),
-                                                            set(gfo('QUE', fdat).plants))
-    write_append(path_chem + SEP + '__kmp_myc_nar.csv', '\n'.join(kmp_myc_que), write_over=True)
-    
-    ec_egt_gc_kxn = set(gfo('EC', fdat).plants).intersection(set(gfo('EGT', fdat).plants),
-                                                             set(gfo('GC', fdat).plants),
-                                                             set(gfo('KXN', fdat).plants))
-    write_append(path_chem + SEP + '__ec_egt_gc_kxn.csv', '\n'.join(ec_egt_gc_kxn), write_over=True)
 
 def make_plant_ec_counts():
     """

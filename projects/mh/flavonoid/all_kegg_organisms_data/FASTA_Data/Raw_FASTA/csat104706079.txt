@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05044: 104706079</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841900">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841900">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csat:104706079 -->&gt;csat:104706079 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 57-like isoform X1 (N)
+atgatgaagttttcttctctttttgtgcttttctttattttcccgatcgcgtttgctcaa
+ctgagagtcaagttttatagccggtcatgcccacaagctgagactatcgtacgcaatctg
+gtgcgccaacggtttggtgttgacccaaccgtcactgccgctttgctccgtatgcatttc
+cacgactgtttcgtcaggggttgtgacgcttctcttctcattgactcaaccaattccgag
+aaagctgctggaccaaacggaagcgtcagagaatttgacctgatcgaccggatcaaggct
+cagctagaggctgcatgcccctctacagtctcatgtgccgacatcgtcacattagctaca
+cgtgactcggtggccttagccggaggcccaagctacagtatccccacaggaaggcgcgac
+ggtagggtctcgaacaatgtggacgtggcattacctggtccaacaatctcagtctcagga
+gccgtgagtttcttcaccaacaaagggttgaacacgttcgatgctgtggctcttttgggt
+gcacataccgttggtcagggaaactgtggtctcttcagcgaccgaatcactaatttccaa
+ggaaccggacgacccgattcatccatggaccctgctttagttaccagcctaagaaacaca
+tgcagaaatagcgcatcagcggccctagaccagtcgactccattgagattcgacaaccag
+ttcttcaagcagatccgtagaagaagaggagtgttgcaggttgaccaacggctcgcaagt
+gacccacagactcgtggcattgtggctaggtacgctaacaacaacgccttcttcaagcgt
+cagttcgttagagcaatggtgaagatgggagccgttgatgtgcttactggccgtaacggt
+gagatcaggaggaactgtagaagattcaactga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csat:104706079+nt">BLAST</a>
+</body>
+</html>

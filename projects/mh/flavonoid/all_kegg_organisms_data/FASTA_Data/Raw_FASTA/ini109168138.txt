@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04663: 109168138</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620855991">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620855991">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ini:109168138 -->&gt;ini:109168138 K05277 anthocyanidin synthase [EC:1.14.20.4] | (RefSeq) ANS; leucoanthocyanidin dioxygenase-like (N)
+atggtgtctactattactgcaactgttcccagcagggtggagaggctagcaagcagcggc
+atcgaacgcatccctaaggagtacataaggccggaggaagagcggaggagcatcggcgac
+attttcgaggaggaaaagatcgccggagggccacaagtccccaccgtggacttgaaaggg
+atcaactccgaggacttggaagtgcgggagaagtgccgagaggagctgcggaaggcggcg
+gtggactggggcgtgatgcacctggtgaaccacgggatatcggaggagctcacaggccgc
+gtcaaggctgccggagaggggtttttcggtcagccaattgaggagaaagagaagtacgct
+aatgaccaggcggcggggaatgtccagggctatggtagtaagctggcaaataatgccagt
+gggcagcttgagtgggaggattactttttccactgcattttccccgaagataagactgat
+ctctccatttggcctaaaaccccttctgattacatagatgcaacaaaggaatatgcaaag
+caactgagggcattagccacaaaggttttagcagtgctgtcactagggctagggttagag
+gaaggaaggctggagaaggaagtgggagggatggaagagcttcttctgcaaatgaagata
+aactactacccaaaatgccctcagccggagctagccctgggcgtggaagctcacaccgac
+gtcagcgccctcaccttcatcctccacaacatggtccccggcctgcagctcttctacggg
+ggaaaatgggtcaccgccaagtgcgtccctaactccatcatcatgcacgtcggtgacacc
+gtcgagattctcagcaacggcaagtacaagagcattctccacagaggggttgtgaacagg
+gagaaggtgagggtttcttgggcggtcttctgtgagccgcccaaggacaagatccttctc
+cagcccctgccggagaccgtgtcagaggcggagccgccgcgcttcccgccccgcactttt
+gcccagcatattaagcataagctcttcaggcaaagtgatcaggaagcagcagacacgccc
+aaacctgataatgatgatcatcatcaatcaaattag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ini:109168138+nt">BLAST</a>
+</body>
+</html>

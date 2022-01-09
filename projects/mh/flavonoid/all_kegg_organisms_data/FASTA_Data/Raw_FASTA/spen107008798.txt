@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04130: 107008798</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620852838">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620852838">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- spen:107008798 -->&gt;spen:107008798 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) suberization-associated anionic peroxidase 1 (N)
+atgggttttcgtttgagtcatttgagtcttgcattgagttttgtggcacttgcacttgca
+ggtgttgctatttataaaaatacttacgaagccatcatcatgaataacggttcactcctc
+aaaaatgtttctccgaatttcgattcgttggaatcaggcgtagcgagtattttaacttta
+aataataataagaagagaaattcagacaagtacttgagacagcaactaactccggaggca
+tgcgttttctcagctgtacgagcagttgtggacagtgctattgatgcagaaactcgcatg
+ggagcttctctcattcgtctccactttcatgactgcttcgttgatggttgtgatggaggt
+attctgctagatgatattaatggaacatttacaggggaacaaaactcaccacccaacgcc
+aactcagccagaggttatgaagtaatagcacaagctaaacaaagtgttataaacacatgc
+cccaacgtatctgtatcttgtgctgacatattagctattgctgctcgtgattctgttgct
+aaattaggaggacaaacttataacgttgcattagggagaagcgatgctagaacggccaac
+ttcagtggtgctataaatcaacttccagctccattcgacaacctaacagtccaaatccag
+aaattcagcgacaaaaatttcagcctccgtgaaatggttgcactagctggtgcacacacg
+gtaggtttcgccaggtgttccacagtttgcaccagcggtaacgttaatcctgccgcacaa
+ctccaatgcaactgctccgccacgctaactgattctgatttgcaacaattggatactact
+cctactatgttcgacaaagtttactacgataacttaaacagcaaccaaggcataatgttt
+tcagatcaagttttgaccggggatgctacaactgctggttttgtaacggattatagcaac
+gatgttaacgttttccttggagattttgctgctgccatgatcaagatgggagacttgccc
+ccctccgcgggcgctcaattggaaattcgtgatgtttgtagcagggttaatcccacttca
+gtggcttctatgtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=spen:107008798+nt">BLAST</a>
+</body>
+</html>

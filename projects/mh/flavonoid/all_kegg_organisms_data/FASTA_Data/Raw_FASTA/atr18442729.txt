@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02990: 18442729</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620845334">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620845334">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- atr:18442729 -->&gt;atr:18442729 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase (N)
+atgatgcttaacctacgcatcatctctactgagtccattaagccatcttctcctacacca
+gaacgccagaggaccatgaagctttgcttcatggatcagatggtttcgacaacttacatt
+cccctcatcttcttctatactatgaaagaggaagagccccactcacaaaggttgaagcaa
+tcccttgcccatattttgacctccttctatccattggcagggaggattcaatatgcccag
+gaaactggagagatatgggtcgagtgcaatgacgagggggtcgaattcaaagaagctcaa
+gtggagggtgacctctctctgtttttagagaggccgccgataaacgagatcaagaaactt
+ttaccctgtgagcccttgagcggaggagccaccaccttgttagttcaagcgaactggttc
+aagtgtgggggattggcattaggtatttgcatgagccacatggttggcgacatggcctcc
+ctcgccgatttgatgaactgctgggctcgagtaagtcgcagcagcgataataagaagcta
+agcattctggcaccaaggttcgactggcgctccctgttttctccaaacccactcaatttg
+agtttcgagcctccgtcgctggcaattcaagcaccacccttaacaaaggtcttcattttt
+caaagggaacaagttgaggcattaagggataatggcagggagacatcaaacccgcgacct
+accagtgtaggtgcagtgtcggcgctgctctggcggtgccttatcaaagcgcggtacaga
+aagactgggaaagatgggacatggcatgcagtttatgctgtcaacataagaacgaggatg
+gaaccgcaggctccggatggatcctttgggaacctcagtatgggcgcccattgccttatc
+catgacccaatcgaaagtgcaacacctccgagcaggagacagctcgagagctgcttaaga
+atggggattcaggagttgagctgtgagttcctgaaaaaagtgcaggaatcacctcatatc
+cttgaagaaatgataggctctatcacggatagagcgagcaagggttacgcgtttgggatc
+tcaagctactgcaagtttccactgtacgagtcggatttcgggtgggggaagccggattgg
+gtcagcagcgtgggcggtttcataaccggtgtagccttcctttttgatgatccatcagag
+aatggcattcaggcctgggtgaaccttggtgaggaagagatggcccactttgaatgtgat
+ccagagctcctcgcatttgtttcaaagcaaatgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=atr:18442729+nt">BLAST</a>
+</body>
+</html>

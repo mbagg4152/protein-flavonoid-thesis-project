@@ -1,0 +1,57 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Hevea brasiliensis</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body 0="" onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Hevea brasiliensis</font><br><br>
+   	      Number of matched data :10 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00001169 target="_blank">C00001169</a></td><td class="d1">642-38-6</td><td class="d1">(-)-Quebrachitol</td><td class="d1">C7H14O6</td><td class="d1">194.07903818</td><td class="d1"><font color=#FF00BF>Hevea brasiliensis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006498 target="_blank">C00006498</a></td><td class="d1">23132-13-0</td><td class="d1">Heveaflavone</td><td class="d1">C33H24O10</td><td class="d1">580.13694699</td><td class="d1"><font color=#FF00BF>Hevea brasiliensis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007363 target="_blank">C00007363</a></td><td class="d1">119-13-1</td><td class="d1">delta-Tocopherol</td><td class="d1">C27H46O2</td><td class="d1">402.34978071</td><td class="d1"><font color=#FF00BF>Hevea brasiliensis</font> Mull.Arg.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007364 target="_blank">C00007364</a></td><td class="d1">148-03-8</td><td class="d1">beta-Tocopherol</td><td class="d1">C28H48O2</td><td class="d1">416.36543078</td><td class="d1"><font color=#FF00BF>Hevea brasiliensis</font> Mull.Arg.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007365 target="_blank">C00007365</a></td><td class="d1">7616-22-0</td><td class="d1">gamma-Tocopherol</td><td class="d1">C28H48O2</td><td class="d1">416.36543078</td><td class="d1"><font color=#FF00BF>Hevea brasiliensis</font> Mull.Arg.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007366 target="_blank">C00007366</a></td><td class="d1">59-02-9</td><td class="d1">alpha-Tocopherol</td><td class="d1">C29H50O2</td><td class="d1">430.38108084</td><td class="d1"><font color=#FF00BF>Hevea brasiliensis</font> Mull.Arg.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00035044 target="_blank">C00035044</a></td><td class="d1">1721-51-3</td><td class="d1">alpha-Tocotrienol</td><td class="d1">C29H44O2</td><td class="d1">424.33413065</td><td class="d1"><font color=#FF00BF>Hevea brasiliensis</font> Mull.Arg.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00035077 target="_blank">C00035077</a></td><td class="d1">25612-59-3</td><td class="d1">delta-Tocotrienol</td><td class="d1">C27H40O2</td><td class="d1">396.30283052</td><td class="d1"><font color=#FF00BF>Hevea brasiliensis</font> Mull.Arg.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00035101 target="_blank">C00035101</a></td><td class="d1">14101-61-2</td><td class="d1">gamma-Tocotrienol</td><td class="d1">C28H42O2</td><td class="d1">410.31848058</td><td class="d1"><font color=#FF00BF>Hevea brasiliensis</font> Mull.Arg.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00046784 target="_blank">C00046784</a></td><td class="d1">78-79-5</td><td class="d1">Isoprene</td><td class="d1">C5H8</td><td class="d1">68.06260026</td><td class="d1"><font color=#FF00BF>Hevea brasiliensis</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

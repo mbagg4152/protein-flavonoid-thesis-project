@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 100813225</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844424">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844424">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:100813225 -->&gt;gmx:100813225 K13262 isoflavone-7-O-methyltransferase [EC:2.1.1.150] | (RefSeq) isoflavone 7-O-methyltransferase-like (N)
+atggcttcttcaatcaatggccgtaatgcaagtgagatctttcaaggtcaaactctcttg
+tacaaacacttgtatgccttcatagactctatgtgtctcaaatgcattgttgagcttgga
+ataccagacataatccacaaccatggccaacccattactcttcctgagttggtgtcaatt
+ctacaaattccaccagctaaagttagtcaagtgcaaagtctcatgcgctacctggcacac
+aatggattctttgaaagagtaagaatccacgaaaaagaagcatatgctctcactgctgct
+tcagagctacttgtcaaaagcagtgagcttagtttagctccaatgattgagtttgttctt
+gacccaactttgtcaaattcattccatcaattgaaaaagtgggtttatgagaaagatctc
+acattatttgacatctccttaggatcacatttgtgggactttcttaataaaaaccctgca
+cataacaagtcattcaatgaggcaatggctagtgattctcagatgatgaacttggcgttg
+agagattgcaattgggtctttcaaggactggaattcattgtggatgttggtggtggaact
+ggaaccacagccaagattatatgtgaagcatttcctaacttgaaatgcattgtgtttgac
+cgtccacaagttatagagaacttgtcaggaagcaacaatttgacatatgttggtggggac
+atgttcaaatctattcctaaggctgatgtaattctgcttaagtggattctacataattgg
+attgataaggattgcataaagatattgaagaactgcaaagaagctatttcaaataatggc
+aaaagaggaaaagtgattatcatagatgttgtgataaacgaaaaagaagatgagcacaaa
+gttacggaactaaagctcgttatggatataaccatggcatgtgttaatggaaaagagaga
+aatgaagaagaatggaagaaactcttcatggaagcagggttccaagactacaaaatattt
+cccttgaccaaatatttgtctgttattgagatctatccttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:100813225+nt">BLAST</a>
+</body>
+</html>

@@ -24,7 +24,7 @@ except UnicodeDecodeError:
     pass
 flav_synonyms = get_json_data(FLAV_SYNS)
 plant_dict = get_json_data(PLANT_NAMES_CODES)
-flav_dict = get_json_data(KS_FLAVS)
+knap_flav_dict = get_json_data(KS_FLAVS)
 
 CMP_CODES = '..' + SEP + 'misc_files' + SEP + 'npass' + SEP + 'comp_codes.txt'
 CMP_DICT = '..' + SEP + 'misc_files' + SEP + 'npass' + SEP + 'comp_dict.txt'
@@ -51,9 +51,15 @@ RE_COMP_ID = r'(NPC\S*)'
 RE_COMP_NAME = r'NPC\S*\s*([^\t\r\n]*)'
 RE_FORMULA = r'.*<tr id=.ch.*F.*a.>\s*<th>F.*a</th>\s*<td>(.*)</td>\s*</tr>\s*' \
              r'<tr id=.ch.*Mo.*W.*t\">'
-RE_HAS_CAS = r'<tr><td.class=.d1.><a.href=information\.php\?word=C[0-9]+.target=._blank.>' \
-             r'(C[0-9]+)<.a><.td><td.class=.d1.>([0-9]+-[0-9]+-[0-9]+)<\/td><td.class=.d1.>' \
-             r'([^<]*)<.td><td.class=.d1.>'
+RE_HAS_CAS = r'(?:<tr.class=.{0,3}row[a-z]{3,4}.>)?<td.class=.d1.>' \
+             r'<a.href=\S*in[a-z]+n.php.word=C[0-9]+.{0,3}target=._blank.>' \
+             r'(C[0-9]+)<.a><.td><td.class=.d1.>([0-9]+-[0-9]+-[0-9]+)<\/td>' \
+             r'<td.class=.d1.>([^<]*)<.td><td.class=.d1.>[A-Z-0-9]+<.td>' \
+             r'<td.class=.d1.>[0-9]+\.?[0-9]*<.td><td.class=.d1.>' \
+             r'(?:<font.?[a-z-A-z-0-9=#\"]*>)?([A-Z-a-z \.]*)' \
+             r'(?:<.?font\s{0,2}[a-z-A-Z-0-9=#\"]*>)?([A-Z-a-z \.]*)' \
+             r'(?:<.?font\s{0,2}[a-z-A-Z-0-9=#\"]*>)?([A-Z-a-z \.]*)' \
+             r'(?:<.?font\s{0,2}[a-z-A-Z-0-9=#\"]*>)?'
 RE_INCHI = r"<tr id=\"chemicalInChI\"><th>InChI<\/th><td style=\"word-wrap: break-word\">" \
            r"(InChI=.*)</td></tr><tr id=\"chemicalInChIKey\"> "
 RE_INCHI_KEY = r"<th>InChIKey<\/th><td>(.*)</td></tr></table></div><div class=\"col-md-4"
@@ -66,8 +72,14 @@ RE_NAME_LONG = r'id=.ch[a-z]+I[a-z]+s.>\s*<th>Id.+rs</th>\s*<td.s.+=.word.+word.
                r'<tr.id=.ch[a-z]+Formula'
 RE_NAME_REG = r'</ul>\s*</div>\s*<h1.id=.m.+eId.>.{3}</h1>\s*<h4 id=.m.+e.>\s*([^><!/].*)</h4>.*' \
               r'<div.class=.form-group'
-RE_NO_CAS = r'<tr><td class=.d1.><a.h.*n\.php\?word=C[0-9]* target="_blank">(C[0-9]*)<\/a><\/td>' \
-            r'<td class="d1"><\/td><td class="d1">([^<]*)<\/td><td class="d1">'
+RE_NO_CAS = r'(?:<tr.class=..row[a-z]{3,4}.>)?<td.class=.d1.>' \
+            r'<a.href=\S*in[a-z]+n.php.word=C[0-9]+.{0,3}target=._blank.>' \
+            r'(C[0-9]+)<.a><.td><td.class=.d1.><\/td><td.class=.d1.>([^<]*)' \
+            r'<.td><td.class=.d1.>[A-Z-0-9]+<.td><td.class=.d1.>[0-9]+\.?[0-9]*<.td>' \
+            r'<td.class=.d1.>(?:<font.?[a-z-A-z-0-9=#\"]*>)?([A-Z-a-z \.]*)' \
+            r'(?:<.?font\s{0,2}[a-z-A-Z-0-9=#\"]*>)?([A-Z-a-z \.]*)' \
+            r'(?:<.?font\s{0,2}[a-z-A-Z-0-9=#\"]*>)?([A-Z-a-z \.]*)' \
+            r'(?:<.?font\s{0,2}[a-z-A-Z-0-9=#\"]*>)?'
 RE_NUM_KNAP_RESULTS = r'Number of matched data :([0-9]*).*<br>'
 RE_ORG_COMP_ID = r'-(NPC\S*)'
 RE_ORG_ID = r'(NPO\S*)'

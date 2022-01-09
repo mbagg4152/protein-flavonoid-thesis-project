@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01087: 8282976</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620850665">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620850665">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- rcu:8282976 -->&gt;rcu:8282976 K06892 feruloyl-CoA 6-hydroxylase [EC:1.14.11.61] | (RefSeq) feruloyl CoA ortho-hydroxylase 1 isoform X2 (N)
+atggctccaacacttgcagaatcagcccctcattcctcctttgatctgaatgattttgtc
+ataaacaaaggaaatggagtaaagggtctttctgatttaggcctaaaaagccttcctcga
+caatatatccaaccccaagaggctttgatcaacatcatcccgcaagattccatacctgtt
+attgatatgtctaactttgataatgacccaaaaattgcagaatcaatctgtgatgctgct
+gagcagtttggtttctttcagcttgttaatcacggtgttcctctcgaggttcttgatggt
+gttaaggatgcaactcattgtttctttgggttaccagcagaggagaagaggaaattctcc
+aaggagctttcgtctaccaacaatgttcgatttggcaccagcttcagtcctgattcagag
+aaagctcttgaatggaaggattatcttagtctcttttatgtctccgaggatgaggcttct
+gcattgtggccttctgcttgcaaggatgaatgcctggaatacatgaagaaatccgaagtt
+ctttgcagaaagctaatgacatcactgatggagagattgaacgtgaaggaaatagacgaa
+actaaagaatctctgctaatgggatcaaagaggattaatcttaactactacccaagatgt
+ccaaaccctcaactaacaattggggttgggcgtcactcggatgtctcctcactcacattt
+ctcctccaagacgaaatcggagggctttacgtgcgagtgaacgaaggaaagggagaagaa
+gatggatgggttcatgtgccgccagttgaaggatcgctagtgataaatgtgggagacgca
+ttacaaatactgagcaacggacgatacaagagtgtggagcattgtgtgattgccagcgga
+agtaagaacaggatttctatcccaattttcgttaatccaaagccaagtgatgtgataggt
+ccattgcctgaagttcttgcaactggagagaaaccgaaatataagaactttctctactca
+gattatgtcaagcatttcttcaggaaggctcatgatggcaagaagactgttgcatttgct
+gagatatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=rcu:8282976+nt">BLAST</a>
+</body>
+</html>

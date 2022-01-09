@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 100781316</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1632839484">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1632839484">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:100781316 -->&gt;gmx:100781316 K05281 2'-hydroxyisoflavone reductase [EC:1.3.1.45] | (RefSeq) IFR; isoflavone reductase (N)
+atggctgggaaagatagaatcctgattttgggacccactggagccattggaaggcacata
+gtctgggcaagtgtgaaggcagggaacccaacatttgtgttggtgaggaacacccctggc
+tctaacaacagggtcaatctggtcaaagctgctaatcctgaaaccaaggaagagctcatt
+gagagcttcaaaaattcaggagtaaatctaattcagggagatatgaatgatcatgagagt
+ctggttaatgcaatcaagcaagttgatgtcgtaatctgtgcatttggtagactactaatt
+gaagaccagttgaagatcattgcagcaataaaagaagctggaaacgtcaagagatttttt
+ccatctgaatttggattggatgtggatcgtcacgattcagttgacccagttagagaagtt
+ttcgaggaaaaagcaagaattcgaagaataattgaagccgaaggaattccatacacttac
+ctatgttgtcatgcctttactggttacttcttacgtaacctggcacagattgacatcact
+gttcctccgagggacaaggtattcattctaggagatggaaatgtgaaaggagcgtttgtg
+actgaggctgatgtgggaactttgaccatcgaagcagcgaatgaccctaatgccttgaac
+aaaaccgtgcacataagactccctaagaattatttgaccataaatgagatcatctctttg
+tgggagaacaaaattgggaagactcttgaaaaaacttatgtttcagaggaaaaggttctt
+aaagacattaaggaggcttcttttccaaacaattacctgctggcattgtaccactcacag
+cagataaagggagatgcagtgtatgagattgacactgccaaagatcttgaggcttctgaa
+gcttatcctaacgtggaatacaccaccgtcgatgaatatttgaatcagtttgtctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:100781316+nt">BLAST</a>
+</body>
+</html>

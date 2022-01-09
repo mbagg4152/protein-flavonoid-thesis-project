@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02665: 112941247</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847959">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847959">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sly:112941247 -->&gt;sly:112941247 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) deacetylvindoline O-acetyltransferase-like (N)
+atgataccaattatctcaaagaagattatcaaaccttcttctcccaccccatctactcaa
+agatggcacaatctttcccttattgatcaagttgttgataatttatatatgccctttgtt
+tttttctattcaaaccatcaagtggctacaatcccaaaacaccagttttctgaatttcta
+acaaactctttgtcaaaaactctagcatcttactatccatgggcaggaagtctaataaac
+aatgctaccattgagtgtgatgatcatggtgctgagttcttcgaagttgaaatcaactca
+tccatgaatgaagttattcataaccctgatttgacattccctaaaggcttatcttggggg
+tatttgtcttcgtcgacatctggtgtcttaattgtcgtacaattaagtcattttgagtgt
+ggaggaatcgcgcttagtctttgcatgtcccacaaggtggtgggagacgcgtgcagcgct
+tacttcttcttgagggattgggctaggttaactcgagaaccaaaattagcattatctcct
+ccatactttgttcaggactcactaatgccatcaataccatttgatgttcctctattcccc
+ctgttattgagccaaaaaaggaaagatgtattcaaaagaggtagtgagtgccctcctcta
+caaatgcgccgcttcttcttctactaccaaatcaggacgatctcagttagtccaaacatc
+aaacttgcgaagtcaaacaccactaccaccaaccagcataggaaatattgccactatatt
+ttccacaccaatatacagaactacgaacatgacctcaaacttccaaaattagtaaccgat
+ataagaaagtccaaacacgacctacccaccagaaacaatctagaagaaaatgaatatgtc
+gaagtgatgttggaggcatataaaacaggtaaattaccattccatcaaaggaattgtgat
+atttatactattactagtatattagcattcgagttcgaaaaaatagattttggatttggg
+aaacctacaagagcaagccaagaaagtggttcatttagcaacttgtttatcttaatgaat
+acacctgatgatcatgatagagcagttgaagcctttgtaaatttgaatgaacaacacatg
+tctattttcaagaatgacaaggacctcctccaatttgctactcctttttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sly:112941247+nt">BLAST</a>
+</body>
+</html>

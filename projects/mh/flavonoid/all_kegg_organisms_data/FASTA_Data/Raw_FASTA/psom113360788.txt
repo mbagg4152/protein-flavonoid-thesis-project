@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05758: 113360788</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620855840">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620855840">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- psom:113360788 -->&gt;psom:113360788 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) salutaridinol 7-O-acetyltransferase-like (N)
+atggaggtcgaaatcgtttcgaaagagatcgtcaaaccttcatcaccaatccctcatcac
+cttaaaaatttcaaactctccctactcgatcaacttcttccacctctttatgtgcccatt
+tttattttttactccaacgatgatgatcatcccttttcgagtcatggcagtcaatgtaga
+aaatcagatattctcaagaaatcattatctgaaaccctaactaagttcttccctatcgct
+ggtagaatcaaagataacatcttagttgattgtacaaatgaaggtgtcgattatatcgaa
+actaaagttcatggccttatgtctgattttatgagtgtggatgtagtacaccaacttagt
+ccatctcatatccttgcagatatcaatggtgctgctaaacaagctcagttggttgttcag
+gtgaatatgttcgactgcgacggagtagccattagtgtgtgtttatcacacaaggtagtc
+gatgcgtgtacagccatgacattcttaaacgcttgggcatccaatgctcgtggcgtacag
+actgaagagattgtttatccaactttcgattcgtcatccatcttcccagcactacctatg
+gagagacaagtaccaccatttgaacctgatgatgcggtgaaaggagagaatgtcataaca
+aaaaggttcatattccatgcggccggagtagcttccctccgtgaaattattgcagcgtca
+agaagtggcatctctgtgttttcaaaatacccaactcgtgttgaggccatatccgcactg
+atttggaagacctttatcgatatcgatagggtcaaaatgcgtcgcagttctccgccatct
+acaaaaacaccggtggcactcaaatccttggtaaactttgctgtgaatttgagaacgagg
+ttagaaccaccactgcctcaagcatcattcgggaatgtcataatggatgcaacagcggaa
+acaatgactactgcaacgagtaatgacgacgagaatagcaacgattttgcaaagatattg
+gatggattagtaggacagctaagggcagcaataaacgagatcaatggagactacataaga
+aaactcaaagatggtgatattgatttcttaaagtcaatcggaaactcgtctcatctcagg
+aatatcagtgccggtggtaatgatgatgggggtatcaaagttcaggtatgttggattagt
+agtttgagtaggtttccattctatgaaactgattttggatggggaaaaccgtgttgcata
+gcttgtaatactactggtgaatacaaaaactctcttttgatcatggacacaaaatgtggt
+accggaatagaagcctggataagtttagaagaggaagacatgtcaacattcgaggaaaat
+catcaacttttgcattatgctaaaacttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=psom:113360788+nt">BLAST</a>
+</body>
+</html>

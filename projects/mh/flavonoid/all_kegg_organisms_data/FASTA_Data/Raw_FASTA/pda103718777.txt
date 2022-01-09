@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03274: 103718777</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620842309">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620842309">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pda:103718777 -->&gt;pda:103718777 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 2-like (N)
+actttactgcagttgggaggacctccttatatggtactactaggaagaagagactcgagg
+acagcgagcctaaatgatgctaataatgacatcccgccccccgtctttaacttctctcag
+ctcctctccaacttccgatcacacgggctagatcttaaagatctagtggttttatctggc
+ggccacacgattgggctggctcgatgcacaagctttagggacaggctctacaacgagacc
+aacatcgaccgaggctttgcaagcattcttcgcaactattgcccaacctcgggtggggat
+gacaaccttgcatcgttggacgcgacaccggcgagattcgacacagcttacttcaacggg
+ttgctgcatgggagggggctcttgcactcggaccaacagctattcaagcgtggtcagggt
+gtaagcgatggcttggtcagtttctatagtgctaacccctatgccttttgggctgacttt
+gccgtgtctatgttgaagatgggaaatattagtccgctgacaggcaaccggggcgagatt
+cgcatgaattgcaggaaagcgaattaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pda:103718777+nt">BLAST</a>
+</body>
+</html>

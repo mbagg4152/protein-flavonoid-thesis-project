@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04660: 108326022</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844938">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844938">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- var:108326022 -->&gt;var:108326022 K01859 chalcone isomerase [EC:5.5.1.6] | (RefSeq) chalcone--flavonone isomerase (N)
+atgccattaacagaacagagtttgaaaatggccacagcaccgacgatcaccgacgttcag
+gtggaattcctccacttccctgcggtggtcacttcatcggccaccggaaaaacatatttc
+ctcggcggcgcagagatgaattatgatgcaggggagagaggattgacgattgaggggaaa
+ttcataaagttcacggccatcggagtatacttggaggataaagcagtggcatcactcgcc
+gctaagtggaagggtaagccttcagaagagttgatcgagattcttgacttctacagagat
+atcatctcaggaccctttgaaaagctaataagagggtcgaagattctgccattgactggc
+acagaatactcaaggaaggtgatggaaaactgcgttgcacacttgaagtctgttggaaca
+tatggtgatgctgaagctgcagccattgaacactttgcagaaaccttcaagaaggtcaat
+tttgcacctggtgcctctgttttttacaggcaatcaccggatggaatcttggggcttagt
+ttctctgaagatgcatcgataccagcagaagaggctgcagttatagagaacaaagctgta
+tcggctgcagtattggagactatgatcggagaacacgctgtctcccctgacttgaaacgc
+agtttggcttcacgattgcctgcggtattgaacgacggcattatactctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=var:108326022+nt">BLAST</a>
+</body>
+</html>

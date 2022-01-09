@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 100789491</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841259">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841259">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:100789491 -->&gt;gmx:100789491 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) spermidine hydroxycinnamoyl transferase (N)
+atggttaccataaaaacttctcacactgtggttccaaatcaaccaactccgaaaggtcga
+ttatggctatctaatagtgacaattccacacgtccagcacatacacccgttatttacata
+tacaaagcacaactcaacattgaatatgacattgagagaatgagagactctcttagcaaa
+gttctagtgtactactatccagttgctggcagattgagcttagcagaaagtggtcgaatg
+gaagtggattgcaacgcaaagggagtgacattgattgaagccgcaaccgcaaaaacattt
+gctgattttggagacttttcaccctctgattccatcaaggaagagcttgttccagcaatt
+gattatcattctcaacctatacaagagattcctttgctatttgttcaactaacaagattc
+caaggtgaccaacaacaaggccttgccattggagttgctttctcacatcctgtggctgat
+gggtctgcttggattcactttatgaacacatgggcaatggtcaatagaggagacatgttg
+gatcttaatgaaatgccatttctagatcgaactatactcaaattcccaccatcatcgttg
+cagtcaccgccgccgccgcactttgatcacccagagttgaagcctctgccactcatacta
+ggcaaatctgacagcactgaagagcaaaacaagaagacagcagcttctatgttgaaactc
+acatcaaaacaagtggagatgttgaagaagaaggccaacgatcaattaacaaaacaaggg
+tcaagaccttttagcagatttgaagctgtggctgcacatatatggagatgtgcatgtaag
+gctcgtgaactacatcacaatcaaccaactcttgctcggttcaacgttgattttcgcaat
+cgattaattcctcctctccccaggaattactttgggaatgctttggtagcaacagtgaca
+ccagaatgttatgttggagaaatgacaacaagaccattgagctatgctgcccaaaaaatg
+agagaagcagtggcattgcttacagatgagtacataaggtcacacttagaagttgtattt
+ggtgaggagcaattggattgcataaaggcttttttcttgggacaaggagaaggtagatat
+gcaccttttggagggaatccgaatcttcaaatcacaagctggatcaacatgcgggcgtat
+gaaaccgatttcgggtggggaaagcctgtgtattttggtttaggatatgtgtgtgcatta
+gataggggaattattatgcgaggtccacaagatgatggttctgttattgtgatcatgcat
+ttccagatagcacatatgcaacttcttaagaaattcttctacgaggatatattcacatca
+aggttgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:100789491+nt">BLAST</a>
+</body>
+</html>

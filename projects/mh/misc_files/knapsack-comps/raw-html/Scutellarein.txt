@@ -1,0 +1,190 @@
+
+<html>
+<!-- <head> -->
+<!-- NBDC Markup START -->
+<head vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+
+<title>KNApSAcK Metabolite Information - C00003834</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/cs">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="C00003834">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/info.css" media="all">
+</head><body 0="" onload="" >
+
+<div id="my_body">
+  <div id="my_header">
+      <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+      <img src="images/nap2.gif" border=0> </a></p>
+  </div>
+  <div id="my_main">
+    <div id="my_navigation">
+
+    </div>
+    <div id="my_contents">
+          <br>
+<!--	  input word = <font class="iw">C00003834</font><br><br> //-->
+     	  input word = <font class="iw">C00003834</font><br><br>
+
+<!-- <table class="d1"> -->
+<!-- NBDC Markup START -->
+	<table class="d1" vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+        <tr>
+            <th class="d1">Metabolite Information</th><th class="d3">Structural formula</th>
+        </tr>
+
+        <tr>
+            <td>
+               <table class="d3">
+                  <tr>
+                     <th class="inf">Name</th>
+                     <td colspan="4" class="inf">Scutellarein<br>6-Hydroxyapigenin</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Formula</th>
+                     <td colspan="4">C15H10O6</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Mw</th>
+                     <td colspan="4">286.04773805</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">CAS RN</th>
+                     <td colspan="4">529-53-3</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">C_ID</th>
+                     <td colspan="4" class="img2">C00003834
+<!-- 			C00003834<a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00003834" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+<!-- NBDC Markup START -->
+<!--			<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry"> //-->
+<!--			<span property="entryID">C00003834</span><a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00003834" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+                                       , <a href="/Twins/top.php?kword=C00003834&sword=50&mode=list1#res" target="_blank"><img src="images/TW.gif" border="0" class="img2"></a><br>
+<!--			</div> //-->
+<!-- NBDC Markup END -->
+                        
+		     </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChIKey</th>
+                     <td colspan="4">JVXZRQGOGOXCEC-UHFFFAOYSA-N</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChICode</th>
+                     <td colspan="4">InChI=1S/C15H10O6/c16-8-3-1-7(2-4-8)11-5-9(17)13-12(21-11)6-10(18)14(19)15(13)20/h1-6,16,18-20H</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">SMILES</th>
+                     <td colspan="4">c1(c(c(c2c(c1)oc(cc2=O)c1ccc(cc1)O)O)O)O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Start Substs in Alk. Biosynthesis (Prediction)</th>
+                     <td colspan="4"><a href="/CobWeb/top.php?word=&mode=met" target=_"blank"></a> </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Organism</th>
+                     <td class="or1">
+                        <table class="org">
+			 	<th class="or3">Kingdom</th>
+				<th class="or2">Family</th>
+				<th class="or1">Species</th>
+				<th class="or4">Reference</th><tr>
+<td class=org>Plantae</td><td class=org>Asphodelaceae</td><td class=org2>Asphodeline globifera</td><td class=org><a href=information.php?mode=r&word=C00003834&key=0 title=Asphodeline globifera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Centaurea jacea</td><td class=org><a href=information.php?mode=r&word=C00003834&key=1 title=Centaurea jacea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Pulicaria dysenterica <a href='/KNApSAcK_World/top.php?word=Pulicaria%20dysenterica' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=2 title=Pulicaria dysenterica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Bignoniaceae</td><td class=org2>Millingtonia hortensis <a href='/KNApSAcK_World/top.php?word=Millingtonia%20hortensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=3 title=Millingtonia hortensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Bignoniaceae</td><td class=org2>Oroxylum indicum <a href='/KNApSAcK_World/top.php?word=Oroxylum%20indicum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=4 title=Oroxylum indicum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Clusiaceae/Clusiaceae-Guttiferae</td><td class=org2>Garcinia andamanica</td><td class=org><a href=information.php?mode=r&word=C00003834&key=5 title=Garcinia andamanica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia calycosa</td><td class=org><a href=information.php?mode=r&word=C00003834&key=6 title=Baptisia calycosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Clerodendrum phlomidis <a href='/KNApSAcK_World/top.php?word=Clerodendrum%20phlomidis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=7 title=Clerodendrum phlomidis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Salvia officinalis <a href='/KNApSAcK_World/top.php?word=Salvia%20officinalis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=8 title=Salvia officinalis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Scutellaria barbata <a href='/KNApSAcK_World/top.php?word=Scutellaria%20barbata' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=9 title=Scutellaria barbata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Scutellaria indica</td><td class=org><a href=information.php?mode=r&word=C00003834&key=10 title=Scutellaria indica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Scutellaria rivularis <a href='/KNApSAcK_World/top.php?word=Scutellaria%20rivularis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=11 title=Scutellaria rivularis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Scutellaria scandens</td><td class=org><a href=information.php?mode=r&word=C00003834&key=12 title=Scutellaria scandens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Scutellaria spp.</td><td class=org><a href=information.php?mode=r&word=C00003834&key=13 title=Scutellaria spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Plantaginaceae</td><td class=org2>Scoparia dulcis <a href='/KNApSAcK_World/top.php?word=Scoparia%20dulcis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=14 title=Scoparia dulcis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Polygonum hydropiper L. <a href='/KNApSAcK_World/top.php?word=Polygonum%20hydropiper' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=15 title=Polygonum hydropiper L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Verbenaceae</td><td class=org2>Clerodendron fragrans</td><td class=org><a href=information.php?mode=r&word=C00003834&key=16 title=Clerodendron fragrans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Verbenaceae</td><td class=org2>Clerodendron phlomoides</td><td class=org><a href=information.php?mode=r&word=C00003834&key=17 title=Clerodendron phlomoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Verbenaceae</td><td class=org2>Clerodendron serratum <a href='/KNApSAcK_World/top.php?word=Clerodendron%20serratum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=18 title=Clerodendron serratum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Verbenaceae</td><td class=org2>Duranta plumieri <a href='/KNApSAcK_World/top.php?word=Duranta%20plumieri' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00003834&key=19 title=Duranta plumieri > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Verbenaceae</td><td class=org2>Duranta repens</td><td class=org><a href=information.php?mode=r&word=C00003834&key=20 title=Duranta repens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Scutettaria baicalensis</td><td class=org><a href=information.php?mode=r&word=C00003834&key=21 title=Scutettaria baicalensis > Ref.</a></td>
+</tr>
+</table>
+		     </td>
+                  </tr>
+               </table>
+            </td>
+	    <td class=img>
+<!--		<img src="/sun/MSdata/SD/C00003834.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'"><br><br> -->
+<!-- NBDC Markup START -->
+		<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+		<img property="image" src="/sun/MSdata/SD/C00003834.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'" />
+		</div>
+<!-- NBDC Markup END -->
+		<a href="image.php?word=C00003834" title="C00003834" onclick="window.open(this.href, '_blank', 'width=500,resizable=yes, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">zoom in</a>
+
+		<br><br><br><br>
+                
+
+	    </td>
+        </tr>
+	</table>
+
+
+   </div>
+   </div>
+   <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+   </div>
+</div>
+</body>
+</html>

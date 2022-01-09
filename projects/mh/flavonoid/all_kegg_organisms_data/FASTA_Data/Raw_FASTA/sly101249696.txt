@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02665: 101249696</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847880">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847880">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sly:101249696 -->&gt;sly:101249696 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) fatty alcohol:caffeoyl-CoA acyltransferase (N)
+atgggaaccctataccaacctcttgaatcaacaatccaagacctaaaagtcacaatccat
+aacactagcttagtcttcccatcacaagaaactccaaaaaaacctatgttcttaccaaat
+attgatcaagtcctcaattttgatgtccaaacactacattttttcaatgcaaatcctgaa
+tttccaccagaaattgtgacggaacgactccgaatcgcgttatctagggttcttgttcct
+tatgattttttggctgggagacttaggatgaatcaagagtcaaaaagattggaatttgat
+tgtaatagtgatgctggagctgtatttatggttgcttcaagtgaattaacattgaatgag
+attggtgatttagtttaccctaatcctggttttagacaattaattgttcatgagaacatt
+gatattttggaaaaagatgataaaccactttgcattctccaggttacatcatttaagtgt
+ggtggttttgcaatgggcttttcaacaaaccacataacctttgatggaataagcttcaag
+actttcttacaaaacttagcttctcaagcatttgatgatgacaacaataaccctaagccc
+ttagccattgtcccatgcaatgatcgtaccctcctagccgctcgtaggcctccacgtgtc
+acgttcccacacgtcgaattactcaaattggatgtccccattggtgaagaactaaatgct
+aaagtatttgaaaccctacaagaagaacttgacttcaaaatatttaagttcaatccaagt
+gacattaattccttgaaggaaaaggcaaaagacgaaaatacccctaacgcgaaaatcacg
+agttttaatgtggtaacttcttacgtatggaggtgtaaggcgttatcgtatgatgatgag
+aacaattcagagcgagtttcaactgttttattcgcggttgatatcagacctaggttaaat
+ccaccattgccacaatcttacgctggcaacgctgtgctgacgtcctacgcgtcagccacg
+tgtcacgagcttgaagaagggccttttagtaaaattgttgatttagtgtcacaagggggt
+aaaagaatggatgatgaatatgcaagaagtgcaattgattggggtgagattaacaaagga
+tttccaaatggggaatttttgctttcatcatggtggaaattagggttttcacaagttgaa
+tacccttggggtaaaccaaaatatagttgtcctgtggtttgtcatagaaaagaaattata
+ttattattcccaaatattgatgatggtaaaagcaacaacaatgatggggttaatatattt
+gtggctcttcctcccaagcaaatgaacaaatttgagtcttattttaacaagtttttgttg
+gattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sly:101249696+nt">BLAST</a>
+</body>
+</html>

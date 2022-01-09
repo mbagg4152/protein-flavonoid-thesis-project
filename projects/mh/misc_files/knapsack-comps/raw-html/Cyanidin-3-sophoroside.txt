@@ -1,0 +1,190 @@
+
+<html>
+<!-- <head> -->
+<!-- NBDC Markup START -->
+<head vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+
+<title>KNApSAcK Metabolite Information - C00006658</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/cs">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="C00006658">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/info.css" media="all">
+</head><body 0="" onload="" >
+
+<div id="my_body">
+  <div id="my_header">
+      <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+      <img src="images/nap2.gif" border=0> </a></p>
+  </div>
+  <div id="my_main">
+    <div id="my_navigation">
+
+    </div>
+    <div id="my_contents">
+          <br>
+<!--	  input word = <font class="iw">C00006658</font><br><br> //-->
+     	  input word = <font class="iw">C00006658</font><br><br>
+
+<!-- <table class="d1"> -->
+<!-- NBDC Markup START -->
+	<table class="d1" vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+        <tr>
+            <th class="d1">Metabolite Information</th><th class="d3">Structural formula</th>
+        </tr>
+
+        <tr>
+            <td>
+               <table class="d3">
+                  <tr>
+                     <th class="inf">Name</th>
+                     <td colspan="4" class="inf">Cyanidin-3-sophoroside<br>Cyanidin 3-sophoroside</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Formula</th>
+                     <td colspan="4">C27H31O16</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Mw</th>
+                     <td colspan="4">611.16120995</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">CAS RN</th>
+                     <td colspan="4">38820-68-7,18376-31-3</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">C_ID</th>
+                     <td colspan="4" class="img2">C00006658
+<!-- 			C00006658<a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00006658" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+<!-- NBDC Markup START -->
+<!--			<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry"> //-->
+<!--			<span property="entryID">C00006658</span><a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00006658" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+                                       , <a href="/Twins/top.php?kword=C00006658&sword=50&mode=list1#res" target="_blank"><img src="images/TW.gif" border="0" class="img2"></a><br>
+<!--			</div> //-->
+<!-- NBDC Markup END -->
+                        
+		     </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChIKey</th>
+                     <td colspan="4">SXYMMDGPXYVCER-XWOBYZRTNA-O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChICode</th>
+                     <td colspan="4">InChI=1S/C27H30O16/c28-7-17-19(34)21(36)23(38)26(41-17)43-25-22(37)20(35)18(8-29)42-27(25)40-16-6-11-13(32)4-10(30)5-15(11)39-24(16)9-1-2-12(31)14(33)3-9/h1-6,17-23,25-29,34-38H,7-8H2,(H3-,30,31,32,33)/p+1/t17-,18+,19-,20-,21+,22+,23-,25-,26+,27-/m1/s1</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">SMILES</th>
+                     <td colspan="4">c1(cc(c2c(c1)[o+]c(c(c2)O[C@H]1[C@@H]([C@H]([C@@H]([C@@H](O1)CO)O)O)O[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O)c1ccc(c(c1)O)O)O)O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Start Substs in Alk. Biosynthesis (Prediction)</th>
+                     <td colspan="4"><a href="/CobWeb/top.php?word=&mode=met" target=_"blank"></a> </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Organism</th>
+                     <td class="or1">
+                        <table class="org">
+			 	<th class="or3">Kingdom</th>
+				<th class="or2">Family</th>
+				<th class="or1">Species</th>
+				<th class="or4">Reference</th><tr>
+<td class=org>Plantae</td><td class=org>Apocynaceae</td><td class=org2>Stapelia spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=0 title=Stapelia spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Aquifoliaceae</td><td class=org2>Ilex pubescens <a href='/KNApSAcK_World/top.php?word=Ilex%20pubescens' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006658&key=1 title=Ilex pubescens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Cynara scolymus <a href='/KNApSAcK_World/top.php?word=Cynara%20scolymus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006658&key=2 title=Cynara scolymus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Clusiaceae/Clusiaceae-Guttiferae</td><td class=org2>Garcinia mangostana <a href='/KNApSAcK_World/top.php?word=Garcinia%20mangostana' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006658&key=3 title=Garcinia mangostana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Convolvulaceae</td><td class=org2>Ipomoea purpurea <a href='/KNApSAcK_World/top.php?word=Ipomoea%20purpurea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006658&key=4 title=Ipomoea purpurea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cornaceae/Aucubaceae/Garryaceae/Helwingiaceae</td><td class=org2>Cornus spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=5 title=Cornus spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Crassulaceae</td><td class=org2>Cotyledon spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=6 title=Cotyledon spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Crassulaceae</td><td class=org2>Crassula spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=7 title=Crassula spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Crassulaceae</td><td class=org2>Tylecodon spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=8 title=Tylecodon spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Amphithalea spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=9 title=Amphithalea spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Coelidium spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=10 title=Coelidium spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Erythrina spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=11 title=Erythrina spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Hypocalyptus spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=12 title=Hypocalyptus spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Liparia spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=13 title=Liparia spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Grossulariaceae</td><td class=org2>Ribes spp. <a href='/KNApSAcK_World/top.php?word=Ribes%20spp.' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006658&key=14 title=Ribes spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Malvaceae</td><td class=org2>Abelmoschus spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=15 title=Abelmoschus spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Malvaceae</td><td class=org2>Thespesia spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=16 title=Thespesia spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Papaveraceae</td><td class=org2>Papaver bracteatum <a href='/KNApSAcK_World/top.php?word=Papaver%20bracteatum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006658&key=17 title=Papaver bracteatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Prunus cerasus <a href='/KNApSAcK_World/top.php?word=Prunus%20cerasus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006658&key=18 title=Prunus cerasus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Rosa spp.</td><td class=org><a href=information.php?mode=r&word=C00006658&key=19 title=Rosa spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Rubus idaeus <a href='/KNApSAcK_World/top.php?word=Rubus%20idaeus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006658&key=20 title=Rubus idaeus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Solanaceae</td><td class=org2>Nicotiana setchellii</td><td class=org><a href=information.php?mode=r&word=C00006658&key=21 title=Nicotiana setchellii > Ref.</a></td>
+</tr>
+</table>
+		     </td>
+                  </tr>
+               </table>
+            </td>
+	    <td class=img>
+<!--		<img src="/sun/MSdata/SD/C00006658.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'"><br><br> -->
+<!-- NBDC Markup START -->
+		<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+		<img property="image" src="/sun/MSdata/SD/C00006658.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'" />
+		</div>
+<!-- NBDC Markup END -->
+		<a href="image.php?word=C00006658" title="C00006658" onclick="window.open(this.href, '_blank', 'width=500,resizable=yes, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">zoom in</a>
+
+		<br><br><br><br>
+                
+
+	    </td>
+        </tr>
+	</table>
+
+
+   </div>
+   </div>
+   <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+   </div>
+</div>
+</body>
+</html>

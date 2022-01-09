@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05161: 110771536</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620859549">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620859549">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pavi:110771536 -->&gt;pavi:110771536 K09754 5-O-(4-coumaroyl)-D-quinate 3'-monooxygenase [EC:1.14.14.96] | (RefSeq) cytochrome P450 98A2-like (N)
+atgaacgatgcttttatgtatcgggtggcattcagaatccgagtgtgttcgagacacttg
+agagtgattgcatctctatctgtagtgtctcgaactctaaaccgctactctcttaggtta
+ttgcacacgtgccttcaagggaaaaatatcactgcatatgttataatacgacgatgcata
+ttaattataaggcttattatcacaaaacatccccgacctatttcagttgaatgggctatg
+gctgagttgattaagaacccgagggtgcaagaaaaggcacaagaggagctagatcgggtc
+atcgggttcgaacgggtaatgaccgaaaacgacttctcaaatctcccttacctgcaatgt
+gtagcaaaggaagcgttgcggttgcaccctccaactcctctaatgctcccccaccgagct
+aatgcccatgtcaagatcggtggctacgacatccccaagggtgcgagtgttcacgtaaac
+gtgtgggccgtagcgcgtgacccggcggtttggaaagacccgcatgagttccgaccagaa
+aggttcctagaggaggatgttgacatgaaggggcatgatttcagactacttccgtttgga
+gccggcaggcgagtatgcccgggagcacaacttagtgtgaatttggtggtgtccatgttg
+gggcatctattgcaccatttccgttgggctccagctgaagggatgaatccaaaggagatt
+gacatgtcggaaactccagggcttgtgacttatatgagaacaccattacaagccgtgcct
+actccaaggctcccctcgcatttgtacaagcgtgttgccgcagatatgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pavi:110771536+nt">BLAST</a>
+</body>
+</html>

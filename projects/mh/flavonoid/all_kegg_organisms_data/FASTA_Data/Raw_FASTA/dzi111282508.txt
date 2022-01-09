@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05242: 111282508</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841495">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841495">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- dzi:111282508 -->&gt;dzi:111282508 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) acetyl-CoA-benzylalcohol acetyltransferase-like (N)
+atggaagttcacatccaaacaagaaagttgataaagccatcgattccaactccaaatcac
+cttagagaattgaagttatcatgttttgatcagattgctcctccaacatacggttcattt
+gttttcttctttcctgctgatagctctatcagcacatccagcaaagatgaaaggctagaa
+aagctacaaaattcactgtcggaggtactaacctgcttttaccctctagctggtagatta
+gatcaagataggaacgtcattgattgccatgaccaaggggctgaatatttggaagctcaa
+gtgaatgccaatctaaaccaatttatcctggaagagctagactctaaattgctgaatcaa
+ttaaatcctttcccgaatgagcttgcctttactccaacagtcctggcggttcaaatcaac
+aaatttgattgtggtggtttagctattggtgccagtctttcacacaagtttgctgatgga
+tttacaatatttaccttcgtaaatggatgggctacttgttgccgcataggtgtagataga
+gtgaaatgtttaagttttgaaagcggatctcttttgcctgcaatatatacagctacggat
+aaaattccagtcccagatgataattcagaaaatcttatcacaaggaggtttattttccgg
+gaagctgctatatctgctctcaaagccaaaaccgttgccttggctggtgattcaccacat
+caaagccaccaaccttccagggtgcagctgttgattgccctcatatggaaggcacgcata
+gctctggctcaagcaaaacatgggtctttaaggaattcattactaatctttccttataac
+tttcgtcggaaaacagccatacctataccaccgaatgctggaggcaacctattcaggaat
+gtcactgtccgatttacagcaaatgaaagcaagctggaattgcaacacttggtaaatcta
+gtgggaaatgaactaaggcatgctgccgaatcttttgcaaagacagaacaagctggggat
+ttgttcttgtccgcaacaagttccttgagaaagatccatgaagaactaatcaaagtgaat
+acagatatttgtctccttacaagccactgtaaatttccctattatgaagctgattttggt
+tggggaaagcctggttggatagcaagtactcataagcctggagaaatggttttgttgatg
+gacaccaagtctgatagtggaattgaagcatgggtaaccttggaaccaagcaacatgcgt
+caattcgagcaagatcatgacattttggcatatagttgcaagcctgcagaatactactct
+taa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=dzi:111282508+nt">BLAST</a>
+</body>
+</html>

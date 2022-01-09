@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01087: 8272283</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620850105">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620850105">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- rcu:8272283 -->&gt;rcu:8272283 K00588 caffeoyl-CoA O-methyltransferase [EC:2.1.1.104] | (RefSeq) caffeoyl-CoA O-methyltransferase isoform X2 (N)
+atgaacccacttcctccgaaagggatcctccagagccatgctcttgaaaagtacatctat
+gaaactagtatatatcctagagagcatgaagaactcaagaatttacgggaaactacagtg
+gagaagtatggcagcaggagcatcatgtctgtgccagtagatgaagggctattcatagca
+atgcttgtgaagatcatgaacgccaggaggacattggaaattggtgtttttacaggctat
+tctctccttgccacagcgcttgctttgcctgatgatggccaggtaacagcaatagacata
+gataaagaagcttttgaagttggattaccattcatccggaaatcaggcgtagagcacaaa
+atcaatttcatcaaatcagaggccaagtcggtactaagtgaattattgagtaatgataag
+cccagggaggaatatgattttgcatttgtggatgctgacaagccaaactacaaacactac
+catgagcaattgctgaaacttgttaaggttggaggaattatagcgtatgataatacctta
+tggtttggttttgttgcgcaagaagaaaatgcagtgccagagcatatgaggcattcaaga
+aaagctatactggaaatcaataagtttttagctaatgatcctcgcatcgagatctcacaa
+gtttctgttggggatggtatcactttatgcaggcgtctttattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=rcu:8272283+nt">BLAST</a>
+</body>
+</html>

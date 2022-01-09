@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05351: 111808701</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841204">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841204">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cpep:111808701 -->&gt;cpep:111808701 K18368 caffeoylshikimate esterase [EC:3.1.1.-] | (RefSeq) caffeoylshikimate esterase-like (N)
+aaacgccatggttattttaattggtccaatagacgagcaattgagctcagacttccgcca
+ttccattcatcccattttttgtttcacctcttttcaactgccaaatcaccgtccatggcc
+gtggaactcagattcccctcgtcagagctttctttattttcccggaagtgtttcgctccg
+atcaatcaccgccaaaatgtcagattgcccttcacctgtccaaggaaaaccacccctgag
+tcaccgatgagttggggttctggtcaccgccttgttgttacagcgaagaaatcaccgatc
+gatggcgttccggcggagcttaacaaaatcgcctctcagaaattggactctgctccggcc
+cgccgccgggtccggtccgctttcatggagcttcaacagcagctcgatcactgcttattc
+aagatggctcctgctgggatcagaactgaagagtggtatgaatgtaattcaagaggcttg
+aatattttctgcaaaagatggtttcctgagagtgatgttggtattaaaggtgctgtgtgt
+ttctgccatggctatggcgatacctgcacgttcttctttgatggaattgctaggcacatt
+gctgcatctgggtatgccgtttatgcgatggactacccgggtttcggtctttcggaagga
+ttgcacggttacattcccagctttgatgaactagttgatgatgttatagaacagtacaag
+aagttcaaaggtagaccagaattgaatggattgcctcatttcatattaggacagtccatg
+gggggagctgttaccttgaaaattcacttgaaggaaccaaagctatgggatggagtggtt
+cttgtggctcccatgtgtaaaattgcagacgatgtcaaaccgcccgagcctgtgcttaag
+ctcttaaaactaatgtctcatgtcgtgccaaaagccaagcttctcccaaatgtcgatctc
+ggagaactcgctatccgagaaacaaacaaaaggaaactggcggtgtacaatgttacatca
+tatggcgatcggatgcgcgtgaaaaccgccatggaacttttaaaggcgacggatgatatc
+gagaaacaagtggagaaggtttcatcaccattactggttcttcatggagctgcagacaag
+gtgacagatcctaagattagtcgttttctatatgagaaagcgtcaagcaaggacaagact
+ttgaagctgtatgaagaaggttttcattgcatcctagaaggagaaccagatgaaagaatt
+tttactgtccttaacgatataatctcttggctagattcccgatgctcctcgacgtag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cpep:111808701+nt">BLAST</a>
+</body>
+</html>

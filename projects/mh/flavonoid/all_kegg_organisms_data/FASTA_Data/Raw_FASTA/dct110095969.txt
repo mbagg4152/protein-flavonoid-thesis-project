@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05027: 110095969</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838278">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838278">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- dct:110095969 -->&gt;dct:110095969 K23260 scopoletin glucosyltransferase [EC:2.4.1.128] | (RefSeq) scopoletin glucosyltransferase-like (N)
+atgtgctccgaagccaatcctctccatatgcttttcttccctttaacgatgcaaggccac
+atgctccctatggtcgacatggccaagatctttgccgtccatggtgcccgcgtcaccatc
+cttactactcctgttaatgccaccattattcgccccaatatcgatgactctgttcatctc
+cacatcatcccttttcccactgtcgaattcggcctccccgatgggtgcgaaaacaactta
+ttcatcctttctgatgacctacaagtcaatctcatgaaagctaactattcgcttcgccac
+acttttgactccgtggttgtagatctcagccccgactgtgttgtaactgatttattcttg
+ccatggacatatgatgttgctactgcgagaggtattttgaggcttgtctttcatgctact
+agcaacttcttagcctgcgccacgagtgctttacagcaatgcctcctaccagcaaacaag
+gttgagtcctttgtcttgcccggcctcccacatcgaatagagatgttaaaaacccaaatc
+atagacttcaacaaattagcaggaacgccaatggagttcatgatggagatacttaaggag
+gcggcagaggtggaagtgaagaactatggggcattgatgaatagtttctatgagctagag
+tctgaatatgcagaccacaaccgcgagagggtgggaagggtgtggaatgtcggcccagtt
+tctctatgcaacaaagaggtgatagataagtcaacaagaggtggggagtatccagcgttt
+gttaacgagtgcctgaaatggcttgacaaaaaacctacaggctcggtcgtgtacatgtgc
+tttggaagtatgagccttttctcggttgagcaattgagtgaaatggcgcttgggctcgag
+gcatcaagacatccatttgtttgggtgatgcggaatgagggcaatgattggattccaaag
+ggctatgaagagagaattaaagatgtagggatgttgataagaggatgggtcccacaacta
+gttatactaaatcatgatgcagttgggggatttgtgactcattgtgggtggaattctagt
+ttagaaggaattagtgcggggttgccgatggtaacatggccattgtatgcggatcaattt
+tttaatgaaaagcttttgatagatatattgaaggttgggataatggtgggctcaaaagtg
+aacacttttaatatggagacgaggccaattgtgaaggctatggtagtggagatggctatt
+aggagattgatgggggatgggatggaggcaaatgaaaggaggaggagggctatacaacta
+agggagatggccaacagagctgtggataagggagggtcatcttatgaggagatcaaaaat
+ttgatgaatgaattaattgatcgaaagaagcgtgtgtag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=dct:110095969+nt">BLAST</a>
+</body>
+</html>

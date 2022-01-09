@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05872: 105118503</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854832">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854832">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- peu:105118503 -->&gt;peu:105118503 K01188 beta-glucosidase [EC:3.2.1.21] | (RefSeq) beta-glucosidase 42 (N)
+atggcaaagaaagaggagttcttgaaggaacatgaatatttgaacgagaaagaagtgtcc
+cgctctgacttccctcctgattttatctttggagttgctacttctgcttatcagattgaa
+ggagccagcaacgaaggtggcaggggtccttgtatatgggacgcttttgcgcagtctaaa
+ggaaacatacttgatggaagcaatggtgatgtagcagtggatcattatcatcgatacaag
+gaagatattgagatcatagccaaactggggtttgatgcttatcgattttccatatcatgg
+tctcgaatcttccccgatggtttgggaaccaaagtcaacgatgaagggattgctttctac
+aataatgtcattaatgctcttcttgaaaaaggtattcagccatatgtaactttgtaccac
+tgggaccttcccctgcatcttcaggagtcaatggaagggtggttaaataaagaagttgta
+aaatattttgcaatctatgcagatacttgttttgcaagttttggtgatagagttaagcac
+tggatcacacttaatgagcctctccaaacagcaataaatggtcatgactctgggattttt
+gcacctggaagacatgaccaaccatcaacagaaccttatttggcttcacaccaccagatc
+ttggcccatgcagctgctgtttccatataccgaaacaagtacagggacaagcaaggggga
+gaaataggattggtcgttgactgtgaatgggcagaaactggttcaaacaaaacagaagat
+aaagttgcagcatctcgacgcctcgaatttcagcttggatggtacttgaatccattatat
+tacggagactatccagaagttatgcgtgaaatactgggagaacggctcccaaaattcacg
+gaggaagataaggagttgcttagaaacccaatggactttgtaggtctaaatcattacact
+tcaaggttcataactcatgcaacagagagccctgaagaatcctattactataaagcacaa
+tcgatggagagaagagctgaatttgaagggggcgagccaattggtgagaaggcagcatca
+gagtggctttatgtttgtccttggggactccggaaggttctcaattacctagctcagaaa
+tacaacaatcccacagtatatgttacagagaatggtatggatgatgatgacattgatgcc
+ccacttcatgaagttctggatgacaatctgagagttcgctattataaaggataccttgct
+tcagttgctcaggcaatcaaggatggagtacaagtgaagggatattttgcatggtcatta
+ctggacaactttgagtgggctcaaggttataccaagcgtttcggtttggtgtatgtggat
+tacaagaatgggctctctcggcacccaaaatcttctgcttattggttcttgcggttctta
+aaaggtgttgaagggaaaagcggcaaagaagagtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=peu:105118503+nt">BLAST</a>
+</body>
+</html>

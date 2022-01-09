@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01578: 9325047</title>
+<<<<<<< Updated upstream
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620835535">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620835535">
+=======
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849704">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849704">
+>>>>>>> Stashed changes
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aly:9325047 -->&gt;aly:9325047 K15506 cytochrome P450 family 98 subfamily A8 [EC:1.14.13.-] | (RefSeq) cytochrome P450 98A8 (N)
+atggttctttatctaatttcattactccctatcatcgtcgccaccgtcatgctttatcaa
+cggtggtggagatccaacataccgccgggaccaaagccaaagtttctgattgggaacctc
+caccaaatgaaaccactttggacgcattctttctcggagtggtcacagacttatggtcct
+atcatatctgtgtggatagggtcacagctcaccgttgtggtctccagctctgatttagcc
+agacaagtgttgagagacaaagaccatcaattgtctaaccgacacaggatcgcgaggatg
+actcagaccggtactgatcttgtttggtctgattacagtccacattatgtcaaactgagg
+aaactctgtacactcgaactcttctctctgaaaagcatcgagaatttcaggtcgttgaga
+gagatggaagcaagatcgatggttgtgtcgattctcaaggacttgatgagcgattcaggc
+gatgatcaggagcgaaaaccggtgattgtgaggaagtacctagctgcggttgttttgaac
+accatctcaagattaatgatcgggaaagagttcgggtctgaggaaggaaaggagtttaaa
+tcaatcgttgagaaagaacatcttctcagtggctcagggacgattctcgatcacgtctgg
+tggctcaaatgggtttcgtcttggttcatcagcgataaggaattcttagcccacaaggat
+cgcagaacaaagtggtttagaggagctgtaatggtggaagaagatgtagcaatagaggat
+cacaggggctttgttcggaaattgttagtgttgaaagagcagaaagagctaagcgaagag
+acggttggcggactagtctggaacatgttaaccgcgggtgctgacacaactgcagttgtt
+atcgaatgggctatggcagagatgatcaaatgcccggccgtgcaagaaaaggcgcaacag
+gagcttgattccgtggttggatccgaaaggttaatgtctgaatcagatatcccgaacctg
+ccatatctgcaatgcgtggttaaagaagctctccgtcttcacccgtcaacaccattaatg
+cttccacacaaagcaagcgaaacagtttgggtaggtgggtacaaggttcctaagggcgcc
+acggtttatgtcaatgtgcaggcgattgggcgagaccctgcaaactggataaacccgtat
+gagtttagaccagagcggttccttcaggaggaaactgatgttaaaggtcgagactttagg
+gttcttccgttcggatcaggaagacggatgtgtccagcggcacagctcagcatgaacttg
+atgacattggtgatgggaaatttgttgcattgcttctcatggagttcccctattcctgga
+gagaggattgacatgagcgagaatcctggattgctttgtaacatgaggactccactgcag
+gctctagctttgccgagagctgcagcaagagttatacctttacctttagattaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aly:9325047+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03547: 104452760</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620848794">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620848794">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- egr:104452760 -->&gt;egr:104452760 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) LOW QUALITY PROTEIN: peroxidase 43 (N)
+atggatctagaactctcacgggttcttgcactactcgcttattgttgcttgatgggaacg
+ggtaatgcgcagctcagattcggtttctacggccaaacctgcccttctgccgagcccata
+gtgagatccgtcgttcgaaatgcggtcatctccaaccccaacatggccgccatcttgctt
+cgccttcacttccatgactgctttgtcgagggatgtgatggttcgattcttatagagaac
+gggcgaagtgcggagaggaatgcgttcgggcaccaaggggtgggcggatttgaggtgatc
+gaggaagccaagaagcacctcgaggtcacttgccccggtgtcgtctcgtgcgccgacatt
+gttgccttagcggctagagatgctgtcgcaatggcaaatgggcctgattatgaggttccg
+acggggcgccgggatgggagggtgtcaaatgtgtcgctggccgaggacatgccggacgtc
+ggcaactccatccaacagctcaagtccaagttcttccagaaaggcctcaccgaaaaggac
+ctcgtcctcctaagcgccgcgcataccatcggaaccaccgcatgcttcttcatgacggac
+cgtctgtacaacttcatgcccggcggcggatcggacccttcgatcaaccccgacttcttg
+ccggagctaaagtcaatgtgcccgcagaacggcgacgtgaatgtgcggatgccaatcgat
+cacggcagcgagcagacattcgacgaccagatcctccggaacatcaggagcggatgggcc
+attttggagtcggacgcgaagctaaatgacgacccggtgacgcggagcgtgatcgaatct
+tacgtgggtctcttcaacccgatcttcgggccttccttcgaagcggaattcgtcgaatca
+atggtaaaaatgggacagatcggtgtcaagacggggtcaaatggagagatcaggcgggtt
+tgcagatcttttaactaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=egr:104452760+nt">BLAST</a>
+</body>
+</html>

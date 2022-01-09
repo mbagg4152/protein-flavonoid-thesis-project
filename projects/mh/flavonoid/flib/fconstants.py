@@ -5,6 +5,7 @@ from flib.data_types import Flav
 # other imports
 import os
 import sys
+import csv
 
 SEP = os.sep  # get the right slash. / for linux & mac, \ for windows
 
@@ -41,6 +42,9 @@ JSON_TST_MED = DIR_FJSON + 'test_med.json'
 JSON_TST_SHORT = DIR_FJSON + 'test_short.json'
 JSON_TST_SINGLE = DIR_FJSON + 'test_single.json'
 JSON_FLAV_NAMES = DIR_FJSON + 'flav_info.json'
+JSON_ALL_CODES = DIR_FJSON + 'kegg_codes.json'
+JSON_ALL_NAMES_CODES = DIR_FJSON + 'kegg_names_codes.json'
+NO_GENE_DAT = DIR_FJSON + 'no_gene_data.txt'
 
 # lists and dictionaries made from JSON files
 flav_list = get_json_data(JSON_FLAVS, JKEY)  # list of flavonoids of interest (FOI)
@@ -55,15 +59,25 @@ plant_full_list = get_json_data(JSON_PLANT_LIST, JKEY)  # full list of plant cod
 test_med = get_json_data(JSON_TST_MED, JKEY)  # testing list of plant codes
 test_short = get_json_data(JSON_TST_SHORT, JKEY)  # testing list of plant codes
 test_single = get_json_data(JSON_TST_SINGLE, JKEY)  # testing list of plant codes
-
-plant_dict = plant_dict_reg  # variable exists for ease of value change when testing
-plant_list = plant_full_list  # variable exists for ease of value change when testing
+kegg_list = get_json_data(JSON_ALL_CODES)  # list of codes for all kegg organisms
+kegg_dict = get_json_data(JSON_ALL_NAMES_CODES)  # dict for all kegg organisms
+plant_dict = kegg_dict  # variable exists for ease of value change when testing
+plant_list = kegg_list  # variable exists for ease of value change when testing
 
 flav_data_lists = []
 for k in flav_names_info:
     info = flav_names_info.get(k)
     tmp_flav = Flav(k, [], info.get('file'), info.get('code'))
     flav_data_lists.append(tmp_flav)
+
+with open(NO_GENE_DAT) as f:
+    fdat = f.readlines()
+    fdat = [fd.rstrip() for fd in fdat]
+
+# this holds the names of species + pathway combos that have no gene data. if for some reason, kegg
+# could add gene data for a specific combo, then that combo needs to be removed from the list or
+# else the combo will not be processed.
+no_data_names = fdat
 
 # keys for accessing dictionaries
 EKY = 'EC'
@@ -106,6 +120,6 @@ E_GGT = 'EC:2.4.1.74'
 E_SOA = 'EC:2.3.1.30'
 E_V1G = 'EC:2.4.1.136'
 
-def gfo(lbl, lst):
+def gfo(lbl, lst):  # get flavonoid object
     for item in lst:
         if lbl == item.code: return item

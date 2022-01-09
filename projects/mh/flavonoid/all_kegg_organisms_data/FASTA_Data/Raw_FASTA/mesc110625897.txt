@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05761: 110625897</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620852149">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620852149">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mesc:110625897 -->&gt;mesc:110625897 K23179 flavone synthase II [EC:1.14.19.76] | (RefSeq) licodione synthase-like (N)
+atgcccaaaccaacattttcttggcaacacactattaaaaacaaagagaagaaaataact
+aagatgattcttcaggacctcgtattctacgccattctctttctcctctcctactttctt
+ctcagaaccatctttcacatcacattacacggccaccgcgtgcaccttcctccaagtcca
+ctggccttaccaatcatcggccacctccatctcctagaccctctcatgcaccaagcctta
+cacaagctttcctctcgccatggccccttcatgcatcttcgccttggttcagtccagtct
+gttgtagtctccaaccctgaaatggctaaagaatttctcaagacccatgatcttacattc
+tcttatcgcatattcaaccaagccatcgattatcttacttataatgctgcgactccactg
+gcaccctatggctctctctggattttcattaaaaaactgagcatttctgagctcttaggc
+agccatactctcaacaagtttcttcctgtaagaacccaagagttgcattcttttcttgga
+ctattattcgataagtccaaatcaggcgagagtgttaatgtcacaaaggagatattaaga
+ttcacaaacaacataatctctcagatgatactaagttcaaggcgttcatcgacggccgat
+gaggatgaagaagccataaaactggtcagagaggtgacagcggtttttggagaatttaat
+atttctgattttatatggtttctaaggaactgggatttgcaagggtttcgaaagaagctg
+gagggaattcgtgggcgatatgatgttttgttagagaaaattatcacaaagcgtcaagaa
+gaaagaaaggagaagaactatagaagtgaaaatggatctgcgaaggattttcttgacctt
+ctgcttgatatcatggaagacaaaaactcagagatgcaactaagcagagatcatttgaaa
+ggcttagttatggactacctgacagctggtacagattcaacagcagtagcaattgaatgg
+gcagtagcagagatgatcaatcatccaatggagctgaagaaagcaagggaagagcttgaa
+agagttgtagggaaacaaaggctagtgcaagaatctgatgtttcaaatcttccatatctc
+caagcaattataaaggaaacatttaggcttcacccaccaattccactaatccttagaagt
+tccattgaagaatgcaaagtgaaagactacacaatctctaagggcaccttgctgatcgta
+aacctgtggtccattggcagagatcctgaaacctggaagaacccattagagtttcggcct
+gaaagatttttaccggcaagcggcaatgatcaaagttactgggcgggtcccgtagatgtt
+agaggccaacattatcagttattgccatttggtaccggaagaaggaattgctctggcatg
+tcctcagctatgcagattttgcctattacattggcatcgatgattcagtgcttcgattgg
+aaggtggtgagttcacggtcatcggaagttgacggtgataatgcagttgatatgactgaa
+aagcctggaatcacggctcctttagcccatgaccttgtgtgcgttccaatagcacgtttc
+agtcctcgcaatgcttccgacgatgcataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mesc:110625897+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03093: PHAVU_001G145600g</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1632839576">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1632839576">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvu:PHAVU_001G145600g -->&gt;pvu:PHAVU_001G145600g K25075 pterocarpan synthase [EC:4.2.1.139] | (RefSeq) hypothetical protein (N)
+atggccaagtccaccttcttcctttgccttaacctctgcttacttatctctgcggtcacc
+gccagttactatcaatctctgaccccaacgctgatgggtttccgggaggacaagttcacc
+caccttcacttcttcttccacgacgtggtcacggggcccaaccccagcatggtcattgtg
+gccgagcccaacggaaaagccaaggacgcccttcccttcggaaccgttgtggccatggac
+gaccccttgacggcgggacccgaacccgactccaaactggtggggaaggcgcaggggatt
+tacacttccatatcgcaggcggaaatggggctcatgatggtcatgaccatggccttcacc
+gacggagaattcaacggcagcaccatcagcgtcttggccagaaacatgatcatgaccgaa
+cctgtgagggaaatggccattgttggcggcactggggcttttcgcttcgctcgtggctat
+gctcaggccaagtttcactccgtcgatttctccaaaggcgatgccatcgtggaatacgac
+gttttcgtcaaccactattaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvu:PHAVU_001G145600g+nt">BLAST</a>
+</body>
+</html>

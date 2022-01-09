@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05044: 104762900</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844459">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844459">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csat:104762900 -->&gt;csat:104762900 K12356 coniferyl-alcohol glucosyltransferase [EC:2.4.1.111] | (RefSeq) UDP-glycosyltransferase 72E3-like (N)
+atgcatatcacaaaaccacatgccgccatgttttccagtcccggaatgggccacgtcatg
+ccggtgatcgagctagctaaccgtctctccgctaaccacggcttccatgtcaccgtcttc
+gtccttgaaaccgacgcagcctccgctcagtcaaagttcctacactcaaccggcgtggac
+atcgtcgctcttccttcgccgaacatttctggtttagtggacccggaagaccacgtggtg
+accaagataggggtcattatgcgtgaggccgttccagccctccgatcaaagatcgatgcc
+atgcatcaaaagccaacggctctgatcatcgacttgttcggcacagatgcgttatgtctc
+ggagcggaactaaacatgttgacttatgtgtttatcgcttccaacgcgcgttatctcggt
+gtttccatatattatccaactttggacaaagatatcaaagaaaaccacacagtgcaaaga
+aacccgctccctgtaccggggtgtgaaccggttagatttaaagatactttggatgcatat
+ctggttccggacgaaccggtgtaccgggatttggttcgtcactgtctggcttacccaaag
+gctgatggtattttggtgaatacatgggaagagatggagcccaaatcattgaaatctctt
+caagacccaaagcttttgggccgggtcgctcgtgtaccggtttatccggtcggtccgtta
+tgcagaccggtacaatcatcaaagaacgaacatccggtttttgactggttaaacaaacaa
+gcggatgaatcggttctttatatctcattcggaagtggtggttctcttaccgctaaccag
+ttaaccgaattggcgtggggactcgagcagagccagcagcggttcgtatgggtggttcga
+ccaccggttgacggctcttcgtgcagcgagtatttctcggctaacggcggtggaaccaaa
+gacaacacgccagagtatctaccagaagggttcgtgactcgtacttgtgatagaggtttc
+gtgatcccatcatgggcaccgcaagctgaagtcctggcccatcgggccgttggtgggttt
+ttaacccactgtggttggagctccacgttggaaagcgtcgttggtggcgttccgatgatc
+gcatggccgcttttcgccgagcagaatatgaatgcggcgttgctcagcgacgaactaggt
+gtcgccgtcagagtggatgattcagaggaggcgatttctaggtcgaagattgaagtgttg
+gtgaggaaggttatggctgagaaggaaggtgaggagatgagaatgaaagtgaaaaagttg
+agagacacggcagagatgtcgtcgagctttgacggtagtggttcagcgcacaagtcgctt
+tgcagagttacgaaggagtgtcaacagtttttggaacgtatcggggacttggcacgtggt
+gcgtag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csat:104762900+nt">BLAST</a>
+</body>
+</html>

@@ -1,69 +1,29 @@
-import sys
-import os
-import re
-from paconstants import *
 from urllib import request
 from urllib.error import HTTPError, URLError
-import urllib.parse
 
-new_dir_plants = '..' + SEP + 'misc_files' + SEP + 'ks_plant_parse'
-comp_dir = '..' + SEP + 'misc_files' + SEP + 'ks_comp_parse'
-ks_plants_csv = new_dir_plants + SEP + '000_knapsack_data.csv'
-ks_chem_csv = comp_dir + SEP + '000_ks_chem_data.csv'
+from paconstants import *
+
+new_dir_plants = '..' + SEP + 'misc_files' + SEP + 'knapsack-plants'
+comp_dir = '..' + SEP + 'misc_files' + SEP + 'knapsack-comps'
+ks_plants_file = new_dir_plants + SEP + 'processed_plants.tsv'
+ks_chem_file = comp_dir + SEP + 'processed_compounds.tsv'
 plant_flavs = {}
 flav_orgs = {}
 PLANT_PARSE = True
 
-
 def main():
-    try:
-        os.mkdir(new_dir_plants)
-    except FileExistsError:
-        pass
-    try:
-        os.mkdir(comp_dir)
-    except FileExistsError:
-        pass
-    for key in flav_dict:
-        tmp_name = flav_dict[key]
-        tmp_url = URL_KNAP_CHEM + key.strip()
-        tmp_fname = comp_dir + SEP + tmp_name + '.txt'
-        get_knap_file(tmp_fname, tmp_url)
-        parse_chem_file(tmp_fname, tmp_name)
-
-    ks_file = open(ks_chem_csv, 'w')  # make file for outputting the knapsack data
-    ks_str = ''
-
-    for key in flav_orgs:
-        if len(flav_orgs[key]) > 0:
-            for item in flav_orgs[key]:
-                ks_str += item + '\t' + key + '\n'
-
-    for key in plant_dict:
-        tmp_val = plant_dict[key]
-        tmp_url = URL_KNAP_ORG + tmp_val  # fill out URL for the plant
-        tmp_url = tmp_url.replace(' ', '%20')
-        tmp_file_name = new_dir_plants + SEP + key + ".txt"  # temporary filename for the downloaded page
-        get_knap_file(tmp_file_name, tmp_url)  # download the page for the plant
-        parse_plant_file(tmp_file_name, tmp_val)  # parse the downloaded file
-
-    ks_file.write(ks_str)  # write the formatted string to the file
-    ks_file.close()
-
-    ks_file = open(ks_plants_csv, 'w')  # make file for outputting the knapsack data
-    ks_str = ''
-
-    for key in plant_flavs:
-        if len(plant_flavs[key]) > 0:  # at least one entry was found for the plant
-            for item in plant_flavs[key]:
-                # add to the output string such that the data is written in CSV format
-                ks_str += key + '\t' + item[0] + '\t\"' + item[1] + '\"\n'
-        else:
-            ks_str += key + '\n'
-
-    ks_file.write(ks_str)  # write the formatted string to the file
-    ks_file.close()
-
+    try: os.mkdir(new_dir_plants)
+    except FileExistsError: pass
+    try: os.mkdir(new_dir_plants + SEP + 'raw-html')
+    except FileExistsError: pass
+    
+    try: os.mkdir(comp_dir)
+    except FileExistsError: pass
+    try: os.mkdir(comp_dir + SEP + 'raw-html')
+    except FileExistsError: pass
+    
+    # do_chem_parsing()
+    do_plant_parsing()
 
 def get_knap_file(name, url):
     if not os.path.exists(name):
@@ -73,6 +33,23 @@ def get_knap_file(name, url):
         except HTTPError or URLError or InvalidURL or UnicodeEncodeError:
             print('err getting page')
 
+def do_chem_parsing():
+    with open(ks_chem_file, 'w') as f:
+        for key in knap_flav_dict:
+            tmp_name = knap_flav_dict[key]
+            tmp_url = URL_KNAP_CHEM + key.strip()
+            tmp_fname = comp_dir + SEP + 'raw-html' + SEP + tmp_name + '.txt'
+            get_knap_file(tmp_fname, tmp_url)
+            parse_chem_file(tmp_fname, tmp_name)
+        
+        ks_str = ''
+        
+        for key in flav_orgs:
+            if len(flav_orgs[key]) > 0:
+                for item in flav_orgs[key]:
+                    ks_str += item + '\t' + key + '\n'
+        
+        f.write(ks_str)  # write the formatted string to the file
 
 def parse_chem_file(file_name, chem_name):
     file = open(file_name, 'r')
@@ -83,71 +60,50 @@ def parse_chem_file(file_name, chem_name):
         if len(tmp_plant) > 0:
             flav_orgs[chem_name].append(tmp_plant[0])
 
+def do_plant_parsing():
+    global plant_flavs
+    
+    for key in plant_dict:
+        tmp_val = plant_dict[key].split()[0] + ' ' + plant_dict[key].split()[1]
+        
+        # plant_flavs[tmp_val] = []
+        tmp_url = URL_KNAP_ORG + tmp_val  # fill out URL for the plant
+        tmp_url = tmp_url.replace(' ', '%20')
+        tmp_file_name = new_dir_plants + SEP + 'raw-html' + SEP + key + ".txt"
+        get_knap_file(tmp_file_name, tmp_url)  # download the page for the plant
+        parse_plant_file(tmp_file_name, tmp_val)  # parse the downloaded file
+    
+    with open(ks_plants_file, 'w') as f:
+        ks_str = ''
+        for key in plant_flavs:
+            if len(plant_flavs[key]) > 0:  # at least one entry was found for the plant
+                ks_str += key + '\t' + '\t'.join(plant_flavs.get(key)) + '\n'
+            else: ks_str += key + '\n'
+        
+        f.write(ks_str)  # write the formatted string to the file
 
 def parse_plant_file(file_name, plant_name):
-    # print(plant_name)
-    file = open(file_name, 'r')
-    lines = file.readlines()  # each metabolite line begins with this HTML tag
-    plant_flavs[plant_name] = []
-    for line in lines:
-        tmp_line = line
-        flav_match = 0
-        syn_match = 0
-        rel_match = 0
-        # some entries don't have a CAS ID. if nothing is found using regular expression
-        # testing, then the flavonoid name will follow right after the knapsack ID
-        tmp_has_cas = re.findall(RE_HAS_CAS, line)
-        tmp_no_cas = re.findall(RE_NO_CAS, line)
-        tmp_list = []
-
-        if len(tmp_has_cas) > 0:
-            tmp_id = tmp_has_cas[0][0]
-            tmp_name = tmp_has_cas[0][2]
-        elif len(tmp_no_cas) > 0:
-            tmp_id = tmp_no_cas[0][0]
-            tmp_name = tmp_no_cas[0][1]
-        else:
-            continue
-        tmp_list.append(tmp_id)
-        tmp_list.append(tmp_name)
-        for key in flav_list:
-            tmp_cleaned = tmp_name.replace('(+)', '').replace('(-)', '')
-            tmp_cleaned_nf = tmp_name.replace('(', '').replace(')', '').replace('+', '').\
-                replace('-', '')
-            tmp_list[1] = tmp_cleaned
-            # print()
-            if key.upper().strip() in tmp_cleaned_nf.upper().strip():
-                # print('matched')
-                flav_match += 1
-                plant_flavs[plant_name].append(tmp_list)
-                continue
-
-        # if flav_match == 0:
-        #     for key in flav_synonyms:
-        #         for flav in flav_synonyms[key]:
-        #             if flav.upper().strip() == tmp_name.upper().strip():
-        #                 syn_match += 1
-        #                 tmp_list[1] = '{' + key + ' ALT NAME} ' + tmp_name
-        #                 plant_flavs[plant_name].append(tmp_list)
-        #             elif flav in tmp_name:
-        #                 tmp_list[1] = '{' + key + ' REL} ' + tmp_name
-        #                 plant_flavs[plant_name].append(tmp_list)
-        #
-        #     if syn_match == 0:
-        #         for key in flav_relatives:
-        #             for flav in flav_relatives[key]:
-        #                 if flav.upper().strip() in tmp_name.upper().strip():
-        #                     rel_match += 1
-        #                     tmp_list[1] = '{' + key + ' REL} ' + tmp_name
-        #                     plant_flavs[plant_name].append(tmp_list)
-        #         if rel_match == 0:
-        #             for flav in flav_list:
-        #                 if flav.upper().strip() in tmp_name.upper().strip():
-        #                     tmp_list[1] = '{' + flav + ' IN NAME} ' + tmp_name
-        #                     plant_flavs[plant_name].append(tmp_list)
-
-    file.close()
-
+    global plant_flavs
+    with open(file_name, 'r') as file:
+        lines = file.readlines()  # each metabolite line begins with this HTML tag
+        
+        for line in lines:
+            has_cas = re.findall(RE_HAS_CAS, line)
+            no_cas = re.findall(RE_NO_CAS, line)
+            
+            if len(has_cas) > 0:
+                tmp_id = has_cas[0][0]
+                tmp_name = has_cas[0][2]
+                knap_org_name = (has_cas[0][3] + '' + has_cas[0][4] + ' ' + has_cas[0][5]).strip()
+            elif len(no_cas) > 0:
+                tmp_id = no_cas[0][0]
+                tmp_name = no_cas[0][1]
+                knap_org_name = (no_cas[0][2] + '' + no_cas[0][3] + ' ' + no_cas[0][4]).strip()
+            else: continue
+            if knap_org_name not in plant_flavs.keys(): plant_flavs[knap_org_name] = []
+            for key in knap_flav_dict:
+                if key.strip() in tmp_id.strip():
+                    plant_flavs[knap_org_name].append(knap_flav_dict.get(key))
 
 if __name__ == '__main__':
     main()

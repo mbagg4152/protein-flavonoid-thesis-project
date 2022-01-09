@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01496: SELMODRAFT_104600</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854596">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854596">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- smo:SELMODRAFT_104600 -->&gt;smo:SELMODRAFT_104600 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) hypothetical protein (N)
+atgcccatcgtcctcttctacgagaacgcccccgccggagcagccgcgcgcatcgagtcg
+gggctcgcaaccgtgctggatcacttcccggagctggcggggcggatcgggcgcgacgag
+ctgggccgccactgcatccatctcaacaacgaaggcgcgatcttcgtcgaggcggtgtgc
+tcctccgagctggctcccttcctggacaagcgcggcaacgacgtcaaggatctcgtcggc
+tcgtcgacgctggagctgggcgatgggatgaaccgcgtgccgctcatcatccaggtgacg
+cgcttcgcttgcggggggctggccctcagctgggagggacaccaccgcgtgtgcgatggc
+tccgcccacacgcagttcttgctcaactgggcatctgctgcaagaaccggatccctcact
+ccaggattcgtcccgctcatccacgaccgatctttcttgtctcccagagatcccccggtc
+gtggaggatccactagtggagttcgtccacaagcccatgtcgcgcaccaccgtcccgggg
+caagaggtcctcactctcacggaaaacttgacgagcaagcagatctcccacctcaaatct
+ctctgcgggaacaaatacaccacctacgagactttgagcgcgcacttctggaggtgcatg
+accgcggccagggacttcgaagaccggagcactctggtcgggcatttttgtcccgcgaat
+ggtcgttccatcctcaatgccccgcccgggttttttggcaacgccatttaccacaccttc
+gtgcagacgagcgccgcggatctgctggatggatcactggagcacgccgcggggctcatc
+cggcaggccgtcaagcgcgccagcaaccgggtgtttctcgagtcggtgattgactacctt
+gcgctggagcaggcgggcgaggatgatcggccgccgcaggccgaggccaaggaccagagc
+tggatcccgaatgtcatgatcccgtgctggtcgaggtttccgctgtatgaggttgacttt
+gggtttggcgatccgttccggttctccaccgtgaatgtggggatcgagggggtgttcacg
+attgggccgccgcgcaaggacgggatcacggaggtgctcatcaatgtgcgcaaggagcac
+gcccagagcctgctcgctcacctcggcaactaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=smo:SELMODRAFT_104600+nt">BLAST</a>
+</body>
+</html>

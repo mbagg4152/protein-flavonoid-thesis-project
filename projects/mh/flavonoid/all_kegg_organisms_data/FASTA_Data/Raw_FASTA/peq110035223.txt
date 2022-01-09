@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05601: 110035223</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847937">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847937">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- peq:110035223 -->&gt;peq:110035223 K01904 4-coumarate--CoA ligase [EC:6.2.1.12] | (RefSeq) 4-coumarate--CoA ligase-like 5 (N)
+atggcgaccacgcctgcgccggagattgaccccagaagcggctattgcattgcgacgaag
+acattccacagcctctaccctcggttcactcttccgtgcgagtccctcccactctcagta
+gcttccttcgctatatccctcctacccacccctcttccaactaaccccgcattcatcgac
+tccgaatctggccgctctctcagctacccggaattcctctctcaagctcgagtccttgca
+gccaaccttctatcccgcctcagcctatcccccggggacgtggcactcatcctctcaccc
+gctcgcctcgagattccgatcctctactttgctctcctctctatcggcgctgtactctgc
+ccaactaaccctttcagcaccccttccgagctttcccgtcagattcacctcgttcgaccg
+aagattgcctttgctatctccgccgctgcgcctaatcttcccgattctctcctcacgatt
+ctcatagactcaccccgcttccaatcactcatccaaacccctaattcccctctcccgcca
+gcaccggtggtcagacaatcggactcatccgcgatcctttactcgtccggtacgacgggg
+cgggttaagggagtggtcctcacccaccgcaacctcatcgcgctcctccactctgcaaag
+cttgagcgggaccagccggcggtggtactcttcacaattccattgttccacgtcttcggt
+ttcttcatgctgctgcggatggcagcatcggggcagacgtcagtgcttacggaacggttc
+cattttgccgcgatgttgcaggcagtggagaagtatcgcgtaacctttatgcctgtctcg
+ccaccgctcctgctggcaattttgaagtccgatgaggttggtcggagggacctctcatct
+ctggagtctcttggatgtggcggtgcgccgctcggctgcgaggtttcggaacgcttccgc
+gctcgcttccctgccatccaaatcatccagggttatgggcttaccgagacggggggcggg
+attacaactccggtagcgaccgaagtgttggggttggtgggcaggatctcggcgaatctt
+gaggcgaggattgtagatccagattcgggggaggcgttgcccccgggcaataggggtgaa
+ctctggcttcgtgggccgaccattatgaaaggtagttccttgtttgttctatgttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=peq:110035223+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05601: 110019056</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849559">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849559">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- peq:110019056 -->&gt;peq:110019056 K23260 scopoletin glucosyltransferase [EC:2.4.1.128] | (RefSeq) scopoletin glucosyltransferase-like (N)
+atggacactgcaaacagccgagaaacaacgcagcagccaccactccgcggcttcatcttc
+cctctgctaagcccaggtcacatgatccctctcatcgacatcgccaaactcctctcccgc
+cgcgacgtctcccccacaatcatcaccacccccggcaacgaatccctcgcccgcccggcc
+atcgaccgcgccaattcagactcttctcccacagtctccctcccaattgatctcatcctc
+ctccctttccctccctccgccaccgacctactcccccctggcaaccgcgaaaatctcact
+aaactccctcccttccatttttctcacctcatggccgctatccccaccctccgcccatct
+ctccacgaccttctctgcgtccatgagagtctagccctcattaacccactagagcacttc
+tccaaagatgacgcccgttccattctcattgacgatctcccgtaccccatcgagttaacg
+aaaccggagattcacgaaatcttcaattttcagccgactcttcaattgtttagagaggcc
+gaggagaagagcttcggagtggtggttaattctttctatgagctggaaccggcttatgta
+gatatttttcgtagcggtcgggctggtcgccgagcctggttcgtcggtccggtttcatta
+tctaatccggaggatgataaaatcgacagttcgaaccggggcagccaggcacacctggac
+acggccccactgttgagttggctcgacgcccagccggcccgatccgttgtatacacctgc
+ttcggtagtctctgccagttcgatgcggctcagatgcgggagaccgcgatcgggcttgag
+gcgagcgggcaacggtttatatgggccgtgagggattggcaaggggcagcggcggagacg
+atggagtggctgccggaggggtttgaggagagggtggaggggaaggggtgggtggtgagg
+ggatgggccccgcagatagcgatacttggacacgtggcggtgggtgctttcgtgacgcac
+tgcgggtggaactccacgctggagggcttggcggccgggttgccgttggtggcgtggccg
+ttgatgtacgagcagtttgtgaacgagagattgattacggaggtgttgaaggtgggtgtg
+agggtgaggaagggggcggcggacgtgaaggcggcggaggtggcgggggcggtgaggaga
+gtgatggctgatggtgaagaggcggaggggtttcgaaggcgggcgagggagttggcggcg
+tccgcgacgcgaaggcagctatggaggtgggtgggtgttcgtacgaggatgttgggcgga
+tggtggaggaattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=peq:110019056+nt">BLAST</a>
+</body>
+</html>

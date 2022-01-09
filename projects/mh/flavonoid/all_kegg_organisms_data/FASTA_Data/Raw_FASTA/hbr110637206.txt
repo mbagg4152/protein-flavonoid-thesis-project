@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05150: 110637206</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844621">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844621">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- hbr:110637206 -->&gt;hbr:110637206 K11188 peroxiredoxin 6 [EC:1.11.1.7 1.11.1.27 3.1.1.-] | (RefSeq) LOW QUALITY PROTEIN: 1-Cys peroxiredoxin (N)
+atggtcctcttcaattctatccattctccactctcaacctcactgccacttcagaaaagg
+aaaacacaagccttgctttgtttatttctagtcttcaacttgccaggactcacccttgga
+gacactattccgaatcttgaagttgaaagcacccatggaatcatcaaactccatgattat
+atagatacctggaccattcttttctcccacccaggcgatttcacgccagtgtgcaccact
+gaacttggccagatggctgcttatgctccagagttcagtaagagaggggttaaactattg
+ggtttgtcctgcgatgatgttctttcccacattgagtggattaaggacattgaagcatac
+accccaggaagcaaggtgacgtatccaattattgcagatcctnntaatcaacttaacatg
+gtggatccagatgagaaagactcctcggggaacaatctcccatctcgggctctgcatatt
+ttgggttctgataagaagatcaagctaagctttctttatccagcaagtacgggcaggaac
+atggatgaagtgataagggtcttggaatccctgaagagggcagcaaaacacaagattgcg
+actcctgtaatttggaaaccaagggatccggtgctaatctctcctagtgtgtcaaatgat
+gaggccaaaaagatgtttccccgggaatacaagactgttaaccttccttcagggaaggaa
+tacatgcgccttaccaatgtcgactag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=hbr:110637206+nt">BLAST</a>
+</body>
+</html>

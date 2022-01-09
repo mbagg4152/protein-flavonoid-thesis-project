@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01077: 18101362</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840194">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840194">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pop:18101362 -->&gt;pop:18101362 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase (N)
+atggtgaggatagatattgagattgtttcaagagaaatcatcaaaccatcttcaccaata
+gttcagcataaaaaaccctacaaactatcccttttagaccagcttactcccgcaacttac
+tcctccattattttcttctatccaaatatgaacgatgtcaattccaatagtatcacaaaa
+accagaactgatcacttaaagaaatctctctcagagactcttaatatctactacccttta
+tctggaagggtaaaggataaccttttcattgattctttcaatgaaggagttccatccatt
+gaagcccaagttaattgttgcctgttcgatttccttaaacactttgagattgagtcgttg
+aaccatttccttcccttccaaccctattccaaggaagacatgaatgcacctttgatgtca
+atacaagttagcaggtttacttgtggaggaatggcagtgggcttttctgcttcacacaag
+ctcgtggacggagcaacatttaaggctttccttacagctttgacttttatatcccgaggt
+gattgcaatgatgttaaacaacctgatttcgaacaggcatcgctcctttttccacccaga
+aattcacttccacaaaaccatttatcactaatggaaaccttgtggttcacggaaggaaat
+tacattacaagaaggttggtctttaatccaaaagcgatagccatgttaagggccaaggcc
+aaagctggcaggcctgatgctaagccaactagaattcaaacgttgacgtgtttcatttgg
+aaatgttgtttggccgcttcaaaggccatatcaggttcaccaaaaccatccattttggtt
+gaagcggtcgatctgcggtcgcgaacaaagccgcccatctctgacacttccactgggaat
+gtcttttggtgggcaactgcacttgttaaccccatgggcacaaaaacagagttgcctgaa
+ttggttaacatattgaatgaagccactgcactctatgatagtgattacacacaaaccctt
+caaggtggagaagggtttaaaaccatgtctgaatactgtaaccagctagaggagttattt
+tctcttgaaaagccagatatatttgcaattactagctggtgtcattctggtttcacaaag
+accaactttggatggggagagcccatctgggctggtcacatgggaaaggccggctctgct
+ttcaaaaatctcaccatgttcattgaaaccaaagatggtaaaggcattgaggcatgggtc
+accttagatgaggaaagaatgaccatcctggaacgtgatcctgagttcctggcttttgca
+tctccaaatcccaagatttctcccctcaatatcatctctgtgttataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pop:18101362+nt">BLAST</a>
+</body>
+</html>

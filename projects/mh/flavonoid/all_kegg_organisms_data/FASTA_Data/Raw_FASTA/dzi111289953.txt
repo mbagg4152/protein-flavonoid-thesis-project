@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05242: 111289953</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841490">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841490">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- dzi:111289953 -->&gt;dzi:111289953 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) salutaridinol 7-O-acetyltransferase-like (N)
+atggagatgaaagttcaatttatctctagagaaatcatcaagccttcatctccaactcca
+taccacctaagaacacataagctttccctttttgatcagctggcgcctcccgtttacatc
+ccagttgttcttttttactcagctacagctgaaaccagtcctaccaaaacgtctggtctc
+ctgaaaagttccctctcgaaaacattaacccacttctacccatttgcaggacgagtcaag
+gattgttacactatagactgtaatgatgacggtgccacctatattgaagctcaggtagac
+gctgacatggctgttgtccttaaagaaccgggggtcgatatgctgctgcagctactccct
+tgcgatccgcttgaaaagctacctgagccaagtgctcaggtaatggtagctgttcaggtc
+aattactttgcttgtggtggaatgacaatctgtgtttgtatcaggcatgtggttgctgat
+gcatcagccgctgctagctttgttaaaagctgggctgcagttgctagaggcatcaataca
+gaactcgatgctgtaatttatgactgcaccaatctcttttccccacaagatttatcaggc
+ttattgaagacagttggagagaaacagaatgtcctgctagatgaagttgtgacaaagagg
+ttccttttttatggctctaagatagatgctttaagaaatgaaattggcaatgggctgtgt
+ctgtatcgtccaacgcgtgttgaagctgtgtcctcgctcatttggaacgctttaataggt
+ggtgacactgaaaataatgaaatagttctcatgcatatggcgacaatttctgtgaatttg
+cgaaagagaatggatcctccattcccggaactgtgtataggaaacatctttcatgtagca
+aaaatggcgaattcagtcatggaaaagaccacaagctgcaagagtttagcagaaaaaatc
+cacgagtcaatatgtaagaccaatgataagcacgttaggcagttttatggaagcggtgca
+cacttgaatgtcatgaaaaacctggctgaacaaattggaaagaattcaaaaacaagggtt
+tttaacttcagtagttggtgcagatttccattttatgagactgattttggatggggaaag
+cctgtttggtttggaacagccctgaagcttaacaaacttgccattttcttggataccagc
+gatggaaaaggcattgaagcatggattggattaacaaaggaagaaatgacaaaacttgaa
+caagatcctggaattcttgcttatgcttctttcaatccaagcacatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=dzi:111289953+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,58 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Setaria italica</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body 0="" onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Setaria italica</font><br><br>
+   	      Number of matched data :11 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00004436 target="_blank">C00004436</a></td><td class="d1">135043-85-5</td><td class="d1">8-Hydroxyluteolin 8,3'-dimethyl ether 7-glucoside</td><td class="d1">C23H24O12</td><td class="d1">492.12677623</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006168 target="_blank">C00006168</a></td><td class="d1">11003-05-7</td><td class="d1">Adonivernith</td><td class="d1">C26H28O15</td><td class="d1">580.14282023</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006200 target="_blank">C00006200</a></td><td class="d1">64661-76-3</td><td class="d1">Flavocannabiside</td><td class="d1">C27H30O16</td><td class="d1">610.15338491</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006227 target="_blank">C00006227</a></td><td class="d1">124934-30-1</td><td class="d1">Scoparin 2''-O-xyloside</td><td class="d1">C27H30O15</td><td class="d1">594.15847029</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006282 target="_blank">C00006282</a></td><td class="d1">124902-15-4</td><td class="d1">Scoparin 2''-O-glucoside</td><td class="d1">C28H32O16</td><td class="d1">624.16903498</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006376 target="_blank">C00006376</a></td><td class="d1">10576-86-0,11044-10-3</td><td class="d1">Vitexin 2''-O-xyloside</td><td class="d1">C26H28O14</td><td class="d1">564.14790561</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006412 target="_blank">C00006412</a></td><td class="d1">124934-29-8</td><td class="d1">Orientin 2''-O-xyloside-6''-ferulate</td><td class="d1">C36H36O18</td><td class="d1">756.19016435</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00013716 target="_blank">C00013716</a></td><td class="d1">126394-59-0</td><td class="d1">Setaricin</td><td class="d1">C22H22O11</td><td class="d1">462.11621155</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00013735 target="_blank">C00013735</a></td><td class="d1">165747-37-5</td><td class="d1">3,6,7-Trihydroxy-4'-methoxyflavone 7-rhamnoside</td><td class="d1">C22H22O10</td><td class="d1">446.12129692</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00020026 target="_blank">C00020026</a></td><td class="d1">31005-07-9</td><td class="d1">Setarin</td><td class="d1">C12H10O3</td><td class="d1">202.06299419</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054681 target="_blank">C00054681</a></td><td class="d1">142942-85-6</td><td class="d1">9,19-Cyclocholesta-7,20-diene-3,14,26-triol</td><td class="d1">C27H42O3</td><td class="d1">414.31339521</td><td class="d1"><font color=#FF00BF>Setaria italica</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

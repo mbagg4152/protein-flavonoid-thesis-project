@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02990: 18429918</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620845320">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620845320">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- atr:18429918 -->&gt;atr:18429918 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) BAHD acyltransferase At5g47980 (N)
+ctcggacttatagcggaatcccccctcgaagaccttgtctctctcctcccatgccatcct
+ttctctgtacgctccgattctgttgcttgcgtacaggccacccacttcggttgtggagcc
+attgccctagctgtctgcgccgctcataaggttgtcgatgctgcctctctcgcttctttc
+atcttgacatggtcccgcattagccgaggagaccttccttcctcctcccccacattcgac
+tcccacgccatcttcccaccccaagacatgacatgccttgacagcgattgcactccaaaa
+cagaacccggccgagccgctggtgacccatgtcttcgtcttcgagccccaaaccatcaaa
+tcactcaaggcttcatgcatggttctaggaatcgtcccgacaacggtcgaggcggtctcc
+attctcatatggcggtccatctcaaaggatggccaaccctctggattggcgcacgtcata
+aacatacgtcaggctctcgagcccccgctccccgaaggctcattcgggaatgttgtctta
+ggaacattcgcagaggatcgtagtggcagtggtgggaacgaggagatggtgagggcagca
+atacgcagtgtggacaaagagtatgtgaagaaggtgagggggaggccgatgggtctggtg
+gagagtatggcgaggatgatggagctgtggagggacgaggggacagcattcgtcgggctc
+acgagctggtaccggtttccaatttacgggaatgacttggggtgggggcgaccggtgtgg
+gcgagcccaggtggggcttgcatgccgggggtggtgaagctgatgccaaccagggacact
+ggcggggtggagatgtgggtcactctgccgcgacaagacatggacctgttcgagaggtgc
+cctcagatctccgcctactgctcgaggcgattttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=atr:18429918+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T06020: 112178180</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844651">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844651">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- rcn:112178180 -->&gt;rcn:112178180 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atggtggacatggaggtaaatatagtttgcagagatactatcaaacccgtagctgcttcc
+tcgtcacttcatccccatcaaaaaccttgcaatctttgcatctttgatcagctcattcca
+acaacttatgtgcctatgcttttcttctaccccattattgaccccaacttcaacgtaccc
+cagaccctagcccatttgaaaacctcactgtcacataccctcactcagtactacccattt
+tccgggcggaccaaaaacaacctctatatttataattttgatgctggtgtcccctacgta
+gaggcccgagtcaaatgtcacatgtttgagttatttgagcttcaagaaatcgagttgctc
+aatcggtttgttccgttccatccatttcgcaaggaaactggatctcctgatctgttgccc
+ttgatagcatttcaagtcagtgtttttgcttgtggtggcatatcaattggggtctctctg
+tctcacaagatctttgacgcacaaacggcaaatattttcctcaagtcttgggcttctgtt
+tttcgtagggatcatgaagaagcaatacaatcaaaccttaatctctgccaagcgtcatca
+acttttccagcaagtgataatttaccacaaaaatatcttagtttcatggagagcacgtgg
+ttcgaggaaaagaagtatgttacaaggagatttgtgtttgatgctaaagccatagccaca
+ttacgtgagaaagcaaagagcgagcttgtgcccaatccaactcgtgttgagacactcact
+tgttttctttggaaacatgcaacatttgcttctagacatggtggtacatcacgaaaagca
+tccgtattagcacatgcagtgaacttgaggcggcgactgaagccaccaatgccagatgac
+gccattggaaatctattttggtgggctactgcagtctacaacactactgataaggcagag
+actactgatgagttgtgtgatttgttgaagatattacatgaatctctcaatggacttgac
+catgatcattttttggatacattgcgcggagaagagggacgtcgagccatttttgaatac
+ctcgatcaattgttggagggcatggattcctttgatccaacaccagaaatttatgcgttc
+actagctggattaatattctcgatgaagttgattttggatggggaaagccaatttggatt
+ggggtcatgggaaaagttggacctgcctttaggaacctcactgtgttcgtcaaaacacaa
+agggataacggcattgaagcatgggtgaccatggatgaaaagcaaatgtctataatggaa
+aaagatcctcaatttttagcatttgcttcaccaaaccctcgcattttaaatgtatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=rcn:112178180+nt">BLAST</a>
+</body>
+</html>

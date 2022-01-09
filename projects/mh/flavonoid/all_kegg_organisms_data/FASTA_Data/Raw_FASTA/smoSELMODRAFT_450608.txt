@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01496: SELMODRAFT_450608</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854644">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854644">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- smo:SELMODRAFT_450608 -->&gt;smo:SELMODRAFT_450608 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) BAHDc1-1; BAHD family acyltransferase (N)
+atgaagttcgagtccaggcagcacgatatcatcaagccaaagcttccttctccagcacgg
+gagccgatagctctgtgtgtcctcgatcaaatctcagctcgcaactacataacgtttgtc
+ttgctgtttgcaccacctcaggatcagccactgtcctcggaaagtctcaagaaatccctg
+tccggagcactgtccgtgtgttatcctttggcaggccgctatcgactcctccccggcgac
+aaaggcctcgagctggaatgcaacgatcgtggagttgacttcttcgaggcatctatggat
+gaaaagctggagagctttgaggagtcacgctgcaatgccctgtgtccctgtggcgagttt
+ccagccgaagatgtcacggaagttcctctactgctcgtccagttgacaagatttaaatgc
+ggaggctggagcttgggcgtagcgatgcatcacagtgttggagatggagctgccatggac
+ctgttcatgaagacgtggtctcacttcgcttcaggaggccatgatctcgttcaccctccc
+tgtttcgatcgttccttcttcaactccagcaagacctcgccggctctagagtatgaccag
+gattatacttctcttttcaagacctctgccaagatcaagccttgcatgtttcgcttcacc
+agcagccagatgcaagttttgaaggaccaatgcgatggaaactacacccgcttcgaagtc
+ttggcagctcacatctggaaatacagcaccaagcttcgcaaaaaagcgtggaaggaagcc
+aagcttgtcatacctgtggatggaaggactcgacttccaggtcttcccaaggagtacttt
+ggaaacgcgactttctccgctcaagccatcgctcaagctgacgagctggtggcaaaacca
+ctgtcttttgccacaaagattgtccacgacgccatccagaacgtatcaggcgattacatc
+ggcgggttcttggattggatccagcagcagcacaacgtcgacatgattccatcactgtgg
+tcggaaccaatcgtgcttaccagctgggctcgattttctctgtacgagctggaatttgga
+tgcgggaagcctgtgcttgtcaccagccctggagtgagattggccgataccgtcgtcttt
+ctcccgtggtcgagagatggaaccatgaccgttgtcatccagcttcgtgaggaggagagg
+gagaatttgcttgccagccccgagttcctggttactccttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=smo:SELMODRAFT_450608+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04793: 107905961</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620853979">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620853979">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ghi:107905961 -->&gt;ghi:107905961 K08695 anthocyanidin reductase [EC:1.3.1.77] | (RefSeq) anthocyanidin reductase-like (N)
+atggccagccagatcgtaggaacaaagaaagcttgtgtcgtgggtggcagcggattcgtt
+gcgtcattgctggtcaagttgttgctcgagaagggttacgccgttaacactacagtcagg
+gaccctgacaaccagaagaagatctctcaccttgtaacactacaagagttgggagacttg
+aaaatctttcaggcggatttaactgatgaagggagctttgatgcccctattgctggttgt
+gaccttgtcttccatgttgcgacacccgttaactttgcttctgaagatccagagaatgac
+atgatcaaaccagcgacccaaggagtggtgaacgttttgaaagcttgtgccaaagcaaaa
+acagttaaacgtgtcgtcttgacatcatctgccgcagctgtgtctatcaacacactgaat
+gggacagatctggtcatgacagagaaagactggaccgatatcgagttcttatcatcagca
+aagccaccaacttgggggtaccctgcatccaagacgttggctgaaaaggcagcttggaaa
+tttgctgaagaaaacaacattgatctcattacagttatcccttctctcatgactggtcct
+tccctcaccccaattgtccccagcagcataggccttgctacatctttgatttcaggcaat
+gaattcctcataaatgctttgaaaggaatgcagatgctgtcaggttcgatctctatcaca
+catgtggaagacgtatgccgagcccatgtttttctggctgaaaaagaatctgcatcgggt
+cgatatatatgcagtgctgtcaataccagtgtgccagaactagctaagttcctcaacgaa
+agataccctgacttcaaagtccctaccgattttggagatttcccctccaaacccaagttg
+atcatttcctcagagaagcttattagcgaaaggttcagctttaagtatgggatcgaggaa
+atctacgaccaaaccgtggaatatttgaagtctaaggggctgctcaagtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ghi:107905961+nt">BLAST</a>
+</body>
+</html>

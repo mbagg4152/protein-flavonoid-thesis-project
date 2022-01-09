@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05027: 110095980</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838252">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838252">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- dct:110095980 -->&gt;dct:110095980 K23260 scopoletin glucosyltransferase [EC:2.4.1.128] | (RefSeq) scopoletin glucosyltransferase-like (N)
+atgggctctaaagccgatcatctccacatgcttttcttccctttcatggctcaaggccac
+atgctccctatggtcgacatggccaagatcttcgccgctcatggtgctcgcgtcaccctt
+ctcactactcccgttaacgccaccattatccgtcccaatattgatgactcagttcatctc
+cacatcatcccttttccctctgctgaattcagccttcccgacgggtgtgagaatgtatca
+tttattcattctaataaccaacacattaacttcatgaaagctacgtcttcgctctgccac
+ccttttgactctgtgcttagagatctcaggcccgactgtgtcgtaactgacatatacttt
+ccatggacaaaccatgttgcaatcgcgagaggtattttgaggcttgtctttcatggcacc
+agcaacttcgcattttgtgcgaaatgggctttcgagcagtgtcgcctgctaaatgacaag
+gtcgagtcctttgtcctgcccaacctcccacatcgaatagagatgttaaaaacacaagtc
+ctggactgcaacaacttagcaagaatgcaaacggagatcgtcatgaagacagctaatgag
+gcgaaagaggggcaatcaaagagctatggcgcgttgatgaatagtttctatgagcttgag
+tctgaatatgtggacctttattgcaagctgaacggaagggcatggaatgttggcccagtt
+tctctatgcaacaaggaggtgatcaacaactcaataagagaaccaaaggtgtacacttct
+aatgcaaagttgaggccaattgtggaggcttcagcagttacaacagctattaggaggttg
+atgggggatgggatagaggcagagaagagaaggaggagggcaaaggaacttggcgagatg
+gcgaaaagagctgtggataagggagggtcatcttatgaggagattggaaatttgatgcat
+gaactaatggaacgaaagaagcatgtgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=dct:110095980+nt">BLAST</a>
+</body>
+</html>

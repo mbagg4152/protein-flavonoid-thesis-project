@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05243: 109842049</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620855788">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620855788">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aof:109842049 -->&gt;aof:109842049 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) putrescine hydroxycinnamoyltransferase 1-like (N)
+atggaagtggtagagtctggcattgtggctcccagcgatgagacgccaaagcgtagaatg
+tggctctcaaatttcgatctggcgtttggcgtgagagagcacttgccgtcaatctaccat
+taccggcctaacggaaatcccaacttttttaaggttgagaccctgaaggcgtcgctgagc
+aaggccctggttcacttctatccgttggctggtcgacttgaggtcggtccggacggtcgg
+attgagataaattgcacgggcgagggagttctgttcacagtggctcggtgcaggtatgac
+gttgatgcgttcggagtgtttgctccgtccgaggagatgaggcaggagttggtgccgact
+gttgagtcgtctcagccaccgtgcatgctgttcatggttcaggttacattcttcaagggc
+ggagacgtcaccctcggcctgttaagccaccacaccgctgcagacggccgcagctacttc
+cacttcatcaaaacatggacagacatcgcccgcggaatcaccaacatctccctccttccc
+ttcttcgaccgctccctcctccgcgctcgatcccctccctccgtcaccgtcgatctcata
+gaatacaagaagcccccacactccgacttcaataccttccggtcccctccccccttcaac
+accgcaatcctcaccctctctaaaaaccaagtcaccgctcttaaaaaatcaaccaacaaa
+gacaaaccctcgtccacattcaaagccgtcatcgctcacgtttggcgcagctcgtgcatc
+gctccgagactttatcctccgctacccacaggatacttcggcaacgcgatccttcgcacc
+tcagagggcgcaaaggtcagagatattgtttcaaactcgcttgaattggcaggggagaag
+atacagcaagcagtggcgaaggcggatgacgagttcgcaaggtctctgatcgattacttg
+gagatggggaatgatgagagggagtggttcctgacaaaaggggatcttcttgtgatcagt
+tggctcgggatgccgatatatgaggttgatttcggctgggggaagccagagttcatgagg
+agagctaatatgttttgtggaggagttgggtatataatggatggtcctggagggagtgga
+gatgtgagtgttgttatggcgatggagacagagaacatggagggattcaagaaggcattt
+tatcaaggatttgatctctgttccgggtttcaggcataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aof:109842049+nt">BLAST</a>
+</body>
+</html>

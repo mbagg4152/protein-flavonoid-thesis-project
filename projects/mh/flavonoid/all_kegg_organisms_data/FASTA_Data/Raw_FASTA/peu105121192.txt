@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05872: 105121192</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620853182">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620853182">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- peu:105121192 -->&gt;peu:105121192 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase-like isoform X1 (N)
+atgatcattgcaggtgtggaaaagatgaaagtagatgtgaaacagtcaattatggttcgc
+ccttctagagacactcccaagaggagcctatggagctcaaatctggacctcctggtacca
+atgtttcatgtccaaactgtctacttctacaagccaaatggttcttccagatttttcgaa
+acccaagtgcttacggatgctctcagtgatgttcttgtgcccttctaccctgcagcaggg
+agaatgagaaagcacgaatctggcagaattgagattaactgtaatggagaaggagttttg
+tttgttgaagctgaaacaagttgttttgcagatgatttgggtgacttcactgatagctcg
+aagctgctgccccttgttccggaggtcgactatgcgggcgggatctcttcttttccacta
+gtggtgctacaggtgacccggttcaaatgtggagccgtctctcttggagttggcttgcat
+catatcttagcagatgggacttctgctctccattttatcaactcgtggtctgacgtagca
+cgtggcctgcccgttagcactccaccattcatcgacagaacccttcttcgtgctcgtgac
+ccaccacatcctaccttccatcacagtgaatatgaccctcctcctaccatgaacactcct
+ccccgatcgcaacccaaaaccacctgcactaagattctcaagatcacaccggaacaactt
+ggcagcttgaaagccaaggtcagaacagaagatggtgcagccaggcatagcacgtatgaa
+accatcactgcacatatttggcgttccatgtgtaaggcacgcggactctctgatgatcaa
+gcaagcaagttatatatctcaacagatggaaggtctagattgaaccctcaattgccacct
+ggttacttaggtaatgttctttttacaactacggtgatgggtttatccggtgaaatacag
+tcaaaaccattagtccgcacaatggagaggatccatgaagcactggggaggatggatgac
+gagtacctgagatcagccctagattatatcgaagctcagccagatctcaatgctctcaag
+agagggcctcacacatatgcaagcccgaatctcaatattgtgagctggatcaggttgcct
+gtacacgatgcagattttgggtggggaagacccgttttcatggggccagccagagtcttc
+tgtgaaggaaatgcatatatactaaggagtccggtcaatgatgggagcttatccctgttt
+atttgcttagaggcgcaacacatgccactctttgaaaagtgcctgtacgatttctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=peu:105121192+nt">BLAST</a>
+</body>
+</html>

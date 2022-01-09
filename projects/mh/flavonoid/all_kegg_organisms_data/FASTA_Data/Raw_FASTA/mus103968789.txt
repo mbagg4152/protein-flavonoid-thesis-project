@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03447: 103968789</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854034">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854034">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mus:103968789 -->&gt;mus:103968789 K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) curcumin synthase 3-like (N)
+atggttagcatcgatgccttccggaaggcccaaagacctcaaggtccggccaccatcatg
+gccatcgggacggccaatccccccaacctctacgagcagagcactttcccggacttctac
+ttccgggtcaccaactccgaccacatgccggaactcaaggaaaagttccgccgcatctgt
+gggaagaccatgatcaagaagcggtacatgcacctcacggaggaggtcctcaagcagaaa
+cccggaatgtgctcttacatggacccctcattcgacgagcgccaggaaatcgtcgtggag
+gaggtgccgaggctcgccaaggaagccgccgccaaggccatcgaagagtggggccgcgac
+aagtcaggcatcacccacttggtcttctgctccaccagcggcatcgacatgcccggcgcc
+gactaccgcctcgtcaagctcctcggcctccccctatccgtcaaccgcatcatgctctac
+agccaggcctgccacatcggcgcccagatactccgcatcgccaaggatatcgccgagaac
+aacaaggacgcccgtgtgctcgtggtggcctgcgagctcaacacgctcatcttccgaggc
+ccagacgagcgcgacttcctgagcctcgcaggccaagccgcatttgcggatggagcagca
+gcggtcatcgtcggcgcggatccaatccaaggcgtcgagaagcccatcttcgagatgatg
+tctgcggcacaggtgacggtaccggactgcgaaagggccgtcggaggccatctcaaggag
+atcggtctcaccttccatttcatgaaccagcttcccatgctcatctccaacaacttggag
+aactgcctcctggaggcgttcaagccattaggcatcaccgactggaacgaggtcttctgg
+gtctcccacccggggaactggggaatcatggacgccatcgagaagaaggtggggctcaag
+caggagaagctccggtcgtcgaggcacgtgttcggtgagtacgggaacatgatgagcgcc
+acggttctcttcgtgatggacgatgtgaggaggcggtcggcggcggaggggcgggcgaca
+accggcgatgggttggagtggggagtgctcttcggctttggaccgggcctcaccatcgag
+accgtggtgcttcgcagtgtggctatctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mus:103968789+nt">BLAST</a>
+</body>
+</html>

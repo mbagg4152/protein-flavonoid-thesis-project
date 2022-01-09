@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T06020: 112202849</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620846864">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620846864">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- rcn:112202849 -->&gt;rcn:112202849 K22845 phlorizin synthase [EC:2.4.1.357] | (RefSeq) UDP-glycosyltransferase 88F3-like (N)
+atggcgggaatgaaacaaagcatagtgttatacccagcatcacctggatcgcaccacatg
+gtttccatagtcgaactaggaaaactcatctcccaacgccaccccaacttgtccataaca
+gtcttgctcgacacatcttcccctctcgccaaatcctcatacatcaaccatcttctctct
+tctaactctgatcccgatcaagcccgcatctccttcttcactctccccgcactcaacctc
+ccccaacccgacgcccaaaccagacccgaacgcgtacaccaactcaggcttcaaactgtc
+cccagtgtcctccaagccctcaagaccatctctctcacttccaaagtcctcgcctttatc
+acgtcactatggcatcacccttacgaccctgaaatcccaacttactattacttcacctcc
+tgcgcctctgttcttgctctgtttctgtacttccccactgtccatgatcaaacgccggag
+agcttcaaggaccgaaacgacgacgttgttgagtatccgggattgccagcgctccgaggc
+tcccaaatgccggatcctattctcgaccgcaacgaggctgaatatgatttctttctctat
+tttgcttcctatcttccaaaagcgaagggaattataacaaacaccttccaagaacttgag
+cctcgagcaatcaaggccataaaggaaggtgtttgtgttcctaatcatcaaaccccgccg
+ttatatcacatcgggccgttgatttccgactctgaaaataggtcgatccaaggcggttcg
+cctatgccaactaactgttccacgttatggctggataagcagccgagccggagtgtggtg
+ttcttgtgctttggaagcagaggtacgttttctgaagagcagtttaaggaattggctata
+ggcttggagagaagcaagttgcgatttttgtgggttgtgaagagtcaactggatttggag
+gtactaatgccacaagggttcttggagaggaccaaagatagaggtcttgtagtcacatct
+tgggcgccacaggttgctattctaagtcatgaatctgtgggtgggtttgtgactcactgt
+gggtggaactcaatcactgaagcagtgacttatggagtgcctatggtggcttggcctttg
+tatgctgagcaggaagtgaacagtgtggtgttggtggaggaaatgaagctggcaataccg
+atatttgaggtgccgtcgaagtcaaaacaagggtcggtgagtgcagatgaggtggagaag
+aaggtattgaggttgatggacatggagtcggacgaagggaaaagtctaagagaaaggtgt
+caagctgtcaaggcaatgggtttggctgcttggagaaatggcggctcatccttcacttct
+ttttcagagctggtaagttcttggatgcactga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=rcn:112202849+nt">BLAST</a>
+</body>
+</html>
