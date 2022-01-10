@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07757: 123125981</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641769353">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641769353">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- taes:123125981 -->&gt;taes:123125981 K01859 chalcone isomerase [EC:5.5.1.6] | (RefSeq) chalcone--flavanone isomerase-like (N)
+atggccgtgtcggagctcgaggtcgacggcgtcgtcttcccgccgctcgcccgcccgccg
+ggctccgagcacgcccactttctcgccggcgcaggcgtgcgggggatggagatcgggggc
+aacttcatcaagttcacggccatcggcgtctacctgcaggccgacgccgccgtctccgcg
+ctcgccgccaagtgggccggcaagcccgccgccgacctcgcctccgacgccgccttcttc
+cgcgacgtcgtcaccggcgagttcgagaagttcacgagggtgacgatgatcctgccgctg
+acgggcgcgcagtactcggacaaggtgacggagaactgcgtcgcctactggaaggccacc
+ggcgtgtacacggacgccgaggccgccgccgtcgacaagttcaaggaggccttcgggccc
+cacagcttcgcccccggcgcgtccatcctcttcacccactcccccgccggcctcctcacc
+gtcgccttctccaaggactcgtccgtgccggagtccggcggcgtggccatcgacaacgcc
+cggctctgcgaggccgtgctggagtccatcatcggcgagcacggggtgtcgccggcggcc
+aagctcagcctggccaccagggtcgccgagctgctggagggggccgccctcgccggcggc
+gagccggccgcggaggccgtgtcggtttcggtgtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=taes:123125981+nt">BLAST</a>
+</body>
+</html>

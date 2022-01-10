@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07684: 123215903</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641770039">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641770039">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- minc:123215903 -->&gt;minc:123215903 K08243 chalcone reductase | (RefSeq) non-functional NADPH-dependent codeinone reductase 2-like (N)
+atggcaaactctgcggcggtgacaactatcaacatcccagaagtgaaactgagttcaccc
+accggtgaccggaagatgccagtgatcggtctggggactgcagttgacaacttagatgaa
+gccatgaaacttgctgtgcttgaagccataaagctggggtatagacacttcgacactgct
+tccaaatacgggtccgagaagcctctaggagaagcgatttctgaagcagttaaacttggc
+cttgttactcgtgaagaactattcatcactaccaagctctggtgcactgaggctcataaa
+gatcttgttgtcccatctttacagaagtctctcaggaatcttcagatggaatacgttgac
+ctctatcttattcactgccccatcagtgctaaaccaggtgaaaaacatcaatggccaata
+cctaaagaggatcttctgccaatggactacaaggttgtttgggaatccatggaagaatgc
+cagaggcttggcctcactaagtgcattggcgtcagcaatttttctagaaagaaactcgag
+accatactctccgtcgctacaatacctccttctgtcaatcaagtggagatgaatcctgtt
+tggcaacagaggaagctcagagaatattgcaaagccaaggatattataataactgccttc
+tctcctttgggagccaaaggggccagttggggcactaatcgagttttggatgatgaaaca
+ctgaagcagattgcaaatgcccatggaaagactattgctcaggtttgtcttagatggata
+tttgagcaaggtgcgactattgttgttaagagcttcaataaggagaggattaaggagaac
+ctggaaatttttgactgggggttatctggtgaggactacgacaagatcaatcaaatagaa
+cagcataggttgatgcctatagaggggtttgtttctcctcatggaccattcaagacctta
+gaagatctatgggatgaagactcttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=minc:123215903+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07364: 114322163</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767066">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767066">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csin:114322163 -->&gt;csin:114322163 K23179 flavone synthase II [EC:1.14.19.76] | (RefSeq) licodione synthase-like (N)
+atgttggacttcatctcctttgccatcttcctcattattatctccaccaccctcctcctg
+ctcctctccatccaccacttccaaaaaccaccccatgtccgccgccgtctcaacctccca
+ccaagcccattcgccttgccaatcgtcggccacctccacctcctcagccccttcctccac
+cgctccctccacgacctctcctccctctacggccccttgtttcacctccgcctcggctcg
+gtcccatgcttcgtagtctccactcccgagcttgcaaaaaagttcctcatgacacacgag
+ctcaatttctcatctcgcaagcattccatcgccatcgatcgcctcacctacgactctgca
+ttcgcctttgcgccatacggtccgtattggaaattcctcaataagttgtgcatgtctgat
+cttctcggcaatcgtagtatcaatcattcgcttcccgttcgaaccagagaactaaacgcc
+ttccttcaacttgtcatgaaaaaagccaatgattgtgaagctgtgaacctcactaaagag
+ctgtcaaagtacacaaacactatcatctctcagatgatgataggtgttacgggtgaggct
+gaggaagctcgaactcttgcccgcgaggtgacacagatattcggagaatttaacgtgtcg
+gatttcatttgggttttcaagaacttggatttgcaggggattcggaagagggttgaggac
+attcactcaaggtacgatgcattgcttgaaaggattatcacaaaccgggaacatgaaaga
+aaatcaccgagtcttggagatcgtcacgccaagaattttctcgacatattgcttgatgtt
+tcagaagatgacaatttgaatatcaaatgcaccagagatcaaattaagggtttgattttg
+gtaattatataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csin:114322163+nt">BLAST</a>
+</body>
+</html>

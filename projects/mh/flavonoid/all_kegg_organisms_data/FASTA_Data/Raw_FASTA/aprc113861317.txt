@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07330: 113861317</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641768666">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641768666">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aprc:113861317 -->&gt;aprc:113861317 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) cationic peroxidase 1-like (N)
+atggctactacttctttctccttatgcattatgccaatcttcagagtttggttcctttta
+ttcttatgctcaatggggatagtctcagctcaattgtcctctgatttttactcaacatcg
+tgtccaaatgtgctttcaactattaagacagcagtggactctgctgtgaacaatgaggct
+cgaatgggggcatccttgctacgtctccattttcatgattgctttgttcaaggatgcgat
+gcatcagtgctattagatgacacagctagttttacgggtgaacaaacggcatttcctaat
+gttaactccttaagaggttttgacgtaatagacaccataaagtctcaagtggagagcttg
+tgccctggtgttgtttcctgtgctgatatccttgctgtagctgcaagagactctgtggtt
+gctcttggtggaaccagctggacagttgaattgggcagaagagattcaaccacagcaagt
+ttcagtttggcaaactcggacttgcccgctccttccttgaatctaggtgaacttatcact
+gctttctcaaacaaaggtttcacaaccaaagaaatggttgctctatcaggatctcacaca
+attggccaagctagctgtttaaacttcagaacaaggatttacaatgagaccaacattgat
+gccacttttgcacaatcattgaaagcaaattgtcctagcacaggtggtgatggcaatttg
+tcccctcttgacaccactacggcaaacacctttgacaatgcatacttcaagaacttgcag
+gaacaaaagggtctcttgcactcagatcaagagcttttcaatggaggatccacagactct
+caagtaaatgcttatagcaatgatgctgctagtttcaaaactgactttgccaatgcaatg
+gttaaaatggggaaccttagtccactcactgggtctagtggccagattaggaccaattgt
+aggaagatcaactga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aprc:113861317+nt">BLAST</a>
+</body>
+</html>

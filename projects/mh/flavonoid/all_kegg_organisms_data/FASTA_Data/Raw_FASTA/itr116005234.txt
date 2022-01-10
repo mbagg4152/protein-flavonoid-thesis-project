@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07384: 116005234</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767803">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767803">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- itr:116005234 -->&gt;itr:116005234 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) agmatine coumaroyltransferase-2-like (N)
+atgaatattaagatcgaaagcacgagaatcgtgaaacctttgtatgaaggcaatcctcca
+ttaaccacaagccatgttcctcttagtgtgtttgataaggtctcctttgatactcatatg
+ggtattatttatgcctatcgcccacccaccccttcgaatagcacaatcgagttagggctt
+aaaaaagcccttgcagtatatagggagtgggcggggagattgggaaaagacgagaagggt
+aactccgttattttgctgaatgacaaaggggtgaagtttgtagaggcatcaggtgatacc
+actcttgataacgtaatgcctttcaagccatgtgcctctttactcaaccttcaccctagt
+ctcatgggggtggcggagttggtccaagtccaagtcacacgtttcaaatgcggctctcta
+gtggtcggattcactaaccaccaccttgtggcggatggccactccacgagcaatttcctg
+gttgcatggggcaaagcttgtcgcgaggttatgattcagcccttaccactatgcgaccgc
+accattttcatcccgagaaacccacctagaatcgagtacgatcacgtcgggacggaatac
+atgccaaagaaaaacgaccatttcctcaacaaagatgatgcaacattcttggatgacata
+gtggttcacaaagtccacttcaccttagagtttctaaccaagctcaaggccaaggcctct
+atcatgaacggcgacgctaggccatacagtaccttcgaaagccttgtggctcatctatgg
+cgggccataaccaaggcaagaaacctcggagactacgaaactacccacataagaatcgca
+gttgatggtcgtgctcgccttaaccccaaagttcccaacgagtatttcggcaacttggtt
+ttgtgggcatttcccaccaccaaggttaaagacttattgcgtcagcctctttcgtacaca
+gctatgctcatccacgatgccgtttcgaaggtcaacaacaactacttcagatcgttctta
+gattttgcgaattccaaggtgatcgttgaggaagacggttttgttccaaccgctgacgtg
+gacaagctcattctttgccccaatctggaggttgatagcttgctaaggtttccattctat
+gacttagattttggaactggatgtccgtacattttcatgccgacatttttgccgattgaa
+ggattgatgttttttcttccttccttcactggagatggaagcattgacgcttttattgct
+ttgttccaagacaacttggctaccttcaagcagatttgctattctcttgactaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=itr:116005234+nt">BLAST</a>
+</body>
+</html>

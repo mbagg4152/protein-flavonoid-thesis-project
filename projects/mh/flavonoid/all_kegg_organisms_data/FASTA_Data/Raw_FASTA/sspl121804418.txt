@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07627: 121804418</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765803">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765803">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sspl:121804418 -->&gt;sspl:121804418 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) pelargonidin 3-O-(6-caffeoylglucoside) 5-O-(6-O-malonylglucoside) 4'''-malonyltransferase-like (N)
+atgaagaagatcaacatagtaagaaggaagttgataaaaccatgcaccccaactccccga
+aacctcaacaactacaaactctcattcatagacgagctcagcccgccgtcaaacttcggc
+gtcgtcctcttctaccaatcaaagccggcgaaaccagccaacgtgctcgaagagtccttg
+tcggggatcttgccgcggttctaccctctcgcgggaagatacatcgacgaggacttcagc
+gttgactgtgttgaccagggcgccgagtttgtggaagcggtagccgatggcgacgatgtg
+gaggtggacgatcttcttccgcgacgaggggaccagttcacgggccccaccgatccgctg
+ctgtcggttcaggtcacggagttggtgaaatgcggggggtttgctgtcggtgttagtgtt
+tcgcataagattttcgatgcttcttcgattgggacgtttcttgctgcttggtcgaatgct
+agcatgaattttgcgggcgaagaagggatcggtgttgttcccaactttgatcctcatttg
+ttgtttcctggtaagaaacgaagttacttcggtgaaacgaagccatcagaaaccaatcat
+caaaccaccactatcgtttcaaagcgtttctcattcaagaaggaatcaataacaaatctg
+agatcaaaactgaacccaaaacaagccttcaacaacaccatcttctcgaaggttcgtctc
+gtctccgccgtcctagccaacgccataatccgcatcgacacaacgaaacacggccgcccg
+aggccttccctcctcattcaagccgtcaacatgcggccgagaaccacccctcctctcccc
+aaccactcctgcggaaacctcgctttgcatgccgtggcaaagtgttcgcacggtgcggac
+ggtttgggactccaacaaattgcgtgtgtgatgagcgaagccatcgaaaagactatctcc
+gactgcgctaggttgctttcgcgtggatacgaggacgttgttgtcgaggcggaggcggat
+ctgatcggagggctgatgagctcggagatgaataatttgagttttagtgattggagtagg
+ttcgggttgtacgatgcggacttcgggtgggggaagccggcgtcggttgggatagcgcgg
+gtgccgtttgagagggcggcggtgctcgtgaatgataaagatggtggtgggattgaggcg
+tgggttcatttgagtttagatgatatggtttgctttgaggaagatgatgaaattaaattg
+tatactagtaaaacaatgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sspl:121804418+nt">BLAST</a>
+</body>
+</html>

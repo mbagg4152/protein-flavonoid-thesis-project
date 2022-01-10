@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07278: 119325543</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641770383">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641770383">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- tdc:119325543 -->&gt;tdc:119325543 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) putrescine hydroxycinnamoyltransferase 1-like (N)
+atgtactcgggatcggcactacgggtggtagagtcttgcctcgtcacgccgagcgatgag
+acgccgcggggagggctctggctctccgcgctggacctggtgctggccaacagaggccac
+acccctctcgtccacgtctacagcgccagcgacgtcgccgccgccggcggcttcttcaac
+gtggccaagctcaagaagtccatggccaaggcgctggtgcccttctaccctctcgcaggc
+cgcctcggtgcggatggtgacggccgcatggagattgactgcaacggcaagggcgcgctc
+ttcgtggtagcccgctctgatcgcaccgtcgaggacttcagcggcccttcaccgtcgtcg
+gagctgacgaagctgttctgtcctcgcgttcagccgtcgtccatcatgttggccgcgcag
+gtcaccttcttgaagtgtggcggtgtggtcttagggacagcggtgcaccacgccgccgtg
+gacggctccagcgcgttccatttcattgggacgtgggcaaggtactgcagggacggccag
+ggcgccgtgatagagctcccgtgccacgaccgcgccctcctccgcgcgcgctccccaccc
+gccatccaccccgaaaccgtctccatgttctgcagcaagctagccatgcacgagcacgag
+tcgtccgtcgcgaccaaggtcatcaccatctccggtgaccagctatacgccctcaagcgc
+cactgcggcggcgctagcacattctgcgtggtgagcgccctcgtgtggcagtgcgtatgc
+atcgcccgccagctggacccggacgccacaacgcgcatgaacttcccggtagacatcagg
+catcgcgttaagccgcggctcccgggtcgctacttcggcaacggggtcgtgaacgtgttc
+gccaccgccgcggtgaaggacgtcgtgtcggagacactggcctccatcgtgagcagggtg
+aaggccacgacggagaagctcgacgacgagctgctgaggtcggctgtggactacttcgag
+atggaggcggcgaagggcgggcggccggaggagagaggaaacctgccggagatggagctg
+cggatgaacagttggttccatctgcccatatatgacgcgaacttcgggtggggtaagccg
+tgggtgatgacgcgggcggagactgtgcgcggcggctgggtgtacgtgatggctggctgc
+ggtgatggcagcgcgcgcgtactaatctctttggaggtggcgactctcaagaggttcgag
+cgttcgcttgctgtatgccgagttcaaaccggcatcgtacatgcgaggttgtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=tdc:119325543+nt">BLAST</a>
+</body>
+</html>

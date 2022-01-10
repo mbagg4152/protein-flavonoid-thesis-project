@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07384: 116015789</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767850">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767850">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- itr:116015789 -->&gt;itr:116015789 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) stemmadenine O-acetyltransferase-like (N)
+atggatgaaataatgcacccatccatccatccaatggcgctgaaagttgaagtttaccag
+aaagagaaagtgaggccatgttcaccaactccccaatccttgagaaactacaagctttct
+ctccttgatatattaatctcgatttcttatacccccatggttttcttctacgactccagc
+gccggcggccacgattatgatgagctcaaggactcgctcatgaagacactgtccgtctgg
+tacccactcgccggaagaattaaagatggaacgaccatcgaatgcaacgacgagggtgcg
+gattttgtccgagctaatgttacaaattgtgatttgggtgagtttctccggcaccccaaa
+ctagaagatatacgccggctgctcccacttcatccctacccatatcctattgaccccgcc
+cagccaatgctagctgttcaggtcaacaggttccggtgcggcggaactgcggtggcgttc
+tgcgtttggcatggcctggccgacgccagagcgatgatgggattatttaacacatttgcg
+gcaatcaaccgcggggaaggacccattaatcccggcggtgttatcgtggacgcctccgca
+attttcaggccggggaacctcgccgggcccctcccaatgcccccttccctcaagaaccgg
+ggaaagtacttgtcgaaaagatttgtttttggcaagcaggatattgagagtctcaggaac
+aattattatcacgcatcggagcactgccgccgtccgtctcgggtggaggcattgtcggcg
+ttcatatgggcggcagtgatacgggcaactctaccggctaacccaaacctcaagactcac
+ttgctggcaattgtggtgaacttgcgaaataagttgaacccgccattcccttcggagtgc
+ctaggcaacatcatgcaagcggtggccgctcggtgggaatcggaagccgacgggggtgga
+agagttactcccgggtttcttgtaggaagagtcgtggaagccatcgacaaggttacccac
+aactacgtgagagaaatgcacgcggagggtgggtatctcaaagccctatcacgcgtagca
+aaggccgtacttcataatgtggatgagagtaagattttaaatataagtagtgtgtgtaat
+attccgtattctcaagttgattttgggtggggcaagccgaaatggattggcatgggtcaa
+acactagaggacttggtttttttcttggatgcaaaagatgggggaatagaagtgttgatt
+gggttgacacaagaagttatgtgcaatttagataaggacatggagtttaatgcttatgtg
+tctttttcaaaaatcttttccgaacctctgctgtctgcactctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=itr:116015789+nt">BLAST</a>
+</body>
+</html>

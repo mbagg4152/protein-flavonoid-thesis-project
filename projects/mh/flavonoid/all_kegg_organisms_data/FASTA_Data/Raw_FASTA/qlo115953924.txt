@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07350: 115953924</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641768490">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641768490">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- qlo:115953924 -->&gt;qlo:115953924 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) stemmadenine O-acetyltransferase-like (N)
+atgatgatggacgttgatatcatttcaagagaaatcatcagaccatcatcaccagcaatt
+catcatctaaaacccttcaaactctctctgttggaccagctcactcctacaacctatatc
+ccacttaccctcttttaccctaagaaccatactcattcaaccaatcacctaaaaaactca
+ctctcagaaaccctaaataccttctacccattttctggaaggatgaaagacaaccatttc
+attgattattatgatgagggcattccatttactgaggcccgagtcagttgctgtctttct
+gactttcttgaacatcctaaaacggagttgttaaaccattttcttcctttccgcccactt
+tgcaaagaaccaaacccaatggaaactgcccaaatagcagtacaagtgaatatatttgat
+tgtggtggaatagcaatcggtttgtgcatgtcacataagatcatagatggaatcgccatg
+agtgctttcctcaacaattgggcagccagtgcaggcgggcacagtaacaaattagtgcat
+cctaatttttcagaggcatcatcattatcacactttcccccgcaagatatattgcctcat
+attgttgcacctttattagaaaggctttggttcaatggaagcaagtgcaagacagggaga
+tttgtgtttgattccaaggccatagctactctaaaggcgaaagcaaagagtgaacgagtg
+caaaacccaagccgaactgaatcactgtcttgtttcatttttaaacacgcaagagctgct
+tctagattaacatctggttctccaaggccatctatactgggccaagcagtaaacatccgg
+aaaaaaacaaatccacacttgtcggattattctataggtaatctcatttggtgggcatta
+gcagcctatgattataactcaccagagtcgacagatcagatcgagctgcgtggcttggtg
+gcaaccctaagagaaactatttcgaaaatcaatagtgatgtgagcattctgcaaggtcat
+gaagatttaaaagccacgatcgagtacctaaaccagaaagctgaaatgttactattctcc
+agagaaaacccagattttttcgctttcagcagttggttgacgttcggattatatgatctc
+gattttggatggggaaaacccatttggacagggatccatggggaagttgattcggggttt
+atgaatgtcactgtacttaaaaataccatctctggcaatgggattgaggcatgggtgtcc
+ttagatgaaaaagctatggctatcttggagcacaatcctgaattccttgcctttgctact
+ttaaacccaagtgttttaagccaatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=qlo:115953924+nt">BLAST</a>
+</body>
+</html>

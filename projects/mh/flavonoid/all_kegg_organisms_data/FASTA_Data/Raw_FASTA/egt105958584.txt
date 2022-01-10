@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07346: 105958584</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765287">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765287">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- egt:105958584 -->&gt;egt:105958584 K13272 flavonoid O-methyltransferase [EC:2.1.1.267] | (RefSeq) flavonoid 3',5'-methyltransferase-like (N)
+atggctaccgtcgacaagtatcagtggtggagtatgatgaatgtaactgctgacgagggc
+caattcatatcattgtttttgaaaacgatgaatgcaaagaaaacaattgaagttggagtt
+ttcactggctactctctcctcactactgctcttgcccttcctaatgatggcaagataatc
+gcaattgacccggacagagaagcatacgagactggattgccatttattcaaaaggcaaac
+atggcacataagattcaattcattcaatctgatgccttcaaagttatggaacaactcaag
+gccaatggtgaagaaggaacattcgattttgcatttgtggatgcggacaagcaaaactat
+atccactaccacgaacagctattgaaactggttagggttgggggaataatcgcgtacgac
+aacacattgtggtccggagctgtagccgcatccgatgacgatgagatggcggaatatctg
+aggagggttagaaccgacattatgcaattgaacactttcttagcggccgattctcgtatt
+gaactagctcagctttctatcggagatgggctcacactttgcaggcgtgtcaaatag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=egt:105958584+nt">BLAST</a>
+</body>
+</html>

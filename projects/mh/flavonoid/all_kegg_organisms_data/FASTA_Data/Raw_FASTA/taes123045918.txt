@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07757: 123045918</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641768307">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641768307">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- taes:123045918 -->&gt;taes:123045918 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 46-like (N)
+atggatcagggtcggaggcggcaatggggcgtcgtatgctcggcgctgctcctgtcggcg
+ctgctggccgtcgcctccgcgcagtcgccgtccccggcaccgtctcttcccgcggctccg
+cggtcggctccaaggccgtcgtctccggcagtgccggcgaccaagccatcgtctcctcct
+gctgcgtcgccggcgcagaagcagacacctagcccttcggcttcgccggtgccgaagccg
+ctggctccacgcgcgccggcgcaggcgccaaagccatcgtctccagctgcaccctcggca
+tcaccggttccaaagccacccactccacgtgcgccggcgcaggccccaaagccgccgtca
+ccaccttcggggtccccaccaccagcagcgccaccgcttccaaagccgtcacctccaccc
+ccggcgccgtcggcaccaaagccgtcacctgtggccccagcgccggctcaaaagccgtct
+cctcctacgacgactccaccaccaccaccacaaaaaccatctgctcctccaactccacca
+ccggctccgacaaagcctccgacgaactcatccccgcccacgccttcattggctctgtcg
+cccagcttctacgccgcctcctgcccgagcgtggagctggcggtgagcgatgtcgtcagg
+tcggcctccaccttggaccccagcatccccggcaagcttctcaggatggtcttccatgac
+tgcttcgtagagggatgcgacgcgtcggtgctgatccagggcaacggcacggagaggacc
+gacctggcgaacctgtcgctcggcgggttcaacgtcatcgacgaggccaagcggctgctc
+gaagcggtgtgccccgcaaccgtttcgtgcagtgacatcatagttcttgctgcaagagat
+gctgtcacatttaccggaggaccgtcggtgacggtctccctcggccgacgtgacagcctc
+gtctcccttgcgtccaacgtgagagcaaacatcatcgacaccggcttctctgtggacgcg
+atggcggcgagcttcgcctccaaggggctctccctggacgacctcgtcaccctctcaggc
+gggcacacgatcgggtcggcgcactgcggcacgttccgggagcggttccggccggacgcg
+aacgggagcatggtgccggtggacggcacgatgaacgccgagtacgcgacggagctgatg
+cgggcgtgcgccgcgtccgggagcgcggcggtgggctgcgacgacgggtcggcggcggcg
+ttcgacaaccgctacttcagcaacctgctggacgggcgcgggctgctgcgcacggacgcg
+gtgctggtgcagaacgccacgacgcgggccagggtggcggccttcgcgcagagccaggac
+agcttcttcagcagctgggccggctcgttcgtccggctgaccaacctcggcgtcaagacc
+ggctccgacggcgagatccggcagctctgctccagcgtcaacggctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=taes:123045918+nt">BLAST</a>
+</body>
+</html>

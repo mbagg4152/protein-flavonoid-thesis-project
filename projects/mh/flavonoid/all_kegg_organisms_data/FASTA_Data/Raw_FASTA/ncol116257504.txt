@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07418: 116257504</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765666">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765666">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ncol:116257504 -->&gt;ncol:116257504 K05280 flavonoid 3'-monooxygenase [EC:1.14.14.82] | (RefSeq) flavonoid 3'-monooxygenase CYP75B137-like (N)
+atgataggcgatttgatcgacagtcctatccatctcgtcgtgctcattgctgccctatgg
+gcgctgatctggtattttcggcggcagaacagccgactgccaccgggccccagcggctgg
+cccctgatcggcagcctcccggccctcggtgcgatgccccaccactccatctccgagctc
+gctaagcgctacggccccatcctctccctccgcctcggcaccaccacggtggtcgccgcg
+tgctcggcgtcggcggcacgcgagttcttgaagcacaacgacgccaatttcctgtcgcgg
+ccttcgaacgccgtgtcgaagcacatgccgtatggctcacatgacatggtgtgggcggag
+cacgggcctaggtggcggagcctgcggaagatctgcgctgtccacctcttctctaacacg
+gcgctcgacgacttccggatcgttagggagaaagaggtggggatcctggcggcgtcattg
+gcgcgggccggcgaggtgggggagatcgtcggtgtgggggaggcagtgcacttgtgcatc
+gcgaacgtgctggggaaggtgctgatagggagaaggctgttcgagggtggggaggacgcc
+agagagtacagggagatggtgttggaggggatgcagctgttgggggtgttcaacataggg
+gactttgtgccttcgctggagtggatggatctcatgggtgtggccaagaagatgaaggtg
+caccaccggaggcacgatggcttcatgcagaggattatggatgagcatgcgttctcttct
+ttgcagggcgactttctcagcgtgctgctgcggctgaaggatgatcccgtcggtcttgat
+ggtctagatggcaagctgacagatattgacatcaaagccttactaactgatctgttcaca
+gctggtaccgacacttcaacaagcacagtagaatgggcaattgctgagctgatcaagcac
+ccccatgtccaaaagaaagttcaggccgaactcgattctgttgttggccgggaccggctg
+gtcaaggaatcagacataccaaatctaacgtatcttcaggcaattgtcaaggagacattc
+cgcctccatccatcgacaccactctccctcccgcgcattgccagcgagagctgtgaggtt
+gccggctaccacattcccaagggtgcgcgcctcttggtcaacgtctgggctatcagccgg
+gacccgagcatatggaccgacccactggaatttcagccggagaggttcatgcctggatcc
+aagtatgagcacatagatgtaaggggaaatgactttgaagtgataccattcggggcaggc
+cgaagaatttgccccggtgtgagcatgggcataaagatggtgcagctgatggctgcgacc
+ttggtccatgggttcgaatgggagctgccggtgggccagctttcagaggcattaaatatg
+gatgaggcttttggaatcactttgcagaggaccatgcccctcaagattcaacctaagctc
+aggcttgcttcaagagcttacctccttgcttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ncol:116257504+nt">BLAST</a>
+</body>
+</html>

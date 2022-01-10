@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07418: 116247360</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765672">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765672">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ncol:116247360 -->&gt;ncol:116247360 K13082 bifunctional dihydroflavonol 4-reductase/flavanone 4-reductase [EC:1.1.1.219 1.1.1.234] | (RefSeq) dihydroflavonol 4-reductase-like (N)
+atggggatgcacccagaagagtttgcagcggcacagacgatcggaatggcagctcaggca
+gggaggaatgaagtggtctgcgtcaccggagcggccggatacgtcggctcatggctcata
+atgaggctgcttgaacaagggttcactgtcaaggctactgttcgcgatcctgacaatatc
+aagaagaccaagcatctcattgacctgccgcatgctaaggagaggctgaccctgtggaag
+gccgacctcagcgacgagggaagctttgacgaagccatcagcggatgcaccggagttttc
+cacgtcgccactcccatggacttcttgtcccaagaccctgagaatgaagtgattaagcca
+gcagtgaacgggatgctgaacatcatgaggtcgtgcctcaaggcgaagacggtgaggcgc
+gtagttttcacttcatcggctggcactgttaacatccaggaacaggcgaggccagtgtat
+gatgaggagtgctggagcgatgttgagttctgcaggaccaagaagatgacgggctggatg
+tacttcgtttctaaaagcttggcggagagggctgcatgggactttgccaaagaacacaac
+ttaaatattttagccaatttgagagaagatttattcgtcataaacaacatcaaaagtgga
+gatctcagatcagttcatttttctgccgaatccatttcgaatcattgtatttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ncol:116247360+nt">BLAST</a>
+</body>
+</html>

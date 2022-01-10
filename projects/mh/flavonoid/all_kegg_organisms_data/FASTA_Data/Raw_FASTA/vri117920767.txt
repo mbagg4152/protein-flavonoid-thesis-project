@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07274: 117920767</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641766075">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641766075">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- vri:117920767 -->&gt;vri:117920767 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) stemmadenine O-acetyltransferase-like (N)
+atgggagagatcgaggttgaagtgatctccacagataccataaaaccatcttctccgacc
+cctgcccaccttcgccatttccaactctcctttcttgatcaagtactcagtccaatcttt
+atacccatcatccttttctatccaatggatggcgatgtcaaagttgatacaattgaaaga
+ttcatctggctaaagaaaaccttatccatgaccttagttcaattctacccactagccgga
+cgagtcaaggacaatcttttcatcgactgcactgaccagggtgttccctactttgaagcc
+caagttaagtgccaactttcggagttcatatgcaacccggaccccatgcaactaagcaaa
+ttcgttccttatgcactggacgatatagtcgacatcgtcctggcaatccaagtcaatatc
+ttcaagtgcggtgggatagcaattggtgtttgcatttcccacaaggtcgcggatgcttcg
+tcagtgattacgcttgtcaacggttgggcggctgtggcttgccgggatactcatatggtc
+tgtccacaatttggactggccaacctcttccctcccataaatttatccgggttcaatcca
+agcactggtatgacaaaggagaagattctgacaaagagatttgtatttagtgcctctagt
+gtagctgcacttagagagaagtacgctgatcaaagcacaaccgaagatctcccaaggcgt
+cctacacgtatcgaagccttatcggctctcatatggagccgcttcatggctgtcactcat
+gggatggcagacccaaaaaaaatctacacgatcctgcatgcggtgaacctacgtacaagg
+atggaccctccattgccggagaattactttgggaatattatctggtttgcgataacaaga
+ccatgcatcgacggtatgaaagaagggaagcgccatgcccttgtgaaccaaatgagagaa
+gcaatagaaaaatcgatggagattacataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=vri:117920767+nt">BLAST</a>
+</body>
+</html>

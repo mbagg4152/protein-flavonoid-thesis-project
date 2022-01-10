@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07346: 105950600</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641771879">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641771879">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- egt:105950600 -->&gt;egt:105950600 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) omega-hydroxypalmitate O-feruloyl transferase-like (N)
+atggcggccttatcagcagttccttccatggaagacctaaagatcaagttccaagaaagc
+tctcttatcttcccatacaaagaaacaccgaaaaaatcgattttcttgtccaacatcgat
+caaatcttgaactacgatatcccgactgcccatttcttcaaggcaaacccagatttcccg
+ccagaaataatggccaaaaggttgaaaattgcactggagaaggtgttggtgccgtacgat
+tttatggcgggaagattgaaactaaaccgggaattgggccggctggagataaactgcaac
+gcggcgggggctggctttgtggtggccaagtccgatgtttctcttgatgagattggtgat
+gagaacctcgtttgcccgaacctcggatatcgacagctggctgtccagagattggatagc
+ttgccacctgaagttgaccagccactctgtgtttttcaggtaacatcattcaagtgtggt
+ggttttgcaattggcatgtctacgaatcacatcttattcgacggcctaggcgccaaagta
+ttcctcctaaacctagcttcccaatctttcgaaaacaaacccttagccattgtaccctac
+aacgaccgtcggattctctgcgctagatctccaccgcacgtttcctacccacaccgcgag
+ttcctcaaattcgacctccccgtgggcctagggtcaactcccccaaattttgattgcatc
+atagaagaactcgatttcaaaatcgtcaaactcaccacaactcagatatccaacttaaag
+gacaatattactaagacgtccaaaattgacaaaattagcacctttgcggtggtggccgcc
+ctcatctggcggtgcaaagccttttccgatgataaaaataaggtttcgactctgcttaac
+gctatcgacattaggccaatagtgaaccccccattaccatattcgtactcggccaacgca
+gtgcttcccttgggagtttcagaaacttgtgaagaaataaaaaacgggccgttttcgaag
+ctcgtggagatcatcaccgaaggggctaaagagatgacgcacgagtacgtgaaatcggct
+ttcgattggttggagctgaatagagggattcctcatggggattattttaaggtgagctca
+tggcttagattagggtttgatgaggtggagtatgcatgggggaagccgatatacagttgt
+ccggtggtgaatcatcgaaaagatatttgttgggtttttcgagatgccgttgatggtggt
+gtttctgcaatggtggctttgccttctcaagagatggacatatttgaggctgtttttcat
+gacttcattgcttcaatattggttcacttgtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=egt:105950600+nt">BLAST</a>
+</body>
+</html>

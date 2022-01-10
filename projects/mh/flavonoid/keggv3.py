@@ -63,8 +63,8 @@ def main():
     setup()
     get_parse_pathway_genes()
     flavonoid_predictions()
-    # make_plant_ec_counts()
-    # build_nt_fasta_by_ec()
+    make_plant_ec_counts()
+    build_nt_fasta_by_ec()
     
     runtime = datetime.datetime.now() - init_time
     print('\nRun time: ' + str(runtime))

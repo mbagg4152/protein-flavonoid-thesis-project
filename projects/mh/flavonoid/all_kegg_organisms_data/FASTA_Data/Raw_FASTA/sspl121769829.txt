@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07627: 121769829</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765863">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765863">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sspl:121769829 -->&gt;sspl:121769829 K09755 ferulate-5-hydroxylase [EC:1.14.-.-] | (RefSeq) cytochrome P450 84A1-like (N)
+atggaaaataaaatgattaatcttcaccaattcctagactccaaacccttactaataatc
+tccatcataatccctctcttagctatgttcctcctatcaaaatttcgagctaagcgatat
+cctcccgggccgcctggctggcccgtgataggtaacatgagccttatggaccagctcacc
+catcgcgggctggcccaattagccaaaaaatacggtggaatcttccacctccgtatgggc
+ttcctccacatggtggccgtgtcgagcccggacgtggctcggcaggtcctccaggcccag
+gacaacattttctccaaccggcccgctactattgcgataagctacctcacgtacgaccgg
+gccgatatggcgttcgcccactacgggcccttctggcgccagatgcggaagctctgcgtc
+atgaagctcttcagccgaaaacgggccgagtcctgggactcggtccgggacgaggtggac
+gacatggtccgggctgtggccacgagcagccaggccgtggtgaacataggcgagctcgtg
+ttcgggctgacccggaatataacgtaccgggccgcgttcgggtcggtctcgcacgagggg
+caggatgaattcatcaagattttgcaagaaatttcgaaattgtttggggcttttaatatt
+tcggattttattccgtttttggggtggattgatccgcaggggattaatgggaggttgatc
+aaagttcgggcccaacttgatggatttattgatagtattatcgatgatcacatgcaaaaa
+gcccggcccgaaaatgaggcaattgagtcggatatggtggatgagctacttgctttttat
+agtgaagaggctaaggtttctgaatcggaggatttgcagaattcgattagcttaacaagg
+gacaatattaaggcaattattatggacgtaatgttcggtgggaccgagacggtggcatct
+gcgatagagtgggccatggcggagctaatgcgaagcccagtggacctgaagcgggcccag
+caggagctcatggacgtggtgggcccagcccggaaggtggaggaggccgacttcgaaaac
+ctgcccttcctccgctgctgcctgaaggaggtcctccgcctccaccccccgatcccgctc
+ctcctccacgagacggccgaggacgccgtcgtgtccggctaccacgtgcccgcgaggtcg
+cgcgtgatgatcaacgcgtgggcgatcgggcgcgatgagggcgcgtgggaggacgcgggg
+gaattcaagcccacgcgctttttgcgcgatggcgcggcggacttccggggcggcagcttc
+gagttcatcccgttcgggtcggggcggaggtcgtgccccgggatgcagctggggctgtac
+gcgctggaggtggcggtggcgcacctgctgcattgcttcacgtgggaattgccggatggg
+atgaagccgggagagatggatatggatgacgtgttcgggctgaccgcgccgcgggccacc
+aggctcatggcggtgcccacgccaaggctgctgtgccagctctactaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sspl:121769829+nt">BLAST</a>
+</body>
+</html>

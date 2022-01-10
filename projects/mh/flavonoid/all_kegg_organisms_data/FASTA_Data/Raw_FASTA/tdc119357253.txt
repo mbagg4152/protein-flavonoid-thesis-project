@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07278: 119357253</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641771589">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641771589">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- tdc:119357253 -->&gt;tdc:119357253 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) cationic peroxidase SPC4-like (N)
+atggcctgcagtagagcaatggtagccctgatggggcttgtccttgccgcgctgctcttc
+ccagcagctttgtcgtccaggcggccggatcagcttatctccatgaccaccgatggccag
+taccatagtacacgtccagtagtgaccatagccgacggtctcactgcggactaccatgac
+gtgtcgtgccccgatctgcagggcatcgtgcgcaccgccgtggtagaagccctacaggga
+gatatcaccatcgccgctgacctcctccgtatgttcttccacgactgcttcccgcaggga
+tgcgatgcgtcgattcttctgctgggaactccatggagtgagatgagaatgccgccgaac
+ctgtctctagatatcaggcggaaagtggcgttcctcatggaggacatccgcgccaaggtg
+cacgaagcctgtgggcccaccgtctcctgcgccgacatcatggcccttgccactcacgac
+gccgttatagcgtcgggtggcaaaccttaccatgtgccactcggtaggctcgacagcttc
+gagcccgcgccgctgaggttcgtcgaggagctcccgccccccaccttcagcattggccag
+cttatagctgccttcaaaagccgcagcctcgacgagaaagacctcgtggtgctctctggt
+gcgcataccattgggaaagctcattgcgccaccttcagcgaccgtttccccaactccgac
+tctgatgactttgtccgaaggctacaagataactgcaccgccgacgtgaaccggcgtcag
+gaccttgatgttaccaccccggaaaagttcgacaacaagtactacatcaacctcaagcag
+gggaagggggttcttacatccgacgtgcaactcctcctcaacgagaccacccgagggtac
+gtgaacgacttcgccgacaacgagtggtggttctggaaccagttcggcagctccatgagc
+aagatggggatgctccagggacctcaaggaaacgtcggccgcatccgccagcagtgctac
+tag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=tdc:119357253+nt">BLAST</a>
+</body>
+</html>

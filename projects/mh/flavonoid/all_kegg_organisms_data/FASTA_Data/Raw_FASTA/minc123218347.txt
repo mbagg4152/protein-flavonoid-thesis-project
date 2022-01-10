@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07684: 123218347</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641770028">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641770028">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- minc:123218347 -->&gt;minc:123218347 K05278 flavonol synthase [EC:1.14.20.6] | (RefSeq) LOW QUALITY PROTEIN: flavonol synthase/flavanone 3-hydroxylase (N)
+atggcaatgtcctttcgtggttggcaaaacaaggaggtgaacaaggacttcgcaagacac
+atgaaagaggtagtggataagttgttcagaactctttcattagggttaggggttgaaggt
+gatgtggtaaaagaatcagagggtggtgaagatattgaatatatgcttaaaatcaattat
+tacccaccgtgtcctcgtcctgatctggcccttggggttgtccctcacactgatctttcc
+accatcaccattcttgttcctaatcaagtccctggactctaagtccttaaggatgaccat
+tggatcgacgccaagtacatccccaatgctcttattattcacattggtgatcgattgagc
+aatggaaggtacaaggcagtgctacacagaacaacggtggacaaggagaagacaaggatg
+tcatggccagtattttgagagccaccaggggaatttgtggttggtccactttctcaactt
+gttggagaagataatccatctgaacctaaatgcaagcccaagaaatttaatgatggcaga
+tactgcaattccccatttccatatcaagaaaccaccgggaaggaggtagcgagaaggttg
+gtcaacgactttcttggaatggtcattggaaattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=minc:123218347+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07610: 122581493</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767257">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767257">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ecad:122581493 -->&gt;ecad:122581493 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) acyltransferase Pun1-like (N)
+atgacaagcataattttgcgagaactaatcaaaccagcatctccggccccttttcatctc
+tgtgactataatctttcgccgcttgatcaacttgccccagaactgaatgtaccatgtact
+ccaattgctcgtcttgttggggtgcaactcaatccttttgcctgtggtgggatagctcct
+tcatcactcattggtcatgtggcatgttatggctcccttgaccacaaaaaggtatcgcgg
+tttaatcctcattttattcataccccattgaccaattctgtaaggccagaatatgaagtc
+atagatcaaaagtgtgtgaatcctgtcacaaggaaatttatgtttcctaactctaaacta
+agtgacctacggaacaaggttatgccatctgtagcagctggatctgcaccacctataaag
+aatcctacacgggtcgaactattgacttctctactttataaaactgcaatggcagcagcc
+acaacaagatctggttcattcaagccatctcatttgtattttccgatggatataagaaac
+aaatatgtccaaaaatttccccaaacttccatgggaaacttcgtattccaaagaatccaa
+caagcagctgaaaacaggaaagagatattgctgtccaaattgggagacacagaatctgcc
+aagacatcatgttggtgtctgagcatatgtgggtttccttcataccatattgatttcgga
+tgggggaagctcatggatacaacgtcttcacttaaggaagcaaatatgagtggtttcctt
+ctgaaggatgctccagatggtgcaggaactgaagccttgataattttggagaaagaaacc
+atggcgatatttgagaacaataaggaaatgctttcattttgccaaacttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ecad:122581493+nt">BLAST</a>
+</body>
+</html>

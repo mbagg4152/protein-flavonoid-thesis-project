@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07364: 114285765</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767163">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767163">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csin:114285765 -->&gt;csin:114285765 K13269 kaempferol 3-O-beta-D-galactosyltransferase [EC:2.4.1.234] | (RefSeq) kaempferol 3-O-beta-D-galactosyltransferase-like (N)
+atggatgcaaatgcaggcattgcaggacgcgaaaacgaaatcctgaaattcgtcccagga
+tttccagagctacgacttggtgacttgcctagtggaatcctatttgggaacttagaatca
+gccttttcaatcatgcaacataaaatgggacaagcattgcctaaagcaacagctgttcta
+ataaactcatttgaggaattagacccagaaatcaacaaagatctcaactccaagtttctc
+aaattcctcaatgttggccccttcaacctcacatcaccgccacgattatccaattcagac
+gactatggctgcatatcatggctggacaagcgaaaacccacctctgcggcatacattggc
+tttagaacagtggcaaaaccgacacctgatgagttggtggcactagccgaagcactagaa
+gctagcactactccatttctttggtcgatggaagacaaattgaaagagcatttaccagaa
+ggaatcttgacacgaacaagtgagcaaggaaaaatcgtggcatgggcacctcaggtacaa
+attttggcacatatctcaaccggagttttcataactcattgtgggtggaactcggtgttg
+gagagcattgcagctggtgtgccgataatcggtaggccattctttggggatcaccatatc
+aacacatggatgctggaaaatgtatggaaaattggtgtgagagttgagggtggagtcttc
+acaaaaagtgggacaatggatgcccttgaaatagttttgtcgcacgaaagagggaggaaa
+ctaaaggagcaaattggatgtttcaaagagctggctctcatggctgttggaccaaagggg
+agctcatctcaaaatttcaatactttgttagcgatggtaacaagtctcaatcttggaaaa
+tgcatggaaggactattttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csin:114285765+nt">BLAST</a>
+</body>
+</html>

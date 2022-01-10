@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07294: 112711824</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641770865">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641770865">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ahf:112711824 -->&gt;ahf:112711824 K13258 2-hydroxyisoflavanone dehydratase [EC:4.2.1.105] | (RefSeq) 2-hydroxyisoflavanone dehydratase-like (N)
+atggcttcttcaaccagcaccaaggagatagacagagagcttccacctcttctgagagtt
+tacaaggacggaaccgttgaacgctttctaggctcttcgtatgtgccaccttcaccacaa
+gacccagacaccggagtttcatccaaagacatcgtcatatcagagaaccctttaatctct
+gcaaggctttaccttccaaaacttgaaaaccatcaccagaagcttccaatcttggtctac
+ttccacggcggcgcgttttgcctcgaatccgcattctccttcctccaccaacgctacctc
+aacatcatagcttcacaagcaaaggttctcgtagcttccatagagtacaggctcgcacca
+gaacaccctcttcctgctgcatatgaagatggatggtatgcactgaattggatcagttcc
+aacaagagcgagccatggttgatgaatcatggagatttcaacagattctacataggaggt
+gacacttcgggtgcaaacatagcacactacgcattgctccgcgttgaccagttaccgaac
+caagtcaaaatctcaggggcagtgcttgcttttccattgttctggagttcaaagccgatt
+ctgaacgaaccagttgaaggacatgaagagagctcagcaatgcaggtgtggaaattcgtg
+taccctgatgcaccgggtggtattgacaacccactgataaatccattggcacctggtgca
+gcgagcttgaaggagcttgggtgccctaaaattctgatctttgttgctggcaaagatgag
+cttagggacagagggatttggtactgtgatgctgtgaagaagagtgggtggaatggtgac
+gtggaacttattgaagttgaaggagaggaacactgttttcagatctatcatcctcaaact
+cataactccaacaacatgattagtcgcatagcctctttccttgtttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ahf:112711824+nt">BLAST</a>
+</body>
+</html>

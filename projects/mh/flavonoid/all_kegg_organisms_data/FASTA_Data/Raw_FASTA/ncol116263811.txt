@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07418: 116263811</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765320">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765320">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ncol:116263811 -->&gt;ncol:116263811 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) tryptamine hydroxycinnamoyltransferase 2-like (N)
+atggatgtgaaacaccatcgctgcacgttggtgaagccggcggagagcctccgccggaaa
+ttccggctcaacatcttcgacaagaaggcctccgacctgcacatcgccgtcctcttcctc
+tacaacaaacccggcacctctcccaactcccaaatcatgctcggcctctccaaggcgctt
+tcctactacccccagctcgccggccgcctctccgacggccacttcgtcgtcgacgacgac
+gactgcggcgtccccgtcttcgagacgacggtcaccggccagctcgacgacttcctcccg
+ctggagccctccccttccctctacgacctgcatccgcacccggagggctccaatcccatg
+ctcatggtgcagctcaaccggttcgactgcggcgggctggtgatcggcctctgcgccagc
+cacaaggtcgcggacgggcaggccatgagcaacttcttcctgtcctggtctcagctggtg
+aggtcgccggagacggagctcgaccgccggcccatccacgaccaagagtccctccttgtc
+cccaggaacccgccggtctgcagccacccccacgagaggatcgagttctcggactcccca
+ccgccggcgggcgacaccgctgacgtgagcgacaagatccacaatctcgtcgtcaactac
+tcatgggaatttgtaaacgaactcaagaagagggcttcatccgccaccagccccgccggg
+ttccagcccagcacctttgcctgcctcctctcccacgtctggaggaaggtgagcatcgcc
+cgcggcctgcgggacgacgaggtcacgtcggtgcgggtgctggtgaacggcaggccccgg
+ctgggaatcgcacccgagttttttgggaacgtggttctggacgcgtatccgaagaccacg
+gtggaggagctcgtgaaggagggagttgggtatggcgcaagattgatcaaggaggctgtc
+ggaaaagttgatggcgactacttccagtctttcatcgactttggggaggtgaacaaggag
+aaggagctggtgccttcacaggacgtaggcgacaacttcttgagcccaaacttggaggtg
+gatagctggttgggcttccgctttcacgaggtggacatgggggcgggggcgccctacgcc
+ttccgcccctcttggatccccatggaaggccttgtcatcttcgtccctgcgccttctgaa
+aagggcggcgtcgatctcataatcacgctcttcaaggagcacgcagagatgttcaagaag
+attgcgcacttcattgactga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ncol:116263811+nt">BLAST</a>
+</body>
+</html>

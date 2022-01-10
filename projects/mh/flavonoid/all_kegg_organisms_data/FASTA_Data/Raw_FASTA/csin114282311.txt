@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07364: 114282311</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641766746">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641766746">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csin:114282311 -->&gt;csin:114282311 K12355 coniferyl-aldehyde dehydrogenase [EC:1.2.1.68] | (RefSeq) aldehyde dehydrogenase family 2 member C4-like (N)
+atggcttcagggagttttgttaagattccagacataaagttcacgaagctcttcatcaat
+ggaaatttcgtcgattccatttcaggaaaaacatttgggacaatagacccaagaacagga
+gaacagatagcaaggatagcagagggagacaaggaagatgttaatttagcagtcaaggct
+gcgcgagttgcattcgatcatggcccatggcctcgcttatctggttctgcaatacgaaga
+ataatgatgaaatatgcagacttaatcaacgaaaatacagaagaactagttgcattggac
+accattgatgccggtaaattgttcggtaggggaaaggccgtggatattcctgcggcagca
+gaaactctccgttactatgccggtgctgcagataaaattcacggagagacgttaaaaatg
+tcgcaggagcttcaagcgttcacattgcgcgaaccagtaggcgtagtcgggcatatcatc
+ccttggaacttcccaagtatcatgttttctactaaggttgcaccagcattggcagctggc
+tgcaccatgattgtcaagcctgctgagcagaaacagacaccgctttcagctcttcacaat
+gcccatttggctaagctggctggaatcccagatggagtgataaatgttataacagcattc
+ggacatactactggagctgccatttcctctcatatggacattgataaaataagttttaca
+gggtccacagaagtgggaaggattgtaatggaagcagcagcaaaaagcaacttgaaagga
+gtgtcgctggagctgggagggaagacccctgtcataattttaaaaaatgctgaccttgac
+aaagcctctgatcttgctctcctcggaattgtgtataacaagggagaaatttgtgtggct
+ggatcacgtgtttttgttcaagaacgaatttatgaagaattggtgaagaagttggaagac
+aaggcaaagacatgggtggctggagatccttttgatcctattgttcgttatggaccacag
+gttgacaagacccaatttgagagaatactttcatacattgagcatgaaaagagagaagga
+gccacattgttaactggtggcaagccttgtggccagaagggatactatattgagccaaca
+attttcactgatgtatggaaagatagatgcctgcagagggatagtgagatgaagggaatt
+gcgaacaaattggcaaacctacaaccgattgtcagtttcataatgcagaacgtcatgcag
+ccaccgttttcgttacaagacatgccgattccggcagccaagaccgatgcccagaaaagg
+gggcagaaaacagttcctataatccctcagcgtgacaggacaaaggaacattctcactgg
+ccttcatag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csin:114282311+nt">BLAST</a>
+</body>
+</html>

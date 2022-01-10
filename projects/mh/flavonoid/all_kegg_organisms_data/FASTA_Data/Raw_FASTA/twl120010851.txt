@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07256: 120010851</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641771338">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641771338">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- twl:120010851 -->&gt;twl:120010851 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase-like (N)
+atgatcatcaacgttaaggagtcgaacatggtgcgcccggcggaggagacgccgcagaag
+gggctgtggaactccaacgtggacctggtggtgcccagattccacacccctagcgtctat
+ttttacagacccaccggagcctccaacttcttcgatccgcaagtgctcaaggaggctctg
+agcaaggccctcgtgccgttctatccaatggcggggaggctaaggcgcgatgaggatggt
+cgtattgagatcaattgcaatggtgaaggtgtccaattggatctggctgaaactaactct
+gtgattgatgatttcggtgattttgcacccaccatggagctgaagcaactcattccaact
+gtcgattattctggcgatataggctcttttcctctcttggtgttgcagttcacatacttc
+aagtgtgggggagtctcccttggtgttggcatgcaacatcatgcggcagatggattttct
+ggtcttcactttgtgaacacatggtcagacatggctcgtggtctggagctcacaattcca
+ccattcatcgaccgcaccctactccgagcgcggaacccacctcagccacaattccctcac
+attgagtaccaacagcctccatccttgaaagctccaacaaaacccctgtctggtcctgaa
+agcacaacagctgtgggcattttcaagttgtctcgcgaccagcttatcaccctcaaaggc
+aagagcaaggaaggtggtaatacagtcaactacagctcatatgagatgttggccagtcat
+gtatggaggtccgcgtgcagggcacggggtctaaccgacgatcaggagactaaattgtac
+attgcaactgatggacggtcaagactgcaacctcctctgcctcccggttactttggcaat
+gtaatctttactgccacaccgattgctgtagcgggtgatctccaatcaaaaccagcatgg
+tacgcagcaagccagattcatgacgcattggcaaggatggacaacgattacttaaggtcg
+gcccttgattacctagagctgcaacctgacttatcgaagcttgtccgcggggctcatact
+ttccagtgtccgaatctcgggataactagctgggtaaggctgccgattcatgatgcagat
+tttggttggggtcggccaatttttatggggcctggtgggattgcatatgaggggttgtcg
+tttatcttgccaagtccgattagtgatgggagcttatcagtggccatctctttgcaatct
+gaacacatgaaactatttgagaagttcatatatgacatttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=twl:120010851+nt">BLAST</a>
+</body>
+</html>

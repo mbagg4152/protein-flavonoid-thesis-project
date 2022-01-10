@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07757: 123165169</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767806">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767806">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- taes:123165169 -->&gt;taes:123165169 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) putrescine hydroxycinnamoyltransferase 1-like (N)
+atggccgccggtgaggaggaggtgctggtggtagagtcgtgctttgtaaccccggccgta
+gacacgcctagaaaagcgctctggctctcgccactcgacatcatgctggccagcagaggc
+tacacccctctcgtccacttctaccgtccttgtgtcgacgaaaccagtgcccaagacttc
+tttgacgtgactaagttgaagactgcgctgggcaaggctcttgtggccttctaccccatg
+gccggccggctcagggtgggcgcccatggcaggttggagatcgactgcaacggtaagggc
+atgctttttcttatggcctactctcgtctcaccatcaatgatttccgcgacttgaagcca
+tcatcaaagctaaggaggttgtttgttccccgcatggacgactcatcggccatcctgtgc
+gccacccaggtgacattcttcaagtgtggtggagtggccttagggacggcaacgcaccaa
+ggcgctatggatggcactgccgcgtttcacttcttccagacatggtcagccttctccagg
+gatggcgaccgggatgtggtgaagttcccctaccttgaccgcacactcttatgtgcgcgc
+gacccacccattattcatccggacaccctctccctattccgcctcaagacaacgaacttg
+tcccagccgccggcgccggggcctgtagtcgtcaacgaggttttcacccttcgcaaggat
+caaatttccgctcttaagcacatgtgtggtggcggccgtgtgagcaccttcagcgccgtg
+agtgcatacatgtggcggtgcatgtgcttagcccggcggctacctccagactccacgacg
+cgcctcgagttcccggccaacttccgacgcagcattgcgccaccgctcccggacgtctac
+ttcggcaacgcgatgttgcaagtaagtgtcgccgacaaaacgtgggacgtcgtctcgggc
+aatctagcctacgtcgcgcaccggatcagagacaccctcggccgggtgaacgacgagctg
+gtgcgttcggcggtcgactacctcgagctcgacctggcagagagggacaaccgcccggct
+atcggcgttctgccagcgacggacctgtgcgtggtcagctggctcggcatgcccttgtac
+gatgtggatttcggctggggaaagccgttggctatgttgcgtgccgagcaaaaccgcgga
+ggtttcgtgctcatgatgaacggcgcgcagggggatggcagcgtgcgcctgtccatgtcc
+atagaggctgcaattctcaaggacttccagcgtttcttctatacaaagctggatagcaag
+gtgtattccaagttctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=taes:123165169+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07684: 123213776</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641770075">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641770075">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- minc:123213776 -->&gt;minc:123213776 K13081 leucoanthocyanidin reductase [EC:1.17.1.3] | (RefSeq) leucoanthocyanidin reductase-like isoform X1 (N)
+atgactgtgtcacccgctatttccacagccaagagcagcagggttctgatcattggagcc
+accggcttcatcggtcattttgtagccgacgccagcctcggctcaggtcgacccacatat
+gttctcgtccactccagtgtcactagccctagtaaggctaaaatcatccagcaacttcaa
+aaaaagggcgctgaaatattacatggatcgataagtgacaaggaagcaatggaaaaaata
+ctgaaagagcaggagattgacatcgtgatatcagttgttggcggtgagaaaatattggac
+cagctgccactggtggaggccattaaagctgttggtactgttaagtgtcaattgcagaga
+tttttgccatcagaattcgggcatgacgtggacagagctgacccggtggagccggggctc
+atcatgtacaaagaaaagcgcagagtcaggcgtttaattgaagaacttgccgtgccgtac
+acctacatttgttgcaattcaatagcttcgtggccctattacgacaatcaccacccttca
+gaagttctccctccgttggatcagtttgaaatctacggtgatggcagcgtcaaagcatac
+tttattgctggcactgatattggaaaattcaccgtcaaaattgctgatgacattcgaact
+gtaaacaagtccgttcattttcgaccaccctccaattgttatagcattaacgagcttgca
+tgtttatgggaaaagaaaattggaagaactttaccaagagtgactgtttctgaggatgat
+ctccttgcagcagctgcagagaatgttataccacaaagtgttgttgcatcgttcacacat
+gatatattcattaagggttgtcaagtgaatttttctatcgatggccatggtgatattgaa
+gtgaacaatctttatcctgatgaacaatttcgtagcttggatgattgtttcactgacttt
+gccctccaattaaattacaagtctatggaggctgaagacaggtcactgccgtcctcccag
+acatccactcccatttgttcttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=minc:123213776+nt">BLAST</a>
+</body>
+</html>

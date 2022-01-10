@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07627: 121741381</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765813">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765813">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sspl:121741381 -->&gt;sspl:121741381 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) agmatine hydroxycinnamoyltransferase 1-like (N)
+atgaaaatcaaaataggaagttcaaagcttattaagcctttgtatgtaggcaaccctcct
+ccaacgacagactatatccctttatccgttttcgataaggtgacctacgatcaacatgta
+gctgtcgtttacgcatatcgccctccaaccccgcccaatgcaaccatcgagcaaggccta
+aggaaggcgttggccgcgtatcgtgggtgggccgggaggctcagcaaagatagcaatggc
+gatcctatcattcttttgaatgatgagggtgttaggtttgtggaggcatcggttgatcgc
+gatctagatcaatccgtcactttcagcccttccgcgtctttgctaagcatgcaccctagt
+ttggagggcgtggtagagctccttcaagttcagctcaccagattctcatgtggctcgatg
+gtggtgggcttcaccgcccaccacctcgtggcggatggtcatgccacaagcaactttttg
+gtagcatgggggttagcttcgaggggacttgaaattacatcattgccatttaatgatcgt
+acaatattctcccctcgaagtccccctaaagttgactttcaacatagaggggcggaatac
+atatctaaaaacttcaagaaagtgtaccctttgatagatcataatgtggaggacatcgtg
+gcacacaaagttcacttcacctcggaatttctctccaaggtcaaagctagggcttcttcg
+atgaatggatcgaagaagccttttagcactttcgagagcctcttggctcatctatggaga
+gttgttacaaaggcgcgcggcttgaacgaatccgagaccacccaactgaggatctcagtg
+gacggccgggcgcgactaaaccctagggttccaaatgaatattttgggaatttggtgttg
+tgggcatttgcaaaggccaaagtggacgacctcttagacgcgcctctcccctacgcggcc
+aatattttgcacgaggcagttacgaatgtgaacgacgactacttcaaatcgttcatcgac
+tttgccaatcacgaggtgaaggcggaagatcttgttccgaacgcagacacagaagaaatg
+atattgtggcctaatttggaagttaatagttggttaaggttcccattttatgatcttgat
+ttgggaagtggaacgccatacatattcttgccctccttctcgcccatagaggggatcata
+ttccttctcccctccttctccggcgatggaagtatcgacgttttcgttcctctatttcaa
+gaaaattacaaaattttcaaagaaatttgttataccttagaatag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sspl:121741381+nt">BLAST</a>
+</body>
+</html>

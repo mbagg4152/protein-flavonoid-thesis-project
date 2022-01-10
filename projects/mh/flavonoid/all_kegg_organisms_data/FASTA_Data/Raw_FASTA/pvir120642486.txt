@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07260: 120642486</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767217">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767217">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvir:120642486 -->&gt;pvir:120642486 K22771 flavonol-3-O-L-rhamnoside-7-O-glucosyltransferase [EC:2.4.1.-] | (RefSeq) UDP-glycosyltransferase 73D1-like isoform X1 (N)
+atggcagccagcctgtgcccgaagcctcacttcgtggtcatcccatggccagccactagc
+cacattatccctatcgtcgacatcgcctgcctcctcgccgggtacggcgcgccggtcacc
+gtcatcaccactcccgccagcgcgcagctcgtccagggccgcgtggaacgcgccgggcca
+ggctcatcgggactcacggtcaccgcgataccgttcccggcggccgaggccggcctgccg
+gatggctgcgagaggctcgaccacaccccctcggtcgacctcgtgcccaacttcttcgac
+gccaccacgcgattcggcgacgccgtggcgcggcactgccgcctcctcatggcgacggcg
+acgccggcgcgccggccgggctgcatcgtcgccgggatgtgcaacacgtgggcgcacggt
+ctggcgcgcgagctcggcacgccctgcttcatcttccacgggttcggcgccttcgcgctg
+ctgtgctgcgagtacctgaacacgcacaagccccacgaggcggccgcgtcgctggacgag
+ctcttcgacgtcccggtcctgccgcctttcgagttcaggttcgccaggaggcagctgccg
+ctgcagttcctgccttcgtgctccatcccggaggtccgcctccgggagctccgggaattc
+gagatggccgtggacggcatcgtcgtgaacagcttcgaggagctggaacacggctcggcc
+gcgggcctcgcggcggtcacgggcggcaaggccgtgttcgccgttggcccggtctcgctc
+tgcggcgcgcctggcctcctcgacccgcgggccgactcggatgacgccaggcagtgcatg
+gcgtggctggacgccaagaaagccaggtacattagcgtcaagtgtcgatggagagttgcc
+gtggaggagctcaggccgggcggcagctgtggcgtccactcctggatcgagggcacaagc
+ggcgacggaaggcgggtttcttggtttgcgccacaaaaccaaggaggctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvir:120642486+nt">BLAST</a>
+</body>
+</html>

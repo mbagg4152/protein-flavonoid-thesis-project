@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07330: 113867100</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641769039">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641769039">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aprc:113867100 -->&gt;aprc:113867100 K13263 isoflavone 7-O-glucosyltransferase [EC:2.4.1.170] | (RefSeq) UDP-glycosyltransferase 2-like (N)
+atggcgaaggacaccatagttctataccctacattgggtaggggacacctaatttccatg
+gtagaactaggcaagctcattctaacccaccacccttccctttccatcacaatcctcatc
+ctcactccaccgccaaccatcgccccaacctttgcctatgactccatcacccaatacatc
+agcaccatctccaccaccacaccctccatcaccttccaccacatctcctccacaccattg
+cccacctccaccctctctatcccctctcaccttctccccctccaactctccctcgacaac
+acccaaaacgtttcccaaaccctccattccctctccaaaaccaccaacatcaaagccatt
+gtcatggatttcatgaacttcaactccccacaaacacttacccaaaacctcaacatacca
+acttatttctactacacttctggagcctccactctcgccatcttgcttcatttcccaacc
+attcaccaaaacgccacaaaacccttgaaagaccttcccatgcaacttcaaatccctggc
+ttgcccacactttccaccaatgatcttccaaaagaagccaaagatccttcggatcatagt
+taccaggttttccttgaaatatcaaaaaccatgaggggtagtgttgggattatcgtgaac
+accttcgaagccattgaagaaggacctgtaagagcctcaagtgaagatggaaccacccca
+cctttgttttgtataggacccgtgatttcttctccttatggagaggaagacaaagggtgt
+ttgagttggcttgactcgcaaccgagtcaaagcgttgtgttgttgagttttggaagcatg
+cgagggttttcgaagacccagttgagggaaatagctattgggttggagatgagcgagcaa
+agattcctgtgggttgtaaggagcgagttagatggggttgactcggttgaaccgagttta
+gacgagttgttgccgaaagggtttttggagaggacaaaggagaagggaatggtggtgagg
+aactgggccccacaagctgagattctgagtcatgactcggtgggtgggttcgtgactcac
+tgtgggtggaactcggtgttggaagcggtttgtgaaggagtgccaatggtggcgtggccc
+ctctacgctgagcaaaacatgaatagggtgattttggtgcaagaaatgaaagtggctttg
+gcggtgaacgagtcaaagaatgggttagtgagtgcgactgagttgggggaccgagtcaag
+gaactcatggaatcggacacggggaaagaaattagacacaggattttcaaaatgaaaata
+agtgctgttgaagcaagatctgaaggtggatcttcacgtgttgctttggatacgttggtt
+cagctgtggaaacagaattaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aprc:113867100+nt">BLAST</a>
+</body>
+</html>

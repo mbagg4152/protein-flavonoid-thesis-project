@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07278: 119365832</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641771792">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641771792">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- tdc:119365832 -->&gt;tdc:119365832 K08695 anthocyanidin reductase [EC:1.3.1.77] | (RefSeq) anthocyanidin reductase ((2S)-flavan-3-ol-forming)-like (N)
+atgtcggccggcgagatgcggaagacggcgtgcgtcaccggagggagcggctacatagct
+tcagcgctcgtcaagacgctgctggagaaggggtacgccgtcaagacgacggtcagagac
+cccgaggacacggagaagaattcccacctcaaggacttgcaagcacttggccccttggag
+atcatccgtgcccggctggatgaagaaggcagcttcgacgacgcagtttccggctgcgac
+tacgccttcctagtcgctgcgcccatggacttcgggtcagcagaccctgagagggatatg
+atcgacgcagccgtgcaaggaacactcaacgtgatgaggtcgtgcgtgagagccggaacg
+gtgaagcgggtgatcctgacgtcgtcggattctgcggtctccatgaggccgctgccggaa
+gatgttcatgtgctcgacgagggctcctggtccgacgtcgagtacctcagggccaacaaa
+ccagaaacatgggcgtacgcagtgtcgaaggtgcttgctgagaaggcggcgaccaaattc
+gcggaggagaacggcatcggccttgtcaccatgttgccggtgttcatcttgggcgcggcg
+ccggtctccaaacccacatcaagcgtccctgtcaccctctccctgttgaccggcgacgag
+gcacagatggatatcatgataggcatgcagtcgaccacggactgcgtgcccataagccac
+atcgacgacctctgtcatgccgaggtgttcatcgccgagaatgagtcctcctcgggaaga
+tacctgtgctgcagtcacaacaccactgtcttgcaactcgctcgtctcatggcggagaag
+tacccacaatacaatatgaaacctgaacgatttgatgggtccccagagaagccgagagtg
+tgtgtgtcgtctgagaagctcatcggggaagggtttgtgttcaagtacgatgatctaggt
+gagatccttgatgaccttgtcgagtacggcagaaccaccgggattctgccctattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=tdc:119365832+nt">BLAST</a>
+</body>
+</html>

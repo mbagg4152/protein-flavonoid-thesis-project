@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07684: 123211777</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641769676">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641769676">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- minc:123211777 -->&gt;minc:123211777 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase-like (N)
+atgataatcacggtgaaggagtcgacgatggtcccgccgtcggcggagacgccgaggata
+tctctgtggaactccaacgtcgatctggtggttccccgatttcatactcccagcgtttac
+ttctaccggcccaccggggccataaacttctttgatggtaagttgctcaaggaggctctc
+ggcaaggctctggtgccgttctacccaatggcggggcggttaaagcgtgacgaagatgga
+aggattgagatcgattgtaatgctgaaggcgtcttgtttgttgaggccgaaactccctct
+gttattgatgattttggtgactttgcgcccactttagagctcaagcagctcattccgaca
+gtggattactccggcgggatctctacgtatcccctattggtgttacaggttactcacttc
+aaatgtggtggagtttcacttggtgtaggtatgcaacaccatgcggcagatggattttct
+ggtcttcactttgtaaacacatggtcagacattgctcgtggtcttgatgttaacatcacc
+ctgttcattgaccggactctgctcagagcacaggatccccctcagcctactttcccacac
+atggaataccagccgcctccttccctgaaaactcctccaccagcagtttctgagcctact
+gctgtctccatttttaagttgacgcgggaccagctcaacatcctcaaagccaaggccaaa
+gaagatggtaacactatcaactatagctcatatgagatgctggcgggtcatgtctggaga
+tctgcatgcaaggcacgcggcttatctgatgatcaagagactaaattgtacatagcaact
+gacggacgtgctagattaatccccccacttccacctggttactttgggaatgtgatattt
+acagccacaccaatggcagtagcaggtgatctccagtcaaagcctatatggtatgctgct
+ggccagattcatgatgccttggttcgaatggacaacgactatttaaggtcagccctcgat
+tacctagagcttcagcctgatttatcagcattagttcgtggtgcccatacatttaggtgt
+ccaaatcttgggattactagttgggttagactgccaatacatgatgcagattttggttgg
+ggtcgacccatatttatggggcctggtgggattgcatatgaaggcttatcatttgtattg
+ccaagccctacaaatgatgggagcttatcagttgccatctctctacaatctgaacacatg
+aaactgtttcagaagttcttttatgatatttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=minc:123211777+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07627: 121809514</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765857">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765857">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sspl:121809514 -->&gt;sspl:121809514 K00588 caffeoyl-CoA O-methyltransferase [EC:2.1.1.104] | (RefSeq) flavonoid 3',5'-methyltransferase-like (N)
+atgaaggataagttctatggctccattcttcagagcgaagccctagctaagtatattctg
+gaaacaagtgcctatcccagagagcacgaacaactaaaagagatcaggaatgctaccgtc
+gataaatataaattttggagtcttatgaatgtgccggctgatgagggccagtttatatct
+atgcttttgaaaattatgaatgcgaagaagactatcgaagtcggagtttttaccggttat
+tcacttctctctactgctctcgctcttcccgatgacggcaagataaccgcgatcgacccg
+gatagggaagcctacgaaactggattgccatttattgaaaaggcaaacatggctcacaaa
+attgagttcatccagtctgatgctttgagtgtcatgaaggaactcctctccaagggcgag
+gaagggacattcgattacgcattcgttgatgcggacaaagagaactacatcaactaccac
+gaacaactgctgaagctggttaaggtaggaggaattatagcctacgacaacacattgtgg
+tccggcaccgtagtcgcggcggaggaagacgagatggatgacttcttgaggggctgcaaa
+gggcatatcattgcgctcaactcatttctagccgctgattcccgcatcgaattggcccaa
+ctttcaatcggagatggcctcactttgtgcaggcgtctcatctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sspl:121809514+nt">BLAST</a>
+</body>
+</html>
