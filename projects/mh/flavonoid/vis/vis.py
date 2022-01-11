@@ -64,7 +64,7 @@ def mk_tables(df):
                 SK: x_sim_kegg}
         for key in data:
             if len(data[key]):
-                split_list = np.array_split(np.array(name_frmt(data[key])), 4)
+                split_list = np.array_split(np.array(name_frmt(data[key])), 3)
                 tmp_df = format_df(split_list, max_lst_len(split_list), flav)
                 output_table(tmp_df, get_fname(flav, key, TP))
                 tmp_df.to_csv(index=False, header=False, path_or_buf=get_fname(flav, key, TC))
