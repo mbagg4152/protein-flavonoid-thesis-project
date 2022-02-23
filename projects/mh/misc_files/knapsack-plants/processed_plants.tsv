@@ -1,4 +1,4 @@
-Arabidopsis thaliana	Catechin	Cyanidin 3-sambubioside-5-glucoside	Leucocyanidin	Cyanidin 3-O-[2-O-(2-O-(sinapoyl)-bata-D-xylopyranosyl) 6-O-(4-O-(beta-D-glucopyranosyl)-p-coumaroyl-bata-D-glucopyranoside] 5-O-[6-O-(malonyl) bata-D-glucopyranoside]	Cyanidin 3-O-[2''-O-(xylosyl) glucoside] 5-O-(6'''-O-malonyl) glucoside	Cyanidin 3-O-[2''-O-(2'''-O-(sinapoyl) xylosyl) glucoside] 5-O-glucoside	Cyanidin 3-O-[2''-O-(xylosyl)-6''-O-(p-coumaroyl) glucoside] 5-O-malonylglucoside	Cyanidin 3-O-[2''-O-(xylosyl)-6''-O-(p-O-(glucosyl)-p-coumaroyl) glucoside] 5-O-glucoside	Cyanidin 3-O-[2''-O-(xylosyl) 6''-O-(p-O-(glucosyl) p-coumaroyl) glucoside] 5-O-[6'''-O-(malonyl) glucoside]	Cyanidin 3-O-[2''-O-(2'''-O-(sinapoyl) xylosyl) 6''-O-(p-coumaroyl) glucoside] 5-O-glucoside	Cyanidin 3-O-[2''-O-(2'''-O-(sinapoyl) xylosyl) 6''-O-(p-O-(glucosyl) p-coumaroyl) glucoside] 5-O-glucoside
+Arabidopsis thaliana	Catechin	Epicatechin	Cyanidin 3-sambubioside-5-glucoside	Leucocyanidin	Cyanidin 3-O-[2-O-(2-O-(sinapoyl)-bata-D-xylopyranosyl) 6-O-(4-O-(beta-D-glucopyranosyl)-p-coumaroyl-bata-D-glucopyranoside] 5-O-[6-O-(malonyl) bata-D-glucopyranoside]	Cyanidin 3-O-[2''-O-(xylosyl) glucoside] 5-O-(6'''-O-malonyl) glucoside	Cyanidin 3-O-[2''-O-(2'''-O-(sinapoyl) xylosyl) glucoside] 5-O-glucoside	Cyanidin 3-O-[2''-O-(xylosyl)-6''-O-(p-coumaroyl) glucoside] 5-O-malonylglucoside	Cyanidin 3-O-[2''-O-(xylosyl)-6''-O-(p-O-(glucosyl)-p-coumaroyl) glucoside] 5-O-glucoside	Cyanidin 3-O-[2''-O-(xylosyl) 6''-O-(p-O-(glucosyl) p-coumaroyl) glucoside] 5-O-[6'''-O-(malonyl) glucoside]	Cyanidin 3-O-[2''-O-(2'''-O-(sinapoyl) xylosyl) 6''-O-(p-coumaroyl) glucoside] 5-O-glucoside	Cyanidin 3-O-[2''-O-(2'''-O-(sinapoyl) xylosyl) 6''-O-(p-O-(glucosyl) p-coumaroyl) glucoside] 5-O-glucoside
 Arabidopsis thaliana cv.Columbia
 Asparagus officinalis	Catechin	Cosmosiin	Apigenin
 Asparagus officinalis L.
@@ -120,16 +120,16 @@ Juglans regia L.
 Lactuca sativa	Cyanidin 3-(6''-malonylglucoside)
 Lactuca sativa L.
 Lotus japonicus
-Mallotus japonicus
+Mallotus japonicus	Epigallocatechin gallate	Epigallocatechin-(4beta->8)-epigallocatechin-3-O-gallate
 Omphalotus japonicus
 Lupinus angustifolius
 Lupinus angustifolius cv.Fest
 Malus domestica
 Manihot esculenta
 Micromonas pusilla
-Momordica charantia	Catechin	Leucocyanidin
+Momordica charantia	Catechin	Epicatechin	Leucocyanidin
 Momordica charantia L.
-Musa acuminata	Catechin
+Musa acuminata	Catechin	Epicatechin
 Musa acuminata colla AAA var.Cavendish
 Musa acuminata var. Yangambi km
 Nelumbo nucifera	Leucocyanidin
@@ -159,7 +159,7 @@ Phaseolus vulgaris var. nanus
 Phaseolus vulgaris L.
 Phoenix dactylifera
 Populus trichocarpa
-Prunus avium	Catechin	Apigenin	Leucocyanidin
+Prunus avium	Catechin	Epicatechin	Eriodictyol	Apigenin	Leucocyanidin
 Prunus mume
 Prunus persica	Catechin
 Prunus persica L.
@@ -181,17 +181,17 @@ Solanum lycopersicum MILL.
 Solanum lycopersicum cv.Moneymaker
 Solanum pennellii
 Solanum tuberosum
-Solanum tuberosum subsp. Andigena	Catechin
+Solanum tuberosum subsp. Andigena	Catechin	Epicatechin
 Solanum tuberosum L.
 Solanum andigena x Solanum tuberosum
 ASolanum tuberosum
 Sorghum bicolor	Apigeninidin	Apigeninidin 5-(5''-caffeylarabinoside)
 Spinacia oleracea
 Theobroma cacao L.	Catechin	Cosmosiin	Isovitexin	Vitexin	Apigenin	bis-8,8'-Catechinylmethane
-Theobroma cacao	Cyanidin 3-arabinoside	Idaein
+Theobroma cacao	Epicatechin	Cyanidin 3-arabinoside	Idaein	Procyanidin C1	Epicatechin 8-C-beta-D-galactoside
 Vigna angularis	Catechin	Catechin 7-O-beta-D-glucopyranoside
 Vigna radiata	Isovitexin	Vitexin
-Vitis vinifera	Catechin	Cyanidin 3-(6''-acetylglucoside)	Procyanidin B6	Procyanidin B3	Procyanidin B7
+Vitis vinifera	Catechin	Epicatechin	Epigallocatechin gallate	Cyanidin 3-(6''-acetylglucoside)	(-)-Epicatechin 3-O-gallate	Procyanidin B6	Procyanidin B3	Procyanidin B7	Epicatechin-(4beta->6)-epicatechin-(4beta->8)-catechin	Epicatechin-(4beta->6)-epicatechin-(4beta->8)-epicatechin	Epicatechin-(4beta->8)-epicatechin-(4beta->6)-epicatechin	Procyanidin C1	3-O-Galloylepicatechin-(4beta->6)-catechin	3-O-Galloylepicatechin-(4beta->8)-epicatechin	3-O-Galloylepicatechin-(4beta->8)-catechin	Epicatechin-(4beta->8)-epicatechin-3-O-gallate	3,3'-Digalloylprocyanidin B2	[Epicatechin-(4beta-8)]2-epicatechin-3-O-gallate	Epicatechin-(4beta->8)-3-O-galloylepicatechin-(4beta->8)-catechin	Epicatechin-(4beta->8)-3-O-galloylepicatechin-(4beta->8)-epicatechin-3-O-gallate
 Vitis vinifera var.
 Vitis vinifera cv.Petit Verdot
 Vitis vinifera cv. Petit Verdot
@@ -204,7 +204,7 @@ Ziziphus jujuba var.spinosa	Swertisin
 Ziziphus jujuba var. inermis
 Ziziphus jujuba var.inermis
 Glycine soja
-Medicago truncatula	Catechin	Apigenin	Vicenin II	Leucocyanidin
+Medicago truncatula	Catechin	Epicatechin	Apigenin	Vicenin II	Leucocyanidin	(-)-Epigallocatechin
 Rosa chinensis
 Vigna unguiculata
 Vigna unguiculata var. sesquipedalis
