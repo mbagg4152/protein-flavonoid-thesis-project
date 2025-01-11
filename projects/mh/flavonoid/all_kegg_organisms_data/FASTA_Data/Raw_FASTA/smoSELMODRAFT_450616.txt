@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01496: SELMODRAFT_450616</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854383">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854383">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- smo:SELMODRAFT_450616 -->&gt;smo:SELMODRAFT_450616 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) BAHDd2-1; BAHD family acyltransferase, clade IV (N)
+atggaagaagcagcagcagcagcagcagcagcaggagcagctcaaaggcaatcctctctc
+aaagctcgtcgatcagtgaagcccaggaacagtagcagcagcaagaaaagcggaagaagg
+aacgtcccgctaagtacctgtgatttggcaatcccgaatgtgtacgccatggcaatctac
+gcattcaaggcacccaccaggcctggtgtggttgaggagctggaaaggggtctggcagag
+gctttggacgagtatccggaatgggcaggcaggctgtgcaaggactcttcgtcctcatct
+tcatcatcatcgtcttcttgctcctctggtttgagcggcagcgtcggctctagcaaggtg
+gttattgatctcaatgatgacggggttgcactaatggaagcaagcatggactgctgtctc
+caggatttgatgccttttaacccatgtcccctgcttttccagctggttccagctacgaaa
+tctgttgaagaactgctccttgtccaggtgaccagcttcaaatgtggtggcatagttctc
+ggcgttgcctggcaccaccgtctcgcagatggacaggctttcttcagcttcatggacaac
+tggtctcggctcacccgaggcgctccactggcttgcagcccgtttcgcgatagaagtgca
+ttaaatgccggggaaactgctcagccgctccaggatgactacttgctgctgtcgcctcct
+caggttccagcgccggctccggacccaggtgctgccaaaactcctcctctcgcggcgagg
+aagttccactttagcatggatttgctccagaggatcaagagaagagccgggggagacagc
+tctacggacgagccggcctcctccaccaccagaggcgtcacaactttcgagagcctgacc
+gctcacttgtggcggtgcatcaccaaagcccgcggcatcaccggcgacaccaagacgcag
+ataatgatccccatgaacgggagaagccggctggagccggccatccccgagagctacttc
+ggcaacgcgactttcatgccgtcgtccgggaccgaggccggggagctgacgagccggcca
+ctgtgctacgcagcgcagctcgtccacggcgccatcgtcaaggccgacagtagctacttg
+cgcagcgcgctggaacttatggagctccagaacaggatgatgaaagacgaggaggtggcg
+gaggtggtcgtccctcccagcatgtctcctcacgtcgtggtgacgagctgggtgaggttc
+ccgctctacgacgtggatttcggctggggaacgccgctctacgtcggcaacgtactggat
+ctgtacgaggggatcatgatcttactgccatcgcacacgcaggacgggagcatcgatgcg
+gtggtggctcttttcgagccggagatcgagaagctccaggaattgtgctatcgtgatgat
+cttctctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=smo:SELMODRAFT_450616+nt">BLAST</a>
+</body>
+</html>

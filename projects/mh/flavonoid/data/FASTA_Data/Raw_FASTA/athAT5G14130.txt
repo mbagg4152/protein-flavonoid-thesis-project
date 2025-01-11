@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T00041: AT5G14130</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841842">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841842">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ath:AT5G14130 -->&gt;ath:AT5G14130 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) Peroxidase superfamily protein (N)
+atggatattcgtagtgatgatgcaaaaaaacctatgatgatgtggttcttagggatgctg
+ttgttttccatggtggccgagtcaaatgctcaactgtcagagaattactacgcctcgaca
+tgtcctagcgtagagctcatcgttaagcaggcggttactacaaaattcaaacaaactgtc
+acaacggctcctgcaacgttgcggatgttctttcacgactgcttcgtcgagggatgtgat
+gcgtctgtgtttatagcatctgagaatgaagacgcagagaaagacgcagatgacaataaa
+tctctcgccggagacggatttgacaccgtgattaaagctaaaaccgctgtagaatctcaa
+tgtcccggagttgtgtcatgtgccgatatactagctctcgccgctagagacgtcgtcgtg
+ctcgttggagggccagagtttaaggtggagctagggagacgagacgggctcgtgtcgaaa
+gcgtctagagtgaccggcaagttacctgaaccagggcttgacgtgagaggtctagtccag
+atcttcgctagtaacgggctttcattgaccgacatgatcgctctttcaggcgcacataca
+attggatcctctcactgcaaccgtttcgccaaccgtctccacaatttctcgacgttcatg
+ccagtggaccctacgatggacccggtctacgctcagcagctgatacaagcctgctctgac
+cccaacccagatgctgtagtagacattgacctaacgtccagagataccttcgacaatagc
+tactaccagaacctcgtggctcggaaaggacttttcacctccgatcaagctctgtttaac
+gatctctcgtctcaggctacggtggtcaggtttgctaacaacgctgaagaattctacagc
+gcttttagctctgctatgaggaatcttggccgcgttggggttaaggttgggaatcaaggc
+gagattcgaagggactgctctgcttttaactag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ath:AT5G14130+nt">BLAST</a>
+</body>
+</html>

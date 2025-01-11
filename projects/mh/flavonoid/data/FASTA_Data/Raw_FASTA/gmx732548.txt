@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 732548</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620843064">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620843064">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:732548 -->&gt;gmx:732548 K00475 naringenin 3-dioxygenase [EC:1.14.11.9] | (RefSeq) F3H; flavanone 3-hydroxylase (N)
+atggcaccaacagccaagactctgacttacctggcccaggagaaaaccctagaatcgagc
+ttcgttcgggacgaggaggagcgtcccaaggttgcctacaacgaattcagcgacgagatc
+ccagtgatttctcttgccggaatcgacgaggtggatggacgcagaagagagatttgtgag
+aagatcgtggaggcttgcgagaattggggtatattccaggttgttgatcacggtgtggat
+caacaactcgtggccgagatgacccgtctcgccaaagagttctttgctttgccaccggac
+gagaagcttcgttttgatatgtccggcgccaaaaagggtggattcattgtctccagccat
+ctccaaggggaatcggtgcaggactggagagaaatagtgacatacttttcgtacccaaaa
+agagagagggactattcaaggtggccagacacgccagaagggtggagatcggtgactgag
+gaatacagcgacaaagtaatgggtctagcttgcaagctcatggaggtgttgtccgaagca
+atggggttagagaaagagggtttaagcaaagcatgtgttgacatggaccagaaggtggtg
+gttaattactaccccaaatgccctcaacctgacctcactcttggcctgaagcgccacacg
+gatccgggcactatcaccttgctgcttcaggaccaagtgggtggacttcaagccaccagg
+gacaatggcaaaacatggatcaccgttcagcctgtggaggctgccttcgtcgtcaatctt
+ggagatcatgctcattatctgagcaatggaaggttcaagaatgctgatcaccaagcggtg
+gtgaactcaaaccatagccgtttgtccatagccacttttcaaaacccagcaccaaatgca
+actgtttaccctctgaagataagagaaggagagaagcctgtgatggaggaaccaatcact
+tttgctgaaatgtacaggaggaagatgagcaaggacattgagattgcaaggatgaagaag
+ctggctaaggaaaagcatttgcaggaccttgagaatgaaaagcatttgcaagaacttgat
+cagaaggcaaaacttgaggccaagcctttgaaggagattcttgcttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:732548+nt">BLAST</a>
+</body>
+</html>

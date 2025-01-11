@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07384: 116008405</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767753">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767753">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- itr:116008405 -->&gt;itr:116008405 K10775 phenylalanine ammonia-lyase [EC:4.3.1.24] | (RefSeq) phenylalanine ammonia-lyase-like (N)
+atggagaacggcaatgggatcagcagcaacggccacgctcacgcgcatgatttctgcgtg
+gagcacaagcgccgcccgtcgcaggacccgttgaactggaacgcggcggcggaggccctg
+aagggcagccacctggacgaggtgaagagaatggtggaggagtacaggacggcgacggtg
+aagctaggaggcgagacgctgacgatagctcaggtggcggccgtagccgcccgtgggacg
+tcggaggtgacggtggagctgtcggaggcggcccgcgccggcgtgaaggccagcagcgac
+tgggtcatggccggaatggaaaatggcaccgatagctacggcgtcaccaccgggttcggt
+gcaacctctcatcgacggacaaagcaaggcgctgctcttcagaaagaacttattaggttc
+ttgaacgccggaatattcggcaacggggcggagtcatgccacacgctgccgcactccgcc
+accagggccgccatgctggtcaggatcaacaccttgctccagggctactccgggatcagg
+ttcgagatcctggaggccataaccaagctgctgaaccacaatatcacgccctgcctgccc
+ctccgtggcaccatcaccgcgtccggcgacttggtccctctttcctacatcgccgggctg
+atcaccggccggccgaactccaaggcggtcgggccgaacggggaggccctggacgccgag
+gaggcgttcaggatggcgggaatcgaatccgggttcttcgagttgcagccgaaagaaggc
+ctggccatggtgaatggcacggcggtcgggtcaggattagcgtcaatggtgctgtttgag
+gccaacataatggcggttttatcggaggttttgtcagcactgtttgcagaagttatgcac
+ggcaaaccggaattcacagaccatttgacgcataaattgaagcaccacccgggccagatc
+gaagccgcagcaataatggaacatattttggatgggagttcatacataaaagaagccacg
+aaaacccacgaattagaccctcttcagaagcctaaacaggaccgctatgctctcagaaca
+tcgccccaatggctcggccctcagattgaagtgatcagagccgccaccaagatgattgag
+agggaaattaactctgtaaacgacaaccctctgattgatgtttccaggaacaaggcattg
+cacggagggaatttccaggggacaccaattggcgtctcgatggacaacgttcgcctggcg
+ctggccgccattgggaagctaatgtttgctcagttctccgagcttgtcaacgactactac
+aacaatggcctgccttcaaatctctcgggcgggcgaaaccctagcttggattatggcttc
+aagggggcagaaatcgcgatggcgtcttactgctcagagctgcagttccttggcaaccct
+gtcaccaatcacgtccagagcgccgagcagcataaccaggatgtaaactctctcgggctc
+atctcgtcgaggaagacatccgaggcgctcgacattctgaagctcatgtctgcaacctac
+atggttgcattgtgccaagccattgacctgaggcacctggaggagaatctgaaggcctgc
+actaaaaatgcagttagtcaggttgccaaaaaggtcttaacagtgggggaaaatggtgag
+cttcacccttccagattctccgaaaaggatctcctcaaagtcgtcgacagagagtacgtg
+ttcgcctatgctgatgacccgtgcagcgaaaactacccattgatgcagaagctgaggcag
+gtcctggtcgatcacgccttggctaatggcgaagccgagatgagctctagcacatccatc
+ttccacaaaatcggggcgttcgaggaggaactcaaagccattttgcctaaagaaatcgag
+ggtgcgaggtgtgagctagagagtggcaatgcagccattcctaacaggatccaagagtgc
+aggtccttcccactctacaaatttgttagggcagaactaggaaccaatcttctaacgggc
+gagaaagtccggtcacccggggaggaatgtgacaaggtattcacagccatgtgtgaaggg
+aagctcatagatccactgctggattgtttgaaggaatggaatggtgcccctctgcccatc
+tgctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=itr:116008405+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04125: 104800370</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838957">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838957">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- thj:104800370 -->&gt;thj:104800370 K12356 coniferyl-alcohol glucosyltransferase [EC:2.4.1.111] | (RefSeq) UDP-glycosyltransferase 72E1-like (N)
+atgcaggtcgtgaaaccacacgccgccattttagcaagccccggtatgggccacgtcatc
+cccgtgatcgagctcggcaagcgtctagccgctggccatggcttccgcgtcaccgtcttt
+gtcctccaagccgaccaagcctccgctcagtcccagtttctgaactcactcggccgcgac
+gcagccctcgtcgacgtggtcggccttccctcgccggaaatctctaccgcggctgaccca
+tcagcccacttggggatctcgattccggccattatacgagaggccttcccggccctccgg
+tctaggatctcaaacatgcaacataagccgaccgctctcatcgtcgacttgttcggcacc
+gaggctttgccacttgccgatgagttcaatatgttgaagtatgttctgatagcttccaat
+gcgcggtttctcgcggtggttatgtatttcccgacgcttgacaaagccgtcgaagaagag
+cacgtcaactacaagaaaccgctcgatataccgggttgtgaacctgtccggtatgaggat
+actctcgacgcatatctcgaccggaccagtccgttgtaccgtgggttgatcgatttcggt
+cggtttcttccgacgaccaatggtatattggtgaatacgtgggaagaaatggagcccaag
+tcgttgaaatcgctgcaagactcgaaattcctcggaaggattgcccgtgtaccgatttat
+ccaatcggtccgttgtgcagaccggtcgaaccgtcaaaaaatggaaacccggttttggaa
+tggttaggcaaacaaccggacgagtcggtgctttacgtctctttcgggagcggaggttct
+ctttcgcctaggcagctaaccgagctggcttggggtctcgaattgagccgacaacgtttc
+gtgtgggtggtccggccaccggtcaacggccctctattttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=thj:104800370+nt">BLAST</a>
+</body>
+</html>

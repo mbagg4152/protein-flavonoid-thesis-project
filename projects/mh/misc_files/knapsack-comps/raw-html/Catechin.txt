@@ -1,0 +1,661 @@
+
+<html>
+<!-- <head> -->
+<!-- NBDC Markup START -->
+<head vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+
+<title>KNApSAcK Metabolite Information - C00000947</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/cs">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="C00000947">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/info.css" media="all">
+</head><body onload="" >
+
+<div id="my_body">
+  <div id="my_header">
+      <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+      <img src="images/nap2.gif" border=0> </a></p>
+  </div>
+  <div id="my_main">
+    <div id="my_navigation">
+
+    </div>
+    <div id="my_contents">
+          <br>
+<!--	  input word = <font class="iw">C00000947</font><br><br> //-->
+     	  input word = <font class="iw">C00000947</font><br><br>
+
+<!-- <table class="d1"> -->
+<!-- NBDC Markup START -->
+	<table class="d1" vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+        <tr>
+            <th class="d1">Metabolite Information</th><th class="d3">Structural formula</th>
+        </tr>
+
+        <tr>
+            <td>
+               <table class="d3">
+                  <tr>
+                     <th class="inf">Name</th>
+                     <td colspan="4" class="inf">Catechin<br>(+)-Catechin<br>D-Catechin<br>(+)-3',4',5,7-Tetrahydroxy-2,3-trans-flavan-3-ol<br>Dexcyanidanol<br>Teafuran 30A<br>D-Catechol</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Formula</th>
+                     <td colspan="4">C15H14O6</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Mw</th>
+                     <td colspan="4">290.07903818</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">CAS RN</th>
+                     <td colspan="4">154-23-4</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">C_ID</th>
+                     <td colspan="4" class="img2">C00000947
+<!-- 			C00000947<a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00000947" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+<!-- NBDC Markup START -->
+<!--			<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry"> //-->
+<!--			<span property="entryID">C00000947</span><a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00000947" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+                                       , <a href="/Twins/top.php?kword=C00000947&sword=50&mode=list1#res" target="_blank"><img src="images/TW.gif" border="0" class="img2"></a><br>
+<!--			</div> //-->
+<!-- NBDC Markup END -->
+                        
+		     </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChIKey</th>
+                     <td colspan="4">PFTAWBLQPZVEMU-UYWMCZCJNA-N</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChICode</th>
+                     <td colspan="4">InChI=1S/C15H14O6/c16-8-4-11(18)9-6-13(20)15(21-14(9)5-8)7-1-2-10(17)12(19)3-7/h1-5,13,15-20H,6H2/t13-,15+/m0/s1</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">SMILES</th>
+                     <td colspan="4">c1(cc(c2c(c1)O[C@@H]([C@H](C2)O)c1cc(c(cc1)O)O)O)O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Start Substs in Alk. Biosynthesis (Prediction)</th>
+                     <td colspan="4"><a href="/CobWeb/top.php?word=&mode=met" target=_"blank"></a> </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Organism</th>
+                     <td class="or1">
+                        <table class="org">
+			 	<th class="or3">Kingdom</th>
+				<th class="or2">Family</th>
+				<th class="or1">Species</th>
+				<th class="or4">Reference</th><tr>
+<td class=org>Plantae</td><td class=org>Anacardiaceae</td><td class=org2>Mangifera indica</td><td class=org><a href=information.php?mode=r&word=C00000947&key=0 title=Mangifera indica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Annonaceae</td><td class=org2>Annona muricata</td><td class=org><a href=information.php?mode=r&word=C00000947&key=1 title=Annona muricata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Annonaceae</td><td class=org2>Artabotrys uncinatus</td><td class=org><a href=information.php?mode=r&word=C00000947&key=2 title=Artabotrys uncinatus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Annonaceae</td><td class=org2>Mitrella kentii</td><td class=org><a href=information.php?mode=r&word=C00000947&key=3 title=Mitrella kentii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Apocynaceae</td><td class=org2>Apocynum venetum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=4 title=Apocynum venetum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asparagaceae</td><td class=org2>Asparagus officinalis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=5 title=Asparagus officinalis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Betulaceae</td><td class=org2>Betula papyrifera</td><td class=org><a href=information.php?mode=r&word=C00000947&key=6 title=Betula papyrifera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Betulaceae</td><td class=org2>Carpinus cordata</td><td class=org><a href=information.php?mode=r&word=C00000947&key=7 title=Carpinus cordata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cannabaceae</td><td class=org2>Humulus lupulus</td><td class=org><a href=information.php?mode=r&word=C00000947&key=8 title=Humulus lupulus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Casuarinaceae</td><td class=org2>Casuarina equisetifolia L.</td><td class=org><a href=information.php?mode=r&word=C00000947&key=9 title=Casuarina equisetifolia L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Celastraceae</td><td class=org2>Gymnosporia trigyna</td><td class=org><a href=information.php?mode=r&word=C00000947&key=10 title=Gymnosporia trigyna > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Celastraceae</td><td class=org2>Salacia prinoides</td><td class=org><a href=information.php?mode=r&word=C00000947&key=11 title=Salacia prinoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Celastraceae</td><td class=org2>Tripterygium hypoglaucum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=12 title=Tripterygium hypoglaucum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cistaceae</td><td class=org2>Cistus salviifolius</td><td class=org><a href=information.php?mode=r&word=C00000947&key=13 title=Cistus salviifolius > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Combretaceae</td><td class=org2>Combretum quadrangulare</td><td class=org><a href=information.php?mode=r&word=C00000947&key=14 title=Combretum quadrangulare > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cruciferae</td><td class=org2>Arabidopsis thaliana</td><td class=org><a href=information.php?mode=r&word=C00000947&key=15 title=Arabidopsis thaliana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cucurbitaceae</td><td class=org2>Momordica charantia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=16 title=Momordica charantia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cupressaceae</td><td class=org2>Chamaecyparis formosensis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=17 title=Chamaecyparis formosensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Elaeagnaceae</td><td class=org2>Elaeagnus angustifolia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=18 title=Elaeagnus angustifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Elaeagnaceae</td><td class=org2>Hippophae rhamnoides</td><td class=org><a href=information.php?mode=r&word=C00000947&key=19 title=Hippophae rhamnoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ephedraceae</td><td class=org2>Ephedra sinica</td><td class=org><a href=information.php?mode=r&word=C00000947&key=20 title=Ephedra sinica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron Cunningham's white</td><td class=org><a href=information.php?mode=r&word=C00000947&key=21 title=Rhododendron Cunningham's white > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron brachycarpum ssp.brachycarpum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=22 title=Rhododendron brachycarpum ssp.brachycarpum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron calophytum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=23 title=Rhododendron calophytum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron catawbiense</td><td class=org><a href=information.php?mode=r&word=C00000947&key=24 title=Rhododendron catawbiense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron degronianum ssp. Heptamerum var. hondoense</td><td class=org><a href=information.php?mode=r&word=C00000947&key=25 title=Rhododendron degronianum ssp. Heptamerum var. hondoense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron dichroanthum ssp.scyphocalyx</td><td class=org><a href=information.php?mode=r&word=C00000947&key=26 title=Rhododendron dichroanthum ssp.scyphocalyx > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron fortunei</td><td class=org><a href=information.php?mode=r&word=C00000947&key=27 title=Rhododendron fortunei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron galactinum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=28 title=Rhododendron galactinum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron insigne</td><td class=org><a href=information.php?mode=r&word=C00000947&key=29 title=Rhododendron insigne > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron kaempferi</td><td class=org><a href=information.php?mode=r&word=C00000947&key=30 title=Rhododendron kaempferi > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron micranthum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=31 title=Rhododendron micranthum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron mucronatum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=32 title=Rhododendron mucronatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron oreotrephes</td><td class=org><a href=information.php?mode=r&word=C00000947&key=33 title=Rhododendron oreotrephes > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron ponticum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=34 title=Rhododendron ponticum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron praevernum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=35 title=Rhododendron praevernum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron smirnowii</td><td class=org><a href=information.php?mode=r&word=C00000947&key=36 title=Rhododendron smirnowii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron ungernii</td><td class=org><a href=information.php?mode=r&word=C00000947&key=37 title=Rhododendron ungernii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Vaccinium vitis-idaea</td><td class=org><a href=information.php?mode=r&word=C00000947&key=38 title=Vaccinium vitis-idaea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Erythroxylaceae</td><td class=org2>Erythroxylum cambodianum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=39 title=Erythroxylum cambodianum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Eucommiaceae</td><td class=org2>Eucommia ulmoides Oliver</td><td class=org><a href=information.php?mode=r&word=C00000947&key=40 title=Eucommia ulmoides Oliver > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Euphorbiaceae</td><td class=org2>Croton urucurana</td><td class=org><a href=information.php?mode=r&word=C00000947&key=41 title=Croton urucurana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia adunca</td><td class=org><a href=information.php?mode=r&word=C00000947&key=42 title=Acacia adunca > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia calamifolia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=43 title=Acacia calamifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia cardiophylla</td><td class=org><a href=information.php?mode=r&word=C00000947&key=44 title=Acacia cardiophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia catechu</td><td class=org><a href=information.php?mode=r&word=C00000947&key=45 title=Acacia catechu > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia chrysotricha</td><td class=org><a href=information.php?mode=r&word=C00000947&key=46 title=Acacia chrysotricha > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia clunies-rossiae</td><td class=org><a href=information.php?mode=r&word=C00000947&key=47 title=Acacia clunies-rossiae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia concurrens</td><td class=org><a href=information.php?mode=r&word=C00000947&key=48 title=Acacia concurrens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia constablei</td><td class=org><a href=information.php?mode=r&word=C00000947&key=49 title=Acacia constablei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia cultriformis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=50 title=Acacia cultriformis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia dealbata</td><td class=org><a href=information.php?mode=r&word=C00000947&key=51 title=Acacia dealbata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia deanei</td><td class=org><a href=information.php?mode=r&word=C00000947&key=52 title=Acacia deanei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia decurrens</td><td class=org><a href=information.php?mode=r&word=C00000947&key=53 title=Acacia decurrens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia elata</td><td class=org><a href=information.php?mode=r&word=C00000947&key=54 title=Acacia elata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia erioloba</td><td class=org><a href=information.php?mode=r&word=C00000947&key=55 title=Acacia erioloba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia falciformis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=56 title=Acacia falciformis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia filicifolia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=57 title=Acacia filicifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia fimbriata</td><td class=org><a href=information.php?mode=r&word=C00000947&key=58 title=Acacia fimbriata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia holosericea</td><td class=org><a href=information.php?mode=r&word=C00000947&key=59 title=Acacia holosericea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia irrorata</td><td class=org><a href=information.php?mode=r&word=C00000947&key=60 title=Acacia irrorata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia ixiophylla</td><td class=org><a href=information.php?mode=r&word=C00000947&key=61 title=Acacia ixiophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia kettlewelliae</td><td class=org><a href=information.php?mode=r&word=C00000947&key=62 title=Acacia kettlewelliae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia lanigera</td><td class=org><a href=information.php?mode=r&word=C00000947&key=63 title=Acacia lanigera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia leucoclada</td><td class=org><a href=information.php?mode=r&word=C00000947&key=64 title=Acacia leucoclada > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia longifolia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=65 title=Acacia longifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia mabellae</td><td class=org><a href=information.php?mode=r&word=C00000947&key=66 title=Acacia mabellae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia mearnsii</td><td class=org><a href=information.php?mode=r&word=C00000947&key=67 title=Acacia mearnsii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia melanoxylon</td><td class=org><a href=information.php?mode=r&word=C00000947&key=68 title=Acacia melanoxylon > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia mollifolia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=69 title=Acacia mollifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia neriifolia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=70 title=Acacia neriifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia nilotica</td><td class=org><a href=information.php?mode=r&word=C00000947&key=71 title=Acacia nilotica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia obtusifolia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=72 title=Acacia obtusifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia omalophylla</td><td class=org><a href=information.php?mode=r&word=C00000947&key=73 title=Acacia omalophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia oshanesii</td><td class=org><a href=information.php?mode=r&word=C00000947&key=74 title=Acacia oshanesii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia oswaldii</td><td class=org><a href=information.php?mode=r&word=C00000947&key=75 title=Acacia oswaldii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia parramattensis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=76 title=Acacia parramattensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia pendula</td><td class=org><a href=information.php?mode=r&word=C00000947&key=77 title=Acacia pendula > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia planifrons</td><td class=org><a href=information.php?mode=r&word=C00000947&key=78 title=Acacia planifrons > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia retinodes</td><td class=org><a href=information.php?mode=r&word=C00000947&key=79 title=Acacia retinodes > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia rigens</td><td class=org><a href=information.php?mode=r&word=C00000947&key=80 title=Acacia rigens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia silvestris</td><td class=org><a href=information.php?mode=r&word=C00000947&key=81 title=Acacia silvestris > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia terminalis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=82 title=Acacia terminalis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia trachyphloia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=83 title=Acacia trachyphloia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia verniciflua</td><td class=org><a href=information.php?mode=r&word=C00000947&key=84 title=Acacia verniciflua > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia vestita</td><td class=org><a href=information.php?mode=r&word=C00000947&key=85 title=Acacia vestita > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Alhagi kirghisorum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=86 title=Alhagi kirghisorum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Alhagi maurorum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=87 title=Alhagi maurorum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Arachis hypogaea</td><td class=org><a href=information.php?mode=r&word=C00000947&key=88 title=Arachis hypogaea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Astragalus floccosifolius</td><td class=org><a href=information.php?mode=r&word=C00000947&key=89 title=Astragalus floccosifolius > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Astragalus kabadianus</td><td class=org><a href=information.php?mode=r&word=C00000947&key=90 title=Astragalus kabadianus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cassia fistula</td><td class=org><a href=information.php?mode=r&word=C00000947&key=91 title=Cassia fistula > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cassia roxburghii</td><td class=org><a href=information.php?mode=r&word=C00000947&key=92 title=Cassia roxburghii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Colophospermum mopane</td><td class=org><a href=information.php?mode=r&word=C00000947&key=93 title=Colophospermum mopane > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Eysenhardtia subcoriacea Pennell</td><td class=org><a href=information.php?mode=r&word=C00000947&key=94 title=Eysenhardtia subcoriacea Pennell > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Gleditsia triacanthos</td><td class=org><a href=information.php?mode=r&word=C00000947&key=95 title=Gleditsia triacanthos > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Medicago truncatula</td><td class=org><a href=information.php?mode=r&word=C00000947&key=96 title=Medicago truncatula > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Parkia biglobosa</td><td class=org><a href=information.php?mode=r&word=C00000947&key=97 title=Parkia biglobosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis nigra</td><td class=org><a href=information.php?mode=r&word=C00000947&key=98 title=Prosopis nigra > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis torquata</td><td class=org><a href=information.php?mode=r&word=C00000947&key=99 title=Prosopis torquata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Schotia brachypetala</td><td class=org><a href=information.php?mode=r&word=C00000947&key=100 title=Schotia brachypetala > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Sophora flavescens</td><td class=org><a href=information.php?mode=r&word=C00000947&key=101 title=Sophora flavescens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Sophora japonica</td><td class=org><a href=information.php?mode=r&word=C00000947&key=102 title=Sophora japonica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vicia faba</td><td class=org><a href=information.php?mode=r&word=C00000947&key=103 title=Vicia faba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vigna angularis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=104 title=Vigna angularis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Wisteria sinensis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=105 title=Wisteria sinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fagaceae</td><td class=org2>Quercus robur</td><td class=org><a href=information.php?mode=r&word=C00000947&key=106 title=Quercus robur > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Geraniaceae</td><td class=org2>Pelargonium reniforme</td><td class=org><a href=information.php?mode=r&word=C00000947&key=107 title=Pelargonium reniforme > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Geraniaceae</td><td class=org2>Pelargonium sidoides</td><td class=org><a href=information.php?mode=r&word=C00000947&key=108 title=Pelargonium sidoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ginkgoaceae</td><td class=org2>Ginkgo biloba</td><td class=org><a href=information.php?mode=r&word=C00000947&key=109 title=Ginkgo biloba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Grossulariaceae</td><td class=org2>Ribes fasciculatum var.chinense</td><td class=org><a href=information.php?mode=r&word=C00000947&key=110 title=Ribes fasciculatum var.chinense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Hamamelidaceae</td><td class=org2>Liquidambar styraciflua</td><td class=org><a href=information.php?mode=r&word=C00000947&key=111 title=Liquidambar styraciflua > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Hydrocharitaceae</td><td class=org2>Thalassia ciliatum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=112 title=Thalassia ciliatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lauraceae</td><td class=org2>Cinnamomum sieboldii</td><td class=org><a href=information.php?mode=r&word=C00000947&key=113 title=Cinnamomum sieboldii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lauraceae</td><td class=org2>Cinnamomum subavenium</td><td class=org><a href=information.php?mode=r&word=C00000947&key=114 title=Cinnamomum subavenium > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lauraceae</td><td class=org2>Laurus nobilis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=115 title=Laurus nobilis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lauraceae</td><td class=org2>Machilus thunbergii</td><td class=org><a href=information.php?mode=r&word=C00000947&key=116 title=Machilus thunbergii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Loranthaceae</td><td class=org2>Scurrula atropurpurea</td><td class=org><a href=information.php?mode=r&word=C00000947&key=117 title=Scurrula atropurpurea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lythraceae</td><td class=org2>Punica granatum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=118 title=Punica granatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lythraceae</td><td class=org2>Punica granatum L.</td><td class=org><a href=information.php?mode=r&word=C00000947&key=119 title=Punica granatum L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Malvaceae</td><td class=org2>Ceiba pentandra</td><td class=org><a href=information.php?mode=r&word=C00000947&key=120 title=Ceiba pentandra > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Malvaceae</td><td class=org2>Cola acuminata</td><td class=org><a href=information.php?mode=r&word=C00000947&key=121 title=Cola acuminata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Malvaceae</td><td class=org2>Theobroma cacao L.</td><td class=org><a href=information.php?mode=r&word=C00000947&key=122 title=Theobroma cacao L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Malvaceae</td><td class=org2>Theobroma grandiflorum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=123 title=Theobroma grandiflorum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Meliaceae</td><td class=org2>Melia azedarach var.japonica</td><td class=org><a href=information.php?mode=r&word=C00000947&key=124 title=Melia azedarach var.japonica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Meliaceae</td><td class=org2>Toona sinensis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=125 title=Toona sinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Meliaceae</td><td class=org2>Xylocarpus granatum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=126 title=Xylocarpus granatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Moraceae</td><td class=org2>Artocarpus dadah</td><td class=org><a href=information.php?mode=r&word=C00000947&key=127 title=Artocarpus dadah > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Musaceae</td><td class=org2>Musa acuminata</td><td class=org><a href=information.php?mode=r&word=C00000947&key=128 title=Musa acuminata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Myrsinaceae</td><td class=org2>Embelia ribes Burm.</td><td class=org><a href=information.php?mode=r&word=C00000947&key=129 title=Embelia ribes Burm. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Myrtaceae</td><td class=org2>Eucalyptus camaldulensis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=130 title=Eucalyptus camaldulensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Oxalidaceae</td><td class=org2>Averrhoa carambola</td><td class=org><a href=information.php?mode=r&word=C00000947&key=131 title=Averrhoa carambola > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Palmae</td><td class=org2>Areca catechu</td><td class=org><a href=information.php?mode=r&word=C00000947&key=132 title=Areca catechu > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Palmae</td><td class=org2>Chamaerops humilis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=133 title=Chamaerops humilis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Palmae</td><td class=org2>Desmoncus polyacanthos</td><td class=org><a href=information.php?mode=r&word=C00000947&key=134 title=Desmoncus polyacanthos > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Palmae</td><td class=org2>Phoenix hanceana var. formosana</td><td class=org><a href=information.php?mode=r&word=C00000947&key=135 title=Phoenix hanceana var. formosana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Palmae</td><td class=org2>Trachycarpus fortunei</td><td class=org><a href=information.php?mode=r&word=C00000947&key=136 title=Trachycarpus fortunei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Phyllanthaceae</td><td class=org2>Phyllanthus emblica</td><td class=org><a href=information.php?mode=r&word=C00000947&key=137 title=Phyllanthus emblica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Pinaceae</td><td class=org2>Larix decidua Miller.</td><td class=org><a href=information.php?mode=r&word=C00000947&key=138 title=Larix decidua Miller. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Pinaceae</td><td class=org2>Larix sibirica</td><td class=org><a href=information.php?mode=r&word=C00000947&key=139 title=Larix sibirica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Pinaceae</td><td class=org2>Picea abies</td><td class=org><a href=information.php?mode=r&word=C00000947&key=140 title=Picea abies > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Pinaceae</td><td class=org2>Pinus sibirica L.</td><td class=org><a href=information.php?mode=r&word=C00000947&key=141 title=Pinus sibirica L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Pinaceae</td><td class=org2>Pinus sylvestris L.</td><td class=org><a href=information.php?mode=r&word=C00000947&key=142 title=Pinus sylvestris L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Polygonum cuspidatum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=143 title=Polygonum cuspidatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Polygonum hydropiper</td><td class=org><a href=information.php?mode=r&word=C00000947&key=144 title=Polygonum hydropiper > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Rheum emodi</td><td class=org><a href=information.php?mode=r&word=C00000947&key=145 title=Rheum emodi > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Rheum palmatum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=146 title=Rheum palmatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Rheum tanguticum</td><td class=org><a href=information.php?mode=r&word=C00000947&key=147 title=Rheum tanguticum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Rumex patientia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=148 title=Rumex patientia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rhamnaceae</td><td class=org2>Ziziphus jujuba</td><td class=org><a href=information.php?mode=r&word=C00000947&key=149 title=Ziziphus jujuba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Agrimonia pilosa var.japonica</td><td class=org><a href=information.php?mode=r&word=C00000947&key=150 title=Agrimonia pilosa var.japonica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Coleogyne ramosissima Torr.</td><td class=org><a href=information.php?mode=r&word=C00000947&key=151 title=Coleogyne ramosissima Torr. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Crataegus monogyna calli</td><td class=org><a href=information.php?mode=r&word=C00000947&key=152 title=Crataegus monogyna calli > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Prunus avium</td><td class=org><a href=information.php?mode=r&word=C00000947&key=153 title=Prunus avium > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Prunus persica</td><td class=org><a href=information.php?mode=r&word=C00000947&key=154 title=Prunus persica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Prunus tomentosa</td><td class=org><a href=information.php?mode=r&word=C00000947&key=155 title=Prunus tomentosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Rosa amblyotis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=156 title=Rosa amblyotis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Rosa cymosa</td><td class=org><a href=information.php?mode=r&word=C00000947&key=157 title=Rosa cymosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Rosa maximowicziana</td><td class=org><a href=information.php?mode=r&word=C00000947&key=158 title=Rosa maximowicziana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rubiaceae</td><td class=org2>Uncaria gambir</td><td class=org><a href=information.php?mode=r&word=C00000947&key=159 title=Uncaria gambir > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rubiaceae</td><td class=org2>Uncaria lanosa</td><td class=org><a href=information.php?mode=r&word=C00000947&key=160 title=Uncaria lanosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rutaceae</td><td class=org2>Euodia meliaefolia</td><td class=org><a href=information.php?mode=r&word=C00000947&key=161 title=Euodia meliaefolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Salicaceae</td><td class=org2>Salix caprea</td><td class=org><a href=information.php?mode=r&word=C00000947&key=162 title=Salix caprea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Sapindaceae</td><td class=org2>Acer nikoense</td><td class=org><a href=information.php?mode=r&word=C00000947&key=163 title=Acer nikoense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Sapotaceae</td><td class=org2>Manilkara zapota cv.Tikal</td><td class=org><a href=information.php?mode=r&word=C00000947&key=164 title=Manilkara zapota cv.Tikal > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Solanaceae</td><td class=org2>Solanum tuberosum subsp. Andigena</td><td class=org><a href=information.php?mode=r&word=C00000947&key=165 title=Solanum tuberosum subsp. Andigena > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Taxaceae</td><td class=org2>Taxus fuana</td><td class=org><a href=information.php?mode=r&word=C00000947&key=166 title=Taxus fuana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Taxaceae</td><td class=org2>Taxus yunnanensis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=167 title=Taxus yunnanensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Theaceae</td><td class=org2>Camellia sinensis</td><td class=org><a href=information.php?mode=r&word=C00000947&key=168 title=Camellia sinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Typhaceae</td><td class=org2>Typha capensis (Rohrb.) N. E. Br</td><td class=org><a href=information.php?mode=r&word=C00000947&key=169 title=Typha capensis (Rohrb.) N. E. Br > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Vitaceae</td><td class=org2>Ampelopsis japonica</td><td class=org><a href=information.php?mode=r&word=C00000947&key=170 title=Ampelopsis japonica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Vitaceae</td><td class=org2>Vitis vinifera</td><td class=org><a href=information.php?mode=r&word=C00000947&key=171 title=Vitis vinifera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Zingiberaceae</td><td class=org2>Etlingera elatior</td><td class=org><a href=information.php?mode=r&word=C00000947&key=172 title=Etlingera elatior > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Actinida arguta</td><td class=org><a href=information.php?mode=r&word=C00000947&key=173 title=Actinida arguta > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>FOOD SAKE</td><td class=org><a href=information.php?mode=r&word=C00000947&key=174 title=FOOD SAKE > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Fugopyrum esculentum calli</td><td class=org><a href=information.php?mode=r&word=C00000947&key=175 title=Fugopyrum esculentum calli > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Okoubaka aubrevillei</td><td class=org><a href=information.php?mode=r&word=C00000947&key=176 title=Okoubaka aubrevillei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Rhei rhizoma</td><td class=org><a href=information.php?mode=r&word=C00000947&key=177 title=Rhei rhizoma > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Scurrura atropurpurea</td><td class=org><a href=information.php?mode=r&word=C00000947&key=178 title=Scurrura atropurpurea > Ref.</a></td>
+</tr>
+</table>
+		     </td>
+                  </tr>
+               </table>
+            </td>
+	    <td class=img>
+<!--		<img src="/sun/MSdata/SD/C00000947.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'"><br><br> -->
+<!-- NBDC Markup START -->
+		<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+		<img property="image" src="/sun/MSdata/SD/C00000947.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'" />
+		</div>
+<!-- NBDC Markup END -->
+		<a href="image.php?word=C00000947" title="C00000947" onclick="window.open(this.href, '_blank', 'width=500,resizable=yes, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">zoom in</a>
+
+		<br><br><br><br>
+                
+
+	    </td>
+        </tr>
+	</table>
+
+
+   </div>
+   </div>
+   <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+   </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07757: 123084513</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767841">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767841">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- taes:123084513 -->&gt;taes:123084513 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) uncharacterized protein LOC123084513 (N)
+atggcggcggtcggtgcggggcagcaggcggtggtcggtgcagtggtgtgggtctgctgt
+ggtggtgtggggcggagggcggggctgcaagcggcggtggtacgcggcaggaggggctgt
+gggtggcggcggtcgaggcggtcagtgcggaggtccaatcgagcggtggcagtgcgggga
+tgcgggtggggcggttgcggtggtggaatcgagcgacgacagcgcaatcaagcggcaacg
+gtgaaatcgagcggcggcgaaaaaacgcccaattcgttgtgtggggtggcggccaacgat
+cgaaacgtggcgcaatgggtggcggaggtgctggagggcacgaatctggcgcggggcagc
+gacggcggggtgcggccgagtagcactagaagaaagaaagagaacgggagaggagagcaa
+gaaagaggaagaatggccgccagtgaggagggggtgcgggtggtagagtcctgctttgta
+aagccggccgcagacacaccaagaaaagcgatctggctctcgccactcgacatcatgctg
+gccagaagaggctacaccccactcatccacttctaccgtccttgtgtcgaccaaaccagt
+gcccaagacttctttgacgtgactaggttgaagagtgcgctgggcaaggctcttgtggcc
+ttctaccccatggccgggcggctcagggtggacgtccatggcaggttggagatcgactgc
+aacggtaagggcatgctctttcttgtggcctactctcgtctcaccatcgatgacttccgc
+gacttgaagccatcatcaaagctaaggaggttttttgttccttgcatggacgactcatcc
+gacatcctgtgcgccacccaggtttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=taes:123084513+nt">BLAST</a>
+</body>
+</html>

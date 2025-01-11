@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02981: 102593046</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620845218">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620845218">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sot:102593046 -->&gt;sot:102593046 K00083 cinnamyl-alcohol dehydrogenase [EC:1.1.1.195] | (RefSeq) probable mannitol dehydrogenase (N)
+atggcccaaaaagcttttgggtgggccgccagggacccctccggaattctctctcccttc
+catttctcccgcagagaaaatggtgatgatgatgttacagtgaagatactttattgtgga
+gtatgtcactccgacttgcatactttgaagaatgaatggggattcacaaaataccccatt
+atccctgggcatgaaattgttggtttcgtgacagcagttggcagtagtgtccataagttc
+aaggttggtgaccgagttggagttggggtgatcgtaggctcctgtcaaacatgtgacatc
+tgtgaacagaacttggagaactattgtcccaaaatgatatttatctacaactccacagac
+catgatggtataaatacctatggcggttactctgatatgatagttgttcatcagcacttc
+gttcttcaatttcctgaaaacctaccatctgatgctggggcacctttattatgtgctgga
+atcactgtatacagcccgattaagtactatggtatgaccgaaccaggcaaacatttgggt
+gttgctggattgggtggccttggtcacattgctgtgaagattggaaaggctttcgggtta
+aaagttactgtcatcagcacctctccaaagaaggaagatgaggccatcaagaagcttggt
+gcggatactttcgttttaagtagcgatcctgcaaaattgaaggccgaaacgatgtccatg
+gcagcagcagagaagctcactagtaccgaagatgaagaaaataatattgccatggaaagt
+agtaaagtagcagagaagctcgatcaggagaagaagagaaagaaccaaaactccattctc
+aagccaaagaagaaaaagtataggtccattcataatctttacttggaaacaaatcccatc
+aacctttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sot:102593046+nt">BLAST</a>
+</body>
+</html>

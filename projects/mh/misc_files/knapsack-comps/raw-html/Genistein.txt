@@ -1,0 +1,940 @@
+
+<html>
+<!-- <head> -->
+<!-- NBDC Markup START -->
+<head vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+
+<title>KNApSAcK Metabolite Information - C00002526</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/cs">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="C00002526">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/info.css" media="all">
+</head><body onload="" >
+
+<div id="my_body">
+  <div id="my_header">
+      <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+      <img src="images/nap2.gif" border=0> </a></p>
+  </div>
+  <div id="my_main">
+    <div id="my_navigation">
+
+    </div>
+    <div id="my_contents">
+          <br>
+<!--	  input word = <font class="iw">C00002526</font><br><br> //-->
+     	  input word = <font class="iw">C00002526</font><br><br>
+
+<!-- <table class="d1"> -->
+<!-- NBDC Markup START -->
+	<table class="d1" vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+        <tr>
+            <th class="d1">Metabolite Information</th><th class="d3">Structural formula</th>
+        </tr>
+
+        <tr>
+            <td>
+               <table class="d3">
+                  <tr>
+                     <th class="inf">Name</th>
+                     <td colspan="4" class="inf">Genistein<br>Prunetol<br>Sophoricol<br>Genisteol<br>Differenol A<br>5,7,4'-Trihydroxyisoflavone</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Formula</th>
+                     <td colspan="4">C15H10O5</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Mw</th>
+                     <td colspan="4">270.05282343</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">CAS RN</th>
+                     <td colspan="4">446-72-0</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">C_ID</th>
+                     <td colspan="4" class="img2">C00002526
+<!-- 			C00002526<a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00002526" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+<!-- NBDC Markup START -->
+<!--			<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry"> //-->
+<!--			<span property="entryID">C00002526</span><a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00002526" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+                                       , <a href="/Twins/top.php?kword=C00002526&sword=50&mode=list1#res" target="_blank"><img src="images/TW.gif" border="0" class="img2"></a><br>
+<!--			</div> //-->
+<!-- NBDC Markup END -->
+                        
+		     </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChIKey</th>
+                     <td colspan="4">TZBJGXHYKVUXJN-UHFFFAOYSA-N</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChICode</th>
+                     <td colspan="4">InChI=1S/C15H10O5/c16-9-3-1-8(2-4-9)11-7-20-13-6-10(17)5-12(18)14(13)15(11)19/h1-7,16-18H</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">SMILES</th>
+                     <td colspan="4">c1(cc(c2c(c1)occ(c2=O)c1ccc(cc1)O)O)O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Start Substs in Alk. Biosynthesis (Prediction)</th>
+                     <td colspan="4"><a href="/CobWeb/top.php?word=&mode=met" target=_"blank"></a> </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Organism</th>
+                     <td class="or1">
+                        <table class="org">
+			 	<th class="or3">Kingdom</th>
+				<th class="or2">Family</th>
+				<th class="or1">Species</th>
+				<th class="or4">Reference</th><tr>
+<td class=org>Animalia</td><td class=org>Hominidae</td><td class=org2>Homo sapiens (Urine)</td><td class=org><a href=information.php?mode=r&word=C00002526&key=0 title=Homo sapiens (Urine) > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Annonaceae</td><td class=org2>Anaxagorea luzonensis A.GRAY</td><td class=org><a href=information.php?mode=r&word=C00002526&key=1 title=Anaxagorea luzonensis A.GRAY > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Apiaceae</td><td class=org2>Bupleurum scorzonerifolium <a href='/KNApSAcK_World/top.php?word=Bupleurum%20scorzonerifolium' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=2 title=Bupleurum scorzonerifolium > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asphodelaceae</td><td class=org2>Aloe vera <a href='/KNApSAcK_World/top.php?word=Aloe%20vera' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=3 title=Aloe vera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Convolvulaceae</td><td class=org2>Erycibe expansa <a href='/KNApSAcK_World/top.php?word=Erycibe%20expansa' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=4 title=Erycibe expansa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cruciferae</td><td class=org2>Arabidopsis thaliana</td><td class=org><a href=information.php?mode=r&word=C00002526&key=5 title=Arabidopsis thaliana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cruciferae</td><td class=org2>Brassica oleracea <a href='/KNApSAcK_World/top.php?word=Brassica%20oleracea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=6 title=Brassica oleracea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Erythroxylaceae</td><td class=org2>Erythroxylum ulei</td><td class=org><a href=information.php?mode=r&word=C00002526&key=7 title=Erythroxylum ulei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia adunca</td><td class=org><a href=information.php?mode=r&word=C00002526&key=8 title=Acacia adunca > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia baileyana</td><td class=org><a href=information.php?mode=r&word=C00002526&key=9 title=Acacia baileyana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia binervata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=10 title=Acacia binervata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia calamifolia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=11 title=Acacia calamifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia cardiophylla</td><td class=org><a href=information.php?mode=r&word=C00002526&key=12 title=Acacia cardiophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia chrysotricha</td><td class=org><a href=information.php?mode=r&word=C00002526&key=13 title=Acacia chrysotricha > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia clunies-rossiae</td><td class=org><a href=information.php?mode=r&word=C00002526&key=14 title=Acacia clunies-rossiae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia concurrens</td><td class=org><a href=information.php?mode=r&word=C00002526&key=15 title=Acacia concurrens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia constablei</td><td class=org><a href=information.php?mode=r&word=C00002526&key=16 title=Acacia constablei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia cultriformis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=17 title=Acacia cultriformis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia dealbata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=18 title=Acacia dealbata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia deanei</td><td class=org><a href=information.php?mode=r&word=C00002526&key=19 title=Acacia deanei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia decurrens</td><td class=org><a href=information.php?mode=r&word=C00002526&key=20 title=Acacia decurrens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia elata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=21 title=Acacia elata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia falciformis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=22 title=Acacia falciformis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia filicifolia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=23 title=Acacia filicifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia fimbriata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=24 title=Acacia fimbriata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia holosericea <a href='/KNApSAcK_World/top.php?word=Acacia%20holosericea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=25 title=Acacia holosericea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia irrorata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=26 title=Acacia irrorata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia kettlewelliae</td><td class=org><a href=information.php?mode=r&word=C00002526&key=27 title=Acacia kettlewelliae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia lanigera</td><td class=org><a href=information.php?mode=r&word=C00002526&key=28 title=Acacia lanigera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia leucoclada</td><td class=org><a href=information.php?mode=r&word=C00002526&key=29 title=Acacia leucoclada > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia longifolia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=30 title=Acacia longifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia mabellae</td><td class=org><a href=information.php?mode=r&word=C00002526&key=31 title=Acacia mabellae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia mearnsii <a href='/KNApSAcK_World/top.php?word=Acacia%20mearnsii' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=32 title=Acacia mearnsii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia melanoxylon <a href='/KNApSAcK_World/top.php?word=Acacia%20melanoxylon' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=33 title=Acacia melanoxylon > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia mollifolia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=34 title=Acacia mollifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia neriifolia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=35 title=Acacia neriifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia obtusifolia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=36 title=Acacia obtusifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia oshanesii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=37 title=Acacia oshanesii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia oswaldii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=38 title=Acacia oswaldii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia parramattensis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=39 title=Acacia parramattensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia pycnantha</td><td class=org><a href=information.php?mode=r&word=C00002526&key=40 title=Acacia pycnantha > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia retinodes</td><td class=org><a href=information.php?mode=r&word=C00002526&key=41 title=Acacia retinodes > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia rigens</td><td class=org><a href=information.php?mode=r&word=C00002526&key=42 title=Acacia rigens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia silvestris</td><td class=org><a href=information.php?mode=r&word=C00002526&key=43 title=Acacia silvestris > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia terminalis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=44 title=Acacia terminalis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia trachyphloia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=45 title=Acacia trachyphloia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia verniciflua</td><td class=org><a href=information.php?mode=r&word=C00002526&key=46 title=Acacia verniciflua > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia vestita</td><td class=org><a href=information.php?mode=r&word=C00002526&key=47 title=Acacia vestita > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Adenocarpus decorticans</td><td class=org><a href=information.php?mode=r&word=C00002526&key=48 title=Adenocarpus decorticans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Adenocarpus foliolosus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=49 title=Adenocarpus foliolosus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Amphicarpaea bracteata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=50 title=Amphicarpaea bracteata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Andira inermis <a href='/KNApSAcK_World/top.php?word=Andira%20inermis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=51 title=Andira inermis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Apios americana <a href='/KNApSAcK_World/top.php?word=Apios%20americana' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=52 title=Apios americana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Arachis hypogaea <a href='/KNApSAcK_World/top.php?word=Arachis%20hypogaea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=53 title=Arachis hypogaea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia alba</td><td class=org><a href=information.php?mode=r&word=C00002526&key=54 title=Baptisia alba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia australis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=55 title=Baptisia australis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia bracteata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=56 title=Baptisia bracteata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia calycosa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=57 title=Baptisia calycosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia cinerea</td><td class=org><a href=information.php?mode=r&word=C00002526&key=58 title=Baptisia cinerea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia lanceolata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=59 title=Baptisia lanceolata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia lecontei</td><td class=org><a href=information.php?mode=r&word=C00002526&key=60 title=Baptisia lecontei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia megacarpa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=61 title=Baptisia megacarpa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia nuttalliana</td><td class=org><a href=information.php?mode=r&word=C00002526&key=62 title=Baptisia nuttalliana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia perfoliata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=63 title=Baptisia perfoliata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Baptisia tinctoria <a href='/KNApSAcK_World/top.php?word=Baptisia%20tinctoria' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=64 title=Baptisia tinctoria > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Bowdichia nitida</td><td class=org><a href=information.php?mode=r&word=C00002526&key=65 title=Bowdichia nitida > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cajanus cajan <a href='/KNApSAcK_World/top.php?word=Cajanus%20cajan' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=66 title=Cajanus cajan > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cajanus scarabaeoides</td><td class=org><a href=information.php?mode=r&word=C00002526&key=67 title=Cajanus scarabaeoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Calicotome spinosa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=68 title=Calicotome spinosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Calicotome villosa <a href='/KNApSAcK_World/top.php?word=Calicotome%20villosa' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=69 title=Calicotome villosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Calopogonium caeruleum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=70 title=Calopogonium caeruleum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Camptosema rubicundum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=71 title=Camptosema rubicundum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Canavalia eurycarpa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=72 title=Canavalia eurycarpa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Canavalia gladiata <a href='/KNApSAcK_World/top.php?word=Canavalia%20gladiata' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=73 title=Canavalia gladiata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cicer arietinum <a href='/KNApSAcK_World/top.php?word=Cicer%20arietinum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=74 title=Cicer arietinum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Clitoria falcata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=75 title=Clitoria falcata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Clitoria ternatea <a href='/KNApSAcK_World/top.php?word=Clitoria%20ternatea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=76 title=Clitoria ternatea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Crotalaria juncea <a href='/KNApSAcK_World/top.php?word=Crotalaria%20juncea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=77 title=Crotalaria juncea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cytisus albus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=78 title=Cytisus albus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cytisus baeticus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=79 title=Cytisus baeticus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cytisus commutatus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=80 title=Cytisus commutatus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cytisus fontanesii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=81 title=Cytisus fontanesii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cytisus proliferus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=82 title=Cytisus proliferus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cytisus ratisbonensis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=83 title=Cytisus ratisbonensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cytisus scoparius <a href='/KNApSAcK_World/top.php?word=Cytisus%20scoparius' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=84 title=Cytisus scoparius > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cytisus striatus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=85 title=Cytisus striatus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Dalbergia odorifera <a href='/KNApSAcK_World/top.php?word=Dalbergia%20odorifera' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=86 title=Dalbergia odorifera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Derris scandens <a href='/KNApSAcK_World/top.php?word=Derris%20scandens' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=87 title=Derris scandens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Desmodium gangeticum <a href='/KNApSAcK_World/top.php?word=Desmodium%20gangeticum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=88 title=Desmodium gangeticum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Desmodium uncinatum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=89 title=Desmodium uncinatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Dipogon lignosus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=90 title=Dipogon lignosus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Dunbaria villosa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=91 title=Dunbaria villosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Echinosophora koreensis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=92 title=Echinosophora koreensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Echinospartum horridum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=93 title=Echinospartum horridum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Erinacea anthyllis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=94 title=Erinacea anthyllis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Eriosema glomeratum <a href='/KNApSAcK_World/top.php?word=Eriosema%20glomeratum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=95 title=Eriosema glomeratum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Eriosema nutans</td><td class=org><a href=information.php?mode=r&word=C00002526&key=96 title=Eriosema nutans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Eriosema psoraleoides</td><td class=org><a href=information.php?mode=r&word=C00002526&key=97 title=Eriosema psoraleoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Erythrina burttii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=98 title=Erythrina burttii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Erythrina indica <a href='/KNApSAcK_World/top.php?word=Erythrina%20indica' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=99 title=Erythrina indica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Erythrina latissima</td><td class=org><a href=information.php?mode=r&word=C00002526&key=100 title=Erythrina latissima > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Euchresta formosana</td><td class=org><a href=information.php?mode=r&word=C00002526&key=101 title=Euchresta formosana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Flemingia macrophylla <a href='/KNApSAcK_World/top.php?word=Flemingia%20macrophylla' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=102 title=Flemingia macrophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Flemingia philippinensis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=103 title=Flemingia philippinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Flemingia stricta <a href='/KNApSAcK_World/top.php?word=Flemingia%20stricta' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=104 title=Flemingia stricta > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Flemingia strobilifera <a href='/KNApSAcK_World/top.php?word=Flemingia%20strobilifera' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=105 title=Flemingia strobilifera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Galactia jussiaeana</td><td class=org><a href=information.php?mode=r&word=C00002526&key=106 title=Galactia jussiaeana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista acanthoclada</td><td class=org><a href=information.php?mode=r&word=C00002526&key=107 title=Genista acanthoclada > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista albida</td><td class=org><a href=information.php?mode=r&word=C00002526&key=108 title=Genista albida > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista anglica</td><td class=org><a href=information.php?mode=r&word=C00002526&key=109 title=Genista anglica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista canariensis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=110 title=Genista canariensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista cupanii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=111 title=Genista cupanii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista depressa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=112 title=Genista depressa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista ephedroides</td><td class=org><a href=information.php?mode=r&word=C00002526&key=113 title=Genista ephedroides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista hispanica</td><td class=org><a href=information.php?mode=r&word=C00002526&key=114 title=Genista hispanica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista hystrix</td><td class=org><a href=information.php?mode=r&word=C00002526&key=115 title=Genista hystrix > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista linifolia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=116 title=Genista linifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista lobelii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=117 title=Genista lobelii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista microphylla</td><td class=org><a href=information.php?mode=r&word=C00002526&key=118 title=Genista microphylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista monspessulana</td><td class=org><a href=information.php?mode=r&word=C00002526&key=119 title=Genista monspessulana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista morisii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=120 title=Genista morisii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista obtusiramea</td><td class=org><a href=information.php?mode=r&word=C00002526&key=121 title=Genista obtusiramea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista pulchella</td><td class=org><a href=information.php?mode=r&word=C00002526&key=122 title=Genista pulchella > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista radiata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=123 title=Genista radiata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista sagittalis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=124 title=Genista sagittalis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista salzmannii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=125 title=Genista salzmannii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista scorpius</td><td class=org><a href=information.php?mode=r&word=C00002526&key=126 title=Genista scorpius > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista sericea</td><td class=org><a href=information.php?mode=r&word=C00002526&key=127 title=Genista sericea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista sessilifolia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=128 title=Genista sessilifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista spartioides</td><td class=org><a href=information.php?mode=r&word=C00002526&key=129 title=Genista spartioides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista stenopetala</td><td class=org><a href=information.php?mode=r&word=C00002526&key=130 title=Genista stenopetala > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista subcapitata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=131 title=Genista subcapitata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista tinctoria <a href='/KNApSAcK_World/top.php?word=Genista%20tinctoria' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=132 title=Genista tinctoria > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista triacanthos</td><td class=org><a href=information.php?mode=r&word=C00002526&key=133 title=Genista triacanthos > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista tridens</td><td class=org><a href=information.php?mode=r&word=C00002526&key=134 title=Genista tridens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista tridentata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=135 title=Genista tridentata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Genista ulicina</td><td class=org><a href=information.php?mode=r&word=C00002526&key=136 title=Genista ulicina > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycine canescens</td><td class=org><a href=information.php?mode=r&word=C00002526&key=137 title=Glycine canescens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycine clandestina</td><td class=org><a href=information.php?mode=r&word=C00002526&key=138 title=Glycine clandestina > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycine falcata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=139 title=Glycine falcata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycine latifolia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=140 title=Glycine latifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycine max <a href='/KNApSAcK_World/top.php?word=Glycine%20max' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=141 title=Glycine max > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycine tabacina</td><td class=org><a href=information.php?mode=r&word=C00002526&key=142 title=Glycine tabacina > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycine tomentella</td><td class=org><a href=information.php?mode=r&word=C00002526&key=143 title=Glycine tomentella > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycyrrhiza glabra <a href='/KNApSAcK_World/top.php?word=Glycyrrhiza%20glabra' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=144 title=Glycyrrhiza glabra > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycyrrhiza inflata <a href='/KNApSAcK_World/top.php?word=Glycyrrhiza%20inflata' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=145 title=Glycyrrhiza inflata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycyrrhiza uralensis <a href='/KNApSAcK_World/top.php?word=Glycyrrhiza%20uralensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=146 title=Glycyrrhiza uralensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Hardenbergia violacea</td><td class=org><a href=information.php?mode=r&word=C00002526&key=147 title=Hardenbergia violacea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Kennedia coccinea</td><td class=org><a href=information.php?mode=r&word=C00002526&key=148 title=Kennedia coccinea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Kennedia nigricans</td><td class=org><a href=information.php?mode=r&word=C00002526&key=149 title=Kennedia nigricans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Kennedia procurrens</td><td class=org><a href=information.php?mode=r&word=C00002526&key=150 title=Kennedia procurrens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Kennedia rubicunda</td><td class=org><a href=information.php?mode=r&word=C00002526&key=151 title=Kennedia rubicunda > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lablab purpureus <a href='/KNApSAcK_World/top.php?word=Lablab%20purpureus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=152 title=Lablab purpureus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Laburnum anagyroides <a href='/KNApSAcK_World/top.php?word=Laburnum%20anagyroides' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=153 title=Laburnum anagyroides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lespedeza cyrtobotrya</td><td class=org><a href=information.php?mode=r&word=C00002526&key=154 title=Lespedeza cyrtobotrya > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lespedeza juncea</td><td class=org><a href=information.php?mode=r&word=C00002526&key=155 title=Lespedeza juncea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus albus <a href='/KNApSAcK_World/top.php?word=Lupinus%20albus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=156 title=Lupinus albus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus arboreus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=157 title=Lupinus arboreus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus arcticus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=158 title=Lupinus arcticus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus elegans</td><td class=org><a href=information.php?mode=r&word=C00002526&key=159 title=Lupinus elegans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus luteus <a href='/KNApSAcK_World/top.php?word=Lupinus%20luteus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=160 title=Lupinus luteus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus mutabilis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=161 title=Lupinus mutabilis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus nanus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=162 title=Lupinus nanus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus pilosus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=163 title=Lupinus pilosus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus sericeus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=164 title=Lupinus sericeus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus subcarnosus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=165 title=Lupinus subcarnosus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus texensis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=166 title=Lupinus texensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Maackia amurensis <a href='/KNApSAcK_World/top.php?word=Maackia%20amurensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=167 title=Maackia amurensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Macroptilium bracteatum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=168 title=Macroptilium bracteatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Macroptilium lathyroides</td><td class=org><a href=information.php?mode=r&word=C00002526&key=169 title=Macroptilium lathyroides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Macroptilium martii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=170 title=Macroptilium martii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Medicago arabica</td><td class=org><a href=information.php?mode=r&word=C00002526&key=171 title=Medicago arabica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Medicago sativa <a href='/KNApSAcK_World/top.php?word=Medicago%20sativa' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=172 title=Medicago sativa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Medicago truncatula</td><td class=org><a href=information.php?mode=r&word=C00002526&key=173 title=Medicago truncatula > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Millettia dielsiana</td><td class=org><a href=information.php?mode=r&word=C00002526&key=174 title=Millettia dielsiana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Mucuna pruriens <a href='/KNApSAcK_World/top.php?word=Mucuna%20pruriens' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=175 title=Mucuna pruriens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Neonotonia wightii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=176 title=Neonotonia wightii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Neorautanenia amboensis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=177 title=Neorautanenia amboensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Ononis spinosa <a href='/KNApSAcK_World/top.php?word=Ononis%20spinosa' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=178 title=Ononis spinosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Ormosia monosperma</td><td class=org><a href=information.php?mode=r&word=C00002526&key=179 title=Ormosia monosperma > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium bolusii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=180 title=Otholobium bolusii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium bracteolatum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=181 title=Otholobium bracteolatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium candicans</td><td class=org><a href=information.php?mode=r&word=C00002526&key=182 title=Otholobium candicans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium hirtum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=183 title=Otholobium hirtum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium spicatum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=184 title=Otholobium spicatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium striatum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=185 title=Otholobium striatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium uncinatum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=186 title=Otholobium uncinatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium wilmsii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=187 title=Otholobium wilmsii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pericopsis laxiflora <a href='/KNApSAcK_World/top.php?word=Pericopsis%20laxiflora' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=188 title=Pericopsis laxiflora > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Phaseolus coccineus <a href='/KNApSAcK_World/top.php?word=Phaseolus%20coccineus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=189 title=Phaseolus coccineus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Phaseolus lunatus <a href='/KNApSAcK_World/top.php?word=Phaseolus%20lunatus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=190 title=Phaseolus lunatus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Phaseolus vulgaris <a href='/KNApSAcK_World/top.php?word=Phaseolus%20vulgaris' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=191 title=Phaseolus vulgaris > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Piptanthus nepalensis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=192 title=Piptanthus nepalensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pisum sativum <a href='/KNApSAcK_World/top.php?word=Pisum%20sativum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=193 title=Pisum sativum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pseudeminia comosa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=194 title=Pseudeminia comosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pseudoeriosema borianii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=195 title=Pseudoeriosema borianii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pseudovigna argentea <a href='/KNApSAcK_World/top.php?word=Pseudovigna%20argentea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=196 title=Pseudovigna argentea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea aculeata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=197 title=Psoralea aculeata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea arborea</td><td class=org><a href=information.php?mode=r&word=C00002526&key=198 title=Psoralea arborea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea axillaris</td><td class=org><a href=information.php?mode=r&word=C00002526&key=199 title=Psoralea axillaris > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea corylifolia <a href='/KNApSAcK_World/top.php?word=Psoralea%20corylifolia' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=200 title=Psoralea corylifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea effusa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=201 title=Psoralea effusa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea fascicularis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=202 title=Psoralea fascicularis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea laxa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=203 title=Psoralea laxa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea oligophylla</td><td class=org><a href=information.php?mode=r&word=C00002526&key=204 title=Psoralea oligophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea repens</td><td class=org><a href=information.php?mode=r&word=C00002526&key=205 title=Psoralea repens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pterocarpus angolensis <a href='/KNApSAcK_World/top.php?word=Pterocarpus%20angolensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=206 title=Pterocarpus angolensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pterocarpus marsupium <a href='/KNApSAcK_World/top.php?word=Pterocarpus%20marsupium' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=207 title=Pterocarpus marsupium > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pueraria candollei var. mirifica</td><td class=org><a href=information.php?mode=r&word=C00002526&key=208 title=Pueraria candollei var. mirifica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pueraria lobata <a href='/KNApSAcK_World/top.php?word=Pueraria%20lobata' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=209 title=Pueraria lobata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pueraria mirifica <a href='/KNApSAcK_World/top.php?word=Pueraria%20mirifica' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=210 title=Pueraria mirifica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pueraria montana var. lobata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=211 title=Pueraria montana var. lobata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pueraria phaseoloides <a href='/KNApSAcK_World/top.php?word=Pueraria%20phaseoloides' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=212 title=Pueraria phaseoloides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pueraria tuberosa <a href='/KNApSAcK_World/top.php?word=Pueraria%20tuberosa' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=213 title=Pueraria tuberosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Retama monosperma</td><td class=org><a href=information.php?mode=r&word=C00002526&key=214 title=Retama monosperma > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Retama raetam <a href='/KNApSAcK_World/top.php?word=Retama%20raetam' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=215 title=Retama raetam > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia caribaea</td><td class=org><a href=information.php?mode=r&word=C00002526&key=216 title=Rhynchosia caribaea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia densiflora</td><td class=org><a href=information.php?mode=r&word=C00002526&key=217 title=Rhynchosia densiflora > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia hirsuta</td><td class=org><a href=information.php?mode=r&word=C00002526&key=218 title=Rhynchosia hirsuta > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia phaseoloides</td><td class=org><a href=information.php?mode=r&word=C00002526&key=219 title=Rhynchosia phaseoloides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia pyramidalis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=220 title=Rhynchosia pyramidalis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Sophora japonica <a href='/KNApSAcK_World/top.php?word=Sophora%20japonica' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=221 title=Sophora japonica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Sophora secundiflora <a href='/KNApSAcK_World/top.php?word=Sophora%20secundiflora' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=222 title=Sophora secundiflora > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Sophora subprostrata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=223 title=Sophora subprostrata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Strongylodon macrobotrys</td><td class=org><a href=information.php?mode=r&word=C00002526&key=224 title=Strongylodon macrobotrys > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Tephrosia toxicaria</td><td class=org><a href=information.php?mode=r&word=C00002526&key=225 title=Tephrosia toxicaria > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Teyleria koordersii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=226 title=Teyleria koordersii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Thermopsis alterniflora</td><td class=org><a href=information.php?mode=r&word=C00002526&key=227 title=Thermopsis alterniflora > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Thermopsis macrophylla</td><td class=org><a href=information.php?mode=r&word=C00002526&key=228 title=Thermopsis macrophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Thermopsis mollis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=229 title=Thermopsis mollis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Thermopsis rhombifolia</td><td class=org><a href=information.php?mode=r&word=C00002526&key=230 title=Thermopsis rhombifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Thermopsis villosa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=231 title=Thermopsis villosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Trifolium campestre</td><td class=org><a href=information.php?mode=r&word=C00002526&key=232 title=Trifolium campestre > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Trifolium globosum</td><td class=org><a href=information.php?mode=r&word=C00002526&key=233 title=Trifolium globosum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Trifolium pannonicum <a href='/KNApSAcK_World/top.php?word=Trifolium%20pannonicum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=234 title=Trifolium pannonicum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Trifolium pratense <a href='/KNApSAcK_World/top.php?word=Trifolium%20pratense' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=235 title=Trifolium pratense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Trifolium repens <a href='/KNApSAcK_World/top.php?word=Trifolium%20repens' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=236 title=Trifolium repens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Trifolium spp.</td><td class=org><a href=information.php?mode=r&word=C00002526&key=237 title=Trifolium spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Ulex boivinii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=238 title=Ulex boivinii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Ulex europaeus <a href='/KNApSAcK_World/top.php?word=Ulex%20europaeus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=239 title=Ulex europaeus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Ulex gallii</td><td class=org><a href=information.php?mode=r&word=C00002526&key=240 title=Ulex gallii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Ulex genistoides</td><td class=org><a href=information.php?mode=r&word=C00002526&key=241 title=Ulex genistoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Ulex micranthus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=242 title=Ulex micranthus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Ulex minor</td><td class=org><a href=information.php?mode=r&word=C00002526&key=243 title=Ulex minor > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Ulex parviflorus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=244 title=Ulex parviflorus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vandasina retusa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=245 title=Vandasina retusa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vicia faba <a href='/KNApSAcK_World/top.php?word=Vicia%20faba' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=246 title=Vicia faba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vigna angularis <a href='/KNApSAcK_World/top.php?word=Vigna%20angularis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=247 title=Vigna angularis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vigna mungo <a href='/KNApSAcK_World/top.php?word=Vigna%20mungo' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=248 title=Vigna mungo > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vigna radiata <a href='/KNApSAcK_World/top.php?word=Vigna%20radiata' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=249 title=Vigna radiata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vigna subterranea <a href='/KNApSAcK_World/top.php?word=Vigna%20subterranea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=250 title=Vigna subterranea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Wisteria brachybotrys</td><td class=org><a href=information.php?mode=r&word=C00002526&key=251 title=Wisteria brachybotrys > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Hypericaceae</td><td class=org2>Hypericum scabrum <a href='/KNApSAcK_World/top.php?word=Hypericum%20scabrum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=252 title=Hypericum scabrum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lythraceae</td><td class=org2>Punica granatum <a href='/KNApSAcK_World/top.php?word=Punica%20granatum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=253 title=Punica granatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Moraceae</td><td class=org2>Cudrania cochinchinensis <a href='/KNApSAcK_World/top.php?word=Cudrania%20cochinchinensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=254 title=Cudrania cochinchinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Moraceae</td><td class=org2>Cudrania cochinchinensis var. gerontogea <a href='/KNApSAcK_World/top.php?word=Cudrania%20cochinchinensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=255 title=Cudrania cochinchinensis var. gerontogea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Moraceae</td><td class=org2>Ficus cordata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=256 title=Ficus cordata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Moraceae</td><td class=org2>Ficus nymphaeifolia <a href='/KNApSAcK_World/top.php?word=Ficus%20nymphaeifolia' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=257 title=Ficus nymphaeifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Moraceae</td><td class=org2>Ficus septica</td><td class=org><a href=information.php?mode=r&word=C00002526&key=258 title=Ficus septica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Myrtaceae</td><td class=org2>Acca sellowiana</td><td class=org><a href=information.php?mode=r&word=C00002526&key=259 title=Acca sellowiana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Poaceae</td><td class=org2>Zea mays L. <a href='/KNApSAcK_World/top.php?word=Zea%20mays' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=260 title=Zea mays L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygalaceae</td><td class=org2>Securidaca inappendiculata</td><td class=org><a href=information.php?mode=r&word=C00002526&key=261 title=Securidaca inappendiculata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Prunus cerasus <a href='/KNApSAcK_World/top.php?word=Prunus%20cerasus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=262 title=Prunus cerasus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Prunus spp. <a href='/KNApSAcK_World/top.php?word=Prunus%20spp.' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=263 title=Prunus spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Taxaceae</td><td class=org2>Taxus fuana</td><td class=org><a href=information.php?mode=r&word=C00002526&key=264 title=Taxus fuana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Taxaceae</td><td class=org2>Taxus yunnanensis</td><td class=org><a href=information.php?mode=r&word=C00002526&key=265 title=Taxus yunnanensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Zingiberaceae</td><td class=org2>Zingiber officinale <a href='/KNApSAcK_World/top.php?word=Zingiber%20officinale' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00002526&key=266 title=Zingiber officinale > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Fagelia bituminosa</td><td class=org><a href=information.php?mode=r&word=C00002526&key=267 title=Fagelia bituminosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Halotydeus destructor</td><td class=org><a href=information.php?mode=r&word=C00002526&key=268 title=Halotydeus destructor > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Sarcolobus globosus</td><td class=org><a href=information.php?mode=r&word=C00002526&key=269 title=Sarcolobus globosus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Slackia isoflavoniconvertens</td><td class=org><a href=information.php?mode=r&word=C00002526&key=270 title=Slackia isoflavoniconvertens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Stemphilium sp. No. 644</td><td class=org><a href=information.php?mode=r&word=C00002526&key=271 title=Stemphilium sp. No. 644 > Ref.</a></td>
+</tr>
+</table>
+		     </td>
+                  </tr>
+               </table>
+            </td>
+	    <td class=img>
+<!--		<img src="/sun/MSdata/SD/C00002526.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'"><br><br> -->
+<!-- NBDC Markup START -->
+		<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+		<img property="image" src="/sun/MSdata/SD/C00002526.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'" />
+		</div>
+<!-- NBDC Markup END -->
+		<a href="image.php?word=C00002526" title="C00002526" onclick="window.open(this.href, '_blank', 'width=500,resizable=yes, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">zoom in</a>
+
+		<br><br><br><br>
+                
+
+	    </td>
+        </tr>
+	</table>
+
+
+   </div>
+   </div>
+   <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+   </div>
+</div>
+</body>
+</html>

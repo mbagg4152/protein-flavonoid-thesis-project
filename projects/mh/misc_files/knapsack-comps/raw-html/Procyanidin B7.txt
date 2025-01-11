@@ -1,0 +1,169 @@
+
+<html>
+<!-- <head> -->
+<!-- NBDC Markup START -->
+<head vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+
+<title>KNApSAcK Metabolite Information - C00009074</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/cs">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="C00009074">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/info.css" media="all">
+</head><body 0="" onload="" >
+
+<div id="my_body">
+  <div id="my_header">
+      <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+      <img src="images/nap2.gif" border=0> </a></p>
+  </div>
+  <div id="my_main">
+    <div id="my_navigation">
+
+    </div>
+    <div id="my_contents">
+          <br>
+<!--	  input word = <font class="iw">C00009074</font><br><br> //-->
+     	  input word = <font class="iw">C00009074</font><br><br>
+
+<!-- <table class="d1"> -->
+<!-- NBDC Markup START -->
+	<table class="d1" vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+        <tr>
+            <th class="d1">Metabolite Information</th><th class="d3">Structural formula</th>
+        </tr>
+
+        <tr>
+            <td>
+               <table class="d3">
+                  <tr>
+                     <th class="inf">Name</th>
+                     <td colspan="4" class="inf">Procyanidin B7<br>Catechin-(4beta->6)-catechin</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Formula</th>
+                     <td colspan="4">C30H26O12</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Mw</th>
+                     <td colspan="4">578.1424263</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">CAS RN</th>
+                     <td colspan="4">12798-59-3</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">C_ID</th>
+                     <td colspan="4" class="img2">C00009074
+<!-- 			C00009074<a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00009074" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+<!-- NBDC Markup START -->
+<!--			<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry"> //-->
+<!--			<span property="entryID">C00009074</span><a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00009074" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+                                       , <a href="/Twins/top.php?kword=C00009074&sword=50&mode=list1#res" target="_blank"><img src="images/TW.gif" border="0" class="img2"></a><br>
+<!--			</div> //-->
+<!-- NBDC Markup END -->
+                        
+		     </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChIKey</th>
+                     <td colspan="4">GMISZFQPFDAPGI-FGJLFUJHNA-N</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChICode</th>
+                     <td colspan="4">InChI=1S/C30H26O12/c31-13-7-19(36)24-23(8-13)42-30(12-2-4-16(33)18(35)6-12)28(40)26(24)25-20(37)10-22-14(27(25)39)9-21(38)29(41-22)11-1-3-15(32)17(34)5-11/h1-8,10,21,26,28-40H,9H2/t21-,26-,28+,29+,30+/m0/s1</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">SMILES</th>
+                     <td colspan="4">c1c(ccc(c1O)O)[C@H]1Oc2c(C[C@@H]1O)c(c(c(c2)O)[C@H]1[C@H]([C@H](Oc2c1c(cc(c2)O)O)c1ccc(c(c1)O)O)O)O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Start Substs in Alk. Biosynthesis (Prediction)</th>
+                     <td colspan="4"><a href="/CobWeb/top.php?word=&mode=met" target=_"blank"></a> </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Organism</th>
+                     <td class="or1">
+                        <table class="org">
+			 	<th class="or3">Kingdom</th>
+				<th class="or2">Family</th>
+				<th class="or1">Species</th>
+				<th class="or4">Reference</th><tr>
+<td class=org>Plantae</td><td class=org>Cistaceae</td><td class=org2>Cistus incanus</td><td class=org><a href=information.php?mode=r&word=C00009074&key=0 title=Cistus incanus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Vaccinium vitis-idaea <a href='/KNApSAcK_World/top.php?word=Vaccinium%20vitis-idaea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00009074&key=1 title=Vaccinium vitis-idaea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fagaceae</td><td class=org2>Quercus miyagii</td><td class=org><a href=information.php?mode=r&word=C00009074&key=2 title=Quercus miyagii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fagaceae</td><td class=org2>Quercus petraea <a href='/KNApSAcK_World/top.php?word=Quercus%20petraea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00009074&key=3 title=Quercus petraea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Illiciaceae</td><td class=org2>Illicium anisatum <a href='/KNApSAcK_World/top.php?word=Illicium%20anisatum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00009074&key=4 title=Illicium anisatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lauraceae</td><td class=org2>Cinnamomum cassia Blume. <a href='/KNApSAcK_World/top.php?word=Cinnamomum%20cassia' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00009074&key=5 title=Cinnamomum cassia Blume. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lauraceae</td><td class=org2>Cinnamomum comphora</td><td class=org><a href=information.php?mode=r&word=C00009074&key=6 title=Cinnamomum comphora > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lauraceae</td><td class=org2>Cinnamomum obtusifolium Nees.</td><td class=org><a href=information.php?mode=r&word=C00009074&key=7 title=Cinnamomum obtusifolium Nees. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lauraceae</td><td class=org2>Laurus nobilis <a href='/KNApSAcK_World/top.php?word=Laurus%20nobilis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00009074&key=8 title=Laurus nobilis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Palmae</td><td class=org2>Areca catechu <a href='/KNApSAcK_World/top.php?word=Areca%20catechu' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00009074&key=9 title=Areca catechu > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Pinaceae</td><td class=org2>Pinus taeda</td><td class=org><a href=information.php?mode=r&word=C00009074&key=10 title=Pinus taeda > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Rheum sp.</td><td class=org><a href=information.php?mode=r&word=C00009074&key=11 title=Rheum sp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Salicaceae</td><td class=org2>Salix caprea <a href='/KNApSAcK_World/top.php?word=Salix%20caprea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00009074&key=12 title=Salix caprea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Salicaceae</td><td class=org2>Salix sieboldiana</td><td class=org><a href=information.php?mode=r&word=C00009074&key=13 title=Salix sieboldiana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Vitaceae</td><td class=org2>Vitis vinifera <a href='/KNApSAcK_World/top.php?word=Vitis%20vinifera' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00009074&key=14 title=Vitis vinifera > Ref.</a></td>
+</tr>
+</table>
+		     </td>
+                  </tr>
+               </table>
+            </td>
+	    <td class=img>
+<!--		<img src="/sun/MSdata/SD/C00009074.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'"><br><br> -->
+<!-- NBDC Markup START -->
+		<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+		<img property="image" src="/sun/MSdata/SD/C00009074.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'" />
+		</div>
+<!-- NBDC Markup END -->
+		<a href="image.php?word=C00009074" title="C00009074" onclick="window.open(this.href, '_blank', 'width=500,resizable=yes, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">zoom in</a>
+
+		<br><br><br><br>
+                
+
+	    </td>
+        </tr>
+	</table>
+
+
+   </div>
+   </div>
+   <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+   </div>
+</div>
+</body>
+</html>

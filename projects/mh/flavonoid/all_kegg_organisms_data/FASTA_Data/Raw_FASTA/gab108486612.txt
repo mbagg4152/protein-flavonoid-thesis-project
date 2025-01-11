@@ -1,0 +1,46 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05776: 108486612</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620845889">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620845889">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gab:108486612 -->&gt;gab:108486612 K00487 trans-cinnamate 4-monooxygenase [EC:1.14.14.91] | (RefSeq) LOW QUALITY PROTEIN: cytochrome P450 CYP73A100-like (N)
+atggctctgcctcagcatcattcttgtaacaaaccaattctggtcacaactctctcccta
+cttattcttgcactcaccaaaatattgtaccctcagctctacataaaanttctcactcac
+cttgtgccacttgctattatctattacttctttttcaagtcttccactgctcttcctcca
+ggccctttcccgtttccaatatttggaaattggatcaaagtagggaatgaccttaatcac
+cgccttctagcttctatggaacaaacctacggtccagttttccttctaaaactcggctct
+aaaaaccttgtagtggtctcagacgctgagctagccatccaggtgttgcacacacaaggt
+gtggagttcggttccaggccacgcaacgtggttttcgacatcttcacgggcaacggacag
+gacatggtgtttacggtttacggtgatcattggcgcaaaatgggcaggatcatgacactg
+ccatttttcaccaacaaagttgtgcacaattacagtaacatgtgggaagaagaaatggat
+ctggaggttaattatttgaagaaagatgagaatgtgaaaagcaaagggattgttatcaga
+aaacgtttgcagctgatgctttataatatcatgtataggatgatgtttgattccaagttt
+gagtctcaggaagaccccttgttcattgaggcaaccaggttcaactcggagagaagccgc
+ttggctcagagttttgaatacaattatggtgacttcattccattgctacgacccttattg
+agagggtacttgaacaagtgcagggacttgcagaccaggaggctggccttcttcaacaac
+tattatgttgagaaaagaagggaaataatggctgctgagggggacaagcacaagataagc
+tgtgccattgatcacattatagatgctcaaatgaagggagagattagcgaagaaaatgtg
+ctctacattgttgaaaacatcaacgttgcagcaatcgaaaccacactgtggtccatggag
+tgggccatagctgagctggtgaaccatccccacgttcagcacaggatccgccaagaaatc
+tcccgagtcctcaacggagaggctgtgaaagaatccaacctccataaactgccctacttg
+caggccacagtgaaagagacattaaggttgcacaccccaatcccattgttggtccctcac
+atgaaccttgaagaagcaaagcttggagggttcaccatacctagggagtccaaggtggta
+ttaaatgccttgtggttggccaacaatcccaagtggtggaaaaaccctgaggaattcagg
+ccagagcggttcctggaaaaagaacatggcacagacgccgccgtggctggtgggaaagtt
+gatttcagattcctgccattcggtgtgggaaggcgcagctgccctggaatcatcctcgca
+ctcccaatactggggcttgtcatagccaagttggtcaccaattttgaactaaaacctccc
+tcgggaacccaccaaatcgatgtgactgaaaaaggagggcaattcagcttgcacattgcc
+aaccactcaaccgttgccttctgcctcattgcccattaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gab:108486612+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 102665908</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620842067">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620842067">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:102665908 -->&gt;gmx:102665908 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) SEPB2; peroxidase sEPb2 precursor (N)
+atggctgtcatggttgcattcttgaatttgatcatcatgttttcagtagtctctacaagc
+aagtcactgagcttaaactactattcaaaaacatgccctgatgtggaatgcattgttgcc
+aaggcagtgaaggatgccactgctagggacaaaactgttccagctgcacttctgcgaatg
+cacttccatgactgtttcgttcgggggtgtgatgcctctgtgctgctaaattcaaaagga
+agcaacaaagcagaaaaagatgggccaccaaatgtttctttgcatgcattctatgtcatt
+gatgcagcgaagaaagcactagaagcttcatgcccaggtgtggtctcttgtgctgacatc
+cttgctctagcagcaagggatgcagtttttctgtcaggaggacctacatgggatgttcct
+aaaggaagaaaggatggcagaacatctaaagccagcgaaaccagacaattaccagcgcca
+accttcaacttatcacaactgcggcaaagcttttctcaaagaggactgtcaggggaagac
+ctggtagctctgtcaggggggcacactttgggtttctctcactgctcatctttcaagaac
+agaatccacaacttcaatgctacacatgatgttgacccttcattaaatccatcatttgca
+acaaaactgatatcaatttgtccactaaaaaatcaggcaaaaaatgcaggcacctctatg
+gacccttcaacaacaacttttgataatacatattacaggttgatcctccaacagaaaggc
+ttgttttcttctgatcaagttttgcttgacaacccagacactaaaaatctggttgcgaag
+tttgccacctcaaaaaaggctttttatgacgcttttgcaaagtccatgatcaaaatgagt
+agcatcaatggtggacaggaggttagaaaggactgcagagtgatcaattaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:102665908+nt">BLAST</a>
+</body>
+</html>

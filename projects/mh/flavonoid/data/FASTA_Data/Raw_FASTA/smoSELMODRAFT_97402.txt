@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01496: SELMODRAFT_97402</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620857063">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620857063">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- smo:SELMODRAFT_97402 -->&gt;smo:SELMODRAFT_97402 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) hypothetical protein (N)
+atggagctcacggttttggcgttgctcatagtcgcggcggcttacaatcttgcagaaggt
+gcgacgaggattggattctacgacggctcgtgccctcgagtggaagccatcgttaagtcc
+acagtgagatcacacatgagctccaatcctatgattggagccggcgttcttcgcttgcat
+ttccacgactgctttgtccgaggctgtgatggctccattctcatcgacggcccgagcgcg
+gagaaagcggcgctggccaacctcggcctccggggcttcgaagttatagacgatgcgaag
+cggcagatcgaggcagcgtgtccgggagttgtctcgtgcgccgacattcttgcgctcgct
+gccagggacgcggtctcagagagtggaggacagttctggccagttcctctgggccgacgg
+gacggaagagtgtcctctgcctcggatgcatcaaacatgccctcgccactcgactcggtc
+gcggtgctcaagcaaaagttctcggccaaaggactcacaactctggatctcgcaactctc
+agtggtgctcacacgatcggccagaccgactgccgctttttcagctaccgcctctacaac
+ttctcgtccaccggcaagccggatccatccatgagccagagcactctcgctatgctccag
+cagcagtgtcccaggggtgacgcggggctcaacaaggtggcgctcgacacgggcagccag
+ggctcgttcgacagcagctacttccagaacttgcggaatggtggcggggtgctggagtcg
+gaccagcgcctcatggacgacacgggggcgcgcatcacggtgacggcgtttggggtggcc
+ggggtgacgttccgggcggggttcgtggcgtccatgctccggatgagcgacatacaggtg
+ctcactgggagcgatggagagattagaagagcttgcaatgcagtgaattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=smo:SELMODRAFT_97402+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07757: 123066884</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641768870">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641768870">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- taes:123066884 -->&gt;taes:123066884 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) cationic peroxidase SPC4-like (N)
+atggtttgtgctaggacagtcagtgctcctctgctcgctgcagcagcagtagcggcgctg
+gcactggcctgctcgctgggatatggggcttatgcggcggcagagcatgaggccgccggc
+gccggcggggacgacgtgaggttgaggcagcctccgatcacgcgcggcctgtccttcgac
+ttctacaagcggagctgccccagggcggagtccatcgtgcgccacttcgtccggcacgcc
+gtccgcaaggacgtcggcctcgccgccggcctcctccgcctccacttccacgactgcttc
+gtccagggctgcgacgcgtcggtgctcctcgacggctcggccacggggccgggggagaag
+caggcgccgcccaacctcacgctccgcccgtccgccttcaaggccatcaacgacatccgg
+gaccagctggagcgcgagtgccgcggcgccgtcgtgtcctgctccgacatcctggcgctc
+gccgcgcgcgactccgtggtggccacgggcgggcccgagtaccgcgtgccgctcggccgg
+cgcgacagcgcgcggttcgccacgacgcaggacgtgctgtccggcctccccgcgcccacc
+tccgccgtgccgtgcctcctcgacgtgctccacagccacagccccgacctcgacgccacc
+gacctcgtcacgctctccggcgggcacaccgtggggctcggccactgcgtctccttcgag
+ggccgcctcttcccgcggcccgacccgacgatgagcccggacttcctcggcaggctgagg
+cagacgtgcccggccaagggcaccgacgcgcgcgccgcgctggacgtgcgcacgcccgac
+gtgttcgacaacaagtactacgtcaacctggtgaaccgggaggggctcttcgtgtcggac
+caggacctgtttaacaacgacgccacccggcccatcgtggagcgcttcgcgcgcagccag
+cgctacttcttcagccagttcggcgtgtccatggtgaagatgggccagatcagggtgctc
+accggcgaccagggccaggtccgccgcaactgctccgcccgcaaccccggcaccgccgcc
+gacggcctcgagtggtcgtccctggtgcagaccgtcgtggacgccgctccggagagcctc
+ggtttctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=taes:123066884+nt">BLAST</a>
+</body>
+</html>

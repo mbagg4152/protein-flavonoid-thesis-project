@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	60	1	20.333	20.333	nan	nan	nan	nan	20.333	20.333	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-19.360	10.190	26.537
+N	TYR	B	60	2	20.333	20.333	nan	nan	nan	nan	20.333	20.333	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-19.360	10.190	26.537
+CA	TYR	B	60	3	18.021	18.021	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.021	18.021	nan	nan	nan	nan	nan	nan	nan	-18.152	9.681	25.910
+C	TYR	B	60	4	30.539	30.539	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	30.539	30.539	nan	nan	nan	nan	nan	nan	nan	-18.246	8.221	25.470
+O	TYR	B	60	5	30.518	30.518	nan	nan	nan	nan	30.518	30.518	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-19.078	7.446	25.953
+CB	TYR	B	60	6	33.032	nan	33.032	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.032	nan	33.032	nan	nan	nan	nan	nan	nan	-16.924	9.906	26.808
+CG	TYR	B	60	7	1.937	nan	1.937	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.937	nan	1.937	nan	nan	nan	nan	nan	nan	-16.444	8.698	27.602
+CD1	TYR	B	60	8	16.795	nan	16.795	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.795	nan	16.795	nan	nan	nan	nan	nan	nan	-17.256	8.098	28.561
+CD2	TYR	B	60	9	26.365	nan	26.365	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.365	nan	26.365	nan	nan	nan	nan	nan	nan	-15.165	8.195	27.426
+CE1	TYR	B	60	10	32.634	nan	32.634	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.634	nan	32.634	nan	nan	nan	nan	nan	nan	-16.814	7.019	29.305
+CE2	TYR	B	60	11	34.364	nan	34.364	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.364	nan	34.364	nan	nan	nan	nan	nan	nan	-14.703	7.112	28.174
+CZ	TYR	B	60	12	9.944	nan	9.944	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.944	nan	9.944	nan	nan	nan	nan	nan	nan	-15.531	6.527	29.115
+OH	TYR	B	60	13	43.594	nan	43.594	nan	nan	nan	43.594	nan	43.594	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-15.084	5.443	29.858

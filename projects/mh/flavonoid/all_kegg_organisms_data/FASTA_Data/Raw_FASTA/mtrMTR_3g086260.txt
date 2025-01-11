@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01716: MTR_3g086260</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849334">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849334">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mtr:MTR_3g086260 -->&gt;mtr:MTR_3g086260 K00660 chalcone synthase [EC:2.3.1.74] | (GenBank) chalcone and stilbene synthase family protein (N)
+atggtgacggttaatgagatccgccaggcacagagagctgaaggccctgccacagtgtta
+gcgatcggcactgcaaatcctctaaactgcgtggatcagagtacatatccagacttctac
+ttccgcatcacaaatagtgagcacaagacagagctgaaagaaaaatttcagcgcatgtgt
+gacaaatctatgattaagaagagatacatgcatttgacagaacaaatattgaaggagaat
+ccaagtttttgtgagtttatggcaccttctttggatgcaagacaggacattgtggttgag
+gaagtaccaaagctcggaaaagaagcagcaataaaggctatcaatgaatggggtcaacct
+aagtcaatggttactcatctcatattttgcacttcaagtggtgtcgatatgcctggagct
+gactatcagctcacaaagctcttaggcctttgtccatatgtaaagcgttatatgatgtac
+caacaaggttgttttgctggtgcgatggctcttcgcttggctaaagatttggctgagaac
+aacaaaggtgcccgtgtgttgatggttagttcagagattagggtatttaattttcgtgga
+cctagtgatactgatcttgatagtcttatgggacgggcattgtttggagatggtgcggca
+gctgtgattgttggttcagacccgttgccagaagttgagaagcctttgtttgaattggta
+tggactgcacaaaccatcattccagatagtgaaggagctattaaagctcacactagagaa
+gcaggactaacattacatatcatcaaagatgttcctgacctcatctcaaagaacattgag
+aaaactcttgttgaggcctttcaacctttgaatatctccgattacaattcaattttttgg
+attgcacacccaggcggacgagcaattcttgaccaagttgaagccaaattaggcttaaag
+ccagagaaaatgcaagccactcggcatgtacttagtgagtatggtaacatgtcaagtcca
+tccgtgttattcattttggatgagatgaggaggaagtcaaaagaagaaggacttggcaca
+acaggagaaggacttgaatggggcgtgcttttaagttttggacctggactcactgtcgag
+actgttgtgctccatagtgtggccacctaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mtr:MTR_3g086260+nt">BLAST</a>
+</body>
+</html>

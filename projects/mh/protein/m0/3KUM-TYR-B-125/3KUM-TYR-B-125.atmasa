@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	125	1	24.298	24.298	nan	nan	nan	nan	24.298	24.298	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	55.942	24.764	7.702
+N	TYR	B	125	2	24.298	24.298	nan	nan	nan	nan	24.298	24.298	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	55.942	24.764	7.702
+CA	TYR	B	125	3	10.604	10.604	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.604	10.604	nan	nan	nan	nan	nan	nan	nan	54.499	24.511	7.662
+C	TYR	B	125	4	32.950	32.950	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.950	32.950	nan	nan	nan	nan	nan	nan	nan	53.654	25.759	7.407
+O	TYR	B	125	5	33.430	33.430	nan	nan	nan	nan	33.430	33.430	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	52.647	25.696	6.712
+CB	TYR	B	125	6	29.773	nan	29.773	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.773	nan	29.773	nan	nan	nan	nan	nan	nan	54.034	23.852	8.963
+CG	TYR	B	125	7	2.029	nan	2.029	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.029	nan	2.029	nan	nan	nan	nan	nan	nan	52.706	23.142	8.838
+CD1	TYR	B	125	8	22.981	nan	22.981	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.981	nan	22.981	nan	nan	nan	nan	nan	nan	52.566	22.039	7.994
+CD2	TYR	B	125	9	23.979	nan	23.979	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.979	nan	23.979	nan	nan	nan	nan	nan	nan	51.595	23.554	9.577
+CE1	TYR	B	125	10	34.090	nan	34.090	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.090	nan	34.090	nan	nan	nan	nan	nan	nan	51.358	21.361	7.893
+CE2	TYR	B	125	11	34.256	nan	34.256	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.256	nan	34.256	nan	nan	nan	nan	nan	nan	50.376	22.882	9.482
+CZ	TYR	B	125	12	9.952	nan	9.952	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.952	nan	9.952	nan	nan	nan	nan	nan	nan	50.270	21.783	8.637
+OH	TYR	B	125	13	43.196	nan	43.196	nan	nan	nan	43.196	nan	43.196	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	49.084	21.096	8.547

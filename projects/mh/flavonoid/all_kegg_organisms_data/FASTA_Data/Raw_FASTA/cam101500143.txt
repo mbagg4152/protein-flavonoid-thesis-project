@@ -1,0 +1,46 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02819: 101500143</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854373">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854373">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cam:101500143 -->&gt;cam:101500143 K01904 4-coumarate--CoA ligase [EC:6.2.1.12] | (RefSeq) 4-coumarate--CoA ligase-like 7 (N)
+atgcagagatcaggttatggttcggatggaatatacaggtctctacgaccttcccttacc
+ctacccaaacacccgaacctctccctcgtaacacacctcttcaccaaagtcgcttcgtcg
+ttaaccaaacctgctttaatcgatgccgactcattgcaaaccctaaccttcgctcagtta
+aaatccctaaccattaaactctcacacgctcttatccacatcggtgtaacaaaaaacgac
+gtcgttctcttcctcgcaccaaacagttacctctaccccgttttcttcctcgccgttgct
+tcaatcggcgccgtcgcttccactgtcaaccctgcctacaccatcgctgaagtttccaaa
+caagccaatgactccaaacctaaactcatcatcacggtcgccgaattatattccaaagtc
+aaacacctcaatctccccgccgtatttctcgattccaccgacattcttcaaaattcaaat
+gtcacgagttataaatcgttgatcaaactcggtgactcagccaccgagtttccgaaagtc
+gacgttaaacaaaccgatactgccgcgcttttgtattcctccggaacaacggggatgagc
+aagggcgtgattctcacgcacgggaatttcattgcttcgtcgttgatgattggaatggac
+gatgaattagccggagataaagacgatgtgtttctcgttgttcttccgatgtttcatgtg
+tttggacttgcggttataacgtattcgcagcttcagagaggtaacgctgttgtgtcgttg
+aagaagtttgagtttgaagtggttttgaaaactgttgagaagtatagggtaacgcgttta
+tgggttgtgcctcctattgtacttgctcttgctaaacatgctttggttgataagtatgat
+ctttcttcgttgaagtatattggttctggtgctgctcctcttggaaaagagttgatggag
+gagtgtgctaagcgttttcctcatacaatcgttgctcagggctatggtatgactgaaact
+tctggtattgtttcagtggagaatacaaggatgggggttcggcatactggctccgcagga
+atgnnnnnnnnnnnnnnggaagctcaaattgtcagtgtggatacactgaagccacttcct
+cctggacagcttggggagatatgggttcgcggtcctaatatgatgcaaggttatcacaac
+aatccacaagccacaagtttaactatagataaaagtggttgggtacatacaggagatctt
+ggatattttgatgaagatggacatctttttgttgttgaccgtatcaaagaactgatcaag
+tataaaggttttcaggttgcaccagcagaacttgaagggcttcttgtttctcatcctgaa
+atacttgatgctgttgtcattccatatcctgatgccgaagctggtgaggttccggttgcc
+tatgttgtgcgatcacccaatagttcactaaccgagaaagatgttcaaaagtttattgct
+gatcaggtagcacctttcaaaagattgcgaaaggtaacgttcatcagcactgttccgaaa
+acagcatcaggaaaaattctaagaagagagcttattgacaaagtacgatccaaaatataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cam:101500143+nt">BLAST</a>
+</body>
+</html>

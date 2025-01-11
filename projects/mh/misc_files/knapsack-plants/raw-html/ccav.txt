@@ -1,0 +1,59 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Cynara cardunculus</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body 0="" onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Cynara cardunculus</font><br><br>
+   	      Number of matched data :12 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00000609 target="_blank">C00000609</a></td><td class="d1">7770-78-7</td><td class="d1">Arctigenin</td><td class="d1">C21H24O6</td><td class="d1">372.1572885</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002733 target="_blank">C00002733</a></td><td class="d1">30964-13-7</td><td class="d1">1,3-Dicaffeoylquinic acid</td><td class="d1">C25H24O12</td><td class="d1">516.12677623</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003243 target="_blank">C00003243</a></td><td class="d1">35730-78-0</td><td class="d1">Cynaropicrin</td><td class="d1">C19H22O6</td><td class="d1">346.14163844</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00020855 target="_blank">C00020855</a></td><td class="d1">70894-20-1</td><td class="d1">Cynaratriol</td><td class="d1">C15H22O5</td><td class="d1">282.14672381</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00038906 target="_blank">C00038906</a></td><td class="d1">114006-82-5</td><td class="d1">Cynarasaponin H</td><td class="d1">C47H74O18</td><td class="d1">926.48751556</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00038907 target="_blank">C00038907</a></td><td class="d1">117804-15-6</td><td class="d1">Cynarasaponin J</td><td class="d1">C47H74O19</td><td class="d1">942.48243018</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00049565 target="_blank">C00049565</a></td><td class="d1">117804-09-8</td><td class="d1">Cynarasaponin C</td><td class="d1">C42H66O14</td><td class="d1">794.44525682</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054378 target="_blank">C00054378</a></td><td class="d1">117804-14-5</td><td class="d1">Cynarasaponin I</td><td class="d1">C41H64O14</td><td class="d1">780.42960675</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054422 target="_blank">C00054422</a></td><td class="d1">117804-12-3</td><td class="d1">Cynarasaponin F</td><td class="d1">C41H64O14</td><td class="d1">780.42960675</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054723 target="_blank">C00054723</a></td><td class="d1">117804-10-1</td><td class="d1">Cynarasaponin D</td><td class="d1">C47H74O19</td><td class="d1">942.48243018</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054724 target="_blank">C00054724</a></td><td class="d1">117804-11-2</td><td class="d1">Cynarasaponin E</td><td class="d1">C42H66O15</td><td class="d1">810.44017144</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00055547 target="_blank">C00055547</a></td><td class="d1">117804-06-5</td><td class="d1">Cynaroside A</td><td class="d1">C21H32O10</td><td class="d1">444.19954724</td><td class="d1"><font color=#FF00BF>Cynara cardunculus</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01496: SELMODRAFT_450171</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620853710">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620853710">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- smo:SELMODRAFT_450171 -->&gt;smo:SELMODRAFT_450171 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) BAHDe7-1; probable hydroxycinnamoyl transferase (N)
+atggagatcaatgtggtgagggagacgatggtgaggcccgcgggggcgacgccacagcgg
+gtgctgtggaactccaacgtggacctcgtgatcccgcgcatccacaccgccagcgtctac
+ttctaccgcccggatccgagcggcggcgagggatatttcgagggcggcgtgctccgcgag
+gcgctggccaaggcgctggtgccgttctatcccatggctgggcggctcaagaaggacgag
+aatgggcggtttgagatcaactgtaatggcgagggcgtgctgctcgtggaggcggcggcg
+gccaatgcgagcgtggatgagtatgctcgcgatttcgccccggatgtctcgttccagcgc
+ctcatcccttccgtggattacacccaagacattggctcctttccacttctcgttcttcag
+atcactcgctttaaatgcggtggagcctctctcggcgtcggaatggaacaccatgtcgcg
+gacggcatgtctgggataactttcatcaacacctgggctgccatggccaggggcgaggat
+ccaaagatcgttccatacatcgaccggacgctgctcagggcgaacaagccaccgatccca
+aagtttccgcacgtcgagtaccaccctccgccgcttctcaagcacgcagcggccacgaac
+gggcactcaaacggaaaagcaaagcctcaagccggcgacgatgcgcctcccaggatcgca
+gtaggacttttcaagtttacaaaagaacagctccaggccttgaagagccaggccacggac
+gaagagaccaacaccacgtacagcagctacgagatgctgtccggccacatctggaggtcc
+atgtgtctcgctcgcggcctcgacgacgaccaagagaccaaactttacatcgccaccgac
+gggcgagcgagagttgtgccgccgcttccaaagcactacttcggaaacgtcatcttcact
+tgcacgccgatggcgctggccggagacctggtgtcgaggccactctactacgcggccagt
+gtgatacacgatgcggtgtccaggatgaacgacgagtacctgcgctcggcgctcgactac
+ttggaactccagccggacttgtacaagcttgtgaggggagctcacactttcaggtcgccg
+aatctggggatcacgagctggagccggctgccggtttacgatgcggactttggatggggg
+aggccagttttcatggggccggcggtgatcgcgtttgagggcctggtttatgttcttccc
+agcgggacaggggatggcagcctcagtatctcgctggggctccaaccggaacacatgcca
+cggtttgagcagctcatcgggcaaatctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=smo:SELMODRAFT_450171+nt">BLAST</a>
+</body>
+</html>

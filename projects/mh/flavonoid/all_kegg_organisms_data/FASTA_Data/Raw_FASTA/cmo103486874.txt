@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03195: 103486874</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620848261">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620848261">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cmo:103486874 -->&gt;cmo:103486874 K09754 5-O-(4-coumaroyl)-D-quinate 3'-monooxygenase [EC:1.14.14.96] | (RefSeq) cytochrome P450 98A2 (N)
+atgcttctctctctactccctctctcttttctcctccttctcctcctctacaaactctac
+caccgtctccgcttcaaccttcctccaggcccacgcccgcttcccgtcgtcggtaaccta
+tacgacgtcaaacctgtccgcttcagatgctacgcggactgggccaagcagtacggtccc
+atcatatcggtgtggttcggctccaccttgaacgtggttgtctccaacacggagttagcg
+agggaggttctgaaggagcacgaccagagcctggcggaccgccaccggaccagatcggcc
+gcgaaatttagccgggacgggaaggatttgatttgggcggattatggaccgcattatgtg
+aaggttaggaaagtttgtaccattgaactcttctctcccaaacgacttgaatctttgagg
+ccgattcgagaagatgaagtttccgccatggttgaagatgttttcaaccattgcactaat
+cctgagaactatggaaagagtttgaagcttcgggaatttctgggagcagtttcattcaac
+aacatcacaaggcttgcttttgggaagagatttgtgaactccaatggcgttttggacgaa
+cagggcttggaattcaaggctattgtcgccaatggcctcaagctcggcgcctcccttgcc
+atggctgagcacattccttggctccgttggatgttccctctcgaagaagaagccttcgcc
+aagcatggcgcccgtcgcgaccgcctcactcgggctatcatggatgagcataccaaagct
+cgcaccttgagcggtaatgtcaagaatcacttcgttgatgctctcctcactctcaaagac
+aagtatgatctcagcgaagatactatcattggcctcctttgggatatgatcacagccggc
+atggacacgacagcgatttcagtggaatgggcaatggcggagatcgtaagaaaccctaga
+gttcagaagaaagtacaggaagaactagacaaagtgattggagtagatcgaatcatgaca
+gagaacgatttctcaaatcttccatatcttcaatgcgtcgtaaaagaggcaatgagatta
+catccaccgacgccattgatgctgccacaccgatccaacgccaacgtcaagatcggcggg
+tacgacatccccaaaggctcaaacgtgcacgttaacgtctgggcagtagcacgtgaccca
+gcagtatggaagaacccggaggaattccggccggagcgattcctagaagaggatgtagac
+atgaaaggacacgatctccgactgctgccgttcggagcagggcggagggtttgtccaggg
+gctcaattggggatcaatttggtgacatccatgttggggcatctacttcatcactttgaa
+tggacgccggcgccggggatgaagggggaggagatggacatgacagagagccctggattg
+gtgtcgtacatgaaaacgccggtggaggctgtggccactccaaggctggattctagattg
+tacaaacgtgtggctgtggacatgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cmo:103486874+nt">BLAST</a>
+</body>
+</html>

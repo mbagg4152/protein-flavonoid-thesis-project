@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07260: 120653872</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767189">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767189">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvir:120653872 -->&gt;pvir:120653872 K05278 flavonol synthase [EC:1.14.20.6] | (RefSeq) flavonol synthase 1-like (N)
+atgggagaagcgcatgggagcgtgcaggagctggcggcgtcgctggacgcgctgccgccg
+gagttcgtgcgcccggagcacgagcagccggccgccaccacgttcccgggcggcgccgcg
+ctggacgtgccggtgatcgacctgtcggagcccgggagcggcgcgcgcgttgcggccgcg
+gcgcgggagtgggggctgttccaggtggtgaaccacggcgtgccctccccggtggtggcc
+gagctgcagcgggtcggtcgtgaattcttcgcgctcccgcgggaggagaaggagcgctac
+gccatggacccggcctccgggaggatcgagggctacggcaccaagctgcagagggacctc
+gagggcaagaagacgtggaacgacttcttcttccacatcgtcgcgccgccggcgaaggtc
+gaccacggcgtctggccccggagcccccccgggtacagggaggccaacaaggcgtactgc
+cgccacatgcagcggctggcgggcgagctgctcgggcacctctcgctggggctcggcctc
+gaggagggcgccatggcggaggcgttcggcggcggcgacctggtgttcctccagaagatc
+aacctgtacccgccgtgcccgcagccggagctcaccctcggcgtcgcgccgcacacagac
+atgagcacgctcaccatcctcgtgcccaacgaggtgcaggggctccaggtcttcaaggac
+ggccactggtacgacgccaagtacgttcccgacgcgctcatcatccacatcggcgaccag
+atcgagatcttcagcaacggggcgtacaaggcggtgctgcaccgtacgacggtgagcaag
+gagaagacgcggatgtcgtggccggtgttcgtggagccgccggaggagcaggtcgtcggg
+ccgcacccgcagctggtaaccggcgagagcccggcgaagtacaaggcgaggaagtacaag
+gagtaccagcactgcaagatcaacaagctgcccctgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvir:120653872+nt">BLAST</a>
+</body>
+</html>

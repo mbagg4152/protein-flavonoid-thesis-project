@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01717: 100822183</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620837775">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620837775">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- bdi:100822183 -->&gt;bdi:100822183 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 46 (N)
+atgggtacgggtcggaggccgcaatggggagtcatgttcatgtgcttggcgctggtcttg
+tcggcgcttgcggcggtcgcctcgtctcagtcgccgcttccggcgccgccggctcgaaga
+gcagccgtaccgtcgtttccaccagcggcgtcgcgggctccgaagcgggcgtccgggcca
+gcgttgtcgcctgcgccaaagccagcgtctcccccatcggcttcgccggctcccaagccg
+acacctaggcccgcggcttctccagcgccaaagccatcgtctccacttccggcgccaaag
+ccgccatctccacccgcgccggcgcaggcgccgaagccatcggctccacctgcagcgtcg
+ccggttccgaagccaccatctccaccacccatgccgtcgccatcgcgggctccaaagcca
+tcaccctcagcgccggcgccggctccggctcaaaaaccatctcccgcaccggcacccgcc
+ccgaaagcgtctcctcctacgacgaccccgacaccagtactgaaaccatctgttccatct
+ccggcaccgccgccgtctccggcgaactctgccccgccgacgtcttcgccggcgctctcg
+cccagcttctacgccgcctcctgcccgagcgtggagctggcggtgaacgatgtcgtcagg
+tcggcctccaccttggaccccaccatccccggcaagctcctcaggatggtcttccatgac
+tgcttcgtagagggatgcgatgcgtcggtgctgatcgaaggcagcggcacggagaggacc
+gatcccgcaaacctctcgctgggcgggttcaatgtcattgatgaagccaagaggctgctc
+gaagctgtatgccctgcaaccgtttcttgcagtgacattatagtccttgctgcaagagat
+gctgtcacatataccggaggaccgtcggtgcccgtctctctcgggcgacgtgatagcctt
+gtctcgctagcctccaatgtcagagcaaacatcattgacacgggcttctccgtcgacgct
+atggcggcgagcttcgcctcgaagggcctcaccttggacgacctcgtcactctctcaggc
+gggcacaccatcgggtcagcgcactgcggcacattccgggagcgcttccatcctgacgcc
+aatggaagcatggtgcccgttgatgcatcaatgaacaccgactacgcgaacgagctgatg
+cagacctgctcatcggggaacagcaccgtgacggtggactgcgacgaggggtcggcgaag
+gtgttcgacaaccggtacttcagcaacctgctggacgggcgtggcctgctgcgcacggac
+gccgtgctggtgcagaacgccacgacgagggccaaggtgtcggccttcgcgcagagtcag
+gagagcttcttcgccagctgggccggctcgtacgccaggctcaccagcctcggcgtcaag
+acaggatccgacggcgagatccggcggctctgctccagcgtcaacggctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=bdi:100822183+nt">BLAST</a>
+</body>
+</html>

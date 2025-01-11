@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	492	1	24.105	24.105	nan	nan	nan	nan	24.105	24.105	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.181	44.712	12.032
+N	TYR	B	492	2	24.105	24.105	nan	nan	nan	nan	24.105	24.105	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.181	44.712	12.032
+CA	TYR	B	492	3	14.450	14.450	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	14.450	14.450	nan	nan	nan	nan	nan	nan	nan	27.878	45.095	11.493
+C	TYR	B	492	4	28.261	28.261	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.261	28.261	nan	nan	nan	nan	nan	nan	nan	27.608	44.435	10.165
+O	TYR	B	492	5	32.287	32.287	nan	nan	nan	nan	32.287	32.287	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.494	43.972	9.909
+CB	TYR	B	492	6	31.002	nan	31.002	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.002	nan	31.002	nan	nan	nan	nan	nan	nan	27.776	46.620	11.334
+CG	TYR	B	492	7	2.278	nan	2.278	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.278	nan	2.278	nan	nan	nan	nan	nan	nan	26.468	47.094	10.738
+CD1	TYR	B	492	8	18.491	nan	18.491	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.491	nan	18.491	nan	nan	nan	nan	nan	nan	26.272	47.104	9.356
+CD2	TYR	B	492	9	27.039	nan	27.039	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.039	nan	27.039	nan	nan	nan	nan	nan	nan	25.415	47.515	11.562
+CE1	TYR	B	492	10	32.626	nan	32.626	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.626	nan	32.626	nan	nan	nan	nan	nan	nan	25.066	47.521	8.805
+CE2	TYR	B	492	11	34.522	nan	34.522	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.522	nan	34.522	nan	nan	nan	nan	nan	nan	24.200	47.934	11.024
+CZ	TYR	B	492	12	9.944	nan	9.944	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.944	nan	9.944	nan	nan	nan	nan	nan	nan	24.034	47.935	9.643
+OH	TYR	B	492	13	43.209	nan	43.209	nan	nan	nan	43.209	nan	43.209	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.846	48.356	9.095

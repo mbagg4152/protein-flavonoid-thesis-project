@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02818: 101775482</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620845719">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620845719">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sita:101775482 -->&gt;sita:101775482 K05350 beta-glucosidase [EC:3.2.1.21] | (RefSeq) probable inactive beta-glucosidase 14 isoform X4 (N)
+atggttttgggtacaattaaggatgggaccaatggtgatgccgctgatgatcactatcat
+cgttacatggaggacattgaattgatgcattccttgggtgtcaactcatatcgattttcc
+attgcatgggcaaggattttaccaaagctgttaaataaaggtggtggttgttggaattca
+actcttcctacaggaggccgcttcgggcatgttaatccaaatggtgtagcattctacaat
+gcccttatcaatgctcttctacaaagaggcatacaaccatttgtaacgatatgtcattac
+gacattccatatgaactggacaagcgatatggtggatggttgagcccggaaattcggaag
+gactacagttaccttgcagacgtatgcttcaggatgttcggtgaccgagtcaagtattgg
+ataacgtttaatgagccaaatatgttcacaaaatccagttatatgtatggacggtaccct
+cctggtcactgctctaggccatatgggaactgtgctttcggagattcttcaactgagccc
+tacatagggaaacaaggtggtcgtattggaatgactgttctttcaagatggtacgaacca
+ttccgaaataccacaacagacatcttagcagttgagcgggctctatcttttggtgctcca
+tggtttctggacccaataattctacatgttggtgaaaggggtcgccaggcttcaattctg
+ttccatatgggatggaaaaaacggtcatgtatttcaaaagaaaatataataacacaccga
+tgtatatcaccgaaaatggttatcctcaagcgagcaatagcagcatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sita:101775482+nt">BLAST</a>
+</body>
+</html>

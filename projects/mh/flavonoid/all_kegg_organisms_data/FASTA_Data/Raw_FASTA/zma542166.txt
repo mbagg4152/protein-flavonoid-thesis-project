@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01088: 542166</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849711">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849711">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- zma:542166 -->&gt;zma:542166 K01904 4-coumarate--CoA ligase [EC:6.2.1.12] | (RefSeq) pco063262; uncharacterized protein LOC542166 (N)
+atgggttccgtagacgcggcgatcgcggtgccggtgccggcggcggaggagaaggcggtg
+gaggagaaggcggtggtgttccggtccaagctccccgacatcgagatcgacagcagcatg
+gcgctgcacacctactgcttcgggaagatgggtgaggtggcggagcgggcgtgcctggtc
+gacgggctgacgggcgcgtcgtacacgtacgcggaggtggagtccctgtcccggcgcgcc
+gcgtcggggctgcgcgccatgggggtgggcaagggcgacgtggtgatgagcctgctccgc
+aactgccccgagttcgccttcaccttcctgggcgccgcccgcctgggcgccgccaccacc
+acggccaacccgttctacaccccgcacgaggtgcaccgccaggcggaggcggccggcgcc
+cggctcatcgtgaccgaggcctgcgccgtggagaaggtgcgggagttcgcggcggagcgg
+ggcatccccgtggtcaccgtcgacgggcgcttcgacggctgcgtggagttcgccgagctg
+atcgcggccgaggagctggaggccgacgccgacatccaccccgacgacgtcgtcgcgctg
+ccctactcctccggcaccaccgggctgcccaagggcgtcatgctcacccaccgcagcctc
+atcaccagcgtcgcgcagcaggttgatggcgagaacccgaacctgtacttccgcaaggac
+gacgtggtgctgtgcctgctgccgctgttccacatctactcgctgaactcggtgctgctg
+gccggcctgcgcgcgggctccaccatcgtgatcatgcgcaagttcgacctgggcgcgctg
+gtggacctggtgcgcaggtacgtgatcaccatcgcgcccttcgtgccgcccatcgtggtg
+gagatcgccaagagcccccgcgtgaccgccggcgacctcgcgtccatccgcatggtcatg
+tccggcgccgcgcccatgggcaaggagctccaggacgccttcatggccaagattcccaat
+gccgtgctcgggcaggggtacgggatgacggaggcaggccccgtgctggcgatgtgcctg
+gccttcgccaaggagccgtacccggtcaagtccgggtcgtgcggcaccgtggtgcggaac
+gcggagctgaagatcgtcgaccccgacaccggcgccgccctcggccggaaccagcccggc
+gagatctgcatccgcggggagcagatcatgaaaggttacctgaacgaccccgagtcgacg
+aagaacaccatcgacaaggacggctggctgcacaccggagacatcggctacgtggacgac
+gacgacgagatcttcatcgtcgacaggctcaaggagatcatcaagtacaagggcttccag
+gtgccgccggcggagctggaggcgctcctcatcacgcacccggagatcaaggacgccgcc
+gtcgtatcaatgaacgatgaccttgctggtgaaatcccggtcgccttcatcgtgcggacc
+gaaggttctcaagtcaccgaggatgagatcaagcaattcgtcgccaaggaggtggttttc
+tacaagaagatccacaaggtcttcttcaccgaatccatccccaagaacccgtcgggcaag
+atcctgaggaaggacttgagagccaggctcgccgccggtgttcactga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=zma:542166+nt">BLAST</a>
+</body>
+</html>

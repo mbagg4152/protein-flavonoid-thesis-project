@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07274: 117916447</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641766190">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641766190">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- vri:117916447 -->&gt;vri:117916447 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) LOW QUALITY PROTEIN: peroxidase 4-like (N)
+atggcttcctcttctttctccattgttgttgtggcattgggtgtcctcgcgctctttgcg
+gggagctcttctgctcaactctcgaccaacttttactctaaaacttgtcctaaggtcttt
+gatactgtgaagtctggagttcaatcggcggtttcgaaagaacgccgcatgggcgcttct
+ctcctccgtctcttcttccatgattgctttgtcaatggctgcgatgcatcanctctcctc
+gacgacacctcttccttcnacggcgagcagaccgccgtccccaataagaactccatcaga
+ggcctaaatgtgatcgataacataaagtcgcaggtggagagcgtgtgccctggtgtagtc
+tcctgtgccgatatcatagccattgctgctcgcgactcggtcgtgattcttggagggccc
+gactgggatgtcaagcttggaaggagagattccaaaacagctagcctctctggtgccaac
+aacaacnatccccctcccacttctagcctcagcaacctcatctctaagttccaagctcag
+ggcctctcaacccgagacatggtggctttatctggagcacatacaataggccaagcgaga
+tgcacctccttcagggccaggatatacaacgacaccaacatcgatagctccttcgctaag
+acaaggcaagcgagctgcccgagtgcttctggttcaggagacaacaacctggcacctctg
+gatcttcagacccctaccacctttgacaactactactacaagaacctgatcaaccaaaag
+ggtcttcttcactctgatcaagttctctacaatggaggttccactgactccacagttaaa
+acctacgtcaacaacccaaagaccttcacttctgactttgttgctggaatgatcaagatg
+ggtgatatcactcctctcactgggtctgaaggggagatcaggaagagctgtgggaaggtg
+aattaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=vri:117916447+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,571 @@
+
+<html>
+<!-- <head> -->
+<!-- NBDC Markup START -->
+<head vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+
+<title>KNApSAcK Metabolite Information - C00004631</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/cs">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="C00004631">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/info.css" media="all">
+</head><body onload="" >
+
+<div id="my_body">
+  <div id="my_header">
+      <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+      <img src="images/nap2.gif" border=0> </a></p>
+  </div>
+  <div id="my_main">
+    <div id="my_navigation">
+
+    </div>
+    <div id="my_contents">
+          <br>
+<!--	  input word = <font class="iw">C00004631</font><br><br> //-->
+     	  input word = <font class="iw">C00004631</font><br><br>
+
+<!-- <table class="d1"> -->
+<!-- NBDC Markup START -->
+	<table class="d1" vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+        <tr>
+            <th class="d1">Metabolite Information</th><th class="d3">Structural formula</th>
+        </tr>
+
+        <tr>
+            <td>
+               <table class="d3">
+                  <tr>
+                     <th class="inf">Name</th>
+                     <td colspan="4" class="inf">Quercetin</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Formula</th>
+                     <td colspan="4">C15H10O7</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Mw</th>
+                     <td colspan="4">302.04265268</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">CAS RN</th>
+                     <td colspan="4">117-39-5</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">C_ID</th>
+                     <td colspan="4" class="img2">C00004631
+<!-- 			C00004631<a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00004631" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+<!-- NBDC Markup START -->
+<!--			<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry"> //-->
+<!--			<span property="entryID">C00004631</span><a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00004631" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+                                       , <a href="/Twins/top.php?kword=C00004631&sword=50&mode=list1#res" target="_blank"><img src="images/TW.gif" border="0" class="img2"></a><br>
+<!--			</div> //-->
+<!-- NBDC Markup END -->
+                        
+		     </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChIKey</th>
+                     <td colspan="4">REFJWTPEDVJJIY-UHFFFAOYSA-N</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChICode</th>
+                     <td colspan="4">InChI=1S/C15H10O7/c16-7-4-10(19)12-11(5-7)22-15(14(21)13(12)20)6-1-2-8(17)9(18)3-6/h1-5,16-19,21H</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">SMILES</th>
+                     <td colspan="4">c1(cc(c2c(c1)oc(c(c2=O)O)c1ccc(c(c1)O)O)O)O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Start Substs in Alk. Biosynthesis (Prediction)</th>
+                     <td colspan="4"><a href="/CobWeb/top.php?word=&mode=met" target=_"blank"></a> </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Organism</th>
+                     <td class="or1">
+                        <table class="org">
+			 	<th class="or3">Kingdom</th>
+				<th class="or2">Family</th>
+				<th class="or1">Species</th>
+				<th class="or4">Reference</th><tr>
+<td class=org>Fungi</td><td class=org>Mucoraceae</td><td class=org2>Mucor hiemalis</td><td class=org><a href=information.php?mode=r&word=C00004631&key=0 title=Mucor hiemalis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Alliaceae</td><td class=org2>Allium Sativum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=1 title=Allium Sativum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Alliaceae</td><td class=org2>Allium cepa</td><td class=org><a href=information.php?mode=r&word=C00004631&key=2 title=Allium cepa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Anacardiaceae</td><td class=org2>Mangifera indica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=3 title=Mangifera indica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Annonaceae</td><td class=org2>Anaxagorea luzonensis A.GRAY</td><td class=org><a href=information.php?mode=r&word=C00004631&key=4 title=Anaxagorea luzonensis A.GRAY > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Annonaceae</td><td class=org2>Annona muricata</td><td class=org><a href=information.php?mode=r&word=C00004631&key=5 title=Annona muricata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Annonaceae</td><td class=org2>Xylopia emarginata</td><td class=org><a href=information.php?mode=r&word=C00004631&key=6 title=Xylopia emarginata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Annonaceae</td><td class=org2>Xylopia langsdorffiana</td><td class=org><a href=information.php?mode=r&word=C00004631&key=7 title=Xylopia langsdorffiana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Annonaceae</td><td class=org2>Xylopia poilanei</td><td class=org><a href=information.php?mode=r&word=C00004631&key=8 title=Xylopia poilanei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Apiaceae</td><td class=org2>Anethum graveolens</td><td class=org><a href=information.php?mode=r&word=C00004631&key=9 title=Anethum graveolens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Apiaceae</td><td class=org2>Levisticum officinale</td><td class=org><a href=information.php?mode=r&word=C00004631&key=10 title=Levisticum officinale > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asparagaceae</td><td class=org2>Asparagus officinalis</td><td class=org><a href=information.php?mode=r&word=C00004631&key=11 title=Asparagus officinalis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Artemisia vestita</td><td class=org><a href=information.php?mode=r&word=C00004631&key=12 title=Artemisia vestita > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Blumea balsamifera</td><td class=org><a href=information.php?mode=r&word=C00004631&key=13 title=Blumea balsamifera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Conyza aegyptica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=14 title=Conyza aegyptica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Saussurea medusa</td><td class=org><a href=information.php?mode=r&word=C00004631&key=15 title=Saussurea medusa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Silphium perfoliatum L.</td><td class=org><a href=information.php?mode=r&word=C00004631&key=16 title=Silphium perfoliatum L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Solidago canadensis</td><td class=org><a href=information.php?mode=r&word=C00004631&key=17 title=Solidago canadensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium acuminatum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=18 title=Epimedium acuminatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium brevicornum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=19 title=Epimedium brevicornum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium davidii</td><td class=org><a href=information.php?mode=r&word=C00004631&key=20 title=Epimedium davidii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium dolichostemen</td><td class=org><a href=information.php?mode=r&word=C00004631&key=21 title=Epimedium dolichostemen > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium fargesii</td><td class=org><a href=information.php?mode=r&word=C00004631&key=22 title=Epimedium fargesii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium franchetii</td><td class=org><a href=information.php?mode=r&word=C00004631&key=23 title=Epimedium franchetii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium koreanum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=24 title=Epimedium koreanum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium leishanense</td><td class=org><a href=information.php?mode=r&word=C00004631&key=25 title=Epimedium leishanense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium leptorrhizum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=26 title=Epimedium leptorrhizum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium membranaceum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=27 title=Epimedium membranaceum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium myrianthum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=28 title=Epimedium myrianthum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium pauciflorum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=29 title=Epimedium pauciflorum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium pubescens</td><td class=org><a href=information.php?mode=r&word=C00004631&key=30 title=Epimedium pubescens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium sagittatum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=31 title=Epimedium sagittatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium stellatum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=32 title=Epimedium stellatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium zhenbaense</td><td class=org><a href=information.php?mode=r&word=C00004631&key=33 title=Epimedium zhenbaense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Berberidaceae</td><td class=org2>Epimedium zhushanense</td><td class=org><a href=information.php?mode=r&word=C00004631&key=34 title=Epimedium zhushanense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Canellaceae</td><td class=org2>Warburgia stuhlmannii</td><td class=org><a href=information.php?mode=r&word=C00004631&key=35 title=Warburgia stuhlmannii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cannabaceae</td><td class=org2>Humulus lupulus</td><td class=org><a href=information.php?mode=r&word=C00004631&key=36 title=Humulus lupulus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Capparaceae</td><td class=org2>Capparis himalayensis</td><td class=org><a href=information.php?mode=r&word=C00004631&key=37 title=Capparis himalayensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Capparaceae</td><td class=org2>Capparis spinosa</td><td class=org><a href=information.php?mode=r&word=C00004631&key=38 title=Capparis spinosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Caricaceae</td><td class=org2>Carica papaya</td><td class=org><a href=information.php?mode=r&word=C00004631&key=39 title=Carica papaya > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Chloranthaceae</td><td class=org2>Sarcandra glabra</td><td class=org><a href=information.php?mode=r&word=C00004631&key=40 title=Sarcandra glabra > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Clusiaceae/Clusiaceae-Guttiferae</td><td class=org2>Garcinia bracteata</td><td class=org><a href=information.php?mode=r&word=C00004631&key=41 title=Garcinia bracteata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Clusiaceae/Clusiaceae-Guttiferae</td><td class=org2>Garcinia cowa</td><td class=org><a href=information.php?mode=r&word=C00004631&key=42 title=Garcinia cowa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Clusiaceae/Clusiaceae-Guttiferae</td><td class=org2>Garcinia dulcis</td><td class=org><a href=information.php?mode=r&word=C00004631&key=43 title=Garcinia dulcis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Costaceae</td><td class=org2>Costus spicatus</td><td class=org><a href=information.php?mode=r&word=C00004631&key=44 title=Costus spicatus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Crassulaceae</td><td class=org2>Sedum takesimense Nakai</td><td class=org><a href=information.php?mode=r&word=C00004631&key=45 title=Sedum takesimense Nakai > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Crassulaceae</td><td class=org2>Sinocrassula indica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=46 title=Sinocrassula indica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cruciferae</td><td class=org2>Arabidopsis thaliana</td><td class=org><a href=information.php?mode=r&word=C00004631&key=47 title=Arabidopsis thaliana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cruciferae</td><td class=org2>Brassica carinata Y line</td><td class=org><a href=information.php?mode=r&word=C00004631&key=48 title=Brassica carinata Y line > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cruciferae</td><td class=org2>Brassica oleracea var. gongylodes</td><td class=org><a href=information.php?mode=r&word=C00004631&key=49 title=Brassica oleracea var. gongylodes > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cruciferae</td><td class=org2>Raphanus sativus</td><td class=org><a href=information.php?mode=r&word=C00004631&key=50 title=Raphanus sativus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cucurbitaceae</td><td class=org2>Momordica charantia</td><td class=org><a href=information.php?mode=r&word=C00004631&key=51 title=Momordica charantia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ephedraceae</td><td class=org2>Ephedra sinica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=52 title=Ephedra sinica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron Cunningham's white</td><td class=org><a href=information.php?mode=r&word=C00004631&key=53 title=Rhododendron Cunningham's white > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron brachycarpum ssp.brachycarpum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=54 title=Rhododendron brachycarpum ssp.brachycarpum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron calophytum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=55 title=Rhododendron calophytum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron catawbiense</td><td class=org><a href=information.php?mode=r&word=C00004631&key=56 title=Rhododendron catawbiense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron degronianum ssp. Heptamerum var. hondoense</td><td class=org><a href=information.php?mode=r&word=C00004631&key=57 title=Rhododendron degronianum ssp. Heptamerum var. hondoense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron dichroanthum ssp.scyphocalyx</td><td class=org><a href=information.php?mode=r&word=C00004631&key=58 title=Rhododendron dichroanthum ssp.scyphocalyx > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron fortunei</td><td class=org><a href=information.php?mode=r&word=C00004631&key=59 title=Rhododendron fortunei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron galactinum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=60 title=Rhododendron galactinum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron insigne</td><td class=org><a href=information.php?mode=r&word=C00004631&key=61 title=Rhododendron insigne > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron kaempferi</td><td class=org><a href=information.php?mode=r&word=C00004631&key=62 title=Rhododendron kaempferi > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron micranthum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=63 title=Rhododendron micranthum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron oreotrephes</td><td class=org><a href=information.php?mode=r&word=C00004631&key=64 title=Rhododendron oreotrephes > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron ponticum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=65 title=Rhododendron ponticum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron praevernum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=66 title=Rhododendron praevernum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron smirnowii</td><td class=org><a href=information.php?mode=r&word=C00004631&key=67 title=Rhododendron smirnowii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Rhododendron ungernii</td><td class=org><a href=information.php?mode=r&word=C00004631&key=68 title=Rhododendron ungernii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Euphorbiaceae</td><td class=org2>Croton tonkinensis GAGNEP</td><td class=org><a href=information.php?mode=r&word=C00004631&key=69 title=Croton tonkinensis GAGNEP > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Euphorbiaceae</td><td class=org2>Euphorbia tinctoria</td><td class=org><a href=information.php?mode=r&word=C00004631&key=70 title=Euphorbia tinctoria > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Albizzia lebbeck</td><td class=org><a href=information.php?mode=r&word=C00004631&key=71 title=Albizzia lebbeck > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Ceratonia siliqua</td><td class=org><a href=information.php?mode=r&word=C00004631&key=72 title=Ceratonia siliqua > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Euchresta formosana</td><td class=org><a href=information.php?mode=r&word=C00004631&key=73 title=Euchresta formosana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Medicago arabica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=74 title=Medicago arabica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Medicago sativa</td><td class=org><a href=information.php?mode=r&word=C00004631&key=75 title=Medicago sativa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Medicago truncatula</td><td class=org><a href=information.php?mode=r&word=C00004631&key=76 title=Medicago truncatula > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Sophora flavescens</td><td class=org><a href=information.php?mode=r&word=C00004631&key=77 title=Sophora flavescens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Sophora japonica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=78 title=Sophora japonica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Styphnolobium japonicum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=79 title=Styphnolobium japonicum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Trifolium pratense</td><td class=org><a href=information.php?mode=r&word=C00004631&key=80 title=Trifolium pratense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vicia faba</td><td class=org><a href=information.php?mode=r&word=C00004631&key=81 title=Vicia faba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Geraniaceae</td><td class=org2>Pelargonium reniforme</td><td class=org><a href=information.php?mode=r&word=C00004631&key=82 title=Pelargonium reniforme > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Geraniaceae</td><td class=org2>Pelargonium sidoides</td><td class=org><a href=information.php?mode=r&word=C00004631&key=83 title=Pelargonium sidoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ginkgoaceae</td><td class=org2>Ginkgo biloba</td><td class=org><a href=information.php?mode=r&word=C00004631&key=84 title=Ginkgo biloba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Haemodoraceae</td><td class=org2>Anigozanthos pulcherrimus</td><td class=org><a href=information.php?mode=r&word=C00004631&key=85 title=Anigozanthos pulcherrimus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Haemodoraceae</td><td class=org2>Anigozanthos rufus</td><td class=org><a href=information.php?mode=r&word=C00004631&key=86 title=Anigozanthos rufus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Hypericaceae</td><td class=org2>Hypericum perforatum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=87 title=Hypericum perforatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Hypericaceae</td><td class=org2>Hypericum perforatum var.angustifolium</td><td class=org><a href=information.php?mode=r&word=C00004631&key=88 title=Hypericum perforatum var.angustifolium > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Hypericaceae</td><td class=org2>Hypericum sampsonii</td><td class=org><a href=information.php?mode=r&word=C00004631&key=89 title=Hypericum sampsonii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Hypericaceae</td><td class=org2>Psorospermum androsaemifolium BAKER</td><td class=org><a href=information.php?mode=r&word=C00004631&key=90 title=Psorospermum androsaemifolium BAKER > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Salvia dorrii</td><td class=org><a href=information.php?mode=r&word=C00004631&key=91 title=Salvia dorrii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Lythraceae</td><td class=org2>Punica granatum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=92 title=Punica granatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Magnoliaceae</td><td class=org2>Magnolia denudata</td><td class=org><a href=information.php?mode=r&word=C00004631&key=93 title=Magnolia denudata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Magnoliaceae</td><td class=org2>Magnolia liliiflora</td><td class=org><a href=information.php?mode=r&word=C00004631&key=94 title=Magnolia liliiflora > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Malvaceae</td><td class=org2>Hibiscus sabdariffa L.</td><td class=org><a href=information.php?mode=r&word=C00004631&key=95 title=Hibiscus sabdariffa L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Meliaceae</td><td class=org2>Azadirachta indica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=96 title=Azadirachta indica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Meliaceae</td><td class=org2>Toona sinensis</td><td class=org><a href=information.php?mode=r&word=C00004631&key=97 title=Toona sinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Musaceae</td><td class=org2>Musa acuminata</td><td class=org><a href=information.php?mode=r&word=C00004631&key=98 title=Musa acuminata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Myrsinaceae</td><td class=org2>Ardisia colorata</td><td class=org><a href=information.php?mode=r&word=C00004631&key=99 title=Ardisia colorata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Myrtaceae</td><td class=org2>Psidium guajava</td><td class=org><a href=information.php?mode=r&word=C00004631&key=100 title=Psidium guajava > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Myrtaceae</td><td class=org2>Syzygium cumini</td><td class=org><a href=information.php?mode=r&word=C00004631&key=101 title=Syzygium cumini > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Nymphaeaceae</td><td class=org2>Nymphaea alba</td><td class=org><a href=information.php?mode=r&word=C00004631&key=102 title=Nymphaea alba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Nymphaeaceae</td><td class=org2>Nymphaea caerulea</td><td class=org><a href=information.php?mode=r&word=C00004631&key=103 title=Nymphaea caerulea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Nymphaeaceae</td><td class=org2>Nymphaea odorata</td><td class=org><a href=information.php?mode=r&word=C00004631&key=104 title=Nymphaea odorata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Nymphaeaceae</td><td class=org2>Nymphaea stellata</td><td class=org><a href=information.php?mode=r&word=C00004631&key=105 title=Nymphaea stellata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Petrosaviaceae/Nartheciaceae</td><td class=org2>Japonolirion osense</td><td class=org><a href=information.php?mode=r&word=C00004631&key=106 title=Japonolirion osense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Phyllanthaceae</td><td class=org2>Phyllanthus emblica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=107 title=Phyllanthus emblica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Phyllanthaceae</td><td class=org2>Phyllanthus niruri</td><td class=org><a href=information.php?mode=r&word=C00004631&key=108 title=Phyllanthus niruri > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Phyllanthaceae</td><td class=org2>Phyllanthus urinaria</td><td class=org><a href=information.php?mode=r&word=C00004631&key=109 title=Phyllanthus urinaria > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Pinaceae</td><td class=org2>Pinus roxburghii</td><td class=org><a href=information.php?mode=r&word=C00004631&key=110 title=Pinus roxburghii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Pinaceae</td><td class=org2>Pinus sibirica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=111 title=Pinus sibirica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Piperaceae</td><td class=org2>Piper umbellatum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=112 title=Piper umbellatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Plantaginaceae</td><td class=org2>Antirrhinum majus</td><td class=org><a href=information.php?mode=r&word=C00004631&key=113 title=Antirrhinum majus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Poaceae</td><td class=org2>Oryza sativa cv. Heugjinjubyeo</td><td class=org><a href=information.php?mode=r&word=C00004631&key=114 title=Oryza sativa cv. Heugjinjubyeo > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Poaceae</td><td class=org2>Zea mays</td><td class=org><a href=information.php?mode=r&word=C00004631&key=115 title=Zea mays > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Podocarpaceae</td><td class=org2>Podocarpus fasciculus</td><td class=org><a href=information.php?mode=r&word=C00004631&key=116 title=Podocarpus fasciculus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Rumex acetosa</td><td class=org><a href=information.php?mode=r&word=C00004631&key=117 title=Rumex acetosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Posidoniaceae</td><td class=org2>Posidonia oceanica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=118 title=Posidonia oceanica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rhamnaceae</td><td class=org2>Karwinskia spp.</td><td class=org><a href=information.php?mode=r&word=C00004631&key=119 title=Karwinskia spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Eriobotrya japonica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=120 title=Eriobotrya japonica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Malus doumeri varl formosana</td><td class=org><a href=information.php?mode=r&word=C00004631&key=121 title=Malus doumeri varl formosana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Prunus avium</td><td class=org><a href=information.php?mode=r&word=C00004631&key=122 title=Prunus avium > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Rosa luciae</td><td class=org><a href=information.php?mode=r&word=C00004631&key=123 title=Rosa luciae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Spiraea formosana</td><td class=org><a href=information.php?mode=r&word=C00004631&key=124 title=Spiraea formosana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rubiaceae</td><td class=org2>Cruciata taurica</td><td class=org><a href=information.php?mode=r&word=C00004631&key=125 title=Cruciata taurica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rutaceae</td><td class=org2>Phellodendron amurense</td><td class=org><a href=information.php?mode=r&word=C00004631&key=126 title=Phellodendron amurense > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rutaceae</td><td class=org2>Phellodendron japonicum MAXIM</td><td class=org><a href=information.php?mode=r&word=C00004631&key=127 title=Phellodendron japonicum MAXIM > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Saururaceae</td><td class=org2>Houttuynia cordata</td><td class=org><a href=information.php?mode=r&word=C00004631&key=128 title=Houttuynia cordata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Saxifragaceae</td><td class=org2>Rodgersia podophylla</td><td class=org><a href=information.php?mode=r&word=C00004631&key=129 title=Rodgersia podophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Schisandraceae</td><td class=org2>Kadsura heteroclita</td><td class=org><a href=information.php?mode=r&word=C00004631&key=130 title=Kadsura heteroclita > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Smilacaceae</td><td class=org2>Smilax bracteata</td><td class=org><a href=information.php?mode=r&word=C00004631&key=131 title=Smilax bracteata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Smilacaceae</td><td class=org2>Smilax riparia</td><td class=org><a href=information.php?mode=r&word=C00004631&key=132 title=Smilax riparia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Solanaceae</td><td class=org2>Capsicum annuum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=133 title=Capsicum annuum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Solanaceae</td><td class=org2>Petunia hybrida</td><td class=org><a href=information.php?mode=r&word=C00004631&key=134 title=Petunia hybrida > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Taxaceae</td><td class=org2>Taxus chinensis</td><td class=org><a href=information.php?mode=r&word=C00004631&key=135 title=Taxus chinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Taxaceae</td><td class=org2>Taxus fuana</td><td class=org><a href=information.php?mode=r&word=C00004631&key=136 title=Taxus fuana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Taxaceae</td><td class=org2>Taxus yunnanensis</td><td class=org><a href=information.php?mode=r&word=C00004631&key=137 title=Taxus yunnanensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Xyridaceae</td><td class=org2>Xyris pteygoblephara</td><td class=org><a href=information.php?mode=r&word=C00004631&key=138 title=Xyris pteygoblephara > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Zingiberaceae</td><td class=org2>Zingiber officinale</td><td class=org><a href=information.php?mode=r&word=C00004631&key=139 title=Zingiber officinale > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Zygophyllaceae</td><td class=org2>Zygophyllum album</td><td class=org><a href=information.php?mode=r&word=C00004631&key=140 title=Zygophyllum album > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Euphorbia</td><td class=org><a href=information.php?mode=r&word=C00004631&key=141 title=Euphorbia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Helichrysum</td><td class=org><a href=information.php?mode=r&word=C00004631&key=142 title=Helichrysum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Nympaea spp.</td><td class=org><a href=information.php?mode=r&word=C00004631&key=143 title=Nympaea spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Passifloraceae</td><td class=org><a href=information.php?mode=r&word=C00004631&key=144 title=Passifloraceae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Rhamnaceae</td><td class=org><a href=information.php?mode=r&word=C00004631&key=145 title=Rhamnaceae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Solanaceae</td><td class=org><a href=information.php?mode=r&word=C00004631&key=146 title=Solanaceae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Umbelliferae</td><td class=org><a href=information.php?mode=r&word=C00004631&key=147 title=Umbelliferae > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>-</td><td class=org>-</td><td class=org2>Umbelliferaen,</td><td class=org><a href=information.php?mode=r&word=C00004631&key=148 title=Umbelliferaen, > Ref.</a></td>
+</tr>
+</table>
+		     </td>
+                  </tr>
+               </table>
+            </td>
+	    <td class=img>
+<!--		<img src="/sun/MSdata/SD/C00004631.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'"><br><br> -->
+<!-- NBDC Markup START -->
+		<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+		<img property="image" src="/sun/MSdata/SD/C00004631.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'" />
+		</div>
+<!-- NBDC Markup END -->
+		<a href="image.php?word=C00004631" title="C00004631" onclick="window.open(this.href, '_blank', 'width=500,resizable=yes, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">zoom in</a>
+
+		<br><br><br><br>
+                
+
+	    </td>
+        </tr>
+	</table>
+
+
+   </div>
+   </div>
+   <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+   </div>
+</div>
+</body>
+</html>

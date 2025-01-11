@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04646: 107873863</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620837078">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620837078">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cann:107873863 -->&gt;cann:107873863 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) acylsugar acyltransferase 3-like (N)
+atgctttcaataatttctaagaaaatcatcaaacctttcactcccacaccatccactcaa
+atatggcacaaactttccctattagatcaaggcctcgcacacttatatataccccttgtc
+tttttctaccccaaaaaccaagtaaattccatcccaaatggacctaaacaactatcaaat
+cttctaacaaactcgttgtcaaaagctttaacttattactatccatgggctggacgtcta
+aaagacgatgccactatagagtgtgatgataatggagctgagttcttggaagtccaaatc
+aattctccaatggacaaagttgttaatcaccctgattcaaatgtcaaagatttgacattt
+cctaaaggtgtaccttggggaaatggcgtggatcgtgcctcaactatagctcaattaagt
+cattttgattgcggaggaatagcacttagtgtctgcctgtcacataaaataggagacgga
+agcagtgcccattgtttcttgagggattgggcttcattaactcgaagttcaaatagtaca
+attagaccatctccttatttcgtggaggactccattctaccatcacaaattggcaatggt
+ctattggtttcacctgttctagggtcagacgcggataaatgtgtccaaaaaaggtttgtt
+ttttctagtacaaagctaagtgcactaaaatcctcaattgtcgtgcaaaatgtaacgagc
+agcgaggctgtgagtgcacttctctacaaatgtgctgcattttctgccatggcagtaaat
+tcaggttcgttcaagcgatctcaattgatccagatatcagatttacgagaaatgatttca
+ccccagctaccaccaaactccatcggaaatctccttacagtattctcctcaccgatatac
+gataacagggaagaactcaacttatcaaaattagtagccgatataaagaagtcgaaaaac
+aacctctccacaagaaataatgttgaagaaaatgagttggctatagatatgctagatgca
+tacagatcaggggagtcgatattcgatagaaggaaatgtgatgtgtacttttcgagtagc
+ttatgtaagttcccattaatacaagatttagattttggatttgggaagcctattagagca
+agcttggcaaagggtccatttaacaaggcaatgttgttgttgaggacatgtgatggagga
+attgaagcagttgttaacttgaatgaagaagaaatgtgtgtgttcgagcatgacaagcaa
+tttcttgaatttgctactcctattggtcatggcatttacaatgaagaagaacagcagtac
+gcatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cann:107873863+nt">BLAST</a>
+</body>
+</html>

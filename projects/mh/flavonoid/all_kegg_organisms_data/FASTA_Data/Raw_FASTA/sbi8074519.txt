@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01086: 8074519</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620857387">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620857387">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sbi:8074519 -->&gt;sbi:8074519 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) cationic peroxidase 2 (N)
+atgacacactgtcatcaccaaaccaaagcaaacgccggtggagtcgagtcgagtcgagtc
+gagtcgagcgagaggccccgtcccgttccccccccttctcttcctcttccaactccattc
+aagatcactgttgcgctgcacaatctgactgaccaccaggggcagccactcattcattca
+tccattcatctgtctgttaagaagagagcgagagagcgagaggggaggaggccggtggtg
+gagatgaggaggcaaacagcggcttccgggggacggtggcgaggaggcgacggcagcgtt
+gctgcggcgtggtgggtgggcgtggtggtcctgggtggccatttactgagctgcgcgcag
+gcggggctgctggagtccaacccggggctggcctacaacttctaccagaagagctgcccc
+agcgtggactccatcgtccgcagcgtcacctgggcgcaggtcgccgccaaccccgccctc
+ccggctcgcctcctccgcctccacttccatgactgcttcgtcaagggctgcgacgcgtcg
+atcctgctggacaacgcgcagagcgagaagacggcggcgccgaacctatccgtgggcggg
+tacgaggtgatcgacgccatcaaggcgcagctcgagaaggcgtgcccgggcgtggtctcg
+tgcgccgacatcctcgcgctggcggcgcgcgacgccgtctcgtaccagttcaggtcctcg
+ctgtggcaggtggagacgggccggcgggacggcaccgtgtcgctggcgtccaacacgggc
+acgctgccgtcgccgttcgccgggttcgcgggcctgctgtcgagcttcgccaaccgcggg
+ctcaacctgacggacctcgtcgcgctgtcgggcgcgcacaccatcggcgtggccagctgc
+tccagcgtcaccccgcgcctgtaccaggggaacgccaccgccgtcgacccgctcctcgac
+tccgcctacgccaagacgctcatgtcgtcgtgccccaacccgtcccccgccgccgccacc
+gtcggcctcgacggcggatcgccgttcaagttcgacagcgggtactacgccagggtgcag
+cagaaccaggggacgctggcctccgacgccgcgctggcgcagaacgccgcggcggcgcag
+atggtggccgacctcaccaaccccatcaagttctacgccgccttctccatgtccatgaag
+aagatgggacgcgtcgaggtgctcaccggcaccaatggacagatcaggaagcagtgccgc
+caggtcaacacctcctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sbi:8074519+nt">BLAST</a>
+</body>
+</html>

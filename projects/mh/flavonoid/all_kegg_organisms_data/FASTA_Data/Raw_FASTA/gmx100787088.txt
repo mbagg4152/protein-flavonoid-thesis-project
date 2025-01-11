@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 100787088</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620843201">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620843201">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:100787088 -->&gt;gmx:100787088 K22845 phlorizin synthase [EC:2.4.1.357] | (RefSeq) IF7GT6; isoflavone 7-O-glucosyltransferase UGT6 (N)
+atggaacaagaagacacagtagtgttgtatccagccccaggcataggccacattgtatcc
+atggttgagcttgctaagcttctccaattacatgctcattcaatcacaattcttctcacc
+acgggtctccttgaccacccctctatcgacacctacatacaccgaatctccatctctcac
+ccttccatcttcttccaccgcctcccccacacatcactctccaccaccaccaccgtgagc
+atggccgccaaagccttcaacttcatcaacataaacacccccaacgtagccaccaccctc
+acccaaatcaccaaatccaccaatatcaaagccttcataatcgatctcttctgcacctcc
+gcaatggaaccggcttcttcattgggaatccccgtctactacttcttcacctccggcgcc
+gccgttctctcgcttttctcttactttccaaaactccaccaagagacccacgtgtcgttt
+aaggatatggtcggggtagaactgcgcgtgccgggcaacgcgccgctgagggccgtgaac
+atgccggagccaatgttgaagagggacgaccctgcttactgggacatgctggagttctgc
+acgcgccttccggaggcgcgtgggatcatcgtgaactcgtttgaagagctggagcctgtg
+gcggttgatgccgttgcggacggcgcgtgctttccagacgcgaaacgtgtgcctggtgtg
+tactacataggaccactcatcgctgaaccccaacaatcagatgtaacaacggagagtaaa
+caatgtttgtcatggcttgatcaacaaccaagtagaagcgtggtgtacctgtgttttgga
+agccgtggatcgttctcagtgtcacaactgagagaaatagcaaatgggttggagaagagt
+ggccacagtttcttatgggttgtgaagaggccaacacaagacgaaaaaacaaagcagatt
+cacgacacaacaacaacaacaacaacaatggatttcgatttgagttcggtgttgccaagt
+gggttcatcgagagaaccaaggacaggggcctggtggtgagctcgtgggccccacaagtg
+gaggtgctgagccgcggctcggtggctgcgttcgtgagtcactgcgggtggaactcggtg
+ctggaaggggtggttgccggggtgccaatggttgcatggccgctgtacgcggagcagcac
+gtgaacatgcacgtgatggtgggtgagatgaaggtggctgttgcggtggagcaaagggaa
+gaagatgggttcgtgagtggggaggaagtggagaagagagtgagggaggtgatggagtca
+gaggagattagggagaggagtttgaagctgaaagagatggctttggctgcagttggggaa
+tttggatcctctaaaacagcacttgcaaatttggttcaatcatggactactcatgtgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:100787088+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04660: 108342055</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620842644">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620842644">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- var:108342055 -->&gt;var:108342055 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) spermidine hydroxycinnamoyl transferase-like (N)
+atggtaaccatcaaagcgtcttacacagtagttccgaatcaaccaactccaggaggtatt
+caatggctctctgatatcgatcaagtggcgcgtctgtgccatacacagaccatctacgtt
+ttccatgcacagcacaaccatgacgcattagttgaacagatgagaaactctcttagcaag
+attttgtcgcattactatccagttgctggtagattgagaaggttagaagaaggtggcaga
+tgggaattggattgtaatgcaaaaggagcggtgttgattgaagcagaatccacaaaaaca
+gtgaactattatggtgactttttgggtgaatccgccaatgacttggttccaacagtcaat
+tacacaaacaccttcattgaggaacttcccttgttactagtgcaagtaacaagcttcctt
+ggtgatgaagcgttttccattggagttgctgtatctcatctcttgtttgatggtatttct
+gccattcacttcatcaattcatgggcaaagttggctcgtggagacacattagagccccat
+gaaatgccctttctggatcgaactgtgctaaaattcactgatcctccatcaacctcacgc
+tttgatcaccaagagttcaagcctatgcctctcatattaggaagaagtgacaacactgtt
+gagagaaacaagagggtaaatgccactacgttgaagctgacagcagaacaagtggggaag
+ttgaagaacaaggcgaatgctgataaatcaacgaaagggtcaagaccttatagcagattt
+gaggctattgctgcacatgtgtggaaatgtgcatctaaggctcgtggattagatgagaat
+caaccaacgctgcttcggttcagtggtgatattcgcagtagactcattccacctctccct
+aggaattacattggtaatgctttgtccatagtatcagcatcatcacgcgttggagaaatc
+ttatcaagtcctttggctcatgttgctcagaaaataagggaatctgttgaaatgattaca
+catgagtttatatgcgcacagatagatgtgattagaagtcaggaccatgtgaataaagcg
+agaactttgtactatggagcaaatgaaggcaaggatgtattgttttttgggaatcctaac
+ttacgtattacaagttggctgagtatgccaatgcatgaagcagattttggttggggaaag
+cctgtgtatgtaggtctggcaggtgtggttagacaagagagggcagtgattacccaaagt
+ccagatggtgatggctctgttattctggttctacactttcaagtggaacatatgcagctt
+ttcaagaactatttctataaagaaatataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=var:108342055+nt">BLAST</a>
+</body>
+</html>

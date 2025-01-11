@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	9	1	17.529	17.529	nan	nan	nan	nan	17.529	17.529	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-19.422	13.409	3.217
+N	TYR	A	9	2	17.529	17.529	nan	nan	nan	nan	17.529	17.529	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-19.422	13.409	3.217
+CA	TYR	A	9	3	13.320	13.320	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.320	13.320	nan	nan	nan	nan	nan	nan	nan	-18.899	14.413	2.301
+C	TYR	A	9	4	36.800	36.800	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	36.800	36.800	nan	nan	nan	nan	nan	nan	nan	-18.772	15.741	3.038
+O	TYR	A	9	5	37.817	37.817	nan	nan	nan	nan	37.817	37.817	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-18.232	16.680	2.433
+CB	TYR	A	9	6	27.245	nan	27.245	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.245	nan	27.245	nan	nan	nan	nan	nan	nan	-19.816	14.640	1.070
+CG	TYR	A	9	7	2.611	nan	2.611	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.611	nan	2.611	nan	nan	nan	nan	nan	nan	-19.919	13.381	0.171
+CD1	TYR	A	9	8	27.696	nan	27.696	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.696	nan	27.696	nan	nan	nan	nan	nan	nan	-18.968	13.109	-0.802
+CD2	TYR	A	9	9	20.878	nan	20.878	nan	nan	nan	nan	nan	nan	nan	nan	nan	20.878	nan	20.878	nan	nan	nan	nan	nan	nan	-20.976	12.505	0.429
+CE1	TYR	A	9	10	33.840	nan	33.840	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.840	nan	33.840	nan	nan	nan	nan	nan	nan	-19.097	11.940	-1.505
+CE2	TYR	A	9	11	35.594	nan	35.594	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.594	nan	35.594	nan	nan	nan	nan	nan	nan	-21.173	11.345	-0.333
+CZ	TYR	A	9	12	10.418	nan	10.418	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.418	nan	10.418	nan	nan	nan	nan	nan	nan	-20.199	11.080	-1.321
+OH	TYR	A	9	13	42.269	nan	42.269	nan	nan	nan	42.269	nan	42.269	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-20.221	9.882	-1.920

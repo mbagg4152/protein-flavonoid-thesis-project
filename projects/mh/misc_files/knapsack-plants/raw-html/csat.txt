@@ -1,0 +1,54 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Camelina sativa</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body 0="" onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Camelina sativa</font><br><br>
+   	      Number of matched data :7 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00007330 target="_blank">C00007330</a></td><td class="d1">135531-86-1</td><td class="d1">Camalexin</td><td class="d1">C11H8N2S</td><td class="d1">200.040819</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007344 target="_blank">C00007344</a></td><td class="d1">21973-56-8</td><td class="d1">Glucoerucin</td><td class="d1">C12H23NO9S3</td><td class="d1">421.05349353</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007831 target="_blank">C00007831</a></td><td class="d1">67884-10-0</td><td class="d1">Glucocamelinin</td><td class="d1">C18H35NO10S3</td><td class="d1">521.14230854</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007832 target="_blank">C00007832</a></td><td class="d1">67920-64-3</td><td class="d1">9-Methylsulfinylnonyl glucosinolate</td><td class="d1">C17H33NO10S3</td><td class="d1">507.12665847</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00035628 target="_blank">C00035628</a></td><td class="d1">5561-99-9</td><td class="d1">Gondoic acid</td><td class="d1">C20H38O2</td><td class="d1">310.28718046</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00036628 target="_blank">C00036628</a></td><td class="d1">135531-87-2</td><td class="d1">6-Methoxy-3-(2-thiazolyl)-1H-indole</td><td class="d1">C12H10N2OS</td><td class="d1">230.05138369</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054765 target="_blank">C00054765</a></td><td class="d1">75272-83-2</td><td class="d1">Camelinin</td><td class="d1">C12H23NOS2</td><td class="d1">261.12210582</td><td class="d1"><font color=#FF00BF>Camelina sativa</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

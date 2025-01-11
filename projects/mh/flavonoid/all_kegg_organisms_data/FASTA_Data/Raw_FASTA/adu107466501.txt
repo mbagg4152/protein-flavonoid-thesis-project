@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04300: 107466501</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1632835808">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1632835808">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- adu:107466501 -->&gt;adu:107466501 K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) LOW QUALITY PROTEIN: stilbene synthase 3-like (N)
+atggtgtctgtgagtgagatccgcaaagttcaaagggcagaaggccctgcaactgtattg
+gcgataggcacagcaaatccaccgaattgtattgatcagagtacatatgctgattattat
+tttagagtaactaacagtgaacacatgactgatctcaagaagaagtttcagcgcatttgt
+gagagaacacaaatcaagaacagacatatgtacttaacagaagagatactgaaagagaat
+cctaacatgtgcgcatacaaagcaccgtcgttggatgcaagggaagacatgatgatcagg
+gaggtaccaagggttggaaaagaggctgcaaccaaggccatcaaagaatggggtcagcca
+atgtctaagatcacacatttgatcttctgcaccaccagcggcgttgcattgcctggcgtt
+gattatgaactcatcgtactcttagggcttgacccatccgtcaagaggtacatgatgtac
+caccaaggctgcttcgctggtggcactgtccttcgtttggctaaggacttggctgaaaac
+aacaaggatgctcgtgttcttatcgtttgttctgagaataccgctgtcactttccgtggt
+cctagtgagacagacatggatagtcttgtagggcaagccttgtttgctgatggagctgct
+gcgattatcattggttctgatcctgtgccagaggttgagaagcctatctttgaaattgtt
+tcgactgatcaaaagcttgtccctaacagccatggagccatcggtggtctccttcgtgaa
+gttgggcttacattctatcttaataagagtgttcctgatattatttcacaaaacatcaat
+gatgcgctcagtaaagcttttgatccattgggtatatctgattataactcaatattttag
+attgcacaccctggtggacgtgcaattttggatcaggttgaacagaaagtgaacttaaaa
+ccagagaagatgaaggctactagagatgtgcttagcaattatggtaacatgtcaagtgca
+tgtgtattcttcatcatggatttaatgaggaagaaatcccttgaagaaggacttaaaact
+actggtgaaggacttgattggggcgtactttttggctttggtcctggtctcactattgaa
+actgttgttctccgcagcatagccatatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=adu:107466501+nt">BLAST</a>
+</body>
+</html>

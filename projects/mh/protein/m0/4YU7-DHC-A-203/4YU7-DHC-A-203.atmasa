@@ -1,0 +1,15 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+C1	DHC	A	203	1	5.994	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	5.994	nan	5.994	0.543	-41.906	-25.075
+C1	DHC	A	203	2	5.994	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	5.994	nan	5.994	0.543	-41.906	-25.075
+O1	DHC	A	203	3	37.555	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.555	37.555	nan	-0.028	-42.743	-25.827
+C2	DHC	A	203	4	28.828	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.828	nan	28.828	1.978	-42.134	-24.648
+C3	DHC	A	203	5	27.625	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.625	nan	27.625	2.252	-42.620	-23.419
+C1'	DHC	A	203	6	2.754	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.754	nan	2.754	2.085	-44.093	-23.116
+C2'	DHC	A	203	7	25.212	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.212	nan	25.212	1.166	-44.502	-22.165
+C3'	DHC	A	203	8	10.786	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.786	nan	10.786	1.015	-45.852	-21.884
+C4'	DHC	A	203	9	10.709	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.709	nan	10.709	1.780	-46.785	-22.572
+C5'	DHC	A	203	10	35.291	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.291	nan	35.291	2.707	-46.380	-23.524
+C6'	DHC	A	203	11	25.784	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.784	nan	25.784	2.854	-45.027	-23.795
+O4'	DHC	A	203	12	40.010	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	40.010	40.010	nan	1.630	-48.154	-22.296
+O3'	DHC	A	203	13	40.265	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	40.265	40.265	nan	0.073	-46.269	-20.922
+O2	DHC	A	203	14	40.846	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	40.846	40.846	nan	-0.078	-40.874	-24.696

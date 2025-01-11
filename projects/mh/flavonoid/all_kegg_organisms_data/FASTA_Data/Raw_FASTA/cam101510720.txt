@@ -1,0 +1,51 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02819: 101510720</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620855116">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620855116">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cam:101510720 -->&gt;cam:101510720 K05349 beta-glucosidase [EC:3.2.1.21] | (RefSeq) lysosomal beta glucosidase-like (N)
+atggggaaatcttcaaaggctattgtgtgtgttctgcttttgtgctttctgatttcattt
+tcagaagcagaatacattaagtataaagaccctaaggttaaactaaatagaagaatcagt
+gacttgatgaacagaatgacgcttgaggaaaagataggccaaatgactcaggttgaaagg
+agtgttgctactcctgatgccataaacaagtacttcattgggagtgtgctgagtggggga
+gggagtgttccagctccaaaggcatctgctgagacatgggtgaaaatggtgaatcagatt
+caaaaggcagctttatctactcgtcttgggattccaatgatttatgggatagatgctgtt
+catggtcacaataatgtctacaatgctactatttttcctcacaatgttggactgggagtt
+accagggatcctgtgctcataaaaaagattggagatgcaactgcccttgaagttagagct
+acaggaattccatatgtctttgccccatgtattgcggtttgcagagatccaaggtgggga
+cgttgctatgaaagttacagtgaggatcatcagattgttcgaactatgacagaaattata
+cctggtctgcaaggagatattcctggcgattccaggaagggagttccctttgttgctgga
+aagaacaaggttgcagcttgtgccaagcactttgtgggagacggtggcacaaacaagggt
+atcaatgaaaacaatactttgataaattacaaaggattgcttggaattcacatgccagca
+tactatgactctattatcaagggtgtttcaacagtaatgatctcctactctagctggaat
+gggaaaaagatgcatgctaaccgggatcttgtcactggttacctcaagaacaaattgcgg
+ttcaggggttttgtaatatcagattggcagggtattgaccggattacctctcctcctcat
+gctaactattcatactcagttcaagctggtgttagtgctggaattgatatgattatggtt
+ccctataactttactgagttcatcgatgacctaacttatcaagtaaagaacaatattatt
+ccgatgagcaggattgatgatgctgttgcaagaatcttaagagtaaaatttaccatgggc
+ctttttgaaaatccacttgctgatctaagcctcgcaaaccaattgggtagcaaggaacat
+agggagttagcaagagaagctgttcggaaatccctagtgttgctaaagaatggtaaatct
+gcaaagccattgcttccccttccgaagaaagcttcaaaaatcctggttgcaggtagtcat
+gctgacaatttgggtcgtcaatgtggaggatggacatctacttggcaagggcttgagggt
+aatgatcttacagctggtactaccatccttgatgctataaaaaaaacagttgatcctgcc
+actgaagttgtctacaatgaaaaccctgatgcaagttttctcagctcaaacaaattttcc
+tatgccatagttattgtgggagaacccccttatgctgaaacatttggtgacagtttgaat
+ctaacaatacctgagccaggtccaagcaccatcaccaatgtatgtggctctattcaatgt
+gtagttgttctcatcactgggcgaccggttgtgattcagccatatctatcgaaaattgat
+gcacttgtagctgcatggcttcccggcaccgaaggccaaggtgttgctgacgttctctat
+ggtgactatgctttcactggaaagcttgcaaggacatggttcaagacagttgaccaactc
+ccaatgaatgttggtgataaacattatgatcctctatttccatttggatttggtttgact
+acaaaccttatcaagtattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cam:101510720+nt">BLAST</a>
+</body>
+</html>

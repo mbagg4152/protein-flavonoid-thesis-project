@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02163: Os08t0270400-00</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620848133">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620848133">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- dosa:Os08t0270400-00 -->&gt;dosa:Os08t0270400-00 K00083 cinnamyl-alcohol dehydrogenase [EC:1.1.1.195] | (RAP-DB) Os08g0270400; Similar to Cinnamyl alcohol dehydrogenase. (N)
+atggctcccacggcggcggcggggctggcagcgcgcgacgcgtccggccacctctccccg
+ctcaccatctcccgcaggagcactggagatgatgatgtggtgataaagattctttactgt
+gggatctgccactccgacctgcacagcatcaagaacgagtggaagaacgccacctaccca
+cttgttcctgggcacgagatcgccggcgtggtgacggaggccggcaagaacgtgaccaag
+ttcaagggcggcgacaaggtgggcgtcgggtgcatggtgaactcgtgccactcctgcgac
+agctgcaaccaggggttggagaaccactgcccaggcgtgatcttcacctacaactccgtc
+gacaaggacggcaccgtcacctacggcggctactcgagcatggtggtggtgcacgagcgc
+ttcgtggtcaggttcccggaggccatgccgctggacaagggcgcgccgctgctctgcgcc
+ggcatcaccgtgtacagccccatgaagtaccacggcctgaacgtccccagcaagcacgtc
+ggcgtgcttggcctcggcgggctcggccacgtcgcggtgaagttcgccaaggcgttcggg
+atgacggtgacggtgatcagctcgtcgccggggaagaggcaggaggcgctggagcggctc
+ggcgccgacgcgttcgtcgtctccaagaatgccgacgagatgaatgccgcgacgggcacc
+atggacggcatcatcaacacggtgtctgccaacattccgatcgcgccgctgctgggtctg
+ctgaagcccaacgggaagatgatcctcctgctctgtgttgtgatccattacattctgtct
+gtggcatgcatgttgcagcgaacaagacgctggccgggagctgcatcggcggcatggcgg
+acacgtaggagatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=dosa:Os08t0270400-00+nt">BLAST</a>
+</body>
+</html>

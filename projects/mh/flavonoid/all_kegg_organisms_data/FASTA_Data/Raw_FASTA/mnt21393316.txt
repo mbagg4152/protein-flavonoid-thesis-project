@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07292: 21393316</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641771939">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641771939">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mnt:21393316 -->&gt;mnt:21393316 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) LOW QUALITY PROTEIN: lignin-forming anionic peroxidase (N)
+atggctttgcccatcaaaggctgttctctaacatgcgctgttgcattattcttgatgctt
+ttgagtacaactactcattgcacaacttcgattcgaagagctatttcggcggaacgtcga
+atggcggcttctctcattcgccttcatttccatgattgctttgtccagggctgtgatgcg
+tcaattttacttgaggattcagcttctatcaaaagcgaagtgaacgcaggtcaaaataag
+gattccgtcagaggttttgacgtcatagaaaatgcaaagaaagaggtggagagcatatgt
+cctgggattgtatcttgtgctgatattcttgcagtagcatctcgtgatgcatcagtcgct
+gtaaacatggtagccttatcaggttcacatacaattggacaagctcgatgtgtgacattt
+cgtggtagagtaaacaacaacacaagtgacatcgatgctggttttgccagcactcgtaga
+cgtcgctgccccgccgatgttggcaccnnacttgatctggtgacacctaaccaattggac
+aacaactacttcaagaatttgattcagaaaaaaagtcttcttcaatcagatcaaatcctc
+tatagtggagcaccaacaaaggatattgtgaccgagtatagcaagagccgttcaaccttt
+agctccgattttgcatcagccatggttaaaatgggggatattgaacctctgaatggttct
+gctggggggataagaaagatttgtaaagttgtgaactaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mnt:21393316+nt">BLAST</a>
+</body>
+</html>

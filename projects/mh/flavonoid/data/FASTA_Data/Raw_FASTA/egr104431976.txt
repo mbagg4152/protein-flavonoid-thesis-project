@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03547: 104431976</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847676">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847676">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- egr:104431976 -->&gt;egr:104431976 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) acetyl-CoA-benzylalcohol acetyltransferase-like (N)
+atgaaggtggaaatacagtggaagaagctggtcaagccgtcagtgccgacaccgagcgac
+caacgaaaatggaagctaacgtcaatagatgagcttcagatgccaaattatgtgggcgtt
+atcttctactatagagataatgccgggaaccccagagtcgatatctctcaaaggcttcac
+caaatggaggagtcactttccaaaactctaaccctcttttatcctatggcagggagatac
+atcgaggatgacgatggttgttttatcgactgtaacgaccttggagtggacttcgtccat
+gccaaagtggatggccagattgatcagcttctccatagagaccccgacatggatttgctc
+gaatatttgtcgcaattcccgaacaacctagtaggcaatccactagtggtgattcaagtg
+aatacgttcgagtgcggcggaatagcaattggcttgcgctctacacacaggatcagcgac
+atttacaccatggccatattcgttaactcgtgggccaccgcttgccgaggtaacgtcgat
+gttacagtctgtccaagtttcgagttgtcgtctctattcccaatgaaagtgtcggccgtt
+gcgaattggcctccgccacggattattggcagcaaggaattcacggtgtctaggttcagg
+ttcagcggtgatgctgtatcgaagctgagagccctagctagggatgatgcaaaagattca
+atggccaacaacttccagccttcaagggtggaggttgtttcggccctaataagtaaggct
+ctcgtcaagattaatcgatgtaggcaaggcgaagaaagctctttcgcagtttatatgaca
+tttaacttgcgcgataaagtcaaattaaagatacccgcaaattcttgtggcaatttctac
+ggcatgatttctgggcgctccgatcaacccatggccagcaaaaggaatccggagttcaat
+gagatg
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=egr:104431976+nt">BLAST</a>
+</body>
+</html>

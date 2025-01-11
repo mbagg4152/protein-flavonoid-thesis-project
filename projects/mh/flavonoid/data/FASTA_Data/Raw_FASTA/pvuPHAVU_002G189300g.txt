@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03093: PHAVU_002G189300g</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838671">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838671">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvu:PHAVU_002G189300g -->&gt;pvu:PHAVU_002G189300g K11188 peroxiredoxin 6 [EC:1.11.1.7 1.11.1.27 3.1.1.-] | (RefSeq) hypothetical protein (N)
+atgacacgttctttacatgcaggcaattgtcttctctttataatctcacccgcactcctc
+atctatcacagaaacaaaaacataagtaaggtttcaaaattatctataatgccaggcctt
+accatcggggacactgttcctaatcttgatcttcaaactacgcagggcaaaatcaagctt
+catcagttctgtgctgatggctggaccatcctcttctctcacccaggtgattttacaccg
+gtttgtaccactgagcttggcaaaatggcccagtactctggcgaattttatcaaagagga
+gtgaagttattgggtttatcctgtgatgatgtgcaatctcacaatgagtggatcaaagac
+attgaagcccacactcctggtgccaaggtgaattatccaatcatttctgatcccaagaga
+gaaatcatcaagcaactcaacatggttgaccctgatgagaaagactccactggcaaccta
+ccctccagggctctccatatagtgggtccagatatgaagataaagttgagttttctgtac
+cctgcaactactgggaggaacatggatgaggtgctgagggtgattgagtcattgcagaag
+gcctcgaagttcaaggttgcaaccccagcaaactggaagccaggggatcctgtcgtgatt
+tcccctagtgtcaccaatgagcaagccaaagaaatgttccctcaaggctttgacactgct
+gaactcccatcaaagaagaaatatttgcgtatcaccaaagtttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvu:PHAVU_002G189300g+nt">BLAST</a>
+</body>
+</html>

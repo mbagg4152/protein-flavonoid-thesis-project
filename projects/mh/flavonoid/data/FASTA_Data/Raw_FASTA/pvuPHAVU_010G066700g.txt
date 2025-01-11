@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03093: PHAVU_010G066700g</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838705">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838705">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvu:PHAVU_010G066700g -->&gt;pvu:PHAVU_010G066700g K00430 peroxidase [EC:1.11.1.7] | (RefSeq) hypothetical protein (N)
+atggcttcctataagcacttctctgttttcctctatgcctttgtgtttgcagctgtggta
+tcaacagcatattcttcactgtcacctgattactatgactactcatgccctaacgctttg
+agctccatcagaagtgttgtggaagctgcggtgcagaaagagcagcgtatgggagcttct
+ctcctacgcttgcacttccatgattgctttgttaacggttgtgatggttcaattctacta
+gacccttcaccctccattgacagtgaaaagaatgcacttccaaattttcagtctataaga
+ggatttgaagtggtggatgagatcaagcaggctgtagacgaagcatgcggaaaaccagtt
+gtttcttgtgcagacatattggctgttgctgcacgagactctgtcgttgcgctagggggg
+ccaacatgggaagtgagactaggaagaagagactccaccacagcaagccgtgaagcagca
+aatgcaaacattccagcaccatttttcagcctttctgaactcatctccaacttcaagagc
+catggccttaacgagaaggaccttgttgttctctctggaggccacacaattggatatgca
+cgttgtgctacctttagggaccatatctacgatgactctaatattaatcaacgttttgga
+aaagaacttaagtacatttgccctaaaaaaggaggtgacttcaaccttgctcctttggac
+cgcacagcagcacaatttgattcagtctacttctctgatttgattcataggaaagggatt
+cttcactctgatcaggaactgttcaatggtggttctactgatgcattggttaaaagatat
+agctacaattctaaggctttccacaaggactttgcaaaatctatgattaagatgggaaac
+ataaaaccactcactgggagtaaaggggaagttcgactgaactgcaggacagtgaactaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvu:PHAVU_010G066700g+nt">BLAST</a>
+</body>
+</html>

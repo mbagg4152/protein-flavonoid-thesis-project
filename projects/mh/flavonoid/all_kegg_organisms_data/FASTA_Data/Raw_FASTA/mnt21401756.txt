@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07292: 21401756</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641771832">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641771832">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mnt:21401756 -->&gt;mnt:21401756 K00487 trans-cinnamate 4-monooxygenase [EC:1.14.14.91] | (RefSeq) trans-cinnamate 4-monooxygenase (N)
+atggatctcctcctgctggagaagacccttctgggcctttttgcagcagtaatagtcgcc
+atcgtgatctccaagctccgcgggaagcggttcaagctcccgcctgggcccatccccgtg
+ccggtattcggaaactggctccaagtcggcgacgaccttaaccaccggaacctgaccgat
+ctggcgaagaaattcggcgacatcttcctcctccgaatggggcagcgaaacctcgtgatc
+gtatcatcgccggagcttgccaaggaggtgctccacactcagggggtcgagttcgggtcg
+agaacccgaaacgtcgtgtttgatatcttcaccgggaagggccaggatatggtgttcacg
+gtgtacggtgagcactggaggaagatgaggcggatcatgaccgtccctttcttcaccaac
+aaggtggtccagcagtaccggtacgggtgggagtcggaggctgcgagcgtggtggaggac
+gtgaagaagaaccccgaggcggccagaaacggcatcgttttgaggaggcggttgcagctc
+atgatgtacaacaacatgtacagaatcatgttcgaccgaagatttgacagcgaggaagac
+cccttgtttaacaagctcaaggctttgaatggtgagagaagtcgtttggctcagagcttt
+gagtataactatggagattttattccaatcttgaggcctttccttaggggatacttgaag
+atctgtaaggaagtcaaggagaataggcttaagctctttaaggattacttcgttgatgag
+aggaagaagttgtcgagcccgaagagcacggataatgaaggattgaaatgcgcgattgac
+catattttggaagctcagcagaagggagagatcaacgaggacaatgttctttacattgtt
+gagaacatcaacgttgccgcaattgagacaactctatggtcaatcgagtggggcattgcc
+gagctagtgaaccatccagaaattcaaaggaagttgcgtgatgagctagacactgtcctt
+ggacgaggcgtgcagatcaccgagccagacatgctcaagctgccttacctgcaggccgtg
+atcaaggaaaccctgcggctgcgcatggccatccctctccttgtcccccacatgaacctc
+cacgacgccaagctcggcggctacgacatccccgcagagagcaagatcctcgtcaacgcc
+tggtggctcgccaacaaccccgccaactggaagaaccccgaggagttccgccccgagcgc
+ttcctgcaggaggaagccaaggtcgaggccaatggcaatgacttccgctaccttcctttc
+ggcgtcggcagaaggagctgccccggaatcatcctcgccttgccaattctcggcattact
+ttggggcgtttggtgcagaattttgagctcttgccgccagcaggacagtctaagattgac
+acatccgagaaaggtggacagttcagcttgcacatattaaagcactccaccattgtcttg
+aagccgaggtcggtttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mnt:21401756+nt">BLAST</a>
+</body>
+</html>

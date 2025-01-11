@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02994: 18587818</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620856129">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620856129">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- tcc:18587818 -->&gt;tcc:18587818 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase (N)
+atgaatcgtgaggagatgaagactaccattaatggatcaaccatggtacgcccagctcga
+gacacgccaaatcgacgtctgtggaactcgaatctggacctggtgatatcaaggtatcat
+gttacctcggtgtgtttctacaaatccgatgcttcttccaatttctgtgacacccaattg
+cttaaggagtctttgagtaacattctcgtcccgttctatcccatggctgggagattggga
+tatgatgaaaacggaagactcgagatagtctgcaacgcggagggagtattattcattgag
+gctgaaaccgctactaccatagatgacttgggcgattttgcaccgcgctcgaaacttggg
+cagctggttccaacagtcgactattctggagatatctcttcttttccactcgttctgtta
+caggtgacaagcttcaaacatggaggggtttgtcttggtgctgcatttcaacatactttg
+gtggatgcgcgatctgtcatttatttcatgaaaagttggtctaacataacccgaggccta
+cccattaatgttaccccattcattgaccgcacccttctccgagcccgggtgccaccagct
+cctgcatttcaccatgttgaatacgatccatctcctcccttgaacacatctatttcaact
+ccgaattgtcaagctggtcccaaactttcatctacatctattttcaaaatcactgctgat
+cagctgaagaccttagaatccaaggcaaccatgaatggcaacacaacaaaagcaaatcgt
+agcacataccacgtcctgactgcacatatgtggcgttgcgtgtgcaaagcgaggggcctc
+tcggatgatcaagtgaccaagttatacattccaatcgatggacggtccaaattacatcca
+cctattccaccaggctaccttggcaatgttatcttcatagctgcaacaactgctctatca
+ggtgttctccaatccgaaccatttgcggatacaatacaaagaatcaacagaacggtaaaa
+cggatggacgacaagtatatgagatcagctcttgaatacatagaaagtgtgcctgatatg
+gaaactcttgtgcgaggagcacatacttttcagtccccgaacctcaacatcaatggctgg
+atgcgacttccggtatatgctgcagatttcggatggggtcgccccatgcacgtgggcttg
+gcaaatgtcatcgacgaaggacaaatatatatcataccaagcccggttgatgatgggagc
+ttgtcattggtggtttgcttggagacatcccacatgaaacactttaagaagtctctttac
+gatttcttattgccatttgagaaaatcaattctcgctattag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=tcc:18587818+nt">BLAST</a>
+</body>
+</html>

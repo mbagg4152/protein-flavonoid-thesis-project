@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03092: 18767467</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620846411">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620846411">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pper:18767467 -->&gt;pper:18767467 K18368 caffeoylshikimate esterase [EC:3.1.1.-] | (RefSeq) caffeoylshikimate esterase isoform X2 (N)
+atggatggtgaatatcaagaagtttacataaggaattcaagaggagtgcagcttttcact
+tgcagatggttgcctttttcctctccaaaagccctcgttttcctttgccatgggtatggc
+atggagtgcagcggtttcatgagagaatgtggtgtccgactagcgaatgcgggttatgca
+gtgttcggaattgattacgaaggacacggacgctcgagaggggccagatgttacattaag
+aagttcgaaaacatagtgaatgattgcaatgaattcttcaagtccatttgtgcggaggaa
+gagtacagggacaagtgcaggttcttgtatggagaatccatgggaggggcagtagccctt
+ctgcttcacaagaaggagccgactttttggaatggtgctgttcttgttgcacccatgtgt
+aagatatcagagaaggtcaaaccgcatccgctggttatcaatgtgttgaccagagtggag
+gagattatacccaaatggaagatagtgcctacaaaagacgtcattgactcggccttcaaa
+gaccctgtaaaacgcgaagagataaggagcaacaagctgatctaccaagacaagccaagg
+ctgaaaacagcgttggaaatgctcagaactagcatgagccttgaacacactttgcacgag
+gtgaggctacccttctttgtgttgcatggggaggcagatacggttacagacccagaagtc
+agcagagcactgtatgagaaagccagcagcgcagacaagaccatcaaattgtaccctgga
+atgtggcatggcctgacatcaggagagcccgatgggaacgtcgaaattgtctttgtagac
+atcataacttggcttgagaagcacaccagtgatgacaattccgtcatcgtgcaaccaatt
+cacacatataggaatgccattctcaagatgaacaccacagcctcaccaccccaaacaata
+aacaagcagcatcagcagcagtcgcctcggcctgtgcgaacacagtcgcacaggagatat
+ttctgtgggttgaagggacgcagattgcagcatcactcggcaatgtag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pper:18767467+nt">BLAST</a>
+</body>
+</html>

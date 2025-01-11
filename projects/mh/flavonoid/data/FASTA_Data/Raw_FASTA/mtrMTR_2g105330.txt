@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01716: MTR_2g105330</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847048">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847048">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mtr:MTR_2g105330 -->&gt;mtr:MTR_2g105330 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (GenBank) shikimate/quinate hydroxycinnamoyltransferase (N)
+atgttgatcaacgtgaaagagtcgatggtggtgcgtccggcggaggagacaccacgaaag
+gcgttatggaattccaacgtcgacttggtggttccaaattttcacacaccaagcgtgtac
+ttttacaggccaaacggcacgtccaatttcttcgatgctaagattatgaaggaagctcta
+agcaaggtgctggtcctgttctatccaatggcagcccgtctccgccgagatgaagatggt
+cgcattgagctttattgcgatggtcaaggggtgctcttcgtcgatgctgataccaccgct
+tccgttgatgacttcggtgactttgctccaacacttcgcctccgtcagttaatcccagcc
+gtggattattctgctggtattgaaacgtatccattgttggtgttacaggtaacacatttc
+aaatgcggaggagtatcgttaggcgttggtatgcaacatcatgtagcagatggagcatct
+ggtcttcacttcatcaattcatggtcagatgtagctcgtggccttgatgtttccatccca
+ccgttcattggccgaacactactccatgctcgtgatccacctcgacctgtttttgatcac
+attgaatacaagcctccaccatcaatgcaacatgctaaacaaggctcagacactagtgct
+agtgtagccgtgtctatcttcaagttaacccgtcaacaactcaacatcttgaagggtaag
+tcaaaagaagatggaaacactatcaactatagctcctatgagatgttggcaggtcatgta
+tggagaagtgtaagcaaggctagagcacttcctgttgatcaagaaacaaaattgtacatt
+gcaactgatggaagatcaaggcttcaaccttcacttccacaaggttactttggcaatgtg
+atattcacaactactccaatagcagtagcagtagatttaatgtcaaaaccaacatggtat
+gctgctagcagaatccacaatgcattgttacaaatggataatgattatttgagatctgct
+ttggactatcttgagctacaacctgatttgaaagctcttgttcgtggtgcacatactttt
+aagtgtccaaatcttggtatcactagctgggcaaggttaccaatctatgaagctgacttt
+ggttggggaagacccatattcatgggacctggtgggattgcatatgaggggttatctttc
+atcattccgagctcaacaaatgatggtagcttatctttggcaattggtctgcctccagat
+cagatgaaactgtttcaggaattgttttatgacatttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mtr:MTR_2g105330+nt">BLAST</a>
+</body>
+</html>

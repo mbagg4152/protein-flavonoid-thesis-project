@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01716: MTR_5g074710</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620848242">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620848242">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mtr:MTR_5g074710 -->&gt;mtr:MTR_5g074710 K00430 peroxidase [EC:1.11.1.7] | (GenBank) peroxidase family protein (N)
+atgaattctcgtatccaaattgtgttttttgtggtcacttttgcaacaattttgagtcct
+accattgcaaaactgtcttctaattattatgacgaaatttgcccacaggcattgccaatc
+ataaagtcggttgttaagcaagcaattattcgtgagccacgcatgggagcatcgttgcta
+cgtttgcatttccatgactgctttgttaacggttgtgatggatcaattctactagatgac
+acccctaccttcattggtgagaagactgcaattccaaatatcaattcacttagaggtttt
+gaggttgttgatcaaattaaagccgcagttgacaaagcttgtaaacgtccgatcatatca
+tgtgcagatatcttagctatagcagctcgagattctgttgccatattgggcggtcacaaa
+tattggtaccaagtgttactgggcagaagagattcaagatttgcaagcagagatgcagca
+aatataaatcttccaccggcattttttaacttctcacaactcatcgcaaattttcagtct
+caaggactaaaccttaaagacttagttgttctatctggtggtcacacaattggattttca
+agatgtactaactttagaagcaggatcttcaatgacaccaacataaacaccaattttgca
+gccaatttgcaaaagacatgccctagaattggcggcgatgacaatttagcaccatttgat
+tctactccttcaagagttgacacaaaatactataaggctttgttgcataaaaagggtctc
+cttcattctgatcaagagcttttcaaaggtgatggttctcaaagtgatagattggtgcaa
+ctttatagtaaacattctcatgcttttgcttatgattttggagtttctatgattaagatg
+ggtaacataaagccacttactgggaaaaatggtgagatcaggtgcaattgcaggaaagtt
+aaccaaatatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mtr:MTR_5g074710+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T06020: 112181708</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844682">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844682">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- rcn:112181708 -->&gt;rcn:112181708 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atggagatcactattatctccagatatactgcgaaaccatcttcttcttcacttcagcat
+ctaaaacctcacaaactttccctcttcgaccagctcactcccgcaacttacgccccaatt
+gtcttgttctaccccaactcatcattaactaccaatctttcccaaaccttagtccacttg
+aagacctctctatgcgagaccctcactctctactacccattttccggccgcatcaagaac
+aacctctacatttatgatttcgacgctggtgttccatacctcgaagctcgagtcaattgt
+cgcctgcctgagtttcttaagcttcaagaaacccagctgctaaacgacctccttccattt
+cttccattccggaaggaaacggatcactcagatctgcttcccttgcttgcttgtcaaatc
+aatgttttcgcttgcggtggattggcaatctctgcctccgtgtctcacaagattttcgat
+ggggatacgggaaacgcttttctcaaaacttgggcttccatttttcgcggggctcgcgac
+gacatcgtacaccctgatctctcccaagcctccctgttcttcccaccaagagatccattg
+cctcagaactatctggatttaatggacagcttgtggtttaagggaagcaattatgtttca
+aagagatttgtgtttgatgccaaatccatagccacactgcgagcaagatcgacgagcgaa
+aacgttcccaagcccacacgtgtggagatactaactagttttatctggaaacatgcaatg
+gctgcttctagggcactgtcatccggtacttcaccaaagacatccatagtcgttcatgca
+gtgaacatgagaccgcgaatgaattcacaaatgcgatcggatactgtcatgatcggaaat
+cttttttggtgggccgtagctgccgctgacgcttctgaggcagacgctcatgacttgcgt
+gacttagtgaacataattaaggaatcaatcaagggattcgatagtgagtatttggagagt
+ttgcaaggtgaagatggtggattcggaaccatttctgagttttgtaatcagcttgaggct
+atgctttcctcagaaacaccggatatctatgcattcacaagctgggctagcgttttaaaa
+caggttgattttggttgggggaggccattttggatcggagccatggggaaagttggtcct
+gcatttagaaatctcactgtgttcgtcgacagacaatgggatacgggcattgaagcatgg
+gtgaacttggaggaaaaccagatggctctgttagagaaagacccccattttttagcattt
+gcttctccaaatcctggaatatcaagcatgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=rcn:112181708+nt">BLAST</a>
+</body>
+</html>

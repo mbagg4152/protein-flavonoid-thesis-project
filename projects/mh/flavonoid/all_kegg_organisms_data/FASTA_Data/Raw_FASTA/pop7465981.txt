@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01077: 7465981</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620845842">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620845842">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pop:7465981 -->&gt;pop:7465981 K22772 flavonol-3-O-glucoside L-rhamnosyltransferase [EC:2.4.1.159] | (RefSeq) anthocyanidin 3-O-glucosyltransferase (N)
+atgtctagtgaatcatcatccgagcttcatgttgtgatgtttccattctttgcatttggt
+cacatatgcccatttgtgcaactctctaacaagctttccctccatggagttcgaatctct
+ttcttgtcagctcctggtaacattgcacgcatcaagtcctctcttcttgccactcccacc
+acccaaatcatctctcttccaatccctgtggttgagggcctccctccggggcataacagc
+accgcagagacaacaccggctgtggctggtctcctcaagaaagctctagacctcatgcag
+cctcaaatcaagaccatattggcagaactcaaaccccattttgtgttcttcgatctctta
+cagcactggcttccaaagctagcttcccagattggcattaaaacaataagctacactgtt
+ttctctgccacttcaacttcataccttactgtccctgccagaataggtgaagaaggagaa
+agcccctcgattggggatctcatgaaacctccaaatgggtatccttcatcatccattact
+tctgtaaaagcctttcaggctcgagacttctcgattgtatataagagctttgatggtggt
+cctactatatgcgatagagctgtcggtagtcgtcttggttgcactgcaatgctcttgaag
+acatgtcaagaaatggaaggaccgtacgtggattttataaaaacacagtttaaaaaacct
+gtacttttaactggtcctctagtccctgatccaccttctggagtactcgatgagaaatgg
+gctaattggttgggtcaatttcctgccaaatctgtgattttttgctcatttggcagcgaa
+acattcttgaaccatgaccaaataaaagagcttgttcttggtttggaactcactggttta
+ccatttttccttgttttgaactttcctgcagagctcgacagccaaaccgagttaaaccag
+gctttaccatcgagtttcttagagagggtcaaggggagaggagttctgcacacaggatgg
+gttcagcaacagcttatactcgcacatagtagtgtagggtgttatgtctgtcactcaggg
+tttagctctctgattgaagcattggtgaatgactgtcaattggccatgctaccactgaag
+ggtgaccagttcttgaacaccaagctcatagctggagacctgaaggctggggtggagata
+aataggagagatgaggatgggtattttggaaaggatgatatttgtgaagctgtcaaaact
+gtcatgctggatgtagacaaggagcctggcaagtctatgagggaaaatcacaaaaaatgg
+agggaatttctgttgaacgcacagattcagaaccagtacattgtagagttgattgaggaa
+ctgaaagccatggcttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pop:7465981+nt">BLAST</a>
+</body>
+</html>

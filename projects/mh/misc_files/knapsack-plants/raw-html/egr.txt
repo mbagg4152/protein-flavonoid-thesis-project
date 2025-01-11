@@ -1,0 +1,58 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Eucalyptus grandis</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body 0="" onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Eucalyptus grandis</font><br><br>
+   	      Number of matched data :11 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00000136 target="_blank">C00000136</a></td><td class="d1">470-82-6</td><td class="d1">1,8-Cineole</td><td class="d1">C10H18O</td><td class="d1">154.1357652</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000290 target="_blank">C00000290</a></td><td class="d1"></td><td class="d1">G1</td><td class="d1">C15H22O5</td><td class="d1">282.14672381</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000291 target="_blank">C00000291</a></td><td class="d1"></td><td class="d1">G2</td><td class="d1">C15H22O5</td><td class="d1">282.14672381</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000292 target="_blank">C00000292</a></td><td class="d1"></td><td class="d1">G3</td><td class="d1">C14H20O5</td><td class="d1">268.13107375</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000293 target="_blank">C00000293</a></td><td class="d1">63861-11-0</td><td class="d1">Grandinol</td><td class="d1">C13H16O5</td><td class="d1">252.09977362</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000805 target="_blank">C00000805</a></td><td class="d1">80-56-8</td><td class="d1">(+)-alpha-Pinene</td><td class="d1">C10H16</td><td class="d1">136.12520051</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002648 target="_blank">C00002648</a></td><td class="d1">490-79-9</td><td class="d1">Gentisic acid</td><td class="d1">C7H6O4</td><td class="d1">154.02660868</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002668 target="_blank">C00002668</a></td><td class="d1">99-50-3</td><td class="d1">Protocatechuic acid</td><td class="d1">C7H6O4</td><td class="d1">154.02660868</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003040 target="_blank">C00003040</a></td><td class="d1">99-87-6</td><td class="d1">p-Cymene</td><td class="d1">C10H14</td><td class="d1">134.10955045</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00040952 target="_blank">C00040952</a></td><td class="d1">77794-62-8</td><td class="d1">Euglobal IIc</td><td class="d1">C23H30O5</td><td class="d1">386.20932407</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00048310 target="_blank">C00048310</a></td><td class="d1">673-84-7</td><td class="d1">2,6-Dimethyl-2,4,6-octatriene</td><td class="d1">C10H16</td><td class="d1">136.12520051</td><td class="d1"><font color=#FF00BF>Eucalyptus grandis</font> x urophylla</td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02665: 101055589</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847612">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847612">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sly:101055589 -->&gt;sly:101055589 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) AT3; AT3 protein (N)
+atggtaatggcgaagttagatattgaaattcagacaaggaaaatattgaaaccctcagct
+cctacaccagataatcttcggagactgaagatttccttgtttgatcagctggctcgttct
+gcatatgtatcaatcgtcttcaactacttgccgagcagcagttcatcatatgatgatgat
+aagcttgaaaaatcattggcggagacgctaaccaagttttacccttttgctggaagatta
+gcaaaagatgatccattctccatcgactgcaatgatgaaggtgttgaatatgttcgaacc
+aaagtcaatgcagacgatcttgctcaatttctgggtaaagacgatgatgatattgagtcg
+tctttgattgatcttcttccaataaaagatgttgagctatcatcgccatcaagtccgtta
+tttggtgtccaagtgaacgtatttaataatggaggagtaagcatagggatacaaatttca
+catttcctagctgatgctttcactttagctacatttgtaaatgaatgggcgcacactaac
+acgttgtcgtcgatgcctcaagataataatgacctccacaagtttggtgacttatcatcc
+ctgtttccaccaaaaatgctacagttgccatcctttgatcccaacactagtagtactact
+accactgtccctagctataagaatgtgacaaagaggtttgtctttgatgcttcggcaata
+gaaagcctcaaaaaaacaatcaaagatgattcaagtatgatgaggaagcctacaagactg
+gtggtcgttatgtccttattatggaaggttctggcacgcatatcttccgccaaaaatgga
+aattcaagggactcgtgtttcggatttgttattagtttcagggggaaagtgtcatgtatt
+ccgtctacagaacatgttctagggactttttcaataccagaaattgctaatatggagggc
+gatgtggcaagaaaggatgagttgaatggtttcgtaaagttggtagggaatagaataggg
+gagacatttgcagccattgataaggcgtcaaaagttgatgatatttactctctaactctt
+aacaatcagataaaagttattgaaaaatttgtacaaagagacaagatggacttttatggc
+accactagttggtgcaaattaccttggtatgaaactgactttggttggggaaaaccattc
+tgggtgacccctgtttccttccgtatttatgaacaaactactctgatggacacaaaagat
+ggtgatggaatagaaataattgttactatgaaggaaaatgacatgactgaatttgagaga
+gaccctcacattttgtcctccacttccaaactaacctttggataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sly:101055589+nt">BLAST</a>
+</body>
+</html>

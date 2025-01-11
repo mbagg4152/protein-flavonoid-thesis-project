@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01087: 8289192</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620850579">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620850579">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- rcu:8289192 -->&gt;rcu:8289192 K01188 beta-glucosidase [EC:3.2.1.21] | (RefSeq) vicianin hydrolase isoform X2 (N)
+atggcagctcaggttgctatccttctgtgttgcctggtaatgattggtgggtttctgggt
+agcacctatgccacaactccaggtcattacacaatgccattcaataggagtagttatcct
+tctggtttcatattcggagctggttctgctgcttaccagtctgaaggagctgcttatata
+gatggcaagggacccagtatttgggatacgttcacaagggagcatcctgagaaaatttgg
+gatcagagcaatggagatgtagctattgacttttatcatcgttacaaggaggacattcaa
+ttgatgaaaagaattggattggactcctttagattctccatctcgtggtctagagtactg
+cccaagggaaaagtcagtggaggagtgaatccaaaaggagtcaaattctacaatgatctc
+attaatgagcttattgccaatggtctaacaccatttgtgacattgttccattgggatctc
+ccccaagctcttgaggatgaatataatggcttcctgagccctaaagtagtggatgattat
+cgagattatgcagacttttgcttcaaaacatttggtgatcgagtcaagcactggtgcaca
+ttgaatgagccttattcatttagtatcaatggatataatggaggtacatttgcccccggc
+cgatgctctaactatgtggggaactgcactgctggtgactcttccacagagccctatctt
+gtggctcatcacttgcttctttctcatgccagtgctgttagattatacaaggccaaatat
+caggctactcagaaaggacaaattggcgtcacgttagtgactaactggtttataccaaag
+tcaccagcatcagaatctgacaagaaagcaaccatgagaataattgattttatgtttggt
+tggtttgcccatccaattacatatggagattatcctgaaataatgaaagcttatgtggga
+gatcggttgccgaaatttacaaaagaacaatccaaattgctaaaagggtctctggattac
+atgggagtaaattactacaccacaaactttgcatcaaacaacccagttaccacttccaac
+cacagctggagcactgatagccaaaccactctctctgtcacgaaagctggagttcctatt
+ggtacaccgacacctttgaattggctatacgtctatccaaggggaatttaccatctcatg
+cttcatataagggataattacaagaatcctcccattttcgttacagagaatggtcttgct
+gatgcaaataacgcatcaatatcaattgaagaatctcgtaaagatgccttgcggataaga
+tactaccacactcatttgacaaatctcctacaagcaatcaagtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=rcu:8289192+nt">BLAST</a>
+</body>
+</html>

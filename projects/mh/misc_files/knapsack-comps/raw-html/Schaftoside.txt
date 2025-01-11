@@ -1,0 +1,193 @@
+
+<html>
+<!-- <head> -->
+<!-- NBDC Markup START -->
+<head vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+
+<title>KNApSAcK Metabolite Information - C00006177</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/cs">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="C00006177">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/info.css" media="all">
+</head><body 0="" onload="" >
+
+<div id="my_body">
+  <div id="my_header">
+      <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+      <img src="images/nap2.gif" border=0> </a></p>
+  </div>
+  <div id="my_main">
+    <div id="my_navigation">
+
+    </div>
+    <div id="my_contents">
+          <br>
+<!--	  input word = <font class="iw">C00006177</font><br><br> //-->
+     	  input word = <font class="iw">C00006177</font><br><br>
+
+<!-- <table class="d1"> -->
+<!-- NBDC Markup START -->
+	<table class="d1" vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+        <tr>
+            <th class="d1">Metabolite Information</th><th class="d3">Structural formula</th>
+        </tr>
+
+        <tr>
+            <td>
+               <table class="d3">
+                  <tr>
+                     <th class="inf">Name</th>
+                     <td colspan="4" class="inf">Schaftoside<br>Shaftoside</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Formula</th>
+                     <td colspan="4">C26H28O14</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Mw</th>
+                     <td colspan="4">564.14790561</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">CAS RN</th>
+                     <td colspan="4">51938-32-0</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">C_ID</th>
+                     <td colspan="4" class="img2">C00006177
+<!-- 			C00006177<a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00006177" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+<!-- NBDC Markup START -->
+<!--			<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry"> //-->
+<!--			<span property="entryID">C00006177</span><a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00006177" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+                                       , <a href="/Twins/top.php?kword=C00006177&sword=50&mode=list1#res" target="_blank"><img src="images/TW.gif" border="0" class="img2"></a><br>
+<!--			</div> //-->
+<!-- NBDC Markup END -->
+                        
+		     </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChIKey</th>
+                     <td colspan="4">MMDUKUSNQNWVET-WCGZTJJSNA-N</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChICode</th>
+                     <td colspan="4">InChI=1S/C26H28O14/c27-6-13-18(32)21(35)23(37)26(40-13)15-19(33)14-10(29)5-12(8-1-3-9(28)4-2-8)39-24(14)16(20(15)34)25-22(36)17(31)11(30)7-38-25/h1-5,11,13,17-18,21-23,25-28,30-37H,6-7H2/t11-,13-,17-,18-,21+,22+,23-,25-,26+/m1/s1</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">SMILES</th>
+                     <td colspan="4">c1(c(c(c2c(c1[C@@H]1[C@H]([C@@H]([C@@H](CO1)O)O)O)oc(cc2=O)c1ccc(cc1)O)O)[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O)O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Start Substs in Alk. Biosynthesis (Prediction)</th>
+                     <td colspan="4"><a href="/CobWeb/top.php?word=&mode=met" target=_"blank"></a> </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Organism</th>
+                     <td class="or1">
+                        <table class="org">
+			 	<th class="or3">Kingdom</th>
+				<th class="or2">Family</th>
+				<th class="or1">Species</th>
+				<th class="or4">Reference</th><tr>
+<td class=org>Plantae</td><td class=org>Acanthaceae</td><td class=org2>Acanthus ebracteatus</td><td class=org><a href=information.php?mode=r&word=C00006177&key=0 title=Acanthus ebracteatus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Acanthaceae</td><td class=org2>Clinacanthus nutans</td><td class=org><a href=information.php?mode=r&word=C00006177&key=1 title=Clinacanthus nutans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Apiaceae</td><td class=org2>Astrantia major <a href='/KNApSAcK_World/top.php?word=Astrantia%20major' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006177&key=2 title=Astrantia major > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Araceae</td><td class=org2>Arisaema consanguineum <a href='/KNApSAcK_World/top.php?word=Arisaema%20consanguineum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006177&key=3 title=Arisaema consanguineum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Araceae</td><td class=org2>Arisaema heterophyllum</td><td class=org><a href=information.php?mode=r&word=C00006177&key=4 title=Arisaema heterophyllum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Catananche caerulea</td><td class=org><a href=information.php?mode=r&word=C00006177&key=5 title=Catananche caerulea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Centaurea hierapolitana</td><td class=org><a href=information.php?mode=r&word=C00006177&key=6 title=Centaurea hierapolitana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Centaurea melitensis L.</td><td class=org><a href=information.php?mode=r&word=C00006177&key=7 title=Centaurea melitensis L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Centaurea solstitialis</td><td class=org><a href=information.php?mode=r&word=C00006177&key=8 title=Centaurea solstitialis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Caryophyllaceae</td><td class=org2>Silene schafta</td><td class=org><a href=information.php?mode=r&word=C00006177&key=9 title=Silene schafta > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycyrrhiza glabra <a href='/KNApSAcK_World/top.php?word=Glycyrrhiza%20glabra' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006177&key=10 title=Glycyrrhiza glabra > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycyrrhiza inflata <a href='/KNApSAcK_World/top.php?word=Glycyrrhiza%20inflata' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006177&key=11 title=Glycyrrhiza inflata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycyrrhiza uralensis <a href='/KNApSAcK_World/top.php?word=Glycyrrhiza%20uralensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006177&key=12 title=Glycyrrhiza uralensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lespedeza capitata</td><td class=org><a href=information.php?mode=r&word=C00006177&key=13 title=Lespedeza capitata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Meehania urticifolia</td><td class=org><a href=information.php?mode=r&word=C00006177&key=14 title=Meehania urticifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Salvia blepharophylla</td><td class=org><a href=information.php?mode=r&word=C00006177&key=15 title=Salvia blepharophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Metzgeriaceae</td><td class=org2>Metzgeria furcata</td><td class=org><a href=information.php?mode=r&word=C00006177&key=16 title=Metzgeria furcata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Poaceae</td><td class=org2>Dactylis glomerata <a href='/KNApSAcK_World/top.php?word=Dactylis%20glomerata' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006177&key=17 title=Dactylis glomerata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Poaceae</td><td class=org2>Oryza sativa <a href='/KNApSAcK_World/top.php?word=Oryza%20sativa' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006177&key=18 title=Oryza sativa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Crataegus monogyna L. <a href='/KNApSAcK_World/top.php?word=Crataegus%20monogyna' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006177&key=19 title=Crataegus monogyna L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Cydonia oblonga <a href='/KNApSAcK_World/top.php?word=Cydonia%20oblonga' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006177&key=20 title=Cydonia oblonga > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Solanaceae</td><td class=org2>Capsicum annum L.</td><td class=org><a href=information.php?mode=r&word=C00006177&key=21 title=Capsicum annum L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Violaceae</td><td class=org2>Viola yedoensis</td><td class=org><a href=information.php?mode=r&word=C00006177&key=22 title=Viola yedoensis > Ref.</a></td>
+</tr>
+</table>
+		     </td>
+                  </tr>
+               </table>
+            </td>
+	    <td class=img>
+<!--		<img src="/sun/MSdata/SD/C00006177.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'"><br><br> -->
+<!-- NBDC Markup START -->
+		<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+		<img property="image" src="/sun/MSdata/SD/C00006177.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'" />
+		</div>
+<!-- NBDC Markup END -->
+		<a href="image.php?word=C00006177" title="C00006177" onclick="window.open(this.href, '_blank', 'width=500,resizable=yes, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">zoom in</a>
+
+		<br><br><br><br>
+                
+
+	    </td>
+        </tr>
+	</table>
+
+
+   </div>
+   </div>
+   <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+   </div>
+</div>
+</body>
+</html>

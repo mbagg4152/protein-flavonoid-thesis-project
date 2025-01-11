@@ -1,0 +1,45 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01088: 100282438</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620850749">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620850749">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- zma:100282438 -->&gt;zma:100282438 K05350 beta-glucosidase [EC:3.2.1.21] | (RefSeq) pco088410; uncharacterized protein LOC100282438 precursor (N)
+atgcagagctccgtaaagctcgcggtgcttgctctactgctagcggcagcagctcaccac
+ggtctgctgccgctgccgacggcgcgatgctactggctcaacccggagatctacgacgcc
+ggcgggctgagccgccgcgcgttcccggacggcttcgtcttcgggacggccgcgtcggcg
+taccaggtcgaggggatggccaagcacggcgggcggggccccagcatctgggacgccttc
+atagaggttcctgggaccatccctaacaatgccaccgctgacgtgacggtcgacgagtat
+catcggtacaaggaagatgtgaacataatgaagaacatgggctttgatgcgtaccggttt
+tcgatctcttggtcgaggattttcccagatggaactggcaaggtgaaccaggaaggagtg
+gattactacaacaggctcatagattacatgctccagcaaggtatcgcgccgtatgcaaat
+ctctaccattatgacctcccattggcactccatgaacagtacctgggctggcttagccca
+aagattgtggaggcgtttgcagactacgccgagttctgcttccacgcgttcggagacagg
+gtgaagaactggtttaccttcaacgagccgaggtgcgtcgctgctctgggctacgacaat
+ggcttgcacgcaccgggaaggtgttccgggtgccccgccggaggcaactccaccacggag
+ccgtaccttgtcgcacaccatctcatcctttctcatgcagctgcggtcaggcgataccgc
+gacaagtatcagcttcaccagaaggggaagattggaattctcctggatttcgtgtggtac
+gaacctttcagcgacagcaatgcggaccaggctgcagcacagcgagccagggacttccac
+ctaggctggttccttgaccccattgtacatggacggtacccgtactcgatgcaagagatt
+gccaaagacaggctaccgttgttcagcgatgaagaagccaggatggtgaaaggctctata
+gactatgttggcatcaaccactacacttctttctacatgaaggaccctgggacatggaac
+ctgacgccagtcagctaccaggatgattggcatgttggttttgtctacgaacgaaatgga
+gttcctattggcgctcacgcaaactcctactggctgtacattgtgccgtggggcatcaac
+aaggctgtcagctatgtcaaggaaacttacaaaaatcttacaatgatccttgctgaaaac
+ggaatggaccaacctggtgatgtcagtattactcagggtgtgcatgacacagtaagaatc
+cgttattacagagactacataactgagctcaagaaagcaatagatgatggtgccagagtc
+attgggtactttgcgtggtcgctgcttgacaacttcgagtggaggcttgggtacacttcg
+cggtttggcttggtgtacgtggactacaagactctgaagaggtaccccaaggactcagct
+ttctggttcaagcatatgctgtccaagaaaaggagctag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=zma:100282438+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03274: 103697376</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840936">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840936">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pda:103697376 -->&gt;pda:103697376 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) putrescine hydroxycinnamoyltransferase 1-like (N)
+atggggatggctgtgggaatggcggacgtgggcatggtggaggtagtggagtccggtttc
+gtggttcccagcgaggggaccccaaagaaggcgatctggctgtccaatctagatgtatgg
+tatcgtaggtattacaccgccactgtctatgtctacaggcccaatggagacccgaacttc
+ttctccgtggaggccatgaaggcggccctgggcaaggcgctggtgcccttctaccccatg
+gccgggaggctcggggtggaccgtgacggccggcttgagatacagtgtaccggggagggc
+gtcctctttgtggtggcccgatccaagttcactctccgtgacttcaaggattctacacca
+tcagtggacgtgaggccgctattggtgcctccggtggagtccgctgagcctccttgcatc
+ttgctcatgcttcaagtaacatttctcaagtgcggcggtgtgtgcttgggcgtcaacatg
+caccactcagtagccgacggccccggctcgatccacttcatcaacacattttctgacatc
+gcccgaggtgttggcctgacggctcctcccttcctcaaccgcaccctcctccggccgcgg
+tcccctcccaccgtcctcttcgaccacgccgagtaccttggacagccatcaggcgatccc
+ttaaatgcggtcatccccctcgccaaacctgtgctcctcaaagtatccagagatcagctc
+gattacctcaagagcggaaacagatcaggcctctccaccttcagagcgctctcggcgcac
+gtgtggcggtgcgcgtgcaaggcccgtgagcttcatagcgttcgagtgacgcggctgaac
+ataagcgtcgatgctcgctcccgcctggagccgccgctcccgccgacctacttcggcaac
+gctgcctttaggacgtcggtggtcgcgacggcgggggaggtcctatctgatcctctggag
+catctggccgaaaagatccatggcgctaccgttcgatcaaatgacgagctttttaggtcg
+ctcatagacgttttggaggaggtgaacatgagtcgtatgcatgtatcggcgtgggcgctg
+cctggcaccgacctatatgtcgtctcctggctgaggatgccgatctacgaggccgacttc
+ggctgggggaagccggcgttcatgggcatgacagcaccgcgcatgccatgtggaatggtg
+cacatcatgcgcagccctggagacgacggcgggatttcacttgtggtgacattggagacg
+gagaacatgccaaggttcaagaagttgttctatgaggggttggagggggtggaatcagct
+tag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pda:103697376+nt">BLAST</a>
+</body>
+</html>

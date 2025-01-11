@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07330: 113846133</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641768927">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641768927">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aprc:113846133 -->&gt;aprc:113846133 K08243 chalcone reductase | (RefSeq) NAD(P)H-dependent 6'-deoxychalcone synthase (N)
+atggctcctattgagattccaacagtggtgcttccaaactcatctgggcaacagagggtg
+cccgtgattggaatgggttctgcccctgatttcacttgtaagaaagacgcaaaagctgca
+atcatcgaggccatcaagcagggttatagacattttgacactgctgctgcatatggctct
+gaacaggctcttggtgaagccctcaaagaagctcttcaacttggccttgtcacgcgtgat
+caactcttcgtcacttccaagctttgggtcactgataatcatcctcatcttgttgtccct
+gctttgcgcaaatcgcttagaactcttcaactagagtacttggacctctatctcatccac
+tggccactgagttcccagccaggaaaattttcgtttccaattgaggtagaggatctcttg
+ccatttgatgtgaagggtgtgtgggaatccatggaagagtgccagaaacttggcctcacc
+agagccataggagtcagcaacttctctgtcaagaagcttcaaaatcttctctcagttgct
+tccacccgtcctgcagtcaatcaagtggagatgaaccttgcatggcaacagaagaagcta
+agagagttttgcagttcaaatggtatagtgataactgctttttcaccgttgaggaaaggt
+gccagtaggggaccaaatgaagtgatggagaatgatgtgctgaaagagatcgctgaggct
+catggcaagtccatagcccaagtttgtttgagatggttgtatgaacaaggagtcactttt
+gtggccaagagctatgataaggagaggatgaaccaaaatttgcacatctttgattgggcc
+ttgacacaagaggatcaccacagaattgatcaaatcaagcagagccgtttgatcggtgga
+ccaaccaagccccaactcaatgatctctgggatgatgaaatatag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aprc:113846133+nt">BLAST</a>
+</body>
+</html>

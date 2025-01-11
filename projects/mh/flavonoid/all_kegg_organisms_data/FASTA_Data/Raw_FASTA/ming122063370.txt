@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07436: 122063370</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641770253">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641770253">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ming:122063370 -->&gt;ming:122063370 K09753 cinnamoyl-CoA reductase [EC:1.2.1.44] | (RefSeq) cinnamoyl-CoA reductase 1-like (N)
+atgatggtttcaggccaaattgtgtgtgtcactggcgcaggaggtttcattgcttcatgg
+cttattaagcttctcctagaaagaggttactttgtcaagggaacagttctagaccctaat
+gatcccaagaattctcatttgagggaactaccaggggctaaggagagattaactctttgt
+aaagctgacattcttgattatgagagcattctccatgcagtcaaaggatgcagtggactc
+tttcacgtagcctttcctattgtgaatgatttgaaacgagttatggaggcagcaatcaga
+ggaaccatgaatgtgatgaatgccgcagcagaagctcaagttaaacgtgtggttttcacg
+tcttcagtggcagtaattcatatggatcctaataggagtcctgacagggtcgtcgatgag
+acttgctggagcgatctcaactatgtcaagaccatttcggactggtattcttatgggaag
+atattggcagagctgacagcgtgggagatggcaaagaagagaggggtggaactggtgact
+gtgatcccttccttcactattggtcaaatgcttcaaccatataccagtaattctgcactt
+cacattatcaagttactcaatgggtggcataagaagtatggcaattatgtacagggttat
+gttcatgtcagggatgtagctttggctcatattcttgtttatgagtcccctaccgcagct
+ggcaggtacctctgccttggcaccgtgcttcaccggtctgagatcgctgccatgcttctt
+cagatgttccctcactaccccattcccaccaagtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ming:122063370+nt">BLAST</a>
+</body>
+</html>

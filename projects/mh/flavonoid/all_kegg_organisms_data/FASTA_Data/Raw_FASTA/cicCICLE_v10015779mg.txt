@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02982: CICLE_v10015779mg</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620856325">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620856325">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cic:CICLE_v10015779mg -->&gt;cic:CICLE_v10015779mg K00430 peroxidase [EC:1.11.1.7] | (RefSeq) hypothetical protein (N)
+atgaaagctgccgttgaaagggcctgtccaggcgttgtttcatgtgctgatattcttact
+attgcagctgaacaatctgttgctctgtcagggggtccttcatggacaaatctattggga
+aggagagacagcagaacagccaacaggactcttgcaaatgaaaatcttccaggaccgaac
+aatagtcttgagaggctcaaagatagattcagaaatgttggcctcaacgataattttgat
+cttgttgcactctccggagctcacacatttggaagggctcagtgccgaacttttagcgat
+aggttattcaatttcaacagcactggcaatccagacccaacacttaacacaaccctctta
+caacaactaaggcaactatgcccacaaggtggaaacggcagcgttctaactaatcttgat
+gtcacaacacctgatgtgtttgacaacaaatacttcttcaatcttcaaatacacaagggc
+cttctgcagagtgatcaagagttgttttcgactcccggggccgataccgctgccattgtc
+aataactttggcaggaaccagactgctttctttgaaaactttgtgacttcaatgataaga
+atgggcaatttgaaaccactgacaggaaatcaaggggagattagattgaactgcaggagg
+gtcaacggaaacagcaatatcgcaacaagatcatcatcatcggagggtgatttggtcagc
+tctttctga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cic:CICLE_v10015779mg+nt">BLAST</a>
+</body>
+</html>

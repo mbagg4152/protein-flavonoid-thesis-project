@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 100804350</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841953">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841953">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:100804350 -->&gt;gmx:100804350 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) uncharacterized protein LOC100804350 precursor (N)
+atggctcagcttaacctcatacttatctggttatttttattgagtctgtgcctttattca
+tgtcctacttcggcccagttaagtagacaccactatgcaaaaacatgccccaatgttgaa
+aacattgtcagagaagcagtcaaaaagaagtttcatcaaacatttgttacggttcctgct
+accattcgtctcttcttccatgattgcttcgtgcagggttgtgatgcctcggttttggtt
+gcatccacaaaaaacaacaaagcagagaaggatcacccagataatgtttcactagctgga
+gatggatttgacacagtgattaaagcaaaagaagcagttgatgcagttccattgtgcagg
+aacaaagtttcatgtgctgatattttagccttggcaacccgtgatgttattgaactggcc
+ggtgggcctttctacgaggttgaattgggaagatttgatgggctaagatctaaagattca
+gatgtaaacgggaggctgcctcatccagagttcaacttgaaccagctcaattcactgttt
+gcggccaacggtctcacccaaacggaaatgatagctctatcaggtgctcacactgttgga
+ttctcccattgcaacaaattcacgaacagagtatacaatttcaagagcaaaagtcgagtg
+gaccctacactgaacgagaaatacgcaacacagctaaagtcaatgtgcccaaggaatgtg
+gatccaaggattgcaatcgatatggacccaagcactccacggtcattcgacaatgtttat
+ttcaagaatcttcagcaagggaagggcctcttctcttcagaccaagttctcttcacggac
+tcaagatccaaggccactgtaaatgcatttgctagtagcagcaaaatcttccatgccaac
+ttcgccgctgctatgaccaaattgggccgagttggaatcaagaatgcacagaatggaaac
+attcgcaccgattgttcagtcatttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:100804350+nt">BLAST</a>
+</body>
+</html>

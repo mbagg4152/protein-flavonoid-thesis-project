@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01578: 9300608</title>
+<<<<<<< Updated upstream
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620835549">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620835549">
+=======
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849053">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849053">
+>>>>>>> Stashed changes
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aly:9300608 -->&gt;aly:9300608 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase (N)
+atgaaaattcaggtgaaacaagctacgatcgtgaagccagctgaggaaacacctacacac
+aatctatggctttctaatttagacttgatacaagtgagatttcacatggggacactctat
+ttctacaacccttgttcctcctccgatcgcccaaacactcaatctcttatcgatgctctg
+agcaaggttcttgtcctcttctatcctgccgctggaaggctccaaaaagatacgaatggg
+aggttagaggttcaatgtaatggagaaggagttttgtttgtagaggctgagactgattct
+actgtacaagacattggcttactcactcaaagtttggatctttctcaacttgtacctacc
+gttgactacgcgggagatatctcctcctatcctcttcttctctttcaggttacatatttc
+aaatgtggaacgatctgtgttggaagttcaatacaccatacattcggagaagctacttct
+cttgggtatatcatggaagcatggtctctaactgctaggggacttccagttaagctaaca
+ccgttctttgaccgcactgttcttcgtgcacgggaccctccctcccctgtctttcctcac
+gctgagtaccaaccacccccctttcacaaccctccgatgaaatccctggcttacagatca
+aatccagaatctgattctgcgattgccagtctcaagctttcacgtctccaactgaaagct
+cttaaggctaaggcagagtttgctgatagtaagttcagtacatatgaagttctggtggcg
+catacatggcgttgtgcttgctttgcaaatgaagatttgagtgaagaacactcgacgagg
+ttgcatataataattgatgggaggccaagactacaaccgaagcttccacaaggatacatt
+gggaacactctctttcacgctcggcctgtatctcagttgggtgattttcttagagagagt
+ttcagtgaaacagtggagagagttcatggcgaaataaggaaaatggacaacgagtacttg
+agatcagcgattgactacttggagagacatcctgatctcgatcagtttgttcctggtgaa
+ggtaatccgatcttcagctgcgcagcaaacttctgcatcgtcggtctaacaaaacagacc
+gcttacgaaatggatttcggatggggaagagctttctacaagagagcttcacatttaaat
+gaagggaagggatatgtaactgggagcccagacgaagtagggagcttgatgctaaccatg
+tgcctgaagaagactcagcttggtatgtttcggaagctgttttatgagtttctcaatgtg
+tccgcattgtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aly:9300608+nt">BLAST</a>
+</body>
+</html>

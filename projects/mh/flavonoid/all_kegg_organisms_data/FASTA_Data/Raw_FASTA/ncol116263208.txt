@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07418: 116263208</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765428">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765428">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ncol:116263208 -->&gt;ncol:116263208 K11188 peroxiredoxin 6 [EC:1.11.1.7 1.11.1.27 3.1.1.-] | (RefSeq) 1-Cys peroxiredoxin (N)
+atgcctgggttaacgattggcgataccattcccaacgttgaagcggattctactcgtgga
+agaataaggcttcatgagtatgtggatgatagttggaccatcatcttttcgcaccctggg
+gacttcacaccggtatgcacgaccgagctgggtaagatggccgcctaccaacaagagttt
+gacaaacgtggagtcaagttgctcggcatctcctgtgacgacgtccactgtcacaacgag
+tggatcaaggacattgaggctcacacaccaggatgcaaggttgcataccctataatggcg
+gaccccaacagggagataatcaaggagctcaacatgatcgacccagacgagagagaccca
+catgggaaacctcttccctctagggctctgcacattgttgcccccaacaaacaggtgaag
+ctgagtctgctctacccggcgacgacggggaggaacgtggatgaggtgataagggtgctg
+gattcgctgctcatcacttcaaagcacaaggtggcgacccctgtgaactggaagcccggg
+gacaaggtcgtcatctcgccgtctgtttctagcgatgaagcgaagaagatgttccctcag
+ggctacgaatctgcaaagctgccgtctgggaaagactatcttcgttacactaatgttccc
+tag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ncol:116263208+nt">BLAST</a>
+</body>
+</html>

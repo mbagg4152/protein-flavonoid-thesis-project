@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07627: 121781550</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765985">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765985">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sspl:121781550 -->&gt;sspl:121781550 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 5-like (N)
+atgggttgttcctcaatcatgatgatgatgctcacttgcttcctcatctttgtctcaacc
+gtttcctcatcagccccactcaccgtgggcttctacaaacgctcttgcccacccgccgaa
+gccatcgtccagaaacacgtcaacaagttcgcctcccgcaaccccggcctcgcagccggc
+ctcatccgcctccatttccacgactgcttcgtcaggggatgcgacgcatcagtgttgttg
+gacgggcccgcctctgagaaggagagcatcccaaacaagggaagtctccgaggctttgag
+gtgatcgacgccgcgaaagccgagctcgagcgccgctgccctagcaccgtctcctgcgag
+gacgccctcgccttcgccgcccgcgacagcgccgccaagctaggcaacatccgctacccg
+gtccccttgggccgccgcgacggccgcgtctcctccgtgaccgagcccctcctcagcctc
+ctggcccccttcttcaacgccacctccctccgcgacaacttcgccgcgaaaggcctctcc
+ctcgacgagatggtcaccctctccggcgcccactccgtcggaatctcccactgcagctcc
+attaccagccgcctctacccggccaccgaccccttgctcgaccccaaattcgccgctctt
+ttgaagaagaagtgcccgccgccgcccccacaaaaaaacaacacgccaagctccacggtc
+gatctcgattcgatcacgccatattgtttggacaacaagttctacgtgggattgagggcg
+aataggggggttttggcgacggatcaggtgctgcagagcagcccgttgatggcgaagctg
+gtggcggagaatgcgaggaataatggtttgtgggggaagaagtttgcggcggcgatggtg
+aagatgggagggattgaggttctcacggggaagaagggtgagatcaggaagaaatgccgt
+tttgtcaactga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sspl:121781550+nt">BLAST</a>
+</body>
+</html>

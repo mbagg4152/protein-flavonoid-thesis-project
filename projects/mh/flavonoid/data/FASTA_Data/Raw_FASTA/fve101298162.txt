@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02666: 101298162</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620843166">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620843166">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- fve:101298162 -->&gt;fve:101298162 K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) polyketide synthase 1 (N)
+atggtgaccgttgaggaagtccgcaaggctcaacgcgctgagggtccggccactgtcttg
+gccatcgggacagcgacaccacccaactgtattgaccagagcacataccccgactactac
+tttcgtatcaccaacagtgagcacaaggctgagctcaaggagaaattccagcgcatgtgt
+gacaaatctatgatcaagaagcgttacatgtacttgactgaagaaattcttaaagagaat
+cccagtatgtgcgagtacatggcgccttcacttgatgcaagacaagacatggtggtagtt
+gaaattccaaagcttggaaaagatgccgctgtcaaggccattaaggaatggggtcagccc
+aagtccagaatcacccacttggtcttttgtaccactagtggtgtcgacatgcccggtgcc
+gattaccagctcacgaagctcttaggcctccgcccgtccgtcaagcgtctcatgatgtac
+cagcaaggctgtttcgccggaggcacggtgctccggttggcaaaagacttggctgagaac
+aaccggggggcacgtgttctcgttgtttgctctgagatcactgccgtgaccttccgtggg
+cctagcgacacccatctcgatagtcttgtgggccaagctttgttcggtgatggtgccgca
+gctataattgttgggtctgacccattgcccgaggttgagaggcctttgtttgagcttgtc
+tcagcggcccaaactatccttcccgatagtgacggagccatcgacgggcatcttcgtgaa
+gttgggctcacatttcacctcctcaaagatgttcctgggctgatttcgaagaacatcgag
+aagagtctcaacgaggccttcaaacctttgaatatcactgactggaactcacttttctgg
+attgcacacccaggtggcccagcaattttggaccaagtggaagctaaattggccctcaag
+cctgagaagttggaagccacgaggcatatcctatccgagtatggaaacatgtctagtgct
+tgtgtgttgtttattttggacgaagtcaggaggaagtctgcagctaatgggcacaagacc
+accggagagggcctggagtggggtgttctatttgggtttgggcctgggctcaccgtcgag
+accgtcgtgcttcacagtgtatctgcttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=fve:101298162+nt">BLAST</a>
+</body>
+</html>

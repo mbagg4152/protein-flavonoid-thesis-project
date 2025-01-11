@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01578: 9301555</title>
+<<<<<<< Updated upstream
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620835622">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620835622">
+=======
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849866">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849866">
+>>>>>>> Stashed changes
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aly:9301555 -->&gt;aly:9301555 K13082 bifunctional dihydroflavonol 4-reductase/flavanone 4-reductase [EC:1.1.1.219 1.1.1.234] | (RefSeq) dihydroflavonol 4-reductase (N)
+atggttagtcagacagagaccgtgtgtgtaacgggcgcttcgggattcatcggttcatgg
+ctagtgatgcgattactcgaacgtggttactttgttcgtgccactgtgcgcgatcctggg
+aatttgaagaaagtgcaacatcttcttgatttgccaaatgccaagacgcaactcacttta
+tggaaggctgatttatctgaggaaggaagctacgatgacgccataaccggatgtgacggt
+gttttccacgtggcaactcccatggattttgaatcaaaagatcctgagaacgaagtgata
+aaaccgacagtgaatggaatgttggggattatgaaagcatgtgttaaggcaaagactgta
+cgaagattcatatttacttcatctgctggaactgttaatgtagaagaacatcagaagagt
+gtctacgatgaaaacgattggagcgatcttgagtttatcatgtccaaaaagatgacagga
+tggatgtattttgtgtcgaaaacattagccgagaaagcagcgtgggattacgccgaggaa
+aaaggattagatttcgttagtattattccaacattggtggtcggtccatttataacaaca
+tctatgccgcctagcctcatcaccgcgctctctcctatcactcggaacgaggcacattac
+tcgattataagacaaggacagtatgtgcatttggacgacttatgcaactctcatatcttc
+ttatacgaacaagaagctgccaaaggacgttatatttgttcctctcacgatgctacaatt
+cttactatctcaaaatttctcaggcaaaaatactccgaatacaacgtgccttcaacgttt
+gaaggtgtggatgagaatctaaagagcattgagttcagttccaagaagctgactgacatg
+gggtttaacttcaagtatagtctcgaggaaatgttaattgagtctattgagacatgtcgt
+caaaagggttttctctcggtttctttaccgtaccaatccatatcggagaacaaaggtccg
+acgaaggatgacaatattgagctcaaagccggagatggtttaaccgatggtatgatgcca
+tgtaacaagatagaaccggggctaaccggcgagagaaccgatgctcccatgccagcagaa
+cagatgtgtgcttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aly:9301555+nt">BLAST</a>
+</body>
+</html>

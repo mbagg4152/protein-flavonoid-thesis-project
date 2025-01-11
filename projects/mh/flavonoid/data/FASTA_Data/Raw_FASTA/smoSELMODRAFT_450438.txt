@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01496: SELMODRAFT_450438</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854290">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854290">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- smo:SELMODRAFT_450438 -->&gt;smo:SELMODRAFT_450438 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) BAHDa1-2; BAHD family acyltransferase, clade I (N)
+atggaggaagttgcgatagtgtccagcgagttcgtcggtccggccaaggctttcgatcat
+ccaccaaaattcgagctttccactttcgatcgcctcatggggtatgccggataccagaaa
+agaatgctcttctacaaatcggcacccgagaatgtggaggatctgctcaagagcagcctc
+gcggaggccctcgtccccttctatccattcgcgtcgcgcatgcgtgccggcgatggagtc
+tcgacccctgctctcgagctcgattgctcctctgtagatttcagcgccaaattcactgtt
+gccacgaccaagaagtcgctggcccagcttggattcttcgagccctgcgagttctgcgac
+acgctttgccagattgggagccctccaccggcatatccctggaaaatcgaggatcccctg
+ctctttgtccagatcacacgatttggatgtggaggagtgagcctgggagtgggattcagc
+caccaggtagctgatggagtgagtttctggcatttcatgacctcctgggcagaaatcgct
+agaacgggccaaatgatctccgctcccccggtgatctcttacaactacaagggattggag
+ctgagcgaggaggagcacatgagaaacgcggtgggatattggggagcagagatcgtccct
+agcgtggagaaaatgcccctcgtcgtacccaattcgtcacccatggccacccggcagtac
+cgattcgatcgctccgccatcgcggagctcaaatcccgggcggcggctggcagcagcgac
+gctcgattcagcacctacgtcgccctctgtgcggagttctggcggagaacggtcatcgct
+cagggattcccggattcgcaaactgtcaggttcttcgtcctcgccagttgccgcgggcgc
+atcgcttccatccccacctcctactttggcaacgccatctgcggattgttagccattgcc
+agcgccggcgatctcaagaacagggggcttccattcgcagctcggaccatccacgacgcg
+atccaggctttcgatggcgccagggtggagagtgccttgagcaccatactttggatgatc
+caggcccctcgcccggttcgagtgacgccgtttggccaggcggtgagctccaaccagcac
+ccggtggagaaatcggagtttggatttgggaaaccgtgcgggatcacgtttgggacgaat
+gatcttcacgaagggaagatctatctcttcccatccagcgatggcggcgtggtcgtcacg
+gtggtgctcaaggaagagaacatgaagaggatgatccaacaagacgaggacccctccatt
+atttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=smo:SELMODRAFT_450438+nt">BLAST</a>
+</body>
+</html>

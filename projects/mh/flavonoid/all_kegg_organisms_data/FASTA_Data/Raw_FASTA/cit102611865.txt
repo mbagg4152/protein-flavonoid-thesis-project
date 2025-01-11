@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02983: 102611865</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620859072">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620859072">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cit:102611865 -->&gt;cit:102611865 K05350 beta-glucosidase [EC:3.2.1.21] | (RefSeq) beta-glucosidase 44-like (N)
+gctgatgttactgttgatcagtatcatcgatacaaggaagatatagatttaatgaaaaat
+ctcaactttgatgcatatcggttctctatttcatggtcaagaatcttcccagagggaaca
+gggacagtgaatcagaagggagttgattattacaatagattgatcgactacatgcttgag
+caagggattactccatatgcaaatctgtaccactatgacatgccattagcccttcaagaa
+aaatacggcggattgctcgactgccaagtcgtaaaggactatgcggattatgcggacttc
+tgcttcaagacatttggtgatagagttaaaaattggtacacatttaacgaaccaagagtc
+attgctgcacttggatttgacgacggcagtaatcctccatcaagatgtagcaaagaagtt
+aacaactgtacagatggaaactcaggaacagagccatatattgctgcccataatatgatt
+ctagctcatgcagcagctgtgcaaagatatcgtgaaaaatatcaagaaacacaaaaaggg
+aaaattggaattctgttggactttgtttggtatgaacctcatactagatcaaaagccgac
+aacttggcagctcaaagggcaagagatttccacattggatggttcttacaccctctcaca
+tacggcgaatatccaagaacaatgcaagaaaatgtgggggacagacttccaaaatttaca
+ccagaagaagttttgatggtgcagggttcatttgattatctgggtgtgaaccaatacacc
+agttactacatgtttgaccctccttggcccaagtctaacatctccagttacgcgaacgat
+tgggatgctggttatgcttatgaccgtaatggagtaccaattggtccaagggcaaattct
+gggtggctttacattgttccttggggtttgtataatgctttgatgtatgtgaaagagcgc
+tatggcaaccccattgtaatgctgtccgaaaacggcatggatgatccgagcaattacaca
+gtgaaccacttattacacgacaccacaagagtaaattactaccgagattatataagccag
+ttgaagaaggctgctgatgatggagcaaatgtaactgggtactttgcctggtcattgctt
+gataattttgaatggttattaggatacagttcgagattcggcatcacttatgttgatttc
+gacacccttaagaggactccgaaaatgtctgcgtactggtttaagcagctgctgcaacgg
+gaccagtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cit:102611865+nt">BLAST</a>
+</body>
+</html>

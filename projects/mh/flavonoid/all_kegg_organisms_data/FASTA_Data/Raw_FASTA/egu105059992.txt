@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03921: 105059992</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620854036">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620854036">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- egu:105059992 -->&gt;egu:105059992 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) uncharacterized protein LOC105059992 (N)
+atggattggatcttcaaggatgagtcctcgccagccatcttggaggccagcggcgactcc
+gagactgactctcttttgattgcaccatcgatgactgctggatttgatgatgatgatgca
+gagtcttgcagcggccgtagtggtgatgacaacgatgcttctccaagggatgagagaaag
+atgtcttggaggagttggttggtagagtatgcctcgcagtgcaagcatatgaaatttgat
+gatgagcaagagggggatagattatgcactcatggaaccacagaagacaatggattgatg
+ccgatggaagaggagaagtctatgatggcaagggagagagagagtgcacacgccagtcca
+ctggcatatggggcattgcaattttttcggctctacgacttcactgagaagggtaatgtt
+gatccatctcttaatgcaacttatgtagcattctctaaaatccaatgcaagaatttatct
+gacaacaccattgcagtacctatgaaacctacaagtagcactacttccaacatccgtcgc
+aacgagaacttgaagttgcatcaatggttgttccaatctgatgttgcactcctcaccaac
+cactattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=egu:105059992+nt">BLAST</a>
+</body>
+</html>

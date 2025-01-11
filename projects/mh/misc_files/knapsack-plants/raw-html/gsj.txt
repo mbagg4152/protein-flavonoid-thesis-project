@@ -1,0 +1,54 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Glycine soja</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body 0="" onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Glycine soja</font><br><br>
+   	      Number of matched data :7 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00000100 target="_blank">C00000100</a></td><td class="d1">87-51-4</td><td class="d1">Indoleacetic acid</td><td class="d1">C10H9NO2</td><td class="d1">175.06332854</td><td class="d1"><font color=#FF00BF>Glycine soja</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000101 target="_blank">C00000101</a></td><td class="d1">1912-33-0</td><td class="d1">Methyl indole-3-acetate</td><td class="d1">C11H11NO2</td><td class="d1">189.0789786</td><td class="d1"><font color=#FF00BF>Glycine soja</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00001428 target="_blank">C00001428</a></td><td class="d1">110-60-1</td><td class="d1">Putrescine</td><td class="d1">C4H12N2</td><td class="d1">88.1000484</td><td class="d1"><font color=#FF00BF>Glycine soja</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002530 target="_blank">C00002530</a></td><td class="d1">57103-57-8</td><td class="d1">(-)-Glyceollin I</td><td class="d1">C20H18O5</td><td class="d1">338.11542369</td><td class="d1"><font color=#FF00BF>Glycine soja</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002531 target="_blank">C00002531</a></td><td class="d1">67314-98-1</td><td class="d1">(-)-Glyceollin II</td><td class="d1">C20H18O5</td><td class="d1">338.11542369</td><td class="d1"><font color=#FF00BF>Glycine soja</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00009685 target="_blank">C00009685</a></td><td class="d1">61080-23-7</td><td class="d1">Glyceollin III</td><td class="d1">C20H18O5</td><td class="d1">338.11542369</td><td class="d1"><font color=#FF00BF>Glycine soja</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00009690 target="_blank">C00009690</a></td><td class="d1">69393-94-8</td><td class="d1">Glyceollin IV</td><td class="d1">C21H22O5</td><td class="d1">354.14672381</td><td class="d1"><font color=#FF00BF>Glycine soja</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

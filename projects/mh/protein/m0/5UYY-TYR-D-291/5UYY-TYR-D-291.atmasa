@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	D	291	1	23.446	23.446	nan	nan	nan	nan	23.446	23.446	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.076	0.514	39.460
+N	TYR	D	291	2	23.446	23.446	nan	nan	nan	nan	23.446	23.446	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.076	0.514	39.460
+CA	TYR	D	291	3	11.655	11.655	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.655	11.655	nan	nan	nan	nan	nan	nan	nan	22.028	1.959	39.373
+C	TYR	D	291	4	28.851	28.851	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.851	28.851	nan	nan	nan	nan	nan	nan	nan	22.217	2.416	37.956
+O	TYR	D	291	5	33.130	33.130	nan	nan	nan	nan	33.130	33.130	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.466	3.227	37.468
+CB	TYR	D	291	6	31.661	nan	31.661	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.661	nan	31.661	nan	nan	nan	nan	nan	nan	23.080	2.637	40.243
+CG	TYR	D	291	7	2.303	nan	2.303	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.303	nan	2.303	nan	nan	nan	nan	nan	nan	22.889	4.124	40.263
+CD1	TYR	D	291	8	23.497	nan	23.497	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.497	nan	23.497	nan	nan	nan	nan	nan	nan	21.822	4.707	40.971
+CD2	TYR	D	291	9	22.200	nan	22.200	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.200	nan	22.200	nan	nan	nan	nan	nan	nan	23.736	4.954	39.560
+CE1	TYR	D	291	10	34.006	nan	34.006	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.006	nan	34.006	nan	nan	nan	nan	nan	nan	21.641	6.068	41.018
+CE2	TYR	D	291	11	33.125	nan	33.125	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.125	nan	33.125	nan	nan	nan	nan	nan	nan	23.546	6.323	39.587
+CZ	TYR	D	291	12	9.753	nan	9.753	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.753	nan	9.753	nan	nan	nan	nan	nan	nan	22.493	6.871	40.321
+OH	TYR	D	291	13	43.065	nan	43.065	nan	nan	nan	43.065	nan	43.065	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.299	8.226	40.304

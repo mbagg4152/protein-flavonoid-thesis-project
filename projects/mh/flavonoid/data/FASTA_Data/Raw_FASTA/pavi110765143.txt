@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05161: 110765143</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838802">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838802">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pavi:110765143 -->&gt;pavi:110765143 K23260 scopoletin glucosyltransferase [EC:2.4.1.128] | (RefSeq) UDP-glucose flavonoid 3-O-glucosyltransferase 7-like (N)
+atggaaacaaaatcccaagagcagcttcacattttcttctttccatatatggctcaaggc
+catagcatacccctcatagacatggccaaaatatttgcttcccatggtgtaaaatccacc
+ctaataaccacccctcttcatgcaccacttttctcaaaagcaatccaaagcagcaaagaa
+ttggggtttgaaattgaacttattgtcatcagattcccaactgaagaagttgggttgcct
+ccgggatgtgaaagcgctagcttggctacaaccaatgagatgaagcaaaagttcttcaaa
+gctaccacccttcttgaaccacagcttgagcagattttggaccaacagtgccctcactgc
+cttgttgcagacgctttctttccttggaccacagatgttgccgccaagtttggtattcca
+aggctcatatttcatggcattggttttttccctttgtgtgcttcacttagtgtgatattg
+tatgagcctcacttgaaggtttcatctgattcagaagtatttactattcctaatttccca
+gttgagatcaagctgaccggaagccaaataccggcttttcttaagaaaaaggttgaaaca
+gaattcaccaagttgtttgaagcatgcaaagcctgtgaggaaaggagctatggggttatt
+gttaacagcttctatgaacttgaatcagtttatgcagatcattataggaaggtgtttggg
+aggaaggcatggcatataggcccggtttcgttatgtaacaaggcagcattagataaagca
+gagatgaggggaatggaagcctcctttgatgaacatgagtgcttgaattggcttaattct
+aagaaacccaattcagttgtttacatatgctttggaagcatgaccaatttcactgatcct
+cagctctttgaaattgcattggggcttgaggcaagtgggagggaattcatttgggttgtg
+aagaaagaaaagaaagaaaaggaagagtggttgcctgaagggtttgaaaagagaatggaa
+ggtaagggactaattataagaggttgggctccacaagtgctgattcttgagcatgaagca
+attggaagctttgtgactcactgtgggtggaactctatccttgaaggagtttcctctgga
+gtgccaatgatcacatggcccgtgtccgccgaacaattttacaatgagaagttgttgact
+gagatactgagaattggggttgctgttggtgttcaacagtgggcgacatttgtagatgtg
+aagcaggaagccagtgtgaagagagaggccatagagaaggctgtgactgaaatcatggtt
+ggtgatgaagcagaggaaatcagaagcagagccaaggcgcttcgagagatggcaaggagg
+gctgttgaagaaggtggttcatctttctcagatttaactgcacttattgaagagttgaag
+tcccttagagcttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pavi:110765143+nt">BLAST</a>
+</body>
+</html>

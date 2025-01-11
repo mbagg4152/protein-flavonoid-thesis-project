@@ -1,0 +1,214 @@
+
+<html>
+<!-- <head> -->
+<!-- NBDC Markup START -->
+<head vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+
+<title>KNApSAcK Metabolite Information - C00006652</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/cs">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="C00006652">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/info.css" media="all">
+</head><body 0="" onload="" >
+
+<div id="my_body">
+  <div id="my_header">
+      <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+      <img src="images/nap2.gif" border=0> </a></p>
+  </div>
+  <div id="my_main">
+    <div id="my_navigation">
+
+    </div>
+    <div id="my_contents">
+          <br>
+<!--	  input word = <font class="iw">C00006652</font><br><br> //-->
+     	  input word = <font class="iw">C00006652</font><br><br>
+
+<!-- <table class="d1"> -->
+<!-- NBDC Markup START -->
+	<table class="d1" vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+        <tr>
+            <th class="d1">Metabolite Information</th><th class="d3">Structural formula</th>
+        </tr>
+
+        <tr>
+            <td>
+               <table class="d3">
+                  <tr>
+                     <th class="inf">Name</th>
+                     <td colspan="4" class="inf">Idaein<br>Cyanidin 3-galactoside<br>Cyanidin 3-O-galactoside<br>Cyanidin 3-O-beta-D-galactopyranoside</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Formula</th>
+                     <td colspan="4">C21H21O11</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Mw</th>
+                     <td colspan="4">449.10838652</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">CAS RN</th>
+                     <td colspan="4">27661-36-5</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">C_ID</th>
+                     <td colspan="4" class="img2">C00006652
+<!-- 			C00006652<a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00006652" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+<!-- NBDC Markup START -->
+<!--			<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry"> //-->
+<!--			<span property="entryID">C00006652</span><a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00006652" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+                                       , <a href="/Twins/top.php?kword=C00006652&sword=50&mode=list1#res" target="_blank"><img src="images/TW.gif" border="0" class="img2"></a><br>
+<!--			</div> //-->
+<!-- NBDC Markup END -->
+                        
+		     </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChIKey</th>
+                     <td colspan="4">RKWHWFONKJEUEF-PNSIFLDANA-O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChICode</th>
+                     <td colspan="4">InChI=1S/C21H20O11/c22-7-16-17(27)18(28)19(29)21(32-16)31-15-6-10-12(25)4-9(23)5-14(10)30-20(15)8-1-2-11(24)13(26)3-8/h1-6,16-19,21-22,27-29H,7H2,(H3-,23,24,25,26)/p+1/t16-,17+,18+,19-,21-/m1/s1</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">SMILES</th>
+                     <td colspan="4">c1(cc(c2c(c1)[o+]c(c(c2)O[C@H]1[C@@H]([C@H]([C@H]([C@H](O1)CO)O)O)O)c1ccc(c(c1)O)O)O)O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Start Substs in Alk. Biosynthesis (Prediction)</th>
+                     <td colspan="4"><a href="/CobWeb/top.php?word=&mode=met" target=_"blank"></a> </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Organism</th>
+                     <td class="or1">
+                        <table class="org">
+			 	<th class="or3">Kingdom</th>
+				<th class="or2">Family</th>
+				<th class="or1">Species</th>
+				<th class="or4">Reference</th><tr>
+<td class=org>Plantae</td><td class=org>Anacardiaceae</td><td class=org2>Cotinus coggygria</td><td class=org><a href=information.php?mode=r&word=C00006652&key=0 title=Cotinus coggygria > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Anacardiaceae</td><td class=org2>Pistacia vera <a href='/KNApSAcK_World/top.php?word=Pistacia%20vera' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=1 title=Pistacia vera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Apiaceae</td><td class=org2>Daucus carota <a href='/KNApSAcK_World/top.php?word=Daucus%20carota' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=2 title=Daucus carota > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asparagaceae</td><td class=org2>Asparagus racemosus <a href='/KNApSAcK_World/top.php?word=Asparagus%20racemosus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=3 title=Asparagus racemosus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Celastraceae</td><td class=org2>Euonymus europaea <a href='/KNApSAcK_World/top.php?word=Euonymus%20europaea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=4 title=Euonymus europaea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cornaceae/Aucubaceae/Garryaceae/Helwingiaceae</td><td class=org2>Cornus mas <a href='/KNApSAcK_World/top.php?word=Cornus%20mas' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=5 title=Cornus mas > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cornaceae/Aucubaceae/Garryaceae/Helwingiaceae</td><td class=org2>Cornus suecica <a href='/KNApSAcK_World/top.php?word=Cornus%20suecica' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=6 title=Cornus suecica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Arbutus unedo <a href='/KNApSAcK_World/top.php?word=Arbutus%20unedo' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=7 title=Arbutus unedo > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Gaylussacia spp.</td><td class=org><a href=information.php?mode=r&word=C00006652&key=8 title=Gaylussacia spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Vaccinium arboreum Marsh.</td><td class=org><a href=information.php?mode=r&word=C00006652&key=9 title=Vaccinium arboreum Marsh. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Vaccinium myrtillus L. <a href='/KNApSAcK_World/top.php?word=Vaccinium%20myrtillus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=10 title=Vaccinium myrtillus L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Vaccinium padifolium</td><td class=org><a href=information.php?mode=r&word=C00006652&key=11 title=Vaccinium padifolium > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Vaccinium spp.</td><td class=org><a href=information.php?mode=r&word=C00006652&key=12 title=Vaccinium spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ericaceae</td><td class=org2>Vaccinium vitis-idaea <a href='/KNApSAcK_World/top.php?word=Vaccinium%20vitis-idaea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=13 title=Vaccinium vitis-idaea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Euphorbiaceae</td><td class=org2>Acalypha hispida <a href='/KNApSAcK_World/top.php?word=Acalypha%20hispida' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=14 title=Acalypha hispida > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fagaceae</td><td class=org2>Fagus sylvatica <a href='/KNApSAcK_World/top.php?word=Fagus%20sylvatica' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=15 title=Fagus sylvatica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Hippuridaceae</td><td class=org2>Hippuris vulgaris</td><td class=org><a href=information.php?mode=r&word=C00006652&key=16 title=Hippuris vulgaris > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Malvaceae</td><td class=org2>Theobroma cacao <a href='/KNApSAcK_World/top.php?word=Theobroma%20cacao' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=17 title=Theobroma cacao > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Nymphaeaceae</td><td class=org2>Nymphaea alba <a href='/KNApSAcK_World/top.php?word=Nymphaea%20alba' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=18 title=Nymphaea alba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Nymphaeaceae</td><td class=org2>Nymphaea candida <a href='/KNApSAcK_World/top.php?word=Nymphaea%20candida' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=19 title=Nymphaea candida > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Plumbaginaceae</td><td class=org2>Ceratostigma plumbaginoides</td><td class=org><a href=information.php?mode=r&word=C00006652&key=20 title=Ceratostigma plumbaginoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Eskemukerjea megacarpum HARA</td><td class=org><a href=information.php?mode=r&word=C00006652&key=21 title=Eskemukerjea megacarpum HARA > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Amelanchier turkestanica</td><td class=org><a href=information.php?mode=r&word=C00006652&key=22 title=Amelanchier turkestanica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Chaenomeles speciosa <a href='/KNApSAcK_World/top.php?word=Chaenomeles%20speciosa' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=23 title=Chaenomeles speciosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Malus sylvestris <a href='/KNApSAcK_World/top.php?word=Malus%20sylvestris' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=24 title=Malus sylvestris > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rosaceae</td><td class=org2>Pyrus communis <a href='/KNApSAcK_World/top.php?word=Pyrus%20communis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=25 title=Pyrus communis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Saxifragaceae</td><td class=org2>Saxifraga spp.</td><td class=org><a href=information.php?mode=r&word=C00006652&key=26 title=Saxifraga spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Ternstroemiaceae</td><td class=org2>Visnea mocanera</td><td class=org><a href=information.php?mode=r&word=C00006652&key=27 title=Visnea mocanera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Theaceae</td><td class=org2>Camellia sinensis <a href='/KNApSAcK_World/top.php?word=Camellia%20sinensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00006652&key=28 title=Camellia sinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Theaceae</td><td class=org2>Camellia spp.</td><td class=org><a href=information.php?mode=r&word=C00006652&key=29 title=Camellia spp. > Ref.</a></td>
+</tr>
+</table>
+		     </td>
+                  </tr>
+               </table>
+            </td>
+	    <td class=img>
+<!--		<img src="/sun/MSdata/SD/C00006652.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'"><br><br> -->
+<!-- NBDC Markup START -->
+		<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+		<img property="image" src="/sun/MSdata/SD/C00006652.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'" />
+		</div>
+<!-- NBDC Markup END -->
+		<a href="image.php?word=C00006652" title="C00006652" onclick="window.open(this.href, '_blank', 'width=500,resizable=yes, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">zoom in</a>
+
+		<br><br><br><br>
+                
+
+	    </td>
+        </tr>
+	</table>
+
+
+   </div>
+   </div>
+   <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+   </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07364: 114276755</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767088">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767088">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csin:114276755 -->&gt;csin:114276755 K13083 flavonoid 3',5'-hydroxylase [EC:1.14.14.81] | (RefSeq) flavonoid 3',5'-hydroxylase 1-like (N)
+atggatgaggattggggaagtaaccagccggacgaaacctggtacgtcgacgaggttgat
+catatgacaaggagtggacgatatttcaagcctccacatctagatcagccaaaggcgttt
+gggaaggataaggaagctgaaaaacagaaggggaagctacttgaagatgaggctgtgctc
+aaacagcttaaaaagatacagaacttattcactgctggaaccgatacatcatcaagctca
+atagaatgggcactcgctgaaatgctcaagaatccaaaaatcctcaagcgggcacaccac
+gagatggatcgagtcatcggaaaaaaccggagcctagaggaatccgacctacccaaactc
+tcatacttacaagccatatgcaaggaaacatttagaaagcacccttcaacgcctctgaat
+cttctcagagtctctgctgaagcttgcgaagtgaatggttattacatcccaaaaaacact
+agactcagtatcaacatttgggccataggccgagaccctaatgtgtgggaaaggccatta
+gaattaattcctgagagatttttgattggaaagaaggcaaagactgatccgcgtggaaac
+gattttgagctgattccgtttggtgctaggaggaggatctgtgctggtactagaatgggg
+attgttcttgttaagtacattttaggctctttggttcactctttcgattggaaattggct
+gatgatggagttgagctgtag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csin:114276755+nt">BLAST</a>
+</body>
+</html>

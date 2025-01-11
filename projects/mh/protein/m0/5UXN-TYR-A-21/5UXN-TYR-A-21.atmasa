@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	21	1	16.545	16.545	nan	nan	nan	nan	16.545	16.545	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.749	4.767	6.214
+N	TYR	A	21	2	16.545	16.545	nan	nan	nan	nan	16.545	16.545	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.749	4.767	6.214
+CA	TYR	A	21	3	12.696	12.696	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	12.696	12.696	nan	nan	nan	nan	nan	nan	nan	22.954	4.112	5.760
+C	TYR	A	21	4	38.322	38.322	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	38.322	38.322	nan	nan	nan	nan	nan	nan	nan	22.751	3.685	4.317
+O	TYR	A	21	5	36.420	36.420	nan	nan	nan	nan	36.420	36.420	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.692	3.158	3.980
+CB	TYR	A	21	6	28.803	nan	28.803	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.803	nan	28.803	nan	nan	nan	nan	nan	nan	23.265	2.897	6.645
+CG	TYR	A	21	7	2.702	nan	2.702	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.702	nan	2.702	nan	nan	nan	nan	nan	nan	23.899	3.329	7.966
+CD1	TYR	A	21	8	26.324	nan	26.324	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.324	nan	26.324	nan	nan	nan	nan	nan	nan	25.281	3.622	8.043
+CD2	TYR	A	21	9	23.663	nan	23.663	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.663	nan	23.663	nan	nan	nan	nan	nan	nan	23.120	3.514	9.134
+CE1	TYR	A	21	10	33.815	nan	33.815	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.815	nan	33.815	nan	nan	nan	nan	nan	nan	25.855	4.039	9.223
+CE2	TYR	A	21	11	34.597	nan	34.597	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.597	nan	34.597	nan	nan	nan	nan	nan	nan	23.718	3.916	10.330
+CZ	TYR	A	21	12	10.036	nan	10.036	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.036	nan	10.036	nan	nan	nan	nan	nan	nan	25.078	4.188	10.365
+OH	TYR	A	21	13	43.496	nan	43.496	nan	nan	nan	43.496	nan	43.496	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.699	4.617	11.532

@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07384: 115998400</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641768214">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641768214">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- itr:115998400 -->&gt;itr:115998400 K13269 kaempferol 3-O-beta-D-galactosyltransferase [EC:2.4.1.234] | (RefSeq) kaempferol 3-O-beta-D-galactosyltransferase-like (N)
+atggcgtccacctcagtcgtccaacgccgtcacgttgcggttctagcattcccctttgca
+acccaccccggacttttgttcggcctcgtgcgccgcctagccacccccgcgccgaacacg
+actttcacctttttcagcaccgccaagtcgaacgctaaggtatttgcgacgacctctcaa
+atccccgggaacatccagcgctgcgacgtggccgatggcttgccggagggctacgtgttt
+gccgggaacgtggaggaagagatcggcatgttcctgaagtcggcaccggaaaatttcaag
+acagccgtggcggcagctgatggaaagggggtcgggtgcgtggtggcggatgcgttcctg
+tggttctccggtgaaatggcggcggagatgggggtttcgtgggtgcctgtttggacctcc
+ggtgctgcctcgctcttactccacctctatactgacctcatcagggaaactataggactc
+caaccaggacgtgaagaagaaatcgtgacattcattcctgggttatctgagctacgcctt
+ggcgacatgccgagtggaatcgtgtcggggaacatagactcaccattcgcagtcatgctt
+cacaacatgggtagtgcgttacagaaaaccaccataatccccatcaactccttcgaagaa
+ttggatccacccatcataaaccatctcaaaacaagattctcaaacgtcctaaacatcggt
+cccttcaacctcacatccccacccccctcatccgacaacctagaccgccacaactgcctc
+ccctggctagattctcaacccccaaactcagtggcatatctagccttcgggacagtggca
+accccaccccccaacgagttaaacgccatggctgaagcgctggaacagagcaaaactccg
+tttctttggtcactgggagagaagtttatcacccatctcccagaagggttcttggagagg
+accaaagggtttgggaaaattgtcccatggacacctcaagttaaagtgttgggtcacggt
+tcaatcggagtgttcataaatcacggcgggtggaactcgattctggaaagtattactgcc
+ggggtgcccataatttgtaggccattttttggggatcaccatctaaattcttggatggtt
+gagagggtatggggaattggggtgagggttgatattgggggaggttttaccaagaatgga
+acaatggatgcccttgaattggtcctatcttctgacacggggaaggcattaaagaggcaa
+gttgaagtgtacaaagagcttgtccaaagagctgtagggccaaatggtagctcaacccaa
+agcatcaacacattgttaaatgtcatcagcggtgaaaagtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=itr:115998400+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07260: 120663758</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641766572">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641766572">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvir:120663758 -->&gt;pvir:120663758 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) putrescine hydroxycinnamoyltransferase 1-like (N)
+atggtgatgtattctgacgacgtgcaggtggaggtggtggagagcagcctcgtatccccg
+agccaggggacgccgggaggacaactctggctctcccccctcgacctcctgctcgtcaac
+aggggtcacaccccgaccgtctacttctaccgccccgccgccgccgacttcttcgacgtg
+gcacggctcaaggagtccatggccagagccctggtggacttctacccgctcgccgggcgc
+ctcggcgtcgacgccgacggccgcttcgtcatcgactgcaacgccgcgggcgcgctcctc
+gccgtggctcgctccgaccacctcacggtcgacgacttccgcgacgtcagcccgtcgccc
+gagttgaaggagctcttcgttccccgcgtcgagccgtcctccatcatgctcgccgtacag
+gtcaccttcctcaagtgcggcggggtggccttcgggacggcgctgcaccacgccgccgcc
+gacgccatcggctccttccgtttcttccacgcgtggtcggccctgtgcggcgggcgcgac
+ggcggcggcgccatggcggaaacggagctcccgtgccacgaccgcggcctcctccgcgcg
+cggtcgccgcctttcgtcaacccggacgccttcgccgtgttctgccctaagctaaccctg
+acggagccctcggggcccgtcgccagcaaggtcctcaccgtctccaaggaccacgtcgcc
+gctctcaagcaggcctgcggcggcgtcagcaccttctgcgcgctcagcgcccacgcgtgg
+cggtgcctgtgctccgcgaggggcctgccggcggacgccaccacccgcctcaccctcccg
+gccaacgtccggcgccgcaccaagccgccgctccccgacagctacttcggcaacgcgctc
+atctgggtgggcacgtccggcgtggtgcgcgacgtcacctcggaggcgctggccgatacc
+gccgcccggatcaggggcgccgtccgccggatggacgacgacgtggtgcggtcggccatc
+gactacttcgagctcgcggagaagaacgcccggccgattccgggcagcctgccggagacg
+gagctgagggtgatcagctggctgggcatgcccgtgtacgacgcggactacgggtggggg
+aagccgcagctcatggtgcgcgccgagtcggagcgctcgggcttcgtgtacctgatgaac
+gacgacggcggcggcgtgcaggtggtggtgtgcgcggaggccgcaagcctcaaggaattc
+gagaagctgctgattgcaaagacgatgtgcccatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvir:120663758+nt">BLAST</a>
+</body>
+</html>

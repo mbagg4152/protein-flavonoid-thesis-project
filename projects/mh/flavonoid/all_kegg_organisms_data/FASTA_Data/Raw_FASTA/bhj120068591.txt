@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07258: 120068591</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641769540">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641769540">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- bhj:120068591 -->&gt;bhj:120068591 K00083 cinnamyl-alcohol dehydrogenase [EC:1.1.1.195] | (RefSeq) probable cinnamyl alcohol dehydrogenase 1 (N)
+atgagctctcagaattccgctgaagactgtctcggttgggccgcgagagattcctctggg
+tttctatctccttacaaattcactcgtagggttcctggagatgatgatgtttcaattaca
+ataacacactgcggaatttgttatgcagatgtaatatggacaagaaataaattaggagat
+tcaaaatatcctttggtgcctggacatgagattgcaggaattgtgaaatctgttggctta
+aatgttcaacgatttaaagttggagatcatgttggggtaggaacttatgtaaattcttgc
+agacaatgcgagtactgtgacgattgtcaagaagttagttgcacgagtggatcaactctt
+acttttaattcaactgattttgacggtacaattacaaagggaggatactccaactacata
+gttgttcatgagagatactgctacaaaatacctgacaattatccattagcttcagctgct
+cctttgctttgtgctggaattactgtttattctcccatgattcgacataatatgaatcaa
+cctggtaaatctcttggagtgattgggcttggtggtctcggccacttagctgtgaagttt
+gggaaggcttttggactgaatgtgacagtttttagcactagcatatccaagaaagaagaa
+gccttgagcgttcttggagcagacaaatttgttctctcatctgacaatgagcaaatggag
+gccttgtctaagtctctcgactttattattgatgctgcatctggtgatcatccatttgat
+ccatacatgtctacattgaagattggtggggttatggttctggtagggtttccttctcaa
+gtcaagtttagtcctgcaagccttaatttgggtatgagaaccatttctggtagcgtgact
+ggtggcactaaagtgacccaagaaatgatcgatttctgtgctgctcatggaatctatcca
+aacatagaagtgattccaattcagtactctaatgaagctatcggaagggtaacgaagaat
+gatgtgaagtaccgatttgttattgatatcgaaggctctctaaaatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=bhj:120068591+nt">BLAST</a>
+</body>
+</html>

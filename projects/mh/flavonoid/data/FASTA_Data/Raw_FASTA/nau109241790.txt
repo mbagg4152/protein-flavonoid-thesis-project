@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05870: 109241790</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620857302">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620857302">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- nau:109241790 -->&gt;nau:109241790 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 41-like (N)
+atggcttggccattacttctcttgttgttttcatctttagctttttcacatgcacagctc
+acattagactattatgccaaaacatgtccacaatttgatgctatagtgagggacatcacc
+caacaaaagcaaatgcaattccccaccaccgcggccgctacccttcgagtctttttccac
+gactgtgctgttgatggatgtgatgcctccatccttatcaagcccacctccttcaacaaa
+cccgagctcgaatacgacatcaatcaatccctagcaggcgatgcgttcgacctcatcacg
+cgcatcaagaccgccctcgagctagcatgccctggcgtcgtatcctgtgccgatgtttta
+gcgactgccacgcggaatctcatcgtccagactggtggaccccactataaagttccactt
+ggtcgaaaggacagtctagtttctaacgtttcaaacgtggaagcacacctgacacgtgcg
+aacgcgaccgtggacctaatgatcaagaaattccaacttatgggcattgatgttaaagat
+atggttgtgttaattggtggtggacacactattggatttgttcattgtaaggagtttgca
+aaccgaattttccccacccctgacccaacaatgaatccaatattagttgagagattaaga
+acaatgtgtgcaaattatacaaataacaaagacatggctgctttcctagatgtgatatct
+cctggaaatttcgacaatgtgttgttcaagaatttaatgaagggaattggagtcctaggt
+tcagaccaattactttataatgatcccaggacaaggccatttgttgaattatatgctaaa
+gatagcaatgcttttgctactgattttgctgttgcaatggagaaactaagtgtatatcaa
+gtcaagattggtaatcaaggagaggtgaggaagagatgtgatgctgttaataatgctcac
+gcttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=nau:109241790+nt">BLAST</a>
+</body>
+</html>

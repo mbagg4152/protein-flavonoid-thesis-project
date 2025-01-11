@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	270	1	21.572	21.572	nan	nan	nan	nan	21.572	21.572	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-98.230	8.626	4.953
+N	TYR	B	270	2	21.572	21.572	nan	nan	nan	nan	21.572	21.572	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-98.230	8.626	4.953
+CA	TYR	B	270	3	9.803	9.803	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.803	9.803	nan	nan	nan	nan	nan	nan	nan	-97.504	8.219	6.153
+C	TYR	B	270	4	34.040	34.040	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.040	34.040	nan	nan	nan	nan	nan	nan	nan	-95.995	8.258	5.935
+O	TYR	B	270	5	41.694	41.694	nan	nan	nan	nan	41.694	41.694	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-95.249	8.748	6.790
+CB	TYR	B	270	6	28.001	nan	28.001	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.001	nan	28.001	nan	nan	nan	nan	nan	nan	-97.923	6.812	6.583
+CG	TYR	B	270	7	4.191	nan	4.191	nan	nan	nan	nan	nan	nan	nan	nan	nan	4.191	nan	4.191	nan	nan	nan	nan	nan	nan	-99.201	6.707	7.392
+CD1	TYR	B	270	8	18.200	nan	18.200	nan	nan	nan	nan	nan	nan	nan	nan	nan	18.200	nan	18.200	nan	nan	nan	nan	nan	nan	-100.034	7.799	7.578
+CD2	TYR	B	270	9	29.400	nan	29.400	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.400	nan	29.400	nan	nan	nan	nan	nan	nan	-99.562	5.499	7.982
+CE1	TYR	B	270	10	34.339	nan	34.339	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.339	nan	34.339	nan	nan	nan	nan	nan	nan	-101.200	7.685	8.323
+CE2	TYR	B	270	11	34.214	nan	34.214	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.214	nan	34.214	nan	nan	nan	nan	nan	nan	-100.723	5.376	8.724
+CZ	TYR	B	270	12	9.977	nan	9.977	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.977	nan	9.977	nan	nan	nan	nan	nan	nan	-101.537	6.470	8.895
+OH	TYR	B	270	13	43.326	nan	43.326	nan	nan	nan	43.326	nan	43.326	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-102.692	6.347	9.636

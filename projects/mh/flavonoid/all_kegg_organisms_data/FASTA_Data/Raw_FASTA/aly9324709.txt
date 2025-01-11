@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01578: 9324709</title>
+<<<<<<< Updated upstream
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620835617">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620835617">
+=======
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849122">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849122">
+>>>>>>> Stashed changes
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aly:9324709 -->&gt;aly:9324709 K00588 caffeoyl-CoA O-methyltransferase [EC:2.1.1.104] | (RefSeq) tapetum-specific methyltransferase 1 (N)
+atggatggtcgattacctgacaaagggattctcaagagcgaggctcttaaacagtacatt
+atggaaacgacagcgtatccaagagagcacgcattgcttaaagaacttcgagaagctaca
+atccaaagatatggcaatttaagcgagatgggggttccggttgatgaaagtctatttcta
+tcgatgcttgtaaagatcatcaatgcgaaaaacactatcgagatcggtgtgttcacgggt
+tactcacttttcaccgtagctcttgctttgcctgaagatggccgtattactgcgatagac
+attgaccaagcaggttacaatttggggctagagtttatgaagaaagcaggtgttgatcac
+aagatcaatttcattcaatctgatgctgttagaggcttagaccaattattgaacggggag
+aaacaagagtatgattttgcatttgtggatgctgacaagacgaattacgtttacttcctt
+gagaagctgcttaagttagtgaaggttggaggaatcattgcgttcgataacaccttatgg
+tttggtactctaattcaaaaggaaaacgaagttccaagccatatgagagcttatagagaa
+gcacttttagagttcaacaagattttggctcgagatcctcgagtcgaaatcgctcagata
+tccatcggagatggtctcacattatgcagacgccttatatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aly:9324709+nt">BLAST</a>
+</body>
+</html>

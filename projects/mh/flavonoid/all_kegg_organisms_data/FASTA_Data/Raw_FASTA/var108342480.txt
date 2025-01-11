@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04660: 108342480</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847327">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847327">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- var:108342480 -->&gt;var:108342480 K13267 flavonoid 6-hydroxylase [EC:1.14.13.-] | (RefSeq) cytochrome P450 71D9-like (N)
+atggatcttcaaaccttctacttcatatccattctcatttttatgtttattgcacacaaa
+ataataacaaagaagtctgcctcaactccaaatttgccaccagggccgtggaggctacca
+atcatagggaacatacacaacctcgttggctcacttccccatcgtagactgagagattta
+tcagcaaaatatggacccttgatgcatctgaagcttggagaggtttgtaccattgtggtt
+tcatctgcagagtgtgctaaagaagtgttaaaaacccatgatcttatctttgcatcaagg
+cctccaatactagcttcaaagataatgtcttatgattctatgggcattgctttttctcct
+tatggtgattattggagacagctaaggaagatttgtgcgttggagttattaagctcgaaa
+cgtgtccaatctttccagccaatcagagaggaagagctcactaaattcatcaaaagaatt
+gcttcaagagaagggtcacccatcaatctcaccaaagaaatccttacaacaatatctaca
+attgttgcaaggacagcccttggaagcaagtgtagggaccatcaaaagttcatatcagct
+gtaaggaaagccacagaggttgctggaggttttgacttgggagatttgtacccttctgcc
+ggatggcttcagaacatctcagggttgaagtctaagattgaacagtatcatcaacaaact
+gatcagataatgcagaggatcgtggatgatcacagagaggctaagttaagtgttgcacaa
+ggccagggtgaacaagtggaggatgatcttgtagatgtgctcatgaaggaggagtttggc
+ttaagtgacaatggtatcaaggcggtgattttggatatctatggaggggggagtgagaca
+tcatctactaccataacatgggcaatggcagagataataaaagatgcaagagtaatgaag
+aaggtacaagctgaggtaagagaggtatttggtaaagaaggacagcctgaggaaagtgac
+atggagaatctaaaatatttgaaatgtgttgtgaaagagacattgagattgcaccctcct
+ggtccccttctacttccaagagagtgtggagaagcttgtgagataaaagggtatgagata
+ccaatgaaaagcaagatcattatcaatgcttgggccattggaagagacccaaatcattgg
+actgaggcagagaggttttatccagacaggttcattgaaagtggtgttgactacaaaggc
+aataattttgagtatattccatttggagctggaagaagaatgtgcccaggccttacattt
+ggcttgaccactgttgagtttcctcttgcattgttaatgtaccattttgattggaaagtt
+cccaatggaattaagaatgaagatttggatatgactgaggcttttggaatatccgttggt
+agaaaacatgatttgcaactaattcctgtcactttccgtccttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=var:108342480+nt">BLAST</a>
+</body>
+</html>

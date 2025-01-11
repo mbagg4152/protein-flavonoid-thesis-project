@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07386: 116106555</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767635">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767635">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvy:116106555 -->&gt;pvy:116106555 K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) polyketide synthase 5-like (N)
+atggttagcgtggatcaaattcgcaaggctcaacgtgctgaaggcactgcctcaatcctt
+gcaatcggaacagcgaatcctccaagttatttcgatcaaagcaaatttccagacagttat
+ttcaatatgaccaatagccagcacatgacagaacttaaaaagaaaatgcagcgcatgtgt
+gataaaaccatgataaaaaaacgacacatgtatgtaacgaacgagtttgtgaaagagaac
+ccgtatttgcgtgaatacagtatgccttcattggatgctagacaagataaagctgctata
+ctaatatcagagctgggcaaagaagccgcgaataaggcattagaggaatggggccaaccc
+aagtccaaaatcactcacttaatttgttgtaccactatgggtgcattcttacctgggatt
+gactatagaattgtcaagctattaggccttgacttatctattaagcgaatcatgttgtat
+caacaaggttgtaatggaggtggcactgtactacgaatagccaaagacctagctgagaac
+aataaaggtgcacgtgtcctcattgtggtctctgaggtaactttggttggcatgcatggc
+cctagtgagactgatgttgatgttcttgttagccactccttgtttggtgatggctcggct
+gctcttatagttggtgcagatcctgtgcctagtgttgaaaatcccatctttgaactagtt
+tctacagccccaatattactgcctgatagccctgaggctatttctggagctatccgtgag
+agtgggctcttaattcatattgggaaggaagttcccgaacttatcgcaaataacattgag
+aagagactgattgaggtattcaaacctctaggtatttctgattggaactcaatcttttgg
+gctgcacatcctggcggacctgcaattttggaccaaattcaagccaagctaagtcttaac
+ccagagaagttacgtgcaactagacatgtgcttggtgagtatggtaacatgtcaagtgta
+actgtactatttgttttggatgagatgagaaagaaatcagctaaagatggactcaagacc
+acaggagaaggattggaatggggagtgctttttggatttggtccaggacttactattgaa
+accttgctccttcacagtgtcaatgttgcttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvy:116106555+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05758: 113347460</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620855798">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620855798">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- psom:113347460 -->&gt;psom:113347460 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) salutaridinol 7-O-acetyltransferase-like (N)
+atgataaaggtggaagtgacttcgacagagatcattaaaccatcatctccaacaccagat
+caccttcgaacctacaaactttcccgctatgatcaaacctacagtttagtttatgttccc
+atcatcctcttttacggtcctacagatggtggtaatgatgattacctcaaaagatccgtc
+cggctaaagaaatctctgtcagacaccttgaccagctactatccggtagctggaaggatt
+aaagatgacaagaatatgtccatagaatgtacagatgagggcgttacctatatcgaagca
+cgggtacaaggtaacatttccgattttatgaaccgggatgcaattcagcatctcctacct
+catgatctccattctaaaagtttactaacggataacgaacctctattaattgttcaagtc
+aactcttttgattgtaatagaatagcaatttgtatctgtatgtcgcataagattgcagat
+gcaacaacttttgtcacattcatcaatagttgggctttagccgcccgggggtacacctct
+gaatcaactgcggttctaccgacgtttgatttgtcgtctctgtaccctccagtaaatgga
+ctcaacttcatgggatcaaatgatcaacagattgtttctaccaagaggcttgtttttgat
+gcctccaaaatagcactgctaagaaccaagtacaaagacccatcaaatggagagtaccca
+acacgggtacaggcggtttctgcattaatatggaaggccgcaatagctgcaagttcttcc
+cctagacaaagtatatcaacccatgctgtaaacatgagggcaagagcagaaccaccattg
+cctcaccaatcatttggaaatcttgccatactggtggtatcacaaccttcgagaaaggaa
+agtgaaggggcagagttggctggtctcatgaaggattccataagaaaaatcaactgtgag
+tatacaaaggctatgaaaggcgaggaaggatactcgaagttccaagagtcaatggcagtg
+tcgtttgcaggatttatgaagaatgacgcttacttttttagtagctggtgtaagatacca
+ttatatgaagcagactttgggtgggggaagccagtttgggcgagtgttgtcatgctgcca
+tacaagaatataatcgttctgatggataacaaagctggagatggaattgaagcgtgtgtc
+agcttggataaagaagagatgacgctgtttgaacgcaaccaagaactccttgattttgtc
+agtttttcagactga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=psom:113347460+nt">BLAST</a>
+</body>
+</html>

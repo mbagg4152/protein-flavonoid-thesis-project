@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07627: 121743041</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641766021">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641766021">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sspl:121743041 -->&gt;sspl:121743041 K01859 chalcone isomerase [EC:5.5.1.6] | (RefSeq) chalcone isomerase-like protein 2 (N)
+atgggtagtaatgatgctgtgatggtggatgaagtttcatttcctgcacaaatatccatc
+accaagccattgcctttagtggctcatggaattacggacattgagatacacttcctacag
+ataaagtttacagcaattggagtttacattgacccagaaattggggcccacctccaaaaa
+tggaaaggcaagtcacccgccgacttagccgaagacgatgacttcttcgacgccctagtt
+tccgctccggtggagaaattagtgcgtgtggttgtgattaaggagataaaagggtcacaa
+tacggagtgcagttggagaattctgttagggaccgtttgtctgaagaggataagttcgag
+gaagaagaggaagaagctttggagcaagttgttcatttcttccaatctaaatatttcaat
+caccattcagttataacattttatttcccacctactgccgctcaaactgttgagattgta
+tttacaacggatggaaatgaagagtcgaagatggaggtgaagaacgcaaacgtggcggag
+atgatacagaaatggtacttgggtggaagccgcggagtgtctccgaccaccgtcacctcc
+ttggccgcggctctctccgccgagttatccaaatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sspl:121743041+nt">BLAST</a>
+</body>
+</html>

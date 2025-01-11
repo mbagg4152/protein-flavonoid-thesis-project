@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05101: 110886674</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620839718">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620839718">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- han:110886674 -->&gt;han:110886674 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 17 (N)
+atgcatcctctttataataaagttaaaaacacactacacaaaaccctcccttcaaaacct
+tttctgggaataatgtgtctcctcctcctccccttcatcatcttcctccacctccttccg
+gccaccatcccttccgcagcaccaccgctccacccgggttactacgccaattcttgccca
+aatgccgaactcatcgtccgaaacgtcatgaaaaaggccatgatccgagaaccccgaagc
+ggagcttccgtcatgcgatttcaattccatgattgtttcgttaacggatgtgatggatcg
+atgttgttggatgatactccaacgatgctcggagagaagctatctttgtcgaacatagat
+tcgttgcgatcgtacgaggttgtcgatgaaatcaaggaagcacttgagacggcctgcccc
+cggactgtttcttgtgcggatatcattatcatggcctctagggatgccgtcgctctgagt
+ggaggtccggattgggaagtgaagctgggaagaaaagatagcctaaccgcaagtcaagag
+gatgccgatgccataatgcctagtccgcgagcgaacgcaaccaccctcatcgatctcttt
+gccaaatttgacctctcggtcaaagatttagtagccctttcgggctcacactcgattggt
+aacgggcgttgtttctccattgtgtttaggctctacaatcaatcaggcacaggccgccca
+gacccctccatcgagccaaagtttagacaaaagttagacaaactttgcccacttggtggt
+gatgggaatgtcacaggcgatttggactttacgcctcgcatcttcgacaatcaatatttc
+aaagatttggtaaatggaagagggtttttgaattctgatgaaacattgtacacttattgg
+aaaacaagagagtatgttaaaaggtatagtgaggatcaagatgagttctttagggacttt
+gttgaggggatgattaagatgggcgacttacaatcggggcggcccggggagattcggaag
+aattgtagggtggtcaacggtggtccaccgatggacttggtggtggatggatataaagat
+aggaggatattgagttattag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=han:110886674+nt">BLAST</a>
+</body>
+</html>

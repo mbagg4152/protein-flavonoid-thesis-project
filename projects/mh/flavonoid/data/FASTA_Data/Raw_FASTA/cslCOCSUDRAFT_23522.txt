@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02914: COCSUDRAFT_23522</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620848805">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620848805">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csl:COCSUDRAFT_23522 -->&gt;csl:COCSUDRAFT_23522 K11188 peroxiredoxin 6 [EC:1.11.1.7 1.11.1.27 3.1.1.-] | (RefSeq) glutathione peroxidase (N)
+atgtgcaacgttccttccggtgccgaggcctacggtagcctgtatgctgctagcagttcc
+gacggggtgctgcgcttgggcaacatcgtccctgacttcacggcagacaccactcatgga
+cccatgaagtttcacgagtggatcgatggatcctgggcaatcctcttctcgcacccggct
+gacttcactcccgtctgcaccacagagattggtcgtctggccctgaagtacgacgagctg
+aagtcaaagggggtcaagctggcaaccctgtcctgtgacccggttgaatcccatacgaag
+tggctggacgatgttgtggcgcactgtgagaacaaggtcaccatcgacttccccattatc
+gcagaccccacgcgcgagattgctgtgaagtatggcatgattgaccctgagctgaaggac
+aaggagggtctgcccctgacctgccgcgctgtcttcatcattggccccgacaagaagctg
+aagctgtctttgaactacccggcgtccgtgggccgcaacatggacgagatcactcgcgtc
+atcgatgccctgcagctctcagccaaatactctgtggcgacgccggcaaactggcccaac
+aaccacgagagcatcggcaagaagggacaggccttcctgctgcccacagtgacgcccgag
+gacgccaaaaagtacttccccaaccacacctcctgcctcgttccttctggcatcgattat
+ttgagattaactcccatcgagaacctgtctaccaagtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csl:COCSUDRAFT_23522+nt">BLAST</a>
+</body>
+</html>

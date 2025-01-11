@@ -1,0 +1,79 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Lactuca sativa</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body 0="" onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Lactuca sativa</font><br><br>
+   	      Number of matched data :32 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00000001 target="_blank">C00000001</a></td><td class="d1">545-97-1</td><td class="d1">Gibberellin A1</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000003 target="_blank">C00000003</a></td><td class="d1">77-06-5</td><td class="d1">Gibberellin A3</td><td class="d1">C19H22O6</td><td class="d1">346.14163844</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000005 target="_blank">C00000005</a></td><td class="d1">561-56-8</td><td class="d1">Gibberellin A5</td><td class="d1">C19H22O5</td><td class="d1">330.14672381</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000008 target="_blank">C00000008</a></td><td class="d1">7044-72-6</td><td class="d1">Gibberellin A8</td><td class="d1">C19H24O7</td><td class="d1">364.15220312</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000019 target="_blank">C00000019</a></td><td class="d1">6980-44-5</td><td class="d1">Gibberellin A19</td><td class="d1">C20H26O6</td><td class="d1">362.17293856</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000020 target="_blank">C00000020</a></td><td class="d1">19143-87-4</td><td class="d1">Gibberellin A20</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000029 target="_blank">C00000029</a></td><td class="d1">29774-53-6</td><td class="d1">Gibberellin A29</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000053 target="_blank">C00000053</a></td><td class="d1">51576-08-0</td><td class="d1">Gibberellin A53</td><td class="d1">C20H28O5</td><td class="d1">348.193674</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000077 target="_blank">C00000077</a></td><td class="d1">128230-24-0</td><td class="d1">Gibberellin A77</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002723 target="_blank">C00002723</a></td><td class="d1">70831-56-0</td><td class="d1">Chicoric acid</td><td class="d1">C22H18O12</td><td class="d1">474.07982604</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002736 target="_blank">C00002736</a></td><td class="d1">2305-13-7</td><td class="d1">Dihydroconiferyl alcohol</td><td class="d1">C10H14O3</td><td class="d1">182.09429431</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003311 target="_blank">C00003311</a></td><td class="d1">1891-29-8</td><td class="d1">Lactucin</td><td class="d1">C15H16O5</td><td class="d1">276.09977362</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003312 target="_blank">C00003312</a></td><td class="d1">65725-11-3</td><td class="d1">Lactucopicrin</td><td class="d1">C23H22O7</td><td class="d1">410.13655306</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font> L.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003775 target="_blank">C00003775</a></td><td class="d1">78306-12-4</td><td class="d1">Lactucaxanthin</td><td class="d1">C40H56O2</td><td class="d1">568.42803103</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006796 target="_blank">C00006796</a></td><td class="d1">94977-38-5</td><td class="d1">Cyanidin 3-(6''-malonylglucoside)</td><td class="d1">C24H23O14</td><td class="d1">535.10878045</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00012170 target="_blank">C00012170</a></td><td class="d1">125514-73-0</td><td class="d1">Melampolide</td><td class="d1">C15H20O2</td><td class="d1">232.14632988</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font> L.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00013883 target="_blank">C00013883</a></td><td class="d1">194093-39-5</td><td class="d1">Quercetin 3-(6''-malonylglucoside)-7-glucoside</td><td class="d1">C30H32O20</td><td class="d1">712.14869347</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00020807 target="_blank">C00020807</a></td><td class="d1">7726-34-3</td><td class="d1">Jacquinelin</td><td class="d1">C15H18O4</td><td class="d1">262.12050906</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00020808 target="_blank">C00020808</a></td><td class="d1">101921-35-1</td><td class="d1">Crepidiaside B</td><td class="d1">C21H28O9</td><td class="d1">424.17333249</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00020809 target="_blank">C00020809</a></td><td class="d1">101921-36-2</td><td class="d1">Crepidiaside A</td><td class="d1">C21H26O9</td><td class="d1">422.15768243</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00020829 target="_blank">C00020829</a></td><td class="d1">97915-46-3</td><td class="d1">Lettucenin A</td><td class="d1">C15H12O3</td><td class="d1">240.07864425</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00022813 target="_blank">C00022813</a></td><td class="d1">472-89-9</td><td class="d1">epsilon, epsilon-carotene</td><td class="d1">C40H56</td><td class="d1">536.43820179</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00029376 target="_blank">C00029376</a></td><td class="d1">111588-31-9</td><td class="d1">11beta,13-Dihydrolactucin</td><td class="d1">C15H18O5</td><td class="d1">278.11542369</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font> L.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00033530 target="_blank">C00033530</a></td><td class="d1">303130-77-0</td><td class="d1">15-Deoxylactucin-8-sulfate</td><td class="d1">C15H16O7S</td><td class="d1">340.0616736</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font> L.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00033534 target="_blank">C00033534</a></td><td class="d1">303130-78-1</td><td class="d1">15-p-Hydroxyphenylacetyl-lactucin-8-sulfate</td><td class="d1">C23H22O10S</td><td class="d1">490.09336765</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font> L.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00034017 target="_blank">C00034017</a></td><td class="d1">303130-76-9</td><td class="d1">Lactucin-15-oxalate</td><td class="d1">C17H16O8</td><td class="d1">348.08451749</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font> L.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00034018 target="_blank">C00034018</a></td><td class="d1">303130-75-8</td><td class="d1">Lactucopicrin-15-oxalate</td><td class="d1">C25H22O10</td><td class="d1">482.12129692</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font> L.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00034019 target="_blank">C00034019</a></td><td class="d1">112408-66-9</td><td class="d1">Lactuside C</td><td class="d1">C21H28O9</td><td class="d1">424.17333249</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font> L.</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00034082 target="_blank">C00034082</a></td><td class="d1">313368-55-7</td><td class="d1">Notoserolide A</td><td class="d1">C21H28O9</td><td class="d1">424.17333249</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00034361 target="_blank">C00034361</a></td><td class="d1">74635-52-2</td><td class="d1">11,13-Dehydrodesacetylmatricarin</td><td class="d1">C15H16O4</td><td class="d1">260.104859</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056356 target="_blank">C00056356</a></td><td class="d1">102518-83-2</td><td class="d1">3,14-Dihydroxy-11,13-dihydrocostunolide</td><td class="d1">C15H22O4</td><td class="d1">266.15180919</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00056539 target="_blank">C00056539</a></td><td class="d1">1166-98-9</td><td class="d1">3-Epigibberellin A1</td><td class="d1">C19H24O6</td><td class="d1">348.1572885</td><td class="d1"><font color=#FF00BF>Lactuca sativa</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02990: 18429888</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620845306">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620845306">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- atr:18429888 -->&gt;atr:18429888 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase-like (N)
+atgcagcatcacgtggctgatggagcctctggcctccattttatcaatgcgtggtcagac
+ctcacccgtggcctacccctctccgaacctcaccctttcatcgatcgcaccctcctccgt
+gcccgcgaccccccaactccccttttctcccacattgaataccaacccccacctccaatg
+aaaagacccccctccgaacccccttcttccccatctgtcgccatcttcaccctcacccgt
+gcacagcttgatacattgaagtctcgtgccagggactccggcagcccttccacatacagc
+tcatatgagatgttagcaggccacgtgtggcggtgctcatgcaaggcgcgaaacctccct
+gatgatcagcttacaaagatgtacattgccaccgatggtcgctccagattgaggccgctt
+ctgcctgcaggatactttgggaatgtgattttcactgcaacaccgatcgccgtcgccggc
+gacttgatgtcaaggccggcttacgtagctgccggctgcatacgtcaggcattggcgagg
+atggatgatgattatctccgatcggcattggattatctcgaaatccagcctgatttgggg
+gccctggtaagaggagcccacacatttaggtgccccaacattgggatcactagttgggca
+aggttgccaatacatgatgctgattttgggtgggggaggcctgtgttcatggggcctggg
+ggaattgcttatgaggggttggcctttgtgttgcccagccctagtggtgatgggagtcta
+tctttggcaatttcattgcaggctgatcatatggtgcttttcaagaagtatttctatgat
+atatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=atr:18429888+nt">BLAST</a>
+</body>
+</html>

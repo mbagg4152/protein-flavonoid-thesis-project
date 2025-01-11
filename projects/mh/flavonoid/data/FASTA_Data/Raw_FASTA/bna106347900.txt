@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04128: 106347900</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620851053">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620851053">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- bna:106347900 -->&gt;bna:106347900 K05350 beta-glucosidase [EC:3.2.1.21] | (RefSeq) LOW QUALITY PROTEIN: beta-glucosidase 47 (N)
+atggagacaaaaccatcaatgtacctttctctcatatcattctggttcctctgcttcacc
+atcaccatcataaccttggcttcatcatcgtcaacatggtatgatgatcatatctcactg
+agagaggtaagccaagaagaaaatttcaattttggaaaagactttctctttggcactgct
+tcttctgcttaccagtatgagggagcttacttaaccggcggcaaaaccctaagcaattgg
+gatgttttcacaagcatctctggaaaaatcgcagatggaagccaaggcaaagtctctgtc
+gaccattaccatcgatatccgggagacttggatctgatggaagatcttggagttaatagc
+tatcgcttttctttatcgtgggctcggattcttccaaagggaagatttggagatgtgaac
+atggaaggtattaatcattacaacagaatgatcaatgctattctcaaaagagggatggag
+ccatttgtcacgttgacacattatgacatgcctcaagaactcgaatgtagatacggaagt
+tggctaaaaccgcaaatccgggaagatttcgaacattacgcagagatatgcttccgacac
+tttgggaatagagttaagttctggactacgtttaacgaatcgaacgttcaagtgattttg
+ggttatcgtaaagggacttacccgccatcacgttgttccaaaactttcgcaaactgcaca
+cgtggcggttccgacatagagccacttgtcgctgctcataatatcatccgctcacatttt
+gccgcggtcagcttataccgggaaagatttcaggaacaaggaggaaagatcggtattgtt
+atgaacgcgatctggtttgaaccggttagtgactctttagcagatagtttagctgctgag
+agagctcaagctttctacttgacttggttcttagacccgattgtgtttggaagatatcca
+agagaaatgcaataaattcttggacaagatcttccgaagtttacgagggatgatcttaaa
+agctcaaagaatggattagacttcattgggattaatcagtacacaagcagatacgctaaa
+gattgtctgcactcagtatgtgaaccgggcaaaggaggttccagagctgaaggtttcgtc
+cattcaaacgctcttaaagacggtttacctttaggagaaccgaccggagtaaactggttt
+aatgtttatcctcaaggaatggaagaaatgttgatgtatgcaacagagcgatacagaaac
+attccattgtatgtaacagaaaatggtaaggatgtgccgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=bna:106347900+nt">BLAST</a>
+</body>
+</html>

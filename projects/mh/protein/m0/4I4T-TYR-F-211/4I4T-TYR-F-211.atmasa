@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	F	211	1	26.413	26.413	nan	nan	nan	nan	26.413	26.413	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-1.180	68.681	80.029
+N	TYR	F	211	2	26.413	26.413	nan	nan	nan	nan	26.413	26.413	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-1.180	68.681	80.029
+CA	TYR	F	211	3	10.453	10.453	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.453	10.453	nan	nan	nan	nan	nan	nan	nan	-0.908	68.712	81.471
+C	TYR	F	211	4	38.771	38.771	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	38.771	38.771	nan	nan	nan	nan	nan	nan	nan	-2.180	68.633	82.300
+O	TYR	F	211	5	27.874	27.874	nan	nan	nan	nan	27.874	27.874	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-2.253	69.191	83.405
+CB	TYR	F	211	6	28.838	nan	28.838	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.838	nan	28.838	nan	nan	nan	nan	nan	nan	-0.060	69.935	81.868
+CG	TYR	F	211	7	2.486	nan	2.486	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.486	nan	2.486	nan	nan	nan	nan	nan	nan	0.997	69.573	82.886
+CD1	TYR	F	211	8	26.066	nan	26.066	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.066	nan	26.066	nan	nan	nan	nan	nan	nan	2.205	68.999	82.493
+CD2	TYR	F	211	9	19.813	nan	19.813	nan	nan	nan	nan	nan	nan	nan	nan	nan	19.813	nan	19.813	nan	nan	nan	nan	nan	nan	0.782	69.783	84.244
+CE1	TYR	F	211	10	34.322	nan	34.322	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.322	nan	34.322	nan	nan	nan	nan	nan	nan	3.169	68.648	83.428
+CE2	TYR	F	211	11	34.297	nan	34.297	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.297	nan	34.297	nan	nan	nan	nan	nan	nan	1.738	69.434	85.185
+CZ	TYR	F	211	12	10.002	nan	10.002	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.002	nan	10.002	nan	nan	nan	nan	nan	nan	2.928	68.874	84.772
+OH	TYR	F	211	13	43.202	nan	43.202	nan	nan	nan	43.202	nan	43.202	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	3.883	68.528	85.698

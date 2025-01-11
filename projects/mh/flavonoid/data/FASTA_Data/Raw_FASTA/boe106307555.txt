@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04124: 106307555</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620859881">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620859881">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- boe:106307555 -->&gt;boe:106307555 K00475 naringenin 3-dioxygenase [EC:1.14.11.9] | (RefSeq) naringenin,2-oxoglutarate 3-dioxygenase (N)
+atggctccaggaactctaactgagcttgccggagagactaagctcaactctaagtttgtc
+cgggacgaggacgaacgtcccaaggttgcctacaatgagtttagcacggagatccccgtg
+atctctctcgccggaatcgacgatgttggtgagaaaagaggagagatctgtcgacagatc
+gttgaggcttgtgagaactggggtgtttttcaggtggtcgatcatggaatggatactagt
+ttggtggccgatatgactcgtctcgctcgagacttcttcgccttacctcctgaggagaaa
+ctcaagttcgacatgtctggtggtaaaaagggaggattcattgtctctagtcatcttcag
+ggagagtctgttcaagattggagagagatcgtgacgtatttctcgtacccggtgagaaac
+agagactactcacggtggccgactaagccggaaggatgggtgaaagtgacggaggagtac
+agcgagaggctgatgggtttggcttgtaaacttcttgaggttttgtctgaagctatgggg
+ctcgagaaagaggcactcaccaatgcatgcgtcgatatggaccagaaaatagttgttaac
+tattacccaaaatgccctcagcctgatctaaccctcggactcaagcgtcacactgaccct
+ggaaccatcactttgctgctccaagaccaagttggtggtttacaagccacacgagacggt
+gggaagacatggattacagttcagcctgttgaaggagcttttgttgttaatcttggcgac
+catggtcactatctgagcaacgggaggttcaagaacgctgaccaccaggcagtggtgaac
+tccaactcgagcagactatcaatagccacgttccagaatccggcgccggaagcaaccgtg
+tatccgcttaaagtgagagaaggagagaagccgatcttggaggagccaattacgtttgcg
+gagatgtataagagaaagatgagtagagatctcgagctggctcgcctcaagaagctggcg
+aaagaagagcatgaccacaaggaagctgccaagcctctagaccaaatcatcgcttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=boe:106307555+nt">BLAST</a>
+</body>
+</html>

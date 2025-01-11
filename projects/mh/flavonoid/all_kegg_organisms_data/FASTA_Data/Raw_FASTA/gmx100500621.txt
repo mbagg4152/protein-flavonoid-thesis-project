@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01710: 100500621</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1632839485">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1632839485">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- gmx:100500621 -->&gt;gmx:100500621 K25075 pterocarpan synthase [EC:4.2.1.139] | (RefSeq) PTS1; pterocarpan synthase 1 precursor (N)
+atggccaaatccactttctttgtctgccttaacctttcattactcttctctctagtcaca
+gccacttactactcaagtttaaccccaacacttttgggttttcgcgaggagcagttcacc
+cacctccacttcttcttccatgatgtcgtgacaggcccaaagcccagcatggtgtttatc
+gccgagcccaacgggaaagcgaaggatgcccttccgttcggaaccgttgtggcgatggac
+gaccctttaaccgtggggcccgaacaggactcgaaacttgtgggcaaggcccaaggaatt
+tacacttcaatatcgcaagaagagatgggactaatgatggtgatgacgatggcattcacc
+gatggagatttcaacggcagcaccatcagcgtgttggggaggaacatgatcatgagtgaa
+cctgttagggaaatggctattgttggcggcactggggcttttcgttttgcacgtggctac
+gctcaagccagattttactctgttgatttcaccaaaggagacgctatcgtggaatacgac
+gtattcgtgaaccattattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=gmx:100500621+nt">BLAST</a>
+</body>
+</html>

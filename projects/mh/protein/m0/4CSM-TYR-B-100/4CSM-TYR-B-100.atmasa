@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	100	1	17.893	17.893	nan	nan	nan	nan	17.893	17.893	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	17.130	13.425	-22.231
+N	TYR	B	100	2	17.893	17.893	nan	nan	nan	nan	17.893	17.893	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	17.130	13.425	-22.231
+CA	TYR	B	100	3	14.299	14.299	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	14.299	14.299	nan	nan	nan	nan	nan	nan	nan	18.449	14.073	-22.259
+C	TYR	B	100	4	37.898	37.898	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.898	37.898	nan	nan	nan	nan	nan	nan	nan	19.407	13.346	-23.185
+O	TYR	B	100	5	36.387	36.387	nan	nan	nan	nan	36.387	36.387	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	19.570	12.134	-23.084
+CB	TYR	B	100	6	25.767	nan	25.767	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.767	nan	25.767	nan	nan	nan	nan	nan	nan	19.100	14.079	-20.866
+CG	TYR	B	100	7	2.095	nan	2.095	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.095	nan	2.095	nan	nan	nan	nan	nan	nan	18.376	14.851	-19.776
+CD1	TYR	B	100	8	25.866	nan	25.866	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.866	nan	25.866	nan	nan	nan	nan	nan	nan	18.377	16.246	-19.765
+CD2	TYR	B	100	9	25.035	nan	25.035	nan	nan	nan	nan	nan	nan	nan	nan	nan	25.035	nan	25.035	nan	nan	nan	nan	nan	nan	17.713	14.184	-18.737
+CE1	TYR	B	100	10	34.306	nan	34.306	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.306	nan	34.306	nan	nan	nan	nan	nan	nan	17.732	16.964	-18.750
+CE2	TYR	B	100	11	34.588	nan	34.588	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.588	nan	34.588	nan	nan	nan	nan	nan	nan	17.066	14.891	-17.717
+CZ	TYR	B	100	12	10.144	nan	10.144	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.144	nan	10.144	nan	nan	nan	nan	nan	nan	17.079	16.282	-17.730
+OH	TYR	B	100	13	43.418	nan	43.418	nan	nan	nan	43.418	nan	43.418	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	16.419	17.002	-16.752

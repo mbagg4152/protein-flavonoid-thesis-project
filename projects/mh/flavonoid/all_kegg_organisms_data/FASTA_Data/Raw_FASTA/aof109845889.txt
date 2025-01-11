@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05243: 109845889</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620855834">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620855834">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aof:109845889 -->&gt;aof:109845889 K18368 caffeoylshikimate esterase [EC:3.1.1.-] | (RefSeq) LOW QUALITY PROTEIN: caffeoylshikimate esterase (N)
+atgacctccgccccgacccgcatacttctgccgggcgacgagcccgggacgagctggcac
+tacacctcccaaggggcgtccgcaactccgtcctaacttcagaccccaaacggccagctc
+ttcacccagtccttcaccgccgctggaccccacactcgaccccccgtcagggcccaccgt
+ctacatgatcccacggcttacggctcgactccggggctcttccagaagatcgccatcgcc
+ttcgcctcctggggatactccgtccacctcgccgacctcctcggtcacggccgctccgac
+gggctcaggtgttacctcggcgacctcaacgccgtcgccgacgcgtcgctctccttcttc
+ctctccgtgcgcaactctgcggagtacgcaaatttgccggcgtttttgtttggggagagt
+ctggggggtctcgtgacgacattgatgtatctgcggtccccggacaggggagtttggacg
+ggggttatactgtcggccccgttgctcatgataccggaggatatgaagccgtcgaaggtg
+aggttgtttttgttcgggttgctgtttgggctggcggatacttgggaggcgatgcccgat
+aacaagatggtcgggaaagcgatcagggataaggagaagctcaagatcatagcgtcgaac
+cctagaaggtatacgggaaggccgagggtgggaacgatgagggagatctcaagaatgtgc
+gatcacgtgaggagcaggttcagcgagattaccgccccgttcctggtggtgcacgggaca
+gaggacggcgtgacgtcgccggaggggtcgaagatattgtacgaggcggcggcgagcgac
+gacaaggagctgattttctacgaagggatgttgcattccctggttcagggggagccggac
+gagaacagtgaccgggtgctgggggatttcaggaagtggattgatgagcgagtgaggagg
+ttatggcgggaagtgagttttagccggggaccaggttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aof:109845889+nt">BLAST</a>
+</body>
+</html>

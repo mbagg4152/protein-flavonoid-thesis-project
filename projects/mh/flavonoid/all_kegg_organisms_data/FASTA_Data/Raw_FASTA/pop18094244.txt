@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01077: 18094244</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840124">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840124">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pop:18094244 -->&gt;pop:18094244 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase (N)
+atgataatcaacgtgaaggagtcaaccatggtgcagccggcggaggagacgccccggagg
+gggctgtggaattctaatgtggacttggtggtaccaaggttccacaccccaagtgtctat
+ttttataggcccacaggtgctccaaacttctttgatgcaaaagtgctcaaaggggctttg
+agtaaggcccttgtgccattctaccccatggcaggacggttacgtagagatgaggatggt
+cgcattgaaattaattgcaatgctgagggagtgttgtttgttgaggctgagaccacctca
+gttatagatgattttgctgattttgcacccactttggagctcaagcagctcatacctact
+gtggattactctggcgggatatctacctatcctcttttggttctgcaggtgacttatttc
+aaatgcggaggagtttcacttggtgttggtatgcaacaccatgcagcggatgggttttct
+ggtcttcacttcgtgaacacatggtcagatatggctcgtggacttgaccttaccattcca
+cccttcattgacaggacccttctccgtgccagagatccacctcaacctgtattccaccac
+gttgagtaccagcctccaccgtccatgaaaaccgttcttgaaacctcaaaaccagagagc
+acggcggtctccatttttaagttgtctagggatcagctcagcaccctcaaagccaaagca
+aaggaagatggaaacaatattagttatagttcatatgagatgttggcggctcatgtgtgg
+agatcaacatgcaaagcacgtgaacttcctgatgatcaagagaccaagttatatattgcc
+acagatggtcggtcaagatggcaacctcaactccctcctggttactttggcaatgtgatc
+tttacagcaacaccaattgctgtagctggtgaaatgcaatcaaagccaacatggtatgct
+gcaggaaaaattcatgatgcattggttcgcatggataacgattatttaaagtcagccctt
+gattatctagagcttcagcctgacttgtcagcccttgttcgtggtgcccatagtttccgg
+tgcccaaatcttgggattactagctgggttagactgccaatccacgatgcagattttggc
+tggggcagacccatattcatggggcctggtgggatcgcatacgagggcttatcattcatc
+ctacccagcccaacaaatgatgggagcatgtcagtagccatatctttgcaagctcaacat
+atgaaactatttgagaagttcatatatgacatttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pop:18094244+nt">BLAST</a>
+</body>
+</html>

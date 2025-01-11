@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07627: 121802346</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765798">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765798">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sspl:121802346 -->&gt;sspl:121802346 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) rosmarinate synthase-like (N)
+atgaggactacagtgaaggaatcaacaatggtaaaaccattgaaagaaacaccgagtgga
+agtgtgtggctctcaaatttagacttagttttctccgacacctaccatagtcgggtggtc
+tacttctaccgctccgatcgcggccccggcttcttcgacaccgcggcgctcaaggaagct
+ctgagccgggcccttgttgagttctacccgtatgcaggcaggctgagaagggacgacaac
+ggccgtattgagatcaactgcaacgatgagggggtttccttcgtggaggcagagtgcgac
+ggctccatcgatgacttgggtgattttgccatccccaagcctcacctcagcctcaccccc
+accgtcgattactcgaaaggaatttccacttttccacttcttctgctcaagttaactcgg
+ttcaaatgcggcggagcaagcataggtttggccaatgagcatcacacgtcagacgggatt
+tccgcaaacaatttgatgcgcacgtggtcggaaatcgctcgcggcctaaccaccgtccct
+actgtttccctggaccggcgcgtcctctcggcgcgcgagcccccgcagccccggttccgc
+cacatcgagcaccaccctcctccgtcgctcaaaacccctctcgacggccccgccggtgac
+ccaacgttctccactttcaagctcagccgcgacttcatcaacggcctcaagaaaaaatgc
+aacgaaagcagcggcggtgcgaattacaccatgtacgaggtggtggcgggccacgtgtgg
+cgctgtgtgagcattgcccgcggcctgccgctggagcaggagacgaagctgcagtttccg
+gtggatgcgcggcagaggctgcggccccctctcccgcctggctatttcggcaacgggatc
+ttctatagtggcgcatttgctttggttggggatctggtttcgaagccgttgaggttcgcg
+gtggagatagtgcacgaggcaatcgctagaatggacgacgaatacatgaggtctgctttg
+gattacctggagttgtatatgcggaatgtggaaggcattgttcgcagccaaaacaatgtg
+aaatgccccaatttcggggtaacgagctgggttaggctgccggttcacaaggcagaattc
+gggttggggaagcctgtttttgtgggtcccggtggagctctctcggaaggaaagagtttt
+ctgtatcctgatcaggagaatgaagagatcttgttgcttgcaatcacgctgcaccaccaa
+catatggaacgatttcaaaagttgctatacgacaaagattcatgcatgatgccggaaatt
+taa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sspl:121802346+nt">BLAST</a>
+</body>
+</html>

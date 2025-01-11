@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05351: 111804300</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620841075">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620841075">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cpep:111804300 -->&gt;cpep:111804300 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) spermidine hydroxycinnamoyl transferase-like (N)
+atggcttccttaaccattcattcttccaccaccgtcttccccgcccaccctactcccatt
+gccaccctctccttctccgagagcgaccaaatcaagccatggactcactcccccaccgtc
+tatgtctaccgatcccccgctgtcgccacctccaccgtcgtcgagtccttgagaaactcc
+ctctcccaaatgctcgtcccttactaccctcttgctggccgcctccactggatcggtgga
+ggccgtcttgagcttcattgctgcagcgccggagctcagctcattgaagcctcctctacc
+gccacgctcgacgattatggcgatttctcccccactgatgctcttcgagagctcgctcca
+aaagtcgattatagtactcccattgaggagctgccggtgttgttggttcagattacgaga
+tttagctgtggtgggatcgtgatcggcatcggaatttctcacattcttgttgatggggtc
+tcggcgattacgtttatcaactcgtgggcgagcattgcacggaaggagaagacggtggag
+agtattgtccagccatttcatgaccggagcattttgcaaccgcagaagccattgcggccg
+ccgaggttcgaccacggtgaatacgacaacccaccatttcttttaggttgcttggatgcc
+aaggaagagcgaaagaaagaatccaccgtcacgttgctaaaactttccaaagagcaagtc
+gaaaaactcaaaaagagagcaaattctaacacagtcactcaactcgacgaggtaccatca
+cgaccatacactcgatacgagtcagttgcaggccatatgtgggtatgtgcatgcaaggcc
+cgtaacaccaacgacaactctcaaccgacgatggtccgtgtcgccgtggacgtacgacga
+cgacttcgaacaccaattcccaacaacttcaccggaaactcaaccctagtagccgtgaca
+ccaaagtgtcaattcaacgatctaatatctcaaccgttgagctacgctgcaggaaagatt
+cgagaaggaacatggaagatcacggacgagtacgcgaggtcggcactcgactttctagca
+agtcaagaggacatcagctgggttagaacctcgtaccacacaaaagttaaggttgaagct
+ccattttggggcaaccccaatttgtctttgggaagttggatgtcgctgccgttgtatgag
+gcggacttcggctgggggccgccgtgttatgttggaccggcgacattgaatgccgacggg
+aagtcgttcatcatgccggcgccggacaacgacggagggttagttatagccgtacggctg
+cagaagaagcacatggatgattttaagagattattttatgaagattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cpep:111804300+nt">BLAST</a>
+</body>
+</html>

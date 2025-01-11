@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01716: MTR_7g113405</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849233">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849233">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mtr:MTR_7g113405 -->&gt;mtr:MTR_7g113405 K00660 chalcone synthase [EC:2.3.1.74] | (GenBank) 3-ketoacyl-CoA synthase-like protein (N)
+atggcaccttcattggatgccaggcaagacatggtggtggtagaggtacctagactaggg
+aaggaggctgcagtgaaggctataaaagaatggggtcaaccaaagtcaaagattacccac
+ttaatcgtttgcactactagtggtgtagacatgcctggagctgattaccaactcacaaaa
+ctcttcggtcttcgcccatatgtgaaaaggtatatgatgtaccaacaaggttgctttgca
+ggaggcacggggcttcgtttggctaacgatttggctgagaacaacaaaggtgcccgtgta
+ttggttgtttgttctgaagtcactgcagtcacattccgcggccctagtgatactcacttg
+gacagccttgttgggcaagcactgtttggagtcagagctgctgcacttattgttggttct
+gatccagtaccagaaattgagaaacctatatttgagatggtttggacttcacaaacaatt
+gctccagatagtgaaggagccattgatggtcaccttcgtgaagctggactaacattccac
+cttctaaaagatgttcctgggattgtttcaaagaacattgataaagcattagttgaggct
+ttccaaccattgggaatttctgattacaactcaatcttttggattgcacaccctggtggc
+cctgcaattttagatcaagtagagcaaaagttagccttgaagcctgaaaagatgagagcc
+actagagaagtgcttagtgaatatggaaatatgtcaagtgcatgtgttttgtttatctta
+gatgaaatgagaaagaaatcaactcaagatggtctgaagacaacaggagaaggacttgaa
+tggggtgtgttatttggctttggaccaggacttaccatagaaactgttgttttgcacagt
+gtcgctatatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mtr:MTR_7g113405+nt">BLAST</a>
+</body>
+</html>

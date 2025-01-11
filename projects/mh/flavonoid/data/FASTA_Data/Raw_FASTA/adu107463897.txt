@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04300: 107463897</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1632835799">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1632835799">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- adu:107463897 -->&gt;adu:107463897 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) putative Peroxidase 48 (N)
+atggcaactttgatgtcaaagatgctcaagaagatgagcttcttcattctcctcttctgc
+atcttcctctctttcaacaccaacaacaacagcatcaacagcagaataagcatcaccacc
+acaaccacctcctctttctgtaacccctcttcttcttcttctgcttcttcttgttcttct
+tcgcactctcgttctgttcctctggactcgttttccaattaccctgtctcgttatctgtc
+aagatcaatggtggtgttggtgaagatgatgacgacgatgatgatgaatttggtgttctt
+gacgctggtgataatgatgatgatgacaaaaatgattcttctgacgatgatgaagatggt
+ggtgagtcacttcagtatgattactaccgaaattcgtgccccaaagcagaacgaattgtt
+cgctccaccatgcaacatattcaccgcaccaaaccctatttgattccagctatccttcgc
+cttgttttccatgattgtttcattcagggatgtgatgcttcggttttgttagatgatgat
+gattacattgattcagagaaagaggcacctcccaatggaagcctcaaaggttttgatgta
+attgaaaccatcaaatccaagcttgaagaagcttgccctagaattgtttcttgtgccgat
+attcttgtactagctgctagagactctgtggctctggctggtggccccttctatccatta
+tataccggccggagagatggttcgaactcttatgctgacattgcaacgtatgagcttcct
+tcgccctattctgatttatcacacacccttaattccttcaaagcaaagggatttgatgaa
+agggagatggtcactctcctagtctgtattggcgaaatccactgcgaattcttcaaaaac
+cgcctctataacttcagcggaaccaatgaacctgatccttctatagaagttgaatttctg
+aacctactgaaatcaagatgcagtgcatcatctccctcatctacatcaggatatacttcc
+caccgcaccctttcatcaacagcttttgagtcaactttttccagtggctccccttcttcc
+tcagtagaagagccaggaattactatggacttggaacaacctcaatcagattttggaatt
+acctactaccgcaacctattgcaaggtagaggaatcttgtatgctgatcagcaactactg
+gaaggcgaagtaactcgttattggatcaaggaatatgctctagattctactttgttccat
+aaacatttcgccctcgcaatgatgaaactctcagatctccatatattgacaccgcctatg
+ggtaacattcggctcaattgttcaaaggttgcatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=adu:107463897+nt">BLAST</a>
+</body>
+</html>

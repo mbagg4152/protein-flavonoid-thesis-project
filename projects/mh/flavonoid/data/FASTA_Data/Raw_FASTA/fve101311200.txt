@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T02666: 101311200</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840792">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840792">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- fve:101311200 -->&gt;fve:101311200 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) BAHD acyltransferase At5g47980-like (N)
+atgggcttagaggtgaaggttgaagttcttcacaaagaaaatattagtccttcctctcca
+actcctcacccccttcgatttttcagcctttctgttttcgatcagttaactcccacagtt
+tatttcccactacttctcttctaccccaatactgttcaacctcgcgatcgtgagcttaat
+agtattgatccccaaagtttggttgttgaaagaaccaagcttctgaaaacatcactctct
+gaaaccctaactcgcttctacccctttgcaggaagaatccacgatcatgcttcaatctgt
+tgcaatgaccaaggagctgtgtttgttgaagctaaggtcaagtgttccatatcaagggtc
+ttggaagaacccgatcttgagtttctaacagaattgattcctaagttggaatctactgat
+gaaggagaaacaggctatgttcttctaaatgtccaggtcaacttcttcgagtgtggtgga
+atcgctattggattcaacgtttctcataagatgattgatgccttcacactcagcacattc
+gtcaatagttgggctgcaacttcgcttggctttggcaccagtgatcatacagtgttccct
+tcacatcaatacgttggcgcagcttctcgtttcccaccactggatctgttcaagtcaccg
+ccacagtttggaaaacttgctaaagaaaagtgtataacaaagagattcgtgtttgaatcc
+tcaaaaattgcatatctcaagtctgaagctgccagtgatgccgtgccgaatcccacgcga
+gtcgaagtcgtgtcagcactgatttggaaaactgctatgaaagcatcaagtgcaaactcg
+gattctgtaagaccatcatcaacatggttgcaaattgtgaatatgcggaacatattggcg
+cagccatctgggaaaaacttgatggggaaccttttggggttctttgcagcaagatcgacg
+ggaggaggtgaaagcaaagatgatcttcagggcttagttgctgcgatgaggaaggggttt
+gaggaatttaaggtgaagtatggtactaaatttgttagtggggaagatgtaagtaaactc
+atgaatgagtatagggagcagatgcagaaggatgatatagagtgctattgttccaccagt
+tggtgcaggtttcctttctgtgaagccgattttggatgggggaagccattgatgagtgtt
+cctgcaactgtagaactcaagaatttgattatgctgatggacaccagcgatggaggtggc
+gtggaagcacgcttgactttgaaagaagaagacatggccaaatttgaaaagaatgaggag
+ctgctcgcatttgcttctctaaatcccactgtgacttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=fve:101311200+nt">BLAST</a>
+</body>
+</html>

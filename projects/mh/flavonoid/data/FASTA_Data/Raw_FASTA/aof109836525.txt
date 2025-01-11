@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05243: 109836525</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620856487">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620856487">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aof:109836525 -->&gt;aof:109836525 K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) LOW QUALITY PROTEIN: chalcone synthase 1B-like (N)
+atggagtctatcgttgacatgatccccgtctctgagaaatccaacgcaacaattctgggc
+gtcggcactgctaatccccctacatttgtggatcaaaacaccctccctgattactacttc
+aggatcacaaaaagcgagcacttggttgacctcaagccaaaatttgctagaatgtgcaaa
+agctcaatgatcgacagacgatacacgaccatcacagaggaggtcctaaacgaacacccc
+tccatcggcgcatacaacgccccttcactcaacattcgccaagaactcctcgacatcata
+atcccgcaactcggcgcagaagcggcgagcaaagcgatcgccgacnngggccggcctctc
+tctgacatcacccacctcgtgttctgcaacagcagcggcgcttccatgcccggagccgac
+tacgagctcatcaaaatcctcggcctccctctctccaccaaacgcttcatgctctaccaa
+cagggctgctttggtggtggcagtgtccttcgcctcgccaaggacttggccgagaacaac
+cccggtgctcgtgtgctcgtcgtgtgttcggagcccatcactaacgggtttcgtggccca
+tcgaaggaccacttgcagaacttagttacacaagctttgtttagtgatggtgcggcttca
+gtcatcgtcggtgcgaacccgatgcctgaaatcgagcatcccttgttcgagatcgtctgg
+acgtcgcagaatataatcgaaggatcagacggtaaaattgtaggtaaactgagagaatcc
+ggtctgatgatcagcttgcagcctgagattccactactcatcgccggaagcatgggaaag
+attgtgaaggaagcgatcggaaacacaggagtcgacgctgtgaatgacgttttctggatg
+gtgcatcctggcggaagagctatactggatgcggtggagatggtgctgggagtgaagaag
+gagaagtttgcggcgacgagggaggtgctgagggagtacgggaatatgtcgagcgcttcg
+gtgttgttcgtgatggagacgatgaggaggaagtcagaggagaagaagatggccactgcg
+ggtgagggattggaatggggtttgcttgttggatttggacctgggattacagttgaaact
+gttgtacttcgttgcccatag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aof:109836525+nt">BLAST</a>
+</body>
+</html>

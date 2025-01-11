@@ -1,0 +1,67 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Sorghum bicolor</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body 0="" onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Sorghum bicolor</font><br><br>
+   	      Number of matched data :20 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00000019 target="_blank">C00000019</a></td><td class="d1">6980-44-5</td><td class="d1">Gibberellin A19</td><td class="d1">C20H26O6</td><td class="d1">362.17293856</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000020 target="_blank">C00000020</a></td><td class="d1">19143-87-4</td><td class="d1">Gibberellin A20</td><td class="d1">C19H24O5</td><td class="d1">332.16237388</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00000254 target="_blank">C00000254</a></td><td class="d1">105018-76-6</td><td class="d1">Sorgoleone</td><td class="d1">C22H30O4</td><td class="d1">358.21440945</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font> (L.) Moench</td></tr>
+<tr><td class="d1"><a href=information.php?word=C00001151 target="_blank">C00001151</a></td><td class="d1">57-50-1</td><td class="d1">Sucrose</td><td class="d1">C12H22O11</td><td class="d1">342.11621155</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00001397 target="_blank">C00001397</a></td><td class="d1">60-18-4</td><td class="d1">L-Tyrosine</td><td class="d1">C9H11NO3</td><td class="d1">181.07389323</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00001442 target="_blank">C00001442</a></td><td class="d1">499-20-7</td><td class="d1">Dhurrin</td><td class="d1">C14H17NO7</td><td class="d1">311.10050191</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002657 target="_blank">C00002657</a></td><td class="d1">123-08-0</td><td class="d1">4-Hydroxybenzaldehyde</td><td class="d1">C7H6O2</td><td class="d1">122.03677944</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002674 target="_blank">C00002674</a></td><td class="d1">530-57-4</td><td class="d1">Syringic acid</td><td class="d1">C9H10O5</td><td class="d1">198.05282343</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00002896 target="_blank">C00002896</a></td><td class="d1">27208-80-6</td><td class="d1">(E)-Piceid</td><td class="d1">C20H22O8</td><td class="d1">390.13146768</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003483 target="_blank">C00003483</a></td><td class="d1">141262-39-7</td><td class="d1">Sorgolactone</td><td class="d1">C18H20O5</td><td class="d1">316.13107375</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006610 target="_blank">C00006610</a></td><td class="d1">1151-98-0</td><td class="d1">Apigeninidin</td><td class="d1">C15H11O4</td><td class="d1">255.06573384</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00006753 target="_blank">C00006753</a></td><td class="d1">131400-98-1</td><td class="d1">Apigeninidin 5-(5''-caffeylarabinoside)</td><td class="d1">C29H25O11</td><td class="d1">549.13968664</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007260 target="_blank">C00007260</a></td><td class="d1">524-14-1</td><td class="d1">Malonyl-CoA</td><td class="d1">C24H38N7O19P3S</td><td class="d1">853.11560229</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007263 target="_blank">C00007263</a></td><td class="d1"></td><td class="d1">Cinnamoyl-CoA</td><td class="d1">C30H42N7O17P3S</td><td class="d1">897.15707317</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00007280 target="_blank">C00007280</a></td><td class="d1">30802-00-7</td><td class="d1">p-Coumaroyl CoA</td><td class="d1">C30H42N7O18P3S</td><td class="d1">913.15198779</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00029532 target="_blank">C00029532</a></td><td class="d1">14191-95-8</td><td class="d1">4-Hydroxy-benzeneacetonitrile</td><td class="d1">C8H7NO</td><td class="d1">133.05276385</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00034140 target="_blank">C00034140</a></td><td class="d1">13093-65-7</td><td class="d1">p-Hydroxymandelonitrile</td><td class="d1">C8H7NO2</td><td class="d1">149.04767848</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00046043 target="_blank">C00046043</a></td><td class="d1">5532-41-2</td><td class="d1">Sorghumol</td><td class="d1">C30H50O</td><td class="d1">426.38616622</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00053790 target="_blank">C00053790</a></td><td class="d1">1011730-11-2</td><td class="d1">Sorgomol</td><td class="d1">C19H22O6</td><td class="d1">346.14163844</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00054719 target="_blank">C00054719</a></td><td class="d1">1291086-57-1</td><td class="d1">Apigeninidin-4-vinylphenol</td><td class="d1">C23H15O5+</td><td class="d1">371.09194859</td><td class="d1"><font color=#FF00BF>Sorghum bicolor</font> var. bicolor</td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

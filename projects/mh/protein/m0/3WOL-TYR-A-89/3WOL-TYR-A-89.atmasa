@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	89	1	24.895	24.895	nan	nan	nan	nan	24.895	24.895	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-1.573	40.538	41.100
+N	TYR	A	89	2	24.895	24.895	nan	nan	nan	nan	24.895	24.895	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-1.573	40.538	41.100
+CA	TYR	A	89	3	13.604	13.604	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.604	13.604	nan	nan	nan	nan	nan	nan	nan	-0.593	41.384	41.773
+C	TYR	A	89	4	30.523	30.523	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	30.523	30.523	nan	nan	nan	nan	nan	nan	nan	-0.430	42.717	41.001
+O	TYR	A	89	5	35.173	35.173	nan	nan	nan	nan	35.173	35.173	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-0.337	43.794	41.603
+CB	TYR	A	89	6	28.233	nan	28.233	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.233	nan	28.233	nan	nan	nan	nan	nan	nan	0.762	40.711	41.823
+CG	TYR	A	89	7	1.954	nan	1.954	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.954	nan	1.954	nan	nan	nan	nan	nan	nan	1.765	41.301	42.758
+CD1	TYR	A	89	8	26.324	nan	26.324	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.324	nan	26.324	nan	nan	nan	nan	nan	nan	1.791	40.930	44.083
+CD2	TYR	A	89	9	19.789	nan	19.789	nan	nan	nan	nan	nan	nan	nan	nan	nan	19.789	nan	19.789	nan	nan	nan	nan	nan	nan	2.722	42.210	42.307
+CE1	TYR	A	89	10	34.688	nan	34.688	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.688	nan	34.688	nan	nan	nan	nan	nan	nan	2.733	41.423	44.957
+CE2	TYR	A	89	11	34.189	nan	34.189	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.189	nan	34.189	nan	nan	nan	nan	nan	nan	3.676	42.722	43.154
+CZ	TYR	A	89	12	10.119	nan	10.119	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.119	nan	10.119	nan	nan	nan	nan	nan	nan	3.673	42.345	44.495
+OH	TYR	A	89	13	42.980	nan	42.980	nan	nan	nan	42.980	nan	42.980	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	4.595	42.876	45.336

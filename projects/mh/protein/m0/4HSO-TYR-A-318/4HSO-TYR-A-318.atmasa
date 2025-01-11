@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	318	1	23.857	23.857	nan	nan	nan	nan	23.857	23.857	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.036	-76.836	5.390
+N	TYR	A	318	2	23.857	23.857	nan	nan	nan	nan	23.857	23.857	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.036	-76.836	5.390
+CA	TYR	A	318	3	15.510	15.510	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	15.510	15.510	nan	nan	nan	nan	nan	nan	nan	12.977	-77.109	3.960
+C	TYR	A	318	4	29.051	29.051	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.051	29.051	nan	nan	nan	nan	nan	nan	nan	12.533	-78.525	3.668
+O	TYR	A	318	5	34.402	34.402	nan	nan	nan	nan	34.402	34.402	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	12.920	-79.439	4.349
+CB	TYR	A	318	6	28.990	nan	28.990	nan	nan	nan	nan	nan	nan	nan	nan	nan	28.990	nan	28.990	nan	nan	nan	nan	nan	nan	14.347	-76.868	3.353
+CG	TYR	A	318	7	1.746	nan	1.746	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.746	nan	1.746	nan	nan	nan	nan	nan	nan	14.448	-77.160	1.876
+CD1	TYR	A	318	8	27.238	nan	27.238	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.238	nan	27.238	nan	nan	nan	nan	nan	nan	14.163	-76.170	0.916
+CD2	TYR	A	318	9	19.797	nan	19.797	nan	nan	nan	nan	nan	nan	nan	nan	nan	19.797	nan	19.797	nan	nan	nan	nan	nan	nan	14.912	-78.380	1.427
+CE1	TYR	A	318	10	34.588	nan	34.588	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.588	nan	34.588	nan	nan	nan	nan	nan	nan	14.338	-76.420	-0.426
+CE2	TYR	A	318	11	33.682	nan	33.682	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.682	nan	33.682	nan	nan	nan	nan	nan	nan	15.091	-78.627	0.092
+CZ	TYR	A	318	12	9.936	nan	9.936	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.936	nan	9.936	nan	nan	nan	nan	nan	nan	14.798	-77.678	-0.821
+OH	TYR	A	318	13	43.248	nan	43.248	nan	nan	nan	43.248	nan	43.248	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	15.002	-77.937	-2.162

@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07278: 119346610</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641770623">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641770623">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- tdc:119346610 -->&gt;tdc:119346610 K09755 ferulate-5-hydroxylase [EC:1.14.-.-] | (RefSeq) cytochrome P450 84A1-like (N)
+atggcggcctctgcaaagatcgccacggagtttctcaaggatccactgatctggttattc
+ctcgcctcgctggctttcgtcattctgcagagtcggcggctgggcagcgcgccatttcct
+ccgggtccgaagccgctgccagtcatcggcaacatgacgttagtggacccgctgacccac
+cgcggcctagcggcgctagcgaagcagtatggcgggctgctgcaccttcgcctcggcagg
+ctccacgtcttcgcggtgtcgacgccagagtacgcgcgcgaggtgctgcacgtgcaggac
+gccgccttctcgaaccgcccggccaccatcgccgtcgtctacctcacctacggccgctcc
+gacatggcgttcgcgcacaacggcgcctactggcgccagatgcgcaagctctgcgtcacc
+aagatcttcagccgacgccgcgccgagacgtggctcgccctgcgagacgggtacggggcg
+ctcgcccgcgccgtcggcaggcgcagcggcgaggccgtcaacctcggcgagctcatcttc
+aacctcaccgtcagtgtcatcttccgcgccgccttcagcacacgcgacgaggatgggctg
+gatgagttcatcgccattctccaggagttctccagcctcctaggattgttccacatcggt
+gacttcttcccgtggctcggctgggtgggccggcggggcttcaaccgccgcctccgcacg
+gcgcgcggcgctctcgacaagtttatcgacaggatcatcgacgagcacatgaggagggga
+aagaacgccgccgaccccgacgctgacttggtagacggcctgctcgcgttcctcaccgag
+gcaaacccaatcagcgggaagcacagagaggacgccctccgcttcacccgcgataacgtc
+aaggccatgattatggtacgtaactggtactgtatttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=tdc:119346610+nt">BLAST</a>
+</body>
+</html>

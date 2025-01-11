@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04660: 108341659</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847221">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847221">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- var:108341659 -->&gt;var:108341659 K13259 2,7,4'-trihydroxyisoflavanone 4'-O-methyltransferase / isoflavone 4'-O-methyltransferase [EC:2.1.1.212 2.1.1.46] | (RefSeq) isoflavone 4'-O-methyltransferase-like (N)
+atgggtttctgtagcaatggcagagaagagagtgaaatatatcacgctcaaatccacctg
+tacaaacacgtgtacaacttcgtgagctctatggctctcaagtgtgccatggaactagga
+atagcggacgcaatccacggccacggagaacccatgagcatttctgagttagcctctgca
+ctgaaactgcacccttcaaaactctctgtcctccaccgattcatgcgccttctaacacat
+aatgggttcttcgccaaaacaacagtggcgtcacatgaaggagcaggaggagaagaaaca
+gtgtatgatctcacccctccttccaagcttctgatccgaagcaagtcaacgtgtttggct
+cctattgttaagggcgcgcttcattcgagttccatcgatatgtggcactcctccaacaag
+tggttcactgaggataaggaactctcactgtatgagagtgccaacggtgagagtttctgg
+gagtttttgaacaaaaccactgaatctgatacgcttaacatgtttcatgaagccatggca
+gcagattctagaatgttcaagatggctctggaagagtgcaagcatgtgtttgagggattg
+ggttcccttgtcgatgtgggaggtggaactggtgctgtcacgagtctcatcaatgaactc
+ttccctcacatgaagtgcacggtgtttgatcaaccacaggttgtgtccaacttgactgga
+tctgaaaatttgaactttgttggtggggatatgttcaaatccatcccttcagctgatgct
+gttttactcaagtgggttctgcatgattggaacgacgagctcgcagtgaagatattgaag
+aactgcaaagacgctatttcagggaaagggaaagaaggaaaagtgataatcgtagacata
+gcaattgatgaagcaagtgatgatagtgaattgacagagttgaagctgaactatgacttg
+gtgatgctcactatgttgaatggaaaagaaagagatagaaatgaatgggaaaaacttatt
+tacgatgcaggcttcagcggctacgacatcacccctatatgtggcttcaaatctctcatc
+caactttatccttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=var:108341659+nt">BLAST</a>
+</body>
+</html>

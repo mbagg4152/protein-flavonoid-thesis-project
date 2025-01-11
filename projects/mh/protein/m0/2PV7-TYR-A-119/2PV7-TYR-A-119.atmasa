@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	A	119	1	21.711	21.711	nan	nan	nan	nan	21.711	21.711	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-0.835	40.960	61.129
+N	TYR	A	119	2	21.711	21.711	nan	nan	nan	nan	21.711	21.711	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-0.835	40.960	61.129
+CA	TYR	A	119	3	9.571	9.571	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.571	9.571	nan	nan	nan	nan	nan	nan	nan	-1.536	40.969	59.840
+C	TYR	A	119	4	34.805	34.805	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.805	34.805	nan	nan	nan	nan	nan	nan	nan	-2.471	39.778	59.694
+O	TYR	A	119	5	41.094	41.094	nan	nan	nan	nan	41.094	41.094	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-3.612	39.915	59.213
+CB	TYR	A	119	6	29.364	nan	29.364	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.364	nan	29.364	nan	nan	nan	nan	nan	nan	-0.572	41.106	58.654
+CG	TYR	A	119	7	2.627	nan	2.627	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.627	nan	2.627	nan	nan	nan	nan	nan	nan	-0.264	42.554	58.335
+CD1	TYR	A	119	8	22.183	nan	22.183	nan	nan	nan	nan	nan	nan	nan	nan	nan	22.183	nan	22.183	nan	nan	nan	nan	nan	nan	0.731	43.233	59.033
+CD2	TYR	A	119	9	27.430	nan	27.430	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.430	nan	27.430	nan	nan	nan	nan	nan	nan	-1.000	43.258	57.361
+CE1	TYR	A	119	10	34.081	nan	34.081	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.081	nan	34.081	nan	nan	nan	nan	nan	nan	1.002	44.586	58.786
+CE2	TYR	A	119	11	35.279	nan	35.279	nan	nan	nan	nan	nan	nan	nan	nan	nan	35.279	nan	35.279	nan	nan	nan	nan	nan	nan	-0.723	44.632	57.087
+CZ	TYR	A	119	12	10.002	nan	10.002	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.002	nan	10.002	nan	nan	nan	nan	nan	nan	0.296	45.266	57.809
+OH	TYR	A	119	13	42.856	nan	42.856	nan	nan	nan	42.856	nan	42.856	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	0.602	46.576	57.590

@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01716: MTR_0110s0020</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620848848">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620848848">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mtr:MTR_0110s0020 -->&gt;mtr:MTR_0110s0020 K05350 beta-glucosidase [EC:3.2.1.21] | (GenBank) glycoside hydrolase family 1 protein (N)
+atggtgatgttggattcacaacagcatcaatgtttttattccatgtttttcttcttctta
+attgttcttgttagctcagttaagggggttacagtgcctgaaacagtgcatttggatact
+ggagggttgagtagagatgtttttcctaaggggtttgtgtttggagttgcaacttctgct
+tatcaagtagagggtatagctagcaaagagggtcgtggccctagtatttgggatgttttc
+atcaaaaaacctgggattgtcgcaaataatggcacaggagaagtttctgttgatcaatat
+catcgctacaaagaagatatagatctcatcgcaaagctaaattttgatcaataccggttc
+tcaatctcatggtccagaatttttccaaatggtactggcaaagtaaattggaaaggtgta
+gcatactacaacagattgatcgattacttactagaaaagggcattactccttatgcaaat
+ctctaccattatgaccttcctctagctcttgagttgaaatacaacggtttattaaaccgt
+aatgttgtgaaagattttgcggattatgcagatttttgtttcaaaacatttggagacaga
+gttaagaactggatgactttcaatgaaccaagagttattgctgcacttggttatgatact
+ggcttttttgcccctggaaggtgttcaaaagaatatggaaattgtactgctggaaattca
+ggaactgagccttatattgtagctcacaatttgatattgtcacatgctgctgctgctcaa
+agatatagacagaaataccagattaagtgtgtgtttagattatccatgagtttgctagaa
+tcacgatgtgtcatagttgagtttgtcacaatcacgatgtgccatagtgatttcgccaaa
+aactacattttgaagcttcaacaaaatcacaaggtgcaactgtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mtr:MTR_0110s0020+nt">BLAST</a>
+</body>
+</html>

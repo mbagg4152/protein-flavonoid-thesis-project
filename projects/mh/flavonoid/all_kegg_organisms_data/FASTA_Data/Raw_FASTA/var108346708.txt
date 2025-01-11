@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04660: 108346708</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620842532">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620842532">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- var:108346708 -->&gt;var:108346708 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) vinorine synthase-like (N)
+atgggtgaggaatatggcattatatcgaaggagacagtaaagccatcttccccaacccct
+attcagcacttcaaactctcttttctcgaccaattggctccttcattccatgttcccatt
+ctgctcttttactctgcctctgatgttagaacctttgctgccactgaccacagtgcactg
+tcacaaaagttgaaaacttctctgtcacaagtcctcactctctattacccattttgcgga
+agactcagaaactcttcaatcattgagtgcaacgacgagggtgttcttttcatccactct
+aaactccccattgagctctcaaacattctccaaaaccctcaacttcacaccctctatgaa
+cttctcccatgtcctccttacaaccttgaaccacaacaaagggatacgttcgggatcatg
+gcagttcagttgagccaattcaagtgtgggggcatagcccttggcgtgtgcttctcacac
+aagatcgctgatgcttccactgcagcatcgtttctcaacgcttgggctgcaacatcacgt
+ggacacggcaatagcaacctcgttccacctccaatggaagaggcaagtctgcttttccca
+tcgaggaacatatccgttgacatgacaagtggcatggttggccaagaaaagactgtgaca
+aagagattcatatttagtggcagcagtatttctagattgagacaaaccatagggtgcccc
+agtttcaatccctcacgcgttgaagccgtgacgacgctgctatggaaatcatcactggaa
+gcagcgaaagaaagtttagattctggggaagaaataattgttgcttctgcggtatcccac
+actgtgaacattcgcagcagaatggttccatctttgtcgaagcattcagttggaaacatt
+tggcaatacgcggtgtcttcgttggtggaagtggagggggaagtggggttgcgtgatttg
+gcagagagaacgagggaaacgataggaaaagttgatggagattatataaagaaacttcag
+agtgatgagtttgttgaagtagttcaggctatagaagaagcaaggagactggctgaagaa
+aagggtgttcgaggttatgggtttaccagttgggtagggtttgagttctatgaagttgat
+tttggatggggaaagcccagttatgctagcaccattcctgtgcccataaaaaatttggga
+actttgatgagcacaaaggatggagatggcatagaggcatggcttaccttgaccacacgt
+gacatggctcggcttgaacacaatgcagaacttctgaactttgcgtcgtttgattcttaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=var:108346708+nt">BLAST</a>
+</body>
+</html>

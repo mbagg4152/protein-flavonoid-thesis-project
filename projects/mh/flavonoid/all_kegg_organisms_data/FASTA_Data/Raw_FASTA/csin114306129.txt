@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07364: 114306129</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767156">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767156">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csin:114306129 -->&gt;csin:114306129 K13269 kaempferol 3-O-beta-D-galactosyltransferase [EC:2.4.1.234] | (RefSeq) kaempferol 3-O-beta-D-galactosyltransferase-like isoform X1 (N)
+atgctgcataaaatgggacatgcattgcctgaatcaacagctgttgtaatcaattccttt
+gaggaaatagagcccgaaatcaacaaagatcttaaatccaagttctccaaattcctcaat
+gtcggcccctttaatccctcaaacctaacatcatcgtattcagacaagtatggctgcata
+tcgtggctagacaagcaaaaacccgagtctgtagcatacatcggctttggaacggtagcg
+aaattgacacctaatgaggtggtggcgttggctgaagcattagaagcaaccggtactcca
+tttctttggtccttgggagacgacttgaaagagcatttaccagaaggattcttgaaacat
+acaagcgagcaagggcaagtcgtggcgtgggcaccacaggtacaaattttggcacatgct
+tcaaccggggttttcatgactcattgtgggtggacctcggtgttggagagcattgcagct
+ggtgtaccaatgatatctaggccgttctttggggatcaacatatcaacacattgatgttg
+gaaaatgtgtggaaaatcggtgttggagttgagggtggagtcttcacaaaaaatgggaca
+gtgaatgccctcgagctagttttgttgcacgaaaaagggagaaaactgaaggcacaaatt
+ggtcacttcaaagagcttgctctcaagtctattggacctaatgggagctcatctcaaaat
+ttcaatactctgatagaggtgattacaggcctcaacctttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csin:114306129+nt">BLAST</a>
+</body>
+</html>

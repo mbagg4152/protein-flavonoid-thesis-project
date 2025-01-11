@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03446: 103940646</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620844582">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620844582">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pxb:103940646 -->&gt;pxb:103940646 K01859 chalcone isomerase [EC:5.5.1.6] | (RefSeq) probable chalcone--flavonone isomerase 3 isoform X1 (N)
+atgcaatcccagttgttttttcagacaaatatttccatctcctcccttcttctccacagc
+ttcctgccaatcatactcccaaatcacaaagccagtaagatgggcactgaagttgtaatg
+gtggatgaagtcccttttcctcctcagatcacaaccagcaagccattatctctgctgggt
+caaggaattaccgacattgagattcactttcttcaaatcaagttcacagcaattggggtt
+tacttggaccctgaagttgtgtcacaccttcaacagtggaaggccaaaaaggcagatgaa
+cttgcagaagatgatgacttttttgatgcacttatttctgcccctgttgagaagttcatt
+agggttgtggtgatcaaggagatcaaagggtcacaatatggagtgcagcttgagagtgca
+gtgagggacagattggcagctgatgacaaatacgaggaagaggaggaggaggccttggaa
+aaagttgttgagttcttccaatcaaagtacttcaagaaggattccgtcatcacattccat
+tttcctgcaacttctgccgcggccgagattgtgtttagcaccgaagggaagcaagagtcg
+aaactcaaagtggagaatgcaaatgtggtggagaacatcaagaaatggtatttgggtggg
+acaagaggggtgtctccttcgaccatctcctccctggccaacgcactctcagctgaactg
+agcaagtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pxb:103940646+nt">BLAST</a>
+</body>
+</html>

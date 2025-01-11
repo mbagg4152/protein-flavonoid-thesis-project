@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07294: 112723585</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641769796">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641769796">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ahf:112723585 -->&gt;ahf:112723585 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) spermidine hydroxycinnamoyl transferase (N)
+atggcaatcacgttaatagggtcttgcatggtgaggcctaacgaggcaacatggtgtggt
+cgcttaccattatccgaatgggaccaaataggaaccatcacacatgttcccaccatctac
+ttctatcataaacccacaaccttacacacttccaccattgtcaacactttgaaggactct
+ttgagtcgtgtgcttgtaccattttaccccttggctggtcggttacactggataaataac
+ggtcgtcttcagctcgaatgcaacgccatgggagctcagttcattgaagccgaatcgtca
+tcaaccctagaagaggttggtgacttgtcactttcgtccgagtatctctaccacctttct
+ccaaacgtagactatactctcccgattcatgagttgccgctgttcattgttcaattcacg
+acgttcaagtgtggcggattcggcctcagcttggcgatttctcatgccattgccgatgga
+caaagtgcactgcattttatcaacgagtggtcgaggtttgcgcgcggtgaggccttggag
+atggtgccgtttcttgataggaaagtgttgcgtgccggagaaccacctttggcgccgttg
+ccggctggccatgggcggtcggagttcgaaaatcctccgttgttgctggggcagtctacc
+aatatggagcagaggaaaaagaaaaccacggtggagtttttcaagttgagcaaacaacaa
+gttgatgggttgaggaatttggcaaatcttagttggggtaaacctagcaatggacgtggt
+tataccaggtacgaaacagtagcggggcacgtgtggagaagcgcatgcaaggcaagggag
+cacaaaaatgaccaaccaacgtgtctaggggtgtgtgtggattcaaggtgtcgcatgaag
+ccgccattgccaaaagggtacttcgggaacgcaaccttggacgtggttgcaacctctctt
+tccggtgatttggtttcaaggccattagggtatgcttcaagcagaataagggaagccatt
+gagaaggtgactgatgagtacatcaagtcagagattgagttcttgaagaaccaacaggat
+ttgagcaggtttcaggatcttcatgccatgagaagtgacaagggtccattctatggtaac
+cctaacatgggtgtggtcagttggttgactttgccggtcaacggccttgactttggatgg
+ggtaaagaggttcaaatgtatcccggtacacatgaatttgatggtgattctgttcttctt
+cctggtcttgatagtgatggttctgttgttcttgctatatgtttgcaagtggatcatatg
+gatgcatttaggaagcatttctaccaagaggaatcatgctaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ahf:112723585+nt">BLAST</a>
+</body>
+</html>

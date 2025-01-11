@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	174	1	18.776	18.776	nan	nan	nan	nan	18.776	18.776	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.600	28.279	42.638
+N	TYR	B	174	2	18.776	18.776	nan	nan	nan	nan	18.776	18.776	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	31.600	28.279	42.638
+CA	TYR	B	174	3	14.611	14.611	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	14.611	14.611	nan	nan	nan	nan	nan	nan	nan	31.404	29.439	41.786
+C	TYR	B	174	4	37.490	37.490	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	37.490	37.490	nan	nan	nan	nan	nan	nan	nan	32.280	30.591	42.255
+O	TYR	B	174	5	37.334	37.334	nan	nan	nan	nan	37.334	37.334	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	32.782	30.583	43.384
+CB	TYR	B	174	6	29.444	nan	29.444	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.444	nan	29.444	nan	nan	nan	nan	nan	nan	29.936	29.858	41.804
+CG	TYR	B	174	7	2.212	nan	2.212	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.212	nan	2.212	nan	nan	nan	nan	nan	nan	28.994	28.776	41.340
+CD1	TYR	B	174	8	26.457	nan	26.457	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.457	nan	26.457	nan	nan	nan	nan	nan	nan	28.735	28.585	39.989
+CD2	TYR	B	174	9	21.892	nan	21.892	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.892	nan	21.892	nan	nan	nan	nan	nan	nan	28.368	27.940	42.254
+CE1	TYR	B	174	10	34.455	nan	34.455	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.455	nan	34.455	nan	nan	nan	nan	nan	nan	27.875	27.593	39.561
+CE2	TYR	B	174	11	34.148	nan	34.148	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.148	nan	34.148	nan	nan	nan	nan	nan	nan	27.508	26.947	41.837
+CZ	TYR	B	174	12	9.944	nan	9.944	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.944	nan	9.944	nan	nan	nan	nan	nan	nan	27.264	26.777	40.492
+OH	TYR	B	174	13	43.170	nan	43.170	nan	nan	nan	43.170	nan	43.170	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	26.407	25.785	40.084

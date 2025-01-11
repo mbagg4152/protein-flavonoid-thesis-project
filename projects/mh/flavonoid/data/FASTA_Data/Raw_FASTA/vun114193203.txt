@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head>
+<title>KEGG T06017: 114193203</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620838056">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620838056">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- vun:114193203 -->&gt;vun:114193203 K08243 polyketide reductase | (RefSeq) NAD(P)H-dependent 6'-deoxychalcone synthase (N)
+atggttgctgttgaagttcccacggtggtgcttccaaactcctcttcccaacagagggtg
+ccggtggttggaatgggttctgcaccagatttcacctgcaagaaagacacaaaggaagca
+atcattgaagccataaaacagggttacagacacttcgacactgctgctgcttatggctct
+gagcaagctcttggtgaagccttgaaagaagccgttgaacttggccttgtctctcgccaa
+gacctctttgtcacttcaaagctttgggtcactgaaaaccatcctcatcttgttgtttca
+gctttgcgcaaatctctcagaactcttcaactagagtacttggatctttatcttattcac
+tggcctctcagttctcaaccaggaaagttttcttttcccattgaagtggaagatctcttg
+ccttttgatgtgaagggtgtgtgggaagccatggaagaatgtcaaaaacttggcctcact
+aaagctattggggtcagcaacttctctgtaaagaaacttcagaatctgttgtctgttgct
+accatccttcctgtggtgaatcaagtggaaatgaaccttgcatggcaacaaaagaaactg
+agagagttttgcagcacaaatggtataatcataacagcattttcacctttaaggaaaggt
+gctagcaggggcccaaatgaagtgatggataatgatgttctgaaagaaattgcagatgct
+catggcaagtccatagctcaaatttctctgagatggttatatgaacaaggagtcactttt
+gttccaaaaagctacgataaggagaggatgaaccaaaatttgaagatatttgattgggca
+ttgacagaagaagatcatagtaaaataagtcaaatccatcaaagtcgtttaatcaatgga
+cccaccaagccacaactcaatgatctttgggatgatgaaatatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=vun:114193203+nt">BLAST</a>
+</body>
+</html>

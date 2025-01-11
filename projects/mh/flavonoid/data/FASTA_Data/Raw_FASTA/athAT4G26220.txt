@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T00041: AT4G26220</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840772">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840772">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ath:AT4G26220 -->&gt;ath:AT4G26220 K00588 caffeoyl-CoA O-methyltransferase [EC:2.1.1.104] | (RefSeq) S-adenosyl-L-methionine-dependent methyltransferases superfamily protein (N)
+atggctaaggatgaagccaagggattgctgaaaagtgaagagctctataaatatatactg
+gagactagtgtgtacccacgcgagccagaggttctcagggagcttaggaacattactcat
+aaccaccctcaagctggtatggctactgcaccagacgctggccagttgatggggatgctg
+ctgaatctggtaaatgcaagaaagactatcgaggttggggttttcactggatactctctt
+ctcctcactgctcttacgctaccagaagatggcaaggttatcgccattgacatgaataga
+gactcgtatgaaataggattgccggttataaagaaagctggtgttgaacacaaaattgat
+ttcaaagagtctgaagctcttccagccctcgacgagcttttaaacaataaagtgaatgag
+ggtggattcgacttcgcatttgtggatgcagacaagctgaattattggaactatcatgag
+aggcttattagattgatcaaggttggtgggatcatagtgtatgataacactctctgggga
+ggatcagttgctgaaccggactcgtccacgcccgagtggaggatagaagtcaagaaagca
+accctcgagctgaacaagaaactctcggctgatcagcgtgtgcagatctcgcaagctgcg
+cttggcgatggtatcactatttgcaggaggttatattga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ath:AT4G26220+nt">BLAST</a>
+</body>
+</html>

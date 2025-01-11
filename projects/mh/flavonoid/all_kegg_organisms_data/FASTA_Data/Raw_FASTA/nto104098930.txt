@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05025: 104098930</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620858249">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620858249">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- nto:104098930 -->&gt;nto:104098930 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) acetyl-CoA-benzylalcohol acetyltransferase-like (N)
+atgattttccaaaaggaaaccatggaagttgaaatcttgtcaacaaagttgataaaacca
+acttcaccaactccaaatcaccttcaaaattacaaactatctttctttgatcaaatagct
+gatgaagcacatttacctcttgttcttttctatcctcctagtaacaacaacaccaacaat
+aatagtacagctgaagatcagctcgagcaatctttatctagaattttaactcatatttac
+ccggttgctggtagatttactgaggataactccttgattcactgcgccgatcaaggggtt
+aaatttgttaaagccaaggtaaattgtaagctcaatgactttcttgagaaagcacacaaa
+gatgtcaatcttgccttatcttgttggcctcaagatacttgggatgttgatgaaactaat
+ttgttcattacaccaattagcattgtgcaagtcacaaaattcaattgtggtggcatggct
+ctatctatgagccatgcacataccgcgatggatggtttcacaactttcactttcgttcac
+gagtggtcaaaagtgtgcaaattggggattcctacggagaaaatcaactttttgagcttt
+aatttggctaagattttcccaccaagagatgtatcgaaaattctcttgcctcgtgtcccc
+caggaaaatcgtatagactcaaaactagttgccaagaagttatacatcaaccaagattct
+atttcaaggctcagagaagaattaacaaaatcaatggattctggagctttatgctttaag
+ccctcaagagttgaaatgattatagcgctcttatggagagctttaatccgcgcttcagag
+aaacaacacgggcatttgagacgttctataatgggcattccaataaacttacgtactaag
+ctgatttctttaccccaaatagcaaaatcttttggaaatcttgtaattgatgctccggta
+aaatttgtacctgaggagatccccaacatggagttgcacaactttgtaagattgataagg
+gatactgtgacgaaaacaattactgcttgtgacaaaaattcatcagacgatgtagtttct
+gcactggcaaaaatatataatgagagtttcgtagcgcaagaatggggaggaaataatgaa
+gttgacatgttcacaagttcaagtttgtgtaggtttcctatacaggaagctgattttggt
+tggggaaaaccatgtttaatgcattttggttcaaggcataatcagtattgttggttgtat
+gatgcagaatgtggtaatgggatttgtgtgcaggtggatttgaaggaaaataacatgcag
+ttatttgaatgtgacaatgatattaaggctttctttaagttttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=nto:104098930+nt">BLAST</a>
+</body>
+</html>

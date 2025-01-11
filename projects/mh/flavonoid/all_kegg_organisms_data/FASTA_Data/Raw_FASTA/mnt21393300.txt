@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07292: 21393300</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641771855">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641771855">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mnt:21393300 -->&gt;mnt:21393300 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) fatty alcohol:caffeoyl-CoA acyltransferase (N)
+atgggaaccgccctttaccaaaatccacctcctgatcttctccaagacctaaaggtcact
+gtccacaactcctctctagtatttccctccgaggaaaccgagagaaaaacaatgttcttg
+tcaaacatagaccaagttctgacttttgatgtccaaacagtccactttttccctacccac
+aaagattttcctcctcaacttgtaactgagaaaatcaaagaaactcttgggaaaatattg
+gtgccctacgatttcttggcagggaggttgaatttgaacgctgagagtggtcgtttggag
+atagattgcgatggttctggggcaggatttgtagcggcctctagtgagtatagtttggat
+gatattggagatttggtttaccctaatccagctttttcccagttagtttgctccactttg
+gacatgttgaaaccagatgttcatcatcggctgctttgcattcttcaggttacaactttt
+aagtgcggtggatttgcaatgggtttcaccaccaaccatgtaacatttgatggcctcagc
+ttcaagctcttcttgcaaaacctagcctttgttgccgccaacaagcccttggccgtcacc
+ccttgccacgaccgccgactcctagcagcccgatccccgccacgcgtcacctttcctcac
+cctgagctactcaagttgcctccagtcaccgacctagggcaattagaccctaaccctact
+catgtcttcaaagccaccgacgaagagctcgtcttcaagatcttccggctgagccccgac
+gacttctccgccctaaaagaaagggccaaatcaggcgacggagaccgtgtgatcacgagc
+ttcaatgtcgtcaccgccttcatatggcggtgcaaggcattgtcttgtgacgcaagtaat
+gacatggagaggcaatcgaggatcctctacgcggtggacataaggaggagagtggacccc
+cccttgccccaatcatacacggggaacgcagttttgactgcgtacgcgacgaggtactat
+aaggagctggaagaagggccgttctcgaagatagtggagacggtggcggagggagcaaga
+aggatgacaaatgagtatgcgaggtcggccatagattggggtgagctttacaaagggttc
+cctcacggcgaggtgttggtttcgtcgtggtggagattagggtttgcggaggttgaatat
+ccatgggggaagcccaaatatagctgtccagtggtgtgtcatcggaaggatattattctg
+ttctttccggatattgaagatcgtgatgatcatgatgagcctgatgatctcaatggcaaa
+caagaaggcagagagagaaaagatggggtcaacgttttattggccctaccggccaaggag
+atggagaagttcgaaactttatttcacaagtacttattaagtggttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mnt:21393300+nt">BLAST</a>
+</body>
+</html>

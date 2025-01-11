@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03194: 103451680</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847147">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847147">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mdm:103451680 -->&gt;mdm:103451680 K13081 leucoanthocyanidin reductase [EC:1.17.1.3] | (RefSeq) LAR2; leucoanthocyanidin reductase-like (N)
+atgactgtttcaccttctctttctgttgccagaaatggcanagtcctcattgtcggtgcc
+accggtttcatcgggaggtttgtagctgaagccagcctcgccgccggccgacccacgtat
+gttctcgtccggcccggccctcttcatccttctaaggctgacaccgtcaagtccttcaaa
+cacaaaggcgccataatcttacacgggctgatttctgataaaaccctaatggagaagata
+ctgagagagcatgaaatcgagacagtaatatcagccgtcggtggtgcgacaatattggac
+canattgccttagtcgaggccattgcagcagttggtacagttaagaggtttttgccctcc
+gagtttggacatgatgtggacagggctgatccggttgaaccagggctcaccatgtacgag
+gagaaacgcaaggttagacgttgggtcgagaaatctggggtggcctacacatacatttgc
+tgcaactccattgcctcttggccctactttgacaacacacacccttctgaggttctccca
+ccgttggatcggttccaaatctatggtgatggcaccgtcaaagcctattttgtagacggt
+acggatattggaaaattcacaataaagaccgtggacgacatccgaacaatcaacaaaaat
+gttcatttccgaccgccgagcaatttatacgacatcaatgggcttgcatctctgtgggag
+aagaaaattggccggactctccctagaatcaccatcactgaaaatcacttactagccctt
+gctgcagagaatcgtataccagaaagtatagtggcatcgttcacgcatgacatctttatc
+aaaggatgtcaggtgaattttgcagtggaggggcctcgtgatgtggaagtgggaactctc
+taccccggagattctttcaggaccttggatgagtgcttcaatgactttcttctcaagttg
+aaggacaacctagagccagtgcatgaggagaacgtctccaccaaaaacgccgtcgtcgaa
+tccagggctgtcactcccacttgtgcttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mdm:103451680+nt">BLAST</a>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03547: 104450482</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620850240">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620850240">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- egr:104450482 -->&gt;egr:104450482 K05278 flavonol synthase [EC:1.14.20.6] | (RefSeq) flavonol synthase/flavanone 3-hydroxylase (N)
+atggaagtggaaagaattcaggcattggccgcggtcggcctcgacacgctcccagcccag
+tttgtccgcccctcccacgagcagccagagaacagcccggccgtggagggcgtcaccgtg
+ccggtgatctcactatcccagccccaccacgctctcatccgggaaatccacgaggcatgc
+cgcgactggggattcttccttgtgaccgatcacgggataccgctggagctgatcgggcag
+ctgcaggaggcgggccgtgagttcttcaggctcccgcaggaggagaaggagaagtacgcg
+aacgatccgtccagagggaatttcgaagggtacgggacgaagatgaccaagaaccatgac
+gaaaaggttgagtgggtggattacttttttcacatcatgcatccatctggcaaggtcagg
+catgaaatttggcctcgacacccgccttcttacagggaagtcactgaagaatacaacaag
+gagacactgaaagtgacagaggtgctgctggagctgatctccgagggcctaggactggag
+aaaaatgtcttgaaagcaagtttgggaggtgaccagatggagctagagatgaaaataaac
+ctgtacccaccttgcccacaacctcagctggccctcggcgtcgagcctcacaccgacatg
+tcagcagtcaccatactggtcccgaacgatgtcccgggtctgcaagtttggaaagatggc
+aattggttcgccgcagattacttgcccaatgctcttttcttccacattggcgatcaaatt
+gaggttctaagcaacggaaagtacaaaagtgtacttcataggagcttggtgaacaaggaa
+aagacgcgaatgtcatgggcagtgtttgttgcacccccgcaagaggcactgatcgggcct
+ctcccggagctcatcaacgatcagaacccggtgaagtactccaccaagacgtttgccgag
+tttcgataccgcaaattcaacaagctcccgcagtag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=egr:104450482+nt">BLAST</a>
+</body>
+</html>

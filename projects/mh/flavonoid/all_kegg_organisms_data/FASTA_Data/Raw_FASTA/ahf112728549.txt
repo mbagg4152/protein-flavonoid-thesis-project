@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07294: 112728549</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641769810">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641769810">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ahf:112728549 -->&gt;ahf:112728549 K18368 caffeoylshikimate esterase [EC:3.1.1.-] | (RefSeq) caffeoylshikimate esterase (N)
+atggagtcaaaattcacatatcaagaggaatataggaagaactcaaggggaaagaagcta
+ttcacatgcagatggttgccagtttcttcacccaaggcccttgtttttctttgccatggt
+tatggaatggaatgcagtaacttcatgagagaatgtggagagaggttggcatgtgcaaga
+tatgcagcgttcggaatggattatgaaggacatggacattcagagggtattcgttgttac
+attagcaactttcaaaacattgtcaatgactgttctcaatttttcaactccatttgtgtg
+cttgaagagtatagtgaaaagcccaagtttttatatggggaatcaatgggaggggcagtg
+gccttacttattcataaaaaatatccttcattctgggatggtgctgttcttgttgcacca
+atgtgcaagatttcagagaaagtaaagccaaatccaatggtggtaagcttgttgactagt
+gtggaaaatattataccaaagtgcaaaatagttccctcaaaggatgtcatcaattcagca
+ttcaaagacactacaaaaagagaacttataaggaaaaacacgttgatataccaagacaag
+cccaggttgaaaacgggattagagatgctgagaacaagcttatatgttgaagcctcgtta
+gagcaggtaacattgccattcttagtattgcatggagatgcagatacagtaacagatcca
+gaagtaagcaagacattgtatgaaaaagcaagtagcatagacaagaccatgaaattgtac
+cctggaatgtggcatggcttaacatcaggggagcctgatgaaaacatcgacattgtgttc
+aaagacatcataagctggcttgacaaccatgctaacaaggcagggtttgaggctttttta
+gaacaaaccaatgacaaaaataactttgttgccgaggtcaaaggacgtcgctatttacgt
+cactcatcaatgtaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ahf:112728549+nt">BLAST</a>
+</body>
+</html>

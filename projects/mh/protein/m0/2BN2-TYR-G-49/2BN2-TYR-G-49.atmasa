@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	G	49	1	17.691	17.691	nan	nan	nan	nan	17.691	17.691	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.054	26.077	-9.062
+N	TYR	G	49	2	17.691	17.691	nan	nan	nan	nan	17.691	17.691	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	1.054	26.077	-9.062
+CA	TYR	G	49	3	14.192	14.192	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	14.192	14.192	nan	nan	nan	nan	nan	nan	nan	-0.182	25.671	-8.407
+C	TYR	G	49	4	38.372	38.372	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	38.372	38.372	nan	nan	nan	nan	nan	nan	nan	-0.951	26.863	-7.850
+O	TYR	G	49	5	36.739	36.739	nan	nan	nan	nan	36.739	36.739	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	-1.759	26.731	-6.931
+CB	TYR	G	49	6	27.378	nan	27.378	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.378	nan	27.378	nan	nan	nan	nan	nan	nan	0.151	24.691	-7.292
+CG	TYR	G	49	7	2.436	nan	2.436	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.436	nan	2.436	nan	nan	nan	nan	nan	nan	1.124	23.637	-7.746
+CD1	TYR	G	49	8	23.522	nan	23.522	nan	nan	nan	nan	nan	nan	nan	nan	nan	23.522	nan	23.522	nan	nan	nan	nan	nan	nan	0.738	22.666	-8.668
+CD2	TYR	G	49	9	24.245	nan	24.245	nan	nan	nan	nan	nan	nan	nan	nan	nan	24.245	nan	24.245	nan	nan	nan	nan	nan	nan	2.444	23.637	-7.300
+CE1	TYR	G	49	10	34.106	nan	34.106	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.106	nan	34.106	nan	nan	nan	nan	nan	nan	1.637	21.715	-9.136
+CE2	TYR	G	49	11	34.297	nan	34.297	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.297	nan	34.297	nan	nan	nan	nan	nan	nan	3.358	22.689	-7.761
+CZ	TYR	G	49	12	10.011	nan	10.011	nan	nan	nan	nan	nan	nan	nan	nan	nan	10.011	nan	10.011	nan	nan	nan	nan	nan	nan	2.945	21.728	-8.679
+OH	TYR	G	49	13	43.359	nan	43.359	nan	nan	nan	43.359	nan	43.359	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	3.827	20.772	-9.138

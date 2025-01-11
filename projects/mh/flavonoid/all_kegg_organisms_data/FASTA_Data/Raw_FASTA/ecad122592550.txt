@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07610: 122592550</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767440">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767440">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ecad:122592550 -->&gt;ecad:122592550 K13269 kaempferol 3-O-beta-D-galactosyltransferase [EC:2.4.1.234] | (RefSeq) kaempferol 3-O-beta-D-galactosyltransferase-like (N)
+atggagatcaatagcaaccgcaatgaaggcataccgaagaggcatgtcgcggttttcgta
+tttccattttcttcacaccctccacttcttttaacccttgtccgtatgctagcttccgcg
+gcccctaacgtcattttttcattctttggcactgcaaagtctaaccaagccttattctct
+gatcaaaaatacaacaatatacgtccatatgatgtatcggatggcatacctaaagattat
+gttttcatgggcaagccccaagaggatataaacttatttttggcagtggctgaagaggag
+tttaggaagggcgttaaagtggtggaaaaagatattgggctcaagattggttgtcttttg
+gttgactcttttttttggtttttggctgatatggctgatgaaatgagcattccttgggtg
+tcgttttggactgctggggctaattcactctctgcacatttttatactgatcttataagg
+caaaagtatgatgaaatcaaagggaccgtagggcctgatgatgaaattgccgacttgatt
+cctggcctcaagacagttcgaataagtgacttaccaggggaagtcgttcttggaaacctt
+gaatcgccgttctcaaccatgctacataagatggcaaggtccctgcctagagcgactgct
+gttcccataaactcttttgacgaattagaccctgaactcaacaaaaacctctcttcacaa
+ttcaacaatttcctcaacattggccccttcaatctcatatctaaagaaaattcgctgtcc
+aaagttgatgaattctcttgcctttcttggttagataatcaaaagccaagatcggttgcc
+tacatctgctttgggacgttcttcaaacctccacctcacgagctagtggagttggctgaa
+gcactagaagagacccaaacctcgtttctttggtcaataaagagtgattccaataagcat
+tttcctaaaggatttttggagagaatatgtgctaatgggactggaaaggttgtaccgtgg
+gcaccacagatacaagtcttggagcattccgcaataggggtgtttataacacatggtgga
+tggaattctatgttggagagtttgggagttggtgtccctatgatatgcaggccgtttgtg
+ggcgatcaacaattaaatacttggatgattgagagagtttgggggattggtgcgaagatt
+gaaggagggagattcaccaaacatggaactgcttgtgctttgaaacaattcttatcatct
+aatgaattgtcaataggacggaaaaagagaattgaagcattgaaagaattggctcataag
+gctgttgagccaaatggaggttctactaaaaatttcaaaactttagtggatatgatcacc
+agtgccaccctttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ecad:122592550+nt">BLAST</a>
+</body>
+</html>

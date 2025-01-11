@@ -1,0 +1,34 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07757: 123150226</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641767931">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641767931">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- taes:123150226 -->&gt;taes:123150226 K00588 caffeoyl-CoA O-methyltransferase [EC:2.1.1.104] | (RefSeq) caffeoyl-CoA O-methyltransferase 1-like isoform X1 (N)
+atggccaccacggcagccgacgccacggccgcggcgcccaaggaccagcccgccaacggt
+tccgagcaggtcacgcgccactccgaggtcggccacaagagcctgctccagagcgacgcc
+ctctaccagtacatcctggagacgagcgtgtacccgcgcgagcacgagtgcatgaaggag
+ctccgcgagatcaccgccaaccacccatggaacctgatgacgacgtcggcggacgagggc
+cagttcctcaacatgctgctcaagctcatcggcgccaagaagaccatggagatcggcgtc
+tacaccggctactccctcctcgccaccgcgctcgccatccccgacgacggcaccgtaagc
+tccctcacttctccgctcccagatccaccgctcccaattcaccaagaaactgaaaccgga
+atgaaacagatcttggccatggacatcaaccgcgagaactacgagctggggctgccgtgc
+atcgagaaggccggcgtggcgcacaagatcgacttccgcgagggcccggcgctgccggtg
+ctggacgcgctgctggaggacgaggccaaccacggcaccttcgacttcgtcttcgtggac
+gccgacaaggacaactacctcaactaccacgagcgcctcatgaagctcgtcaagctcggc
+ggcctcctcggctacgacaacacgctctggaacggctccgtcgtgctccccgccgacgcc
+cccatgcgcaagtacatccgctactaccgcgacttcgtcctcgacctcaacaaggccctc
+gccgccgaccagcgcgtcgagatctgccagctccccgtcggcgacggcatcaccctctgc
+cgccgcgccaagtga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=taes:123150226+nt">BLAST</a>
+</body>
+</html>

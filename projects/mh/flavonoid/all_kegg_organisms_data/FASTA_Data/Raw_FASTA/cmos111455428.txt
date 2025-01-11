@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05248: 111455428</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620855478">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620855478">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- cmos:111455428 -->&gt;cmos:111455428 K23260 scopoletin glucosyltransferase [EC:2.4.1.128] | (RefSeq) scopoletin glucosyltransferase-like (N)
+atgggcactcagctccacatgttcttattccctttcatggcgcgcggacacatgattccc
+atggtcgacatggccaagttgcttgcagctcgcggcgtcaaggtcaccgtcgtcacgact
+cctctcaattccatcgccatctctaactcaatccacacttccaaatccctctctgtttca
+aacattcatcttctcatcctcaaattccccactgccgaagttggtctgccggaaggttgt
+gaaaatggcgactccgttatcgctccggccatgtttcccaaattcatctctgctttgaat
+ttgcttcaaaccccatttgaggaggctgtaatggaacaccgcccccattgcattgtcgcc
+gatattctcttcccttgggtcaacgatgtcgctgctaaatttggtatccccaagttgagc
+ttccatggtacttgttttttctcgttctgtgctatggagttcgtgaggattcaccagcct
+tataaccaggtttcgtccgatacagagccttttctcattccttatcttcccggggagatt
+tctttcacgaaatcgaaactccccgacttcatacgggaggatatcaaaagtgatgtaaca
+gattttcttaagagggccctagagtcggattcgacgtcttatggagctgttatgaacagt
+ttttatgagctggaggcagagtatgctgattgctataggaatgtgttgggaagaaaggcg
+tggcatattggtccactttcgttgtgcaatcaggaaattgaagagaaatctcagagagga
+aaggaatccgccattgatgagaatgagtgcttgaaatggctcgattccaaaaaacccaat
+tcggttgtgtatgtgtgttttggaagtatgtcggaattcagctccgatcagctgagggag
+attgcaaatgggcttgaagcttgtgggaaagatttcatatgggttttccggaaagtgaac
+ggagaagacaaggaagaggatcaaaattggctgccggaggggttcgaacagaggatggaa
+ggaaaagggttgattataagaggatgggcgccgcaggttctgatattggatcatccggcg
+gtgggtggatttgtgacacactgcgggtggaattcgacgctggaagggatagccgccggc
+gttccgatggtgacatggccggtggccggtgagcagttttcgaacgagaaactagtgaca
+gaggtgttgaaaataggagctggtgtcggggttcagaaatgggtgaggattttgggggat
+ttcatcgaaggggaagctgtggagaaggcgataaggagtgtaatggagggggaagaagca
+gaggagatgagaaacagagctaaagaactgggagagatggcgaagagagccgttgctgaa
+aatggatcgtcgtattccgatgtagatgctttgattaaggaattgaaatcatcggcgttt
+tga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=cmos:111455428+nt">BLAST</a>
+</body>
+</html>

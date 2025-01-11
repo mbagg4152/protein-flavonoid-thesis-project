@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07260: 120678394</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641766990">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641766990">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvir:120678394 -->&gt;pvir:120678394 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 51-like isoform X1 (N)
+atggagagacgacgcagaagcctgtgcctaatagcggcggcggcgttcttggttgtagtc
+gcaaccgcaatgccgtaccccggcgaggccgcgacgccgccgctgcggaaggactactac
+gccaagagctgcagcaacctggaggccatcgtgcgggaggaggtggccaggaagataaac
+gagacggtggtcaccatcccggcgacgctccggctcgtcttccacgactgcatggttggg
+ggctgtgacgccgccgtcctgatatcgtccaagaagaacgacgccgagaaggacgccgag
+gacaacgactccctcgccggcgacggcttcgacacgatcaaccgagtcaagaccgccgtc
+gagaggagttgccccggcgtggtctcctgcgccgacatcatacaactggccgccagagat
+gtcgtcttcctggtaaacacccagctgccttcagcaaaaaccaatccccccttcacttca
+ccgtcctcacctgaatcccatcaccttcaactgccgcagtcgaaaggcccctactggtcc
+gtcgagcttggccggcgcgacggcctcgtctccagggccagcgacgtcaagggcaagctg
+cccgacccaaagatgcacgtcaaggagctctccccgttgtttcagaggagcggcttctcc
+ccggatgacatggtcgcgctctcgggcgcgcacaccgtcggcttcgcgcactgcacccgc
+ttcctcaaccggctgtacaactacagcagcagcacgccgacggacccctccttcaacccc
+gactacgcgcagcagctcaagcaggcgtgcccgcctaacgtcggcgagaccatcgccgtc
+aacatggaccctgtgagccccatcaccttcgacaacaactactacaccaacctccagtac
+gggctggggctcttcacctccgaccaggtgctgtacacagatggtgcgaccaagaacatc
+gtagacaggttcgccgggaaccagaaggagttctttgatgcttttgttgccgccatgatc
+aagctcgggaggttgggagtgaagaccggaaacgatggggaaatcagaaaagtctgcact
+gccttcaaccactag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvir:120678394+nt">BLAST</a>
+</body>
+</html>

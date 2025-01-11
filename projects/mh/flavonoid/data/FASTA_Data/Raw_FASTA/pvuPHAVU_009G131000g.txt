@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03093: PHAVU_009G131000g</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620839512">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620839512">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pvu:PHAVU_009G131000g -->&gt;pvu:PHAVU_009G131000g K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) hypothetical protein (N)
+atggcacatttggaggaaatccgagagaaacaaagagctcgtggcccagccaccattctg
+gccattggcactgcaactccatccaactgcatttaccaatctgacttcaccgattactac
+tttcgagtcaccaagagcgatcacatgactcaactcaaggccaagttaaagcgcatatgt
+gagaagtcgatgatagagaaacgctacatacatctcactgaagaaatgctgaaagaaaac
+cccaacataggtgcttacgaggaaccatccttggatgtacgccaagacatattagttgag
+gaggttcctaagcttggtgagaaggcagcatccaaagccttaaaggaatggggcagacca
+agatcagatattactcatctcatattttgctccacctcgggtgtagacatgcctggtgct
+gattaccaacttctgaggctcttgggccttaaaccatccaccaaaaggttcatgttatac
+catcaaggttgttatgctggtggcaccgttcttcgtctcgctaaagaccttgctgagaat
+aatgttggagcacgtattctcgtggtgtgttctgagatcacagttgtcacctttcgtgga
+ccctgtgaaacacacttggactcgttggtgggacaagccctctttggagatggagcttca
+tccgtgattgttggatctgatcctgacacatccatcgaacgaccactgtttcaccttgtg
+tcagcatctgagacaattctacccaactctgagggggcaattgaaggacacttgcgtgag
+gtggggctaacctttcatcttaaggataacgttcctcagttgattggagagaacatagag
+aaaagcctcgaagaagccttccacccacttgggatcagtgactggaactccttgttttgg
+gttgcccaccctggtggccctgcaatcttgaagcagatagaagcaacgcttgggttgaac
+cctgataaattgagagcaaccaaacaagttctgaaagagtatgggaacatgtctagtgca
+tgtgtgctgttcatactggatgagatgagaagttggtccttggagaaagggaaatccagt
+actggtgaaggactaaagtggggtgttttatatgggtttggccctggcttgaccatggag
+accattgttttacacagcgccgccgtagacccaaacaactag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pvu:PHAVU_009G131000g+nt">BLAST</a>
+</body>
+</html>

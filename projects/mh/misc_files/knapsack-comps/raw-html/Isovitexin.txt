@@ -1,0 +1,445 @@
+
+<html>
+<!-- <head> -->
+<!-- NBDC Markup START -->
+<head vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+
+<title>KNApSAcK Metabolite Information - C00001059</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/cs">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="C00001059">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/info.css" media="all">
+</head><body 0="" onload="" >
+
+<div id="my_body">
+  <div id="my_header">
+      <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+      <img src="images/nap2.gif" border=0> </a></p>
+  </div>
+  <div id="my_main">
+    <div id="my_navigation">
+
+    </div>
+    <div id="my_contents">
+          <br>
+<!--	  input word = <font class="iw">C00001059</font><br><br> //-->
+     	  input word = <font class="iw">C00001059</font><br><br>
+
+<!-- <table class="d1"> -->
+<!-- NBDC Markup START -->
+	<table class="d1" vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+<!-- NBDC Markup END -->
+        <tr>
+            <th class="d1">Metabolite Information</th><th class="d3">Structural formula</th>
+        </tr>
+
+        <tr>
+            <td>
+               <table class="d3">
+                  <tr>
+                     <th class="inf">Name</th>
+                     <td colspan="4" class="inf">Isovitexin<br>6-beta-D-Glucopyranosyl-4',5,7-trihydroxyflavone<br>Homovitexin<br>6-C-beta-D-Glucopyranosylapigenin<br>Saponaretin<br>6-beta-D-Glucopyranosyl-5,7-dihydroxy-2-(4-hydroxyphenyl)-4H-1-benzopyran-4-one</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Formula</th>
+                     <td colspan="4">C21H20O10</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Mw</th>
+                     <td colspan="4">432.10564686</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">CAS RN</th>
+                     <td colspan="4">38953-85-4</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">C_ID</th>
+                     <td colspan="4" class="img2">C00001059
+<!-- 			C00001059<a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00001059" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+<!-- NBDC Markup START -->
+<!--			<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry"> //-->
+<!--			<span property="entryID">C00001059</span><a href="http://knapsack3d.sakura.ne.jp/link.php?id=C00001059" target="_blank"><img src="images/3D.gif" border="0" class="img2"></a> //-->
+                                       , <a href="/Twins/top.php?kword=C00001059&sword=50&mode=list1#res" target="_blank"><img src="images/TW.gif" border="0" class="img2"></a><br>
+<!--			</div> //-->
+<!-- NBDC Markup END -->
+                        
+		     </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChIKey</th>
+                     <td colspan="4">MYXNWGACZJSMBT-XZIDVWOUNA-N</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">InChICode</th>
+                     <td colspan="4">InChI=1S/C21H20O10/c22-7-14-17(26)19(28)20(29)21(31-14)16-11(25)6-13-15(18(16)27)10(24)5-12(30-13)8-1-3-9(23)4-2-8/h1-6,14,17,19-23,25-29H,7H2/t14-,17-,19+,20-,21+/m1/s1</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">SMILES</th>
+                     <td colspan="4">c1(c(c(c2c(c1)oc(cc2=O)c1ccc(cc1)O)O)[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)CO)O)O)O)O</td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Start Substs in Alk. Biosynthesis (Prediction)</th>
+                     <td colspan="4"><a href="/CobWeb/top.php?word=&mode=met" target=_"blank"></a> </td>
+                  </tr>
+                  <tr>
+                     <th class="inf">Organism</th>
+                     <td class="or1">
+                        <table class="org">
+			 	<th class="or3">Kingdom</th>
+				<th class="or2">Family</th>
+				<th class="or1">Species</th>
+				<th class="or4">Reference</th><tr>
+<td class=org>Plantae</td><td class=org>Acanthaceae</td><td class=org2>Clinacanthus nutans</td><td class=org><a href=information.php?mode=r&word=C00001059&key=0 title=Clinacanthus nutans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Annonaceae</td><td class=org2>Hornschuchia citriodora</td><td class=org><a href=information.php?mode=r&word=C00001059&key=1 title=Hornschuchia citriodora > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Asteraceae</td><td class=org2>Centaurea melitensis L.</td><td class=org><a href=information.php?mode=r&word=C00001059&key=2 title=Centaurea melitensis L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Caryophyllaceae</td><td class=org2>Drymaria diandra <a href='/KNApSAcK_World/top.php?word=Drymaria%20diandra' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=3 title=Drymaria diandra > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Chloranthaceae</td><td class=org2>Ascarina lucida</td><td class=org><a href=information.php?mode=r&word=C00001059&key=4 title=Ascarina lucida > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Clusiaceae/Clusiaceae-Guttiferae</td><td class=org2>Garcinia hombroniana</td><td class=org><a href=information.php?mode=r&word=C00001059&key=5 title=Garcinia hombroniana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Commelinaceae</td><td class=org2>Commelina communis L <a href='/KNApSAcK_World/top.php?word=Commelina%20communis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=6 title=Commelina communis L > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cucurbitaceae</td><td class=org2>Citrullus colocynthis (L.) <a href='/KNApSAcK_World/top.php?word=Citrullus%20colocynthis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=7 title=Citrullus colocynthis (L.) > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Cucurbitaceae</td><td class=org2>Cucumis sativus <a href='/KNApSAcK_World/top.php?word=Cucumis%20sativus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=8 title=Cucumis sativus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Euphorbiaceae</td><td class=org2>Cladogynos orientalis</td><td class=org><a href=information.php?mode=r&word=C00001059&key=9 title=Cladogynos orientalis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Euphorbiaceae</td><td class=org2>Macaranga tanarius</td><td class=org><a href=information.php?mode=r&word=C00001059&key=10 title=Macaranga tanarius > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Euphorbiaceae</td><td class=org2>Strophioblachia fimbricalyx Boerl</td><td class=org><a href=information.php?mode=r&word=C00001059&key=11 title=Strophioblachia fimbricalyx Boerl > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia caven <a href='/KNApSAcK_World/top.php?word=Acacia%20caven' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=12 title=Acacia caven > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Acacia furcatispina</td><td class=org><a href=information.php?mode=r&word=C00001059&key=13 title=Acacia furcatispina > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Anadenanthera peregrina <a href='/KNApSAcK_World/top.php?word=Anadenanthera%20peregrina' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=14 title=Anadenanthera peregrina > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Crotalaria micans</td><td class=org><a href=information.php?mode=r&word=C00001059&key=15 title=Crotalaria micans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Crotalaria verrucosa <a href='/KNApSAcK_World/top.php?word=Crotalaria%20verrucosa' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=16 title=Crotalaria verrucosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Cytisus hirsutus</td><td class=org><a href=information.php?mode=r&word=C00001059&key=17 title=Cytisus hirsutus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Dalbergia monetaria <a href='/KNApSAcK_World/top.php?word=Dalbergia%20monetaria' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=18 title=Dalbergia monetaria > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Desmodium triflorum <a href='/KNApSAcK_World/top.php?word=Desmodium%20triflorum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=19 title=Desmodium triflorum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Galactia glaucophylla</td><td class=org><a href=information.php?mode=r&word=C00001059&key=20 title=Galactia glaucophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Gleditsia japonica <a href='/KNApSAcK_World/top.php?word=Gleditsia%20japonica' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=21 title=Gleditsia japonica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Gleditsia sinensis <a href='/KNApSAcK_World/top.php?word=Gleditsia%20sinensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=22 title=Gleditsia sinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Glycyrrhiza glabra <a href='/KNApSAcK_World/top.php?word=Glycyrrhiza%20glabra' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=23 title=Glycyrrhiza glabra > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lespedeza capitata</td><td class=org><a href=information.php?mode=r&word=C00001059&key=24 title=Lespedeza capitata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lespedeza hedysaroides</td><td class=org><a href=information.php?mode=r&word=C00001059&key=25 title=Lespedeza hedysaroides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lespedeza juncea</td><td class=org><a href=information.php?mode=r&word=C00001059&key=26 title=Lespedeza juncea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Lupinus sericeus</td><td class=org><a href=information.php?mode=r&word=C00001059&key=27 title=Lupinus sericeus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium bracteolatum</td><td class=org><a href=information.php?mode=r&word=C00001059&key=28 title=Otholobium bracteolatum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium foliosum</td><td class=org><a href=information.php?mode=r&word=C00001059&key=29 title=Otholobium foliosum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium fruticans</td><td class=org><a href=information.php?mode=r&word=C00001059&key=30 title=Otholobium fruticans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium hirtum</td><td class=org><a href=information.php?mode=r&word=C00001059&key=31 title=Otholobium hirtum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium parviflorum</td><td class=org><a href=information.php?mode=r&word=C00001059&key=32 title=Otholobium parviflorum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Otholobium sericeum</td><td class=org><a href=information.php?mode=r&word=C00001059&key=33 title=Otholobium sericeum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Parkinsonia aculeata <a href='/KNApSAcK_World/top.php?word=Parkinsonia%20aculeata' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=34 title=Parkinsonia aculeata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Pisum sativum <a href='/KNApSAcK_World/top.php?word=Pisum%20sativum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=35 title=Pisum sativum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis alba <a href='/KNApSAcK_World/top.php?word=Prosopis%20alba' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=36 title=Prosopis alba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis argentina</td><td class=org><a href=information.php?mode=r&word=C00001059&key=37 title=Prosopis argentina > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis chilensis <a href='/KNApSAcK_World/top.php?word=Prosopis%20chilensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=38 title=Prosopis chilensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis fiebrigii</td><td class=org><a href=information.php?mode=r&word=C00001059&key=39 title=Prosopis fiebrigii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis hassleri</td><td class=org><a href=information.php?mode=r&word=C00001059&key=40 title=Prosopis hassleri > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis kuntzei <a href='/KNApSAcK_World/top.php?word=Prosopis%20kuntzei' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=41 title=Prosopis kuntzei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis nigra <a href='/KNApSAcK_World/top.php?word=Prosopis%20nigra' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=42 title=Prosopis nigra > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis reptans</td><td class=org><a href=information.php?mode=r&word=C00001059&key=43 title=Prosopis reptans > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis ruscifolia <a href='/KNApSAcK_World/top.php?word=Prosopis%20ruscifolia' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=44 title=Prosopis ruscifolia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis strombulifera <a href='/KNApSAcK_World/top.php?word=Prosopis%20strombulifera' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=45 title=Prosopis strombulifera > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Prosopis vinalillo <a href='/KNApSAcK_World/top.php?word=Prosopis%20vinalillo' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=46 title=Prosopis vinalillo > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psophocarpus tetragonolobus <a href='/KNApSAcK_World/top.php?word=Psophocarpus%20tetragonolobus' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=47 title=Psophocarpus tetragonolobus > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea affinis</td><td class=org><a href=information.php?mode=r&word=C00001059&key=48 title=Psoralea affinis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea arborea</td><td class=org><a href=information.php?mode=r&word=C00001059&key=49 title=Psoralea arborea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea asarina</td><td class=org><a href=information.php?mode=r&word=C00001059&key=50 title=Psoralea asarina > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea connixa</td><td class=org><a href=information.php?mode=r&word=C00001059&key=51 title=Psoralea connixa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea effusa</td><td class=org><a href=information.php?mode=r&word=C00001059&key=52 title=Psoralea effusa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea imbricata</td><td class=org><a href=information.php?mode=r&word=C00001059&key=53 title=Psoralea imbricata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea laxa</td><td class=org><a href=information.php?mode=r&word=C00001059&key=54 title=Psoralea laxa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea papillosa</td><td class=org><a href=information.php?mode=r&word=C00001059&key=55 title=Psoralea papillosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea ramulosa</td><td class=org><a href=information.php?mode=r&word=C00001059&key=56 title=Psoralea ramulosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Psoralea speciosa</td><td class=org><a href=information.php?mode=r&word=C00001059&key=57 title=Psoralea speciosa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia cana</td><td class=org><a href=information.php?mode=r&word=C00001059&key=58 title=Rhynchosia cana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia capitata</td><td class=org><a href=information.php?mode=r&word=C00001059&key=59 title=Rhynchosia capitata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia heynei</td><td class=org><a href=information.php?mode=r&word=C00001059&key=60 title=Rhynchosia heynei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia jacobii</td><td class=org><a href=information.php?mode=r&word=C00001059&key=61 title=Rhynchosia jacobii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia minima <a href='/KNApSAcK_World/top.php?word=Rhynchosia%20minima' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=62 title=Rhynchosia minima > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia rothii</td><td class=org><a href=information.php?mode=r&word=C00001059&key=63 title=Rhynchosia rothii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Rhynchosia suaveolens</td><td class=org><a href=information.php?mode=r&word=C00001059&key=64 title=Rhynchosia suaveolens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Securigera varia</td><td class=org><a href=information.php?mode=r&word=C00001059&key=65 title=Securigera varia > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Tamarindus indica <a href='/KNApSAcK_World/top.php?word=Tamarindus%20indica' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=66 title=Tamarindus indica > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vicia faba <a href='/KNApSAcK_World/top.php?word=Vicia%20faba' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=67 title=Vicia faba > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vigna mungo <a href='/KNApSAcK_World/top.php?word=Vigna%20mungo' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=68 title=Vigna mungo > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Fabaceae</td><td class=org2>Vigna radiata <a href='/KNApSAcK_World/top.php?word=Vigna%20radiata' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=69 title=Vigna radiata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana algida</td><td class=org><a href=information.php?mode=r&word=C00001059&key=70 title=Gentiana algida > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana argentea</td><td class=org><a href=information.php?mode=r&word=C00001059&key=71 title=Gentiana argentea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana arisanensis</td><td class=org><a href=information.php?mode=r&word=C00001059&key=72 title=Gentiana arisanensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana crassicaulis <a href='/KNApSAcK_World/top.php?word=Gentiana%20crassicaulis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=73 title=Gentiana crassicaulis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana decumbers</td><td class=org><a href=information.php?mode=r&word=C00001059&key=74 title=Gentiana decumbers > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana depressa</td><td class=org><a href=information.php?mode=r&word=C00001059&key=75 title=Gentiana depressa > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana elwesii</td><td class=org><a href=information.php?mode=r&word=C00001059&key=76 title=Gentiana elwesii > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana lawrencei</td><td class=org><a href=information.php?mode=r&word=C00001059&key=77 title=Gentiana lawrencei > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana macrophylla <a href='/KNApSAcK_World/top.php?word=Gentiana%20macrophylla' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=78 title=Gentiana macrophylla > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana officinalis <a href='/KNApSAcK_World/top.php?word=Gentiana%20officinalis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=79 title=Gentiana officinalis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana pedicellata</td><td class=org><a href=information.php?mode=r&word=C00001059&key=80 title=Gentiana pedicellata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana prolata</td><td class=org><a href=information.php?mode=r&word=C00001059&key=81 title=Gentiana prolata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana rigescens <a href='/KNApSAcK_World/top.php?word=Gentiana%20rigescens' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=82 title=Gentiana rigescens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana sikkimensis</td><td class=org><a href=information.php?mode=r&word=C00001059&key=83 title=Gentiana sikkimensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana straminea <a href='/KNApSAcK_World/top.php?word=Gentiana%20straminea' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=84 title=Gentiana straminea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Gentiana triflora</td><td class=org><a href=information.php?mode=r&word=C00001059&key=85 title=Gentiana triflora > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Swertia perennis</td><td class=org><a href=information.php?mode=r&word=C00001059&key=86 title=Swertia perennis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Swertia pseudochinensis</td><td class=org><a href=information.php?mode=r&word=C00001059&key=87 title=Swertia pseudochinensis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Swertia punicea</td><td class=org><a href=information.php?mode=r&word=C00001059&key=88 title=Swertia punicea > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Gentianaceae</td><td class=org2>Tripterospermum japonicum</td><td class=org><a href=information.php?mode=r&word=C00001059&key=89 title=Tripterospermum japonicum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Geraniaceae</td><td class=org2>Geranium phaeum</td><td class=org><a href=information.php?mode=r&word=C00001059&key=90 title=Geranium phaeum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Geraniaceae</td><td class=org2>Pelargonium reniforme</td><td class=org><a href=information.php?mode=r&word=C00001059&key=91 title=Pelargonium reniforme > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Geraniaceae</td><td class=org2>Pelargonium sidoides <a href='/KNApSAcK_World/top.php?word=Pelargonium%20sidoides' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=92 title=Pelargonium sidoides > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Vitex littoralis</td><td class=org><a href=information.php?mode=r&word=C00001059&key=93 title=Vitex littoralis > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Vitex lucens</td><td class=org><a href=information.php?mode=r&word=C00001059&key=94 title=Vitex lucens > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Labiatae</td><td class=org2>Vitex polygama</td><td class=org><a href=information.php?mode=r&word=C00001059&key=95 title=Vitex polygama > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Linaceae</td><td class=org2>Linum usitatissimum <a href='/KNApSAcK_World/top.php?word=Linum%20usitatissimum' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=96 title=Linum usitatissimum > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Malvaceae</td><td class=org2>Theobroma cacao L. <a href='/KNApSAcK_World/top.php?word=Theobroma%20cacao' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=97 title=Theobroma cacao L. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Palmae</td><td class=org2>Phoenix hanceana var. formosana</td><td class=org><a href=information.php?mode=r&word=C00001059&key=98 title=Phoenix hanceana var. formosana > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Passifloraceae</td><td class=org2>Passiflora serratodigitata</td><td class=org><a href=information.php?mode=r&word=C00001059&key=99 title=Passiflora serratodigitata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Passifloraceae</td><td class=org2>Passiflora spp.</td><td class=org><a href=information.php?mode=r&word=C00001059&key=100 title=Passiflora spp. > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Poaceae</td><td class=org2>Zea mays <a href='/KNApSAcK_World/top.php?word=Zea%20mays' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=101 title=Zea mays > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Polygonaceae</td><td class=org2>Polygonum affine</td><td class=org><a href=information.php?mode=r&word=C00001059&key=102 title=Polygonum affine > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Rubiaceae</td><td class=org2>Hedyotis dichotoma</td><td class=org><a href=information.php?mode=r&word=C00001059&key=103 title=Hedyotis dichotoma > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Smilacaceae</td><td class=org2>Smilax bracteata</td><td class=org><a href=information.php?mode=r&word=C00001059&key=104 title=Smilax bracteata > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Theaceae</td><td class=org2>Camellia sinensis (L.) O.KUNTZE <a href='/KNApSAcK_World/top.php?word=Camellia%20sinensis' target=_blank><img src='images/W.gif' class=org3 border=0></a></td><td class=org><a href=information.php?mode=r&word=C00001059&key=105 title=Camellia sinensis (L.) O.KUNTZE > Ref.</a></td>
+</tr>
+<tr>
+<td class=org>Plantae</td><td class=org>Thymelaeaceae</td><td class=org2>Daphne sericea</td><td class=org><a href=information.php?mode=r&word=C00001059&key=106 title=Daphne sericea > Ref.</a></td>
+</tr>
+</table>
+		     </td>
+                  </tr>
+               </table>
+            </td>
+	    <td class=img>
+<!--		<img src="/sun/MSdata/SD/C00001059.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'"><br><br> -->
+<!-- NBDC Markup START -->
+		<div vocab="http://schema.org/" typeof="BiologicalDatabaseEntry">
+		<img property="image" src="/sun/MSdata/SD/C00001059.gif" width="200"  border="0" onerror="this.src='/knapsack_core/images/OnDrawing.gif'" />
+		</div>
+<!-- NBDC Markup END -->
+		<a href="image.php?word=C00001059" title="C00001059" onclick="window.open(this.href, '_blank', 'width=500,resizable=yes, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">zoom in</a>
+
+		<br><br><br><br>
+                
+
+	    </td>
+        </tr>
+	</table>
+
+
+   </div>
+   </div>
+   <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+   </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,450 @@
+ENTRY       smo00940                    Pathway
+NAME        Phenylpropanoid biosynthesis - Selaginella moellendorffii
+DESCRIPTION Phenylpropanoids are a group of plant secondary metabolites derived from phenylalanine and having a wide variety of functions both as structural and signaling molecules. Phenylalanine is first converted to cinnamic acid by deamination. It is followed by hydroxylation and frequent methylation to generate coumaric acid and other acids with a phenylpropane (C6-C3) unit. Reduction of the CoA-activated carboxyl groups of these acids results in the corresponding aldehydes and alcohols. The alcohols are called monolignols, the starting compounds for biosynthesis of lignin.
+CLASS       Metabolism; Biosynthesis of other secondary metabolites
+PATHWAY_MAP smo00940  Phenylpropanoid biosynthesis
+MODULE      smo_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:smo00940]
+DBLINKS     GO: 0009699
+ORGANISM    Selaginella moellendorffii [GN:smo]
+GENE        SELMODRAFT_450481  PAL4-1; phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            SELMODRAFT_450485  PAL4-2; phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            SELMODRAFT_450484  PAL3-2b; phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            SELMODRAFT_450483  PAL3-2a; phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            SELMODRAFT_450482  PAL2-2; phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            SELMODRAFT_450480  PAL3-1; phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            SELMODRAFT_450479  PAL2-1; phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            SELMODRAFT_450474  PAL1-1; phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            SELMODRAFT_450478  PAL1-2; phenylalanine ammonia-lyase [KO:K10775] [EC:4.3.1.24]
+            SELMODRAFT_450569  C4H1-1; trans-cinnamate 4-hydroxylase [KO:K00487] [EC:1.14.14.91]
+            SELMODRAFT_450570  C4H1-2; trans-cinnamate 4-hydroxylase [KO:K00487] [EC:1.14.14.91]
+            SELMODRAFT_446445  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_116986  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_450526  4CL1-1; 4-coumarate:CoA ligase [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_450546  4CL1-2; 4-coumarate:CoA ligase [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_115483  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_181279  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_450547  4CL2-1; 4-coumarate:CoA ligase [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_450548  4CL2-2; 4-coumarate:CoA ligase [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_232017  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_234540  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_173133  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_85691  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_231716  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_128539  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_110329  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_157069  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_235993  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_116209  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_123905  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_429785  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_133629  hypothetical protein [KO:K01904] [EC:6.2.1.12]
+            SELMODRAFT_450171  BAHDe7-1; probable hydroxycinnamoyl transferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450172  BAHDe7-2; probable hydroxycinnamoyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_402379  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_402594  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450132  BAHDa2-2; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450573  BAHDa6-2; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450617  BAHDd2-2; BAHD family acyltransferase, clade IV [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450131  BAHDa2a-1; BAHD acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450571  BAHDa6a-1; BAHD acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450722  BAHDb5b-1; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450721  BAHDb5a-1; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450439  BAHDa5-2; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450725  BAHDb5c; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450614  BAHDd1-2; BAHD family acyltransferase, clade IV [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450687  BAHDb2; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450975  BAHDb9a; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_406582  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450686  BAHDb1-1; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450756  BAHDb8a; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450754  BAHDb6a-1; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450753  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_405848  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450441  BAHDa5-1; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_408274  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450438  BAHDa1-2; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450692  BAHDb1-2; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450696  BAHDb4; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_89789  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_409608  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450616  BAHDd2-1; BAHD family acyltransferase, clade IV [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450145  BAHDa4-1; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450572  BAHDa6b-1; BAHD acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450574  BAHDa2b-1; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450269  BAHDa4-2; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_411178  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450611  BAHDc2-1; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_414046  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450135  BAHDa3-2; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450612  BAHDc2-2; BAHD acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_104404  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_104600  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450745  BAHDb7d; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450693  BAHDb2delta; hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450437  BAHDa1-1; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450608  BAHDc1-1; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450740  BAHDb7a-2; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450742  BAHDb7b-2; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450694  BAHDb3-1; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450613  BAHDd1-1; BAHD family acyltransferase, clade IV [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_419914  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_418346  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450609  BAHDc1-2; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_423705  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450739  BAHDb7a-1; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450741  BAHDb7b-1; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450746  BAHDb7c; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450695  BAHDb3-2; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450134  BAHDa3-1; BAHD family acyltransferase, clade I [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_446674  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450208  BAHDd3; BAHD family acyltransferase, clade IV [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_135306  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_431269  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450736  BAHDb6a-2; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_431285  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_431276  hypothetical protein [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450724  BAHDb5b-2; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450723  BAHDb5a-2; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450737  BAHDb6b; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450757  BAHDb8b; BAHD family acyltransferase [KO:K13065] [EC:2.3.1.133]
+            SELMODRAFT_450942  C3'H1-1; p-coumaroyl shikimate/quinate 3'-hydroxylase [KO:K09754] [EC:1.14.14.96]
+            SELMODRAFT_450943  C3'H1-2; p-coumaroyl shikimate/quinate 3'-hydroxylase [KO:K09754] [EC:1.14.14.96]
+            SELMODRAFT_113971  hypothetical protein [KO:K18368] [EC:3.1.1.-]
+            SELMODRAFT_155184  hypothetical protein [KO:K18368] [EC:3.1.1.-]
+            SELMODRAFT_85161  hypothetical protein [KO:K18368] [EC:3.1.1.-]
+            SELMODRAFT_444550  hypothetical protein [KO:K18368] [EC:3.1.1.-]
+            SELMODRAFT_158563  CCoAMT1-2; hypothetical protein [KO:K00588] [EC:2.1.1.104]
+            SELMODRAFT_266699  CCoAMT2-1; hypothetical protein [KO:K00588] [EC:2.1.1.104]
+            SELMODRAFT_271191  CCoAMT1-1; hypothetical protein [KO:K00588] [EC:2.1.1.104]
+            SELMODRAFT_405144  CCoAMT3-1; hypothetical protein [KO:K00588] [EC:2.1.1.104]
+            SELMODRAFT_101771  CCoAMT2-2; hypothetical protein [KO:K00588] [EC:2.1.1.104]
+            SELMODRAFT_450549  CCR1-1; cinnamoyl-CoA reductase [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_450552  CCR1-2; cinnamoyl-CoA reductase [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_85242  hypothetical protein [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_227661  hypothetical protein [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_227659  hypothetical protein [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_234633  hypothetical protein [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_134989  hypothetical protein [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_134883  hypothetical protein [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_123171  hypothetical protein [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_228517  hypothetical protein [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_228519  hypothetical protein [KO:K09753] [EC:1.2.1.44]
+            SELMODRAFT_235150  hypothetical protein [KO:K12355] [EC:1.2.1.68]
+            SELMODRAFT_450945  COMT1-2; caffeic acid O-methyltransferase [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            SELMODRAFT_450944  COMT1-1; caffeic acid O-methyltransferase [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            SELMODRAFT_149351  hypothetical protein [KO:K00083] [EC:1.1.1.195]
+            SELMODRAFT_450958  CAD1-1; cinnamyl alcohol dehydrogenase [KO:K00083] [EC:1.1.1.195]
+            SELMODRAFT_187673  hypothetical protein [KO:K00083] [EC:1.1.1.195]
+            SELMODRAFT_230239  hypothetical protein [KO:K00083] [EC:1.1.1.195]
+            SELMODRAFT_164163  hypothetical protein [KO:K11188] [EC:1.11.1.7 1.11.1.27 3.1.1.-]
+            SELMODRAFT_439793  hypothetical protein [KO:K11188] [EC:1.11.1.7 1.11.1.27 3.1.1.-]
+            SELMODRAFT_181036  hypothetical protein [KO:K11188] [EC:1.11.1.7 1.11.1.27 3.1.1.-]
+            SELMODRAFT_148807  hypothetical protein [KO:K11188] [EC:1.11.1.7 1.11.1.27 3.1.1.-]
+            SELMODRAFT_229953  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_164271  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_229828  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_75799  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_73829  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_77662  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_76459  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_77259  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_403410  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_145932  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_403769  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_230146  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_79034  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_81737  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_230472  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_143155  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_230656  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_88307  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_88102  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_409154  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_89861  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_409361  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_91394  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_168621  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_444510  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_416327  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_77725  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_228898  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_106106  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_97331  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_232728  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_134234  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_24753  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_107369  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_122015  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_137067  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_167284  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_231472  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_233332  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_236655  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_407109  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_266691  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_126670  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_234501  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_421525  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_101253  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_125631  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_104905  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_125363  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_186230  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_133931  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_119731  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_182303  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_134739  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_177154  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_235209  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_231652  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_231875  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_96952  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_97355  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_3754  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_97402  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_231953  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_97201  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_3741  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_95196  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_14687  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_411941  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_93449  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_228326  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_232491  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_102882  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_102433  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_102685  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_101258  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_232270  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_232359  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_414521  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_232269  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_132875  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_125747  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_140930  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_418626  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_179387  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_110943  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_235541  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_137572  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_236822  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_136759  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_151081  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_123452  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_137617  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_268057  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_186097  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_138810  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_272212  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_104946  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_131487  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_106421  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_182951  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_178409  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_125791  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_114931  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_115017  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_115011  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_115216  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_421222  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_233807  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_117818  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_114366  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_236348  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_134943  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_135052  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_135010  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_126833  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_126863  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_235371  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_235372  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_138552  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_129813  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_117910  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_234418  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_181167  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_269862  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_236645  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_125521  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_122100  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_232763  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_122262  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_272010  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_115533  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_115982  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_129957  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_132915  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_429447  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_132865  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_233271  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_271350  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_128463  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_132762  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_430498  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_3562  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_177321  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_236097  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_14540  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_269699  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_116945  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_105029  hypothetical protein [KO:K00430] [EC:1.11.1.7]
+            SELMODRAFT_138399  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_153534  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_268319  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_183841  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_75234  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_157260  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_267120  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_169039  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_163827  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_271823  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_135249  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_98083  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_127964  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_88863  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_235275  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_135673  hypothetical protein [KO:K01188] [EC:3.2.1.21]
+            SELMODRAFT_125622  hypothetical protein [KO:K05349] [EC:3.2.1.21]
+            SELMODRAFT_74114  hypothetical protein [KO:K05349] [EC:3.2.1.21]
+            SELMODRAFT_119324  hypothetical protein [KO:K05349] [EC:3.2.1.21]
+            SELMODRAFT_185578  hypothetical protein [KO:K05350] [EC:3.2.1.21]
+            SELMODRAFT_149851  hypothetical protein [KO:K05350] [EC:3.2.1.21]
+COMPOUND    C00079  L-Phenylalanine
+            C00082  L-Tyrosine
+            C00223  p-Coumaroyl-CoA
+            C00315  Spermidine
+            C00323  Caffeoyl-CoA
+            C00406  Feruloyl-CoA
+            C00411  Sinapoyl-CoA
+            C00423  trans-Cinnamate
+            C00482  Sinapate
+            C00540  Cinnamoyl-CoA
+            C00590  Coniferyl alcohol
+            C00761  Coniferin
+            C00811  4-Coumarate
+            C00852  Chlorogenate
+            C00903  Cinnamaldehyde
+            C00933  Sinapine
+            C01175  1-O-Sinapoyl-beta-D-glucose
+            C01197  Caffeate
+            C01494  Ferulate
+            C01527  Scopolin
+            C01533  Syringin
+            C01752  Scopoletin
+            C01772  trans-2-Hydroxycinnamate
+            C02325  Sinapyl alcohol
+            C02646  4-Coumaryl alcohol
+            C02666  Coniferyl aldehyde
+            C02887  Sinapoyl malate
+            C02947  4-Coumaroylshikimate
+            C04366  3-(2-Carboxyethenyl)-cis,cis-muconate
+            C05158  trans-beta-D-Glucosyl-2-hydroxycinnamate
+            C05608  4-Hydroxycinnamyl aldehyde
+            C05610  Sinapoyl aldehyde
+            C05619  5-Hydroxyferulic acid methyl ester
+            C05627  4-Hydroxystyrene
+            C05838  cis-2-Hydroxycinnamate
+            C05839  cis-beta-D-Glucosyl-2-hydroxycinnamate
+            C05851  Coumarin
+            C05855  4-Hydroxycinnamyl alcohol 4-D-glucoside
+            C06224  3,4-Dihydroxystyrene
+            C09315  Umbelliferone
+            C10428  Anethole
+            C10434  5-O-Caffeoylshikimic acid
+            C10452  Estragole
+            C10453  Eugenol
+            C10454  Methyleugenol
+            C10469  Isoeugenol
+            C10478  Methylisoeugenol
+            C10945  Caffeic aldehyde
+            C12203  5-Hydroxyferuloyl-CoA
+            C12204  5-Hydroxyconiferaldehyde
+            C12205  5-Hydroxyconiferyl alcohol
+            C12206  Caffeyl alcohol
+            C12208  p-Coumaroyl quinic acid
+            C15804  p-Hydroxyphenyl lignin
+            C15805  Guaiacyl lignin
+            C15806  Syringyl lignin
+            C15807  5-Hydroxy-guaiacyl lignin
+            C16930  Chavicol
+            C18069  N1,N5,N10-Tricoumaroyl spermidine
+            C18070  N1,N5,N10-Tricaffeoyl spermidine
+            C18071  N1,N5,N10-Triferuloyl spermidine
+            C18072  N1,N5,N10-Tri(hydroxyferuloyl) spermidine
+            C18073  N1,N5-Di(hydroxyferuloyl)-N10-sinapoyl spermidine
+            C20225  Coniferyl acetate
+            C20464  Isochavicol
+            C20465  Coumaryl acetate
+            C21459  6-Hydroxyferuloyl-CoA
+            C22070  2,4-Dihydroxycinnamoyl-CoA
+REFERENCE   PMID:14729911
+  AUTHORS   Nair RB, Bastress KL, Ruegger MO, Denault JW, Chapple C.
+  TITLE     The Arabidopsis thaliana REDUCED EPIDERMAL FLUORESCENCE1 gene encodes an aldehyde dehydrogenase involved in ferulic acid and sinapic acid biosynthesis.
+  JOURNAL   Plant Cell 16:544-54 (2004)
+            DOI:10.1105/tpc.017509
+REFERENCE   PMID:14551235
+  AUTHORS   Baucher M, Halpin C, Petit-Conil M, Boerjan W.
+  TITLE     Lignin: genetic engineering and impact on pulping.
+  JOURNAL   Crit Rev Biochem Mol Biol 38:305-50 (2003)
+            DOI:10.1080/10409230391036757
+REFERENCE   PMID:15878986
+  AUTHORS   Rogers LA, Dubos C, Cullis IF, Surman C, Poole M, Willment J, Mansfield SD, Campbell MM.
+  TITLE     Light, the circadian clock, and sugar perception in the control of lignin biosynthesis.
+  JOURNAL   J Exp Bot 56:1651-63 (2005)
+            DOI:10.1093/jxb/eri162
+REFERENCE   PMID:12242395
+  AUTHORS   Whetten R, Sederoff R.
+  TITLE     Lignin Biosynthesis.
+  JOURNAL   Plant Cell 7:1001-1013 (1995)
+            DOI:10.1105/tpc.7.7.1001
+REFERENCE   PMID:8972602
+  AUTHORS   Lorenzen M, Racicot V, Strack D, Chapple C.
+  TITLE     Sinapic acid ester metabolism in wild type and a sinapoylglucose-accumulating mutant of arabidopsis.
+  JOURNAL   Plant Physiol 112:1625-30 (1996)
+            DOI:10.1104/pp.112.4.1625
+REFERENCE   PMID:1477555
+  AUTHORS   Chapple CC, Vogt T, Ellis BE, Somerville CR.
+  TITLE     An Arabidopsis mutant defective in the general phenylpropanoid pathway.
+  JOURNAL   Plant Cell 4:1413-24 (1992)
+            DOI:10.1105/tpc.4.11.1413
+REFERENCE   PMID:14612585
+  AUTHORS   Raes J, Rohde A, Christensen JH, Van de Peer Y, Boerjan W.
+  TITLE     Genome-wide characterization of the lignification toolbox in Arabidopsis.
+  JOURNAL   Plant Physiol 133:1051-71 (2003)
+            DOI:10.1104/pp.103.026484
+REFERENCE   PMID:14568076
+  AUTHORS   Costa MA, Collins RE, Anterola AM, Cochrane FC, Davin LB, Lewis NG.
+  TITLE     An in silico assessment of gene function and organization of the phenylpropanoid pathway metabolic networks in Arabidopsis thaliana and limitations thereof.
+  JOURNAL   Phytochemistry 64:1097-112 (2003)
+            DOI:10.1016/S0031-9422(03)00517-X
+REFERENCE   PMID:10934215
+  AUTHORS   Meyermans H, Morreel K, Lapierre C, Pollet B, De Bruyn A, Busson R, Herdewijn P, Devreese B, Van Beeumen J, Marita JM, Ralph J, Chen C, Burggraeve B, Van Montagu M, Messens E, Boerjan W.
+  TITLE     Modifications in lignin and accumulation of phenolic glucosides in poplar xylem upon down-regulation of caffeoyl-coenzyme A O-methyltransferase, an enzyme involved in lignin biosynthesis.
+  JOURNAL   J Biol Chem 275:36899-909 (2000)
+            DOI:10.1074/jbc.M006915200
+REFERENCE   PMID:16027976
+  AUTHORS   Gachon CM, Langlois-Meurinne M, Henry Y, Saindrenan P.
+  TITLE     Transcriptional co-regulation of secondary metabolism enzymes in Arabidopsis: functional and evolutionary implications.
+  JOURNAL   Plant Mol Biol 58:229-45 (2005)
+            DOI:10.1007/s11103-005-5346-5
+REFERENCE   PMID:10692459
+  AUTHORS   Li L, Popko JL, Umezawa T, Chiang VL.
+  TITLE     5-hydroxyconiferyl aldehyde modulates enzymatic methylation for syringyl monolignol formation, a new view of monolignol biosynthesis in angiosperms.
+  JOURNAL   J Biol Chem 275:6537-45 (2000)
+            DOI:10.1074/jbc.275.9.6537
+REFERENCE   PMID:12009990
+  AUTHORS   Yamauchi K, Yasuda S, Fukushima K.
+  TITLE     Evidence for the biosynthetic pathway from sinapic acid to syringyl lignin using labeled sinapic acid with stable isotope at both methoxy groups in Robinia pseudoacacia and Nerium indicum.
+  JOURNAL   J Agric Food Chem 50:3222-7 (2002)
+            DOI:10.1021/jf011565x
+REFERENCE   PMID:12084820
+  AUTHORS   Eckardt NA.
+  TITLE     Probing the mysteries of lignin biosynthesis: the crystal structure of caffeic acid/5-hydroxyferulic acid 3/5-O-methyltransferase provides new insights.
+  JOURNAL   Plant Cell 14:1185-9 (2002)
+            DOI:10.1105/tpc.140610
+REL_PATHWAY smo00130  Ubiquinone and other terpenoid-quinone biosynthesis
+            smo00400  Phenylalanine, tyrosine and tryptophan biosynthesis
+            smo00941  Flavonoid biosynthesis
+            smo00945  Stilbenoid, diarylheptanoid and gingerol biosynthesis
+KO_PATHWAY  ko00940
+///

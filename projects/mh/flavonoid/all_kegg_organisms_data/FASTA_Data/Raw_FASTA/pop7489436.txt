@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01077: 7489436</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620840134">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620840134">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- pop:7489436 -->&gt;pop:7489436 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) shikimate O-hydroxycinnamoyltransferase (N)
+atgcagattaccataaaggaatcatccatggtggtgccgacccaggatacaccaaaccac
+cggctagaggtcactaacctagacctgtttcatgcaaaatatcatgtccctttgctgttc
+atatacaagccaaatggatcttccaatttctttgaaggtaaagtgctcaaggaggcactg
+agcaaagttcttgagtcattttatcctgtagctgggagattggcaagggatgcgaagggt
+agaattgagataaattgtaatggagaaggggtgttattcgttgaggctgaaacagattct
+gctatgggtgactttgttggtttcaagcccagcgacgaacttcgacagcttattcctacc
+gttgactacagtgacatctcttcttacccgctccttgttttacaggtaaccagattcaca
+tgcggtggagtgtgccttggagttggatggcagcatactctggcagatgggaccgaatgt
+cttcatttcatcaacacatggtctgatatagcccgaggcctccctgttaaaaccccacca
+ttcatcgatcgaaccattcttcgtggcagagtcccacccaaccctaccttccatcacatc
+gaatatgatccataccctaccatcaacacccctttccaaaaccccattcccgagtcaggc
+tctaaagacatttctgtagccaaccttaagatcacaagtgatttacttaacactttgaaa
+gctatggcaaagaatgatattgcaagcaagaccgagtacagcacttatgtgatccttaca
+gcacatatatggcgttgtgcatgcaaagcgcgaggcttgtctaatgatcaagcaaccaag
+ttaagcatacccacgaatggcagggatagatttcgtcctccacttcaacctggctatttt
+ggaaatgtaaccttcctagcaacaccaattgctctctctggtgccctcttatcagagcca
+ttagcacacaccgcggagagaattcacaaagcaataaaacgaatggatgatgagtatttg
+agatcggctgttgactacttggaaaaagtagatgacttaactactgtcatgagaagctcc
+gaaacttataggagcccaaacctccatattgttaattgggtgcgtttgcccttttacgat
+gctgattttggatggggcaagccagtgtatatgcggccagcatctgcatttgtaggaaaa
+ggatacatacaaccaagcccaacaaatgatggaaccttgtcattgaccatattcttagag
+acggatcacttgcaatccttccaaaagttattttatgagtaccataaacggagctgcctg
+taa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=pop:7489436+nt">BLAST</a>
+</body>
+</html>

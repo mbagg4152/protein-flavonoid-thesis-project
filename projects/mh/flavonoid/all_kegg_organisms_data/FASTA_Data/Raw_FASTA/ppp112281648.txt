@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01041: 112281648</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620852335">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620852335">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- ppp:112281648 -->&gt;ppp:112281648 K01859 chalcone isomerase [EC:5.5.1.6] | (RefSeq) probable chalcone--flavonone isomerase 3 (N)
+atgggtctccaagttgtgaatgtagaaggcatcgacttcgccaccaagttcgcacctccg
+acatcttccaccgagctggacttgatcggccatggcaacacgggaatggagattgagact
+gtggaaatcaggtttactgccatgggcttctacgcagagccaagcatcagcgagcattta
+cagaagtggaagggcaaggcagtcagcgagcttgttgaggacgacagtggctttcacaag
+gaactcatccaagttccggtggagaaggcggtgcgaatctccatcatcaaagggatcaag
+ggcctcccctatggcagcgccctgcaatcttccttgagggatcggctagtgaatgacgac
+aagttcgaagaggaggaagaagaagctctggaaaagctcgttgaatttttccagccgcac
+aatttgccaaagggtgccaacattatttatcactgggcaacccccgacactgtcaagatt
+tctctctctgaggagggtaaaatccccgacgaggtatcttacacgatcgaggatgctaat
+gtggcggaagcattgttagacctttacttgggcgagaacacaatcacaccctctaccctc
+tcctcagtagctgaagccattgctgcccaggttgcatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=ppp:112281648+nt">BLAST</a>
+</body>
+</html>

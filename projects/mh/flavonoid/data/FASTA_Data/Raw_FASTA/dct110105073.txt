@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05027: 110105073</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620839106">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620839106">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- dct:110105073 -->&gt;dct:110105073 K00660 chalcone synthase [EC:2.3.1.74] | (RefSeq) bibenzyl synthase-like (N)
+atgccgagccttgaatccatcagaaaggcaccaagagccaacggcttcgcctccatctta
+gccatcggaagggcgaatccagaaaacttcattgaacagagcacctacccagatttcttt
+tttcgcatcaccaacagcgagcacttggtcgaccttaaaaagaaatttcaacgcatatgt
+gacaagacagcaattagaaagcgtcatttcgtctggaacgaggagttcatcactacaaat
+ccctgcctccacacatttatggacaaatctttggatgttaggcaagaggttgctataagg
+gagataccaaagctgggcgcggaggcagcagccacggcaattcaggaatgggggcagcct
+aagtcccgcatcactcacctcatcttctgcaccacgagcggcatggacttacctggtgct
+gactatcagctaacccaaattcttggcctcaacccaaatgtcgagcgtgtcatgctctat
+cagcagggttgtttcgctggcggaaccacgctccgtctcgctaagtgccttgccgagagc
+cgcaagggcgcacgtgttcttgtggtttgtgcagagaccaccactgtgctatttcgtgga
+ccgtctgaggagcaccaagaagacctcgtgacccaagctttatttgctgatggtgcctct
+gcacttatagtgggggccgatccagatgaagcggcccatgagagggccagtttcgtcata
+gtctctacatctcaagtcttattgccggactctgccggtgctattggaggccatgtaagc
+gagggaggcctcttagccacgctccatagagatgttccaaaaattgtttctaagaatgtt
+gaaaagtgcttggaagaggcgttcaccccttttggcattacggattggaactcaatcttc
+tgggtgccgcatcctggtggtcgagccattctagatctggtggaggagagggtggggttg
+aagccagagaagttgttggtttctaggcatgtacttgcagagtacggtaatatgtcgagt
+gtttgcgtgcattttgcccttgatgagatgcgcaaaagatctgcaatagaaggtaaagct
+acaaccggtgagggccttgagtggggtgtagtttttggatttgggccaggtctgaccgtt
+gaaacagtagttctacgcagtgtccctctctaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=dct:110105073+nt">BLAST</a>
+</body>
+</html>

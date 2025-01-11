@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01578: 9313862</title>
+<<<<<<< Updated upstream
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620835570">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620835570">
+=======
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849815">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849815">
+>>>>>>> Stashed changes
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aly:9313862 -->&gt;aly:9313862 K00475 naringenin 3-dioxygenase [EC:1.14.11.9] | (RefSeq) naringenin,2-oxoglutarate 3-dioxygenase isoform X1 (N)
+atggctccaggaactttgactgagctcgccggagagtctaagctcaactctaaatttgtc
+cgggacgaggacgaacgccccaaagtcgcttacaatgagtttagcgacgaaatcccggtg
+atctctctcgccggtatcgacgatgttgatggtaaaagaggagagatctgccgtcaaatc
+gtggaggcctgtgagaattggggtatcttccaagtggtcgatcacggcgtcgatactaac
+ttggtagcggatatgactcttctcgctcgtgacttcttcgctttatctccggaagagaag
+ctccgtttcgacatgtccggtggtaaaaaaggaggattcattgtctctagtcacctccag
+ggagaggctgtgcaagattggagagagattgtaacgtatttctcgtatccggtgagaaac
+agagactactcacggtggccagataagccggaaggatgggtgaaagtgacggaggagtat
+agtgagaggcttatgagtttggcttgtaagctacttgaggttttgtctgaagctatgggt
+cttgagaaagagtctcttaccaatgcatgcgtcgatatggaccaaaagattgttgttaat
+tattatccaaaatgccctcagcctgatctcaccctcgggctcaagcgtcacactgaccct
+ggaaccattactttgctgctacaagaccaagtcggtggattacaagccacacgtgacaat
+ggcaagacgtggattacggttcagcctgttgaaggagcgtttgtcgtcaatcttggcgat
+cacggtcattttttgagcaatgggaggttcaagaatgctgatcatcaggctgtggtgaac
+tcaaactcgagcagattgtccatagctacattccagaatccggcccccgatgccaccgtg
+tatccacttaaagtaagagaaggagagaagccgatattggaggagccaatcacgtttgct
+gagatgtataagagaaagatgggaagagatttggagctggctcgcctcaagaagctggct
+aaagaggaaagtgaccacaaggaggttgccaagcccgtcgaccaaatcttcgcttag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aly:9313862+nt">BLAST</a>
+</body>
+</html>

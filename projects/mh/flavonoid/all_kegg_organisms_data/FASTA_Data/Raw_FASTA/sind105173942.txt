@@ -1,0 +1,51 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04135: 105173942</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620837592">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620837592">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sind:105173942 -->&gt;sind:105173942 K05349 beta-glucosidase [EC:3.2.1.21] | (RefSeq) uncharacterized protein LOC105173942 (N)
+atggagaaaggccctatactattgatcgggtttctactgttttgttgctttggagcaata
+gcagatgcagagtacagattatacaaagaccccaaaaagcccctaaatcgaagaatcaag
+gacctgttaagaaggatgagcttagaggaaaagataggccaaatggtgcaaatcgaacga
+gctgtggcatcagctgaagtcatgaagaagtactacatagggagcgtgttgagtggtgga
+ggtagtgctccagctcctcgggcatctcctaaggcttgggtggatatggtgaatggtttt
+cagaaaggatcattgtcgacccgtcttggcataccaatgatttatgggattgatgcagtt
+catggccacaacaccgtttatggggctactgttttcccccataatattggtcttggagct
+actagagaccctcaactggtcaagaaaattggagctgcaactgcccttgaactcagagca
+acagggattccttacacttttgcaccttgcgttgcggtctgcagagatccaagatggggt
+aggtgctatgagagctatagtgaagattcagagattgttcaagcaatgactgagattata
+ccaggactgcaaggagacatacctgctaattctcgacagggcgttccctatgttgctgga
+aaaaaaaaggtcgcagcttgtgccaaacactatgttggcgatggtggaacaaccaaaggc
+atcaatcaaaacaataccgtgactagcaaacatgggttgctaagcatccatatgccaccc
+tatgatgattcgatcattaagggtgttgcaacaatcatggtctcttattcaagcttcaac
+ggaataaagatgcatgctaaccgtgatcttattactggcttccttaagaaaacactacgt
+ttcagaggatttgtcatctcagattacaagggtatcgaccaaatcacatctccaattcat
+gctaactacacgtattcaattctagcaggaattggtgctggcattgacatggtcatgatt
+ccaaacaattacacagagttcattgatggactaaccttcttggtgaaaaataacttcatc
+cctatgagccggattgatgatgccgtgaaaaggatcttaagagttaagtttataatggga
+ctgttcgaaaatccactagcggattacagcatgaccaagtacttggggagcagggtgcac
+aaagaactggcaagggaagcagtcagaaaatctcttgtgctgctaaagaatggcgagtct
+gcagatgagccattgataccactacccaagagagcatcaaaagtactcgttgcaggaacg
+catgctgacaatatcggcaaccagtgtggtggctggactattgaatggcagggaaaaact
+ggcaacattacatctggtaccacaatccttactgccataaagaatactgtcgactccaag
+accaaagtcattttccatgaaaatccggatgctaaatacgtaaaggccaacgagttctct
+tacgccattgttgttgtgggggagccaccatatgcagagggatatggagatagcttaaac
+ttgacactacccgatcccagttacagtatcatcacaaacgtgtgtgcctcactgaaatgt
+gttgtcgtcctgatcacaggccgtccggtcgtgattcagccgtatcttgcacaaattgat
+gcacttgtagctgcatggcttccgggatcagaaggccaaggtgtggctgatgtattgttt
+ggtgagtatggttttagtggtaaactgccacaaacttggttcaagacagttgatcagctt
+cctatgaatgttggtgatcagcaatatgacccattgttcccatttggatttgggcttact
+acacaacctacaaacataagctaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sind:105173942+nt">BLAST</a>
+</body>
+</html>

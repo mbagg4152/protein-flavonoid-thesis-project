@@ -1,0 +1,324 @@
+ENTRY       ath00940                    Pathway
+NAME        Phenylpropanoid biosynthesis - Arabidopsis thaliana (thale cress)
+DESCRIPTION Phenylpropanoids are a group of plant secondary metabolites derived from phenylalanine and having a wide variety of functions both as structural and signaling molecules. Phenylalanine is first converted to cinnamic acid by deamination. It is followed by hydroxylation and frequent methylation to generate coumaric acid and other acids with a phenylpropane (C6-C3) unit. Reduction of the CoA-activated carboxyl groups of these acids results in the corresponding aldehydes and alcohols. The alcohols are called monolignols, the starting compounds for biosynthesis of lignin.
+CLASS       Metabolism; Biosynthesis of other secondary metabolites
+PATHWAY_MAP ath00940  Phenylpropanoid biosynthesis
+MODULE      ath_M00039  Monolignol biosynthesis, phenylalanine/tyrosine => monolignol [PATH:ath00940]
+            ath_M00137  Flavanone biosynthesis, phenylalanine => naringenin [PATH:ath00940]
+DBLINKS     GO: 0009699
+ORGANISM    Arabidopsis thaliana (thale cress) [GN:ath]
+GENE        AT3G10340  PAL4; phenylalanine ammonia-lyase 4 [KO:K10775] [EC:4.3.1.24]
+            AT3G53260  PAL2; phenylalanine ammonia-lyase 2 [KO:K10775] [EC:4.3.1.24]
+            AT2G37040  PAL1; PHE ammonia lyase 1 [KO:K10775] [EC:4.3.1.24]
+            AT5G04230  PAL3; phenyl alanine ammonia-lyase 3 [KO:K10775] [EC:4.3.1.24]
+            AT2G30490  C4H; cinnamate-4-hydroxylase [KO:K00487] [EC:1.14.14.91]
+            AT4G05160  AMP-dependent synthetase and ligase family protein [KO:K01904] [EC:6.2.1.12]
+            AT1G65060  4CL3; 4-coumarate:CoA ligase 3 [KO:K01904] [EC:6.2.1.12]
+            AT1G62940  ACOS5; acyl-CoA synthetase 5 [KO:K01904] [EC:6.2.1.12]
+            AT3G21240  4CL2; 4-coumarate:CoA ligase 2 [KO:K01904] [EC:6.2.1.12]
+            AT1G51680  4CL1; 4-coumarate:CoA ligase 1 [KO:K01904] [EC:6.2.1.12]
+            AT3G21230  4CL5; 4-coumarate:CoA ligase 5 [KO:K01904] [EC:6.2.1.12]
+            AT4G19010  AMP-dependent synthetase and ligase family protein [KO:K01904] [EC:6.2.1.12]
+            AT5G63380  AMP-dependent synthetase and ligase family protein [KO:K01904] [EC:6.2.1.12]
+            AT5G48930  HCT; hydroxycinnamoyl-CoA shikimate/quinate hydroxycinnamoyl transferase [KO:K13065] [EC:2.3.1.133]
+            AT2G19070  SHT; spermidine hydroxycinnamoyl transferase [KO:K13065] [EC:2.3.1.133]
+            AT5G57840  HXXXD-type acyl-transferase family protein [KO:K13065] [EC:2.3.1.133]
+            AT2G40890  CYP98A3; cytochrome P450, family 98, subfamily A, polypeptide 3 [KO:K09754] [EC:1.14.14.96]
+            AT1G52760  LysoPL2; lysophospholipase 2 [KO:K18368] [EC:3.1.1.-]
+            AT2G47630  alpha/beta-Hydrolases superfamily protein [KO:K18368] [EC:3.1.1.-]
+            AT2G39420  alpha/beta-Hydrolases superfamily protein [KO:K18368] [EC:3.1.1.-]
+            AT5G16120  alpha/beta-Hydrolases superfamily protein [KO:K18368] [EC:3.1.1.-]
+            AT3G62860  alpha/beta-Hydrolases superfamily protein [KO:K18368] [EC:3.1.1.-]
+            AT1G77420  alpha/beta-Hydrolases superfamily protein [KO:K18368] [EC:3.1.1.-]
+            AT3G55180  alpha/beta-Hydrolases superfamily protein [KO:K18368] [EC:3.1.1.-]
+            AT4G34050  CCoAOMT1; S-adenosyl-L-methionine-dependent methyltransferases superfamily protein [KO:K00588] [EC:2.1.1.104]
+            AT1G24735  S-adenosyl-L-methionine-dependent methyltransferases superfamily protein [KO:K00588] [EC:2.1.1.104]
+            AT1G67980  CCOAMT; caffeoyl-CoA 3-O-methyltransferase [KO:K00588] [EC:2.1.1.104]
+            AT4G26220  S-adenosyl-L-methionine-dependent methyltransferases superfamily protein [KO:K00588] [EC:2.1.1.104]
+            AT1G15950  CCR1; cinnamoyl coa reductase 1 [KO:K09753] [EC:1.2.1.44]
+            AT1G80820  CCR2; cinnamoyl coa reductase [KO:K09753] [EC:1.2.1.44]
+            AT3G24503  ALDH2C4; aldehyde dehydrogenase 2C4 [KO:K12355] [EC:1.2.1.68]
+            AT4G36220  FAH1; ferulic acid 5-hydroxylase 1 [KO:K09755] [EC:1.14.-.-]
+            AT5G04330  CYP84A4; Cytochrome P450 superfamily protein [KO:K09755] [EC:1.14.-.-]
+            AT5G54160  OMT1; O-methyltransferase 1 [KO:K13066] [EC:2.1.1.68 2.1.1.4]
+            AT3G19450  ATCAD4; GroES-like zinc-binding alcohol dehydrogenase family protein [KO:K00083] [EC:1.1.1.195]
+            AT4G34230  CAD5; cinnamyl alcohol dehydrogenase 5 [KO:K00083] [EC:1.1.1.195]
+            AT2G21730  CAD2; cinnamyl alcohol dehydrogenase homolog 2 [KO:K00083] [EC:1.1.1.195]
+            AT4G37970  CAD6; cinnamyl alcohol dehydrogenase 6 [KO:K00083] [EC:1.1.1.195]
+            AT2G21890  CAD3; cinnamyl alcohol dehydrogenase homolog 3 [KO:K00083] [EC:1.1.1.195]
+            AT1G72680  CAD1; cinnamyl-alcohol dehydrogenase [KO:K00083] [EC:1.1.1.195]
+            AT4G39330  CAD9; cinnamyl alcohol dehydrogenase 9 [KO:K00083] [EC:1.1.1.195]
+            AT4G37980  ELI3-1; cinnamyl alcohol dehydrogenase 7 [KO:K00083] [EC:1.1.1.195]
+            AT4G37990  ELI3-2; cinnamyl alcohol dehydrogenase 8 [KO:K00083] [EC:1.1.1.195]
+            AT1G30760  FAD-binding Berberine family protein [KO:K22395] [EC:1.1.1.195]
+            AT2G34790  MEE23; FAD-binding Berberine family protein [KO:K22395] [EC:1.1.1.195]
+            AT1G48130  PER1; 1-cysteine peroxiredoxin 1 [KO:K11188] [EC:1.11.1.7 1.11.1.27 3.1.1.-]
+            AT5G19880  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G49570  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G68850  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G71695  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G18140  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G18150  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G18980  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G22420  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G24800  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G34060  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G37130  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G38390  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G39040  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G41480  peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G43480  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT3G01190  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT3G03670  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT3G17070  Peroxidase family protein [KO:K00430] [EC:1.11.1.7]
+            AT3G21770  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT3G28200  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT3G49120  PRXCB; peroxidase CB [KO:K00430] [EC:1.11.1.7]
+            AT3G49960  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G08770  Prx37; Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G08780  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G11290  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G16270  peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G17690  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G21960  PRXR1; Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G26010  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G30170  Peroxidase family protein [KO:K00430] [EC:1.11.1.7]
+            AT4G31760  peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G33420  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G36430  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G37520  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G37530  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G05340  PRX52; Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G06720  PA2; peroxidase 2 [KO:K00430] [EC:1.11.1.7]
+            AT5G06730  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G14130  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G15180  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G17820  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G19890  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G22410  RHS18; root hair specific 18 [KO:K00430] [EC:1.11.1.7]
+            AT5G24070  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G40150  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G42180  PER64; Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G47000  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G51890  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G58390  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G58400  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G64100  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G64110  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G64120  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G66390  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G67400  RHS19; root hair specific 19 [KO:K00430] [EC:1.11.1.7]
+            AT1G05260  RCI3; Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G14540  PER4; Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G14550  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G24110  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G30870  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G34510  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G44970  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G38380  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT3G49110  PRXCA; peroxidase CA [KO:K00430] [EC:1.11.1.7]
+            AT3G32980  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G05240  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G25980  peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G77100  peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT3G50990  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT1G05250  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT2G35380  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G39580  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT4G33870  Peroxidase superfamily protein [KO:K00430] [EC:1.11.1.7]
+            AT5G26310  UGT72E3; UDP-Glycosyltransferase superfamily protein [KO:K12356] [EC:2.4.1.111]
+            AT3G50740  UGT72E1; UDP-glucosyl transferase 72E1 [KO:K12356] [EC:2.4.1.111]
+            AT5G66690  UGT72E2; UDP-Glycosyltransferase superfamily protein [KO:K12356] [EC:2.4.1.111]
+            AT3G21560  UGT84A2; UDP-Glycosyltransferase superfamily protein [KO:K13068] [EC:2.4.1.120]
+            AT5G09640  SCPL19; serine carboxypeptidase-like 19 [KO:K09756] [EC:3.4.16.- 2.3.1.91]
+            AT2G22990  SNG1; sinapoylglucose 1 [KO:K09757] [EC:3.4.16.- 2.3.1.92]
+            AT5G42260  BGLU12; beta glucosidase 12 [KO:K01188] [EC:3.2.1.21]
+            AT5G44640  BGLU13; beta glucosidase 13 [KO:K01188] [EC:3.2.1.21]
+            AT2G44450  BGLU15; beta glucosidase 15 [KO:K01188] [EC:3.2.1.21]
+            AT1G26560  BGLU40; beta glucosidase 40 [KO:K01188] [EC:3.2.1.21]
+            AT2G44480  BGLU17; beta glucosidase 17 [KO:K01188] [EC:3.2.1.21]
+            AT3G47050  Glycosyl hydrolase family protein [KO:K01188] [EC:3.2.1.21]
+            AT1G75940  ATA27; Glycosyl hydrolase superfamily protein [KO:K01188] [EC:3.2.1.21]
+            AT1G66280  BGLU22; Glycosyl hydrolase superfamily protein [KO:K01188] [EC:3.2.1.21]
+            AT1G66270  BGLU21; Glycosyl hydrolase superfamily protein [KO:K01188] [EC:3.2.1.21]
+            AT3G09260  PYK10; Glycosyl hydrolase superfamily protein [KO:K01188] [EC:3.2.1.21]
+            AT5G28510  BGLU24; beta glucosidase 24 [KO:K01188] [EC:3.2.1.21]
+            AT5G36890  BGLU42; beta glucosidase 42 [KO:K01188] [EC:3.2.1.21]
+            AT5G54570  BGLU41; beta glucosidase 41 [KO:K01188] [EC:3.2.1.21]
+            AT2G32860  BGLU33; beta glucosidase 33 [KO:K01188] [EC:3.2.1.21]
+            AT3G03640  BGLU25; beta glucosidase 25 [KO:K01188] [EC:3.2.1.21]
+            AT3G21370  BGLU19; beta glucosidase 19 [KO:K01188] [EC:3.2.1.21]
+            AT3G60130  BGLU16; beta glucosidase 16 [KO:K01188] [EC:3.2.1.21]
+            AT2G25630  BGLU14; beta glucosidase 14 [KO:K01188] [EC:3.2.1.21]
+            AT3G60140  DIN2; Glycosyl hydrolase superfamily protein [KO:K01188] [EC:3.2.1.21]
+            AT2G44470  BGLU29; beta glucosidase 29 [KO:K01188] [EC:3.2.1.21]
+            AT2G44460  BGLU28; beta glucosidase 28 [KO:K01188] [EC:3.2.1.21]
+            AT2G44490  PEN2; Glycosyl hydrolase superfamily protein [KO:K01188] [EC:3.2.1.21]
+            AT5G24550  BGLU32; beta glucosidase 32 [KO:K01188] [EC:3.2.1.21]
+            AT5G24540  BGLU31; beta glucosidase 31 [KO:K01188] [EC:3.2.1.21]
+            AT3G60120  BGLU27; beta glucosidase 27 [KO:K01188] [EC:3.2.1.21]
+            AT1G02850  BGLU11; beta glucosidase 11 [KO:K01188] [EC:3.2.1.21]
+            AT1G45191  BGLU1; Glycosyl hydrolase superfamily protein [KO:K01188] [EC:3.2.1.21]
+            AT4G22100  BGLU3; beta glucosidase 2 [KO:K01188] [EC:3.2.1.21]
+            AT4G27830  BGLU10; beta glucosidase 10 [KO:K01188] [EC:3.2.1.21]
+            AT3G62750  BGLU8; beta glucosidase 8 [KO:K01188] [EC:3.2.1.21]
+            AT5G16580  BGLU2; beta glucosidase 2 [KO:K01188] [EC:3.2.1.21]
+            AT1G60270  BGLU6; beta glucosidase 6 [KO:K01188] [EC:3.2.1.21]
+            AT3G62740  BGLU7; beta glucosidase 7 [KO:K01188] [EC:3.2.1.21]
+            AT4G27820  BGLU9; beta glucosidase 9 [KO:K01188] [EC:3.2.1.21]
+            AT1G60260  BGLU5; beta glucosidase 5 [KO:K01188] [EC:3.2.1.21]
+            AT3G47000  Glycosyl hydrolase family protein [KO:K05349] [EC:3.2.1.21]
+            AT5G20950  Glycosyl hydrolase family protein [KO:K05349] [EC:3.2.1.21]
+            AT5G20940  Glycosyl hydrolase family protein [KO:K05349] [EC:3.2.1.21]
+            AT3G47040  Glycosyl hydrolase family protein [KO:K05349] [EC:3.2.1.21]
+            AT5G04885  Glycosyl hydrolase family protein [KO:K05349] [EC:3.2.1.21]
+            AT3G47010  Glycosyl hydrolase family protein [KO:K05349] [EC:3.2.1.21]
+            AT3G18080  BGLU44; B-S glucosidase 44 [KO:K05350] [EC:3.2.1.21]
+            AT1G61820  BGLU46; beta glucosidase 46 [KO:K05350] [EC:3.2.1.21]
+            AT4G21760  BGLU47; beta-glucosidase 47 [KO:K05350] [EC:3.2.1.21]
+            AT1G61810  BGLU45; beta-glucosidase 45 [KO:K05350] [EC:3.2.1.21]
+            AT3G18070  BGLU43; beta glucosidase 43 [KO:K05350] [EC:3.2.1.21]
+            AT1G74540  CYP98A8; cytochrome P450, family 98, subfamily A, polypeptide 8 [KO:K15506] [EC:1.14.13.-]
+            AT1G74550  CYP98A9; cytochrome P450, family 98, subfamily A, polypeptide 9 [KO:K23662] [EC:1.14.13.-]
+            AT1G67990  TSM1; S-adenosyl-L-methionine-dependent methyltransferases superfamily protein [KO:K13067] [EC:2.1.1.-]
+            AT3G13610  2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein [KO:K06892] [EC:1.14.11.61]
+            AT1G55290  2-oxoglutarate (2OG) and Fe(II)-dependent oxygenase superfamily protein [KO:K06892] [EC:1.14.11.61]
+COMPOUND    C00079  L-Phenylalanine
+            C00082  L-Tyrosine
+            C00223  p-Coumaroyl-CoA
+            C00315  Spermidine
+            C00323  Caffeoyl-CoA
+            C00406  Feruloyl-CoA
+            C00411  Sinapoyl-CoA
+            C00423  trans-Cinnamate
+            C00482  Sinapate
+            C00540  Cinnamoyl-CoA
+            C00590  Coniferyl alcohol
+            C00761  Coniferin
+            C00811  4-Coumarate
+            C00852  Chlorogenate
+            C00903  Cinnamaldehyde
+            C00933  Sinapine
+            C01175  1-O-Sinapoyl-beta-D-glucose
+            C01197  Caffeate
+            C01494  Ferulate
+            C01527  Scopolin
+            C01533  Syringin
+            C01752  Scopoletin
+            C01772  trans-2-Hydroxycinnamate
+            C02325  Sinapyl alcohol
+            C02646  4-Coumaryl alcohol
+            C02666  Coniferyl aldehyde
+            C02887  Sinapoyl malate
+            C02947  4-Coumaroylshikimate
+            C04366  3-(2-Carboxyethenyl)-cis,cis-muconate
+            C05158  trans-beta-D-Glucosyl-2-hydroxycinnamate
+            C05608  4-Hydroxycinnamyl aldehyde
+            C05610  Sinapoyl aldehyde
+            C05619  5-Hydroxyferulic acid methyl ester
+            C05627  4-Hydroxystyrene
+            C05838  cis-2-Hydroxycinnamate
+            C05839  cis-beta-D-Glucosyl-2-hydroxycinnamate
+            C05851  Coumarin
+            C05855  4-Hydroxycinnamyl alcohol 4-D-glucoside
+            C06224  3,4-Dihydroxystyrene
+            C09315  Umbelliferone
+            C10428  Anethole
+            C10434  5-O-Caffeoylshikimic acid
+            C10452  Estragole
+            C10453  Eugenol
+            C10454  Methyleugenol
+            C10469  Isoeugenol
+            C10478  Methylisoeugenol
+            C10945  Caffeic aldehyde
+            C12203  5-Hydroxyferuloyl-CoA
+            C12204  5-Hydroxyconiferaldehyde
+            C12205  5-Hydroxyconiferyl alcohol
+            C12206  Caffeyl alcohol
+            C12208  p-Coumaroyl quinic acid
+            C15804  p-Hydroxyphenyl lignin
+            C15805  Guaiacyl lignin
+            C15806  Syringyl lignin
+            C15807  5-Hydroxy-guaiacyl lignin
+            C16930  Chavicol
+            C18069  N1,N5,N10-Tricoumaroyl spermidine
+            C18070  N1,N5,N10-Tricaffeoyl spermidine
+            C18071  N1,N5,N10-Triferuloyl spermidine
+            C18072  N1,N5,N10-Tri(hydroxyferuloyl) spermidine
+            C18073  N1,N5-Di(hydroxyferuloyl)-N10-sinapoyl spermidine
+            C20225  Coniferyl acetate
+            C20464  Isochavicol
+            C20465  Coumaryl acetate
+            C21459  6-Hydroxyferuloyl-CoA
+            C22070  2,4-Dihydroxycinnamoyl-CoA
+REFERENCE   PMID:14729911
+  AUTHORS   Nair RB, Bastress KL, Ruegger MO, Denault JW, Chapple C.
+  TITLE     The Arabidopsis thaliana REDUCED EPIDERMAL FLUORESCENCE1 gene encodes an aldehyde dehydrogenase involved in ferulic acid and sinapic acid biosynthesis.
+  JOURNAL   Plant Cell 16:544-54 (2004)
+            DOI:10.1105/tpc.017509
+REFERENCE   PMID:14551235
+  AUTHORS   Baucher M, Halpin C, Petit-Conil M, Boerjan W.
+  TITLE     Lignin: genetic engineering and impact on pulping.
+  JOURNAL   Crit Rev Biochem Mol Biol 38:305-50 (2003)
+            DOI:10.1080/10409230391036757
+REFERENCE   PMID:15878986
+  AUTHORS   Rogers LA, Dubos C, Cullis IF, Surman C, Poole M, Willment J, Mansfield SD, Campbell MM.
+  TITLE     Light, the circadian clock, and sugar perception in the control of lignin biosynthesis.
+  JOURNAL   J Exp Bot 56:1651-63 (2005)
+            DOI:10.1093/jxb/eri162
+REFERENCE   PMID:12242395
+  AUTHORS   Whetten R, Sederoff R.
+  TITLE     Lignin Biosynthesis.
+  JOURNAL   Plant Cell 7:1001-1013 (1995)
+            DOI:10.1105/tpc.7.7.1001
+REFERENCE   PMID:8972602
+  AUTHORS   Lorenzen M, Racicot V, Strack D, Chapple C.
+  TITLE     Sinapic acid ester metabolism in wild type and a sinapoylglucose-accumulating mutant of arabidopsis.
+  JOURNAL   Plant Physiol 112:1625-30 (1996)
+            DOI:10.1104/pp.112.4.1625
+REFERENCE   PMID:1477555
+  AUTHORS   Chapple CC, Vogt T, Ellis BE, Somerville CR.
+  TITLE     An Arabidopsis mutant defective in the general phenylpropanoid pathway.
+  JOURNAL   Plant Cell 4:1413-24 (1992)
+            DOI:10.1105/tpc.4.11.1413
+REFERENCE   PMID:14612585
+  AUTHORS   Raes J, Rohde A, Christensen JH, Van de Peer Y, Boerjan W.
+  TITLE     Genome-wide characterization of the lignification toolbox in Arabidopsis.
+  JOURNAL   Plant Physiol 133:1051-71 (2003)
+            DOI:10.1104/pp.103.026484
+REFERENCE   PMID:14568076
+  AUTHORS   Costa MA, Collins RE, Anterola AM, Cochrane FC, Davin LB, Lewis NG.
+  TITLE     An in silico assessment of gene function and organization of the phenylpropanoid pathway metabolic networks in Arabidopsis thaliana and limitations thereof.
+  JOURNAL   Phytochemistry 64:1097-112 (2003)
+            DOI:10.1016/S0031-9422(03)00517-X
+REFERENCE   PMID:10934215
+  AUTHORS   Meyermans H, Morreel K, Lapierre C, Pollet B, De Bruyn A, Busson R, Herdewijn P, Devreese B, Van Beeumen J, Marita JM, Ralph J, Chen C, Burggraeve B, Van Montagu M, Messens E, Boerjan W.
+  TITLE     Modifications in lignin and accumulation of phenolic glucosides in poplar xylem upon down-regulation of caffeoyl-coenzyme A O-methyltransferase, an enzyme involved in lignin biosynthesis.
+  JOURNAL   J Biol Chem 275:36899-909 (2000)
+            DOI:10.1074/jbc.M006915200
+REFERENCE   PMID:16027976
+  AUTHORS   Gachon CM, Langlois-Meurinne M, Henry Y, Saindrenan P.
+  TITLE     Transcriptional co-regulation of secondary metabolism enzymes in Arabidopsis: functional and evolutionary implications.
+  JOURNAL   Plant Mol Biol 58:229-45 (2005)
+            DOI:10.1007/s11103-005-5346-5
+REFERENCE   PMID:10692459
+  AUTHORS   Li L, Popko JL, Umezawa T, Chiang VL.
+  TITLE     5-hydroxyconiferyl aldehyde modulates enzymatic methylation for syringyl monolignol formation, a new view of monolignol biosynthesis in angiosperms.
+  JOURNAL   J Biol Chem 275:6537-45 (2000)
+            DOI:10.1074/jbc.275.9.6537
+REFERENCE   PMID:12009990
+  AUTHORS   Yamauchi K, Yasuda S, Fukushima K.
+  TITLE     Evidence for the biosynthetic pathway from sinapic acid to syringyl lignin using labeled sinapic acid with stable isotope at both methoxy groups in Robinia pseudoacacia and Nerium indicum.
+  JOURNAL   J Agric Food Chem 50:3222-7 (2002)
+            DOI:10.1021/jf011565x
+REFERENCE   PMID:12084820
+  AUTHORS   Eckardt NA.
+  TITLE     Probing the mysteries of lignin biosynthesis: the crystal structure of caffeic acid/5-hydroxyferulic acid 3/5-O-methyltransferase provides new insights.
+  JOURNAL   Plant Cell 14:1185-9 (2002)
+            DOI:10.1105/tpc.140610
+REL_PATHWAY ath00130  Ubiquinone and other terpenoid-quinone biosynthesis
+            ath00400  Phenylalanine, tyrosine and tryptophan biosynthesis
+            ath00941  Flavonoid biosynthesis
+            ath00945  Stilbenoid, diarylheptanoid and gingerol biosynthesis
+KO_PATHWAY  ko00940
+///

@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04130: 107004343</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620853921">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620853921">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- spen:107004343 -->&gt;spen:107004343 K06892 feruloyl-CoA 6-hydroxylase [EC:1.14.11.61] | (RefSeq) feruloyl CoA ortho-hydroxylase 2-like (N)
+atgaagtgggctaaacctattatagtaaagcttctcgaggtgttgctggagaaactaaac
+gttaagcagattgatgagccgatgaagtctgttgtaatgggcacgttgatcgttaacctc
+attcactacccagtgtgcccaaaccccgagctcactgctggtgctggccgtcatgctgat
+gtttcttcgatcactatgctactacaagacgatgttggtggcctttacgtgcgagagccc
+aaaggtgatggctggattcatgtgcccccagttaaaggggcactcgtgatcaatatcgga
+gatgtccttcagatcatgagcaacgataggtacaagagtgtcgagcatcgtgtaatcgtg
+aatgccagtagaaacagagtgtcagtgcccatatttgtgaatccagcacctgatgcagtt
+tttggtcctttgacacaagtgctagaaaatggagagaaaccattgtataagcatgttgtt
+tattcagactacttcaattatttcttcagtaaaggccatgagggtaagcaaacaattgaa
+tttgcaaaactatga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=spen:107004343+nt">BLAST</a>
+</body>
+</html>

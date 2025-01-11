@@ -1,0 +1,46 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01087: 107262128</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620850542">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620850542">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- rcu:107262128 -->&gt;rcu:107262128 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) peroxidase 7 (N)
+atgaattccctcgtttctttgtttcttctcctcttagcttttcaattaatttcagcttca
+cagtattatcctgaaacttcttcacaaaaggaagagtatcctggaaattatacggaacaa
+ggagaaaagcagcctgagaattactctgagcagaaagaagagcagactggaaattattct
+gagcaaaaacaagagctgcctggaaattattctgagcaaaacgaagagcgccctgaaaat
+tattcaaagaaaaacaaggtgcaccttggaactgattcagataaaaaagatcagtctgga
+aattattctgagcaaaaagaagagcaccctggaaattattctaaacaaaaagaagaagag
+cagtctgaaaattactcggaacaaaaagacgatcagccaggaaattatcctgaacagaaa
+gaagaagagcagcccgaaaattactcaaaacaaaaagaagatcagccaggaaactattct
+gaacaaaaagaagcggagcaactcaaaaattattcagaacagaaacaatatcagacagga
+aattatcctgaacaaaaagaagaagagcagcccgaaaattattcagaacaaaaagaagat
+aagccaggaaactattctgcacaaaaagaagaagaatatgatggaaattacagtaaggaa
+aaggacagaccttccctcaccattcccactttgcttgataacttgccttcagcggatgat
+ttgctatcttttgttcactatcatcaaagctgtccacaagctgaatccatcattaacaga
+aaagttaatgaatggtttaagaaagactatagccttgctgctagtctcctcaggttgcac
+ttccatgattgtgctgtcaggggctgcgacgcttccattcttttggaccatgagggaagt
+gagagaagagcagaagagagcaagagccttagagggtttgaagtgattgatgacataaaa
+gcagagatcgagaaagaatgcccagaaacagtctcttgtgctgacattcttacagcagcc
+tccagagatgctactgttcttcttggtggtccgtactgggcggtgccctatggaaggaaa
+gatggcaaactttctgttgacaaggaagttgaattagtgccaatgggacttgaaaacatt
+accagtctcattgaattctaccaatctaatggcctcaatatcctggatttggtcgttctt
+tcaggtgcacatacaattggcagggccacatgtggttcaattcaacaaaggctctacaac
+tttgaaggaacaggcaaaccagacccatcacttgatactcaatatttgaactttttgaca
+aggaaatgcagatgggcatctgagtatgttgatctagatggtacaactccaatcaccttt
+gataacgagtactataagaatcttcagaagaatatgggactcttatcttcagatcaatta
+ctcttctctgatccaagaactgcccctcttgttaatacatttgcttctgcacctcaagtt
+ttctatcaccagtttggtgtttccatggcaaagcttggcaacattcttgtcccttctctt
+ctagaagatggcgaaattcgaactgtttgcagctctgttaactctgatcattactag
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=rcu:107262128+nt">BLAST</a>
+</body>
+</html>

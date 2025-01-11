@@ -1,0 +1,14 @@
+atmname	resname	chain	resnum	ID	total_ASA	bb_ASA	sc_ASA	majorgroove_ASA	minorgroove_ASA	nogroove_ASA	polar_ASA	polar_bb_ASA	polar_sc_ASA	polar_majorgroove_ASA	polar_minorgroove_ASA	polar_nogroove_ASA	hyd_ASA	hyd_bb_ASA	hyd_sc_ASA	hyd_majorgroove_ASA	hyd_minorgroove_ASA	hyd_nogroove_ASA	lig_ASA	lig_polar_ASA	lig_hyd_ASA	X	Y	Z
+N	TYR	B	119	1	21.936	21.936	nan	nan	nan	nan	21.936	21.936	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.212	82.259	38.908
+N	TYR	B	119	2	21.936	21.936	nan	nan	nan	nan	21.936	21.936	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	13.212	82.259	38.908
+CA	TYR	B	119	3	9.821	9.821	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.821	9.821	nan	nan	nan	nan	nan	nan	nan	12.731	82.704	40.220
+C	TYR	B	119	4	34.838	34.838	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.838	34.838	nan	nan	nan	nan	nan	nan	nan	12.819	84.208	40.369
+O	TYR	B	119	5	40.715	40.715	nan	nan	nan	nan	40.715	40.715	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.886	84.822	40.856
+CB	TYR	B	119	6	29.613	nan	29.613	nan	nan	nan	nan	nan	nan	nan	nan	nan	29.613	nan	29.613	nan	nan	nan	nan	nan	nan	13.464	81.968	41.348
+CG	TYR	B	119	7	2.636	nan	2.636	nan	nan	nan	nan	nan	nan	nan	nan	nan	2.636	nan	2.636	nan	nan	nan	nan	nan	nan	12.829	80.625	41.642
+CD1	TYR	B	119	8	21.909	nan	21.909	nan	nan	nan	nan	nan	nan	nan	nan	nan	21.909	nan	21.909	nan	nan	nan	nan	nan	nan	13.147	79.506	40.907
+CD2	TYR	B	119	9	27.205	nan	27.205	nan	nan	nan	nan	nan	nan	nan	nan	nan	27.205	nan	27.205	nan	nan	nan	nan	nan	nan	11.837	80.495	42.636
+CE1	TYR	B	119	10	33.973	nan	33.973	nan	nan	nan	nan	nan	nan	nan	nan	nan	33.973	nan	33.973	nan	nan	nan	nan	nan	nan	12.530	78.282	41.150
+CE2	TYR	B	119	11	34.198	nan	34.198	nan	nan	nan	nan	nan	nan	nan	nan	nan	34.198	nan	34.198	nan	nan	nan	nan	nan	nan	11.243	79.277	42.877
+CZ	TYR	B	119	12	9.878	nan	9.878	nan	nan	nan	nan	nan	nan	nan	nan	nan	9.878	nan	9.878	nan	nan	nan	nan	nan	nan	11.602	78.183	42.141
+OH	TYR	B	119	13	43.000	nan	43.000	nan	nan	nan	43.000	nan	43.000	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	nan	11.013	76.967	42.360

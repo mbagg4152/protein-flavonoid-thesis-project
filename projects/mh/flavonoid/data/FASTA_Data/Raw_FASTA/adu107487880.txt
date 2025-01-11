@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+<title>KEGG T04300: 107487880</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620837679">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620837679">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- adu:107487880 -->&gt;adu:107487880 K12356 coniferyl-alcohol glucosyltransferase [EC:2.4.1.111] | (RefSeq) UDP-glycosyltransferase 72E1 (N)
+atggccacagcaaacaacgacaagaagccacacgccgccattctgaccagcccagggatg
+ggccacctcatcccggaggtggagcttggcaagagcctcctcacacaacacgccttcgac
+gtaaccatcttcctcatcaccaccgatctcgcaacggctcgctcccaaatccaccaacaa
+acctcacatctaaaaactgccccaaacgtggtggaattgccgcaaccagatgtttcatcc
+aaactgggaccagacccttccctattggacagaatcgtcgtaaccatgactgagtcctta
+ccatctctccgctctttcatcctctccatgaagcaccctccctctcttcttgtcgttgac
+ctgttcggtacagaagctattcccatggcacgtgacctcggcatgcaacccttcgtcttc
+ttaaccaccagcgcctggttctccgctctcaccatacacctttcagctatggaccccaac
+caggtggagaatactcatatcaagaaccgcgaaccgcttccaatccctggttgcgaaccg
+attcaattcgaagacacactcgaagctctcttggaccccctagggcccatatatgaagga
+tactccaaggtttcaaaggtaatcaatggctctgatgggatcctgatcaacacttggcaa
+gatctggagccctcagcaacgaaggcgctgggggactctggaatcttgcgaaggttcacc
+aatggaccggtttatccggttggacctctagtgaggacgttagcggaccgtgacacgggt
+agtgtacacgtggacaacaaggttatgcggtggcttgaccggcaaccgacggaatcggta
+atctacgtgtcgttcgggagcggagggaccatgtctgaggctcagattagggagcttgcg
+tggggattggagctcagcatgcagaggtttgtttgggtggtgcggccacccattgagggc
+gatgcttccggctcatatttcgacgtcggaattggggggcacgggtcgccggagtacttg
+ccgaaggggttcgtggagaggacgaaggaattgggattggtgattcccatgtgggccccg
+caggtggagattctgggacatgctgcgacgggtggttttgtgacgcactgtggttggaac
+tctgtgcttgaagcaatctttggtggggtggcaatggtggcttggccgctctactcggag
+cagaagatgaacgctgccatgttgtcgaaggagctcggggtggcggtgagggcgaggggt
+gaagcggagggtggtggtgtggttgggagggatgagatagcaagggttgtgagaagggta
+atggtggaagaagaaggtggtgcaatgagggcaaaggtgaaggagctgaaagcgagtgca
+gagaaagcagtgtgtgagtttggaagctctgagtcgctgcgtcaattcagaacttactct
+cgcgccgcttcagaggctaaagctcgtggtgcttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=adu:107487880+nt">BLAST</a>
+</body>
+</html>

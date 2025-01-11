@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<title>KEGG T05044: 104726980</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620847496">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620847496">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- csat:104726980 -->&gt;csat:104726980 K05278 flavonol synthase [EC:1.14.20.6] | (RefSeq) probable flavonol synthase 5 (N)
+atggatgacgagagaaaccacaacacatcttcttcgtccctcccgtctttgtgtaagcaa
+ctggcgagctcaacccctcgcgaaagcctggaactggacattcccgtcgttgatctaagc
+gtttctgatgaagagttcctgatgcgtgaggtgacgagagcgagtgaagagtggggaatt
+tttcaggtggttaaccatgggattccaaccgagctgatgcggcagctgcaagcggttggg
+aagcaattctttgacctgccggaggcagaaaaggaagcggtggcgaaagaagaagacatt
+gaaggatacaagaggaactatctagaaggtattaaggcttgggacgaacatctgagtcac
+agactctccccaccctctgttatcaattataaatattggcctaaaaatcctccccagtac
+agggaggtgaatgaggagtacacaaggcatgtgaagaagctaacagataaaattcttggt
+tggttatcagagggactagggttaccccccgtggcgttgttgcaaaatttaggtggcgaa
+atggcagagtatgtgatcagggtcaattactatcagccgtctccaaaatcggacttagcc
+ataggagccgctgcgcacacggatgtaggggcaatcacactcctcatccccaacgaggtt
+cctggacttcaagtcgtcaagaacgaacaatggcttgacgttgagtatatcaactcagct
+gtggttgttttcataggcgatcaactcatgaggatgagtaacgggaggtacaagaacgtg
+cttcacagagcaacgttggataaggagaatgtgaggatttcatggccggtttttgttgcg
+cctaggcatgatttgttaatcgggcctctgccggagcttaccggagacgagaatcctccc
+aaattcgagactttggtttatcaagactacttgcaccagacctttgaaaaatgggcgctc
+gacaagctatacagttcataa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=csat:104726980+nt">BLAST</a>
+</body>
+</html>

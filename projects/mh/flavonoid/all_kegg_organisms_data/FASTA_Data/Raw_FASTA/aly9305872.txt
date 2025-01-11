@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head>
+<title>KEGG T01578: 9305872</title>
+<<<<<<< Updated upstream
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620835623">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620835623">
+=======
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620849871">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620849871">
+>>>>>>> Stashed changes
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- aly:9305872 -->&gt;aly:9305872 K05277 anthocyanidin synthase [EC:1.14.20.4] | (RefSeq) leucoanthocyanidin dioxygenase (N)
+atggttgcggttgaaagagttgagagtttagcaaagagcggaatcatatcgattccaaaa
+gagtacattcgtcccaaagaagagctagagagcatcaacgacgttttcctagaagagaag
+aaagaagacggtcctcaagttcctacaatcgatctacaaaacatcgagtccgacgatgaa
+aagatccgtgagacttgcatagaggaactgaaaaaggcagctttggattggggagtgatg
+catttgatcaaccatggaatatctgttgatctaatggagcgggttaagaaagccggggaa
+gagtttttcggtttgtccgtcgaagagaaggagaagtatgcgaatgatcaagccacagga
+aaaattcaagggtatggaagtaagttggctaacaacgcttgcggacaattggaatgggaa
+gattacttctttcatcttgtgtatcctgaagacaagagagatctatcactttggcctaag
+acaccaagtgattacatagaagcaacgagtgagtacgcgaagtgtcttcgtttgttagca
+acaaaagtcttcaaggctctctctatcggtctaggcttagagcctgaccgtctagagaaa
+gaagttggtggtttagaagagcttcttctacaaatgaagataaattactatccaaaatgt
+cctcagcctgagctagcactcggcgtggaagctcacaccgatgtaagcgctttaaccttc
+attctacacaacatggttcccggtttgcagctattctacgagggaaaatgggtcactgca
+aaatgtgttcctgattcgattgtgatgcacattggagatactttagagattcttagtaat
+gggaagtataagagtatacttcatcgcgggttggtgaataaggagaaggttaggatttct
+tgggctgtgttttgtgagccaccaaaggataagattgttcttaagccgttaccggagacg
+gtgagtgatgagtctccggctaagtttcctccaaggacatttgctcaacatattgagcat
+aagttgtttgggaaggaacaagaggaattggtatctgagaaaaagaattaa
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=aly:9305872+nt">BLAST</a>
+</body>
+</html>

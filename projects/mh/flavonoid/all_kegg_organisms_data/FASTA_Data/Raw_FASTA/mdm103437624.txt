@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head>
+<title>KEGG T03194: 103437624</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1620845600">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1620845600">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- mdm:103437624 -->&gt;mdm:103437624 K00430 peroxidase [EC:1.11.1.7] | (RefSeq) uncharacterized protein LOC103437624 (N)
+atgaggataaagggaagagaaaatgttgagatcatccacctcaatcgatttgttgaggag
+tatgtcatcgaggatttgccacgaatttctgagaatttcatttcatccaaacaatcagcg
+ttggaatttgtattcccaactctccaagagagtagaagaattttcctttggaaacacctc
+aaactagaacgagtctgtgttcttccattttcacccctgcttcttttttacaattttcct
+ttggaaacacctcaaactagaacgagtctggtatccaattacattcatttcagttttgtg
+gaaaggtgctcgaaggctcttccattttcttccgtcggttttcctttctcttcctctctg
+tttctgtgcttttctccctgcgtcaatccttcgtgtttccctgcttctctccgcctcctc
+cttcgctcaagaaccactggtcaatctggtttctctggcttcttccgatggcggccaaga
+tttcttcatggaggagatgatgatggaggtcaatcggatcttgaatacgatttctaccgc
+gagacttgcccagaaattgagaccattgtgaggtcgacgatggcgcagatttactcccac
+cagaagaatgtctctgctcagctgctgcgcctcattttccatgactgcttcattcagagg
+gatccatttcaacaattttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=mdm:103437624+nt">BLAST</a>
+</body>
+</html>

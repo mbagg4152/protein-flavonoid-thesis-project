@@ -1,0 +1,56 @@
+        
+<html>
+<title>KNApSAcK Metabolite Information - Jatropha curcas</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+<script type="text/javascript" src="sort_js/fastinit.js"></script>
+<script type="text/javascript" src="sort_js/prototype.js"></script>
+<script type="text/javascript" src="sort_js/tablekit.js"></script>
+</head><body 0="" onload="" >
+
+        
+    <div id="my_body">
+       <div id="my_header">
+          <p class="hm"><a href="top.php" style="text-decoration:none" target="_blank">
+          <img src="images/nap2.gif" border=0> </a></p>
+       </div>
+       <div id="my_main">
+          <div id="my_navigation">
+	  <!--menu//-->
+          </div>
+          <div id="my_contents">
+             <br>
+             input type = <font class="iw">organism , </font>
+	     input word = <font class="iw">Jatropha curcas</font><br><br>
+   	      Number of matched data :9 <br>
+
+             <table class="sortable d1">
+                 <th class="w1">C_ID</th>
+                 <th class="w2">CAS ID</th>
+                 <th class="w3">Metabolite</th>
+                 <th class="w4">Molecular formula</th>
+                 <th class="w5">Mw</th><th class="w3">Organism</th>
+            <tr><td class="d1"><a href=information.php?word=C00002864 target="_blank">C00002864</a></td><td class="d1">84-54-8</td><td class="d1">2-Methylanthraquinone</td><td class="d1">C15H10O2</td><td class="d1">222.06807956</td><td class="d1"><font color=#FF00BF>Jatropha curcas</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003445 target="_blank">C00003445</a></td><td class="d1">58298-76-3</td><td class="d1">Jatrophatrione</td><td class="d1">C20H26O3</td><td class="d1">314.1881947</td><td class="d1"><font color=#FF00BF>Jatropha curcas</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00003446 target="_blank">C00003446</a></td><td class="d1">29444-03-9</td><td class="d1">Jatrophone</td><td class="d1">C20H24O3</td><td class="d1">312.17254463</td><td class="d1"><font color=#FF00BF>Jatropha curcas</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00031852 target="_blank">C00031852</a></td><td class="d1">133453-58-4</td><td class="d1">Heudelotinone</td><td class="d1">C18H20O2</td><td class="d1">268.14632988</td><td class="d1"><font color=#FF00BF>Jatropha curcas</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00032310 target="_blank">C00032310</a></td><td class="d1">169694-26-2</td><td class="d1">Tetradecyl-(E)-ferulate</td><td class="d1">C24H38O4</td><td class="d1">390.2770097</td><td class="d1"><font color=#FF00BF>Jatropha curcas</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00035859 target="_blank">C00035859</a></td><td class="d1">159933-90-1</td><td class="d1">Palmarumycin CP1</td><td class="d1">C20H12O4</td><td class="d1">316.07355887</td><td class="d1"><font color=#FF00BF>Jatropha curcas</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00035860 target="_blank">C00035860</a></td><td class="d1">174761-01-4</td><td class="d1">Palmarumycin JC1</td><td class="d1">C20H14O5</td><td class="d1">334.08412356</td><td class="d1"><font color=#FF00BF>Jatropha curcas</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00035861 target="_blank">C00035861</a></td><td class="d1">793687-86-2</td><td class="d1">Palmarumycin JC2</td><td class="d1">C20H14O5</td><td class="d1">334.08412356</td><td class="d1"><font color=#FF00BF>Jatropha curcas</font></td></tr>
+<tr><td class="d1"><a href=information.php?word=C00051027 target="_blank">C00051027</a></td><td class="d1">50656-76-3</td><td class="d1">Jatropham</td><td class="d1">C5H7NO2</td><td class="d1">113.04767848</td><td class="d1"><font color=#FF00BF>Jatropha curcas</font></td></tr>
+
+             </table>
+         </div>
+      </div>
+      <div id="my_footer">
+         All rights reserved. &copy; 2007 NARA INSTITUTE of SCIENCE and TECHNOLOGY
+      </div>
+    </div>
+
+              </body>
+      </html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head>
+<title>KEGG T07627: 121806643</title>
+<link type="text/css" rel="stylesheet" href="/css/gn_dbget.css?1641765810">
+<link type="text/css" rel="stylesheet" href="/css/bget.css?1641765810">
+<!-- bget:head -->
+</head>
+<!-- bget:body -->
+<body>
+<a href="/"><img src="/Fig/gn_ttl.gif" alt="GenomeNet" border=0></a><br><br>
+<div>
+
+<!-- bget:result -->
+<pre>
+<!-- bget:db:genes --><!-- sspl:121806643 -->&gt;sspl:121806643 K13065 shikimate O-hydroxycinnamoyltransferase [EC:2.3.1.133] | (RefSeq) rosmarinate synthase-like (N)
+atgaagatgagagtgaaagaatcagtaacagtaaaaccaatggaagaaactccgaggggg
+agtgtgtggctctccaatttagacttaatgtttcctgatacttaccatacccggtggatg
+tacttgtaccgctgcgatggcgatggcggcgccggcttcttcgacacggcggcactcaag
+gcagctctaagccgagcccttgttgagttctacccgtatgcgggcaggctgagaaaggac
+gacagcggccgccttgagatcaactgcaacggggaaggggtgttgttcgtggaggcagag
+tgcgacgctaccctcgatgagttgggtgatttctgcacccttagccctgacctcagcctc
+atccccgctgtcgattactctcaaggaatttccaccttcccacttttcctggtgcagtta
+actcgtttcgtatgcggcggcgtgagcttaggtttcaccaacgagcatcacacatcagac
+gggatctccgcactccatttcgtcaacacgtggtcggaaatcgctcgcggcctgactacc
+gtcccacctgtttccttggaccgccgcatcctctcggcgcgcaaccccccgcagccccag
+ttcccccacatcgagcaccaaccccctccgcggctcaaaacccccatccaggctgccagc
+ggagacgcaacattctccacgttcaggctaagccgccatcacatcaacgccctcaagcaa
+aaatgcaatgatggtttgaattatactacgtaccaggtggtggcgggccacgtgtggcgc
+tgcgtcagcattgcccgcagcctgccacaagatcaggagacgaagctgcagttccctatg
+aatgcgcggcagaaactacggccccctcttccagagggttttttcggcaatggagtcttc
+tacacgggcgcatttgctctgattggggagctggaatcgaagccgttgaagttcgcggtg
+gagaaagtgcacgaggcaatcgctcgaatggatgacaaatacttaaggtctgccttggat
+tacttggagttgcatatgcggaatgtggaaggcattgttcgtagccaaaacaatgtcaaa
+tgcccaaatttcgggatcacgaactggcttaggctgccgttctatgaagcggatttcgga
+tgggggaagcctgtttttatcggacccggcggagctatcttcgaagggaagagttttctg
+tttgctgatcctcaaaatgaaggtggcgcgttgcttgcaatcaccctgcaccaaggcacc
+atgaaacgatttcaaaagttgctatataacattgattcatgcctcgtgtctagaatttga
+</pre></div>
+<hr><a href="https://www.genome.jp/tools-bin/search_sequence?seqid=sspl:121806643+nt">BLAST</a>
+</body>
+</html>
